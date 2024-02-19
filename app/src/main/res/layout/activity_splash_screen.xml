@@ -102,6 +102,18 @@
         app:layout_constraintEnd_toEndOf="@+id/guidelineEnd"
         app:layout_constraintBottom_toBottomOf="parent" />
 
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/citationText"
+        android:indeterminate="true"
+        android:indeterminateTint="#FFFFFF"
+        android:layout_marginTop="70dp"
+        app:layout_constraintStart_toStartOf="@+id/guidelineStart"
+        app:layout_constraintEnd_toEndOf="@+id/guidelineEnd"
+        tools:ignore="MissingConstraints" />
+
+
 
     <TextView
         android:id="@+id/versionText"

@@ -8,16 +8,108 @@
         "source": "C:\\Users\\33760\\.gradle\\daemon\\8.2\\fr.iut.sae_s4_01_app_mobile.app-main-33:\\xml\\backup_rules.xml"
     },
     {
+        "merged": "fr.iut.sae_s4_01_app_mobile.app-merged_res-31:/drawable_megaphone.png.flat",
+        "source": "fr.iut.sae_s4_01_app_mobile.app-main-33:/drawable/megaphone.png"
+    },
+    {
         "merged": "C:\\Users\\33760\\.gradle\\daemon\\8.2\\fr.iut.sae_s4_01_app_mobile.app-merged_res-31:\\mipmap-anydpi-v26_ic_launcher.xml.flat",
         "source": "C:\\Users\\33760\\.gradle\\daemon\\8.2\\fr.iut.sae_s4_01_app_mobile.app-main-33:\\mipmap-anydpi-v26\\ic_launcher.xml"
+    },
+    {
+        "merged": "C:\\Users\\33760\\.gradle\\daemon\\8.2\\fr.iut.sae_s4_01_app_mobile.app-merged_res-31:\\layout_activity_main.xml.flat",
+        "source": "C:\\Users\\33760\\.gradle\\daemon\\8.2\\fr.iut.sae_s4_01_app_mobile.app-main-33:\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "C:\\Users\\33760\\.gradle\\daemon\\8.2\\fr.iut.sae_s4_01_app_mobile.app-merged_res-31:\\mipmap-hdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\33760\\.gradle\\daemon\\8.2\\fr.iut.sae_s4_01_app_mobile.app-main-33:\\mipmap-hdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "fr.iut.sae_s4_01_app_mobile.app-merged_res-31:/drawable_user.png.flat",
+        "source": "fr.iut.sae_s4_01_app_mobile.app-main-33:/drawable/user.png"
+    },
+    {
+        "merged": "C:\\Users\\33760\\.gradle\\daemon\\8.2\\fr.iut.sae_s4_01_app_mobile.app-merged_res-31:\\font_patuaone_regular.ttf.flat",
+        "source": "C:\\Users\\33760\\.gradle\\daemon\\8.2\\fr.iut.sae_s4_01_app_mobile.app-main-33:\\font\\patuaone_regular.ttf"
+    },
+    {
+        "merged": "fr.iut.sae_s4_01_app_mobile.app-merged_res-31:/drawable_anciennes.png.flat",
+        "source": "fr.iut.sae_s4_01_app_mobile.app-main-33:/drawable/anciennes.png"
+    },
+    {
+        "merged": "fr.iut.sae_s4_01_app_mobile.app-merged_res-31:/drawable_colombes.png.flat",
+        "source": "fr.iut.sae_s4_01_app_mobile.app-main-33:/drawable/colombes.png"
+    },
+    {
+        "merged": "fr.iut.sae_s4_01_app_mobile.app-merged_res-31:/drawable_stats.png.flat",
+        "source": "fr.iut.sae_s4_01_app_mobile.app-main-33:/drawable/stats.png"
+    },
+    {
+        "merged": "fr.iut.sae_s4_01_app_mobile.app-merged_res-31:/drawable_notification.png.flat",
+        "source": "fr.iut.sae_s4_01_app_mobile.app-main-33:/drawable/notification.png"
+    },
+    {
+        "merged": "fr.iut.sae_s4_01_app_mobile.app-merged_res-31:/drawable_utilisateur.png.flat",
+        "source": "fr.iut.sae_s4_01_app_mobile.app-main-33:/drawable/utilisateur.png"
+    },
+    {
+        "merged": "fr.iut.sae_s4_01_app_mobile.app-merged_res-31:/layout_activity_splash_screen.xml.flat",
+        "source": "fr.iut.sae_s4_01_app_mobile.app-main-33:/layout/activity_splash_screen.xml"
+    },
+    {
+        "merged": "C:\\Users\\33760\\.gradle\\daemon\\8.2\\fr.iut.sae_s4_01_app_mobile.app-merged_res-31:\\mipmap-hdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\33760\\.gradle\\daemon\\8.2\\fr.iut.sae_s4_01_app_mobile.app-main-33:\\mipmap-hdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "fr.iut.sae_s4_01_app_mobile.app-merged_res-31:/drawable_adresse.png.flat",
+        "source": "fr.iut.sae_s4_01_app_mobile.app-main-33:/drawable/adresse.png"
+    },
+    {
+        "merged": "fr.iut.sae_s4_01_app_mobile.app-merged_res-31:/drawable_colombes_logo.png.flat",
+        "source": "fr.iut.sae_s4_01_app_mobile.app-main-33:/drawable/colombes_logo.png"
+    },
+    {
+        "merged": "fr.iut.sae_s4_01_app_mobile.app-merged_res-31:/drawable_cadenas.png.flat",
+        "source": "fr.iut.sae_s4_01_app_mobile.app-main-33:/drawable/cadenas.png"
+    },
+    {
+        "merged": "fr.iut.sae_s4_01_app_mobile.app-merged_res-31:/drawable_home.png.flat",
+        "source": "fr.iut.sae_s4_01_app_mobile.app-main-33:/drawable/home.png"
+    },
+    {
+        "merged": "C:\\Users\\33760\\.gradle\\daemon\\8.2\\fr.iut.sae_s4_01_app_mobile.app-merged_res-31:\\mipmap-xhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\33760\\.gradle\\daemon\\8.2\\fr.iut.sae_s4_01_app_mobile.app-main-33:\\mipmap-xhdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\33760\\.gradle\\daemon\\8.2\\fr.iut.sae_s4_01_app_mobile.app-merged_res-31:\\drawable_colombesblanc.png.flat",
+        "source": "C:\\Users\\33760\\.gradle\\daemon\\8.2\\fr.iut.sae_s4_01_app_mobile.app-main-33:\\drawable\\colombesblanc.png"
+    },
+    {
+        "merged": "C:\\Users\\33760\\.gradle\\daemon\\8.2\\fr.iut.sae_s4_01_app_mobile.app-merged_res-31:\\drawable_ic_launcher_background.xml.flat",
+        "source": "C:\\Users\\33760\\.gradle\\daemon\\8.2\\fr.iut.sae_s4_01_app_mobile.app-main-33:\\drawable\\ic_launcher_background.xml"
+    },
+    {
+        "merged": "C:\\Users\\33760\\.gradle\\daemon\\8.2\\fr.iut.sae_s4_01_app_mobile.app-merged_res-31:\\drawable_ic_launcher_foreground.xml.flat",
+        "source": "C:\\Users\\33760\\.gradle\\daemon\\8.2\\fr.iut.sae_s4_01_app_mobile.app-main-33:\\drawable\\ic_launcher_foreground.xml"
+    },
+    {
+        "merged": "C:\\Users\\33760\\.gradle\\daemon\\8.2\\fr.iut.sae_s4_01_app_mobile.app-merged_res-31:\\mipmap-xhdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\33760\\.gradle\\daemon\\8.2\\fr.iut.sae_s4_01_app_mobile.app-main-33:\\mipmap-xhdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "fr.iut.sae_s4_01_app_mobile.app-merged_res-31:/drawable_ecrire.png.flat",
+        "source": "fr.iut.sae_s4_01_app_mobile.app-main-33:/drawable/ecrire.png"
+    },
+    {
+        "merged": "fr.iut.sae_s4_01_app_mobile.app-merged_res-31:/drawable_sedeconnecter1.png.flat",
+        "source": "fr.iut.sae_s4_01_app_mobile.app-main-33:/drawable/sedeconnecter1.png"
     },
     {
         "merged": "C:\\Users\\33760\\.gradle\\daemon\\8.2\\fr.iut.sae_s4_01_app_mobile.app-merged_res-31:\\mipmap-mdpi_ic_launcher_round.webp.flat",
         "source": "C:\\Users\\33760\\.gradle\\daemon\\8.2\\fr.iut.sae_s4_01_app_mobile.app-main-33:\\mipmap-mdpi\\ic_launcher_round.webp"
     },
     {
-        "merged": "C:\\Users\\33760\\.gradle\\daemon\\8.2\\fr.iut.sae_s4_01_app_mobile.app-merged_res-31:\\layout_activity_main.xml.flat",
-        "source": "C:\\Users\\33760\\.gradle\\daemon\\8.2\\fr.iut.sae_s4_01_app_mobile.app-main-33:\\layout\\activity_main.xml"
+        "merged": "fr.iut.sae_s4_01_app_mobile.app-merged_res-31:/drawable_connexion.png.flat",
+        "source": "fr.iut.sae_s4_01_app_mobile.app-main-33:/drawable/connexion.png"
     },
     {
         "merged": "C:\\Users\\33760\\.gradle\\daemon\\8.2\\fr.iut.sae_s4_01_app_mobile.app-merged_res-31:\\mipmap-xxxhdpi_ic_launcher.webp.flat",
@@ -28,32 +120,32 @@
         "source": "C:\\Users\\33760\\.gradle\\daemon\\8.2\\fr.iut.sae_s4_01_app_mobile.app-main-33:\\xml\\data_extraction_rules.xml"
     },
     {
-        "merged": "C:\\Users\\33760\\.gradle\\daemon\\8.2\\fr.iut.sae_s4_01_app_mobile.app-merged_res-31:\\mipmap-hdpi_ic_launcher_round.webp.flat",
-        "source": "C:\\Users\\33760\\.gradle\\daemon\\8.2\\fr.iut.sae_s4_01_app_mobile.app-main-33:\\mipmap-hdpi\\ic_launcher_round.webp"
+        "merged": "fr.iut.sae_s4_01_app_mobile.app-merged_res-31:/drawable_nouveaucompte.png.flat",
+        "source": "fr.iut.sae_s4_01_app_mobile.app-main-33:/drawable/nouveaucompte.png"
     },
     {
-        "merged": "C:\\Users\\33760\\.gradle\\daemon\\8.2\\fr.iut.sae_s4_01_app_mobile.app-merged_res-31:\\font_patuaone_regular.ttf.flat",
-        "source": "C:\\Users\\33760\\.gradle\\daemon\\8.2\\fr.iut.sae_s4_01_app_mobile.app-main-33:\\font\\patuaone_regular.ttf"
+        "merged": "fr.iut.sae_s4_01_app_mobile.app-merged_res-31:/drawable_etoile.png.flat",
+        "source": "fr.iut.sae_s4_01_app_mobile.app-main-33:/drawable/etoile.png"
     },
     {
         "merged": "C:\\Users\\33760\\.gradle\\daemon\\8.2\\fr.iut.sae_s4_01_app_mobile.app-merged_res-31:\\mipmap-xxhdpi_ic_launcher.webp.flat",
         "source": "C:\\Users\\33760\\.gradle\\daemon\\8.2\\fr.iut.sae_s4_01_app_mobile.app-main-33:\\mipmap-xxhdpi\\ic_launcher.webp"
     },
     {
+        "merged": "fr.iut.sae_s4_01_app_mobile.app-merged_res-31:/drawable_ecrire1.png.flat",
+        "source": "fr.iut.sae_s4_01_app_mobile.app-main-33:/drawable/ecrire1.png"
+    },
+    {
+        "merged": "fr.iut.sae_s4_01_app_mobile.app-merged_res-31:/drawable_calendrier.png.flat",
+        "source": "fr.iut.sae_s4_01_app_mobile.app-main-33:/drawable/calendrier.png"
+    },
+    {
         "merged": "C:\\Users\\33760\\.gradle\\daemon\\8.2\\fr.iut.sae_s4_01_app_mobile.app-merged_res-31:\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
         "source": "C:\\Users\\33760\\.gradle\\daemon\\8.2\\fr.iut.sae_s4_01_app_mobile.app-main-33:\\mipmap-anydpi-v26\\ic_launcher_round.xml"
     },
     {
-        "merged": "fr.iut.sae_s4_01_app_mobile.app-merged_res-31:/layout_activity_splash_screen.xml.flat",
-        "source": "fr.iut.sae_s4_01_app_mobile.app-main-33:/layout/activity_splash_screen.xml"
-    },
-    {
         "merged": "C:\\Users\\33760\\.gradle\\daemon\\8.2\\fr.iut.sae_s4_01_app_mobile.app-merged_res-31:\\mipmap-mdpi_ic_launcher.webp.flat",
         "source": "C:\\Users\\33760\\.gradle\\daemon\\8.2\\fr.iut.sae_s4_01_app_mobile.app-main-33:\\mipmap-mdpi\\ic_launcher.webp"
-    },
-    {
-        "merged": "C:\\Users\\33760\\.gradle\\daemon\\8.2\\fr.iut.sae_s4_01_app_mobile.app-merged_res-31:\\mipmap-hdpi_ic_launcher.webp.flat",
-        "source": "C:\\Users\\33760\\.gradle\\daemon\\8.2\\fr.iut.sae_s4_01_app_mobile.app-main-33:\\mipmap-hdpi\\ic_launcher.webp"
     },
     {
         "merged": "C:\\Users\\33760\\.gradle\\daemon\\8.2\\fr.iut.sae_s4_01_app_mobile.app-merged_res-31:\\mipmap-xxxhdpi_ic_launcher_round.webp.flat",
@@ -68,27 +160,11 @@
         "source": "C:\\Users\\33760\\.gradle\\daemon\\8.2\\fr.iut.sae_s4_01_app_mobile.app-main-33:\\mipmap-xxhdpi\\ic_launcher_round.webp"
     },
     {
-        "merged": "C:\\Users\\33760\\.gradle\\daemon\\8.2\\fr.iut.sae_s4_01_app_mobile.app-merged_res-31:\\mipmap-xhdpi_ic_launcher_round.webp.flat",
-        "source": "C:\\Users\\33760\\.gradle\\daemon\\8.2\\fr.iut.sae_s4_01_app_mobile.app-main-33:\\mipmap-xhdpi\\ic_launcher_round.webp"
-    },
-    {
-        "merged": "C:\\Users\\33760\\.gradle\\daemon\\8.2\\fr.iut.sae_s4_01_app_mobile.app-merged_res-31:\\drawable_colombesblanc.png.flat",
-        "source": "C:\\Users\\33760\\.gradle\\daemon\\8.2\\fr.iut.sae_s4_01_app_mobile.app-main-33:\\drawable\\colombesblanc.png"
+        "merged": "fr.iut.sae_s4_01_app_mobile.app-merged_res-31:/drawable_signature.png.flat",
+        "source": "fr.iut.sae_s4_01_app_mobile.app-main-33:/drawable/signature.png"
     },
     {
         "merged": "C:\\Users\\33760\\.gradle\\daemon\\8.2\\fr.iut.sae_s4_01_app_mobile.app-merged_res-31:\\layout_activity_splash_screen.xml.flat",
         "source": "C:\\Users\\33760\\.gradle\\daemon\\8.2\\fr.iut.sae_s4_01_app_mobile.app-main-33:\\layout\\activity_splash_screen.xml"
-    },
-    {
-        "merged": "C:\\Users\\33760\\.gradle\\daemon\\8.2\\fr.iut.sae_s4_01_app_mobile.app-merged_res-31:\\drawable_ic_launcher_background.xml.flat",
-        "source": "C:\\Users\\33760\\.gradle\\daemon\\8.2\\fr.iut.sae_s4_01_app_mobile.app-main-33:\\drawable\\ic_launcher_background.xml"
-    },
-    {
-        "merged": "C:\\Users\\33760\\.gradle\\daemon\\8.2\\fr.iut.sae_s4_01_app_mobile.app-merged_res-31:\\drawable_ic_launcher_foreground.xml.flat",
-        "source": "C:\\Users\\33760\\.gradle\\daemon\\8.2\\fr.iut.sae_s4_01_app_mobile.app-main-33:\\drawable\\ic_launcher_foreground.xml"
-    },
-    {
-        "merged": "C:\\Users\\33760\\.gradle\\daemon\\8.2\\fr.iut.sae_s4_01_app_mobile.app-merged_res-31:\\mipmap-xhdpi_ic_launcher.webp.flat",
-        "source": "C:\\Users\\33760\\.gradle\\daemon\\8.2\\fr.iut.sae_s4_01_app_mobile.app-main-33:\\mipmap-xhdpi\\ic_launcher.webp"
     }
 ]
