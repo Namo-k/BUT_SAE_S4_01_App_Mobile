@@ -1,0 +1,28 @@
+R_DEF: Internal format may change without notice
+local
+color black
+color white
+drawable colombesblanc
+drawable colombesblanc2
+drawable colombeslogo
+drawable ic_launcher_background
+drawable ic_launcher_foreground
+font patuaone_regular
+id bienvenueText
+id citationText
+id colombeDroiteImage
+id colombeGaucheImage
+id conseilText
+id guidelineEnd
+id guidelineStart
+id splashImage
+id versionText
+layout activity_main
+layout activity_splash_screen
+mipmap ic_launcher
+mipmap ic_launcher_round
+string app_name
+style Base.Theme.SAE_S4_01_App_Mobile
+style Theme.SAE_S4_01_App_Mobile
+xml backup_rules
+xml data_extraction_rules
