@@ -1,6 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <color name="black">#FF000000</color>
+    <color name="darkBlue">#3A4388</color>
+    <color name="darkBlueLight">#4A55A2</color>
+    <color name="darkBlueLightLight">#7895CB</color>
+    <color name="hover">#9197C6</color>
+    <color name="lightBlue">#A0BFE0</color>
+    <color name="lightBlueLight">#C5DFF8</color>
+    <color name="textBlue">#C5DFF8</color>
+    <color name="textDarkBlue">#03008C</color>
+    <color name="textGrey">#505050</color>
     <color name="white">#FFFFFFFF</color>
     <string name="app_name">SAE_S4_01_App_Mobile</string>
     <style name="Base.Theme.SAE_S4_01_App_Mobile" parent="Theme.Material3.DayNight.NoActionBar">

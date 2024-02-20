@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="180dp"
+    app:cardCornerRadius="25dp"
+    app:cardElevation="0dp"
+    app:cardBackgroundColor="@color/lightBlueLight"
+    android:layout_marginBottom="30dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="20dp"
+        android:background="@color/lightBlue"
+        app:cardCornerRadius="50dp"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/medicamentLabelTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Médicament concerné :"
+            android:textColor="@color/textGrey"
+            android:textSize="11dp"
+            android:layout_margin="3dp"
+        />
+
+        <TextView
+            android:id="@+id/medicamentTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/medicamentLabelTV"
+            android:layout_marginStart="3dp"
+            android:layout_marginTop="3dp"
+            android:layout_marginEnd="3dp"
+            android:layout_marginBottom="3dp"
+            android:text="GABAPENTINE RANBAXY 400 mg, gélule"
+            android:textColor="@color/textDarkBlue"
+            android:textSize="11dp" />
+
+        <TextView
+            android:id="@+id/raisonLabelTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Raison :"
+            android:layout_below="@+id/medicamentTV"
+            android:textColor="@color/textGrey"
+            android:textSize="11dp"
+            android:layout_margin="3dp"
+        />
+
+        <TextView
+            android:id="@+id/raisonTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_marginStart="3dp"
+            android:layout_marginTop="3dp"
+            android:layout_marginEnd="3dp"
+            android:layout_marginBottom="3dp"
+            android:layout_below="@+id/medicamentTV"
+            android:layout_toRightOf="@+id/raisonLabelTV"
+            android:text="Renouvellement impossible"
+            android:textColor="@color/textDarkBlue"
+            android:textSize="11dp"
+        />
+
+        <TextView
+            android:id="@+id/messageLabelTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Message :"
+            android:layout_below="@+id/raisonLabelTV"
+            android:textColor="@color/textGrey"
+            android:textSize="11dp"
+            android:layout_margin="3dp"
+        />
+
+        <TextView
+            android:id="@+id/messageTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/messageLabelTV"
+            android:layout_marginStart="3dp"
+            android:layout_marginTop="3dp"
+            android:layout_marginEnd="3dp"
+            android:layout_marginBottom="3dp"
+            android:text="Ma pharmacie m’a prévenu qu’il n’y a plus aucun stock de ce médicament dans toute la ville !"
+            android:textColor="@color/textDarkBlue"
+            android:textSize="11dp"
+        />
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            app:cardBackgroundColor="@color/darkBlueLightLight"
+            app:cardCornerRadius="10dp">
+
+
+            <TextView
+                android:id="@+id/dataTV"
+                android:layout_alignParentRight="true"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:text="18 février 2024"
+                android:textColor="@color/white"
+                android:background="@color/darkBlueLightLight"
+                android:padding="3dp"
+                android:gravity="center"
+                android:textSize="10dp"
+            />
+        </androidx.cardview.widget.CardView>
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

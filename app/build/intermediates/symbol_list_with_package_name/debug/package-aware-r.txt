@@ -1318,6 +1318,16 @@ attr windowNoTitle
 attr yearSelectedStyle
 attr yearStyle
 attr yearTodayStyle
+attr zxing_framing_rect_height
+attr zxing_framing_rect_width
+attr zxing_possible_result_points
+attr zxing_preview_scaling_strategy
+attr zxing_result_view
+attr zxing_scanner_layout
+attr zxing_use_texture_view
+attr zxing_viewfinder_laser
+attr zxing_viewfinder_laser_visibility
+attr zxing_viewfinder_mask
 bool abc_action_bar_embed_tabs
 bool abc_config_actionMenuItemAllCaps
 bool mtrl_btn_textappearance_all_caps
@@ -1367,6 +1377,9 @@ color cardview_dark_background
 color cardview_light_background
 color cardview_shadow_end_color
 color cardview_shadow_start_color
+color darkBlue
+color darkBlueLight
+color darkBlueLightLight
 color design_bottom_navigation_shadow_color
 color design_box_stroke_color
 color design_dark_default_color_background
@@ -1415,6 +1428,9 @@ color foreground_material_dark
 color foreground_material_light
 color highlighted_text_material_dark
 color highlighted_text_material_light
+color hover
+color lightBlue
+color lightBlueLight
 color m3_appbar_overlay_color
 color m3_assist_chip_icon_tint_color
 color m3_assist_chip_stroke_color
@@ -2068,6 +2084,7 @@ color mtrl_textinput_focused_box_stroke_color
 color mtrl_textinput_hovered_box_stroke_color
 color notification_action_color_filter
 color notification_icon_bg_color
+color notification_material_background_media_default_color
 color primary_dark_material_dark
 color primary_dark_material_light
 color primary_material_dark
@@ -2088,9 +2105,22 @@ color switch_thumb_material_dark
 color switch_thumb_material_light
 color switch_thumb_normal_material_dark
 color switch_thumb_normal_material_light
+color textBlue
+color textDarkBlue
+color textGrey
 color tooltip_background_dark
 color tooltip_background_light
 color white
+color zxing_custom_possible_result_points
+color zxing_custom_result_view
+color zxing_custom_viewfinder_laser
+color zxing_custom_viewfinder_mask
+color zxing_possible_result_points
+color zxing_result_view
+color zxing_status_text
+color zxing_transparent
+color zxing_viewfinder_laser
+color zxing_viewfinder_mask
 dimen abc_action_bar_content_inset_material
 dimen abc_action_bar_content_inset_with_nav
 dimen abc_action_bar_default_height_material
@@ -2879,6 +2909,10 @@ dimen notification_small_icon_size_as_large
 dimen notification_subtext_size
 dimen notification_top_pad
 dimen notification_top_pad_large_text
+dimen subtitle_corner_radius
+dimen subtitle_outline_width
+dimen subtitle_shadow_offset
+dimen subtitle_shadow_radius
 dimen tooltip_corner_radius
 dimen tooltip_horizontal_padding
 dimen tooltip_margin
@@ -2967,6 +3001,7 @@ drawable abc_textfield_search_default_mtrl_alpha
 drawable abc_textfield_search_material
 drawable abc_vector_test
 drawable adresse
+drawable alertes
 drawable anciennes
 drawable avd_hide_password
 drawable avd_show_password
@@ -2980,6 +3015,7 @@ drawable btn_radio_on_mtrl
 drawable btn_radio_on_to_off_mtrl_animation
 drawable cadenas
 drawable calendrier
+drawable cloche
 drawable colombes
 drawable colombes_logo
 drawable colombesblanc
@@ -3083,6 +3119,7 @@ drawable notification_template_icon_low_bg
 drawable notification_tile_bg
 drawable notify_panel_notification_icon_bg
 drawable nouveaucompte
+drawable ovale_shape
 drawable sedeconnecter1
 drawable signature
 drawable stats
@@ -3140,6 +3177,7 @@ id accessibility_custom_action_6
 id accessibility_custom_action_7
 id accessibility_custom_action_8
 id accessibility_custom_action_9
+id action0
 id actionDown
 id actionDownUp
 id actionUp
@@ -3168,6 +3206,8 @@ id aligned
 id all
 id allStates
 id always
+id ancienneAlertelistView
+id ancienneBtn
 id animateToEnd
 id animateToStart
 id antiClockwise
@@ -3179,6 +3219,7 @@ id auto
 id autoComplete
 id autoCompleteToEnd
 id autoCompleteToStart
+id barcode_scanner
 id barrier
 id baseline
 id beginOnFirstDraw
@@ -3194,6 +3235,7 @@ id bounceStart
 id buttonPanel
 id cache_measures
 id callMeasure
+id cancel_action
 id cancel_button
 id carryVelocity
 id center
@@ -3214,6 +3256,7 @@ id clip_horizontal
 id clip_vertical
 id clockwise
 id closest
+id codecipTV
 id collapseActionView
 id colombeDroiteImage
 id colombeGaucheImage
@@ -3234,6 +3277,7 @@ id currentState
 id custom
 id customPanel
 id cut
+id dataTV
 id date_picker_actions
 id decelerate
 id decelerateAndComplete
@@ -3273,6 +3317,7 @@ id elastic
 id embed
 id end
 id endToStart
+id end_padder
 id enterAlways
 id enterAlwaysCollapsed
 id exitUntilCollapsed
@@ -3309,6 +3354,7 @@ id header_title
 id hideable
 id home
 id homeAsUp
+id homeBtn
 id honorRequest
 id horizontal_only
 id icon
@@ -3337,6 +3383,7 @@ id line3
 id linear
 id listMode
 id list_item
+id logoIV
 id m3_side_sheet
 id marquee
 id masked
@@ -3363,7 +3410,12 @@ id material_timepicker_ok_button
 id material_timepicker_view
 id material_value_index
 id matrix
+id media_actions
+id medicamentLabelTV
+id medicamentTV
 id message
+id messageLabelTV
+id messageTV
 id middle
 id mini
 id month_grid
@@ -3404,6 +3456,7 @@ id navigation_bar_item_labels_group
 id navigation_bar_item_large_label_view
 id navigation_bar_item_small_label_view
 id navigation_header_container
+id nbNotifTV
 id never
 id neverCompleteToEnd
 id neverCompleteToStart
@@ -3412,6 +3465,7 @@ id noState
 id none
 id normal
 id north
+id notifBtn
 id notification_background
 id notification_main_column
 id notification_main_column_container
@@ -3453,6 +3507,8 @@ id pressed
 id progress_circular
 id progress_horizontal
 id radio
+id raisonLabelTV
+id raisonTV
 id ratio
 id rectangles
 id report_drawn
@@ -3483,6 +3539,7 @@ id search_mag_icon
 id search_plate
 id search_src_text
 id search_voice_btn
+id sedeconnecterBtn
 id select_dialog_listview
 id selected
 id selection_type
@@ -3520,6 +3577,7 @@ id startToEnd
 id startVertical
 id staticLayout
 id staticPostLayout
+id status_bar_latest_event_content
 id stop
 id stretch
 id submenuarrow
@@ -3546,6 +3604,7 @@ id textSpacerNoButtons
 id textSpacerNoTitle
 id textStart
 id textTop
+id textViewBarcode
 id text_input_end_icon
 id text_input_error_icon
 id text_input_start_icon
@@ -3576,6 +3635,7 @@ id uniform
 id unlabeled
 id up
 id useLogo
+id userBtn
 id versionText
 id vertical_only
 id view_offset_helper
@@ -3595,6 +3655,19 @@ id wrap_content
 id wrap_content_constrained
 id x_left
 id x_right
+id zxing_back_button
+id zxing_barcode_scanner
+id zxing_barcode_surface
+id zxing_camera_closed
+id zxing_camera_error
+id zxing_decode
+id zxing_decode_failed
+id zxing_decode_succeeded
+id zxing_possible_result_points
+id zxing_preview_failed
+id zxing_prewiew_size_ready
+id zxing_status_view
+id zxing_viewfinder_view
 integer abc_config_activityDefaultDur
 integer abc_config_activityShortDur
 integer app_bar_elevation_anim_duration
@@ -3709,7 +3782,10 @@ layout abc_search_dropdown_item_icons_2line
 layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
+layout activity_ancienne_alerte
 layout activity_main
+layout activity_medoc_code
+layout activity_scanner
 layout activity_splash_screen
 layout custom_dialog
 layout design_bottom_navigation_item
@@ -3727,6 +3803,7 @@ layout design_navigation_menu
 layout design_navigation_menu_item
 layout design_text_input_end_icon
 layout design_text_input_start_icon
+layout item_alerte
 layout m3_alert_dialog
 layout m3_alert_dialog_actions
 layout m3_alert_dialog_title
@@ -3780,17 +3857,29 @@ layout mtrl_search_bar
 layout mtrl_search_view
 layout notification_action
 layout notification_action_tombstone
+layout notification_media_action
+layout notification_media_cancel_action
+layout notification_template_big_media
+layout notification_template_big_media_custom
+layout notification_template_big_media_narrow
+layout notification_template_big_media_narrow_custom
 layout notification_template_custom_big
 layout notification_template_icon_group
+layout notification_template_lines_media
+layout notification_template_media
+layout notification_template_media_custom
 layout notification_template_part_chronometer
 layout notification_template_part_time
 layout select_dialog_item_material
 layout select_dialog_multichoice_material
 layout select_dialog_singlechoice_material
 layout support_simple_spinner_dropdown_item
+layout zxing_barcode_scanner
+layout zxing_capture
 mipmap ic_launcher
 mipmap ic_launcher_round
 plurals mtrl_badge_content_description
+raw zxing_beep
 string abc_action_bar_home_description
 string abc_action_bar_up_description
 string abc_action_menu_overflow_description
@@ -3820,6 +3909,7 @@ string abc_shareactionprovider_share_with_application
 string abc_toolbar_collapse_description
 string androidx_startup
 string app_name
+string app_version
 string appbar_scrolling_view_behavior
 string bottom_sheet_behavior
 string bottomsheet_action_collapse
@@ -3831,6 +3921,7 @@ string character_counter_content_description
 string character_counter_overflowed_content_description
 string character_counter_pattern
 string clear_text_end_icon_content_description
+string define_zxingandroidembedded
 string error_a11y_label
 string error_icon_content_description
 string exposed_dropdown_menu_content_description
@@ -3839,6 +3930,15 @@ string fab_transformation_sheet_behavior
 string hide_bottom_view_on_scroll_behavior
 string icon_content_description
 string item_view_role_description
+string library_zxingandroidembedded_author
+string library_zxingandroidembedded_authorWebsite
+string library_zxingandroidembedded_isOpenSource
+string library_zxingandroidembedded_libraryDescription
+string library_zxingandroidembedded_libraryName
+string library_zxingandroidembedded_libraryVersion
+string library_zxingandroidembedded_libraryWebsite
+string library_zxingandroidembedded_licenseId
+string library_zxingandroidembedded_repositoryLink
 string m3_exceed_max_badge_text_suffix
 string m3_ref_typeface_brand_medium
 string m3_ref_typeface_brand_regular
@@ -3951,6 +4051,10 @@ string searchview_navigation_content_description
 string side_sheet_accessibility_pane_title
 string side_sheet_behavior
 string status_bar_notification_info_overflow
+string zxing_app_name
+string zxing_button_ok
+string zxing_msg_camera_framework_bug
+string zxing_msg_default_status
 style AlertDialog_AppCompat
 style AlertDialog_AppCompat_Light
 style Animation_AppCompat_Dialog
@@ -4405,9 +4509,14 @@ style TextAppearance_AppCompat_Widget_Switch
 style TextAppearance_AppCompat_Widget_TextView_SpinnerItem
 style TextAppearance_Compat_Notification
 style TextAppearance_Compat_Notification_Info
+style TextAppearance_Compat_Notification_Info_Media
 style TextAppearance_Compat_Notification_Line2
+style TextAppearance_Compat_Notification_Line2_Media
+style TextAppearance_Compat_Notification_Media
 style TextAppearance_Compat_Notification_Time
+style TextAppearance_Compat_Notification_Time_Media
 style TextAppearance_Compat_Notification_Title
+style TextAppearance_Compat_Notification_Title_Media
 style TextAppearance_Design_CollapsingToolbar_Expanded
 style TextAppearance_Design_Counter
 style TextAppearance_Design_Counter_Overflow
@@ -5069,6 +5178,7 @@ style Widget_MaterialComponents_Toolbar_PrimarySurface
 style Widget_MaterialComponents_Toolbar_Surface
 style Widget_MaterialComponents_Tooltip
 style Widget_Support_CoordinatorLayout
+style zxing_CaptureTheme
 styleable ActionBar background backgroundSplit backgroundStacked contentInsetEnd contentInsetEndWithActions contentInsetLeft contentInsetRight contentInsetStart contentInsetStartWithNavigation customNavigationLayout displayOptions divider elevation height hideOnContentScroll homeAsUpIndicator homeLayout icon indeterminateProgressStyle itemPadding logo navigationMode popupTheme progressBarPadding progressBarStyle subtitle subtitleTextStyle title titleTextStyle
 styleable ActionBarLayout android_layout_gravity
 styleable ActionMenuItemView android_minWidth
@@ -5222,5 +5332,8 @@ styleable ViewPager2 android_orientation
 styleable ViewStubCompat android_id android_layout android_inflatedId
 styleable ViewTransition android_id SharedValue SharedValueId clearsTag duration ifTagNotSet ifTagSet motionInterpolator motionTarget onStateTransition pathMotionArc setsTag transitionDisable upDuration viewTransitionMode
 styleable include constraintSet
+styleable zxing_camera_preview zxing_framing_rect_height zxing_framing_rect_width zxing_preview_scaling_strategy zxing_use_texture_view
+styleable zxing_finder zxing_possible_result_points zxing_result_view zxing_viewfinder_laser zxing_viewfinder_laser_visibility zxing_viewfinder_mask
+styleable zxing_view zxing_scanner_layout
 xml backup_rules
 xml data_extraction_rules

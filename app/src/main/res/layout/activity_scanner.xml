@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.journeyapps.barcodescanner.DecoratedBarcodeView
+        android:id="@+id/barcode_scanner"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:foregroundGravity="center">
+
+        <TextView
+            android:id="@+id/textViewBarcode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top|center"
+            android:text="LE LECTEUR DE DATAMATRIX"
+            android:textColor="#FFFFFF"
+            android:layout_marginTop="25dp"
+            android:textSize="18sp"
+       />
+
+    </com.journeyapps.barcodescanner.DecoratedBarcodeView>
+
+</RelativeLayout>
