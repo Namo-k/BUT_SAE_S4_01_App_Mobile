@@ -3120,6 +3120,7 @@ drawable notification_tile_bg
 drawable notify_panel_notification_icon_bg
 drawable nouveaucompte
 drawable ovale_shape
+drawable round_login
 drawable sedeconnecter1
 drawable signature
 drawable stats
@@ -3132,9 +3133,12 @@ font patuaone_regular
 id ALT
 id BOTTOM_END
 id BOTTOM_START
+id Btext
+id Btext2
 id CTRL
 id FUNCTION
 id META
+id MdpOublie
 id NO_DEBUG
 id SHIFT
 id SHOW_ALL
@@ -3314,6 +3318,7 @@ id east
 id edge
 id edit_query
 id elastic
+id email
 id embed
 id end
 id endToStart
@@ -3383,6 +3388,7 @@ id line3
 id linear
 id listMode
 id list_item
+id loginBtn
 id logoIV
 id m3_side_sheet
 id marquee
@@ -3410,6 +3416,7 @@ id material_timepicker_ok_button
 id material_timepicker_view
 id material_value_index
 id matrix
+id mdp
 id media_actions
 id medicamentLabelTV
 id medicamentTV
@@ -3418,6 +3425,7 @@ id messageLabelTV
 id messageTV
 id middle
 id mini
+id mobile
 id month_grid
 id month_navigation_bar
 id month_navigation_fragment_toggle
@@ -3462,6 +3470,7 @@ id neverCompleteToEnd
 id neverCompleteToStart
 id noScroll
 id noState
+id nom
 id none
 id normal
 id north
@@ -3495,14 +3504,17 @@ id parent
 id parentPanel
 id parentRelative
 id parent_matrix
+id passwordET
 id password_toggle
 id path
 id pathRelative
 id peekHeight
 id percent
+id phone
 id pin
 id position
 id postLayout
+id prenom
 id pressed
 id progress_circular
 id progress_horizontal
@@ -3604,7 +3616,15 @@ id textSpacerNoButtons
 id textSpacerNoTitle
 id textStart
 id textTop
+id textView2
+id textView3
+id textView5
+id textView7
 id textViewBarcode
+id textViewemail
+id textViewmdp
+id textViewnom
+id textViewprenom
 id text_input_end_icon
 id text_input_error_icon
 id text_input_start_icon
@@ -3636,6 +3656,7 @@ id unlabeled
 id up
 id useLogo
 id userBtn
+id usernameET
 id versionText
 id vertical_only
 id view_offset_helper
@@ -3646,6 +3667,7 @@ id view_tree_saved_state_registry_owner
 id view_tree_view_model_store_owner
 id visible
 id visible_removing_fragment_view_tag
+id welcomeTextView
 id west
 id withText
 id with_icon
@@ -3783,8 +3805,10 @@ layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
 layout activity_ancienne_alerte
+layout activity_login
 layout activity_main
 layout activity_medoc_code
+layout activity_register
 layout activity_scanner
 layout activity_splash_screen
 layout custom_dialog

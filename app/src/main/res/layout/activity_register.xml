@@ -1,6 +1,242 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="#A0BFE0">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <!-- Début de la section Bienvenue -->
+    <TextView
+        android:id="@+id/welcomeTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="40dp"
+        android:text="Vous êtes nouveau ?"
+        android:textColor="#4A55A2"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_below="@id/welcomeTextView"
+        android:layout_marginStart="250dp"
+        android:layout_marginTop="-61dp"
+        android:layout_marginBottom="70dp"
+        android:src="@drawable/colombesblanc" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_below="@id/welcomeTextView"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="70dp"
+        android:layout_marginBottom="70dp"
+        android:src="@drawable/colombeslogo" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_below="@id/welcomeTextView"
+        android:layout_marginTop="68dp"
+        android:layout_marginEnd="300dp"
+        android:layout_marginBottom="70dp"
+        android:src="@drawable/colombesblanc2" />
+    <!-- Fin de la section Bienvenue -->
+
+    <!-- Début du formulaire d'inscription -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="250dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:text="Créer un nouveau compte"
+            android:textSize="15dp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp">
+
+            <ImageView
+                android:layout_width="21dp"
+                android:layout_height="39dp"
+                android:src="@drawable/adresse" />
+
+            <TextView
+                android:id="@+id/textViewprenom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" Votre prenom : "
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="5dp"
+                android:textSize="18dp" />
+
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/prenom"
+            android:background="@drawable/round_login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="50dp"
+            android:hint="Prénom"
+            android:inputType="text"
+            android:textStyle="italic" />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp">
+
+            <ImageView
+                android:layout_width="21dp"
+                android:layout_height="39dp"
+                android:src="@drawable/adresse" />
+
+            <TextView
+                android:id="@+id/textViewnom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" Votre nom  : "
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="5dp"
+                android:textSize="18dp" />
+
+        </LinearLayout>
+        <EditText
+            android:id="@+id/nom"
+            android:background="@drawable/round_login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="50dp"
+            android:hint="Nom"
+            android:inputType="text"
+            android:textStyle="italic" />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp">
+
+            <ImageView
+                android:layout_width="21dp"
+                android:layout_height="39dp"
+                android:src="@drawable/adresse" />
+
+            <TextView
+                android:id="@+id/textViewemail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" Votre email  : "
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="5dp"
+                android:textSize="18dp" />
+
+        </LinearLayout>
+        <EditText
+            android:id="@+id/email"
+            android:background="@drawable/round_login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="50dp"
+            android:textStyle="italic"
+            android:hint="Email" />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp">
+
+            <ImageView
+                android:layout_width="21dp"
+                android:layout_height="39dp"
+                android:src="@drawable/adresse" />
+
+            <TextView
+                android:id="@+id/textViewmdp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" Votre nom  : "
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="5dp"
+                android:textSize="18dp" />
+
+        </LinearLayout>
+        <EditText
+            android:id="@+id/mdp"
+            android:background="@drawable/round_login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="50dp"
+            android:textStyle="italic"
+            android:hint="Mot De passe" />
+
+        <EditText
+            android:id="@+id/phone"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/round_login"
+            android:hint="+33"
+            android:inputType="phone"
+            android:textStyle="italic" />
+
+        <EditText
+            android:id="@+id/mobile"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="50dp"
+            android:background="@drawable/round_login"
+            android:hint="Mobile"
+            android:inputType="text"
+            android:textStyle="italic" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="490dp"
+        android:gravity ="center">
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:gravity="bottom"
+        >
+
+    </LinearLayout>
+    <!-- Fin du formulaire d'inscription -->
+
+</RelativeLayout>
