@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#A0BFE0">
+
+
+    <TextView
+        android:id="@+id/welcomeTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="40dp"
+        android:text="Bienvenue !"
+        android:textColor="#4A55A2"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_below="@id/welcomeTextView"
+        android:layout_marginStart="250dp"
+        android:layout_marginTop="-61dp"
+        android:layout_marginBottom="70dp"
+        android:src="@drawable/colombesblanc" />
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_below="@id/welcomeTextView"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="70dp"
+        android:layout_marginBottom="70dp"
+        android:src="@drawable/colombeslogo" />
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_below="@id/welcomeTextView"
+        android:layout_marginTop="68dp"
+        android:layout_marginEnd="300dp"
+        android:layout_marginBottom="70dp"
+        android:src="@drawable/colombesblanc2" />
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/welcomeTextView"
+        android:layout_centerHorizontal="true"
+        android:orientation="vertical"
+        android:layout_marginTop="160dp"
+        android:layout_marginLeft="40dp">
+
+
+
+        <TextView
+            android:id="@+id/Btext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginLeft="75dp"
+            android:text="Vous avez déjà un compte ?"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+
+
+        <TextView
+            android:id="@+id/Btext2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginLeft="125dp"
+            android:layout_marginTop="10dp"
+            android:text="Connectez-vous !"
+            android:textColor="#4A55A2"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp">
+
+            <ImageView
+                android:layout_width="21dp"
+                android:layout_height="39dp"
+                android:src="@drawable/adresse" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Votre Adresse mail : "
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="5dp"
+                android:textSize="18dp" />
+
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/usernameET"
+            android:layout_width="322dp"
+            android:layout_height="41dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="50dp"
+            android:background="@drawable/round_login"
+            android:hint="Email"
+
+            android:inputType="textEmailAddress"
+            tools:visibility="visible" />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp">
+
+            <ImageView
+                android:layout_width="21dp"
+                android:layout_height="39dp"
+                android:src="@drawable/cadenas" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Votre mot de passe  : "
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="5dp"
+                android:textSize="18dp" />
+
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/passwordET"
+            android:layout_width="322dp"
+            android:layout_height="41dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="50dp"
+            android:background="@drawable/round_login"
+            android:hint="Mot De passe"
+            android:inputType="textPassword" />
+
+
+        <TextView
+            android:id="@+id/MdpOublie"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:text="MOT DE PASSE OUBLIÉ ?"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="0dp"
+            android:gravity="right"
+            android:textSize="15sp"
+
+            android:textStyle="bold"
+            />
+
+        <Button
+            android:id="@+id/loginBtn"
+            style="@style/Widget.MaterialComponents.Button.UnelevatedButton"
+            android:layout_width="350dp"
+            android:layout_height="75dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="#4A55A2"
+
+            android:text="CONNECTEZ-VOUS"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ou"
+            android:gravity="center"
+            android:paddingTop="5dp"
+            android:textSize="35dp"
+            />
+
+        <TextView
+
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="125dp"
+            android:layout_marginTop="10dp"
+            android:text="CRÉER UN COMPTE"
+            android:textColor="#4A55A2"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:layout_width="21dp"
+            android:layout_height="39dp"
+
+            />
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>
