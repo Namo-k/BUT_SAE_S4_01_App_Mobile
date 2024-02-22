@@ -3,12 +3,10 @@ package fr.iut.sae_s4_01_app_mobile;
 import android.animation.ObjectAnimator;
 import android.content.Intent;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 import android.view.animation.LinearInterpolator;
-import android.widget.Button;
 import android.widget.ImageView;
-import android.widget.Toast;
+import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.cardview.widget.CardView;
@@ -23,6 +21,8 @@ public class AccueilActivity extends AppCompatActivity {
         // Navbar code
         ImageView btnAncienne = (ImageView) findViewById(R.id.ancienneBtn);
         ImageView btnProfil = (ImageView) findViewById(R.id.userBtn);
+        TextView btnAlertes = (TextView) findViewById(R.id.btnAlertes);
+        TextView btnPrenom = (TextView) findViewById(R.id.prenom);
 
         btnAncienne.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -32,6 +32,20 @@ public class AccueilActivity extends AppCompatActivity {
             }
         });
         btnProfil.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(AccueilActivity.this, ProfilActivity.class);
+                startActivity(intent);
+            }
+        });
+        btnAlertes.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(AccueilActivity.this, ancienneAlerteActivity.class);
+                startActivity(intent);
+            }
+        });
+        btnPrenom.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(AccueilActivity.this, ProfilActivity.class);

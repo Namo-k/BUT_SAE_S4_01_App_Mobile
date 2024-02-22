@@ -137,6 +137,45 @@
 
         </LinearLayout>
 
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:layout_marginHorizontal="70dp"
+            android:layout_marginBottom="10dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="Vous avez 5 alertes au total"
+                android:textSize="16dp"
+                android:fontFamily="@font/inter_semibold"
+                android:textColor="@color/darkBlue"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginBottom="15dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="Merci infiniment pour votre contribution !"
+                android:textSize="15dp"
+                android:fontFamily="@font/inter_medium"
+                android:textColor="@color/textGrey"
+                />
+
+        </LinearLayout>
 
         <!--<TextView
             android:layout_width="match_parent"
@@ -164,7 +203,7 @@
     <!-- ========== NAVBAR =========== -->
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="77dp"
+        android:layout_height="68dp"
         android:layout_gravity="bottom"
         android:background="@color/darkBlueLight"
         android:gravity="center">
