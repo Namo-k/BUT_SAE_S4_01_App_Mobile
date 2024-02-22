@@ -58,10 +58,13 @@
             android:id="@+id/textView2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="10dp"
+            android:layout_marginLeft="20dp"
             android:layout_marginTop="15dp"
-            android:text="Créer un nouveau compte"
-            android:textSize="15dp" />
+            android:text="Complétez quelques informations !"
+            android:textColor="#4A55A2"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            />
 
         <LinearLayout
             android:layout_width="wrap_content"
@@ -73,13 +76,13 @@
             <ImageView
                 android:layout_width="21dp"
                 android:layout_height="39dp"
-                android:src="@drawable/adresse" />
+                android:src="@drawable/utilisateur" />
 
             <TextView
                 android:id="@+id/textViewprenom"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text=" Votre prenom : "
+                android:text=" Votre nom : "
                 android:layout_marginTop="5dp"
                 android:layout_marginLeft="5dp"
                 android:textSize="18dp" />
@@ -88,15 +91,17 @@
 
         <EditText
             android:id="@+id/prenom"
-            android:background="@drawable/round_login"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_width="300dp"
+            android:layout_height="41dp"
             android:layout_marginLeft="50dp"
-            android:layout_marginTop="30dp"
+            android:layout_marginTop="3dp"
             android:layout_marginRight="50dp"
-            android:hint="Prénom"
+            android:paddingLeft="20dp"
+            android:background="@drawable/round_login"
+            android:hint="Nom"
             android:inputType="text"
             android:textStyle="italic" />
+
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -107,29 +112,32 @@
             <ImageView
                 android:layout_width="21dp"
                 android:layout_height="39dp"
-                android:src="@drawable/adresse" />
+                android:src="@drawable/signature" />
 
             <TextView
                 android:id="@+id/textViewnom"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text=" Votre nom  : "
+                android:text=" Votre Prénom : "
                 android:layout_marginTop="5dp"
                 android:layout_marginLeft="5dp"
                 android:textSize="18dp" />
 
         </LinearLayout>
+
         <EditText
-            android:id="@+id/nom"
-            android:background="@drawable/round_login"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:id="@+id/prenom1"
+            android:layout_width="300dp"
+            android:layout_height="41dp"
             android:layout_marginLeft="50dp"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="3dp"
             android:layout_marginRight="50dp"
-            android:hint="Nom"
+            android:background="@drawable/round_login"
+            android:hint="Prenom"
+            android:paddingLeft="20dp"
             android:inputType="text"
             android:textStyle="italic" />
+
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -140,84 +148,92 @@
             <ImageView
                 android:layout_width="21dp"
                 android:layout_height="39dp"
-                android:src="@drawable/adresse" />
+                android:src="@drawable/calendrier" />
 
             <TextView
                 android:id="@+id/textViewemail"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text=" Votre email  : "
+                android:text=" Date de naissance :  : "
                 android:layout_marginTop="5dp"
                 android:layout_marginLeft="5dp"
                 android:textSize="18dp" />
 
         </LinearLayout>
-        <EditText
-            android:id="@+id/email"
-            android:background="@drawable/round_login"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:inputType="text"
-            android:layout_marginLeft="50dp"
-            android:layout_marginTop="20dp"
-            android:layout_marginRight="50dp"
-            android:textStyle="italic"
-            android:hint="Email" />
+
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
             android:layout_marginLeft="20dp"
-            android:layout_marginTop="10dp">
+            android:layout_marginTop="10dp"/>
 
-            <ImageView
-                android:layout_width="21dp"
-                android:layout_height="39dp"
-                android:src="@drawable/adresse" />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="40dp"
+            >
 
-            <TextView
-                android:id="@+id/textViewmdp"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text=" Votre nom  : "
-                android:layout_marginTop="5dp"
+            <EditText
+                android:id="@+id/Djour"
+                android:layout_width="100dp"
+                android:layout_height="35dp"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/round_login"
+                android:hint="JJ"
+                android:paddingLeft="35dp"
+                android:inputType="text"
+                android:textStyle="italic" />
+
+            <EditText
+                android:id="@+id/Dmois"
+                android:layout_width="100dp"
+                android:layout_height="35dp"
+                android:background="@drawable/round_login"
+                android:hint="MM"
+                android:paddingLeft="35dp"
+                android:inputType="text"
+                android:textStyle="italic" />
+
+            <EditText
+                android:id="@+id/mobile"
+                android:layout_width="100dp"
+                android:layout_height="35dp"
                 android:layout_marginLeft="5dp"
-                android:textSize="18dp" />
+                android:background="@drawable/round_login"
+                android:hint="AAAA"
+                android:paddingLeft="25dp"
+                android:inputType="text"
+                android:textStyle="italic" />
 
         </LinearLayout>
-        <EditText
-            android:id="@+id/mdp"
-            android:background="@drawable/round_login"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:inputType="text"
-            android:layout_marginLeft="50dp"
-            android:layout_marginTop="20dp"
-            android:layout_marginRight="50dp"
-            android:textStyle="italic"
-            android:hint="Mot De passe" />
 
-        <EditText
-            android:id="@+id/phone"
-            android:layout_width="100dp"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="50dp"
-            android:layout_marginRight="10dp"
-            android:background="@drawable/round_login"
-            android:hint="+33"
-            android:inputType="phone"
-            android:textStyle="italic" />
+        <Button
+            android:id="@+id/loginBtn"
+            style="@style/Widget.MaterialComponents.Button.UnelevatedButton"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:backgroundTint="#4A55A2"
 
-        <EditText
-            android:id="@+id/mobile"
-            android:layout_width="100dp"
+            android:text="Passer à la suite..."
+            android:textSize="13dp" />
+
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="10dp"
-            android:layout_marginRight="50dp"
-            android:background="@drawable/round_login"
-            android:hint="Mobile"
-            android:inputType="text"
-            android:textStyle="italic" />
+            android:layout_marginTop="15dp"
+            android:text="Attention, vos informations sont incomplètes !"
+            android:textColor="#A90000"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            />
+
 
     </LinearLayout>
 
@@ -237,6 +253,7 @@
         >
 
     </LinearLayout>
-    <!-- Fin du formulaire d'inscription -->
+
+
 
 </RelativeLayout>

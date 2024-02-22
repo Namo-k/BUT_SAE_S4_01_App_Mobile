@@ -80,6 +80,15 @@
             </intent-filter>
         </activity>
         <activity
+            android:name="fr.iut.sae_s4_01_app_mobile.RegisterActivity2"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
             android:name="fr.iut.sae_s4_01_app_mobile.ScannerActivity"
             android:exported="true" >
 

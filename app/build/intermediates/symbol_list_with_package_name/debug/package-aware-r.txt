@@ -3134,8 +3134,9 @@ id ALT
 id BOTTOM_END
 id BOTTOM_START
 id Btext
-id Btext2
 id CTRL
+id Djour
+id Dmois
 id FUNCTION
 id META
 id MdpOublie
@@ -3318,7 +3319,6 @@ id east
 id edge
 id edit_query
 id elastic
-id email
 id embed
 id end
 id endToStart
@@ -3416,7 +3416,6 @@ id material_timepicker_ok_button
 id material_timepicker_view
 id material_value_index
 id matrix
-id mdp
 id media_actions
 id medicamentLabelTV
 id medicamentTV
@@ -3510,11 +3509,11 @@ id path
 id pathRelative
 id peekHeight
 id percent
-id phone
 id pin
 id position
 id postLayout
 id prenom
+id prenom1
 id pressed
 id progress_circular
 id progress_horizontal
@@ -3618,11 +3617,12 @@ id textStart
 id textTop
 id textView2
 id textView3
+id textView4
 id textView5
 id textView7
 id textViewBarcode
 id textViewemail
-id textViewmdp
+id textViewincomp
 id textViewnom
 id textViewprenom
 id text_input_end_icon
@@ -3809,6 +3809,7 @@ layout activity_login
 layout activity_main
 layout activity_medoc_code
 layout activity_register
+layout activity_register2
 layout activity_scanner
 layout activity_splash_screen
 layout custom_dialog
