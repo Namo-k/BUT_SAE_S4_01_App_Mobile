@@ -49,9 +49,12 @@
 
     <!-- Début du formulaire d'inscription -->
     <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_marginTop="250dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/welcomeTextView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="177dp"
         android:orientation="vertical">
 
         <TextView
@@ -59,9 +62,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="20dp"
-            android:layout_marginTop="15dp"
             android:text="Complétez quelques informations !"
-            android:textColor="#4A55A2"
+            android:textColor="@color/white"
             android:textSize="20dp"
             android:textStyle="bold"
             />
@@ -91,16 +93,17 @@
 
         <EditText
             android:id="@+id/prenom"
-            android:layout_width="300dp"
+            android:layout_width="322dp"
             android:layout_height="41dp"
-            android:layout_marginLeft="50dp"
-            android:layout_marginTop="3dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="5dp"
             android:layout_marginRight="50dp"
-            android:paddingLeft="20dp"
             android:background="@drawable/round_login"
             android:hint="Nom"
             android:inputType="text"
-            android:textStyle="italic" />
+            android:paddingLeft="20dp"
+            android:textStyle="italic"
+            tools:ignore="TouchTargetSizeCheck" />
 
         <LinearLayout
             android:layout_width="wrap_content"
@@ -127,16 +130,16 @@
 
         <EditText
             android:id="@+id/prenom1"
-            android:layout_width="300dp"
+            android:layout_width="322dp"
             android:layout_height="41dp"
-            android:layout_marginLeft="50dp"
+            android:layout_marginLeft="20dp"
             android:layout_marginTop="3dp"
-            android:layout_marginRight="50dp"
             android:background="@drawable/round_login"
             android:hint="Prenom"
-            android:paddingLeft="20dp"
             android:inputType="text"
-            android:textStyle="italic" />
+            android:paddingLeft="20dp"
+            android:textStyle="italic"
+            tools:ignore="TouchTargetSizeCheck" />
 
         <LinearLayout
             android:layout_width="wrap_content"
@@ -172,67 +175,90 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            android:layout_marginLeft="40dp"
+            android:layout_marginLeft="20dp"
             >
 
             <EditText
                 android:id="@+id/Djour"
-                android:layout_width="100dp"
+                android:layout_width="105dp"
                 android:layout_height="35dp"
                 android:layout_marginRight="5dp"
                 android:background="@drawable/round_login"
                 android:hint="JJ"
                 android:paddingLeft="35dp"
-                android:inputType="text"
-                android:textStyle="italic" />
+                android:textStyle="italic"
+                android:inputType="number"
+                android:maxLength="2"
+
+                tools:ignore="TouchTargetSizeCheck" />
 
             <EditText
                 android:id="@+id/Dmois"
-                android:layout_width="100dp"
+                android:layout_width="105dp"
                 android:layout_height="35dp"
                 android:background="@drawable/round_login"
                 android:hint="MM"
+                android:inputType="number"
                 android:paddingLeft="35dp"
-                android:inputType="text"
-                android:textStyle="italic" />
+                android:textStyle="italic"
+                android:maxLength="2"
+                tools:ignore="TouchTargetSizeCheck" />
 
             <EditText
-                android:id="@+id/mobile"
-                android:layout_width="100dp"
+                android:id="@+id/annee"
+                android:layout_width="105dp"
                 android:layout_height="35dp"
                 android:layout_marginLeft="5dp"
                 android:background="@drawable/round_login"
                 android:hint="AAAA"
+                android:inputType="number"
+                android:maxLength="4"
                 android:paddingLeft="25dp"
-                android:inputType="text"
-                android:textStyle="italic" />
+                android:textStyle="italic"
+                tools:ignore="TouchTargetSizeCheck" />
 
         </LinearLayout>
+
+        <!--<TextView
+            android:id="@+id/erreurDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:text="Saisisez des sates conformes !"
+            android:textColor="#A90000"
+            android:textSize="16dp"
+            android:layout_gravity="center"
+            android:textStyle="bold"
+            android:visibility="gone"
+            />-->
 
         <Button
             android:id="@+id/loginBtn"
             style="@style/Widget.MaterialComponents.Button.UnelevatedButton"
             android:layout_width="200dp"
-            android:layout_height="50dp"
+            android:layout_height="60dp"
             android:layout_gravity="center"
             android:layout_marginTop="30dp"
             android:backgroundTint="#4A55A2"
-
             android:text="Passer à la suite..."
-            android:textSize="13dp" />
+            android:textSize="13dp"
+            tools:ignore="TextSizeCheck" />
 
 
-        <TextView
+        <!--<TextView
             android:id="@+id/textView4"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="10dp"
             android:layout_marginTop="15dp"
-            android:text="Attention, vos informations sont incomplètes !"
+            android:text="Vos informations sont incomplètes !"
             android:textColor="#A90000"
-            android:textSize="18dp"
+            android:textSize="16dp"
+            android:layout_gravity="center"
             android:textStyle="bold"
-            />
+            android:visibility="invisible"
+            />-->
 
 
     </LinearLayout>

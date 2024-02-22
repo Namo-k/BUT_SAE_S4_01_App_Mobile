@@ -100,7 +100,7 @@
             android:layout_width="322dp"
             android:layout_height="41dp"
             android:layout_marginLeft="20dp"
-            android:layout_marginTop="10dp"
+            android:layout_marginTop="5dp"
             android:layout_marginRight="50dp"
             android:background="@drawable/round_login"
             android:hint="Email"
@@ -137,7 +137,7 @@
             android:layout_width="322dp"
             android:layout_height="41dp"
             android:layout_marginLeft="20dp"
-            android:layout_marginTop="10dp"
+            android:layout_marginTop="5dp"
             android:layout_marginRight="50dp"
             android:background="@drawable/round_login"
             android:hint="Mot De passe"
@@ -167,7 +167,6 @@
             android:layout_gravity="center"
             android:layout_marginTop="20dp"
             android:backgroundTint="#4A55A2"
-
             android:text="CONNECTEZ-VOUS !"
             android:textSize="15dp" />
 

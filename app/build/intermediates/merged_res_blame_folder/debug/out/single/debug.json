@@ -1,214 +1,254 @@
 [
     {
-        "merged": "/Users/oumi/.gradle/daemon/8.2/fr.iut.sae_s4_01_app_mobile.app-merged_res-33:/layout_activity_scanner.xml.flat",
-        "source": "/Users/oumi/.gradle/daemon/8.2/fr.iut.sae_s4_01_app_mobile.app-main-35:/layout/activity_scanner.xml"
+        "merged": "/Users/isra/.gradle/daemon/8.2/fr.iut.sae_s4_01_app_mobile.app-merged_res-33:/mipmap-xhdpi_ic_launcher.webp.flat",
+        "source": "/Users/isra/.gradle/daemon/8.2/fr.iut.sae_s4_01_app_mobile.app-main-35:/mipmap-xhdpi/ic_launcher.webp"
     },
     {
-        "merged": "/Users/oumi/.gradle/daemon/8.2/fr.iut.sae_s4_01_app_mobile.app-merged_res-33:/drawable_ovale_shape.xml.flat",
-        "source": "/Users/oumi/.gradle/daemon/8.2/fr.iut.sae_s4_01_app_mobile.app-main-35:/drawable/ovale_shape.xml"
+        "merged": "/Users/isra/.gradle/daemon/8.2/fr.iut.sae_s4_01_app_mobile.app-merged_res-33:/drawable_deconnexion.png.flat",
+        "source": "/Users/isra/.gradle/daemon/8.2/fr.iut.sae_s4_01_app_mobile.app-main-35:/drawable/deconnexion.png"
     },
     {
-        "merged": "/Users/oumi/.gradle/daemon/8.2/fr.iut.sae_s4_01_app_mobile.app-merged_res-33:/font_patuaone_regular.ttf.flat",
-        "source": "/Users/oumi/.gradle/daemon/8.2/fr.iut.sae_s4_01_app_mobile.app-main-35:/font/patuaone_regular.ttf"
+        "merged": "/Users/isra/.gradle/daemon/8.2/fr.iut.sae_s4_01_app_mobile.app-merged_res-33:/mipmap-mdpi_ic_launcher_round.webp.flat",
+        "source": "/Users/isra/.gradle/daemon/8.2/fr.iut.sae_s4_01_app_mobile.app-main-35:/mipmap-mdpi/ic_launcher_round.webp"
     },
     {
-        "merged": "/Users/oumi/.gradle/daemon/8.2/fr.iut.sae_s4_01_app_mobile.app-merged_res-33:/mipmap-xhdpi_ic_launcher_round.webp.flat",
-        "source": "/Users/oumi/.gradle/daemon/8.2/fr.iut.sae_s4_01_app_mobile.app-main-35:/mipmap-xhdpi/ic_launcher_round.webp"
+        "merged": "/Users/isra/.gradle/daemon/8.2/fr.iut.sae_s4_01_app_mobile.app-merged_res-33:/drawable_anciennes.png.flat",
+        "source": "/Users/isra/.gradle/daemon/8.2/fr.iut.sae_s4_01_app_mobile.app-main-35:/drawable/anciennes.png"
     },
     {
-        "merged": "/Users/oumi/.gradle/daemon/8.2/fr.iut.sae_s4_01_app_mobile.app-merged_res-33:/drawable_connexion.png.flat",
-        "source": "/Users/oumi/.gradle/daemon/8.2/fr.iut.sae_s4_01_app_mobile.app-main-35:/drawable/connexion.png"
+        "merged": "/Users/isra/.gradle/daemon/8.2/fr.iut.sae_s4_01_app_mobile.app-merged_res-33:/font_inter_bold.ttf.flat",
+        "source": "/Users/isra/.gradle/daemon/8.2/fr.iut.sae_s4_01_app_mobile.app-main-35:/font/inter_bold.ttf"
     },
     {
-        "merged": "/Users/oumi/.gradle/daemon/8.2/fr.iut.sae_s4_01_app_mobile.app-merged_res-33:/drawable_ecrire1.png.flat",
-        "source": "/Users/oumi/.gradle/daemon/8.2/fr.iut.sae_s4_01_app_mobile.app-main-35:/drawable/ecrire1.png"
+        "merged": "/Users/isra/.gradle/daemon/8.2/fr.iut.sae_s4_01_app_mobile.app-merged_res-33:/drawable_ic_launcher_foreground.xml.flat",
+        "source": "/Users/isra/.gradle/daemon/8.2/fr.iut.sae_s4_01_app_mobile.app-main-35:/drawable/ic_launcher_foreground.xml"
     },
     {
-        "merged": "/Users/oumi/.gradle/daemon/8.2/fr.iut.sae_s4_01_app_mobile.app-merged_res-33:/drawable_round_login.xml.flat",
-        "source": "/Users/oumi/.gradle/daemon/8.2/fr.iut.sae_s4_01_app_mobile.app-main-35:/drawable/round_login.xml"
+        "merged": "/Users/isra/.gradle/daemon/8.2/fr.iut.sae_s4_01_app_mobile.app-merged_res-33:/layout_activity_scanner.xml.flat",
+        "source": "/Users/isra/.gradle/daemon/8.2/fr.iut.sae_s4_01_app_mobile.app-main-35:/layout/activity_scanner.xml"
     },
     {
-        "merged": "/Users/oumi/.gradle/daemon/8.2/fr.iut.sae_s4_01_app_mobile.app-merged_res-33:/drawable_nouveaucompte.png.flat",
-        "source": "/Users/oumi/.gradle/daemon/8.2/fr.iut.sae_s4_01_app_mobile.app-main-35:/drawable/nouveaucompte.png"
+        "merged": "/Users/isra/.gradle/daemon/8.2/fr.iut.sae_s4_01_app_mobile.app-merged_res-33:/drawable_colombesblanc.png.flat",
+        "source": "/Users/isra/.gradle/daemon/8.2/fr.iut.sae_s4_01_app_mobile.app-main-35:/drawable/colombesblanc.png"
     },
     {
-        "merged": "/Users/oumi/.gradle/daemon/8.2/fr.iut.sae_s4_01_app_mobile.app-merged_res-33:/drawable_megaphone.png.flat",
-        "source": "/Users/oumi/.gradle/daemon/8.2/fr.iut.sae_s4_01_app_mobile.app-main-35:/drawable/megaphone.png"
+        "merged": "/Users/isra/.gradle/daemon/8.2/fr.iut.sae_s4_01_app_mobile.app-merged_res-33:/font_patuaone_regular.ttf.flat",
+        "source": "/Users/isra/.gradle/daemon/8.2/fr.iut.sae_s4_01_app_mobile.app-main-35:/font/patuaone_regular.ttf"
     },
     {
-        "merged": "/Users/oumi/.gradle/daemon/8.2/fr.iut.sae_s4_01_app_mobile.app-merged_res-33:/layout_activity_main.xml.flat",
-        "source": "/Users/oumi/.gradle/daemon/8.2/fr.iut.sae_s4_01_app_mobile.app-main-35:/layout/activity_main.xml"
+        "merged": "/Users/isra/.gradle/daemon/8.2/fr.iut.sae_s4_01_app_mobile.app-merged_res-33:/drawable_utilisateur.png.flat",
+        "source": "/Users/isra/.gradle/daemon/8.2/fr.iut.sae_s4_01_app_mobile.app-main-35:/drawable/utilisateur.png"
     },
     {
-        "merged": "/Users/oumi/.gradle/daemon/8.2/fr.iut.sae_s4_01_app_mobile.app-merged_res-33:/drawable_anciennes.png.flat",
-        "source": "/Users/oumi/.gradle/daemon/8.2/fr.iut.sae_s4_01_app_mobile.app-main-35:/drawable/anciennes.png"
+        "merged": "/Users/isra/.gradle/daemon/8.2/fr.iut.sae_s4_01_app_mobile.app-merged_res-33:/mipmap-mdpi_ic_launcher.webp.flat",
+        "source": "/Users/isra/.gradle/daemon/8.2/fr.iut.sae_s4_01_app_mobile.app-main-35:/mipmap-mdpi/ic_launcher.webp"
     },
     {
-        "merged": "/Users/oumi/.gradle/daemon/8.2/fr.iut.sae_s4_01_app_mobile.app-merged_res-33:/drawable_colombesblanc.png.flat",
-        "source": "/Users/oumi/.gradle/daemon/8.2/fr.iut.sae_s4_01_app_mobile.app-main-35:/drawable/colombesblanc.png"
+        "merged": "/Users/isra/.gradle/daemon/8.2/fr.iut.sae_s4_01_app_mobile.app-merged_res-33:/drawable_nouveaucompte.png.flat",
+        "source": "/Users/isra/.gradle/daemon/8.2/fr.iut.sae_s4_01_app_mobile.app-main-35:/drawable/nouveaucompte.png"
     },
     {
-        "merged": "/Users/oumi/.gradle/daemon/8.2/fr.iut.sae_s4_01_app_mobile.app-merged_res-33:/drawable_colombes.png.flat",
-        "source": "/Users/oumi/.gradle/daemon/8.2/fr.iut.sae_s4_01_app_mobile.app-main-35:/drawable/colombes.png"
+        "merged": "/Users/isra/.gradle/daemon/8.2/fr.iut.sae_s4_01_app_mobile.app-merged_res-33:/mipmap-xxxhdpi_ic_launcher.webp.flat",
+        "source": "/Users/isra/.gradle/daemon/8.2/fr.iut.sae_s4_01_app_mobile.app-main-35:/mipmap-xxxhdpi/ic_launcher.webp"
     },
     {
-        "merged": "/Users/oumi/.gradle/daemon/8.2/fr.iut.sae_s4_01_app_mobile.app-merged_res-33:/drawable_stats.png.flat",
-        "source": "/Users/oumi/.gradle/daemon/8.2/fr.iut.sae_s4_01_app_mobile.app-main-35:/drawable/stats.png"
+        "merged": "/Users/isra/.gradle/daemon/8.2/fr.iut.sae_s4_01_app_mobile.app-merged_res-33:/layout_activity_login.xml.flat",
+        "source": "/Users/isra/.gradle/daemon/8.2/fr.iut.sae_s4_01_app_mobile.app-main-35:/layout/activity_login.xml"
     },
     {
-        "merged": "/Users/oumi/.gradle/daemon/8.2/fr.iut.sae_s4_01_app_mobile.app-merged_res-33:/mipmap-xhdpi_ic_launcher.webp.flat",
-        "source": "/Users/oumi/.gradle/daemon/8.2/fr.iut.sae_s4_01_app_mobile.app-main-35:/mipmap-xhdpi/ic_launcher.webp"
-    },
-    {
-        "merged": "/Users/oumi/.gradle/daemon/8.2/fr.iut.sae_s4_01_app_mobile.app-merged_res-33:/drawable_signature.png.flat",
-        "source": "/Users/oumi/.gradle/daemon/8.2/fr.iut.sae_s4_01_app_mobile.app-main-35:/drawable/signature.png"
-    },
-    {
-        "merged": "/Users/oumi/.gradle/daemon/8.2/fr.iut.sae_s4_01_app_mobile.app-merged_res-33:/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
-        "source": "/Users/oumi/.gradle/daemon/8.2/fr.iut.sae_s4_01_app_mobile.app-main-35:/mipmap-anydpi-v26/ic_launcher_round.xml"
-    },
-    {
-        "merged": "/Users/oumi/.gradle/daemon/8.2/fr.iut.sae_s4_01_app_mobile.app-merged_res-33:/mipmap-hdpi_ic_launcher.webp.flat",
-        "source": "/Users/oumi/.gradle/daemon/8.2/fr.iut.sae_s4_01_app_mobile.app-main-35:/mipmap-hdpi/ic_launcher.webp"
+        "merged": "/Users/isra/.gradle/daemon/8.2/fr.iut.sae_s4_01_app_mobile.app-merged_res-33:/layout_activity_accueil.xml.flat",
+        "source": "/Users/isra/.gradle/daemon/8.2/fr.iut.sae_s4_01_app_mobile.app-main-35:/layout/activity_accueil.xml"
     },
     {
         "merged": "fr.iut.sae_s4_01_app_mobile.app-merged_res-33:/layout_activity_register2.xml.flat",
         "source": "fr.iut.sae_s4_01_app_mobile.app-main-35:/layout/activity_register2.xml"
     },
     {
-        "merged": "/Users/oumi/.gradle/daemon/8.2/fr.iut.sae_s4_01_app_mobile.app-merged_res-33:/layout_activity_medoc_code.xml.flat",
-        "source": "/Users/oumi/.gradle/daemon/8.2/fr.iut.sae_s4_01_app_mobile.app-main-35:/layout/activity_medoc_code.xml"
+        "merged": "/Users/isra/.gradle/daemon/8.2/fr.iut.sae_s4_01_app_mobile.app-merged_res-33:/drawable_signature.png.flat",
+        "source": "/Users/isra/.gradle/daemon/8.2/fr.iut.sae_s4_01_app_mobile.app-main-35:/drawable/signature.png"
     },
     {
-        "merged": "/Users/oumi/.gradle/daemon/8.2/fr.iut.sae_s4_01_app_mobile.app-merged_res-33:/mipmap-anydpi-v26_ic_launcher.xml.flat",
-        "source": "/Users/oumi/.gradle/daemon/8.2/fr.iut.sae_s4_01_app_mobile.app-main-35:/mipmap-anydpi-v26/ic_launcher.xml"
+        "merged": "/Users/isra/.gradle/daemon/8.2/fr.iut.sae_s4_01_app_mobile.app-merged_res-33:/mipmap-xxhdpi_ic_launcher.webp.flat",
+        "source": "/Users/isra/.gradle/daemon/8.2/fr.iut.sae_s4_01_app_mobile.app-main-35:/mipmap-xxhdpi/ic_launcher.webp"
     },
     {
-        "merged": "/Users/oumi/.gradle/daemon/8.2/fr.iut.sae_s4_01_app_mobile.app-merged_res-33:/drawable_etoile.png.flat",
-        "source": "/Users/oumi/.gradle/daemon/8.2/fr.iut.sae_s4_01_app_mobile.app-main-35:/drawable/etoile.png"
+        "merged": "/Users/isra/.gradle/daemon/8.2/fr.iut.sae_s4_01_app_mobile.app-merged_res-33:/font_inter_light.ttf.flat",
+        "source": "/Users/isra/.gradle/daemon/8.2/fr.iut.sae_s4_01_app_mobile.app-main-35:/font/inter_light.ttf"
     },
     {
-        "merged": "/Users/oumi/.gradle/daemon/8.2/fr.iut.sae_s4_01_app_mobile.app-merged_res-33:/drawable_utilisateur.png.flat",
-        "source": "/Users/oumi/.gradle/daemon/8.2/fr.iut.sae_s4_01_app_mobile.app-main-35:/drawable/utilisateur.png"
+        "merged": "/Users/isra/.gradle/daemon/8.2/fr.iut.sae_s4_01_app_mobile.app-merged_res-33:/mipmap-xxhdpi_ic_launcher_round.webp.flat",
+        "source": "/Users/isra/.gradle/daemon/8.2/fr.iut.sae_s4_01_app_mobile.app-main-35:/mipmap-xxhdpi/ic_launcher_round.webp"
     },
     {
-        "merged": "/Users/oumi/.gradle/daemon/8.2/fr.iut.sae_s4_01_app_mobile.app-merged_res-33:/xml_backup_rules.xml.flat",
-        "source": "/Users/oumi/.gradle/daemon/8.2/fr.iut.sae_s4_01_app_mobile.app-main-35:/xml/backup_rules.xml"
+        "merged": "/Users/isra/.gradle/daemon/8.2/fr.iut.sae_s4_01_app_mobile.app-merged_res-33:/drawable_scan_logo.png.flat",
+        "source": "/Users/isra/.gradle/daemon/8.2/fr.iut.sae_s4_01_app_mobile.app-main-35:/drawable/scan_logo.png"
     },
     {
-        "merged": "/Users/oumi/.gradle/daemon/8.2/fr.iut.sae_s4_01_app_mobile.app-merged_res-33:/mipmap-mdpi_ic_launcher_round.webp.flat",
-        "source": "/Users/oumi/.gradle/daemon/8.2/fr.iut.sae_s4_01_app_mobile.app-main-35:/mipmap-mdpi/ic_launcher_round.webp"
+        "merged": "/Users/isra/.gradle/daemon/8.2/fr.iut.sae_s4_01_app_mobile.app-merged_res-33:/mipmap-xxxhdpi_ic_launcher_round.webp.flat",
+        "source": "/Users/isra/.gradle/daemon/8.2/fr.iut.sae_s4_01_app_mobile.app-main-35:/mipmap-xxxhdpi/ic_launcher_round.webp"
     },
     {
-        "merged": "/Users/oumi/.gradle/daemon/8.2/fr.iut.sae_s4_01_app_mobile.app-merged_res-33:/drawable_user.png.flat",
-        "source": "/Users/oumi/.gradle/daemon/8.2/fr.iut.sae_s4_01_app_mobile.app-main-35:/drawable/user.png"
+        "merged": "/Users/isra/.gradle/daemon/8.2/fr.iut.sae_s4_01_app_mobile.app-merged_res-33:/xml_data_extraction_rules.xml.flat",
+        "source": "/Users/isra/.gradle/daemon/8.2/fr.iut.sae_s4_01_app_mobile.app-main-35:/xml/data_extraction_rules.xml"
     },
     {
-        "merged": "/Users/oumi/.gradle/daemon/8.2/fr.iut.sae_s4_01_app_mobile.app-merged_res-33:/xml_data_extraction_rules.xml.flat",
-        "source": "/Users/oumi/.gradle/daemon/8.2/fr.iut.sae_s4_01_app_mobile.app-main-35:/xml/data_extraction_rules.xml"
+        "merged": "/Users/isra/.gradle/daemon/8.2/fr.iut.sae_s4_01_app_mobile.app-merged_res-33:/font_inter.ttf.flat",
+        "source": "/Users/isra/.gradle/daemon/8.2/fr.iut.sae_s4_01_app_mobile.app-main-35:/font/inter.ttf"
     },
     {
-        "merged": "/Users/oumi/.gradle/daemon/8.2/fr.iut.sae_s4_01_app_mobile.app-merged_res-33:/drawable_ecrire.png.flat",
-        "source": "/Users/oumi/.gradle/daemon/8.2/fr.iut.sae_s4_01_app_mobile.app-main-35:/drawable/ecrire.png"
+        "merged": "/Users/isra/.gradle/daemon/8.2/fr.iut.sae_s4_01_app_mobile.app-merged_res-33:/drawable_connexion.png.flat",
+        "source": "/Users/isra/.gradle/daemon/8.2/fr.iut.sae_s4_01_app_mobile.app-main-35:/drawable/connexion.png"
     },
     {
-        "merged": "/Users/oumi/.gradle/daemon/8.2/fr.iut.sae_s4_01_app_mobile.app-merged_res-33:/drawable_home.png.flat",
-        "source": "/Users/oumi/.gradle/daemon/8.2/fr.iut.sae_s4_01_app_mobile.app-main-35:/drawable/home.png"
+        "merged": "/Users/isra/.gradle/daemon/8.2/fr.iut.sae_s4_01_app_mobile.app-merged_res-33:/layout_activity_register2.xml.flat",
+        "source": "/Users/isra/.gradle/daemon/8.2/fr.iut.sae_s4_01_app_mobile.app-main-35:/layout/activity_register2.xml"
     },
     {
-        "merged": "/Users/oumi/.gradle/daemon/8.2/fr.iut.sae_s4_01_app_mobile.app-merged_res-33:/drawable_adresse.png.flat",
-        "source": "/Users/oumi/.gradle/daemon/8.2/fr.iut.sae_s4_01_app_mobile.app-main-35:/drawable/adresse.png"
+        "merged": "/Users/isra/.gradle/daemon/8.2/fr.iut.sae_s4_01_app_mobile.app-merged_res-33:/xml_backup_rules.xml.flat",
+        "source": "/Users/isra/.gradle/daemon/8.2/fr.iut.sae_s4_01_app_mobile.app-main-35:/xml/backup_rules.xml"
     },
     {
-        "merged": "/Users/oumi/.gradle/daemon/8.2/fr.iut.sae_s4_01_app_mobile.app-merged_res-33:/layout_activity_register.xml.flat",
-        "source": "/Users/oumi/.gradle/daemon/8.2/fr.iut.sae_s4_01_app_mobile.app-main-35:/layout/activity_register.xml"
+        "merged": "/Users/isra/.gradle/daemon/8.2/fr.iut.sae_s4_01_app_mobile.app-merged_res-33:/mipmap-hdpi_ic_launcher.webp.flat",
+        "source": "/Users/isra/.gradle/daemon/8.2/fr.iut.sae_s4_01_app_mobile.app-main-35:/mipmap-hdpi/ic_launcher.webp"
     },
     {
-        "merged": "/Users/oumi/.gradle/daemon/8.2/fr.iut.sae_s4_01_app_mobile.app-merged_res-33:/drawable_cloche.png.flat",
-        "source": "/Users/oumi/.gradle/daemon/8.2/fr.iut.sae_s4_01_app_mobile.app-main-35:/drawable/cloche.png"
+        "merged": "/Users/isra/.gradle/daemon/8.2/fr.iut.sae_s4_01_app_mobile.app-merged_res-33:/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "/Users/isra/.gradle/daemon/8.2/fr.iut.sae_s4_01_app_mobile.app-main-35:/mipmap-anydpi-v26/ic_launcher_round.xml"
     },
     {
-        "merged": "/Users/oumi/.gradle/daemon/8.2/fr.iut.sae_s4_01_app_mobile.app-merged_res-33:/drawable_notification.png.flat",
-        "source": "/Users/oumi/.gradle/daemon/8.2/fr.iut.sae_s4_01_app_mobile.app-main-35:/drawable/notification.png"
+        "merged": "/Users/isra/.gradle/daemon/8.2/fr.iut.sae_s4_01_app_mobile.app-merged_res-33:/drawable_round_login.xml.flat",
+        "source": "/Users/isra/.gradle/daemon/8.2/fr.iut.sae_s4_01_app_mobile.app-main-35:/drawable/round_login.xml"
     },
     {
-        "merged": "/Users/oumi/.gradle/daemon/8.2/fr.iut.sae_s4_01_app_mobile.app-merged_res-33:/drawable_colombes_logo.png.flat",
-        "source": "/Users/oumi/.gradle/daemon/8.2/fr.iut.sae_s4_01_app_mobile.app-main-35:/drawable/colombes_logo.png"
+        "merged": "/Users/isra/.gradle/daemon/8.2/fr.iut.sae_s4_01_app_mobile.app-merged_res-33:/drawable_alertes_icone.png.flat",
+        "source": "/Users/isra/.gradle/daemon/8.2/fr.iut.sae_s4_01_app_mobile.app-main-35:/drawable/alertes_icone.png"
     },
     {
-        "merged": "/Users/oumi/.gradle/daemon/8.2/fr.iut.sae_s4_01_app_mobile.app-merged_res-33:/layout_activity_ancienne_alerte.xml.flat",
-        "source": "/Users/oumi/.gradle/daemon/8.2/fr.iut.sae_s4_01_app_mobile.app-main-35:/layout/activity_ancienne_alerte.xml"
+        "merged": "/Users/isra/.gradle/daemon/8.2/fr.iut.sae_s4_01_app_mobile.app-merged_res-33:/drawable_ovale_shape.xml.flat",
+        "source": "/Users/isra/.gradle/daemon/8.2/fr.iut.sae_s4_01_app_mobile.app-main-35:/drawable/ovale_shape.xml"
     },
     {
-        "merged": "/Users/oumi/.gradle/daemon/8.2/fr.iut.sae_s4_01_app_mobile.app-merged_res-33:/layout_activity_register2.xml.flat",
-        "source": "/Users/oumi/.gradle/daemon/8.2/fr.iut.sae_s4_01_app_mobile.app-main-35:/layout/activity_register2.xml"
+        "merged": "/Users/isra/.gradle/daemon/8.2/fr.iut.sae_s4_01_app_mobile.app-merged_res-33:/drawable_colombesdroite.png.flat",
+        "source": "/Users/isra/.gradle/daemon/8.2/fr.iut.sae_s4_01_app_mobile.app-main-35:/drawable/colombesdroite.png"
     },
     {
-        "merged": "/Users/oumi/.gradle/daemon/8.2/fr.iut.sae_s4_01_app_mobile.app-merged_res-33:/drawable_colombeslogo.png.flat",
-        "source": "/Users/oumi/.gradle/daemon/8.2/fr.iut.sae_s4_01_app_mobile.app-main-35:/drawable/colombeslogo.png"
+        "merged": "/Users/isra/.gradle/daemon/8.2/fr.iut.sae_s4_01_app_mobile.app-merged_res-33:/drawable_cloche.png.flat",
+        "source": "/Users/isra/.gradle/daemon/8.2/fr.iut.sae_s4_01_app_mobile.app-main-35:/drawable/cloche.png"
     },
     {
-        "merged": "/Users/oumi/.gradle/daemon/8.2/fr.iut.sae_s4_01_app_mobile.app-merged_res-33:/drawable_alertes.png.flat",
-        "source": "/Users/oumi/.gradle/daemon/8.2/fr.iut.sae_s4_01_app_mobile.app-main-35:/drawable/alertes.png"
+        "merged": "/Users/isra/.gradle/daemon/8.2/fr.iut.sae_s4_01_app_mobile.app-merged_res-33:/drawable_colombeslogo.png.flat",
+        "source": "/Users/isra/.gradle/daemon/8.2/fr.iut.sae_s4_01_app_mobile.app-main-35:/drawable/colombeslogo.png"
     },
     {
-        "merged": "/Users/oumi/.gradle/daemon/8.2/fr.iut.sae_s4_01_app_mobile.app-merged_res-33:/layout_activity_splash_screen.xml.flat",
-        "source": "/Users/oumi/.gradle/daemon/8.2/fr.iut.sae_s4_01_app_mobile.app-main-35:/layout/activity_splash_screen.xml"
+        "merged": "/Users/isra/.gradle/daemon/8.2/fr.iut.sae_s4_01_app_mobile.app-merged_res-33:/drawable_calendrier.png.flat",
+        "source": "/Users/isra/.gradle/daemon/8.2/fr.iut.sae_s4_01_app_mobile.app-main-35:/drawable/calendrier.png"
     },
     {
-        "merged": "/Users/oumi/.gradle/daemon/8.2/fr.iut.sae_s4_01_app_mobile.app-merged_res-33:/drawable_ic_launcher_background.xml.flat",
-        "source": "/Users/oumi/.gradle/daemon/8.2/fr.iut.sae_s4_01_app_mobile.app-main-35:/drawable/ic_launcher_background.xml"
+        "merged": "/Users/isra/.gradle/daemon/8.2/fr.iut.sae_s4_01_app_mobile.app-merged_res-33:/drawable_user.png.flat",
+        "source": "/Users/isra/.gradle/daemon/8.2/fr.iut.sae_s4_01_app_mobile.app-main-35:/drawable/user.png"
     },
     {
-        "merged": "/Users/oumi/.gradle/daemon/8.2/fr.iut.sae_s4_01_app_mobile.app-merged_res-33:/drawable_ic_launcher_foreground.xml.flat",
-        "source": "/Users/oumi/.gradle/daemon/8.2/fr.iut.sae_s4_01_app_mobile.app-main-35:/drawable/ic_launcher_foreground.xml"
+        "merged": "/Users/isra/.gradle/daemon/8.2/fr.iut.sae_s4_01_app_mobile.app-merged_res-33:/layout_activity_register.xml.flat",
+        "source": "/Users/isra/.gradle/daemon/8.2/fr.iut.sae_s4_01_app_mobile.app-main-35:/layout/activity_register.xml"
     },
     {
-        "merged": "/Users/oumi/.gradle/daemon/8.2/fr.iut.sae_s4_01_app_mobile.app-merged_res-33:/mipmap-xxhdpi_ic_launcher.webp.flat",
-        "source": "/Users/oumi/.gradle/daemon/8.2/fr.iut.sae_s4_01_app_mobile.app-main-35:/mipmap-xxhdpi/ic_launcher.webp"
+        "merged": "/Users/isra/.gradle/daemon/8.2/fr.iut.sae_s4_01_app_mobile.app-merged_res-33:/layout_activity_ancienne_alerte.xml.flat",
+        "source": "/Users/isra/.gradle/daemon/8.2/fr.iut.sae_s4_01_app_mobile.app-main-35:/layout/activity_ancienne_alerte.xml"
     },
     {
-        "merged": "/Users/oumi/.gradle/daemon/8.2/fr.iut.sae_s4_01_app_mobile.app-merged_res-33:/mipmap-xxhdpi_ic_launcher_round.webp.flat",
-        "source": "/Users/oumi/.gradle/daemon/8.2/fr.iut.sae_s4_01_app_mobile.app-main-35:/mipmap-xxhdpi/ic_launcher_round.webp"
+        "merged": "/Users/isra/.gradle/daemon/8.2/fr.iut.sae_s4_01_app_mobile.app-merged_res-33:/drawable_colombesblanc2.png.flat",
+        "source": "/Users/isra/.gradle/daemon/8.2/fr.iut.sae_s4_01_app_mobile.app-main-35:/drawable/colombesblanc2.png"
     },
     {
-        "merged": "/Users/oumi/.gradle/daemon/8.2/fr.iut.sae_s4_01_app_mobile.app-merged_res-33:/drawable_sedeconnecter1.png.flat",
-        "source": "/Users/oumi/.gradle/daemon/8.2/fr.iut.sae_s4_01_app_mobile.app-main-35:/drawable/sedeconnecter1.png"
+        "merged": "/Users/isra/.gradle/daemon/8.2/fr.iut.sae_s4_01_app_mobile.app-merged_res-33:/layout_activity_main.xml.flat",
+        "source": "/Users/isra/.gradle/daemon/8.2/fr.iut.sae_s4_01_app_mobile.app-main-35:/layout/activity_main.xml"
     },
     {
-        "merged": "/Users/oumi/.gradle/daemon/8.2/fr.iut.sae_s4_01_app_mobile.app-merged_res-33:/drawable_cadenas.png.flat",
-        "source": "/Users/oumi/.gradle/daemon/8.2/fr.iut.sae_s4_01_app_mobile.app-main-35:/drawable/cadenas.png"
+        "merged": "/Users/isra/.gradle/daemon/8.2/fr.iut.sae_s4_01_app_mobile.app-merged_res-33:/drawable_cadenas.png.flat",
+        "source": "/Users/isra/.gradle/daemon/8.2/fr.iut.sae_s4_01_app_mobile.app-main-35:/drawable/cadenas.png"
     },
     {
-        "merged": "/Users/oumi/.gradle/daemon/8.2/fr.iut.sae_s4_01_app_mobile.app-merged_res-33:/drawable_calendrier.png.flat",
-        "source": "/Users/oumi/.gradle/daemon/8.2/fr.iut.sae_s4_01_app_mobile.app-main-35:/drawable/calendrier.png"
+        "merged": "/Users/isra/.gradle/daemon/8.2/fr.iut.sae_s4_01_app_mobile.app-merged_res-33:/font_inter_semibold.ttf.flat",
+        "source": "/Users/isra/.gradle/daemon/8.2/fr.iut.sae_s4_01_app_mobile.app-main-35:/font/inter_semibold.ttf"
     },
     {
-        "merged": "/Users/oumi/.gradle/daemon/8.2/fr.iut.sae_s4_01_app_mobile.app-merged_res-33:/layout_activity_login.xml.flat",
-        "source": "/Users/oumi/.gradle/daemon/8.2/fr.iut.sae_s4_01_app_mobile.app-main-35:/layout/activity_login.xml"
+        "merged": "/Users/isra/.gradle/daemon/8.2/fr.iut.sae_s4_01_app_mobile.app-merged_res-33:/drawable_adresse.png.flat",
+        "source": "/Users/isra/.gradle/daemon/8.2/fr.iut.sae_s4_01_app_mobile.app-main-35:/drawable/adresse.png"
     },
     {
-        "merged": "/Users/oumi/.gradle/daemon/8.2/fr.iut.sae_s4_01_app_mobile.app-merged_res-33:/drawable_colombesblanc2.png.flat",
-        "source": "/Users/oumi/.gradle/daemon/8.2/fr.iut.sae_s4_01_app_mobile.app-main-35:/drawable/colombesblanc2.png"
+        "merged": "/Users/isra/.gradle/daemon/8.2/fr.iut.sae_s4_01_app_mobile.app-merged_res-33:/font_inter_medium.ttf.flat",
+        "source": "/Users/isra/.gradle/daemon/8.2/fr.iut.sae_s4_01_app_mobile.app-main-35:/font/inter_medium.ttf"
     },
     {
-        "merged": "/Users/oumi/.gradle/daemon/8.2/fr.iut.sae_s4_01_app_mobile.app-merged_res-33:/mipmap-xxxhdpi_ic_launcher.webp.flat",
-        "source": "/Users/oumi/.gradle/daemon/8.2/fr.iut.sae_s4_01_app_mobile.app-main-35:/mipmap-xxxhdpi/ic_launcher.webp"
+        "merged": "/Users/isra/.gradle/daemon/8.2/fr.iut.sae_s4_01_app_mobile.app-merged_res-33:/font_inter_extralight.ttf.flat",
+        "source": "/Users/isra/.gradle/daemon/8.2/fr.iut.sae_s4_01_app_mobile.app-main-35:/font/inter_extralight.ttf"
     },
     {
-        "merged": "/Users/oumi/.gradle/daemon/8.2/fr.iut.sae_s4_01_app_mobile.app-merged_res-33:/layout_item_alerte.xml.flat",
-        "source": "/Users/oumi/.gradle/daemon/8.2/fr.iut.sae_s4_01_app_mobile.app-main-35:/layout/item_alerte.xml"
+        "merged": "/Users/isra/.gradle/daemon/8.2/fr.iut.sae_s4_01_app_mobile.app-merged_res-33:/drawable_stats.png.flat",
+        "source": "/Users/isra/.gradle/daemon/8.2/fr.iut.sae_s4_01_app_mobile.app-main-35:/drawable/stats.png"
     },
     {
-        "merged": "/Users/oumi/.gradle/daemon/8.2/fr.iut.sae_s4_01_app_mobile.app-merged_res-33:/mipmap-hdpi_ic_launcher_round.webp.flat",
-        "source": "/Users/oumi/.gradle/daemon/8.2/fr.iut.sae_s4_01_app_mobile.app-main-35:/mipmap-hdpi/ic_launcher_round.webp"
+        "merged": "/Users/isra/.gradle/daemon/8.2/fr.iut.sae_s4_01_app_mobile.app-merged_res-33:/layout_activity_splash_screen.xml.flat",
+        "source": "/Users/isra/.gradle/daemon/8.2/fr.iut.sae_s4_01_app_mobile.app-main-35:/layout/activity_splash_screen.xml"
     },
     {
-        "merged": "/Users/oumi/.gradle/daemon/8.2/fr.iut.sae_s4_01_app_mobile.app-merged_res-33:/mipmap-mdpi_ic_launcher.webp.flat",
-        "source": "/Users/oumi/.gradle/daemon/8.2/fr.iut.sae_s4_01_app_mobile.app-main-35:/mipmap-mdpi/ic_launcher.webp"
+        "merged": "/Users/isra/.gradle/daemon/8.2/fr.iut.sae_s4_01_app_mobile.app-merged_res-33:/drawable_home.png.flat",
+        "source": "/Users/isra/.gradle/daemon/8.2/fr.iut.sae_s4_01_app_mobile.app-main-35:/drawable/home.png"
     },
     {
-        "merged": "/Users/oumi/.gradle/daemon/8.2/fr.iut.sae_s4_01_app_mobile.app-merged_res-33:/mipmap-xxxhdpi_ic_launcher_round.webp.flat",
-        "source": "/Users/oumi/.gradle/daemon/8.2/fr.iut.sae_s4_01_app_mobile.app-main-35:/mipmap-xxxhdpi/ic_launcher_round.webp"
+        "merged": "/Users/isra/.gradle/daemon/8.2/fr.iut.sae_s4_01_app_mobile.app-merged_res-33:/drawable_ic_launcher_background.xml.flat",
+        "source": "/Users/isra/.gradle/daemon/8.2/fr.iut.sae_s4_01_app_mobile.app-main-35:/drawable/ic_launcher_background.xml"
+    },
+    {
+        "merged": "/Users/isra/.gradle/daemon/8.2/fr.iut.sae_s4_01_app_mobile.app-merged_res-33:/drawable_colombes_logo.png.flat",
+        "source": "/Users/isra/.gradle/daemon/8.2/fr.iut.sae_s4_01_app_mobile.app-main-35:/drawable/colombes_logo.png"
+    },
+    {
+        "merged": "/Users/isra/.gradle/daemon/8.2/fr.iut.sae_s4_01_app_mobile.app-merged_res-33:/mipmap-xhdpi_ic_launcher_round.webp.flat",
+        "source": "/Users/isra/.gradle/daemon/8.2/fr.iut.sae_s4_01_app_mobile.app-main-35:/mipmap-xhdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "/Users/isra/.gradle/daemon/8.2/fr.iut.sae_s4_01_app_mobile.app-merged_res-33:/drawable_colombesgauche.png.flat",
+        "source": "/Users/isra/.gradle/daemon/8.2/fr.iut.sae_s4_01_app_mobile.app-main-35:/drawable/colombesgauche.png"
+    },
+    {
+        "merged": "/Users/isra/.gradle/daemon/8.2/fr.iut.sae_s4_01_app_mobile.app-merged_res-33:/mipmap-hdpi_ic_launcher_round.webp.flat",
+        "source": "/Users/isra/.gradle/daemon/8.2/fr.iut.sae_s4_01_app_mobile.app-main-35:/mipmap-hdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "/Users/isra/.gradle/daemon/8.2/fr.iut.sae_s4_01_app_mobile.app-merged_res-33:/mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "/Users/isra/.gradle/daemon/8.2/fr.iut.sae_s4_01_app_mobile.app-main-35:/mipmap-anydpi-v26/ic_launcher.xml"
+    },
+    {
+        "merged": "/Users/isra/.gradle/daemon/8.2/fr.iut.sae_s4_01_app_mobile.app-merged_res-33:/font_inter_extrabold.ttf.flat",
+        "source": "/Users/isra/.gradle/daemon/8.2/fr.iut.sae_s4_01_app_mobile.app-main-35:/font/inter_extrabold.ttf"
+    },
+    {
+        "merged": "/Users/isra/.gradle/daemon/8.2/fr.iut.sae_s4_01_app_mobile.app-merged_res-33:/layout_activity_medoc_code.xml.flat",
+        "source": "/Users/isra/.gradle/daemon/8.2/fr.iut.sae_s4_01_app_mobile.app-main-35:/layout/activity_medoc_code.xml"
+    },
+    {
+        "merged": "/Users/isra/.gradle/daemon/8.2/fr.iut.sae_s4_01_app_mobile.app-merged_res-33:/drawable_alertes.png.flat",
+        "source": "/Users/isra/.gradle/daemon/8.2/fr.iut.sae_s4_01_app_mobile.app-main-35:/drawable/alertes.png"
+    },
+    {
+        "merged": "/Users/isra/.gradle/daemon/8.2/fr.iut.sae_s4_01_app_mobile.app-merged_res-33:/drawable_ecrire1.png.flat",
+        "source": "/Users/isra/.gradle/daemon/8.2/fr.iut.sae_s4_01_app_mobile.app-main-35:/drawable/ecrire1.png"
+    },
+    {
+        "merged": "/Users/isra/.gradle/daemon/8.2/fr.iut.sae_s4_01_app_mobile.app-merged_res-33:/layout_item_alerte.xml.flat",
+        "source": "/Users/isra/.gradle/daemon/8.2/fr.iut.sae_s4_01_app_mobile.app-main-35:/layout/item_alerte.xml"
+    },
+    {
+        "merged": "/Users/isra/.gradle/daemon/8.2/fr.iut.sae_s4_01_app_mobile.app-merged_res-33:/drawable_etoile.png.flat",
+        "source": "/Users/isra/.gradle/daemon/8.2/fr.iut.sae_s4_01_app_mobile.app-main-35:/drawable/etoile.png"
+    },
+    {
+        "merged": "/Users/isra/.gradle/daemon/8.2/fr.iut.sae_s4_01_app_mobile.app-merged_res-33:/font_inter_thin.ttf.flat",
+        "source": "/Users/isra/.gradle/daemon/8.2/fr.iut.sae_s4_01_app_mobile.app-main-35:/font/inter_thin.ttf"
+    },
+    {
+        "merged": "/Users/isra/.gradle/daemon/8.2/fr.iut.sae_s4_01_app_mobile.app-merged_res-33:/layout_activity_profil.xml.flat",
+        "source": "/Users/isra/.gradle/daemon/8.2/fr.iut.sae_s4_01_app_mobile.app-main-35:/layout/activity_profil.xml"
     }
 ]

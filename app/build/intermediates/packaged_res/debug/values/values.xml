@@ -4,14 +4,20 @@
     <color name="darkBlue">#3A4388</color>
     <color name="darkBlueLight">#4A55A2</color>
     <color name="darkBlueLightLight">#7895CB</color>
+    <color name="darkGrey">#2E2E2E</color>
     <color name="hover">#9197C6</color>
     <color name="lightBlue">#A0BFE0</color>
     <color name="lightBlueLight">#C5DFF8</color>
+    <color name="red">#9F1B1B</color>
     <color name="textBlue">#C5DFF8</color>
     <color name="textDarkBlue">#03008C</color>
     <color name="textGrey">#505050</color>
     <color name="white">#FFFFFFFF</color>
     <string name="app_name">SAE_S4_01_App_Mobile</string>
+    <string name="text_dataMatrix"> Scanner le code <b>DataMatrix</b> </string>
+    <string name="text_interro1"> Une <b>DataMatrix</b> situé sur votre boîte du médicament ressemble à un QRCode, c`est un <b>code barre 2D</b> </string>
+    <string name="text_interro2"> Le <b>Code CIP</b> (7 ou 13 chiffres) sur votre boite de médicament permet <b>d`identifier</b> celui-ci</string>
+    <string name="text_saisieCIP"> Saisir le <b>Code CIP</b> manuellement </string>
     <style name="Base.Theme.SAE_S4_01_App_Mobile" parent="Theme.Material3.DayNight.NoActionBar">
         
         
