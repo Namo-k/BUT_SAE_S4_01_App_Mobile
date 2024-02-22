@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#A0BFE0">
+
+    <!-- Début de la section Bienvenue -->
+    <TextView
+        android:id="@+id/welcomeTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="40dp"
+        android:text="Vous êtes nouveau ?"
+        android:textColor="#4A55A2"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_below="@id/welcomeTextView"
+        android:layout_marginStart="250dp"
+        android:layout_marginTop="-61dp"
+        android:layout_marginBottom="70dp"
+        android:src="@drawable/colombesblanc" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_below="@id/welcomeTextView"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="70dp"
+        android:layout_marginBottom="70dp"
+        android:src="@drawable/colombeslogo" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_below="@id/welcomeTextView"
+        android:layout_marginTop="68dp"
+        android:layout_marginEnd="300dp"
+        android:layout_marginBottom="70dp"
+        android:src="@drawable/colombesblanc2" />
+    <!-- Fin de la section Bienvenue -->
+
+    <!-- Début du formulaire d'inscription -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="250dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="15dp"
+            android:text="Complétez quelques informations !"
+            android:textColor="#4A55A2"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp">
+
+            <ImageView
+                android:layout_width="21dp"
+                android:layout_height="39dp"
+                android:src="@drawable/utilisateur" />
+
+            <TextView
+                android:id="@+id/textViewprenom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" Votre nom : "
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="5dp"
+                android:textSize="18dp" />
+
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/prenom"
+            android:layout_width="300dp"
+            android:layout_height="41dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="3dp"
+            android:layout_marginRight="50dp"
+            android:paddingLeft="20dp"
+            android:background="@drawable/round_login"
+            android:hint="Nom"
+            android:inputType="text"
+            android:textStyle="italic" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp">
+
+            <ImageView
+                android:layout_width="21dp"
+                android:layout_height="39dp"
+                android:src="@drawable/signature" />
+
+            <TextView
+                android:id="@+id/textViewnom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" Votre Prénom : "
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="5dp"
+                android:textSize="18dp" />
+
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/prenom1"
+            android:layout_width="300dp"
+            android:layout_height="41dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="3dp"
+            android:layout_marginRight="50dp"
+            android:background="@drawable/round_login"
+            android:hint="Prenom"
+            android:paddingLeft="20dp"
+            android:inputType="text"
+            android:textStyle="italic" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp">
+
+            <ImageView
+                android:layout_width="21dp"
+                android:layout_height="39dp"
+                android:src="@drawable/calendrier" />
+
+            <TextView
+                android:id="@+id/textViewemail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" Date de naissance :  : "
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="5dp"
+                android:textSize="18dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="40dp"
+            >
+
+            <EditText
+                android:id="@+id/Djour"
+                android:layout_width="100dp"
+                android:layout_height="35dp"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/round_login"
+                android:hint="JJ"
+                android:paddingLeft="35dp"
+                android:inputType="text"
+                android:textStyle="italic" />
+
+            <EditText
+                android:id="@+id/Dmois"
+                android:layout_width="100dp"
+                android:layout_height="35dp"
+                android:background="@drawable/round_login"
+                android:hint="MM"
+                android:paddingLeft="35dp"
+                android:inputType="text"
+                android:textStyle="italic" />
+
+            <EditText
+                android:id="@+id/mobile"
+                android:layout_width="100dp"
+                android:layout_height="35dp"
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/round_login"
+                android:hint="AAAA"
+                android:paddingLeft="25dp"
+                android:inputType="text"
+                android:textStyle="italic" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/loginBtn"
+            style="@style/Widget.MaterialComponents.Button.UnelevatedButton"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:backgroundTint="#4A55A2"
+
+            android:text="Passer à la suite..."
+            android:textSize="13dp" />
+
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:text="Attention, vos informations sont incomplètes !"
+            android:textColor="#A90000"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="490dp"
+        android:gravity ="center">
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:gravity="bottom"
+        >
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

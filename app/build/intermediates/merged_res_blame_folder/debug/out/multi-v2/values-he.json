@@ -1,0 +1,19 @@
+{
+    "logs": [
+        {
+            "outputFile": "fr.iut.sae_s4_01_app_mobile.app-mergeDebugResources-31:/values-he/values-he.xml",
+            "map": [
+                {
+                    "source": "/Users/oumi/.gradle/caches/transforms-3/a60982259721268694c6a5f2a67385db/transformed/zxing-android-embedded-4.2.0/res/values-he/values-he.xml",
+                    "from": {
+                        "startLines": "2,3,4,5",
+                        "startColumns": "4,4,4,4",
+                        "startOffsets": "55,111,161,296",
+                        "endColumns": "55,49,134,89",
+                        "endOffsets": "106,156,291,381"
+                    }
+                }
+            ]
+        }
+    ]
+}
