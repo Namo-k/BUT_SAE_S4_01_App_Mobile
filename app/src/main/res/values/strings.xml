@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">SAE_S4_01_App_Mobile</string>
+    <string name="text_dataMatrix"> Scanner le code <b>DataMatrix</b> </string>
+    <string name="text_saisieCIP"> Saisir le <b>Code CIP</b> manuellement </string>
+    <string name="text_interro1"> Une <b>DataMatrix</b> situé sur votre boîte du médicament ressemble à un QRCode, c`est un <b>code barre 2D</b> </string>
+    <string name="text_interro2"> Le <b>Code CIP</b> (7 ou 13 chiffres) sur votre boite de médicament permet <b>d`identifier</b> celui-ci</string>
 </resources>

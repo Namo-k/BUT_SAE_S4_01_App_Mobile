@@ -13,7 +13,7 @@ import java.util.Random;
 
 public class SplashScreenActivity extends AppCompatActivity {
 
-    private final static int TEMPS = 3500;
+    private final static int TEMPS = 4500;
     private String Quote1 = "Savez-vous que 10 minutes de méditation peut réduire l’anxiété et booster votre confiance ?";
     private String Quote2 = "Savez-vous que consommer des aliments riches en fibres peut favoriser une meilleure digestion ?";
     private String Quote3 = "Savez-vous que consommer 5 fruits et légumes par jour renforce votre système immunitaire ?";

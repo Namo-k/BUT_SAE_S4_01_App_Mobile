@@ -1,0 +1,661 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <!-- ========== ENTETE =========== -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.23"
+        android:orientation="vertical">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="456dp"
+            android:layout_height="240dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="-118dp"
+            app:cardBackgroundColor="@color/white"
+            app:cardCornerRadius="200dp"
+            app:cardElevation="0dp">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/ovale_shape" />
+
+            <ImageView
+                android:id="@+id/sedeconnecterBtn"
+                android:layout_width="43dp"
+                android:layout_height="43dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="60dp"
+                android:layout_marginTop="38dp"
+                android:src="@drawable/deconnexion" />
+
+            <ImageView
+                android:id="@+id/logoIV"
+                android:layout_width="170dp"
+                android:layout_height="90.92dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="147dp"
+                android:layout_marginTop="55dp"
+                android:src="@drawable/colombes_logo" />
+
+            <ImageView
+                android:id="@+id/notifBtn"
+                android:layout_width="42dp"
+                android:layout_height="42dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="355dp"
+                android:layout_marginTop="38dp"
+                android:src="@drawable/cloche" />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="385dp"
+                android:layout_marginTop="23dp"
+                android:alpha="0.8"
+                app:cardBackgroundColor="@color/darkBlueLightLight"
+                app:cardCornerRadius="10dp">
+
+                <TextView
+                    android:id="@+id/nbNotifTV"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:gravity="center"
+                    android:text="1"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+            </androidx.cardview.widget.CardView>
+
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+    <!-- ========== FIN ENTETE =========== -->
+
+    <!-- ========== PAGE =========== -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <!-- ========== DEBUT ACCUEIL =========== -->
+            <ImageView
+                android:id="@+id/colombes1"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="58.5dp"
+                android:layout_marginTop="-10dp"
+                android:src="@drawable/colombesdroite"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/accueil_phrase"
+                android:layout_width="156dp"
+                android:layout_height="20dp"
+                android:layout_marginLeft="127dp"
+                android:layout_marginTop="5dp"
+                android:backgroundTint="@color/darkGrey"
+                android:fontFamily="@font/inter"
+                android:text="Ravi de vous revoir "
+                android:textSize="17dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/prenom"
+                android:layout_width="156dp"
+                android:layout_height="20dp"
+                android:layout_marginStart="127dp"
+                android:layout_marginTop="6dp"
+                android:fontFamily="@font/inter_semibold"
+                android:text="Alexandre"
+                android:textAlignment="center"
+                android:textColor="@color/darkBlue"
+                android:textSize="18dp"
+                android:textStyle="bold|normal"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/accueil_phrase" />
+
+            <ImageView
+                android:id="@+id/colombes2"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="278.5dp"
+                android:layout_marginTop="-10dp"
+                android:src="@drawable/colombesgauche"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <!-- ========== FIN ACCUEIL =========== -->
+
+            <!-- ========== DEBUT SECTION INFORMATIONS =========== -->
+
+            <TextView
+                android:id="@+id/informations"
+                android:layout_width="wrap_content"
+                android:layout_height="22dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="24dp"
+                android:fontFamily="@font/patuaone_regular"
+                android:text=" Mes informations"
+                android:textColor="@color/darkBlue"
+                android:textSize="21dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/prenom" />
+
+            <TextView
+                android:id="@+id/ligne"
+                android:layout_width="190dp"
+                android:layout_height="2dp"
+                android:layout_marginStart="27dp"
+                android:layout_marginTop="12dp"
+                android:background="@color/lightBlue"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/informations" />
+
+            <ImageView
+                android:id="@+id/informations_logo"
+                android:layout_width="47dp"
+                android:layout_height="48dp"
+                android:layout_marginTop="13dp"
+                android:layout_marginRight="30dp"
+                android:src="@drawable/connexion"
+                android:textAlignment="center"
+                android:textStyle="bold|normal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/prenom" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/blocInformations"
+                android:layout_width="338dp"
+                android:layout_height="158dp"
+                android:layout_marginStart="27dp"
+                android:layout_marginTop="30dp"
+                app:cardBackgroundColor="@color/lightBlueLight"
+                app:cardCornerRadius="20dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/informations">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="17dp">
+
+                    <TextView
+                        android:id="@+id/citoyen"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="208dp"
+                        android:layout_marginTop="-2dp"
+                        android:layout_toRightOf="@+id/nomTV"
+                        android:fontFamily="@font/inter_semibold"
+                        android:text="Citoyen"
+                        android:textColor="@color/textDarkBlue"
+                        android:textSize="13.7dp" />
+
+                    <TextView
+                        android:id="@+id/nomTV"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/inter_medium"
+                        android:text="Nom : "
+                        android:textColor="@color/textGrey"
+                        android:textSize="12.7dp" />
+
+                    <TextView
+                        android:id="@+id/nomLabelTV"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="4dp"
+                        android:layout_toRightOf="@+id/nomTV"
+                        android:fontFamily="@font/inter"
+                        android:text="CAROUNANITHI"
+                        android:textColor="@color/textDarkBlue"
+                        android:textSize="13dp" />
+
+                    <TextView
+                        android:id="@+id/prenomTV"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/nomTV"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/inter_medium"
+                        android:text="Prenom :"
+                        android:textColor="@color/textGrey"
+                        android:textSize="12.7dp" />
+
+                    <TextView
+                        android:id="@+id/prenomLabelTV"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/nomTV"
+                        android:layout_marginLeft="6dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_toRightOf="@+id/prenomTV"
+                        android:fontFamily="@font/inter"
+                        android:text="Alexandre"
+                        android:textColor="@color/textDarkBlue"
+                        android:textSize="13dp" />
+
+                    <TextView
+                        android:id="@+id/naissanceTV"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/nomTV"
+                        android:layout_marginLeft="40dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_toRightOf="@+id/prenomLabelTV"
+                        android:fontFamily="@font/inter_medium"
+                        android:text="Naissance :"
+                        android:textColor="@color/textGrey"
+                        android:textSize="12.7dp" />
+
+                    <TextView
+                        android:id="@+id/naissanceLabelTV"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/nomTV"
+                        android:layout_marginLeft="2dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_toRightOf="@+id/naissanceTV"
+                        android:fontFamily="@font/inter"
+                        android:text="17/12/2004"
+                        android:textColor="@color/textDarkBlue"
+                        android:textSize="12.7dp" />
+
+                    <TextView
+                        android:id="@+id/pharmacieTV"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/prenomTV"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/inter_medium"
+                        android:text="Ma pharmacie préférée :"
+                        android:textColor="@color/textGrey"
+                        android:textSize="12.7dp" />
+
+                    <TextView
+                        android:id="@+id/pharmacieLabelTV"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/prenomTV"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_toRightOf="@+id/pharmacieTV"
+                        android:fontFamily="@font/inter"
+                        android:text="Pharmacie de la Gare"
+                        android:textColor="@color/textDarkBlue"
+                        android:textSize="12.7dp" />
+
+                    <ImageView
+                        android:id="@+id/etoile"
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:layout_below="@+id/prenomTV"
+                        android:layout_marginLeft="6dp"
+                        android:layout_marginTop="13dp"
+                        android:layout_toRightOf="@+id/pharmacieLabelTV"
+                        android:fontFamily="@font/inter"
+                        android:src="@drawable/etoile"
+                        android:textColor="@color/textDarkBlue"
+                        android:textSize="12.5dp" />
+
+                    <TextView
+                        android:id="@+id/medecinTV"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/pharmacieTV"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/inter_medium"
+                        android:text="Médecin traitant :"
+                        android:textColor="@color/textGrey"
+                        android:textSize="12.7dp" />
+
+                    <TextView
+                        android:id="@+id/medecinLabelTV"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/pharmacieTV"
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_toRightOf="@+id/medecinTV"
+                        android:fontFamily="@font/inter"
+                        android:text="M.LAGACHE Chardon"
+                        android:textColor="@color/textDarkBlue"
+                        android:textSize="12.7dp" />
+
+                </RelativeLayout>
+
+                <Button
+                    android:id="@+id/btnInformations"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_gravity="right|bottom"
+                    android:backgroundTint="#00000000"
+                    android:fontFamily="@font/inter_semibold"
+                    android:text="Accéder à mon profil..."
+                    android:textColor="@color/darkBlue"
+                    android:textSize="13.5dp"
+                    android:textStyle="italic" />
+
+            </androidx.cardview.widget.CardView>
+
+            <!-- ========== FIN SECTION INFORMATIONS =========== -->
+
+            <!-- ========== DEBUT SECTION ALERTE =========== -->
+
+            <TextView
+                android:id="@+id/alertes"
+                android:layout_width="wrap_content"
+                android:layout_height="22dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="22dp"
+                android:fontFamily="@font/patuaone_regular"
+                android:text=" Créer une alerte"
+                android:textColor="@color/darkBlue"
+                android:textSize="21dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/blocInformations" />
+
+            <TextView
+                android:id="@+id/ligne2"
+                android:layout_width="190dp"
+                android:layout_height="2dp"
+                android:layout_marginStart="27dp"
+                android:layout_marginTop="12dp"
+                android:background="@color/lightBlue"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/alertes" />
+
+            <ImageView
+                android:id="@+id/alertes_logo"
+                android:layout_width="47dp"
+                android:layout_height="48dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginRight="30dp"
+                android:src="@drawable/alertes_icone"
+                android:textAlignment="center"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/blocInformations" />
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/blocAlert"
+                android:layout_width="338dp"
+                android:layout_height="165dp"
+                android:layout_marginStart="27dp"
+                android:layout_marginTop="30dp"
+                app:cardBackgroundColor="@color/lightBlueLight"
+                app:cardCornerRadius="20dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/alertes">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/interrogation1text"
+                    android:layout_width="180dp"
+                    android:visibility="gone"
+                    android:layout_height="wrap_content"
+                    android:alpha="0.9"
+                    android:layout_marginLeft="52dp"
+                    android:layout_marginTop="78dp"
+                    app:cardBackgroundColor="@color/lightBlue"
+                    app:cardCornerRadius="13dp">
+
+                    <TextView
+                        android:padding="12dp"
+                        android:alpha="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:fontFamily="@font/inter_medium"
+                        android:gravity="center"
+                        android:text="@string/text_interro1"
+                        android:textColor="@color/darkGrey"
+                        android:textSize="11.2dp"
+                        android:lineHeight="16.5dp"
+                        />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/interrogation2text"
+                    android:layout_width="190dp"
+                    android:visibility="gone"
+                    android:layout_height="wrap_content"
+                    android:alpha="0.9"
+                    android:layout_marginLeft="146dp"
+                    android:layout_marginTop="78dp"
+                    app:cardBackgroundColor="@color/lightBlue"
+                    app:cardCornerRadius="13dp">
+
+                    <TextView
+                        android:padding="12dp"
+                        android:alpha="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:fontFamily="@font/inter_medium"
+                        android:gravity="center"
+                        android:text="@string/text_interro2"
+                        android:textColor="@color/darkGrey"
+                        android:textSize="11dp"
+                        android:lineHeight="16.3dp"
+                        />
+                </androidx.cardview.widget.CardView>
+
+                <RelativeLayout
+                    android:layout_width="125dp"
+                    android:layout_height="134dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="15dp">
+
+                    <TextView
+                        android:id="@+id/scanText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/inter_medium"
+                        android:lineHeight="19dp"
+                        android:text="@string/text_dataMatrix"
+                        android:textAlignment="center"
+                        android:textColor="@color/darkBlue"
+                        android:textSize="13.5dp" />
+
+                    <ImageView
+                        android:id="@+id/scan_logo"
+                        android:layout_width="60dp"
+                        android:layout_height="60.85dp"
+                        android:layout_below="@+id/scanText"
+                        android:layout_centerInParent="true"
+                        android:layout_marginTop="10dp"
+                        android:src="@drawable/scan_logo" />
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/interrogation1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/scanText"
+                        android:layout_marginLeft="8dp"
+                        android:layout_toRightOf="@+id/scan_logo"
+                        android:alpha="0.8"
+                        app:cardBackgroundColor="#5C89BE"
+                        app:cardCornerRadius="20dp">
+
+                        <TextView
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:fontFamily="@font/inter_bold"
+                            android:gravity="center"
+                            android:text=" ? "
+                            android:textColor="@color/textDarkBlue"
+                            android:textSize="16dp"
+                            android:textStyle="bold" />
+                    </androidx.cardview.widget.CardView>
+
+                    <TextView
+                        android:id="@+id/tuto1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/scan_logo"
+                        android:layout_centerInParent="true"
+                        android:layout_marginTop="5dp"
+                        android:fontFamily="@font/inter_medium"
+                        android:text="Voir le tutoriel"
+                        android:textAlignment="center"
+                        android:textColor="@color/textGrey"
+                        android:textSize="13dp" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="125dp"
+                    android:layout_height="134dp"
+                    android:layout_gravity="right"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginRight="30dp">
+
+                    <TextView
+                        android:id="@+id/saisieText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/inter_medium"
+                        android:lineHeight="19dp"
+                        android:text="@string/text_saisieCIP"
+                        android:textAlignment="center"
+                        android:textColor="@color/darkBlue"
+                        android:textSize="13.5dp" />
+
+                    <ImageView
+                        android:id="@+id/saisie_logo"
+                        android:layout_width="58dp"
+                        android:layout_height="58dp"
+                        android:layout_below="@+id/saisieText"
+                        android:layout_centerInParent="true"
+                        android:layout_marginTop="9dp"
+                        android:src="@drawable/ecrire1" />
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/interrogation2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/saisieText"
+                        android:layout_marginLeft="9dp"
+                        android:layout_toRightOf="@+id/saisie_logo"
+                        android:alpha="0.8"
+                        app:cardBackgroundColor="#5C89BE"
+                        app:cardCornerRadius="20dp">
+
+                        <TextView
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:fontFamily="@font/inter_bold"
+                            android:gravity="center"
+                            android:text=" ? "
+                            android:textColor="@color/textDarkBlue"
+                            android:textSize="16dp"
+                            android:textStyle="bold" />
+                    </androidx.cardview.widget.CardView>
+
+                    <TextView
+                        android:id="@+id/tuto2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/saisie_logo"
+                        android:layout_centerInParent="true"
+                        android:layout_marginTop="9dp"
+                        android:fontFamily="@font/inter_medium"
+                        android:text="Voir le tutoriel"
+                        android:textAlignment="center"
+                        android:textColor="@color/textGrey"
+                        android:textSize="13dp" />
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <!-- ========== FIN SECTION ALERTE =========== -->
+
+            <TextView
+                android:id="@+id/connexionInternet"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="13dp"
+                android:fontFamily="@font/inter_semibold"
+                android:text="Hors connexion"
+                android:textAlignment="center"
+                android:textColor="@color/red"
+                android:textSize="16dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/blocAlert" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </LinearLayout>
+
+    <!-- ========== FIN PAGE =========== -->
+
+    <!-- ========== NAVBAR =========== -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="77dp"
+        android:layout_gravity="bottom"
+        android:background="@color/darkBlueLight"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/ancienneBtn"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="45dp"
+            android:layout_marginBottom="16dp"
+            android:src="@drawable/anciennes" />
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="84dp"
+            android:layout_height="55dp"
+            android:layout_marginEnd="40dp"
+            app:cardBackgroundColor="@color/hover"
+            app:cardCornerRadius="17dp">
+
+            <ImageView
+                android:id="@+id/homeBtn"
+                android:layout_width="46dp"
+                android:layout_height="46dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="60dp"
+                android:layout_marginBottom="16dp"
+                android:src="@drawable/home" />
+
+        </androidx.cardview.widget.CardView>
+
+        <ImageView
+            android:id="@+id/userBtn"
+            android:layout_width="47dp"
+            android:layout_height="47dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="16dp"
+            android:src="@drawable/user" />
+
+    </LinearLayout>
+    <!-- ========== FIN NAVBAR =========== -->
+
+</LinearLayout>

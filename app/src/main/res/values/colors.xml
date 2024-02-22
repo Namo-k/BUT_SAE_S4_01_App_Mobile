@@ -3,6 +3,7 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
 
+    <color name="textDarkBlue">#03008C</color>
     <color name="darkBlue">#3A4388</color>
     <color name="darkBlueLight">#4A55A2</color>
     <color name="darkBlueLightLight">#7895CB</color>
@@ -10,8 +11,11 @@
     <color name="lightBlueLight">#C5DFF8</color>
 
     <color name="textBlue">#C5DFF8</color>
-    <color name="textDarkBlue">#03008C</color>
     <color name="textGrey">#505050</color>
+    <color name="darkGrey">#2E2E2E</color>
+
+    <color name="red">#9F1B1B</color>
 
     <color name="hover">#9197C6</color>
+
 </resources>

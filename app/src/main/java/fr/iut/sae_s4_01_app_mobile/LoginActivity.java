@@ -37,7 +37,7 @@ public class LoginActivity extends AppCompatActivity {
                 if (usernameCo.equals("abcd") && passwordCo.equals("EFGH")) {
                     Toast.makeText(LoginActivity.this, "Vous êtes connecté !", Toast.LENGTH_SHORT).show();
 
-                    Intent intent = new Intent(LoginActivity.this, MainActivity.class); // page apres co
+                    Intent intent = new Intent(LoginActivity.this, AccueilActivity.class); // page apres co
                     Bundle bundle = new Bundle();
                     bundle.putString("username", usernameCo);
                     bundle.putString("password", passwordCo);
