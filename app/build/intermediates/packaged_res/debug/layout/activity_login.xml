@@ -57,7 +57,8 @@
         android:layout_centerHorizontal="true"
         android:layout_marginLeft="50dp"
         android:layout_marginTop="177dp"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        tools:ignore="ExtraText">
 
 
         <TextView
@@ -107,6 +108,7 @@
             android:inputType="textEmailAddress"
 
             android:paddingLeft="20dp"
+            tools:ignore="TouchTargetSizeCheck"
             tools:visibility="visible" />
 
         <LinearLayout
@@ -142,7 +144,8 @@
             android:background="@drawable/round_login"
             android:hint="Mot De passe"
             android:inputType="textPassword"
-            android:paddingLeft="20dp" />
+            android:paddingLeft="20dp"
+            tools:ignore="TouchTargetSizeCheck" />
 
 
         <TextView
@@ -157,7 +160,8 @@
             android:textColor="#4A55A2"
             android:textSize="15sp"
 
-            android:textStyle="bold" />
+            android:textStyle="bold"
+            tools:ignore="TouchTargetSizeCheck" />
 
         <Button
             android:id="@+id/loginBtn"
@@ -168,7 +172,8 @@
             android:layout_marginTop="20dp"
             android:backgroundTint="#4A55A2"
             android:text="CONNECTEZ-VOUS !"
-            android:textSize="15dp" />
+            android:textSize="15dp"
+            tools:ignore="TextSizeCheck" />
 
         <TextView
             android:id="@+id/textView7"

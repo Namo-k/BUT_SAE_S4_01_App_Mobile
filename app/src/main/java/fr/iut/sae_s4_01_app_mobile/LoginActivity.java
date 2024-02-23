@@ -12,9 +12,11 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import fr.iut.sae_s4_01_app_mobile.R;
+import fr.iut.sae_s4_01_app_mobile.bd.Identifiants;
 
 public class LoginActivity extends AppCompatActivity {
 
+    private Identifiants DatabaseIdentifiant;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -23,6 +25,8 @@ public class LoginActivity extends AppCompatActivity {
         Button loginBtn = findViewById(R.id.loginBtn);
         EditText usernameLN = findViewById(R.id.usernameET);
         EditText passwordLN = findViewById(R.id.passwordET);
+
+        DatabaseIdentifiant = new Identifiants(this);
 
         loginBtn.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -34,7 +38,7 @@ public class LoginActivity extends AppCompatActivity {
                 Log.i("LoginActivity", usernameCo);
                 Log.i("LoginActivity", passwordCo);
 
-                if (usernameCo.equals("abcd") && passwordCo.equals("EFGH")) {
+                if (DatabaseIdentifiant.checkEmailPassword(usernameCo, passwordCo )) {
                     Toast.makeText(LoginActivity.this, "Vous êtes connecté !", Toast.LENGTH_SHORT).show();
 
                     Intent intent = new Intent(LoginActivity.this, AccueilActivity.class); // page apres co
@@ -44,7 +48,7 @@ public class LoginActivity extends AppCompatActivity {
                     intent.putExtras(bundle);
                     startActivity(intent);
                 } else {
-                    Toast.makeText(LoginActivity.this, "Login échoué", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(LoginActivity.this, "Votre email ou mot de passe est incorrect", Toast.LENGTH_SHORT).show();
                 }
             }
         });
@@ -53,7 +57,6 @@ public class LoginActivity extends AppCompatActivity {
         textView5.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(getApplicationContext(), "Vous avez appuyé sur la TextView !", Toast.LENGTH_SHORT).show();
                 Intent intent = new Intent(LoginActivity.this, RegisterActivity.class);
                 startActivity(intent);
             }

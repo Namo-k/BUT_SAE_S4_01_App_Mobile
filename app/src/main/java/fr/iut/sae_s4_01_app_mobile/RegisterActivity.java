@@ -68,6 +68,13 @@ public class RegisterActivity extends AppCompatActivity {
                     }else {
                         Intent intent = new Intent(RegisterActivity.this, RegisterActivity2.class);
                         startActivity(intent);
+                        String datecomplete = jour_ + "/" + mois_ + "/" + annee_;
+                        intent.putExtra("genre", genre);
+                        intent.putExtra("name", nom_);
+                        intent.putExtra("prenom", prenom_);
+                        intent.putExtra("date", datecomplete);
+                        startActivity(intent);
+
                     }
                 }
             }
