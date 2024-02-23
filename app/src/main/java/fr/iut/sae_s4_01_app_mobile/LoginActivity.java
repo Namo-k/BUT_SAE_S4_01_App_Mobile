@@ -39,6 +39,7 @@ public class LoginActivity extends AppCompatActivity {
                 Log.i("LoginActivity", passwordCo);
 
                 if (DatabaseIdentifiant.checkEmailPassword(usernameCo, passwordCo )) {
+
                     Toast.makeText(LoginActivity.this, "Vous êtes connecté !", Toast.LENGTH_SHORT).show();
 
                     Intent intent = new Intent(LoginActivity.this, AccueilActivity.class); // page apres co

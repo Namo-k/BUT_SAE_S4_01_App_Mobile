@@ -3033,6 +3033,7 @@ int drawable design_password_eye 0x7f070094
 int drawable design_snackbar_background 0x7f070095
 int drawable ecrire1 0x7f070096
 int drawable etoile 0x7f070097
+int drawable fleche_24 0x7f0700fb
 int drawable genre 0x7f0700f9
 int drawable home 0x7f070098
 int drawable ic_arrow_back_black_24 0x7f070099
@@ -3570,6 +3571,7 @@ int id raisonTV 0x7f0901a7
 int id ratio 0x7f0901a8
 int id rectangles 0x7f0901a9
 int id report_drawn 0x7f0901aa
+int id retour 0x7f09025c
 int id reverseSawtooth 0x7f0901ab
 int id right 0x7f0901ac
 int id rightToLeft 0x7f0901ad

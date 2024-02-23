@@ -60,6 +60,10 @@
         "source": "/Users/isra/.gradle/daemon/8.2/fr.iut.sae_s4_01_app_mobile.app-main-35:/layout/activity_accueil.xml"
     },
     {
+        "merged": "fr.iut.sae_s4_01_app_mobile.app-merged_res-33:/layout_activity_register2.xml.flat",
+        "source": "fr.iut.sae_s4_01_app_mobile.app-main-35:/layout/activity_register2.xml"
+    },
+    {
         "merged": "/Users/isra/.gradle/daemon/8.2/fr.iut.sae_s4_01_app_mobile.app-merged_res-33:/drawable_signature.png.flat",
         "source": "/Users/isra/.gradle/daemon/8.2/fr.iut.sae_s4_01_app_mobile.app-main-35:/drawable/signature.png"
     },
@@ -124,10 +128,6 @@
         "source": "/Users/isra/.gradle/daemon/8.2/fr.iut.sae_s4_01_app_mobile.app-main-35:/drawable/alertes_icone.png"
     },
     {
-        "merged": "fr.iut.sae_s4_01_app_mobile.app-merged_res-33:/layout_activity_login.xml.flat",
-        "source": "fr.iut.sae_s4_01_app_mobile.app-main-35:/layout/activity_login.xml"
-    },
-    {
         "merged": "/Users/isra/.gradle/daemon/8.2/fr.iut.sae_s4_01_app_mobile.app-merged_res-33:/drawable_ovale_shape.xml.flat",
         "source": "/Users/isra/.gradle/daemon/8.2/fr.iut.sae_s4_01_app_mobile.app-main-35:/drawable/ovale_shape.xml"
     },
@@ -182,6 +182,10 @@
     {
         "merged": "/Users/isra/.gradle/daemon/8.2/fr.iut.sae_s4_01_app_mobile.app-merged_res-33:/font_inter_medium.ttf.flat",
         "source": "/Users/isra/.gradle/daemon/8.2/fr.iut.sae_s4_01_app_mobile.app-main-35:/font/inter_medium.ttf"
+    },
+    {
+        "merged": "/Users/isra/.gradle/daemon/8.2/fr.iut.sae_s4_01_app_mobile.app-merged_res-33:/drawable_fleche_24.xml.flat",
+        "source": "/Users/isra/.gradle/daemon/8.2/fr.iut.sae_s4_01_app_mobile.app-main-35:/drawable/fleche_24.xml"
     },
     {
         "merged": "/Users/isra/.gradle/daemon/8.2/fr.iut.sae_s4_01_app_mobile.app-merged_res-33:/font_inter_extralight.ttf.flat",

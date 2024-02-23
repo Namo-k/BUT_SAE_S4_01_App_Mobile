@@ -30,6 +30,7 @@ drawable connexion
 drawable deconnexion
 drawable ecrire1
 drawable etoile
+drawable fleche_24
 drawable genre
 drawable home
 drawable ic_launcher_background
@@ -121,6 +122,7 @@ id prenomLabelTV
 id prenomTV
 id raisonLabelTV
 id raisonTV
+id retour
 id saisieText
 id saisie_logo
 id scanText

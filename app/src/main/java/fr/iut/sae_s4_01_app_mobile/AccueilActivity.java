@@ -88,5 +88,15 @@ public class AccueilActivity extends AppCompatActivity {
         translationX.setInterpolator(new LinearInterpolator());
         translationY.start();
         translationX.start();
+
+
+        ImageView sedeconnecterBtn = (ImageView) findViewById(R.id.sedeconnecterBtn);
+        sedeconnecterBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(AccueilActivity.this, LoginActivity.class);
+                startActivity(intent);
+            }
+        });
     }
 }

@@ -7,12 +7,22 @@
     android:background="#A0BFE0">
 
     <!-- Début de la section Bienvenue -->
+
+    <ImageView
+        android:id="@+id/retour"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/fleche_24"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="20dp"
+        />
+
     <TextView
         android:id="@+id/welcomeTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="40dp"
-        android:layout_marginTop="40dp"
+        android:layout_marginLeft="45dp"
+        android:layout_marginTop="15dp"
         android:text="Vous êtes nouveau ?"
         android:textColor="#4A55A2"
         android:textSize="24sp"
@@ -98,7 +108,7 @@
             android:layout_marginLeft="20dp"
             android:layout_marginRight="50dp"
             android:background="@drawable/spinner"
-            />
+            tools:ignore="TouchTargetSizeCheck" />
 
         <!--<EditText
             android:id="@+id/genre"

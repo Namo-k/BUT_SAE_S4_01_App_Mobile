@@ -8,6 +8,7 @@ import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -79,7 +80,18 @@ public class RegisterActivity extends AppCompatActivity {
                 }
             }
         });
+
+
+        ImageView flecheRetour = findViewById(R.id.retour);
+        flecheRetour.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                finish();
+            }
+        });
     }
+
+
 
     public boolean verifanne(String annee){
         int year;

@@ -8,6 +8,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -28,6 +29,13 @@ public class RegisterActivity2 extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_register2);
 
+        ImageView flecheRetour = findViewById(R.id.retour);
+        flecheRetour.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                finish();
+            }
+        });
 
 
         Intent intent = getIntent();
@@ -68,11 +76,15 @@ public class RegisterActivity2 extends AppCompatActivity {
                         }
                     }else {
                         Toast.makeText(RegisterActivity2.this, "Une erreur s'est produite lors de l'inscription", Toast.LENGTH_SHORT).show();
+
                     }
                 }
 
 
     } });
+
+
+
 
     }
 

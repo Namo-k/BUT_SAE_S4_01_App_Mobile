@@ -3034,6 +3034,7 @@ drawable design_password_eye
 drawable design_snackbar_background
 drawable ecrire1
 drawable etoile
+drawable fleche_24
 drawable genre
 drawable home
 drawable ic_arrow_back_black_24
@@ -3571,6 +3572,7 @@ id raisonTV
 id ratio
 id rectangles
 id report_drawn
+id retour
 id reverseSawtooth
 id right
 id rightToLeft
