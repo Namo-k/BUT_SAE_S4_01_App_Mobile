@@ -30,6 +30,7 @@ drawable connexion
 drawable deconnexion
 drawable ecrire1
 drawable etoile
+drawable genre
 drawable home
 drawable ic_launcher_background
 drawable ic_launcher_foreground
@@ -38,6 +39,7 @@ drawable ovale_shape
 drawable round_login
 drawable scan_logo
 drawable signature
+drawable spinner
 drawable stats
 drawable user
 drawable utilisateur
@@ -82,6 +84,7 @@ id conseilText
 id dataTV
 id email
 id etoile
+id genre
 id guidelineEnd
 id guidelineStart
 id homeBtn
@@ -129,6 +132,7 @@ id textView3
 id textView5
 id textView7
 id textViewBarcode
+id textViewGenre
 id textViewemail
 id textViewnom
 id textViewprenom

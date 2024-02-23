@@ -3033,6 +3033,7 @@ int drawable design_password_eye 0x7f070094
 int drawable design_snackbar_background 0x7f070095
 int drawable ecrire1 0x7f070096
 int drawable etoile 0x7f070097
+int drawable genre 0x7f0700f9
 int drawable home 0x7f070098
 int drawable ic_arrow_back_black_24 0x7f070099
 int drawable ic_clear_black_24 0x7f07009a
@@ -3124,6 +3125,7 @@ int drawable ovale_shape 0x7f0700ef
 int drawable round_login 0x7f0700f0
 int drawable scan_logo 0x7f0700f1
 int drawable signature 0x7f0700f2
+int drawable spinner 0x7f0700fa
 int drawable stats 0x7f0700f3
 int drawable test_level_drawable 0x7f0700f4
 int drawable tooltip_frame_dark 0x7f0700f5
@@ -3371,6 +3373,7 @@ int id forever 0x7f0900e3
 int id fragment_container_view_tag 0x7f0900e4
 int id frost 0x7f0900e5
 int id fullscreen_header 0x7f0900e6
+int id genre 0x7f09025a
 int id ghost_view 0x7f0900e7
 int id ghost_view_holder 0x7f0900e8
 int id gone 0x7f0900e9
@@ -3668,6 +3671,7 @@ int id textView3 0x7f09020c
 int id textView5 0x7f09020e
 int id textView7 0x7f09020f
 int id textViewBarcode 0x7f090210
+int id textViewGenre 0x7f09025b
 int id textViewemail 0x7f090211
 int id textViewnom 0x7f090213
 int id textViewprenom 0x7f090214

@@ -5,6 +5,7 @@ import android.text.TextUtils;
 import android.util.Patterns;
 import android.view.View;
 import android.widget.Button;
+import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.Toast;
 
@@ -27,10 +28,14 @@ public class RegisterActivity2 extends AppCompatActivity {
                 EditText passwordEditText = findViewById(R.id.mdp);
                 String password = passwordEditText.getText().toString().trim();
                 String email = emailEditText.getText().toString().trim();
+                CheckBox checkbox = findViewById(R.id.checkbox);
+
                 if (!isValidEmail(email)){
                     Toast.makeText(RegisterActivity2.this, "Adresse email non valide", Toast.LENGTH_SHORT).show();
                 }else if (!isPasswordValid(password)) {
                     Toast.makeText(RegisterActivity2.this, "Le mot de passe doit avoir au moins 8 caractères, une majuscule et un chiffre.", Toast.LENGTH_SHORT).show();
+                }else if(!checkbox.isChecked()){
+                    Toast.makeText(RegisterActivity2.this, "Veuillez accepter les conditions générales d'utilisation", Toast.LENGTH_SHORT).show();
                 }
 
 

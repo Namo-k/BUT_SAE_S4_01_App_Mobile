@@ -150,15 +150,17 @@
 
             android:layout_marginTop="10dp">
 
-            <CheckBox
-                android:id="@+id/checkbox"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
-                android:text="En cochant cette case, vous acceptez nos conditions générales ... " />
-
 
         </LinearLayout>
+
+        <CheckBox
+            android:id="@+id/checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+
+            android:text="En cochant cette case, vous acceptez nos conditions générales d'utilisation" />
 
         <LinearLayout
             android:layout_width="wrap_content"

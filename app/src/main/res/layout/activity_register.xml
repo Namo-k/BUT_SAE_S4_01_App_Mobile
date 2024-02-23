@@ -54,7 +54,7 @@
         android:layout_below="@id/welcomeTextView"
         android:layout_centerHorizontal="true"
         android:layout_marginLeft="50dp"
-        android:layout_marginTop="177dp"
+        android:layout_marginTop="160dp"
         android:orientation="vertical">
 
         <TextView
@@ -78,6 +78,51 @@
             <ImageView
                 android:layout_width="21dp"
                 android:layout_height="39dp"
+                android:src="@drawable/genre" />
+
+            <TextView
+                android:id="@+id/textViewGenre"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" Votre genre : "
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="5dp"
+                android:textSize="18dp" />
+
+        </LinearLayout>
+
+        <Spinner
+            android:id="@+id/genre"
+            android:layout_width="322dp"
+            android:layout_height="41dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="50dp"
+            android:background="@drawable/spinner"
+            />
+
+        <!--<EditText
+            android:id="@+id/genre"
+            android:layout_width="322dp"
+            android:layout_height="41dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="50dp"
+            android:background="@drawable/round_login"
+            android:hint="Nom"
+            android:inputType="text"
+            android:paddingLeft="20dp"
+            android:textStyle="italic"
+            tools:ignore="TouchTargetSizeCheck" />-->
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="5dp">
+
+            <ImageView
+                android:layout_width="21dp"
+                android:layout_height="39dp"
                 android:src="@drawable/utilisateur" />
 
             <TextView
@@ -96,7 +141,6 @@
             android:layout_width="322dp"
             android:layout_height="41dp"
             android:layout_marginLeft="20dp"
-            android:layout_marginTop="5dp"
             android:layout_marginRight="50dp"
             android:background="@drawable/round_login"
             android:hint="Nom"
@@ -110,7 +154,7 @@
             android:layout_height="wrap_content"
             android:orientation="horizontal"
             android:layout_marginLeft="20dp"
-            android:layout_marginTop="10dp">
+            android:layout_marginTop="5dp">
 
             <ImageView
                 android:layout_width="21dp"
@@ -133,7 +177,6 @@
             android:layout_width="322dp"
             android:layout_height="41dp"
             android:layout_marginLeft="20dp"
-            android:layout_marginTop="3dp"
             android:background="@drawable/round_login"
             android:hint="Prenom"
             android:inputType="text"
@@ -146,7 +189,7 @@
             android:layout_height="wrap_content"
             android:orientation="horizontal"
             android:layout_marginLeft="20dp"
-            android:layout_marginTop="10dp">
+            android:layout_marginTop="5dp">
 
             <ImageView
                 android:layout_width="21dp"
@@ -279,6 +322,7 @@
         >
 
     </LinearLayout>
+
 
 
 

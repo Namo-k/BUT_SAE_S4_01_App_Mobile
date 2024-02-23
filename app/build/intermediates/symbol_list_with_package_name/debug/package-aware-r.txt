@@ -3034,6 +3034,7 @@ drawable design_password_eye
 drawable design_snackbar_background
 drawable ecrire1
 drawable etoile
+drawable genre
 drawable home
 drawable ic_arrow_back_black_24
 drawable ic_clear_black_24
@@ -3125,6 +3126,7 @@ drawable ovale_shape
 drawable round_login
 drawable scan_logo
 drawable signature
+drawable spinner
 drawable stats
 drawable test_level_drawable
 drawable tooltip_frame_dark
@@ -3372,6 +3374,7 @@ id forever
 id fragment_container_view_tag
 id frost
 id fullscreen_header
+id genre
 id ghost_view
 id ghost_view_holder
 id gone
@@ -3669,6 +3672,7 @@ id textView3
 id textView5
 id textView7
 id textViewBarcode
+id textViewGenre
 id textViewemail
 id textViewnom
 id textViewprenom
