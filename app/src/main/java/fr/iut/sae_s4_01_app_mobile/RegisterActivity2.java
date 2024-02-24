@@ -67,15 +67,17 @@ public class RegisterActivity2 extends AppCompatActivity {
                 }else {
                     long userID = DatabaseUser.insertData(genre, name, prenom, date);
 
-                    if(userID !=1) {
+                    if(userID != -1) {
                         Boolean checkUserEmail = DatabaseIdentifiant.checkEmail(email_);
                         if (checkUserEmail == false) {
                             boolean successIdt = DatabaseIdentifiant.insertData(email_, password_, userID);
+                            Intent intent = new Intent(RegisterActivity2.this, LoginActivity.class);
+                            startActivity(intent);
                         } else {
-                            Toast.makeText(RegisterActivity2.this, "Ce compte existe déjà! Connectez-vous", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(RegisterActivity2.this, "Un compte avec ce mail existe déjà! Connectez-vous", Toast.LENGTH_SHORT).show();
                         }
                     }else {
-                        Toast.makeText(RegisterActivity2.this, "Une erreur s'est produite lors de l'inscription", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(RegisterActivity2.this, "Une compte avec ces nom et prenom existe déjà! Connectez-vous ", Toast.LENGTH_SHORT).show();
 
                     }
                 }

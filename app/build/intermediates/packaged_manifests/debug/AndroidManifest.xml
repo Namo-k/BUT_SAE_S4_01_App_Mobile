@@ -36,6 +36,7 @@
     <uses-permission android:name="fr.iut.sae_s4_01_app_mobile.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
 
     <application
+        android:name="fr.iut.sae_s4_01_app_mobile.UserId"
         android:allowBackup="true"
         android:appComponentFactory="androidx.core.app.CoreComponentFactory"
         android:dataExtractionRules="@xml/data_extraction_rules"

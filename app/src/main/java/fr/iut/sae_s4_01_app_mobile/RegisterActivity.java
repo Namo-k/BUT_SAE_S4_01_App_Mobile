@@ -19,7 +19,12 @@ import java.util.ArrayList;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import fr.iut.sae_s4_01_app_mobile.bd.Identifiants;
+
 public class RegisterActivity extends AppCompatActivity {
+
+    private Identifiants DatabaseIdentifiant;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -68,7 +73,7 @@ public class RegisterActivity extends AppCompatActivity {
                         Toast.makeText(RegisterActivity.this, "L'année saisie n'est pas conforme", Toast.LENGTH_SHORT).show();
                     }else {
                         Intent intent = new Intent(RegisterActivity.this, RegisterActivity2.class);
-                        startActivity(intent);
+                        //startActivity(intent);
                         String datecomplete = jour_ + "/" + mois_ + "/" + annee_;
                         intent.putExtra("genre", genre);
                         intent.putExtra("name", nom_);

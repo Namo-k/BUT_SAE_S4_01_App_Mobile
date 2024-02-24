@@ -10,6 +10,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.SAE_S4_01_App_Mobile"
+        android:name=".UserId"
         tools:targetApi="31">
 
         <activity
@@ -82,7 +83,11 @@
             </intent-filter>-->
         </activity>
 
-        <activity
+
+
+
+
+    <activity
             android:name=".ProfilActivity"
             android:exported="true">
         </activity>

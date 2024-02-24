@@ -11,18 +11,35 @@ import android.widget.TextView;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.cardview.widget.CardView;
 
+import fr.iut.sae_s4_01_app_mobile.bd.Users;
+
 public class AccueilActivity extends AppCompatActivity {
+
+    private int userID;
+
+    private Users DatabaseUser;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_accueil);
 
-        // Navbar code
+        DatabaseUser = new Users(this);
+
+
+        UserId myApp = (UserId) getApplication();
+        int userID = myApp.getUserID();
+
+
         ImageView btnAncienne = (ImageView) findViewById(R.id.ancienneBtn);
         ImageView btnProfil = (ImageView) findViewById(R.id.userBtn);
         TextView btnAlertes = (TextView) findViewById(R.id.btnAlertes);
         TextView btnPrenom = (TextView) findViewById(R.id.prenom);
+
+        String prenom = DatabaseUser.getPrenom(userID);
+        btnPrenom.append(prenom);
+
 
         btnAncienne.setOnClickListener(new View.OnClickListener() {
             @Override

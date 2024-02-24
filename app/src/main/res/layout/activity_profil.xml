@@ -150,7 +150,8 @@
                     android:fontFamily="@font/inter_semibold"
                     android:text="Citoyen"
                     android:textColor="@color/textDarkBlue"
-                    android:textSize="13.7dp" />
+                    android:textSize="13.7dp"
+                    tools:ignore="TextSizeCheck"/>
 
                 <TextView
                     android:id="@+id/nomTV"
@@ -159,7 +160,8 @@
                     android:fontFamily="@font/inter_medium"
                     android:text="Nom : "
                     android:textColor="@color/textGrey"
-                    android:textSize="12.7dp" />
+                    android:textSize="12.7dp"
+                    tools:ignore="TextSizeCheck"/>
 
                 <TextView
                     android:id="@+id/nomLabelTV"
@@ -168,9 +170,9 @@
                     android:layout_marginLeft="4dp"
                     android:layout_toRightOf="@+id/nomTV"
                     android:fontFamily="@font/inter"
-                    android:text="CAROUNANITHI"
                     android:textColor="@color/textDarkBlue"
-                    android:textSize="13dp" />
+                    android:textSize="13dp"
+                    tools:ignore="TextSizeCheck"/>
 
                 <TextView
                     android:id="@+id/prenomTV"
@@ -181,7 +183,8 @@
                     android:fontFamily="@font/inter_medium"
                     android:text="Prenom :"
                     android:textColor="@color/textGrey"
-                    android:textSize="12.7dp" />
+                    android:textSize="12.7dp"
+                    tools:ignore="TextSizeCheck"/>
 
                 <TextView
                     android:id="@+id/prenomLabelTV"
@@ -192,9 +195,10 @@
                     android:layout_marginTop="10dp"
                     android:layout_toRightOf="@+id/prenomTV"
                     android:fontFamily="@font/inter"
-                    android:text="Alexandre"
+
                     android:textColor="@color/textDarkBlue"
-                    android:textSize="13dp" />
+                    android:textSize="13dp"
+                    tools:ignore="TextSizeCheck" />
 
                 <TextView
                     android:id="@+id/naissanceTV"
@@ -207,7 +211,8 @@
                     android:fontFamily="@font/inter_medium"
                     android:text="Naissance :"
                     android:textColor="@color/textGrey"
-                    android:textSize="12.7dp" />
+                    android:textSize="12.7dp"
+                    tools:ignore="TextSizeCheck"/>
 
                 <TextView
                     android:id="@+id/naissanceLabelTV"
@@ -218,9 +223,9 @@
                     android:layout_marginTop="10dp"
                     android:layout_toRightOf="@+id/naissanceTV"
                     android:fontFamily="@font/inter"
-                    android:text="17/12/2004"
                     android:textColor="@color/textDarkBlue"
-                    android:textSize="12.7dp" />
+                    android:textSize="12.7dp"
+                    tools:ignore="TextSizeCheck"/>
 
                 <TextView
                     android:id="@+id/pharmacieTV"
@@ -231,7 +236,8 @@
                     android:fontFamily="@font/inter_medium"
                     android:text="Ma pharmacie préférée :"
                     android:textColor="@color/textGrey"
-                    android:textSize="12.7dp" />
+                    android:textSize="12.7dp"
+                    tools:ignore="TextSizeCheck"/>
 
                 <TextView
                     android:id="@+id/pharmacieLabelTV"
@@ -244,7 +250,8 @@
                     android:fontFamily="@font/inter"
                     android:text="Pharmacie de la Gare"
                     android:textColor="@color/textDarkBlue"
-                    android:textSize="12.7dp" />
+                    android:textSize="12.7dp"
+                    tools:ignore="TextSizeCheck" />
 
                 <ImageView
                     android:id="@+id/etoile"
@@ -268,7 +275,8 @@
                     android:fontFamily="@font/inter_medium"
                     android:text="Médecin traitant :"
                     android:textColor="@color/textGrey"
-                    android:textSize="12.7dp" />
+                    android:textSize="12.7dp"
+                    tools:ignore="TextSizeCheck"/>
 
                 <TextView
                     android:id="@+id/medecinLabelTV"
@@ -281,7 +289,8 @@
                     android:fontFamily="@font/inter"
                     android:text="M.LAGACHE Chardon"
                     android:textColor="@color/textDarkBlue"
-                    android:textSize="12.7dp" />
+                    android:textSize="12.7dp"
+                    tools:ignore="TextSizeCheck"/>
 
             </RelativeLayout>
 
@@ -295,7 +304,8 @@
                 android:text="Accéder à mon profil..."
                 android:textColor="@color/darkBlue"
                 android:textSize="13.5dp"
-                android:textStyle="italic" />
+                android:textStyle="italic"
+                tools:ignore="TextSizeCheck,TouchTargetSizeCheck" />
 
         </androidx.cardview.widget.CardView>
 

@@ -124,7 +124,7 @@
                 android:layout_marginStart="127dp"
                 android:layout_marginTop="6dp"
                 android:fontFamily="@font/inter_semibold"
-                android:text="Alexandre"
+
                 android:textAlignment="center"
                 android:textColor="@color/darkBlue"
                 android:textSize="18dp"
@@ -302,7 +302,8 @@
                         android:text="Voir le tutoriel"
                         android:textAlignment="center"
                         android:textColor="@color/textGrey"
-                        android:textSize="13dp" />
+                        android:textSize="13dp"
+                        tools:ignore="TextSizeCheck" />
 
                 </RelativeLayout>
 

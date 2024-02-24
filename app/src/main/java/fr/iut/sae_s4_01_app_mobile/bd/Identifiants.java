@@ -1,5 +1,6 @@
 package fr.iut.sae_s4_01_app_mobile.bd;
 
+import android.annotation.SuppressLint;
 import android.content.ContentValues;
 import android.content.Context;
 import android.database.Cursor;
@@ -32,14 +33,23 @@ public class Identifiants extends SQLiteOpenHelper {
     public Boolean insertData(String email, String mdp, long userID) {
         SQLiteDatabase MyDatabase = this.getWritableDatabase();
         ContentValues contentval = new ContentValues();
-        contentval.put("id", userID); // Utilisation de l'ID de l'utilisateur
         contentval.put("email", email);
         contentval.put("mdp", mdp);
 
+        // Insertion dans la table identifiants
         long result = MyDatabase.insert("identifiants", null, contentval);
 
-        return result != -1;
+        // Vérification du succès de l'insertion
+        if (result != -1) {
+            // Si l'insertion dans la table identifiants réussit,
+            // le résultat de l'insertion dans la table users est retourné
+            return true;
+        } else {
+            // Si l'insertion échoue, retourne false
+            return false;
+        }
     }
+
 
 
 
@@ -68,5 +78,17 @@ public class Identifiants extends SQLiteOpenHelper {
         }else {
             return false;
         }
+    }
+
+    @SuppressLint("Range")
+    public int getId(String email, String password){
+        SQLiteDatabase MyDatabase = this.getWritableDatabase();
+        int id = -1;
+        Cursor cursor = MyDatabase.rawQuery("Select id from identifiants where email = ? and mdp = ?", new String[]{email, password});
+        if (cursor != null && cursor.moveToFirst()) {
+            id = cursor.getInt(cursor.getColumnIndex("id"));
+            cursor.close();
+        }
+        return id;
     }
 }

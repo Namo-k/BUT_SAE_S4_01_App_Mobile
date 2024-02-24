@@ -11,22 +11,26 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import fr.iut.sae_s4_01_app_mobile.R;
 import fr.iut.sae_s4_01_app_mobile.bd.Identifiants;
 
 public class LoginActivity extends AppCompatActivity {
 
     private Identifiants DatabaseIdentifiant;
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
+
+
 
         Button loginBtn = findViewById(R.id.loginBtn);
         EditText usernameLN = findViewById(R.id.usernameET);
         EditText passwordLN = findViewById(R.id.passwordET);
 
         DatabaseIdentifiant = new Identifiants(this);
+
 
         loginBtn.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -41,7 +45,9 @@ public class LoginActivity extends AppCompatActivity {
                 if (DatabaseIdentifiant.checkEmailPassword(usernameCo, passwordCo )) {
 
                     Toast.makeText(LoginActivity.this, "Vous êtes connecté !", Toast.LENGTH_SHORT).show();
-
+                    int userId = DatabaseIdentifiant.getId(usernameCo, passwordCo);
+                    UserId myApp = (UserId) getApplication();
+                    myApp.setUserID(userId);
                     Intent intent = new Intent(LoginActivity.this, AccueilActivity.class); // page apres co
                     Bundle bundle = new Bundle();
                     bundle.putString("username", usernameCo);
