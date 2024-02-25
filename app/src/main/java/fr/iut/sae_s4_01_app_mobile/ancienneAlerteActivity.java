@@ -17,6 +17,7 @@ public class ancienneAlerteActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_ancienne_alerte);
 
+        // Bouton de la navbar
         ImageView btnHome = (ImageView) findViewById(R.id.homeBtn);
         ImageView btnProfil = (ImageView) findViewById(R.id.userBtn);
         btnHome.setOnClickListener(new View.OnClickListener() {
@@ -35,6 +36,7 @@ public class ancienneAlerteActivity extends AppCompatActivity {
             }
         });
 
+        // à faire avec BD
         ListView listView = findViewById(R.id.ancienneAlertelistView);
 
         List<Alerte> alertes = new ArrayList<>();

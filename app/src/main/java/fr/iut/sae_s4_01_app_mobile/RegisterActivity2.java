@@ -24,6 +24,8 @@ public class RegisterActivity2 extends AppCompatActivity {
     private String name;
     private String prenom;
     private String date;
+    private String pharmacie = "Non renseigné";
+    private String medecin = "Non renseigné";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -56,6 +58,7 @@ public class RegisterActivity2 extends AppCompatActivity {
                 EditText password = findViewById(R.id.mdp);
                 String password_ = password.getText().toString().trim();
                 String email_ = email.getText().toString().trim();
+
                 CheckBox checkbox = findViewById(R.id.checkbox);
 
                 if (!isValidEmail(email_)){
@@ -65,7 +68,7 @@ public class RegisterActivity2 extends AppCompatActivity {
                 }else if(!checkbox.isChecked()){
                     Toast.makeText(RegisterActivity2.this, "Veuillez accepter les conditions générales d'utilisation", Toast.LENGTH_SHORT).show();
                 }else {
-                    long userID = DatabaseUser.insertData(genre, name, prenom, date);
+                    long userID = DatabaseUser.insertData(genre, name, prenom, date, pharmacie, medecin);
 
                     if(userID != -1) {
                         Boolean checkUserEmail = DatabaseIdentifiant.checkEmail(email_);

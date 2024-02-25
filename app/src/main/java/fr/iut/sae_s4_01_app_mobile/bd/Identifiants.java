@@ -28,8 +28,6 @@ public class Identifiants extends SQLiteOpenHelper {
         onCreate(db);
     }
 
-
-
     public Boolean insertData(String email, String mdp, long userID) {
         SQLiteDatabase MyDatabase = this.getWritableDatabase();
         ContentValues contentval = new ContentValues();
@@ -50,13 +48,26 @@ public class Identifiants extends SQLiteOpenHelper {
         }
     }
 
+    public long updateData(Integer id, String email) {
+        SQLiteDatabase MyDatabase = this.getWritableDatabase();
+        ContentValues contentval = new ContentValues();
 
+        contentval.put("email", email);
 
+        String whereClause = "ID = ?";
+        String[] whereArgs = { String.valueOf(id) };
 
+        return MyDatabase.update("identifiants", contentval, whereClause, whereArgs);
+    }
 
+    public long deleteUserData(Integer id) {
+        SQLiteDatabase MyDatabase = this.getWritableDatabase();
 
+        String whereClause = "ID = ?";
+        String[] whereArgs = { String.valueOf(id) };
 
-
+        return MyDatabase.delete("identifiants", whereClause, whereArgs);
+    }
 
     public Boolean checkEmail(String email){
         SQLiteDatabase MyDatabase = this.getWritableDatabase();
@@ -90,5 +101,16 @@ public class Identifiants extends SQLiteOpenHelper {
             cursor.close();
         }
         return id;
+    }
+    @SuppressLint("Range")
+    public String getMail(Integer id){
+        SQLiteDatabase MyDatabase = this.getReadableDatabase();
+        String mail = " ";
+        Cursor cursor = MyDatabase.rawQuery("SELECT email FROM identifiants WHERE id=?", new String[]{String.valueOf(id)});
+        if (cursor != null && cursor.moveToFirst()) {
+            mail = cursor.getString(cursor.getColumnIndex("email"));
+            cursor.close();
+        }
+        return mail;
     }
 }

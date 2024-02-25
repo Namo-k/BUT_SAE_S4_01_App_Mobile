@@ -88,6 +88,7 @@
         android:layout_weight="1"
         android:orientation="vertical">
 
+
         <!-- ========== DEBUT SECTION INFORMATIONS =========== -->
 
         <LinearLayout
@@ -137,7 +138,7 @@
         <androidx.cardview.widget.CardView
             android:id="@+id/blocInformations"
             android:layout_width="338dp"
-            android:layout_height="290dp"
+            android:layout_height="320dp"
             android:layout_marginStart="27dp"
             app:cardBackgroundColor="@color/lightBlueLight"
             app:cardCornerRadius="20dp"
@@ -150,9 +151,9 @@
                 android:layout_height="75dp"
                 android:layout_gravity="right"
                 android:layout_marginRight="13dp"
+                android:layout_marginTop="40dp"
                 android:src="@drawable/colombesblanc"
                 />
-
 
             <RelativeLayout
                 android:layout_width="match_parent"
@@ -169,121 +170,139 @@
                     android:fontFamily="@font/inter_medium"
                     android:text="Sexe* : "
                     android:textColor="@color/textGrey"
-                    android:textSize="13.3dp"
+                    android:textSize="13.5dp"
                     tools:ignore="TextSizeCheck"/>
 
-                <TextView
-                    android:id="@+id/sexeLabelTV"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="4dp"
+                <EditText
+                    android:id="@+id/sexeEdit"
+                    android:layout_width="156dp"
+                    android:layout_height="21dp"
+                    android:layout_marginLeft="6dp"
+                    android:paddingLeft="13dp"
                     android:layout_toRightOf="@+id/sexeTV"
+                    android:background="@drawable/round_login"
+                    android:hint="Sexe"
+                    android:inputType="text"
+                    android:textSize="12dp"
                     android:fontFamily="@font/inter"
                     android:textColor="@color/textDarkBlue"
-                    android:textSize="13.3dp"
-                    tools:ignore="TextSizeCheck"/>
+                    tools:ignore="TouchTargetSizeCheck" />
 
                 <TextView
                     android:id="@+id/nomTV"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_below="@+id/sexeTV"
-                    android:layout_marginTop="15dp"
+                    android:layout_marginTop="17dp"
                     android:fontFamily="@font/inter_medium"
                     android:text="Nom* : "
                     android:textColor="@color/textGrey"
-                    android:textSize="13.3dp"
+                    android:textSize="13.5dp"
                     tools:ignore="TextSizeCheck"/>
 
-                <TextView
-                    android:id="@+id/nomLabelTV"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="4dp"
-                    android:layout_marginTop="15dp"
+                <EditText
+                    android:id="@+id/nomEdit"
+                    android:layout_width="156dp"
+                    android:layout_height="21dp"
+                    android:layout_marginLeft="8dp"
+                    android:paddingLeft="13dp"
                     android:layout_below="@+id/sexeTV"
                     android:layout_toRightOf="@+id/nomTV"
+                    android:layout_marginTop="18dp"
+                    android:background="@drawable/round_login"
+                    android:hint="Nom de famille"
+                    android:inputType="text"
+                    android:textSize="12dp"
                     android:fontFamily="@font/inter"
                     android:textColor="@color/textDarkBlue"
-                    android:textSize="13.3dp"
-                    tools:ignore="TextSizeCheck"/>
+                    tools:ignore="TouchTargetSizeCheck" />
 
                 <TextView
                     android:id="@+id/prenomTV"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_below="@+id/nomTV"
-                    android:layout_marginTop="15dp"
+                    android:layout_marginTop="17dp"
                     android:fontFamily="@font/inter_medium"
                     android:text="Prenom* :"
                     android:textColor="@color/textGrey"
-                    android:textSize="13.1dp"
+                    android:textSize="13.5dp"
                     tools:ignore="TextSizeCheck"/>
 
-                <TextView
-                    android:id="@+id/prenomLabelTV"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                <EditText
+                    android:id="@+id/prenomEdit"
+                    android:layout_width="138dp"
+                    android:layout_height="21dp"
+                    android:layout_marginLeft="10dp"
+                    android:paddingLeft="13dp"
                     android:layout_below="@+id/nomTV"
-                    android:layout_marginLeft="4dp"
-                    android:layout_marginTop="15dp"
                     android:layout_toRightOf="@+id/prenomTV"
+                    android:layout_marginTop="18dp"
+                    android:background="@drawable/round_login"
+                    android:hint="Prénom"
+                    android:inputType="text"
+                    android:textSize="12dp"
                     android:fontFamily="@font/inter"
                     android:textColor="@color/textDarkBlue"
-                    android:textSize="13dp"
-                    tools:ignore="TextSizeCheck" />
+                    tools:ignore="TouchTargetSizeCheck" />
 
                 <TextView
                     android:id="@+id/naissanceTV"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_below="@+id/nomTV"
-                    android:layout_marginLeft="13dp"
-                    android:layout_marginTop="15dp"
-                    android:layout_toRightOf="@+id/prenomLabelTV"
+                    android:layout_below="@+id/prenomTV"
+                    android:layout_marginTop="17dp"
                     android:fontFamily="@font/inter_medium"
                     android:text="Naissance* :"
                     android:textColor="@color/textGrey"
-                    android:textSize="13.1dp"
+                    android:textSize="13.5dp"
                     tools:ignore="TextSizeCheck" />
 
-                <TextView
-                    android:id="@+id/naissanceLabelTV"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_below="@+id/nomTV"
-                    android:layout_marginLeft="3dp"
-                    android:layout_marginTop="15dp"
+                <EditText
+                    android:id="@+id/naissanceEdit"
+                    android:layout_width="122dp"
+                    android:layout_height="21dp"
+                    android:layout_marginLeft="10dp"
+                    android:paddingLeft="13dp"
+                    android:layout_below="@+id/prenomTV"
                     android:layout_toRightOf="@+id/naissanceTV"
+                    android:layout_marginTop="18dp"
+                    android:background="@drawable/round_login"
+                    android:hint="JJ/MM/AAAA"
+                    android:inputType="text"
+                    android:textSize="12dp"
                     android:fontFamily="@font/inter"
                     android:textColor="@color/textDarkBlue"
-                    android:textSize="13dp"
-                    tools:ignore="TextSizeCheck"/>
+                    tools:ignore="TouchTargetSizeCheck" />
 
                 <TextView
                     android:id="@+id/mailTV"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_below="@+id/prenomTV"
-                    android:layout_marginTop="15dp"
+                    android:layout_below="@+id/naissanceTV"
+                    android:layout_marginTop="17dp"
                     android:fontFamily="@font/inter_medium"
                     android:text="Adresse mail* :"
                     android:textColor="@color/textGrey"
-                    android:textSize="13.3dp"
+                    android:textSize="13.5dp"
                     tools:ignore="TextSizeCheck"/>
 
-                <TextView
-                    android:id="@+id/mailLabelTV"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_below="@+id/prenomTV"
-                    android:layout_marginLeft="5dp"
-                    android:layout_marginTop="15dp"
+                <EditText
+                    android:id="@+id/mailEdit"
+                    android:layout_width="187dp"
+                    android:layout_height="21dp"
+                    android:layout_marginLeft="10dp"
+                    android:paddingLeft="13dp"
+                    android:layout_below="@+id/naissanceTV"
                     android:layout_toRightOf="@+id/mailTV"
+                    android:layout_marginTop="18dp"
+                    android:background="@drawable/round_login"
+                    android:hint="Adresse mail"
+                    android:inputType="text"
+                    android:textSize="12dp"
                     android:fontFamily="@font/inter"
                     android:textColor="@color/textDarkBlue"
-                    android:textSize="13.3dp"
-                    tools:ignore="TextSizeCheck" />
+                    tools:ignore="TouchTargetSizeCheck" />
 
                 <TextView
                     android:id="@+id/pharmacieTV"
@@ -294,34 +313,25 @@
                     android:fontFamily="@font/inter_medium"
                     android:text="Pharmacie préférée :"
                     android:textColor="@color/textGrey"
-                    android:textSize="13.3dp"
+                    android:textSize="13dp"
                     tools:ignore="TextSizeCheck"/>
 
-                <TextView
-                    android:id="@+id/pharmacieLabelTV"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                <EditText
+                    android:id="@+id/pharmacieEdit"
+                    android:layout_width="153dp"
+                    android:layout_height="21dp"
+                    android:layout_marginLeft="10dp"
+                    android:paddingLeft="13dp"
                     android:layout_below="@+id/mailTV"
-                    android:layout_marginLeft="5dp"
-                    android:layout_marginTop="17dp"
                     android:layout_toRightOf="@+id/pharmacieTV"
+                    android:layout_marginTop="18dp"
+                    android:background="@drawable/round_login"
+                    android:hint="Pharmacie préférée"
+                    android:inputType="text"
+                    android:textSize="12dp"
                     android:fontFamily="@font/inter"
                     android:textColor="@color/textDarkBlue"
-                    android:textSize="13.3dp"
-                    tools:ignore="TextSizeCheck" />
-
-                <ImageView
-                    android:id="@+id/etoile"
-                    android:layout_width="15dp"
-                    android:layout_height="15dp"
-                    android:layout_below="@+id/mailTV"
-                    android:layout_marginLeft="6dp"
-                    android:layout_marginTop="20dp"
-                    android:layout_toRightOf="@+id/pharmacieLabelTV"
-                    android:fontFamily="@font/inter"
-                    android:src="@drawable/etoile"
-                    android:textColor="@color/textDarkBlue"
-                    android:textSize="12.5dp" />
+                    tools:ignore="TouchTargetSizeCheck" />
 
                 <TextView
                     android:id="@+id/medecinTV"
@@ -332,224 +342,104 @@
                     android:fontFamily="@font/inter_medium"
                     android:text="Médecin traitant :"
                     android:textColor="@color/textGrey"
-                    android:textSize="13.3dp"
+                    android:textSize="13dp"
                     tools:ignore="TextSizeCheck"/>
 
-                <TextView
-                    android:id="@+id/medecinLabelTV"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                <EditText
+                    android:id="@+id/medecinEdit"
+                    android:layout_width="172dp"
+                    android:layout_height="21dp"
+                    android:layout_marginLeft="10dp"
+                    android:paddingLeft="13dp"
                     android:layout_below="@+id/pharmacieTV"
-                    android:layout_marginLeft="6dp"
-                    android:layout_marginTop="17dp"
                     android:layout_toRightOf="@+id/medecinTV"
+                    android:layout_marginTop="18dp"
+                    android:background="@drawable/round_login"
+                    android:hint="Médecin traitant"
+                    android:inputType="text"
+                    android:textSize="12dp"
                     android:fontFamily="@font/inter"
                     android:textColor="@color/textDarkBlue"
-                    android:textSize="13.3dp"
-                    tools:ignore="TextSizeCheck"/>
+                    tools:ignore="TouchTargetSizeCheck" />
 
-                <androidx.cardview.widget.CardView
-                    android:layout_width="150dp"
-                    android:layout_height="34dp"
-                    android:layout_marginStart="77dp"
-                    android:layout_marginTop="20dp"
-                    app:cardBackgroundColor="@color/darkBlueLight"
-                    app:cardCornerRadius="6dp"
+                <TextView
+                    android:id="@+id/info1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
                     android:layout_below="@+id/medecinTV"
-                    >
+                    android:layout_marginTop="23dp"
+                    android:layout_marginLeft="35dp"
+                    android:fontFamily="@font/inter_medium"
+                    android:text="* Ces informations sont "
+                    android:textColor="@color/textGrey"
+                    android:textSize="12.5dp"
+                    />
 
-                    <TextView
-                        android:id="@+id/btnModifier"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:gravity="center"
-                        android:text="Modifier"
-                        android:textSize="15dp"
-                        android:textColor="@color/white"
-                        android:fontFamily="@font/inter_medium"
-                        />
-
-                </androidx.cardview.widget.CardView>
+                <TextView
+                    android:id="@+id/info2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/medecinTV"
+                    android:layout_toRightOf="@+id/info1"
+                    android:layout_marginTop="23dp"
+                    android:fontFamily="@font/inter_bold"
+                    android:text="obligatoires"
+                    android:textColor="@color/red"
+                    android:textSize="12.6dp"
+                    />
             </RelativeLayout>
 
         </androidx.cardview.widget.CardView>
 
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_marginTop="12dp"
-        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
 
-        <CheckBox
-            android:id="@+id/checkbox"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="30dp"
-            android:checked="false"
-            android:clickable="true" />
+            <androidx.cardview.widget.CardView
+                android:id="@+id/btnAnnuler"
+                android:layout_width="130dp"
+                android:layout_height="34dp"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="20dp"
+                app:cardBackgroundColor="@color/darkBlueLight"
+                app:cardCornerRadius="6dp"
+                >
 
-        <TextView
-            android:id="@+id/textProspection"
-            android:layout_width="280dp"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="5dp"
-            android:layout_marginLeft="2dp"
-            android:fontFamily="@font/inter_medium"
-            android:text="@string/text_prospection"
-            android:textColor="@color/textGrey"
-            android:lineHeight="21dp"
-            android:layout_toRightOf="@+id/checkbox"
-            android:textSize="13dp"
-            tools:ignore="TextSizeCheck"
-            />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="Annuler"
+                    android:textSize="15dp"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/inter_medium"
+                    />
 
-        <androidx.cardview.widget.CardView
-            android:id="@+id/btnDesactiverCompte"
-            android:layout_width="198dp"
-            android:layout_height="29dp"
-            android:layout_marginTop="75dp"
-            android:layout_marginStart="79dp"
-            app:cardBackgroundColor="@color/lightBlueLight"
-            app:cardCornerRadius="5dp"
-            android:layout_below="@+id/checkbox"
-            >
+            </androidx.cardview.widget.CardView>
 
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:fontFamily="@font/inter_medium"
-                android:gravity="center"
-                android:text="Désactiver mon compte"
-                android:textColor="#FF0000"
-                android:textSize="14dp"
-                />
+            <androidx.cardview.widget.CardView
+                android:id="@+id/btnEnregistrer"
+                android:layout_width="170dp"
+                android:layout_height="34dp"
+                android:layout_toRightOf="@+id/btnAnnuler"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                app:cardBackgroundColor="@color/darkBlueLight"
+                app:cardCornerRadius="6dp"
+                >
 
-        </androidx.cardview.widget.CardView>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="Enregistrer"
+                    android:textSize="15dp"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/inter_medium"
+                    />
 
-        <androidx.cardview.widget.CardView
-            android:id="@+id/interrogation2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="76dp"
-            android:layout_below="@+id/checkbox"
-            android:layout_marginLeft="18dp"
-            android:layout_toRightOf="@+id/btnDesactiverCompte"
-            android:alpha="0.8"
-            app:cardBackgroundColor="#5C89BE"
-            app:cardCornerRadius="20dp">
-
-            <TextView
-                android:layout_width="25dp"
-                android:layout_height="25dp"
-                android:fontFamily="@font/inter_bold"
-                android:gravity="center"
-                android:text=" ? "
-                android:textColor="@color/textDarkBlue"
-                android:textSize="16dp"
-                android:textStyle="bold" />
-        </androidx.cardview.widget.CardView>
-
-
-        <androidx.cardview.widget.CardView
-            android:id="@+id/btnSupprimerCompte"
-            android:layout_width="198dp"
-            android:layout_height="29dp"
-            android:layout_marginTop="20dp"
-            android:layout_marginStart="79dp"
-            app:cardBackgroundColor="@color/lightBlueLight"
-            app:cardCornerRadius="5dp"
-            android:layout_below="@+id/checkbox"
-            >
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:fontFamily="@font/inter_medium"
-                android:gravity="center"
-                android:text="Supprimer mon compte"
-                android:textColor="#FF0000"
-                android:textSize="14dp"
-                />
-
-        </androidx.cardview.widget.CardView>
-
-        <androidx.cardview.widget.CardView
-            android:id="@+id/interrogation1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="21dp"
-            android:layout_below="@+id/checkbox"
-            android:layout_marginLeft="18dp"
-            android:layout_toRightOf="@+id/btnSupprimerCompte"
-            android:alpha="0.8"
-            app:cardBackgroundColor="#5C89BE"
-            app:cardCornerRadius="20dp">
-
-            <TextView
-                android:layout_width="25dp"
-                android:layout_height="25dp"
-                android:fontFamily="@font/inter_bold"
-                android:gravity="center"
-                android:text=" ? "
-                android:textColor="@color/textDarkBlue"
-                android:textSize="16dp"
-                android:textStyle="bold" />
-        </androidx.cardview.widget.CardView>
-
-        <androidx.cardview.widget.CardView
-            android:id="@+id/interrogation1text"
-            android:layout_width="210dp"
-            android:layout_height="wrap_content"
-            android:alpha="0.9"
-            android:visibility="gone"
-            android:layout_marginLeft="180dp"
-            android:layout_marginTop="3dp"
-            android:layout_below="@id/interrogation1"
-            app:cardBackgroundColor="@color/lightBlue"
-            app:cardCornerRadius="13dp">
-
-            <TextView
-                android:padding="12dp"
-                android:alpha="1"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:fontFamily="@font/inter_medium"
-                android:gravity="center"
-                android:text="@string/text_interro3"
-                android:textColor="@color/darkGrey"
-                android:textSize="11.2dp"
-                android:lineHeight="16.5dp"
-                />
-        </androidx.cardview.widget.CardView>
-
-        <androidx.cardview.widget.CardView
-            android:id="@+id/interrogation2text"
-            android:layout_width="220dp"
-            android:layout_height="wrap_content"
-            android:alpha="0.9"
-            android:visibility="gone"
-            android:layout_marginRight="-15dp"
-            android:layout_marginTop="87dp"
-            android:layout_toLeftOf="@id/interrogation2"
-            app:cardBackgroundColor="@color/lightBlue"
-            app:cardCornerRadius="13dp"
-            >
-
-            <TextView
-                android:padding="12dp"
-                android:alpha="1"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:fontFamily="@font/inter_medium"
-                android:gravity="center"
-                android:text="@string/text_interro4"
-                android:textColor="@color/darkGrey"
-                android:textSize="11.2dp"
-                android:lineHeight="16.5dp"
-                />
-        </androidx.cardview.widget.CardView>
-
-    </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+        </RelativeLayout>
 
         <!-- ========== FIN SECTION INFORMATIONS =========== -->
 
@@ -595,14 +485,14 @@
             app:cardBackgroundColor="@color/hover"
             app:cardCornerRadius="17dp">
 
-        <ImageView
-            android:id="@+id/userBtn"
-            android:layout_width="47dp"
-            android:layout_height="47dp"
-            android:layout_marginStart="15dp"
-            android:layout_marginTop="5dp"
-            android:layout_marginBottom="16dp"
-            android:src="@drawable/user" />
+            <ImageView
+                android:id="@+id/userBtn"
+                android:layout_width="47dp"
+                android:layout_height="47dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="16dp"
+                android:src="@drawable/user" />
         </androidx.cardview.widget.CardView>
 
     </LinearLayout>

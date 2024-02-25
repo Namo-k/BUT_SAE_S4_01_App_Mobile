@@ -106,7 +106,6 @@ public class AccueilActivity extends AppCompatActivity {
         translationY.start();
         translationX.start();
 
-
         ImageView sedeconnecterBtn = (ImageView) findViewById(R.id.sedeconnecterBtn);
         sedeconnecterBtn.setOnClickListener(new View.OnClickListener() {
             @Override

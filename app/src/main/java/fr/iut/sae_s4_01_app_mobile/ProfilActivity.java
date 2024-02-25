@@ -5,43 +5,100 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.cardview.widget.CardView;
 
+import fr.iut.sae_s4_01_app_mobile.bd.Identifiants;
 import fr.iut.sae_s4_01_app_mobile.bd.Users;
 
 public class ProfilActivity extends AppCompatActivity {
-
     private int userID;
-
     private Users DatabaseUser;
-
-
+    private Identifiants DatabaseId;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_profil);
 
-
         UserId myApp = (UserId) getApplication();
         int userID = myApp.getUserID();
 
-
         DatabaseUser = new Users(this);
+        DatabaseId = new Identifiants(this);
 
-        ImageView btnAncienne = (ImageView) findViewById(R.id.ancienneBtn);
-        ImageView btnHome = (ImageView) findViewById(R.id.homeBtn);
-
+        TextView sexe = findViewById(R.id.sexeLabelTV);
         TextView nom = findViewById(R.id.nomLabelTV);
         TextView prenom = findViewById(R.id.prenomLabelTV);
+        TextView mail = findViewById(R.id.mailLabelTV);
         TextView dateNaissance = findViewById(R.id.naissanceLabelTV);
+        TextView pharmacie = findViewById(R.id.pharmacieLabelTV);
+        TextView medecin = findViewById(R.id.medecinLabelTV);
+
+        String sexe_ = DatabaseUser.getSexe(userID);
         String prenom_ = DatabaseUser.getPrenom(userID);
         String nom_ = DatabaseUser.getNom(userID);
         String dateNaissance_ =  DatabaseUser.getDataNais(userID);
+        String mail_ = DatabaseId.getMail(userID);
+        String pharmacie_ = DatabaseUser.getPharmacie(userID);
+        String medecin_ =  DatabaseUser.getMedecin(userID);
+
+        sexe.setText(sexe_);
         nom.setText(nom_);
         prenom.setText(prenom_);
+        mail.setText(mail_);
         dateNaissance.setText(dateNaissance_);
+        pharmacie.setText(pharmacie_);
+        medecin.setText(medecin_);
+
+        // bouton modifier
+        TextView modifier = findViewById(R.id.btnModifier);
+        modifier.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(ProfilActivity.this, ProfilModifActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        // bouton suppCompte
+        CardView supprimer = findViewById(R.id.btnSupprimerCompte);
+        supprimer.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(ProfilActivity.this, "Votre compte a bien été supprimé", Toast.LENGTH_SHORT).show();
+                DatabaseUser.deleteUserData(userID);
+                DatabaseId.deleteUserData(userID);
+                Intent intent = new Intent(ProfilActivity.this, LoginActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        // Affichage des informations lors du click sur point interrogation
+        CardView interrogation1 = (CardView) findViewById(R.id.interrogation1);
+        CardView interrogation2 = (CardView) findViewById(R.id.interrogation2);
+        CardView interrogation1text = (CardView) findViewById(R.id.interrogation1text);
+        CardView interrogation2text = (CardView) findViewById(R.id.interrogation2text);
+        interrogation1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if (interrogation1text.getVisibility() == View.VISIBLE) interrogation1text.setVisibility(View.INVISIBLE);
+                else interrogation1text.setVisibility(View.VISIBLE);
+            }
+        });
+        interrogation2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if (interrogation2text.getVisibility() == View.VISIBLE) interrogation2text.setVisibility(View.INVISIBLE);
+                else interrogation2text.setVisibility(View.VISIBLE);
+            }
+        });
+
+        // navbar click
+        ImageView btnAncienne = (ImageView) findViewById(R.id.ancienneBtn);
+        ImageView btnHome = (ImageView) findViewById(R.id.homeBtn);
         btnAncienne.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

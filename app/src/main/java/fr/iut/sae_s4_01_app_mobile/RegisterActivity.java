@@ -35,7 +35,7 @@ public class RegisterActivity extends AppCompatActivity {
         genresList.add(" ");
         genresList.add("Homme");
         genresList.add("Femme");
-        genresList.add("Non renseignée");
+        genresList.add("Non renseigné");
         genreSpinner.setAdapter(new ArrayAdapter<String>(this, android.R.layout.simple_spinner_dropdown_item, genresList));
 
 

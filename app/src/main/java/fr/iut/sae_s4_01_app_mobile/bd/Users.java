@@ -21,7 +21,7 @@ public class Users extends SQLiteOpenHelper {
 
     @Override
     public void onCreate(SQLiteDatabase db) {
-        db.execSQL("CREATE TABLE users (id integer PRIMARY KEY,genre VARCHAR(20), nom VARCHAR(50), prenom VARCHAR(50), dataNaissance varchar(10), UNIQUE(nom,prenom))");
+        db.execSQL("CREATE TABLE users (id integer PRIMARY KEY,genre VARCHAR(20), nom VARCHAR(50), prenom VARCHAR(50), dataNaissance VARCHAR(10), pharmacie VARCHAR(50), medecin VARCHAR(50), UNIQUE(nom,prenom))");
     }
 
     @Override
@@ -30,8 +30,7 @@ public class Users extends SQLiteOpenHelper {
         onCreate(db);
     }
 
-
-    public long insertData(String genre,String name, String prenom, String date) {
+    public long insertData(String genre,String name, String prenom, String date, String pharmacie, String medecin) {
         SQLiteDatabase MyDatabase = this.getWritableDatabase();
         ContentValues contentval = new ContentValues();
 
@@ -42,10 +41,39 @@ public class Users extends SQLiteOpenHelper {
         contentval.put("prenom", prenomC);
         contentval.put("genre", genre);
         contentval.put("dataNaissance", date);
+        contentval.put("pharmacie", pharmacie);
+        contentval.put("medecin", medecin);
 
         return MyDatabase.insert("users", null, contentval);
+    }
 
+    public long updateData(Integer id, String genre,String name, String prenom, String date, String pharmacie, String medecin) {
+        SQLiteDatabase MyDatabase = this.getWritableDatabase();
+        ContentValues contentval = new ContentValues();
 
+        String nomC = name.substring(0, 1).toUpperCase() + name.substring(1);
+        String prenomC = prenom.substring(0, 1).toUpperCase() + prenom.substring(1);
+
+        contentval.put("nom", nomC);
+        contentval.put("prenom", prenomC);
+        contentval.put("genre", genre);
+        contentval.put("dataNaissance", date);
+        contentval.put("pharmacie", pharmacie);
+        contentval.put("medecin", medecin);
+
+        String whereClause = "ID = ?";
+        String[] whereArgs = { String.valueOf(id) };
+
+        return MyDatabase.update("users", contentval, whereClause, whereArgs);
+    }
+
+    public long deleteUserData(Integer id) {
+        SQLiteDatabase MyDatabase = this.getWritableDatabase();
+
+        String whereClause = "ID = ?";
+        String[] whereArgs = { String.valueOf(id) };
+
+        return MyDatabase.delete("users", whereClause, whereArgs);
     }
 
     @SuppressLint("Range")
@@ -75,6 +103,18 @@ public class Users extends SQLiteOpenHelper {
     }
 
     @SuppressLint("Range")
+    public String getSexe (Integer id){
+        SQLiteDatabase MyDatabase = this.getReadableDatabase();
+        String sexe = " ";
+        Cursor cursor = MyDatabase.rawQuery("SELECT genre FROM users WHERE id=?", new String[]{String.valueOf(id)});
+        if (cursor != null && cursor.moveToFirst()) {
+            sexe = cursor.getString(cursor.getColumnIndex("genre"));
+            cursor.close();
+        }
+        return sexe;
+    }
+
+    @SuppressLint("Range")
     public String getDataNais(Integer id){
         SQLiteDatabase MyDatabase = this.getReadableDatabase();
         String date = " ";
@@ -84,10 +124,30 @@ public class Users extends SQLiteOpenHelper {
             cursor.close();
         }
         return date;
-
     }
 
+    @SuppressLint("Range")
+    public String getPharmacie(Integer id){
+        SQLiteDatabase MyDatabase = this.getReadableDatabase();
+        String pharmacie = " ";
+        Cursor cursor = MyDatabase.rawQuery("SELECT pharmacie FROM users WHERE id=?", new String[]{String.valueOf(id)});
+        if (cursor != null && cursor.moveToFirst()) {
+            pharmacie = cursor.getString(cursor.getColumnIndex("pharmacie"));
+            cursor.close();
+        }
+        return pharmacie;
+    }
 
-
+    @SuppressLint("Range")
+    public String getMedecin(Integer id){
+        SQLiteDatabase MyDatabase = this.getReadableDatabase();
+        String medecin = " ";
+        Cursor cursor = MyDatabase.rawQuery("SELECT medecin FROM users WHERE id=?", new String[]{String.valueOf(id)});
+        if (cursor != null && cursor.moveToFirst()) {
+            medecin = cursor.getString(cursor.getColumnIndex("medecin"));
+            cursor.close();
+        }
+        return medecin;
+    }
 }
 
