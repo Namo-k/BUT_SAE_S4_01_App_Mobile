@@ -1,0 +1,464 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <!-- ========== ENTETE =========== -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.23"
+        android:orientation="vertical">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="456dp"
+            android:layout_height="240dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="-118dp"
+            app:cardBackgroundColor="@color/white"
+            app:cardCornerRadius="200dp"
+            app:cardElevation="0dp">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/ovale_shape" />
+
+            <ImageView
+                android:id="@+id/sedeconnecterBtn"
+                android:layout_width="43dp"
+                android:layout_height="43dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="60dp"
+                android:layout_marginTop="38dp"
+                android:src="@drawable/deconnexion" />
+
+            <ImageView
+                android:id="@+id/logoIV"
+                android:layout_width="170dp"
+                android:layout_height="90.92dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="147dp"
+                android:layout_marginTop="55dp"
+                android:src="@drawable/colombes_logo" />
+
+            <ImageView
+                android:id="@+id/notifBtn"
+                android:layout_width="42dp"
+                android:layout_height="42dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="355dp"
+                android:layout_marginTop="38dp"
+                android:src="@drawable/cloche" />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="385dp"
+                android:layout_marginTop="23dp"
+                android:alpha="0.8"
+                app:cardBackgroundColor="@color/darkBlueLightLight"
+                app:cardCornerRadius="10dp">
+
+                <TextView
+                    android:id="@+id/nbNotifTV"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:gravity="center"
+                    android:text="1"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+            </androidx.cardview.widget.CardView>
+
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+    <!-- ========== FIN ENTETE =========== -->
+
+    <!-- ========== PAGE =========== -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+
+        <!-- ========== DEBUT SECTION INFORMATIONS =========== -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginHorizontal="15dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="20dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="22dp"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/patuaone_regular"
+                    android:gravity="center"
+                    android:text="Créer une alerte"
+                    android:textColor="@color/darkBlue"
+                    android:textSize="21dp" />
+
+                <View
+                    android:layout_width="197dp"
+                    android:layout_height="2dp"
+                    android:layout_marginLeft="13dp"
+                    android:layout_marginTop="9dp"
+                    android:background="@color/lightBlue" />
+
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="49dp"
+                android:layout_height="50dp"
+                android:layout_gravity="end"
+                android:layout_marginStart="90dp"
+                android:src="@drawable/alertes_icone" />
+
+        </LinearLayout>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/blocInformations"
+            android:layout_width="338dp"
+            android:layout_height="425dp"
+            android:layout_marginStart="27dp"
+            app:cardBackgroundColor="@color/lightBlueLight"
+            app:cardCornerRadius="20dp"
+            app:layout_constraintStart_toStartOf="parent"
+            >
+
+            <ImageView
+                android:id="@+id/alertes_logo"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:layout_gravity="right"
+                android:layout_marginRight="13dp"
+                android:src="@drawable/colombesblanc"
+                />
+
+
+            <RelativeLayout
+                android:layout_width="308dp"
+                android:layout_height="424dp"
+                android:layout_marginLeft="23dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="13dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:paddingLeft="15dp"
+
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:text="Remplissez les informations ci dessous"
+                    android:textColor="@color/darkBlue"
+                    android:textSize="15dp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/remerciement"
+                    android:layout_marginLeft="22dp"
+
+                    android:layout_marginTop="30dp"
+                    android:fontFamily="@font/inter_light"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:text="Merci infiniment pour votre contribution !"
+                    android:textColor="@color/textGrey"
+                    android:textSize="14dp" />
+
+
+
+
+
+
+
+
+                <TextView
+                    android:id="@+id/Codecip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/remerciement"
+                    android:layout_marginTop="15dp"
+                    android:fontFamily="@font/inter_medium"
+                    android:text="Code CIP* :"
+                    android:textColor="@color/textGrey"
+                    android:textSize="13dp"
+                    tools:ignore="TextSizeCheck" />
+
+
+                <TextView
+                    android:id="@+id/inputCip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@id/Codecip"
+                    android:layout_marginStart="8dp"
+
+                    android:layout_marginTop="50dp"
+
+
+                    android:layout_toEndOf="@id/Codecip"
+                    android:fontFamily="@font/inter"
+                    android:hint="Entrez votre texte ici"
+
+                    android:textColor="#0B0A3E"
+                    android:textSize="13dp"
+                    />
+
+                <TextView
+                    android:id="@+id/nomMedoc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/Codecip"
+                    android:layout_marginTop="15dp"
+                    android:fontFamily="@font/inter_medium"
+                    android:text="Nom du médicament* :"
+                    android:textColor="@color/textGrey"
+                    android:textSize="13dp"
+                    tools:ignore="TextSizeCheck" />
+
+
+
+                <TextView
+                    android:id="@+id/raison"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/inputMedoc"
+                    android:layout_marginTop="7dp"
+                    android:fontFamily="@font/inter_medium"
+                    android:text="Raison * :"
+                    android:textColor="@color/textGrey"
+                    android:textSize="13dp"
+                    tools:ignore="TextSizeCheck" />
+                <TextView
+                    android:id="@+id/message"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/raison"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="@font/inter_medium"
+                    android:text="Message  :"
+                    android:textColor="@color/textGrey"
+                    android:textSize="13dp"
+                    tools:ignore="TextSizeCheck" />
+
+
+                <TextView
+                    android:id="@+id/inputMedoc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/nomMedoc"
+
+
+                    android:layout_marginTop="4dp"
+
+                    android:fontFamily="@font/inter"
+                    android:hint="Entrez votre texte ici"
+
+                    android:textColor="@color/textDarkBlue"
+                    android:textSize="13dp"
+                    />
+
+
+                <EditText
+                    android:id="@+id/inputMessage"
+                    android:layout_width="270dp"
+                    android:layout_height="75dp"
+
+                    android:background="@drawable/round_createalert"
+                    android:layout_below="@+id/message"
+
+                    android:layout_marginTop="10dp"
+
+
+                    android:fontFamily="@font/inter"
+                    android:hint="messages "
+
+                    android:inputType="text"
+                    android:paddingLeft="15dp"
+                    android:textColor="@color/textDarkBlue"
+                    android:textSize="13dp"
+
+
+                    />
+
+                <EditText
+                    android:id="@+id/inputRaison"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@id/raison"
+                    android:layout_alignBaseline="@id/raison"
+                    android:layout_marginLeft="20dp"
+                    android:layout_below="@+id/raison"
+
+
+                    android:background="@drawable/round_createalert"
+
+                    android:fontFamily="@font/inter"
+                    android:hint="Autre"
+                    android:inputType="text"
+                    android:paddingLeft="10dp"
+
+                    android:textColor="@color/textDarkBlue"
+                    android:textSize="13dp"
+                    tools:ignore="TextSizeCheck"
+
+                    />
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="125dp"
+                    android:layout_height="34dp"
+
+                    android:layout_below="@+id/inputMessage"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="10dp"
+
+                    android:layout_marginBottom="10dp"
+                    app:cardBackgroundColor="@color/darkBlueLight"
+                    app:cardCornerRadius="6dp">
+
+                    <TextView
+                        android:id="@+id/btnAnnuler"
+                        android:layout_width="91dp"
+                        android:layout_height="match_parent"
+                        android:fontFamily="@font/inter_medium"
+                        android:gravity="center"
+                        android:paddingLeft="20dp"
+                        android:text="Annuler"
+                        android:textColor="@color/white"
+                        android:textSize="15dp" />
+                </androidx.cardview.widget.CardView>
+
+                <TextView
+                    android:id="@+id/lol"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/raison"
+                    android:layout_marginLeft="22dp"
+                    android:paddingLeft="20dp"
+
+                    android:layout_marginTop="180dp"
+
+                    android:gravity="center"
+                    android:text="* Ces informations sont obligatoires"
+                    android:textColor="@color/textGrey"
+                    android:textSize="12dp"
+                    android:textStyle="bold" />
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="125dp"
+                    android:layout_height="34dp"
+
+
+                    android:layout_below="@+id/inputMessage"
+                    android:layout_marginStart="150dp"
+                    android:layout_marginTop="10dp"
+
+                    android:layout_marginBottom="75dp"
+                    app:cardBackgroundColor="@color/darkBlueLight"
+                    app:cardCornerRadius="6dp">
+
+                    <TextView
+                        android:id="@+id/btnEnvoyer"
+                        android:layout_width="91dp"
+                        android:layout_height="match_parent"
+                        android:fontFamily="@font/inter_medium"
+                        android:gravity="center"
+                        android:paddingLeft="20dp"
+                        android:text="Envoyer"
+                        android:textColor="#92F42F"
+                        android:textSize="15dp" />
+                </androidx.cardview.widget.CardView>
+
+
+
+
+
+            </RelativeLayout>
+
+
+
+
+
+
+        </androidx.cardview.widget.CardView>
+
+        <!-- ========== FIN SECTION INFORMATIONS =========== -->
+
+    </LinearLayout>
+
+    <!-- ========== FIN PAGE =========== -->
+
+
+    <!-- ========== NAVBAR =========== -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="68dp"
+        android:layout_gravity="bottom"
+        android:background="@color/darkBlueLight"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/ancienneBtn"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="113dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="45dp"
+            android:layout_marginBottom="16dp"
+            android:src="@drawable/anciennes" />
+
+        <ImageView
+            android:id="@+id/homeBtn"
+            android:layout_width="46dp"
+            android:layout_height="46dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="55dp"
+            android:layout_marginBottom="4dp"
+            android:src="@drawable/home" />
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="79dp"
+            android:layout_height="55dp"
+            android:layout_marginEnd="92dp"
+            app:cardBackgroundColor="@color/hover"
+            app:cardCornerRadius="17dp">
+
+            <ImageView
+                android:id="@+id/userBtn"
+                android:layout_width="47dp"
+                android:layout_height="47dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="16dp"
+                android:src="@drawable/user" />
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+    <!-- ========== FIN NAVBAR =========== -->
+
+</LinearLayout>
