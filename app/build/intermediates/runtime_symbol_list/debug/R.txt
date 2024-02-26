@@ -3892,6 +3892,7 @@ int layout activity_profil 0x7f0c0022
 int layout activity_profilmodif 0x7f0c0023
 int layout activity_register 0x7f0c0024
 int layout activity_register2 0x7f0c0025
+int layout activity_saisie_cip 0x7f0c0081
 int layout activity_scanner 0x7f0c0026
 int layout activity_splash_screen 0x7f0c0027
 int layout custom_dialog 0x7f0c0028
@@ -3986,6 +3987,7 @@ int layout zxing_capture 0x7f0c0080
 int mipmap ic_launcher 0x7f0e0000
 int mipmap ic_launcher_round 0x7f0e0001
 int plurals mtrl_badge_content_description 0x7f0f0000
+int raw medicament 0x7f100001
 int raw zxing_beep 0x7f100000
 int string abc_action_bar_home_description 0x7f110000
 int string abc_action_bar_up_description 0x7f110001

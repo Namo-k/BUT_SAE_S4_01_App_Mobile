@@ -226,6 +226,7 @@
                     android:textSize="13dp"
                     />
 
+
                 <TextView
                     android:id="@+id/nomMedoc"
                     android:layout_width="wrap_content"
@@ -237,8 +238,6 @@
                     android:textColor="@color/textGrey"
                     android:textSize="13dp"
                     tools:ignore="TextSizeCheck" />
-
-
 
                 <TextView
                     android:id="@+id/raison"

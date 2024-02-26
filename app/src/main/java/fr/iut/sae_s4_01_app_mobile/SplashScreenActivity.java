@@ -1,17 +1,24 @@
 package fr.iut.sae_s4_01_app_mobile;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.animation.ObjectAnimator;
 import android.content.Intent;
+import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
 import android.os.Handler;
 import android.view.animation.LinearInterpolator;
 import android.widget.ImageView;
 import android.widget.TextView;
+
+import androidx.appcompat.app.AppCompatActivity;
+
+import java.io.InputStream;
 import java.util.Random;
 
+import fr.iut.sae_s4_01_app_mobile.bd.Medicament;
+
 public class SplashScreenActivity extends AppCompatActivity {
+
+
 
     private final static int TEMPS = 4500;
     private String Quote1 = "Savez-vous que 10 minutes de méditation peut réduire l’anxiété et booster votre confiance ?";
@@ -27,6 +34,9 @@ public class SplashScreenActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splash_screen);
+
+
+
 
         citation = findViewById(R.id.citationText);
         Random random = new Random();
@@ -57,14 +67,27 @@ public class SplashScreenActivity extends AppCompatActivity {
         translationX.start();
 
         //redigirer la page aprés 3.5 secondes
+
+        Medicament medicament = new Medicament(this);
+        SQLiteDatabase database = medicament.getWritableDatabase();
+        InputStream inputStream = getResources().openRawResource(R.raw.medicament);
+        medicament.importCSVToDatabase(inputStream);
+
         Runnable runnable = new Runnable() {
+
             @Override
             public void run() {
+
                 Intent intent = new Intent(getApplicationContext(), LoginActivity.class);
                 startActivity(intent);
                 finish();
             }
         };
         new Handler().postDelayed(runnable,TEMPS);
+
+
     }
+
+
+
 }

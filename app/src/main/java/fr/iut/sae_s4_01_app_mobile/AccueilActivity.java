@@ -15,7 +15,6 @@ import fr.iut.sae_s4_01_app_mobile.bd.Users;
 
 public class AccueilActivity extends AppCompatActivity {
 
-    private int userID;
 
     private Users DatabaseUser;
 
@@ -69,6 +68,8 @@ public class AccueilActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+
 
         // Affichage des informations lors du click sur point interrogation
         CardView interrogation1 = (CardView) findViewById(R.id.interrogation1);

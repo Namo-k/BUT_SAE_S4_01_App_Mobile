@@ -34,16 +34,11 @@ public class Identifiants extends SQLiteOpenHelper {
         contentval.put("email", email);
         contentval.put("mdp", mdp);
 
-        // Insertion dans la table identifiants
         long result = MyDatabase.insert("identifiants", null, contentval);
 
-        // Vérification du succès de l'insertion
         if (result != -1) {
-            // Si l'insertion dans la table identifiants réussit,
-            // le résultat de l'insertion dans la table users est retourné
             return true;
         } else {
-            // Si l'insertion échoue, retourne false
             return false;
         }
     }

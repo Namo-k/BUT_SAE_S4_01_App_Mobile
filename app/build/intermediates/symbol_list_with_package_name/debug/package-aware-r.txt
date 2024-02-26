@@ -3893,6 +3893,7 @@ layout activity_profil
 layout activity_profilmodif
 layout activity_register
 layout activity_register2
+layout activity_saisie_cip
 layout activity_scanner
 layout activity_splash_screen
 layout custom_dialog
@@ -3987,6 +3988,7 @@ layout zxing_capture
 mipmap ic_launcher
 mipmap ic_launcher_round
 plurals mtrl_badge_content_description
+raw medicament
 raw zxing_beep
 string abc_action_bar_home_description
 string abc_action_bar_up_description
