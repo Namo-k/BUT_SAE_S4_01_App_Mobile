@@ -17,6 +17,9 @@
     <string name="text_dataMatrix"> Scanner le code <b>DataMatrix</b> </string>
     <string name="text_interro1"> Une <b>DataMatrix</b> situé sur votre boîte du médicament ressemble à un QRCode, c`est un <b>code barre 2D</b> </string>
     <string name="text_interro2"> Le <b>Code CIP</b> (7 ou 13 chiffres) sur votre boite de médicament permet <b>d`identifier</b> celui-ci</string>
+    <string name="text_interro3"> La suppression d`un compte engendre la <b>suppression totale de vos données</b>, en êtes-vous sûr? </string>
+    <string name="text_interro4"> La désactivation d`un compte <b>supprime votre compte temporairement</b>, qui peut être réactivé sous x mois</string>
+    <string name="text_prospection"> En cochant cette case, vous acceptez de recevoir <b>par mail</b> des <b>actualités de santé</b> </string>
     <string name="text_saisieCIP"> Saisir le <b>Code CIP</b> manuellement </string>
     <style name="Base.Theme.SAE_S4_01_App_Mobile" parent="Theme.Material3.DayNight.NoActionBar">
         

@@ -383,7 +383,7 @@
                 android:layout_marginStart="30dp"
                 android:layout_marginTop="22dp"
                 android:fontFamily="@font/patuaone_regular"
-                android:text=" Mes anciennes alertes"
+                android:text=" Mon alerte la plus récente"
                 android:textColor="@color/darkBlue"
                 android:textSize="21dp"
                 app:layout_constraintStart_toStartOf="parent"

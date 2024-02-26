@@ -18,7 +18,7 @@ import fr.iut.sae_s4_01_app_mobile.bd.Users;
 
 public class ProfilModifActivity extends AppCompatActivity {
 
-    private int userID;
+
     private Users DatabaseUser;
     private Identifiants DatabaseId;
 

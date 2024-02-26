@@ -1,12 +1,15 @@
 package fr.iut.sae_s4_01_app_mobile;
 
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.cardview.widget.CardView;
 
@@ -14,7 +17,7 @@ import fr.iut.sae_s4_01_app_mobile.bd.Identifiants;
 import fr.iut.sae_s4_01_app_mobile.bd.Users;
 
 public class ProfilActivity extends AppCompatActivity {
-    private int userID;
+
     private Users DatabaseUser;
     private Identifiants DatabaseId;
 
@@ -53,6 +56,17 @@ public class ProfilActivity extends AppCompatActivity {
         pharmacie.setText(pharmacie_);
         medecin.setText(medecin_);
 
+        ImageView sedeconnecterBtn = findViewById(R.id.sedeconnecterBtn);
+
+        sedeconnecterBtn.setOnClickListener(new View.OnClickListener(){
+
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(ProfilActivity.this, LoginActivity.class);
+                startActivity(intent);
+            }
+        });
+
         // bouton modifier
         TextView modifier = findViewById(R.id.btnModifier);
         modifier.setOnClickListener(new View.OnClickListener() {
@@ -65,16 +79,22 @@ public class ProfilActivity extends AppCompatActivity {
 
         // bouton suppCompte
         CardView supprimer = findViewById(R.id.btnSupprimerCompte);
+
         supprimer.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(ProfilActivity.this, "Votre compte a bien été supprimé", Toast.LENGTH_SHORT).show();
-                DatabaseUser.deleteUserData(userID);
-                DatabaseId.deleteUserData(userID);
-                Intent intent = new Intent(ProfilActivity.this, LoginActivity.class);
-                startActivity(intent);
+                showConfirmationDialog(userID);
+
+
             }
         });
+
+
+
+
+
+
+
 
         // Affichage des informations lors du click sur point interrogation
         CardView interrogation1 = (CardView) findViewById(R.id.interrogation1);
@@ -114,5 +134,30 @@ public class ProfilActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+    }
+
+
+
+    private void showConfirmationDialog(int userID) {
+        AlertDialog.Builder builder = new AlertDialog.Builder(this);
+        builder.setMessage("Êtes vous certain de vouloir supprimer votre compte ?");
+        builder.setPositiveButton("Oui", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+                Toast.makeText(ProfilActivity.this, "Votre compte a bien été supprimé", Toast.LENGTH_SHORT).show();
+                DatabaseUser.deleteUserData(userID);
+                DatabaseId.deleteUserData(userID);
+                Intent intent = new Intent(ProfilActivity.this, LoginActivity.class);
+                startActivity(intent);
+            }
+        });
+        builder.setNegativeButton("Non", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+                dialog.dismiss();
+            }
+        });
+        AlertDialog dialog = builder.create();
+        dialog.show();
     }
 }

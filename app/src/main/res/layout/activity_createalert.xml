@@ -283,15 +283,13 @@
 
                 <EditText
                     android:id="@+id/inputMessage"
-                    android:layout_width="270dp"
+                    android:layout_width="280dp"
                     android:layout_height="75dp"
 
                     android:background="@drawable/round_createalert"
                     android:layout_below="@+id/message"
 
                     android:layout_marginTop="10dp"
-
-
                     android:fontFamily="@font/inter"
                     android:hint="messages "
 

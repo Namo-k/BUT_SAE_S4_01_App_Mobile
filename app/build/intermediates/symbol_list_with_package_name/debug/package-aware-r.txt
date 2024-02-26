@@ -3124,6 +3124,7 @@ drawable notification_tile_bg
 drawable notify_panel_notification_icon_bg
 drawable nouveaucompte
 drawable ovale_shape
+drawable round_createalert
 drawable round_login
 drawable scan_logo
 drawable signature
@@ -3148,6 +3149,7 @@ id BOTTOM_END
 id BOTTOM_START
 id Btext
 id CTRL
+id Codecip
 id Djour
 id Dmois
 id FUNCTION
@@ -3260,7 +3262,12 @@ id bounceBoth
 id bounceEnd
 id bounceStart
 id btnAlertes
-id btnInformations
+id btnAnnuler
+id btnDesactiverCompte
+id btnEnregistrer
+id btnEnvoyer
+id btnModifier
+id btnSupprimerCompte
 id buttonPanel
 id cache_measures
 id callMeasure
@@ -3280,7 +3287,6 @@ id checked
 id chronometer
 id circle_center
 id citationText
-id citoyen
 id clear_text
 id clip_horizontal
 id clip_vertical
@@ -3294,7 +3300,6 @@ id colombes1
 id colombes2
 id compress
 id confirm_button
-id connexionInternet
 id conseilText
 id constraint
 id container
@@ -3403,8 +3408,12 @@ id immediateStop
 id included
 id indeterminate
 id info
-id informations
-id informations_logo
+id info1
+id info2
+id inputCip
+id inputMedoc
+id inputMessage
+id inputRaison
 id interrogation1
 id interrogation1text
 id interrogation2
@@ -3420,7 +3429,6 @@ id layout
 id left
 id leftToRight
 id legacy
-id ligne
 id ligne1
 id ligne2
 id line1
@@ -3430,7 +3438,11 @@ id listMode
 id list_item
 id loginBtn
 id logoIV
+id lol
 id m3_side_sheet
+id mailEdit
+id mailLabelTV
+id mailTV
 id marquee
 id masked
 id match_constraint
@@ -3457,6 +3469,7 @@ id material_timepicker_view
 id material_value_index
 id matrix
 id mdp
+id medecinEdit
 id medecinLabelTV
 id medecinTV
 id media_actions
@@ -3498,6 +3511,7 @@ id mtrl_picker_text_input_range_start
 id mtrl_picker_title_text
 id mtrl_view_tag_bottom_padding
 id multiply
+id naissanceEdit
 id naissanceLabelTV
 id naissanceTV
 id navigation_bar_item_active_indicator_view
@@ -3513,7 +3527,9 @@ id neverCompleteToEnd
 id neverCompleteToStart
 id noScroll
 id noState
+id nomEdit
 id nomLabelTV
+id nomMedoc
 id nomTV
 id none
 id normal
@@ -3554,6 +3570,7 @@ id path
 id pathRelative
 id peekHeight
 id percent
+id pharmacieEdit
 id pharmacieLabelTV
 id pharmacieTV
 id pin
@@ -3561,16 +3578,19 @@ id position
 id postLayout
 id prenom
 id prenom1
+id prenomEdit
 id prenomLabelTV
 id prenomTV
 id pressed
 id progress_circular
 id progress_horizontal
 id radio
+id raison
 id raisonLabelTV
 id raisonTV
 id ratio
 id rectangles
+id remerciement
 id report_drawn
 id retour
 id reverseSawtooth
@@ -3608,6 +3628,9 @@ id sedeconnecterBtn
 id select_dialog_listview
 id selected
 id selection_type
+id sexeEdit
+id sexeLabelTV
+id sexeTV
 id sharedValueSet
 id sharedValueUnset
 id shortcut
@@ -3665,6 +3688,7 @@ id tag_window_insets_animation_callback
 id text
 id text2
 id textEnd
+id textProspection
 id textSpacerNoButtons
 id textSpacerNoTitle
 id textStart
@@ -3861,10 +3885,12 @@ layout abc_select_dialog_material
 layout abc_tooltip
 layout activity_accueil
 layout activity_ancienne_alerte
+layout activity_createalert
 layout activity_login
 layout activity_main
 layout activity_medoc_code
 layout activity_profil
+layout activity_profilmodif
 layout activity_register
 layout activity_register2
 layout activity_scanner
@@ -4136,6 +4162,9 @@ string status_bar_notification_info_overflow
 string text_dataMatrix
 string text_interro1
 string text_interro2
+string text_interro3
+string text_interro4
+string text_prospection
 string text_saisieCIP
 string zxing_app_name
 string zxing_button_ok

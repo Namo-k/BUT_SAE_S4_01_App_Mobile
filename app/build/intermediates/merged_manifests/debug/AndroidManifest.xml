@@ -139,6 +139,26 @@
         <activity
             android:name="fr.iut.sae_s4_01_app_mobile.ProfilActivity"
             android:exported="true" >
+
+            <!--
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            -->
+        </activity>
+        <activity
+            android:name="fr.iut.sae_s4_01_app_mobile.ProfilModifActivity"
+            android:exported="true" >
+
+            <!--
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            -->
         </activity>
         <activity
             android:name="com.journeyapps.barcodescanner.CaptureActivity"
