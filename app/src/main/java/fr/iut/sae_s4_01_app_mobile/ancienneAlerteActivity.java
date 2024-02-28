@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.ListView;
+import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -20,6 +21,7 @@ public class ancienneAlerteActivity extends AppCompatActivity {
         // Bouton de la navbar
         ImageView btnHome = (ImageView) findViewById(R.id.homeBtn);
         ImageView btnProfil = (ImageView) findViewById(R.id.userBtn);
+        TextView nbAlerte = (TextView) findViewById(R.id.nbAlertes);
         btnHome.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -49,6 +51,8 @@ public class ancienneAlerteActivity extends AppCompatActivity {
         alertes.add(new Alerte(3, "Paracetamol", "Livraison tardive", "Ma pharmacie m’a prévenu qu’il n’y a plus aucun stock de ce médicament dans toute la ville !", "18 février 2024"));
 
 */
+        nbAlerte.append("Vous avez " + alertes.size() +  " alertes au total");
+
         AlerteAdapter adapter = new AlerteAdapter(this, alertes);
         listView.setAdapter(adapter);
 
