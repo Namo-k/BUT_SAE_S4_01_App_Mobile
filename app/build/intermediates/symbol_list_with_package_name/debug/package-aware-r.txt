@@ -3008,6 +3008,7 @@ drawable alertes_icone
 drawable anciennes
 drawable avd_hide_password
 drawable avd_show_password
+drawable border_btn
 drawable btn_checkbox_checked_mtrl
 drawable btn_checkbox_checked_to_unchecked_mtrl_animation
 drawable btn_checkbox_unchecked_mtrl
@@ -3016,6 +3017,7 @@ drawable btn_radio_off_mtrl
 drawable btn_radio_off_to_on_mtrl_animation
 drawable btn_radio_on_mtrl
 drawable btn_radio_on_to_off_mtrl_animation
+drawable button_background
 drawable cadenas
 drawable calendrier
 drawable cloche
@@ -3051,6 +3053,8 @@ drawable ic_mtrl_chip_checked_black
 drawable ic_mtrl_chip_checked_circle
 drawable ic_mtrl_chip_close_circle
 drawable ic_search_black_24
+drawable indice
+drawable interrogation
 drawable m3_avd_hide_password
 drawable m3_avd_show_password
 drawable m3_bottom_sheet_drag_handle
@@ -3149,6 +3153,8 @@ id BOTTOM_END
 id BOTTOM_START
 id Btext
 id CTRL
+id Card1
+id Card2
 id Codecip
 id Djour
 id Dmois
@@ -3350,6 +3356,7 @@ id easeInOut
 id easeOut
 id east
 id edge
+id editCodeCIP
 id edit_query
 id elastic
 id email
@@ -3363,6 +3370,7 @@ id etoile
 id exitUntilCollapsed
 id expand_activities_button
 id expanded_menu
+id explicationCIP
 id fade
 id fill
 id fill_horizontal
@@ -3443,6 +3451,7 @@ id m3_side_sheet
 id mailEdit
 id mailLabelTV
 id mailTV
+id main
 id marquee
 id masked
 id match_constraint
@@ -3521,6 +3530,7 @@ id navigation_bar_item_labels_group
 id navigation_bar_item_large_label_view
 id navigation_bar_item_small_label_view
 id navigation_header_container
+id nbAlertes
 id nbNotifTV
 id never
 id neverCompleteToEnd
@@ -3600,6 +3610,7 @@ id right_icon
 id right_side
 id rounded
 id row_index_key
+id saisieCIP
 id saisieText
 id saisie_logo
 id save_non_transition_alpha
@@ -3687,12 +3698,16 @@ id tag_unhandled_key_listeners
 id tag_window_insets_animation_callback
 id text
 id text2
+id textCodeCIP
 id textEnd
+id textMain
 id textProspection
 id textSpacerNoButtons
 id textSpacerNoTitle
 id textStart
 id textTop
+id textView
+id textView0
 id textView2
 id textView3
 id textView5
@@ -3885,6 +3900,7 @@ layout abc_select_dialog_material
 layout abc_tooltip
 layout activity_accueil
 layout activity_ancienne_alerte
+layout activity_cip_manuelle
 layout activity_createalert
 layout activity_login
 layout activity_main
@@ -3893,7 +3909,6 @@ layout activity_profil
 layout activity_profilmodif
 layout activity_register
 layout activity_register2
-layout activity_saisie_cip
 layout activity_scanner
 layout activity_splash_screen
 layout custom_dialog

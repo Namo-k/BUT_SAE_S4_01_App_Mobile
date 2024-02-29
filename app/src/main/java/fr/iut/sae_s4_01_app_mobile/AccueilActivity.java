@@ -2,9 +2,11 @@ package fr.iut.sae_s4_01_app_mobile;
 
 import android.animation.ObjectAnimator;
 import android.content.Intent;
+import android.media.Image;
 import android.os.Bundle;
 import android.view.View;
 import android.view.animation.LinearInterpolator;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -29,6 +31,7 @@ public class AccueilActivity extends AppCompatActivity {
 
         UserId myApp = (UserId) getApplication();
         int userID = myApp.getUserID();
+        ImageView btnSaisie = findViewById(R.id.saisie_logo);
 
 
         ImageView btnAncienne = (ImageView) findViewById(R.id.ancienneBtn);
@@ -39,7 +42,13 @@ public class AccueilActivity extends AppCompatActivity {
         String prenom = DatabaseUser.getPrenom(userID);
         btnPrenom.append(prenom);
 
-
+        btnSaisie.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(AccueilActivity.this, CipManuelleActivity.class);
+                startActivity(intent);
+            }
+        });
         btnAncienne.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
