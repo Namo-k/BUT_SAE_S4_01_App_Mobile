@@ -3,6 +3,7 @@ package fr.iut.sae_s4_01_app_mobile;
 import android.content.Intent;
 import android.os.Bundle;
 import android.text.TextUtils;
+import android.text.method.PasswordTransformationMethod;
 import android.util.Patterns;
 import android.view.View;
 import android.widget.Button;
@@ -39,6 +40,29 @@ public class RegisterActivity2 extends AppCompatActivity {
             }
         });
 
+        // Afficher cacher mdp oeil
+        ImageView oeilouvert = (ImageView) findViewById(R.id.oeilouvert);
+        ImageView oeilferme = (ImageView) findViewById(R.id.oeilferme);
+        EditText passEdit = findViewById(R.id.mdp);
+
+        oeilferme.setVisibility(View.VISIBLE);
+        passEdit.setTransformationMethod(new PasswordTransformationMethod());
+        oeilouvert.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                oeilouvert.setVisibility(View.INVISIBLE);
+                oeilferme.setVisibility(View.VISIBLE);
+                passEdit.setTransformationMethod(new PasswordTransformationMethod());
+            }
+        });
+        oeilferme.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                oeilouvert.setVisibility(View.VISIBLE);
+                oeilferme.setVisibility(View.INVISIBLE);
+                passEdit.setTransformationMethod(null);
+            }
+        });
 
         Intent intent = getIntent();
         if (intent != null) {
@@ -75,21 +99,17 @@ public class RegisterActivity2 extends AppCompatActivity {
                         if (checkUserEmail == false) {
                             boolean successIdt = DatabaseIdentifiant.insertData(email_, password_, userID);
                             Intent intent = new Intent(RegisterActivity2.this, LoginActivity.class);
+                            Toast.makeText(RegisterActivity2.this, "Votre compte a bien été créé !", Toast.LENGTH_SHORT).show();
                             startActivity(intent);
                         } else {
-                            Toast.makeText(RegisterActivity2.this, "Un compte avec ce mail existe déjà! Connectez-vous", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(RegisterActivity2.this, "Un compte avec ce mail existe déjà ! Connectez-vous", Toast.LENGTH_SHORT).show();
                         }
                     }else {
-                        Toast.makeText(RegisterActivity2.this, "Une compte avec ces nom et prenom existe déjà! Connectez-vous ", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(RegisterActivity2.this, "Une compte avec ce même nom et prénom existe déjà ! Connectez-vous ", Toast.LENGTH_SHORT).show();
 
                     }
                 }
-
-
-    } });
-
-
-
+            } });
 
     }
 

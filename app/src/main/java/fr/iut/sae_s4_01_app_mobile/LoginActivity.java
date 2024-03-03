@@ -1,13 +1,17 @@
 package fr.iut.sae_s4_01_app_mobile;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.cardview.widget.CardView;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.text.method.PasswordTransformationMethod;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
+import android.widget.CompoundButton;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -23,14 +27,11 @@ public class LoginActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
 
-
-
         Button loginBtn = findViewById(R.id.loginBtn);
         EditText usernameLN = findViewById(R.id.usernameET);
         EditText passwordLN = findViewById(R.id.passwordET);
 
         DatabaseIdentifiant = new Identifiants(this);
-
 
         loginBtn.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -66,6 +67,30 @@ public class LoginActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent = new Intent(LoginActivity.this, RegisterActivity.class);
                 startActivity(intent);
+            }
+        });
+
+        // Afficher cacher mdp oeil
+        ImageView oeilouvert = (ImageView) findViewById(R.id.oeilouvert);
+        ImageView oeilferme = (ImageView) findViewById(R.id.oeilferme);
+        EditText passEdit = findViewById(R.id.passwordET);
+
+        oeilferme.setVisibility(View.VISIBLE);
+        passEdit.setTransformationMethod(new PasswordTransformationMethod());
+        oeilouvert.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                oeilouvert.setVisibility(View.INVISIBLE);
+                oeilferme.setVisibility(View.VISIBLE);
+                passEdit.setTransformationMethod(new PasswordTransformationMethod());
+            }
+        });
+        oeilferme.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                oeilouvert.setVisibility(View.VISIBLE);
+                oeilferme.setVisibility(View.INVISIBLE);
+                passEdit.setTransformationMethod(null);
             }
         });
     }

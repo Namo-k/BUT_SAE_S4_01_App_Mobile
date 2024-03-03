@@ -37,7 +37,7 @@ public class CipManuelleActivity extends AppCompatActivity {
         valider.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(CipManuelleActivity.this, MedocCodeActivity.class);
+                Intent intent = new Intent(CipManuelleActivity.this, NewAlertActivity.class);
                 startActivity(intent);
             }
         });
@@ -47,7 +47,7 @@ public class CipManuelleActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 AlertDialog.Builder builder = new AlertDialog.Builder(CipManuelleActivity.this);
-                builder.setMessage("Êtes-vous sûr de vouloir retourner en arriere ? Votre saisie sera annulée.");
+                builder.setMessage("Êtes-vous sûr de vouloir retourner en arrière ? Votre saisie sera annulée.");
                 builder.setPositiveButton("Oui", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {

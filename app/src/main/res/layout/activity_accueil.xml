@@ -98,9 +98,9 @@
                 android:layout_width="70dp"
                 android:layout_height="70dp"
                 android:layout_gravity="center_vertical"
-                android:layout_marginLeft="58.5dp"
-                android:layout_marginTop="-10dp"
+                android:layout_marginLeft="52.5dp"
                 android:src="@drawable/colombesdroite"
+                android:layout_marginTop="-2dp"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
@@ -108,7 +108,7 @@
                 android:id="@+id/accueil_phrase"
                 android:layout_width="156dp"
                 android:layout_height="20dp"
-                android:layout_marginLeft="127dp"
+                android:layout_marginLeft="123dp"
                 android:layout_marginTop="5dp"
                 android:backgroundTint="@color/darkGrey"
                 android:fontFamily="@font/inter"
@@ -121,7 +121,7 @@
                 android:id="@+id/prenom"
                 android:layout_width="156dp"
                 android:layout_height="20dp"
-                android:layout_marginStart="127dp"
+                android:layout_marginStart="123dp"
                 android:layout_marginTop="6dp"
                 android:fontFamily="@font/inter_semibold"
                 android:textAlignment="center"
@@ -136,8 +136,8 @@
                 android:layout_width="70dp"
                 android:layout_height="70dp"
                 android:layout_gravity="center_vertical"
-                android:layout_marginLeft="278.5dp"
-                android:layout_marginTop="-10dp"
+                android:layout_marginLeft="276.5dp"
+                android:layout_marginTop="-3.5dp"
                 android:src="@drawable/colombesgauche"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
@@ -162,7 +162,7 @@
             <TextView
                 android:id="@+id/ligne1"
                 android:layout_width="180dp"
-                android:layout_height="2dp"
+                android:layout_height="1.5dp"
                 android:layout_marginStart="27dp"
                 android:layout_marginTop="12dp"
                 android:background="@color/lightBlue"
@@ -184,7 +184,7 @@
             <androidx.cardview.widget.CardView
                 android:id="@+id/blocAlert"
                 android:layout_width="338dp"
-                android:layout_height="165dp"
+                android:layout_height="150dp"
                 android:layout_marginStart="27dp"
                 android:layout_marginTop="30dp"
                 app:cardBackgroundColor="@color/lightBlueLight"
@@ -243,10 +243,10 @@
                 </androidx.cardview.widget.CardView>
 
                 <RelativeLayout
-                    android:layout_width="125dp"
-                    android:layout_height="134dp"
+                    android:layout_width="126dp"
+                    android:layout_height="120dp"
                     android:layout_marginLeft="30dp"
-                    android:layout_marginTop="15dp">
+                    android:layout_marginTop="18dp">
 
                     <TextView
                         android:id="@+id/scanText"
@@ -265,7 +265,7 @@
                         android:layout_height="60.85dp"
                         android:layout_below="@+id/scanText"
                         android:layout_centerInParent="true"
-                        android:layout_marginTop="10dp"
+                        android:layout_marginTop="12dp"
                         android:src="@drawable/scan_logo" />
 
                     <androidx.cardview.widget.CardView
@@ -274,6 +274,7 @@
                         android:layout_height="wrap_content"
                         android:layout_below="@+id/scanText"
                         android:layout_marginLeft="8dp"
+                        android:layout_marginTop="2dp"
                         android:layout_toRightOf="@+id/scan_logo"
                         android:alpha="0.8"
                         app:cardBackgroundColor="#5C89BE"
@@ -290,27 +291,14 @@
                             android:textStyle="bold" />
                     </androidx.cardview.widget.CardView>
 
-                    <TextView
-                        android:id="@+id/tuto1"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_below="@+id/scan_logo"
-                        android:layout_centerInParent="true"
-                        android:layout_marginTop="5dp"
-                        android:fontFamily="@font/inter_medium"
-                        android:text="Voir le tutoriel"
-                        android:textAlignment="center"
-                        android:textColor="@color/textGrey"
-                        android:textSize="13dp"
-                        tools:ignore="TextSizeCheck" />
 
                 </RelativeLayout>
 
                 <RelativeLayout
                     android:layout_width="125dp"
-                    android:layout_height="134dp"
+                    android:layout_height="120dp"
                     android:layout_gravity="right"
-                    android:layout_marginTop="15dp"
+                    android:layout_marginTop="18dp"
                     android:layout_marginRight="30dp">
 
                     <TextView
@@ -330,7 +318,7 @@
                         android:layout_height="58dp"
                         android:layout_below="@+id/saisieText"
                         android:layout_centerInParent="true"
-                        android:layout_marginTop="9dp"
+                        android:layout_marginTop="11dp"
                         android:src="@drawable/ecrire1" />
 
                     <androidx.cardview.widget.CardView
@@ -341,6 +329,7 @@
                         android:layout_marginLeft="9dp"
                         android:layout_toRightOf="@+id/saisie_logo"
                         android:alpha="0.8"
+                        android:layout_marginTop="2dp"
                         app:cardBackgroundColor="#5C89BE"
                         app:cardCornerRadius="20dp">
 
@@ -355,18 +344,6 @@
                             android:textStyle="bold" />
                     </androidx.cardview.widget.CardView>
 
-                    <TextView
-                        android:id="@+id/tuto2"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_below="@+id/saisie_logo"
-                        android:layout_centerInParent="true"
-                        android:layout_marginTop="9dp"
-                        android:fontFamily="@font/inter_medium"
-                        android:text="Voir le tutoriel"
-                        android:textAlignment="center"
-                        android:textColor="@color/textGrey"
-                        android:textSize="13dp" />
 
                 </RelativeLayout>
 
@@ -383,7 +360,7 @@
                 android:layout_marginStart="30dp"
                 android:layout_marginTop="22dp"
                 android:fontFamily="@font/patuaone_regular"
-                android:text=" Mon alerte la plus récente"
+                android:text=" Mes récentes alertes"
                 android:textColor="@color/darkBlue"
                 android:textSize="21dp"
                 app:layout_constraintStart_toStartOf="parent"
@@ -391,7 +368,7 @@
 
             <TextView
                 android:id="@+id/ligne2"
-                android:layout_width="230dp"
+                android:layout_width="210dp"
                 android:layout_height="2dp"
                 android:layout_marginStart="27dp"
                 android:layout_marginTop="12dp"
@@ -413,7 +390,7 @@
             <androidx.cardview.widget.CardView
                 android:id="@+id/blocAncienneAlerte"
                 android:layout_width="338dp"
-                android:layout_height="180dp"
+                android:layout_height="185dp"
                 android:layout_marginStart="27dp"
                 android:layout_marginTop="18dp"
                 app:cardBackgroundColor="@color/lightBlueLight"
@@ -426,7 +403,7 @@
                     android:layout_height="match_parent"
                     android:layout_marginHorizontal="20dp"
                     android:layout_marginTop="12dp"
-                    android:layout_marginBottom="30dp"
+                    android:layout_marginBottom="33dp"
                     app:cardCornerRadius="15dp"
                     android:background="@color/lightBlue"
                     >
@@ -435,8 +412,8 @@
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:background="@color/lightBlue"
-                        android:paddingHorizontal="10dp"
-                        android:paddingTop="5dp"
+                        android:paddingHorizontal="11dp"
+                        android:paddingTop="7dp"
                         >
 
                         <TextView
@@ -450,7 +427,7 @@
                             android:fontFamily="@font/inter_medium"
                             android:text="Médicament concerné :"
                             android:textColor="@color/textGrey"
-                            android:textSize="11dp" />
+                            android:textSize="11.5dp" />
 
                         <TextView
                             android:id="@+id/medicamentTV"
@@ -464,7 +441,7 @@
                             android:fontFamily="@font/inter"
                             android:text="GABAPENTINE RANBAXY 400 mg, gélule"
                             android:textColor="@color/textDarkBlue"
-                            android:textSize="11.5dp" />
+                            android:textSize="12dp" />
 
                         <TextView
                             android:id="@+id/raisonLabelTV"
@@ -478,7 +455,7 @@
                             android:fontFamily="@font/inter_medium"
                             android:text="Raison :"
                             android:textColor="@color/textGrey"
-                            android:textSize="11dp" />
+                            android:textSize="11.5dp" />
 
                         <TextView
                             android:id="@+id/raisonTV"
@@ -493,7 +470,7 @@
                             android:fontFamily="@font/inter"
                             android:text="Renouvellement impossible"
                             android:textColor="@color/textDarkBlue"
-                            android:textSize="11.5dp"
+                            android:textSize="12dp"
                             />
 
                         <TextView
@@ -508,7 +485,7 @@
                             android:fontFamily="@font/inter_medium"
                             android:text="Message :"
                             android:textColor="@color/textGrey"
-                            android:textSize="11dp" />
+                            android:textSize="11.5dp" />
 
                         <TextView
                             android:id="@+id/messageTV"
@@ -522,7 +499,7 @@
                             android:fontFamily="@font/inter"
                             android:text="Ma pharmacie m’a prévenu qu’il n’y a plus aucun stock de ce médicament dans toute la ville !"
                             android:textColor="@color/textDarkBlue"
-                            android:textSize="11.5dp"
+                            android:textSize="12dp"
                             android:lineHeight="17dp"
                             />
 
@@ -546,7 +523,7 @@
                                 android:background="@color/darkBlueLightLight"
                                 android:padding="3dp"
                                 android:gravity="center"
-                                android:textSize="10dp"
+                                android:textSize="10.5dp"
                                 />
                         </androidx.cardview.widget.CardView>
                     </RelativeLayout>
@@ -556,7 +533,7 @@
                     android:id="@+id/btnAlertes"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginBottom="7dp"
+                    android:layout_marginBottom="8.5dp"
                     android:layout_marginRight="25dp"
                     android:layout_gravity="right|bottom"
                     android:backgroundTint="#00000000"

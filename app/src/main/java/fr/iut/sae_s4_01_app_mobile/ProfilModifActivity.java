@@ -94,6 +94,16 @@ public class ProfilModifActivity extends AppCompatActivity {
             }
         });
 
+        // btn deco
+        ImageView sedeconnecterBtn = findViewById(R.id.sedeconnecterBtn);
+        sedeconnecterBtn.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v){
+                Intent intent = new Intent(ProfilModifActivity.this, LoginActivity.class);
+                startActivity(intent);
+            }
+        });
+
         // bouton annuler
         CardView annuler = findViewById(R.id.btnAnnuler);
         annuler.setOnClickListener(new View.OnClickListener() {

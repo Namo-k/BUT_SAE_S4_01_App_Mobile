@@ -38,6 +38,16 @@ public class ancienneAlerteActivity extends AppCompatActivity {
             }
         });
 
+        // se deconnecter
+        ImageView sedeconnecterBtn = findViewById(R.id.sedeconnecterBtn);
+        sedeconnecterBtn.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v){
+                Intent intent = new Intent(ancienneAlerteActivity.this, LoginActivity.class);
+                startActivity(intent);
+            }
+        });
+
         // à faire avec BD
         ListView listView = findViewById(R.id.ancienneAlertelistView);
 

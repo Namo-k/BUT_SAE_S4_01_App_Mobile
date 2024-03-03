@@ -32,7 +32,7 @@ public class RegisterActivity extends AppCompatActivity {
         Spinner genreSpinner = findViewById(R.id.genre);
 
         List<String> genresList = new ArrayList<>();
-        genresList.add(" ");
+        genresList.add("Selectionnez un genre");
         genresList.add("Homme");
         genresList.add("Femme");
         genresList.add("Non renseigné");
@@ -40,10 +40,6 @@ public class RegisterActivity extends AppCompatActivity {
 
 
         Button passersuite = findViewById(R.id.loginBtn);
-
-
-
-
 
         passersuite.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -61,14 +57,14 @@ public class RegisterActivity extends AppCompatActivity {
                 String genre = genreSpinner.getSelectedItem().toString();
 
                 if (nom_.isEmpty() || prenom_.isEmpty() || jour_.isEmpty() || mois_.isEmpty() || annee_.isEmpty()) {
-                    Toast.makeText(RegisterActivity.this, "Veuillez remplir tous le champs", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(RegisterActivity.this, "Veuillez remplir tous les champs", Toast.LENGTH_SHORT).show();
                 } else {
-                    if(genre.equals(" ")){
+                    if(genre.equals("Selectionnez un genre")){
                         Toast.makeText(RegisterActivity.this, "Veuillez selectionner un genre", Toast.LENGTH_SHORT).show();
                     }else if (!verifjour(jour_)) {
-                        Toast.makeText(RegisterActivity.this, "Le jour saisie n'est pas conforme", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(RegisterActivity.this, "Le jour saisi n'est pas conforme", Toast.LENGTH_SHORT).show();
                     }else if(!verifmois(mois_)){
-                        Toast.makeText(RegisterActivity.this, "Le mois saisie n'est pas conforme", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(RegisterActivity.this, "Le mois saisi n'est pas conforme", Toast.LENGTH_SHORT).show();
                     }else if(!verifanne(annee_)){
                         Toast.makeText(RegisterActivity.this, "L'année saisie n'est pas conforme", Toast.LENGTH_SHORT).show();
                     }else {

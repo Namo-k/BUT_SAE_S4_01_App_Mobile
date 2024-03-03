@@ -78,8 +78,6 @@ public class AccueilActivity extends AppCompatActivity {
             }
         });
 
-
-
         // Affichage des informations lors du click sur point interrogation
         CardView interrogation1 = (CardView) findViewById(R.id.interrogation1);
         CardView interrogation2 = (CardView) findViewById(R.id.interrogation2);
