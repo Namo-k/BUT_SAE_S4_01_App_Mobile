@@ -22,10 +22,10 @@ public class ancienneAlerteActivity extends AppCompatActivity {
         Alertes alertesDb = new Alertes(this);
         int totalAlertCount = alertesDb.getNombreTotalAlertes();
 
-        // Bouton de la navbar
         ImageView btnHome = (ImageView) findViewById(R.id.homeBtn);
         ImageView btnProfil = (ImageView) findViewById(R.id.userBtn);
         TextView nbAlerte = (TextView) findViewById(R.id.nbAlertes);
+
         btnHome.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -42,24 +42,14 @@ public class ancienneAlerteActivity extends AppCompatActivity {
             }
         });
 
-        // à faire avec BD
         ListView listView = findViewById(R.id.ancienneAlertelistView);
 
-        List<Alerte> alertes = new ArrayList<>();
+        // Récupérer les alertes depuis la base de données
+        List<Alerte> alertes = alertesDb.getAllAlertes();
 
-        /*alertes.add(new Alerte(1, "Doliprane", "Renouvellement impossible", "Ma pharmacie m’a prévenu qu’il n’y a plus aucun stock de ce médicament dans toute la ville !", "18 février 2024"));
-        alertes.add(new Alerte(2, "Ranbaxy", "Rupture de stock", "Ma pharmacie m’a prévenu qu’il n’y a plus aucun stock de ce médicament dans toute la ville !", "18 février 2024"));
-        alertes.add(new Alerte(3, "Paracetamol", "Livraison tardive", "Ma pharmacie m’a prévenu qu’il n’y a plus aucun stock de ce médicament dans toute la ville !", "18 février 2024"));
-        alertes.add(new Alerte(3, "Paracetamol", "Livraison tardive", "Ma pharmacie m’a prévenu qu’il n’y a plus aucun stock de ce médicament dans toute la ville !", "18 février 2024"));
-        alertes.add(new Alerte(3, "Paracetamol", "Livraison tardive", "Ma pharmacie m’a prévenu qu’il n’y a plus aucun stock de ce médicament dans toute la ville !", "18 février 2024"));
-        alertes.add(new Alerte(3, "Paracetamol", "Livraison tardive", "Ma pharmacie m’a prévenu qu’il n’y a plus aucun stock de ce médicament dans toute la ville !", "18 février 2024"));
-
-*/
         nbAlerte.append("Vous avez " + totalAlertCount +  " alertes au total");
 
         AlerteAdapter adapter = new AlerteAdapter(this, alertes);
         listView.setAdapter(adapter);
-
     }
-
 }

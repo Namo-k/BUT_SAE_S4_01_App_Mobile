@@ -35,8 +35,10 @@ public class AlerteAdapter extends ArrayAdapter<Alerte> {
         TextView messageTV = itemView.findViewById(R.id.messageTV);
         messageTV.setText(currentAlerte.getMessage());
 
-        TextView dataTV = itemView.findViewById(R.id.dataTV);
-        dataTV.setText(currentAlerte.getDate());
+        TextView date = itemView.findViewById(R.id.dateAlerte);
+        date.setText(currentAlerte.getDateAlerte());
+
+
 
         return itemView;
     }

@@ -1,9 +1,9 @@
-#Mon Mar 04 10:58:22 CET 2024
-base.0=/Users/oumi/AndroidStudioProjects/BUT_SAE_S4_01_App_Mobilealex/app/build/intermediates/dex/debug/mergeExtDexDebug/classes.dex
-base.1=/Users/oumi/AndroidStudioProjects/BUT_SAE_S4_01_App_Mobilealex/app/build/intermediates/dex/debug/mergeProjectDexDebug/0/classes.dex
-base.2=/Users/oumi/AndroidStudioProjects/BUT_SAE_S4_01_App_Mobilealex/app/build/intermediates/dex/debug/mergeProjectDexDebug/12/classes.dex
-base.3=/Users/oumi/AndroidStudioProjects/BUT_SAE_S4_01_App_Mobilealex/app/build/intermediates/dex/debug/mergeProjectDexDebug/7/classes.dex
-base.4=/Users/oumi/AndroidStudioProjects/BUT_SAE_S4_01_App_Mobilealex/app/build/intermediates/dex/debug/mergeExtDexDebug/classes2.dex
+#Mon Mar 04 20:22:29 CET 2024
+base.0=/Users/isra/Desktop/SEMESTRE 4/Mobile/PROJET/BUT_SAE_S4_01_App_Mobile_/app/build/intermediates/dex/debug/mergeExtDexDebug/classes.dex
+base.1=/Users/isra/Desktop/SEMESTRE 4/Mobile/PROJET/BUT_SAE_S4_01_App_Mobile_/app/build/intermediates/dex/debug/mergeProjectDexDebug/0/classes.dex
+base.2=/Users/isra/Desktop/SEMESTRE 4/Mobile/PROJET/BUT_SAE_S4_01_App_Mobile_/app/build/intermediates/dex/debug/mergeProjectDexDebug/12/classes.dex
+base.3=/Users/isra/Desktop/SEMESTRE 4/Mobile/PROJET/BUT_SAE_S4_01_App_Mobile_/app/build/intermediates/dex/debug/mergeProjectDexDebug/7/classes.dex
+base.4=/Users/isra/Desktop/SEMESTRE 4/Mobile/PROJET/BUT_SAE_S4_01_App_Mobile_/app/build/intermediates/dex/debug/mergeExtDexDebug/classes2.dex
 path.0=classes.dex
 path.1=0/classes.dex
 path.2=12/classes.dex

@@ -1,3 +1,4 @@
+fr.iut.sae_s4_01_app_mobile:id/dateAlerte = 0x7f09027d
 fr.iut.sae_s4_01_app_mobile:style/Widget.Material3.FloatingActionButton.Large.Surface = 0x7f12038a
 fr.iut.sae_s4_01_app_mobile:style/Base.Widget.AppCompat.SeekBar.Discrete = 0x7f1200f6
 fr.iut.sae_s4_01_app_mobile:style/TextAppearance.Compat.Notification.Title.Media = 0x7f1201cd

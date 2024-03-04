@@ -47,12 +47,12 @@ public class CipManuelleActivity extends AppCompatActivity {
         valider.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String codeCIP = finalEditCodeCIP1.getText().toString().trim(); // Ensure to trim whitespace
+                String codeCIP = finalEditCodeCIP1.getText().toString().trim();
 
 
                 if (codeCIP.length() < 8) {
                     Toast.makeText(CipManuelleActivity.this, "Le numéro du CIS doit comporter 8 caractères.", Toast.LENGTH_SHORT).show();
-                    return; // Exit if the code is not the correct length
+                    return;
                 }
 
 
