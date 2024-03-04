@@ -12,48 +12,53 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:src="@drawable/fleche_24"
-        android:layout_marginLeft="15dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="25dp"
         />
 
     <TextView
         android:id="@+id/welcomeTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="45dp"
-        android:layout_marginTop="15dp"
-        android:text="Bienvenue ! "
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="55dp"
+        android:text="Vous êtes nouveau ?"
+        android:fontFamily="@font/patuaone_regular"
         android:textColor="#4A55A2"
-        android:textSize="24sp"
+        android:textSize="21dp"
         android:textStyle="bold" />
 
+
     <ImageView
-        android:layout_width="match_parent"
-        android:layout_height="100dp"
+        android:layout_width="105dp"
+        android:layout_height="105dp"
         android:layout_below="@id/welcomeTextView"
-        android:layout_marginStart="250dp"
-        android:layout_marginTop="-61dp"
+        android:layout_marginStart="270dp"
+        android:layout_marginTop="-64dp"
         android:layout_marginBottom="70dp"
         android:src="@drawable/colombesblanc" />
 
+
     <ImageView
-        android:layout_width="match_parent"
+        android:layout_width="220dp"
         android:layout_height="100dp"
         android:layout_below="@id/welcomeTextView"
-        android:layout_marginStart="70dp"
-        android:layout_marginTop="10dp"
+        android:layout_marginStart="97dp"
+        android:layout_marginTop="15dp"
         android:layout_marginEnd="70dp"
         android:layout_marginBottom="70dp"
         android:src="@drawable/colombeslogo" />
 
+
     <ImageView
-        android:layout_width="match_parent"
-        android:layout_height="100dp"
+        android:layout_width="105dp"
+        android:layout_height="105dp"
         android:layout_below="@id/welcomeTextView"
-        android:layout_marginTop="68dp"
-        android:layout_marginEnd="300dp"
-        android:layout_marginBottom="70dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="72dp"
+        android:layout_marginBottom="68dp"
         android:src="@drawable/colombesblanc2" />
+
     <!-- Fin de la section Bienvenue -->
 
     <!-- Début du formulaire d'inscription -->
@@ -63,19 +68,125 @@
         android:layout_below="@id/welcomeTextView"
         android:layout_centerHorizontal="true"
         android:layout_marginLeft="50dp"
-        android:layout_marginTop="177dp"
+        android:layout_marginTop="200dp"
         android:orientation="vertical">
 
         <TextView
             android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:layout_marginLeft="10dp"
+            android:text="Complétez quelques informations !"
+            android:fontFamily="@font/patuaone_regular"
+            android:textColor="#4A55A2"
+            android:textSize="21.5dp"
+            />
+
+        <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="10dp"
-            android:layout_marginTop="15dp"
-            android:text="Complétez quelques informations !"
-            android:textColor="#4A55A2"
-            android:textSize="20dp"
-            android:textStyle="bold"
+            android:orientation="horizontal"
+            android:layout_marginLeft="28dp"
+            android:layout_marginTop="32dp">
+
+            <ImageView
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:src="@drawable/adresse" />
+
+            <TextView
+                android:id="@+id/textViewprenom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" Votre adresse mail  : "
+                android:layout_marginLeft="10dp"
+                android:fontFamily="@font/inter"
+                android:textSize="17dp" />
+
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/email"
+            android:layout_width="307dp"
+            android:layout_height="41dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="18dp"
+            android:layout_marginRight="50dp"
+            android:background="@drawable/round_login"
+            android:hint="Adresse mail..."
+            android:inputType="textEmailAddress"
+            android:textSize="17dp"
+            android:fontFamily="@font/inter"
+            android:paddingLeft="20dp"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="28dp">
+
+            <ImageView
+                android:id="@+id/cadenas"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:src="@drawable/cadenas" />
+
+            <TextView
+                android:id="@+id/textViewnom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/cadenas"
+                android:text=" Votre mot de passe  : "
+                android:layout_marginLeft="10dp"
+                android:fontFamily="@font/inter"
+                android:layout_marginTop="3dp"
+                android:textSize="17dp" />
+
+
+            <EditText
+                android:id="@+id/mdp"
+                android:layout_below="@id/cadenas"
+                android:layout_width="307dp"
+                android:layout_height="41dp"
+                android:layout_marginTop="18dp"
+                android:background="@drawable/round_login"
+                android:hint="Mot de passe..."
+                android:inputType="textPassword"
+                android:textSize="17dp"
+                android:fontFamily="@font/inter"
+                android:paddingLeft="20dp"
+                tools:ignore="TouchTargetSizeCheck" />
+
+        </RelativeLayout>
+
+
+        <ImageView
+            android:id="@+id/oeilferme"
+            android:layout_below="@id/cadenas"
+            android:layout_toRightOf="@id/mdp"
+            android:visibility="gone"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="-36dp"
+            android:layout_marginRight="30dp"
+            android:layout_gravity="right"
+            android:src="@drawable/oeilferme"
+            />
+
+        <ImageView
+            android:id="@+id/oeilouvert"
+            android:visibility="gone"
+            android:layout_below="@id/cadenas"
+            android:layout_toRightOf="@id/mdp"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_marginTop="-29dp"
+            android:layout_marginRight="30dp"
+            android:layout_gravity="right"
+            android:src="@drawable/oeilouvert"
             />
 
         <LinearLayout
@@ -85,126 +196,60 @@
             android:layout_marginLeft="20dp"
             android:layout_marginTop="10dp">
 
-            <ImageView
-                android:layout_width="21dp"
-                android:layout_height="39dp"
-                android:src="@drawable/adresse" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <CheckBox
+                android:id="@+id/checkbox"
+                android:layout_width="30dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:layout_marginLeft="20dp"
+                />
 
             <TextView
-                android:id="@+id/textViewprenom"
-                android:layout_width="wrap_content"
+                android:layout_width="260dp"
                 android:layout_height="wrap_content"
-                android:text=" Votre adresse mail  : "
-                android:layout_marginTop="5dp"
-                android:layout_marginLeft="5dp"
-                android:textSize="18dp" />
+                android:layout_marginLeft="13dp"
+                android:layout_marginTop="3dp"
+                android:text="@string/text_condition"
+                android:textColor="@color/textGrey"
+                android:lineHeight="22dp"
+                android:textSize="14.5dp" />
 
         </LinearLayout>
-
-        <EditText
-            android:id="@+id/email"
-            android:layout_width="322dp"
-            android:layout_height="41dp"
-            android:layout_marginLeft="20dp"
-            android:layout_marginTop="5dp"
-            android:layout_marginRight="50dp"
-            android:background="@drawable/round_login"
-            android:hint="Adresse email"
-            android:inputType="textEmailAddress"
-            android:paddingLeft="20dp"
-            android:textStyle="italic"
-            tools:ignore="TouchTargetSizeCheck" />
 
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
             android:layout_marginLeft="20dp"
-            android:layout_marginTop="10dp">
-
-            <ImageView
-                android:layout_width="21dp"
-                android:layout_height="39dp"
-                android:src="@drawable/cadenas" />
-
-            <TextView
-                android:id="@+id/textViewnom"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text=" Votre mot de passe  : "
-                android:layout_marginTop="5dp"
-                android:layout_marginLeft="5dp"
-                android:textSize="18dp" />
-
-        </LinearLayout>
-
-        <EditText
-            android:id="@+id/mdp"
-            android:layout_width="322dp"
-            android:layout_height="41dp"
-            android:layout_marginLeft="20dp"
-            android:layout_marginTop="5dp"
-            android:layout_marginRight="50dp"
-            android:background="@drawable/round_login"
-            android:hint="Mot de passe  "
-            android:inputType="textPassword"
-            android:paddingLeft="20dp"
-            android:textStyle="italic"
-            tools:ignore="TouchTargetSizeCheck" />
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:layout_marginLeft="20dp"
-
-            android:layout_marginTop="10dp">
-
-
-        </LinearLayout>
-
-        <CheckBox
-            android:id="@+id/checkbox"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:layout_marginLeft="20dp"
-
-            android:text="En cochant cette case, vous acceptez nos conditions générales d'utilisation" />
-
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:layout_marginLeft="20dp"
-            android:layout_marginTop="10dp"/>
-
+            android:layout_marginTop="20dp"/>
 
         <Button
             android:id="@+id/loginBtn"
             style="@style/Widget.MaterialComponents.Button.UnelevatedButton"
-            android:layout_width="220dp"
-            android:layout_height="50dp"
+            android:layout_width="240dp"
+            android:layout_height="55dp"
             android:layout_gravity="center"
-
             android:backgroundTint="#4A55A2"
-
             android:text="Finaliser Inscription "
-            android:textSize="13dp"
+            android:fontFamily="@font/inter_medium"
+            android:textSize="14dp"
             tools:ignore="TextSizeCheck" />
 
-
-        <!--<TextView
-            android:id="@+id/textViewincomp"
+        <TextView
+            android:id="@+id/page"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="15dp"
-            android:layout_marginTop="30dp"
-            android:text="Attention, vos informations sont incomplètes !"
-            android:textColor="#A90000"
-            android:textSize="18dp"
-            android:textStyle="bold"
-            />-->
-
+            android:text="2/2"
+            android:layout_gravity="right"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="10dp"
+            android:textSize="20dp" />
 
     </LinearLayout>
 

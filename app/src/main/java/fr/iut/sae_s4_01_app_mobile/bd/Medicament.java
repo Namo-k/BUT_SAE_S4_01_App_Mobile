@@ -1,5 +1,6 @@
 package fr.iut.sae_s4_01_app_mobile.bd;
 
+import android.annotation.SuppressLint;
 import android.content.ContentValues;
 import android.content.Context;
 import android.database.Cursor;
@@ -17,11 +18,12 @@ import java.io.InputStreamReader;
 
 public class Medicament extends SQLiteOpenHelper {
 
-    private static final String DATABASE_NAME = "medicament";
+    private static final String DATABASE_NAME = "db_medicament";
     private static final int DATABASE_VERSION = 1;
     private static final String TAG = "DatabaseHelper";
 
     public Medicament(Context context) {
+
         super(context, DATABASE_NAME, null, DATABASE_VERSION);
     }
 
@@ -41,7 +43,7 @@ public class Medicament extends SQLiteOpenHelper {
 
         SQLiteDatabase database = this.getWritableDatabase();
 
-        //verif si y'a des donnée dans la page
+        // Vérifier si des données existent déjà dans la table
         Cursor cursor = database.rawQuery("SELECT COUNT(*) FROM medicament", null);
         if (cursor != null) {
             cursor.moveToFirst();
@@ -50,7 +52,6 @@ public class Medicament extends SQLiteOpenHelper {
 
             if (count == 0) {
                 try {
-
                     CSVReader reader = new CSVReaderBuilder(new InputStreamReader(inputStream))
                             .withCSVParser(new com.opencsv.CSVParserBuilder().withSeparator(';').build())
                             .build();
@@ -76,7 +77,22 @@ public class Medicament extends SQLiteOpenHelper {
         }
     }
 
+    @SuppressLint("Range")
+    public String getNomMedicamentByCodeCIP(String codeCIP) {
+        SQLiteDatabase database = this.getReadableDatabase();
+        String nomMedicament = null;
 
+        Cursor cursor = database.query("medicament",
+                new String[]{"nomMedicament"},
+                "codeCis = ?",
+                new String[]{codeCIP},
+                null, null, null);
+
+        if (cursor != null && cursor.moveToFirst()) {
+            nomMedicament = cursor.getString(cursor.getColumnIndex("nomMedicament"));
+            cursor.close();
+        }
+
+        return nomMedicament;
+    }
 }
-
-

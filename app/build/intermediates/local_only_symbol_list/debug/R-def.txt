@@ -17,8 +17,6 @@ drawable adresse
 drawable alertes
 drawable alertes_icone
 drawable anciennes
-drawable border_btn
-drawable button_background
 drawable cadenas
 drawable calendrier
 drawable cloche
@@ -37,9 +35,10 @@ drawable genre
 drawable home
 drawable ic_launcher_background
 drawable ic_launcher_foreground
-drawable indice
 drawable interrogation
 drawable nouveaucompte
+drawable oeilferme
+drawable oeilouvert
 drawable ovale_shape
 drawable round_createalert
 drawable round_login
@@ -82,9 +81,9 @@ id btnAlertes
 id btnAnnuler
 id btnDesactiverCompte
 id btnEnregistrer
-id btnEnvoyer
 id btnModifier
 id btnSupprimerCompte
+id cadenas
 id checkbox
 id citationText
 id codecipTV
@@ -107,7 +106,6 @@ id info2
 id inputCip
 id inputMedoc
 id inputMessage
-id inputRaison
 id interrogation1
 id interrogation1text
 id interrogation2
@@ -116,7 +114,6 @@ id ligne1
 id ligne2
 id loginBtn
 id logoIV
-id lol
 id mailEdit
 id mailLabelTV
 id mailTV
@@ -140,6 +137,9 @@ id nomLabelTV
 id nomMedoc
 id nomTV
 id notifBtn
+id oeilferme
+id oeilouvert
+id page
 id passwordET
 id pharmacieEdit
 id pharmacieLabelTV
@@ -163,6 +163,7 @@ id sedeconnecterBtn
 id sexeEdit
 id sexeLabelTV
 id sexeTV
+id spinnerRaison
 id splashImage
 id textCodeCIP
 id textMain
@@ -178,8 +179,7 @@ id textViewGenre
 id textViewemail
 id textViewnom
 id textViewprenom
-id tuto1
-id tuto2
+id titre
 id userBtn
 id usernameET
 id versionText
@@ -202,6 +202,7 @@ mipmap ic_launcher
 mipmap ic_launcher_round
 raw medicament
 string app_name
+string text_condition
 string text_dataMatrix
 string text_interro1
 string text_interro2
@@ -209,6 +210,7 @@ string text_interro3
 string text_interro4
 string text_prospection
 string text_saisieCIP
+string text_scanDataMatrix
 style Base.Theme.SAE_S4_01_App_Mobile
 style Theme.SAE_S4_01_App_Mobile
 xml backup_rules

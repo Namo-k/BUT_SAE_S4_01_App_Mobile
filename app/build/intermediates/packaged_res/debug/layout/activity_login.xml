@@ -11,42 +11,43 @@
         android:id="@+id/welcomeTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="40dp"
+        android:layout_marginLeft="45dp"
         android:layout_marginTop="40dp"
         android:text="Bienvenue !"
+        android:fontFamily="@font/patuaone_regular"
         android:textColor="#4A55A2"
         android:textSize="24sp"
         android:textStyle="bold" />
 
 
     <ImageView
-        android:layout_width="match_parent"
-        android:layout_height="100dp"
+        android:layout_width="105dp"
+        android:layout_height="105dp"
         android:layout_below="@id/welcomeTextView"
-        android:layout_marginStart="250dp"
-        android:layout_marginTop="-61dp"
+        android:layout_marginStart="270dp"
+        android:layout_marginTop="-64dp"
         android:layout_marginBottom="70dp"
         android:src="@drawable/colombesblanc" />
 
 
     <ImageView
-        android:layout_width="match_parent"
+        android:layout_width="220dp"
         android:layout_height="100dp"
         android:layout_below="@id/welcomeTextView"
-        android:layout_marginStart="70dp"
-        android:layout_marginTop="10dp"
+        android:layout_marginStart="97dp"
+        android:layout_marginTop="15dp"
         android:layout_marginEnd="70dp"
         android:layout_marginBottom="70dp"
         android:src="@drawable/colombeslogo" />
 
 
     <ImageView
-        android:layout_width="match_parent"
-        android:layout_height="100dp"
+        android:layout_width="105dp"
+        android:layout_height="105dp"
         android:layout_below="@id/welcomeTextView"
-        android:layout_marginTop="68dp"
-        android:layout_marginEnd="300dp"
-        android:layout_marginBottom="70dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="75dp"
+        android:layout_marginBottom="68dp"
         android:src="@drawable/colombesblanc2" />
 
 
@@ -56,43 +57,42 @@
         android:layout_below="@id/welcomeTextView"
         android:layout_centerHorizontal="true"
         android:layout_marginLeft="50dp"
-        android:layout_marginTop="177dp"
+        android:layout_marginTop="188dp"
         android:orientation="vertical"
         tools:ignore="ExtraText">
 
 
         <TextView
             android:id="@+id/Btext"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="50dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/patuaone_regular"
             android:gravity="center"
             android:text="Vous avez déjà un compte ?"
             android:textColor="@color/white"
-            android:textSize="20sp"
-            android:textStyle="bold" />
+            android:textSize="21.5dp" />
 
 
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="20dp"
-            android:layout_marginTop="10dp"
+            android:layout_marginTop="25dp"
             android:orientation="horizontal">
 
             <ImageView
-                android:layout_width="21dp"
-                android:layout_height="39dp"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
                 android:src="@drawable/adresse" />
 
             <TextView
                 android:id="@+id/textView2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="5dp"
-                android:layout_marginTop="5dp"
-                android:text="Votre Adresse mail : "
-                android:textSize="18dp" />
+                android:layout_marginLeft="13dp"
+                android:text="Votre adresse mail : "
+                android:fontFamily="@font/inter_medium"
+                android:textSize="17dp" />
 
         </LinearLayout>
 
@@ -101,12 +101,12 @@
             android:layout_width="322dp"
             android:layout_height="41dp"
             android:layout_marginLeft="20dp"
-            android:layout_marginTop="5dp"
+            android:layout_marginTop="15dp"
             android:layout_marginRight="50dp"
             android:background="@drawable/round_login"
-            android:hint="Email"
+            android:hint="Adresse mail..."
+            android:textSize="17dp"
             android:inputType="textEmailAddress"
-
             android:paddingLeft="20dp"
             tools:ignore="TouchTargetSizeCheck"
             tools:visibility="visible" />
@@ -115,20 +115,19 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="20dp"
-            android:layout_marginTop="10dp"
+            android:layout_marginTop="25dp"
             android:orientation="horizontal">
 
             <ImageView
-                android:layout_width="21dp"
-                android:layout_height="39dp"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
                 android:src="@drawable/cadenas" />
 
             <TextView
                 android:id="@+id/textView3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="5dp"
-                android:layout_marginTop="5dp"
+                android:layout_marginLeft="13dp"
                 android:text="Votre mot de passe  : "
                 android:textSize="18dp" />
 
@@ -139,29 +138,51 @@
             android:layout_width="322dp"
             android:layout_height="41dp"
             android:layout_marginLeft="20dp"
-            android:layout_marginTop="5dp"
+            android:layout_marginTop="15dp"
             android:layout_marginRight="50dp"
             android:background="@drawable/round_login"
-            android:hint="Mot De passe"
+            android:hint="Mot de passe..."
+            android:textSize="17dp"
             android:inputType="textPassword"
             android:paddingLeft="20dp"
             tools:ignore="TouchTargetSizeCheck" />
 
+        <ImageView
+            android:id="@+id/oeilferme"
+            android:visibility="gone"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:src="@drawable/oeilferme"
+            android:layout_marginTop="-35.5dp"
+            android:layout_marginRight="13dp"
+            android:layout_gravity="right"
+            />
+
+        <ImageView
+            android:id="@+id/oeilouvert"
+            android:visibility="gone"
+            android:layout_width="27dp"
+            android:layout_height="27dp"
+            android:src="@drawable/oeilouvert"
+            android:layout_marginTop="-27.2dp"
+            android:layout_marginRight="13dp"
+            android:layout_gravity="right"
+            />
 
         <TextView
             android:id="@+id/MdpOublie"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="32dp"
             android:layout_marginRight="0dp"
             android:gravity="right"
             android:inputType="text"
             android:text="MOT DE PASSE OUBLIÉ ?"
             android:textColor="#4A55A2"
             android:textSize="15sp"
-
             android:textStyle="bold"
             tools:ignore="TouchTargetSizeCheck" />
+
 
         <Button
             android:id="@+id/loginBtn"
@@ -169,10 +190,12 @@
             android:layout_width="200dp"
             android:layout_height="60dp"
             android:layout_gravity="center"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="17dp"
+            android:layout_marginBottom="10dp"
             android:backgroundTint="#4A55A2"
             android:text="CONNECTEZ-VOUS !"
-            android:textSize="15dp"
+            android:fontFamily="@font/inter_medium"
+            android:textSize="13.5dp"
             tools:ignore="TextSizeCheck" />
 
         <TextView
@@ -182,42 +205,41 @@
             android:layout_marginLeft="145dp"
             android:gravity="center"
             android:paddingTop="9dp"
-            android:text="ou"
+            android:text="OU"
+            android:fontFamily="@font/patuaone_regular"
             android:textColor="@color/white"
-            android:textSize="25dp" />
+            android:textSize="20dp" />
 
         <View
-            android:layout_width="150dp"
+            android:layout_width="140dp"
             android:layout_height="2dp"
-            android:layout_marginLeft="200dp"
+            android:layout_marginLeft="210dp"
             android:layout_marginTop="-15dp"
             android:background="@android:color/white" />
 
         <View
-            android:layout_width="150dp"
+            android:layout_width="140dp"
             android:layout_height="2dp"
-
             android:layout_marginTop="-1dp"
             android:background="@android:color/white" />
 
-
         <TextView
-
             android:id="@+id/textView5"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="125dp"
-            android:layout_marginTop="30dp"
+            android:layout_marginLeft="113dp"
+            android:layout_marginTop="37dp"
             android:text="CRÉER UN COMPTE"
             android:textColor="#4A55A2"
-            android:textSize="15sp"
+            android:fontFamily="@font/inter_extrabold"
+            android:textSize="16dp"
             android:textStyle="bold" />
 
         <ImageView
-            android:layout_width="21dp"
-            android:layout_height="39dp"
-            android:layout_marginLeft="100dp"
-            android:layout_marginTop="-30dp"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="-32dp"
             android:src="@drawable/nouveaucompte" />
 
         />

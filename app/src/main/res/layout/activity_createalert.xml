@@ -147,34 +147,33 @@
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_margin="22dp"
-                >
+                android:layout_margin="22dp">
 
                 <TextView
+                    android:id="@+id/titre"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:id="@+id/titre"
-                    android:textStyle="bold"
-                    android:gravity="center"
                     android:fontFamily="@font/inter_semibold"
+                    android:gravity="center"
                     android:text="Remplissez les informations
                      ci dessous"
                     android:textColor="@color/darkBlue"
-                    android:textSize="17dp" />
+                    android:textSize="17dp"
+                    android:textStyle="bold" />
 
 
                 <TextView
+                    android:id="@+id/remerciement"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:id="@+id/remerciement"
                     android:layout_below="@id/titre"
                     android:layout_marginTop="10dp"
                     android:fontFamily="@font/inter_light"
-                    android:textStyle="bold"
                     android:gravity="center"
                     android:text="Merci infiniment pour votre contribution !"
                     android:textColor="@color/textGrey"
-                    android:textSize="14dp" />
+                    android:textSize="14dp"
+                    android:textStyle="bold" />
 
                 <TextView
                     android:id="@+id/Codecip"
@@ -190,6 +189,7 @@
                     tools:ignore="TextSizeCheck" />
 
 
+
                 <TextView
                     android:id="@+id/inputCip"
                     android:layout_width="wrap_content"
@@ -198,10 +198,9 @@
                     android:layout_marginStart="8dp"
                     android:layout_marginTop="50dp"
                     android:layout_toEndOf="@id/Codecip"
-                    android:textColor="@color/textDarkBlue"
                     android:fontFamily="@font/inter"
-                    android:textSize="13.5dp"
-                    />
+                    android:textColor="@color/textDarkBlue"
+                    android:textSize="13.5dp" />
 
 
                 <TextView
@@ -209,33 +208,35 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_below="@+id/Codecip"
-                    android:layout_marginTop="15dp"
                     android:layout_marginLeft="3dp"
+                    android:layout_marginTop="15dp"
                     android:fontFamily="@font/inter_medium"
                     android:text="Nom du médicament* :"
                     android:textColor="@color/textGrey"
                     android:textSize="13.5dp"
                     tools:ignore="TextSizeCheck" />
 
+
                 <TextView
                     android:id="@+id/raison"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_below="@+id/inputMedoc"
-                    android:layout_marginTop="15dp"
                     android:layout_marginLeft="3dp"
+                    android:layout_marginTop="15dp"
                     android:fontFamily="@font/inter_medium"
                     android:text="Raison* :"
                     android:textColor="@color/textGrey"
                     android:textSize="13.5dp"
                     tools:ignore="TextSizeCheck" />
+
                 <TextView
                     android:id="@+id/message"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_below="@+id/raison"
-                    android:layout_marginTop="15dp"
                     android:layout_marginLeft="3dp"
+                    android:layout_marginTop="15dp"
                     android:fontFamily="@font/inter_medium"
                     android:text="Message  :"
                     android:textColor="@color/textGrey"
@@ -247,29 +248,27 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_below="@+id/nomMedoc"
-                    android:layout_marginTop="8dp"
                     android:layout_marginLeft="3dp"
+                    android:layout_marginTop="8dp"
                     android:fontFamily="@font/inter"
                     android:textColor="@color/textDarkBlue"
-                    android:textSize="13.5dp"
-                    />
+                    android:textSize="13.5dp" />
 
 
                 <EditText
                     android:id="@+id/inputMessage"
                     android:layout_width="match_parent"
                     android:layout_height="65dp"
-                    android:background="@drawable/round_createalert"
                     android:layout_below="@+id/message"
-                    android:layout_marginTop="12dp"
                     android:layout_marginLeft="3dp"
+                    android:layout_marginTop="12dp"
+                    android:background="@drawable/round_createalert"
                     android:fontFamily="@font/inter"
                     android:hint="Expliquez nous votre situation..."
                     android:inputType="text"
                     android:padding="15dp"
                     android:textColor="@color/textDarkBlue"
-                    android:textSize="13dp"
-                    />
+                    android:textSize="13dp" />
 
 
                 <Spinner
@@ -277,63 +276,58 @@
                     android:layout_width="270dp"
                     android:layout_height="25dp"
                     android:layout_below="@+id/inputMedoc"
-                    android:layout_toEndOf="@id/raison"
                     android:layout_marginLeft="15dp"
                     android:layout_marginTop="13.5dp"
-                    android:textSize="13.5dp"
-                    android:fontFamily="@font/inter"
-                    android:textColor="@color/textDarkBlue"
+                    android:layout_toEndOf="@id/raison"
                     android:background="@drawable/spinner"
+                    android:fontFamily="@font/inter"
                     android:paddingLeft="6dp"
-                    tools:ignore="TouchTargetSizeCheck"
-                    />
+                    android:textColor="@color/textDarkBlue"
+                    android:textSize="13.5dp"
+                    tools:ignore="TouchTargetSizeCheck" />
 
 
-                    <androidx.cardview.widget.CardView
-                        android:id="@+id/btnAnnuler"
-                        android:layout_width="120dp"
-                        android:layout_height="34dp"
-                        android:layout_below="@id/inputMessage"
-                        android:layout_marginTop="22dp"
-                        android:layout_marginLeft="3dp"
-                        app:cardBackgroundColor="@color/darkBlueLight"
-                        app:cardCornerRadius="6dp"
-                        >
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/btnAnnuler"
+                    android:layout_width="120dp"
+                    android:layout_height="34dp"
+                    android:layout_below="@id/inputMessage"
+                    android:layout_marginLeft="3dp"
+                    android:layout_marginTop="22dp"
+                    app:cardBackgroundColor="@color/darkBlueLight"
+                    app:cardCornerRadius="6dp">
 
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:gravity="center"
-                            android:text="Annuler"
-                            android:textSize="15dp"
-                            android:textColor="@color/white"
-                            android:fontFamily="@font/inter_medium"
-                            />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:fontFamily="@font/inter_medium"
+                        android:gravity="center"
+                        android:text="Annuler"
+                        android:textColor="@color/white"
+                        android:textSize="15dp" />
 
-                    </androidx.cardview.widget.CardView>
+                </androidx.cardview.widget.CardView>
 
-                    <androidx.cardview.widget.CardView
-                        android:id="@+id/btnEnregistrer"
-                        android:layout_width="170dp"
-                        android:layout_height="34dp"
-                        android:layout_below="@id/inputMessage"
-                        android:layout_toRightOf="@+id/btnAnnuler"
-                        android:layout_marginLeft="14dp"
-                        android:layout_marginTop="22dp"
-                        app:cardBackgroundColor="@color/darkBlueLight"
-                        app:cardCornerRadius="6dp"
-                        >
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/btnEnregistrer"
+                    android:layout_width="170dp"
+                    android:layout_height="34dp"
+                    android:layout_below="@id/inputMessage"
+                    android:layout_marginLeft="14dp"
+                    android:layout_marginTop="22dp"
+                    android:layout_toRightOf="@+id/btnAnnuler"
+                    app:cardBackgroundColor="@color/darkBlueLight"
+                    app:cardCornerRadius="6dp">
 
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:gravity="center"
-                            android:text="Enregistrer"
-                            android:textSize="15dp"
-                            android:textColor="@color/white"
-                            android:fontFamily="@font/inter_medium"
-                            />
-                    </androidx.cardview.widget.CardView>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:fontFamily="@font/inter_medium"
+                        android:gravity="center"
+                        android:text="Enregistrer"
+                        android:textColor="@color/white"
+                        android:textSize="15dp" />
+                </androidx.cardview.widget.CardView>
 
 
                 <TextView
@@ -341,29 +335,26 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_below="@+id/btnAnnuler"
-                    android:layout_marginTop="23dp"
                     android:layout_marginLeft="29dp"
+                    android:layout_marginTop="23dp"
                     android:fontFamily="@font/inter_medium"
                     android:text="* Ces informations sont "
                     android:textColor="@color/textGrey"
-                    android:textSize="13dp"
-                    />
+                    android:textSize="13dp" />
 
                 <TextView
                     android:id="@+id/info2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_below="@+id/btnAnnuler"
-                    android:layout_toRightOf="@+id/info1"
                     android:layout_marginTop="23dp"
+                    android:layout_toRightOf="@+id/info1"
                     android:fontFamily="@font/inter_bold"
                     android:text="obligatoires"
                     android:textColor="@color/red"
-                    android:textSize="13.1dp"
-                    />
+                    android:textSize="13.1dp" />
 
             </RelativeLayout>
-
 
 
         </androidx.cardview.widget.CardView>

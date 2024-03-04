@@ -12,11 +12,15 @@ import androidx.appcompat.app.AppCompatActivity;
 import java.util.ArrayList;
 import java.util.List;
 
+import fr.iut.sae_s4_01_app_mobile.bd.Alertes;
+
 public class ancienneAlerteActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_ancienne_alerte);
+        Alertes alertesDb = new Alertes(this);
+        int totalAlertCount = alertesDb.getNombreTotalAlertes();
 
         // Bouton de la navbar
         ImageView btnHome = (ImageView) findViewById(R.id.homeBtn);
@@ -38,16 +42,6 @@ public class ancienneAlerteActivity extends AppCompatActivity {
             }
         });
 
-        // se deconnecter
-        ImageView sedeconnecterBtn = findViewById(R.id.sedeconnecterBtn);
-        sedeconnecterBtn.setOnClickListener(new View.OnClickListener(){
-            @Override
-            public void onClick(View v){
-                Intent intent = new Intent(ancienneAlerteActivity.this, LoginActivity.class);
-                startActivity(intent);
-            }
-        });
-
         // à faire avec BD
         ListView listView = findViewById(R.id.ancienneAlertelistView);
 
@@ -61,7 +55,7 @@ public class ancienneAlerteActivity extends AppCompatActivity {
         alertes.add(new Alerte(3, "Paracetamol", "Livraison tardive", "Ma pharmacie m’a prévenu qu’il n’y a plus aucun stock de ce médicament dans toute la ville !", "18 février 2024"));
 
 */
-        nbAlerte.append("Vous avez " + alertes.size() +  " alertes au total");
+        nbAlerte.append("Vous avez " + totalAlertCount +  " alertes au total");
 
         AlerteAdapter adapter = new AlerteAdapter(this, alertes);
         listView.setAdapter(adapter);

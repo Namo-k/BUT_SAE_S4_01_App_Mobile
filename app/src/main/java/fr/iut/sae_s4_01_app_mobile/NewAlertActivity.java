@@ -19,14 +19,30 @@ import androidx.cardview.widget.CardView;
 import java.util.ArrayList;
 import java.util.List;
 
+import fr.iut.sae_s4_01_app_mobile.bd.Alertes;
+import fr.iut.sae_s4_01_app_mobile.bd.Medicament;
+
 
 public class NewAlertActivity extends AppCompatActivity {
+    private Medicament medicamentDatabase;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_createalert);
+        Alertes alertesDB = new Alertes(this);
+        medicamentDatabase = new Medicament(this);
+        String codeCIP = getCodeCIP();
+        String nomMedoc =  medicamentDatabase.getNomMedicamentByCodeCIP(codeCIP);
+        TextView codeCipEditText = findViewById(R.id.inputCip);
+        codeCipEditText.setText(codeCIP);
+        TextView nomMedocTextView = findViewById(R.id.inputMedoc);
+        nomMedocTextView.setText(nomMedoc);
 
         Spinner spinnerRaison = findViewById(R.id.spinnerRaison);
+
+        Intent intent = getIntent();
+        Bundle bundle = intent.getExtras();
+        codeCIP = bundle.getString("codeCIP");
 
         List<String> spinnerList = new ArrayList<>();
         spinnerList.add("Sélectionnez une raison");
@@ -36,7 +52,10 @@ public class NewAlertActivity extends AppCompatActivity {
         spinnerList.add("Autre");
         spinnerRaison.setAdapter(new ArrayAdapter<String>(this, android.R.layout.simple_spinner_dropdown_item, spinnerList));
 
+
         ImageView sedeconnecterBtn = findViewById(R.id.sedeconnecterBtn);
+
+
         sedeconnecterBtn.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v){
@@ -49,11 +68,37 @@ public class NewAlertActivity extends AppCompatActivity {
         valider.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(NewAlertActivity.this, AccueilActivity.class);
-                Toast.makeText(NewAlertActivity.this, "Votre alerte a bien été enregistré !", Toast.LENGTH_SHORT).show();
-                startActivity(intent);
+
+                TextView codeCipTextView = findViewById(R.id.inputCip);
+                String codeCIP = codeCipTextView.getText().toString();
+
+                String raison = spinnerRaison.getSelectedItem().toString();
+
+                TextView messageTextView = findViewById(R.id.message);
+                String messageAlerte = messageTextView.getText().toString();
+
+                UserId myApp = (UserId) getApplication();
+                int userID = myApp.getUserID();
+
+
+
+                if (userID != -1 && codeCIP != null && !raison.equals("Sélectionnez une raison")) {
+
+                    boolean insertionReussie = alertesDB.insertData(userID, Integer.parseInt(codeCIP), raison, messageAlerte);
+                    if (insertionReussie) {
+                        Toast.makeText(NewAlertActivity.this, "Alerte insérée avec succès!", Toast.LENGTH_SHORT).show();
+                        Intent intent = new Intent(NewAlertActivity.this, AccueilActivity.class);
+                        startActivity(intent);
+                    } else {
+                        Toast.makeText(NewAlertActivity.this, "Erreur lors de l'insertion de l'alerte.", Toast.LENGTH_SHORT).show();
+                    }
+                } else {
+                    Toast.makeText(NewAlertActivity.this, "Veuillez sélectionner une raison valide.", Toast.LENGTH_SHORT).show();
+                }
             }
         });
+        
+
 
         CardView annuler = findViewById(R.id.btnAnnuler);
         annuler.setOnClickListener(new View.OnClickListener() {
@@ -151,6 +196,16 @@ public class NewAlertActivity extends AppCompatActivity {
                 dialog.show();
             }
         });
+    }
+
+    private String getCodeCIP() {
+        Intent intent = getIntent();
+        Bundle bundle = intent.getExtras();
+        if (bundle != null) {
+            return bundle.getString("codeCIP");
+        }
+        return null;
+
     }
 
 

@@ -6,55 +6,59 @@
     android:layout_height="match_parent"
     android:background="#A0BFE0">
 
-    <!-- Début de la section Bienvenue -->
 
+    <!-- Début de la section Bienvenue -->
     <ImageView
         android:id="@+id/retour"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:src="@drawable/fleche_24"
-        android:layout_marginLeft="15dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="25dp"
         />
 
     <TextView
         android:id="@+id/welcomeTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="45dp"
-        android:layout_marginTop="15dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="34dp"
+        android:fontFamily="@font/patuaone_regular"
         android:text="Vous êtes nouveau ?"
         android:textColor="#4A55A2"
-        android:textSize="24sp"
+        android:textSize="20dp"
         android:textStyle="bold" />
 
     <ImageView
-        android:layout_width="match_parent"
-        android:layout_height="100dp"
+        android:layout_width="95dp"
+        android:layout_height="95dp"
         android:layout_below="@id/welcomeTextView"
-        android:layout_marginStart="250dp"
-        android:layout_marginTop="-61dp"
+        android:layout_marginStart="270dp"
+        android:layout_marginTop="-58dp"
         android:layout_marginBottom="70dp"
         android:src="@drawable/colombesblanc" />
 
+
     <ImageView
-        android:layout_width="match_parent"
-        android:layout_height="100dp"
+        android:layout_width="210dp"
+        android:layout_height="95dp"
         android:layout_below="@id/welcomeTextView"
-        android:layout_marginStart="70dp"
-        android:layout_marginTop="10dp"
+        android:layout_marginStart="97dp"
+        android:layout_marginTop="15dp"
         android:layout_marginEnd="70dp"
         android:layout_marginBottom="70dp"
         android:src="@drawable/colombeslogo" />
 
+
     <ImageView
-        android:layout_width="match_parent"
-        android:layout_height="100dp"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
         android:layout_below="@id/welcomeTextView"
-        android:layout_marginTop="68dp"
-        android:layout_marginEnd="300dp"
-        android:layout_marginBottom="70dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginBottom="60dp"
         android:src="@drawable/colombesblanc2" />
+
     <!-- Fin de la section Bienvenue -->
 
     <!-- Début du formulaire d'inscription -->
@@ -64,18 +68,19 @@
         android:layout_below="@id/welcomeTextView"
         android:layout_centerHorizontal="true"
         android:layout_marginLeft="50dp"
-        android:layout_marginTop="160dp"
+        android:layout_marginTop="165dp"
         android:orientation="vertical">
 
         <TextView
             android:id="@+id/textView2"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="20dp"
+            android:textAlignment="center"
+            android:layout_marginLeft="10dp"
             android:text="Complétez quelques informations !"
-            android:textColor="@color/white"
-            android:textSize="20dp"
-            android:textStyle="bold"
+            android:fontFamily="@font/patuaone_regular"
+            android:textColor="#4A55A2"
+            android:textSize="21.5dp"
             />
 
         <LinearLayout
@@ -83,11 +88,11 @@
             android:layout_height="wrap_content"
             android:orientation="horizontal"
             android:layout_marginLeft="20dp"
-            android:layout_marginTop="10dp">
+            android:layout_marginTop="30dp">
 
             <ImageView
-                android:layout_width="21dp"
-                android:layout_height="39dp"
+                android:layout_width="22dp"
+                android:layout_height="22dp"
                 android:src="@drawable/genre" />
 
             <TextView
@@ -95,18 +100,20 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text=" Votre genre : "
-                android:layout_marginTop="5dp"
-                android:layout_marginLeft="5dp"
-                android:textSize="18dp" />
+                android:layout_marginLeft="10dp"
+                android:fontFamily="@font/inter"
+                android:textSize="15.5dp" />
 
         </LinearLayout>
 
         <Spinner
             android:id="@+id/genre"
-            android:layout_width="322dp"
-            android:layout_height="41dp"
+            android:layout_width="309dp"
+            android:layout_height="37dp"
             android:layout_marginLeft="20dp"
             android:layout_marginRight="50dp"
+            android:layout_marginTop="13dp"
+            android:paddingLeft="15dp"
             android:background="@drawable/spinner"
             tools:ignore="TouchTargetSizeCheck" />
 
@@ -128,11 +135,11 @@
             android:layout_height="wrap_content"
             android:orientation="horizontal"
             android:layout_marginLeft="20dp"
-            android:layout_marginTop="5dp">
+            android:layout_marginTop="24dp">
 
             <ImageView
-                android:layout_width="21dp"
-                android:layout_height="39dp"
+                android:layout_width="22dp"
+                android:layout_height="22dp"
                 android:src="@drawable/utilisateur" />
 
             <TextView
@@ -140,23 +147,25 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text=" Votre nom : "
-                android:layout_marginTop="5dp"
-                android:layout_marginLeft="5dp"
-                android:textSize="18dp" />
+                android:layout_marginLeft="10dp"
+                android:fontFamily="@font/inter"
+                android:textSize="15.5dp" />
 
         </LinearLayout>
 
         <EditText
             android:id="@+id/prenom"
-            android:layout_width="322dp"
-            android:layout_height="41dp"
+            android:layout_width="309dp"
+            android:layout_height="37dp"
             android:layout_marginLeft="20dp"
             android:layout_marginRight="50dp"
+            android:layout_marginTop="13dp"
             android:background="@drawable/round_login"
-            android:hint="Nom"
+            android:hint="Nom..."
             android:inputType="text"
+            android:textSize="16dp"
+            android:fontFamily="@font/inter"
             android:paddingLeft="20dp"
-            android:textStyle="italic"
             tools:ignore="TouchTargetSizeCheck" />
 
         <LinearLayout
@@ -164,34 +173,36 @@
             android:layout_height="wrap_content"
             android:orientation="horizontal"
             android:layout_marginLeft="20dp"
-            android:layout_marginTop="5dp">
+            android:layout_marginTop="24dp">
 
             <ImageView
-                android:layout_width="21dp"
-                android:layout_height="39dp"
+                android:layout_width="22dp"
+                android:layout_height="22dp"
                 android:src="@drawable/signature" />
 
             <TextView
                 android:id="@+id/textViewnom"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text=" Votre Prénom : "
-                android:layout_marginTop="5dp"
-                android:layout_marginLeft="5dp"
-                android:textSize="18dp" />
+                android:text=" Votre prénom : "
+                android:layout_marginLeft="10dp"
+                android:fontFamily="@font/inter"
+                android:textSize="15.5dp" />
 
         </LinearLayout>
 
         <EditText
             android:id="@+id/prenom1"
-            android:layout_width="322dp"
-            android:layout_height="41dp"
+            android:layout_width="309dp"
+            android:layout_height="37dp"
             android:layout_marginLeft="20dp"
+            android:layout_marginTop="13dp"
             android:background="@drawable/round_login"
-            android:hint="Prenom"
+            android:hint="Prénom..."
             android:inputType="text"
+            android:textSize="16dp"
+            android:fontFamily="@font/inter"
             android:paddingLeft="20dp"
-            android:textStyle="italic"
             tools:ignore="TouchTargetSizeCheck" />
 
         <LinearLayout
@@ -199,21 +210,21 @@
             android:layout_height="wrap_content"
             android:orientation="horizontal"
             android:layout_marginLeft="20dp"
-            android:layout_marginTop="5dp">
+            android:layout_marginTop="25dp">
 
             <ImageView
-                android:layout_width="21dp"
-                android:layout_height="39dp"
+                android:layout_width="25dp"
+                android:layout_height="22dp"
                 android:src="@drawable/calendrier" />
 
             <TextView
                 android:id="@+id/textViewemail"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text=" Date de naissance :  : "
-                android:layout_marginTop="5dp"
-                android:layout_marginLeft="5dp"
-                android:textSize="18dp" />
+                android:text=" Date de naissance :"
+                android:layout_marginLeft="10dp"
+                android:fontFamily="@font/inter"
+                android:textSize="15.5dp" />
 
         </LinearLayout>
 
@@ -233,86 +244,71 @@
 
             <EditText
                 android:id="@+id/Djour"
-                android:layout_width="105dp"
+                android:layout_width="90dp"
                 android:layout_height="35dp"
-                android:layout_marginRight="5dp"
+                android:layout_marginRight="12dp"
+                android:layout_marginTop="4dp"
                 android:background="@drawable/round_login"
                 android:hint="JJ"
-                android:paddingLeft="35dp"
-                android:textStyle="italic"
+                android:textAlignment="center"
                 android:inputType="number"
+                android:textSize="16dp"
+                android:fontFamily="@font/inter"
                 android:maxLength="2"
-
                 tools:ignore="TouchTargetSizeCheck" />
 
             <EditText
                 android:id="@+id/Dmois"
-                android:layout_width="105dp"
+                android:layout_width="90dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginRight="12dp"
                 android:layout_height="35dp"
                 android:background="@drawable/round_login"
                 android:hint="MM"
                 android:inputType="number"
-                android:paddingLeft="35dp"
-                android:textStyle="italic"
+                android:textAlignment="center"
+                android:textSize="16dp"
+                android:fontFamily="@font/inter"
                 android:maxLength="2"
                 tools:ignore="TouchTargetSizeCheck" />
 
             <EditText
                 android:id="@+id/annee"
                 android:layout_width="105dp"
+                android:layout_marginTop="4dp"
                 android:layout_height="35dp"
-                android:layout_marginLeft="5dp"
                 android:background="@drawable/round_login"
                 android:hint="AAAA"
                 android:inputType="number"
+                android:textSize="16dp"
+                android:fontFamily="@font/inter"
                 android:maxLength="4"
-                android:paddingLeft="25dp"
-                android:textStyle="italic"
+                android:textAlignment="center"
                 tools:ignore="TouchTargetSizeCheck" />
 
         </LinearLayout>
-
-        <!--<TextView
-            android:id="@+id/erreurDate"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="10dp"
-            android:layout_marginTop="15dp"
-            android:text="Saisisez des sates conformes !"
-            android:textColor="#A90000"
-            android:textSize="16dp"
-            android:layout_gravity="center"
-            android:textStyle="bold"
-            android:visibility="gone"
-            />-->
 
         <Button
             android:id="@+id/loginBtn"
             style="@style/Widget.MaterialComponents.Button.UnelevatedButton"
             android:layout_width="200dp"
-            android:layout_height="60dp"
+            android:layout_height="50dp"
             android:layout_gravity="center"
             android:layout_marginTop="30dp"
             android:backgroundTint="#4A55A2"
             android:text="Passer à la suite..."
-            android:textSize="13dp"
+            android:textSize="13.5dp"
             tools:ignore="TextSizeCheck" />
 
-
-        <!--<TextView
-            android:id="@+id/textView4"
+        <TextView
+            android:id="@+id/page"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="10dp"
-            android:layout_marginTop="15dp"
-            android:text="Vos informations sont incomplètes !"
-            android:textColor="#A90000"
-            android:textSize="16dp"
-            android:layout_gravity="center"
-            android:textStyle="bold"
-            android:visibility="invisible"
-            />-->
-
+            android:text="1/2"
+            android:layout_gravity="right"
+            android:layout_marginRight="9dp"
+            android:layout_marginTop="-33dp"
+            android:textSize="20dp" />
 
     </LinearLayout>
 

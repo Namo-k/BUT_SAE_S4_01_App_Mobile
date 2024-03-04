@@ -3008,7 +3008,6 @@ drawable alertes_icone
 drawable anciennes
 drawable avd_hide_password
 drawable avd_show_password
-drawable border_btn
 drawable btn_checkbox_checked_mtrl
 drawable btn_checkbox_checked_to_unchecked_mtrl_animation
 drawable btn_checkbox_unchecked_mtrl
@@ -3017,7 +3016,6 @@ drawable btn_radio_off_mtrl
 drawable btn_radio_off_to_on_mtrl_animation
 drawable btn_radio_on_mtrl
 drawable btn_radio_on_to_off_mtrl_animation
-drawable button_background
 drawable cadenas
 drawable calendrier
 drawable cloche
@@ -3053,7 +3051,6 @@ drawable ic_mtrl_chip_checked_black
 drawable ic_mtrl_chip_checked_circle
 drawable ic_mtrl_chip_close_circle
 drawable ic_search_black_24
-drawable indice
 drawable interrogation
 drawable m3_avd_hide_password
 drawable m3_avd_show_password
@@ -3127,6 +3124,8 @@ drawable notification_template_icon_low_bg
 drawable notification_tile_bg
 drawable notify_panel_notification_icon_bg
 drawable nouveaucompte
+drawable oeilferme
+drawable oeilouvert
 drawable ovale_shape
 drawable round_createalert
 drawable round_login
@@ -3271,11 +3270,11 @@ id btnAlertes
 id btnAnnuler
 id btnDesactiverCompte
 id btnEnregistrer
-id btnEnvoyer
 id btnModifier
 id btnSupprimerCompte
 id buttonPanel
 id cache_measures
+id cadenas
 id callMeasure
 id cancel_action
 id cancel_button
@@ -3421,7 +3420,6 @@ id info2
 id inputCip
 id inputMedoc
 id inputMessage
-id inputRaison
 id interrogation1
 id interrogation1text
 id interrogation2
@@ -3446,7 +3444,6 @@ id listMode
 id list_item
 id loginBtn
 id logoIV
-id lol
 id m3_side_sheet
 id mailEdit
 id mailLabelTV
@@ -3548,6 +3545,8 @@ id notifBtn
 id notification_background
 id notification_main_column
 id notification_main_column_container
+id oeilferme
+id oeilouvert
 id off
 id on
 id onInterceptTouchReturnSwipe
@@ -3569,6 +3568,7 @@ id outline
 id outward
 id overshoot
 id packed
+id page
 id parallax
 id parent
 id parentPanel
@@ -3659,6 +3659,7 @@ id snapMargins
 id south
 id spacer
 id special_effects_controller_view_tag
+id spinnerRaison
 id splashImage
 id spline
 id split_action_bar
@@ -3730,6 +3731,7 @@ id time
 id title
 id titleDividerNoCustom
 id title_template
+id titre
 id toggle
 id top
 id topPanel
@@ -3742,8 +3744,6 @@ id transition_position
 id transition_scene_layoutid_cache
 id transition_transform
 id triangle
-id tuto1
-id tuto2
 id unchecked
 id uniform
 id unlabeled
@@ -4176,6 +4176,7 @@ string searchview_navigation_content_description
 string side_sheet_accessibility_pane_title
 string side_sheet_behavior
 string status_bar_notification_info_overflow
+string text_condition
 string text_dataMatrix
 string text_interro1
 string text_interro2
@@ -4183,6 +4184,7 @@ string text_interro3
 string text_interro4
 string text_prospection
 string text_saisieCIP
+string text_scanDataMatrix
 string zxing_app_name
 string zxing_button_ok
 string zxing_msg_camera_framework_bug
