@@ -74,7 +74,7 @@ public class NewAlertActivity extends AppCompatActivity {
 
                 String raison = spinnerRaison.getSelectedItem().toString();
 
-                TextView messageTextView = findViewById(R.id.message);
+                EditText messageTextView = findViewById(R.id.inputMessage);
                 String messageAlerte = messageTextView.getText().toString();
 
                 UserId myApp = (UserId) getApplication();
