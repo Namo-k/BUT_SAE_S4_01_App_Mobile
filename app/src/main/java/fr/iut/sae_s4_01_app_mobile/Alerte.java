@@ -13,7 +13,7 @@ public class Alerte {
     private String message;
     private String dateAlerte; // Ajout de la date d'alerte
 
-    // Constructeur
+
     public Alerte(int id, int codeCis, int idUser, String nomMedicament, String raison, String message, String dateAlerte) {
         this.id = id;
         this.codeCis = codeCis;

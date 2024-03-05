@@ -36,8 +36,6 @@ public class SplashScreenActivity extends AppCompatActivity {
         setContentView(R.layout.activity_splash_screen);
 
 
-
-
         citation = findViewById(R.id.citationText);
         Random random = new Random();
         int nombreAleatoire = random.nextInt(5);

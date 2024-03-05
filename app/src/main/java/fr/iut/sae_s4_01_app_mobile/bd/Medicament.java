@@ -39,11 +39,8 @@ public class Medicament extends SQLiteOpenHelper {
     }
 
     public void importCSVToDatabase(InputStream inputStream) {
-        Log.e(TAG, "BJR");
-
         SQLiteDatabase database = this.getWritableDatabase();
 
-        // Vérifier si des données existent déjà dans la table
         Cursor cursor = database.rawQuery("SELECT COUNT(*) FROM medicament", null);
         if (cursor != null) {
             cursor.moveToFirst();

@@ -19,12 +19,16 @@ public class ancienneAlerteActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_ancienne_alerte);
-        Alertes alertesDb = new Alertes(this);
-        int totalAlertCount = alertesDb.getNombreTotalAlertes();
+
 
         ImageView btnHome = (ImageView) findViewById(R.id.homeBtn);
         ImageView btnProfil = (ImageView) findViewById(R.id.userBtn);
         TextView nbAlerte = (TextView) findViewById(R.id.nbAlertes);
+
+        UserId myApp = (UserId) getApplication();
+        int userID = myApp.getUserID();
+        Alertes alertesDb = new Alertes(this);
+        int totalAlertCount = alertesDb.getNombreTotalAlertes(userID);
 
         btnHome.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -45,7 +49,7 @@ public class ancienneAlerteActivity extends AppCompatActivity {
         ListView listView = findViewById(R.id.ancienneAlertelistView);
 
         // Récupérer les alertes depuis la base de données
-        List<Alerte> alertes = alertesDb.getAllAlertes();
+        List<Alerte> alertes = alertesDb.getAllAlertes(userID);
 
         nbAlerte.append("Vous avez " + totalAlertCount +  " alertes au total");
 

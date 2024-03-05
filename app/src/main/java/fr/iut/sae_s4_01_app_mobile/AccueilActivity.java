@@ -7,12 +7,16 @@ import android.os.Bundle;
 import android.view.View;
 import android.view.animation.LinearInterpolator;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.cardview.widget.CardView;
 
+import java.util.List;
+
+import fr.iut.sae_s4_01_app_mobile.bd.Alertes;
 import fr.iut.sae_s4_01_app_mobile.bd.Users;
 
 public class AccueilActivity extends AppCompatActivity {
@@ -41,6 +45,19 @@ public class AccueilActivity extends AppCompatActivity {
 
         String prenom = DatabaseUser.getPrenom(userID);
         btnPrenom.append(prenom);
+
+        TextView medicamentTV = findViewById(R.id.medicamentTV);
+        TextView raisonTV = findViewById(R.id.raisonTV);
+        TextView messageTV = findViewById(R.id.messageTV);
+        TextView dataTV = findViewById(R.id.dataTV);
+
+
+
+
+
+
+
+
 
         btnSaisie.setOnClickListener(new View.OnClickListener(){
             @Override
@@ -122,5 +139,28 @@ public class AccueilActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+        CardView blocAncienneAlerte = findViewById(R.id.blocAncienneAlerte);
+        blocAncienneAlerte.setVisibility(View.INVISIBLE);
+
+
+        Alertes alertesDb = new Alertes(this);
+
+        List<Alerte> alertes = alertesDb.getAllAlertes(userID);
+        Alerte alerteLaPlusRecente = null;
+        if (!alertes.isEmpty()) {
+            blocAncienneAlerte.setVisibility(View.VISIBLE);
+            alerteLaPlusRecente = alertes.get(0);
+        }
+
+        if (alerteLaPlusRecente != null) {
+            ((TextView) findViewById(R.id.medicamentTV)).setText(alerteLaPlusRecente.getMedicament());
+            ((TextView) findViewById(R.id.raisonTV)).setText(alerteLaPlusRecente.getRaison());
+            ((TextView) findViewById(R.id.messageTV)).setText(alerteLaPlusRecente.getMessage());
+            ((TextView) findViewById(R.id.dataTV)).setText(alerteLaPlusRecente.getDateAlerte());
+        }
+
+
+
     }
 }

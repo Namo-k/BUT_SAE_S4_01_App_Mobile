@@ -59,9 +59,9 @@ public class Alertes extends SQLiteOpenHelper {
         return resultat != -1;
     }
 
-    public int getNombreTotalAlertes() {
+    public int getNombreTotalAlertes(int id) {
         SQLiteDatabase db = this.getReadableDatabase();
-        String countQuery = "SELECT COUNT(*) FROM alertes";
+        String countQuery = "SELECT COUNT(*) FROM alertes where id = ?";
         Cursor cursor = db.rawQuery(countQuery, null);
         int count = 0;
         if (cursor != null) {
@@ -72,19 +72,18 @@ public class Alertes extends SQLiteOpenHelper {
         return count;
     }
 
-    public List<Alerte> getAllAlertes() {
+    public List<Alerte> getAllAlertes(int id) {
         List<Alerte> listeAlertes = new ArrayList<>();
         SQLiteDatabase db = this.getReadableDatabase();
-        Cursor cursor = db.rawQuery("SELECT * FROM alertes ORDER BY id ASC, dateAlerte ASC", null);
+        Cursor cursor = db.rawQuery("SELECT * FROM alertes where id = ? ORDER BY id DESC", null);
         if (cursor.moveToFirst()) {
             do {
-                int id = cursor.getInt(cursor.getColumnIndex("id"));
-                int codeCis = cursor.getInt(cursor.getColumnIndex("codeCis"));
-                int idUser = cursor.getInt(cursor.getColumnIndex("idUser"));
-                String nomMedicament = cursor.getString(cursor.getColumnIndex("nomMedicament"));
-                String raison = cursor.getString(cursor.getColumnIndex("raison"));
-                String message = cursor.getString(cursor.getColumnIndex("message"));
-                String dateAlerte = cursor.getString(cursor.getColumnIndex("dateAlerte"));
+                @SuppressLint("Range") int codeCis = cursor.getInt(cursor.getColumnIndex("codeCis"));
+                @SuppressLint("Range") int idUser = cursor.getInt(cursor.getColumnIndex("idUser"));
+                @SuppressLint("Range") String nomMedicament = cursor.getString(cursor.getColumnIndex("nomMedicament"));
+                @SuppressLint("Range") String raison = cursor.getString(cursor.getColumnIndex("raison"));
+                @SuppressLint("Range") String message = cursor.getString(cursor.getColumnIndex("message"));
+                @SuppressLint("Range") String dateAlerte = cursor.getString(cursor.getColumnIndex("dateAlerte"));
 
                 Alerte alerte = new Alerte(id, codeCis, idUser, nomMedicament, raison, message, dateAlerte);
                 listeAlertes.add(alerte);

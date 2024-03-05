@@ -360,7 +360,7 @@
                 android:layout_marginStart="30dp"
                 android:layout_marginTop="22dp"
                 android:fontFamily="@font/patuaone_regular"
-                android:text=" Mes récentes alertes"
+                android:text=" Ma dernière alerte"
                 android:textColor="@color/darkBlue"
                 android:textSize="21dp"
                 app:layout_constraintStart_toStartOf="parent"
@@ -388,6 +388,7 @@
                 app:layout_constraintTop_toBottomOf="@+id/blocAlert" />
 
             <androidx.cardview.widget.CardView
+
                 android:id="@+id/blocAncienneAlerte"
                 android:layout_width="338dp"
                 android:layout_height="185dp"
@@ -439,7 +440,6 @@
                             android:layout_marginEnd="3dp"
                             android:layout_marginBottom="3dp"
                             android:fontFamily="@font/inter"
-                            android:text="GABAPENTINE RANBAXY 400 mg, gélule"
                             android:textColor="@color/textDarkBlue"
                             android:textSize="12dp" />
 
@@ -468,7 +468,6 @@
                             android:layout_below="@+id/medicamentTV"
                             android:layout_toRightOf="@+id/raisonLabelTV"
                             android:fontFamily="@font/inter"
-                            android:text="Renouvellement impossible"
                             android:textColor="@color/textDarkBlue"
                             android:textSize="12dp"
                             />
@@ -497,7 +496,6 @@
                             android:layout_marginEnd="3dp"
                             android:layout_marginBottom="5dp"
                             android:fontFamily="@font/inter"
-                            android:text="Ma pharmacie m’a prévenu qu’il n’y a plus aucun stock de ce médicament dans toute la ville !"
                             android:textColor="@color/textDarkBlue"
                             android:textSize="12dp"
                             android:lineHeight="17dp"
