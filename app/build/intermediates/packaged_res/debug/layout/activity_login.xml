@@ -76,7 +76,7 @@
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="20dp"
+            android:layout_marginLeft="10dp"
             android:layout_marginTop="25dp"
             android:orientation="horizontal">
 
@@ -96,25 +96,37 @@
 
         </LinearLayout>
 
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:layout_marginTop="15dp"
+            >
+
         <EditText
             android:id="@+id/usernameET"
-            android:layout_width="322dp"
+            android:layout_width="0dp"
             android:layout_height="41dp"
-            android:layout_marginLeft="20dp"
-            android:layout_marginTop="15dp"
-            android:layout_marginRight="50dp"
             android:background="@drawable/round_login"
             android:hint="Adresse mail..."
             android:textSize="17dp"
             android:inputType="textEmailAddress"
             android:paddingLeft="20dp"
             tools:ignore="TouchTargetSizeCheck"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
             tools:visibility="visible" />
+
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
 
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="20dp"
+            android:layout_marginLeft="10dp"
             android:layout_marginTop="25dp"
             android:orientation="horizontal">
 
@@ -133,47 +145,57 @@
 
         </LinearLayout>
 
-        <EditText
-            android:id="@+id/passwordET"
-            android:layout_width="322dp"
-            android:layout_height="41dp"
-            android:layout_marginLeft="20dp"
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
             android:layout_marginTop="15dp"
-            android:layout_marginRight="50dp"
-            android:background="@drawable/round_login"
-            android:hint="Mot de passe..."
-            android:textSize="17dp"
-            android:inputType="textPassword"
-            android:paddingLeft="20dp"
-            tools:ignore="TouchTargetSizeCheck" />
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+>
 
-        <ImageView
-            android:id="@+id/oeilferme"
-            android:visibility="gone"
-            android:layout_width="28dp"
-            android:layout_height="28dp"
-            android:src="@drawable/oeilferme"
-            android:layout_marginTop="-35.5dp"
-            android:layout_marginRight="13dp"
-            android:layout_gravity="right"
-            />
+            <EditText
+                android:id="@+id/passwordET"
+                android:layout_width="0dp"
+                android:layout_height="41dp"
+                android:hint="Mot de passe..."
+                android:inputType="textPassword"
+                android:textSize="17sp"
+                android:paddingLeft="20dp"
+                android:paddingRight="50dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:background="@drawable/round_login"/>
 
-        <ImageView
-            android:id="@+id/oeilouvert"
-            android:visibility="gone"
-            android:layout_width="27dp"
-            android:layout_height="27dp"
-            android:src="@drawable/oeilouvert"
-            android:layout_marginTop="-27.2dp"
-            android:layout_marginRight="13dp"
-            android:layout_gravity="right"
-            />
+            <ImageView
+                android:id="@+id/oeilferme"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:src="@drawable/oeilferme"
+                app:layout_constraintEnd_toEndOf="@+id/passwordET"
+                app:layout_constraintTop_toTopOf="@+id/passwordET"
+                app:layout_constraintBottom_toBottomOf="@+id/passwordET"
+                android:layout_marginEnd="8dp"
+                android:visibility="visible"/>
+
+            <ImageView
+                android:id="@+id/oeilouvert"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:src="@drawable/oeilouvert"
+                app:layout_constraintEnd_toEndOf="@+id/passwordET"
+                app:layout_constraintTop_toTopOf="@+id/passwordET"
+                app:layout_constraintBottom_toBottomOf="@+id/passwordET"
+                android:layout_marginEnd="8dp"
+                android:visibility="gone"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
 
         <TextView
             android:id="@+id/MdpOublie"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="32dp"
+            android:layout_marginTop="10dp"
             android:layout_marginRight="0dp"
             android:gravity="right"
             android:inputType="text"

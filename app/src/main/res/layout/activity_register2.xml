@@ -63,12 +63,13 @@
 
     <!-- Début du formulaire d'inscription -->
     <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
         android:layout_below="@id/welcomeTextView"
         android:layout_centerHorizontal="true"
-        android:layout_marginLeft="50dp"
-        android:layout_marginTop="200dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="165dp"
         android:orientation="vertical">
 
         <TextView
@@ -106,27 +107,41 @@
 
         </LinearLayout>
 
-        <EditText
-            android:id="@+id/email"
-            android:layout_width="307dp"
-            android:layout_height="41dp"
-            android:layout_marginLeft="20dp"
-            android:layout_marginTop="18dp"
-            android:layout_marginRight="50dp"
-            android:background="@drawable/round_login"
-            android:hint="Adresse mail..."
-            android:inputType="textEmailAddress"
-            android:textSize="17dp"
-            android:fontFamily="@font/inter"
-            android:paddingLeft="20dp"
-            tools:ignore="TouchTargetSizeCheck" />
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp">
 
-        <RelativeLayout
+            <EditText
+                android:id="@+id/email"
+                android:layout_width="0dp"
+                android:layout_height="41dp"
+                android:background="@drawable/round_login"
+                android:hint="Adresse mail..."
+                android:inputType="textEmailAddress"
+                android:textSize="17dp"
+                android:fontFamily="@font/inter"
+                android:paddingLeft="20dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="TouchTargetSizeCheck" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+
+
+        <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            android:layout_marginLeft="20dp"
-            android:layout_marginTop="28dp">
+            android:layout_marginLeft="28dp"
+            android:layout_marginTop="32dp">
 
             <ImageView
                 android:id="@+id/cadenas"
@@ -138,29 +153,39 @@
                 android:id="@+id/textViewnom"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_toRightOf="@+id/cadenas"
                 android:text=" Votre mot de passe  : "
                 android:layout_marginLeft="10dp"
                 android:fontFamily="@font/inter"
                 android:layout_marginTop="3dp"
                 android:textSize="17dp" />
 
+        </LinearLayout>
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp">
 
             <EditText
                 android:id="@+id/mdp"
-                android:layout_below="@id/cadenas"
-                android:layout_width="307dp"
+                android:layout_width="0dp"
                 android:layout_height="41dp"
-                android:layout_marginTop="18dp"
                 android:background="@drawable/round_login"
                 android:hint="Mot de passe..."
                 android:inputType="textPassword"
                 android:textSize="17dp"
                 android:fontFamily="@font/inter"
                 android:paddingLeft="20dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
                 tools:ignore="TouchTargetSizeCheck" />
 
-        </RelativeLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
 
 
         <ImageView
