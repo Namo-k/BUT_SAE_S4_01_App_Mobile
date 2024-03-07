@@ -510,7 +510,7 @@
 
             <androidx.cardview.widget.CardView
                 android:id="@+id/interrogation1text"
-                android:layout_width="210dp"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:alpha="0.9"
                 android:visibility="gone"

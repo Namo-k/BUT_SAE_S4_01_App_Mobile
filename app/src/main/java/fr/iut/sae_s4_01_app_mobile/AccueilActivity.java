@@ -103,17 +103,25 @@ public class AccueilActivity extends AppCompatActivity {
         interrogation1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if (interrogation1text.getVisibility() == View.VISIBLE) interrogation1text.setVisibility(View.INVISIBLE);
-                else interrogation1text.setVisibility(View.VISIBLE);
+                if (interrogation1text.getVisibility() == View.VISIBLE) {
+                    interrogation1text.setVisibility(View.INVISIBLE);
+                } else {
+                    interrogation1text.setVisibility(View.VISIBLE);
+                }
             }
         });
+
         interrogation2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if (interrogation2text.getVisibility() == View.VISIBLE) interrogation2text.setVisibility(View.INVISIBLE);
-                else interrogation2text.setVisibility(View.VISIBLE);
+                if (interrogation2text.getVisibility() == View.VISIBLE) {
+                    interrogation2text.setVisibility(View.INVISIBLE);
+                } else {
+                    interrogation2text.setVisibility(View.VISIBLE);
+                }
             }
         });
+
 
         // Animation des 2 colombes
         ImageView colombeDroiteImage = (ImageView) findViewById(R.id.colombes1);
