@@ -7,32 +7,38 @@
     android:background="#A0BFE0">
 
     <!-- Début de la section Bienvenue -->
-    <ImageView
-        android:id="@+id/retour"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@drawable/fleche_24"
-        android:layout_marginLeft="25dp"
-        android:layout_marginTop="25dp"
-        />
 
-    <TextView
-        android:id="@+id/welcomeTextView"
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:id="@+id/entete"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="60dp"
-        android:layout_marginTop="55dp"
-        android:text="Vous êtes nouveau ?"
-        android:fontFamily="@font/patuaone_regular"
-        android:textColor="#4A55A2"
-        android:textSize="21dp"
-        android:textStyle="bold" />
+        android:orientation="horizontal"
+        android:paddingStart="25dp"
+        android:paddingTop="25dp">
 
+        <ImageView
+            android:id="@+id/retour"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/fleche_24"/>
+
+        <TextView
+            android:id="@+id/welcomeTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Vous êtes nouveau ?"
+            android:fontFamily="@font/patuaone_regular"
+            android:textColor="#4A55A2"
+            android:textSize="21dp"
+            android:textStyle="bold"
+            android:layout_marginStart="10dp"/>
+
+    </LinearLayout>
 
     <ImageView
         android:layout_width="105dp"
         android:layout_height="105dp"
-        android:layout_below="@id/welcomeTextView"
+        android:layout_below="@id/entete"
         android:layout_marginStart="270dp"
         android:layout_marginTop="-64dp"
         android:layout_marginBottom="70dp"
@@ -40,9 +46,9 @@
 
 
     <ImageView
-        android:layout_width="220dp"
-        android:layout_height="100dp"
-        android:layout_below="@id/welcomeTextView"
+        android:layout_width="210dp"
+        android:layout_height="95dp"
+        android:layout_below="@id/entete"
         android:layout_marginStart="97dp"
         android:layout_marginTop="15dp"
         android:layout_marginEnd="70dp"
@@ -53,7 +59,7 @@
     <ImageView
         android:layout_width="105dp"
         android:layout_height="105dp"
-        android:layout_below="@id/welcomeTextView"
+        android:layout_below="@id/entete"
         android:layout_marginStart="20dp"
         android:layout_marginTop="72dp"
         android:layout_marginBottom="68dp"
@@ -63,12 +69,13 @@
 
     <!-- Début du formulaire d'inscription -->
     <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/welcomeTextView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/entete"
         android:layout_centerHorizontal="true"
-        android:layout_marginLeft="50dp"
-        android:layout_marginTop="200dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="165dp"
         android:orientation="vertical">
 
         <TextView
@@ -106,27 +113,41 @@
 
         </LinearLayout>
 
-        <EditText
-            android:id="@+id/email"
-            android:layout_width="307dp"
-            android:layout_height="41dp"
-            android:layout_marginLeft="20dp"
-            android:layout_marginTop="18dp"
-            android:layout_marginRight="50dp"
-            android:background="@drawable/round_login"
-            android:hint="Adresse mail..."
-            android:inputType="textEmailAddress"
-            android:textSize="17dp"
-            android:fontFamily="@font/inter"
-            android:paddingLeft="20dp"
-            tools:ignore="TouchTargetSizeCheck" />
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp">
 
-        <RelativeLayout
+            <EditText
+                android:id="@+id/email"
+                android:layout_width="0dp"
+                android:layout_height="41dp"
+                android:background="@drawable/round_login"
+                android:hint="Adresse mail..."
+                android:inputType="textEmailAddress"
+                android:textSize="17dp"
+                android:fontFamily="@font/inter"
+                android:paddingLeft="20dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="TouchTargetSizeCheck" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+
+
+        <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            android:layout_marginLeft="20dp"
-            android:layout_marginTop="28dp">
+            android:layout_marginLeft="28dp"
+            android:layout_marginTop="32dp">
 
             <ImageView
                 android:id="@+id/cadenas"
@@ -138,29 +159,39 @@
                 android:id="@+id/textViewnom"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_toRightOf="@+id/cadenas"
                 android:text=" Votre mot de passe  : "
                 android:layout_marginLeft="10dp"
                 android:fontFamily="@font/inter"
                 android:layout_marginTop="3dp"
                 android:textSize="17dp" />
 
+        </LinearLayout>
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp">
 
             <EditText
                 android:id="@+id/mdp"
-                android:layout_below="@id/cadenas"
-                android:layout_width="307dp"
+                android:layout_width="0dp"
                 android:layout_height="41dp"
-                android:layout_marginTop="18dp"
                 android:background="@drawable/round_login"
                 android:hint="Mot de passe..."
                 android:inputType="textPassword"
                 android:textSize="17dp"
                 android:fontFamily="@font/inter"
                 android:paddingLeft="20dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
                 tools:ignore="TouchTargetSizeCheck" />
 
-        </RelativeLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
 
 
         <ImageView

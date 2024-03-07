@@ -66,15 +66,13 @@ public class SplashScreenActivity extends AppCompatActivity {
 
         //redigirer la page aprés 3.5 secondes
 
-        Medicament medicament = new Medicament(this);
-        SQLiteDatabase database = medicament.getWritableDatabase();
-        InputStream inputStream = getResources().openRawResource(R.raw.medicament);
-        medicament.importCSVToDatabase(inputStream);
+
 
         Runnable runnable = new Runnable() {
 
             @Override
             public void run() {
+                loadMedicamentData();
 
                 Intent intent = new Intent(getApplicationContext(), LoginActivity.class);
                 startActivity(intent);
@@ -84,6 +82,12 @@ public class SplashScreenActivity extends AppCompatActivity {
         new Handler().postDelayed(runnable,TEMPS);
 
 
+    }
+    private void loadMedicamentData() {
+        Medicament medicament = new Medicament(this);
+        SQLiteDatabase database = medicament.getWritableDatabase();
+        InputStream inputStream = getResources().openRawResource(R.raw.medicament);
+        medicament.importCSVToDatabase(inputStream);
     }
 
 

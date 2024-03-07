@@ -59,10 +59,10 @@ public class Alertes extends SQLiteOpenHelper {
         return resultat != -1;
     }
 
-    public int getNombreTotalAlertes(int id) {
+    public int getNombreTotalAlertes(int idUser) {
         SQLiteDatabase db = this.getReadableDatabase();
-        String countQuery = "SELECT COUNT(*) FROM alertes where id = ?";
-        Cursor cursor = db.rawQuery(countQuery, null);
+        String countQuery = "SELECT COUNT(*) FROM alertes where idUser = ?";
+        Cursor cursor = db.rawQuery(countQuery, new String[] {String.valueOf(idUser)});
         int count = 0;
         if (cursor != null) {
             cursor.moveToFirst();
@@ -72,24 +72,26 @@ public class Alertes extends SQLiteOpenHelper {
         return count;
     }
 
-    public List<Alerte> getAllAlertes(int id) {
+
+
+    public List<Alerte> getAllAlertes(int idUser) {
         List<Alerte> listeAlertes = new ArrayList<>();
         SQLiteDatabase db = this.getReadableDatabase();
-        Cursor cursor = db.rawQuery("SELECT * FROM alertes where id = ? ORDER BY id DESC", null);
+        Cursor cursor = db.rawQuery("SELECT * FROM alertes where idUser = ? ORDER BY id DESC", new String[] {String.valueOf(idUser)});
         if (cursor.moveToFirst()) {
             do {
                 @SuppressLint("Range") int codeCis = cursor.getInt(cursor.getColumnIndex("codeCis"));
-                @SuppressLint("Range") int idUser = cursor.getInt(cursor.getColumnIndex("idUser"));
                 @SuppressLint("Range") String nomMedicament = cursor.getString(cursor.getColumnIndex("nomMedicament"));
                 @SuppressLint("Range") String raison = cursor.getString(cursor.getColumnIndex("raison"));
                 @SuppressLint("Range") String message = cursor.getString(cursor.getColumnIndex("message"));
                 @SuppressLint("Range") String dateAlerte = cursor.getString(cursor.getColumnIndex("dateAlerte"));
 
-                Alerte alerte = new Alerte(id, codeCis, idUser, nomMedicament, raison, message, dateAlerte);
+                Alerte alerte = new Alerte(idUser, codeCis, idUser, nomMedicament, raison, message, dateAlerte);
                 listeAlertes.add(alerte);
             } while (cursor.moveToNext());
         }
         cursor.close();
         return listeAlertes;
     }
+
 }
