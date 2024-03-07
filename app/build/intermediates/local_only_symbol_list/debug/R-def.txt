@@ -85,6 +85,7 @@ id btnModifier
 id btnSupprimerCompte
 id cadenas
 id checkbox
+id checkboxLayout
 id citationText
 id codecipTV
 id colombeDroiteImage
@@ -97,6 +98,7 @@ id date
 id dateAlerte
 id editCodeCIP
 id email
+id entete
 id etoile
 id explicationCIP
 id genre

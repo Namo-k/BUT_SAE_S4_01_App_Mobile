@@ -3288,6 +3288,7 @@ id chain
 id chain2
 id chains
 id checkbox
+id checkboxLayout
 id checked
 id chronometer
 id circle_center
@@ -3367,6 +3368,7 @@ id endToStart
 id end_padder
 id enterAlways
 id enterAlwaysCollapsed
+id entete
 id etoile
 id exitUntilCollapsed
 id expand_activities_button

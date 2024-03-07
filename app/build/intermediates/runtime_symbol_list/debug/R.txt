@@ -3287,6 +3287,7 @@ int id chain 0x7f090089
 int id chain2 0x7f09008a
 int id chains 0x7f09008b
 int id checkbox 0x7f09008c
+int id checkboxLayout 0x7f090280
 int id checked 0x7f09008d
 int id chronometer 0x7f09008e
 int id circle_center 0x7f09008f
@@ -3366,6 +3367,7 @@ int id endToStart 0x7f0900d6
 int id end_padder 0x7f0900d7
 int id enterAlways 0x7f0900d8
 int id enterAlwaysCollapsed 0x7f0900d9
+int id entete 0x7f09027f
 int id etoile 0x7f0900da
 int id exitUntilCollapsed 0x7f0900db
 int id expand_activities_button 0x7f0900dc

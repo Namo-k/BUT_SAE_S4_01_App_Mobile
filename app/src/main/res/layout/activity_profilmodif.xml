@@ -137,9 +137,11 @@
 
         <androidx.cardview.widget.CardView
             android:id="@+id/blocInformations"
-            android:layout_width="338dp"
-            android:layout_height="320dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
             android:layout_marginStart="27dp"
+            android:layout_marginEnd="27dp"
+
             app:cardBackgroundColor="@color/lightBlueLight"
             app:cardCornerRadius="20dp"
             app:layout_constraintStart_toStartOf="parent"
@@ -170,7 +172,7 @@
                     android:fontFamily="@font/inter_medium"
                     android:text="Sexe* : "
                     android:textColor="@color/textGrey"
-                    android:textSize="13.5dp"
+                    android:textSize="13.5sp"
                     tools:ignore="TextSizeCheck"/>
 
                 <EditText
@@ -183,7 +185,7 @@
                     android:background="@drawable/round_login"
                     android:hint="Sexe"
                     android:inputType="text"
-                    android:textSize="12dp"
+                    android:textSize="12sp"
                     android:fontFamily="@font/inter"
                     android:textColor="@color/textDarkBlue"
                     tools:ignore="TouchTargetSizeCheck" />
@@ -197,7 +199,7 @@
                     android:fontFamily="@font/inter_medium"
                     android:text="Nom* : "
                     android:textColor="@color/textGrey"
-                    android:textSize="13.5dp"
+                    android:textSize="13.5sp"
                     tools:ignore="TextSizeCheck"/>
 
                 <EditText
@@ -212,7 +214,7 @@
                     android:background="@drawable/round_login"
                     android:hint="Nom de famille"
                     android:inputType="text"
-                    android:textSize="12dp"
+                    android:textSize="12sp"
                     android:fontFamily="@font/inter"
                     android:textColor="@color/textDarkBlue"
                     tools:ignore="TouchTargetSizeCheck" />
@@ -226,25 +228,25 @@
                     android:fontFamily="@font/inter_medium"
                     android:text="Prenom* :"
                     android:textColor="@color/textGrey"
-                    android:textSize="13.5dp"
+                    android:textSize="13.5sp"
                     tools:ignore="TextSizeCheck"/>
 
                 <EditText
                     android:id="@+id/prenomEdit"
                     android:layout_width="138dp"
                     android:layout_height="21dp"
-                    android:layout_marginLeft="10dp"
-                    android:paddingLeft="13dp"
                     android:layout_below="@+id/nomTV"
-                    android:layout_toRightOf="@+id/prenomTV"
+                    android:layout_marginLeft="10dp"
                     android:layout_marginTop="18dp"
+                    android:layout_toRightOf="@+id/prenomTV"
                     android:background="@drawable/round_login"
+                    android:fontFamily="@font/inter"
                     android:hint="Prénom"
                     android:inputType="text"
-                    android:textSize="12dp"
-                    android:fontFamily="@font/inter"
+                    android:paddingLeft="13dp"
                     android:textColor="@color/textDarkBlue"
-                    tools:ignore="TouchTargetSizeCheck" />
+                    android:textSize="12dp"
+                    tools:ignore="TouchTargetSizeCheck,TextSizeCheck" />
 
                 <TextView
                     android:id="@+id/naissanceTV"
@@ -262,18 +264,18 @@
                     android:id="@+id/naissanceEdit"
                     android:layout_width="122dp"
                     android:layout_height="21dp"
-                    android:layout_marginLeft="10dp"
-                    android:paddingLeft="13dp"
                     android:layout_below="@+id/prenomTV"
-                    android:layout_toRightOf="@+id/naissanceTV"
+                    android:layout_marginLeft="10dp"
                     android:layout_marginTop="18dp"
+                    android:layout_toRightOf="@+id/naissanceTV"
                     android:background="@drawable/round_login"
+                    android:fontFamily="@font/inter"
                     android:hint="JJ/MM/AAAA"
                     android:inputType="text"
-                    android:textSize="12dp"
-                    android:fontFamily="@font/inter"
+                    android:paddingLeft="13dp"
                     android:textColor="@color/textDarkBlue"
-                    tools:ignore="TouchTargetSizeCheck" />
+                    android:textSize="12dp"
+                    tools:ignore="TouchTargetSizeCheck,TextSizeCheck" />
 
                 <TextView
                     android:id="@+id/mailTV"
@@ -291,18 +293,18 @@
                     android:id="@+id/mailEdit"
                     android:layout_width="187dp"
                     android:layout_height="21dp"
-                    android:layout_marginLeft="10dp"
-                    android:paddingLeft="13dp"
                     android:layout_below="@+id/naissanceTV"
-                    android:layout_toRightOf="@+id/mailTV"
+                    android:layout_marginLeft="10dp"
                     android:layout_marginTop="18dp"
+                    android:layout_toRightOf="@+id/mailTV"
                     android:background="@drawable/round_login"
+                    android:fontFamily="@font/inter"
                     android:hint="Adresse mail"
                     android:inputType="text"
-                    android:textSize="12dp"
-                    android:fontFamily="@font/inter"
+                    android:paddingLeft="13dp"
                     android:textColor="@color/textDarkBlue"
-                    tools:ignore="TouchTargetSizeCheck" />
+                    android:textSize="12dp"
+                    tools:ignore="TouchTargetSizeCheck,TextSizeCheck" />
 
                 <TextView
                     android:id="@+id/pharmacieTV"
@@ -320,18 +322,18 @@
                     android:id="@+id/pharmacieEdit"
                     android:layout_width="153dp"
                     android:layout_height="21dp"
-                    android:layout_marginLeft="10dp"
-                    android:paddingLeft="13dp"
                     android:layout_below="@+id/mailTV"
-                    android:layout_toRightOf="@+id/pharmacieTV"
+                    android:layout_marginLeft="10dp"
                     android:layout_marginTop="18dp"
+                    android:layout_toRightOf="@+id/pharmacieTV"
                     android:background="@drawable/round_login"
+                    android:fontFamily="@font/inter"
                     android:hint="Pharmacie préférée"
                     android:inputType="text"
-                    android:textSize="12dp"
-                    android:fontFamily="@font/inter"
+                    android:paddingLeft="13dp"
                     android:textColor="@color/textDarkBlue"
-                    tools:ignore="TouchTargetSizeCheck" />
+                    android:textSize="12dp"
+                    tools:ignore="TouchTargetSizeCheck,TextSizeCheck" />
 
                 <TextView
                     android:id="@+id/medecinTV"
@@ -349,31 +351,31 @@
                     android:id="@+id/medecinEdit"
                     android:layout_width="172dp"
                     android:layout_height="21dp"
-                    android:layout_marginLeft="10dp"
-                    android:paddingLeft="13dp"
                     android:layout_below="@+id/pharmacieTV"
-                    android:layout_toRightOf="@+id/medecinTV"
+                    android:layout_marginLeft="10dp"
                     android:layout_marginTop="18dp"
+                    android:layout_toRightOf="@+id/medecinTV"
                     android:background="@drawable/round_login"
+                    android:fontFamily="@font/inter"
                     android:hint="Médecin traitant"
                     android:inputType="text"
-                    android:textSize="12dp"
-                    android:fontFamily="@font/inter"
+                    android:paddingLeft="13dp"
                     android:textColor="@color/textDarkBlue"
-                    tools:ignore="TouchTargetSizeCheck" />
+                    android:textSize="12dp"
+                    tools:ignore="TouchTargetSizeCheck,TextSizeCheck" />
 
                 <TextView
                     android:id="@+id/info1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_below="@+id/medecinTV"
-                    android:layout_marginTop="23dp"
                     android:layout_marginLeft="35dp"
+                    android:layout_marginTop="23dp"
                     android:fontFamily="@font/inter_medium"
                     android:text="* Ces informations sont "
                     android:textColor="@color/textGrey"
                     android:textSize="12.5dp"
-                    />
+                    tools:ignore="TextSizeCheck" />
 
                 <TextView
                     android:id="@+id/info2"
@@ -385,61 +387,63 @@
                     android:fontFamily="@font/inter_bold"
                     android:text="obligatoires"
                     android:textColor="@color/red"
-                    android:textSize="12.6dp"
+                    android:textSize="12.6sp"
                     />
             </RelativeLayout>
 
         </androidx.cardview.widget.CardView>
 
-        <RelativeLayout
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:layout_marginStart="40dp"
+            android:layout_marginEnd="40dp"
+            android:layout_marginTop="20dp">
 
             <androidx.cardview.widget.CardView
                 android:id="@+id/btnAnnuler"
-                android:layout_width="130dp"
+                android:layout_width="0dp"
                 android:layout_height="34dp"
-                android:layout_marginStart="40dp"
-                android:layout_marginTop="20dp"
+                android:layout_weight="1"
+                android:layout_marginEnd="10dp"
                 app:cardBackgroundColor="@color/darkBlueLight"
-                app:cardCornerRadius="6dp"
-                >
+                app:cardCornerRadius="6dp">
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
+                    android:fontFamily="@font/inter_medium"
                     android:gravity="center"
                     android:text="Annuler"
-                    android:textSize="15dp"
                     android:textColor="@color/white"
-                    android:fontFamily="@font/inter_medium"
-                    />
+                    android:textSize="15dp"
+                    tools:ignore="TextSizeCheck" />
 
             </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
                 android:id="@+id/btnEnregistrer"
-                android:layout_width="170dp"
+                android:layout_width="0dp"
                 android:layout_height="34dp"
-                android:layout_toRightOf="@+id/btnAnnuler"
-                android:layout_marginLeft="10dp"
-                android:layout_marginTop="20dp"
+                android:layout_weight="1"
+                android:layout_marginStart="10dp"
                 app:cardBackgroundColor="@color/darkBlueLight"
-                app:cardCornerRadius="6dp"
-                >
+                app:cardCornerRadius="6dp">
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
+                    android:fontFamily="@font/inter_medium"
                     android:gravity="center"
                     android:text="Enregistrer"
-                    android:textSize="15dp"
                     android:textColor="@color/white"
-                    android:fontFamily="@font/inter_medium"
-                    />
+                    android:textSize="15dp"
+                    tools:ignore="TextSizeCheck" />
 
             </androidx.cardview.widget.CardView>
-        </RelativeLayout>
+        </LinearLayout>
+
 
         <!-- ========== FIN SECTION INFORMATIONS =========== -->
 
