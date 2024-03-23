@@ -9,6 +9,10 @@ import android.database.sqlite.SQLiteOpenHelper;
 
 import androidx.annotation.Nullable;
 
+import java.text.SimpleDateFormat;
+import java.util.Date;
+import java.util.Locale;
+
 public class Users extends SQLiteOpenHelper {
 
     private static final String databaseName = "bdUsers";
@@ -21,8 +25,9 @@ public class Users extends SQLiteOpenHelper {
 
     @Override
     public void onCreate(SQLiteDatabase db) {
-        db.execSQL("CREATE TABLE users (id integer PRIMARY KEY,genre VARCHAR(20), nom VARCHAR(50), prenom VARCHAR(50), dataNaissance VARCHAR(10), pharmacie VARCHAR(50), medecin VARCHAR(50), UNIQUE(nom,prenom))");
+        db.execSQL("CREATE TABLE users (id INTEGER PRIMARY KEY, genre VARCHAR(20), nom VARCHAR(50), prenom VARCHAR(50), dataNaissance TEXT, pharmacie VARCHAR(50), medecin VARCHAR(50))");
     }
+
 
     @Override
     public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
@@ -149,5 +154,10 @@ public class Users extends SQLiteOpenHelper {
         }
         return medecin;
     }
+
+
+
+
+
 }
 

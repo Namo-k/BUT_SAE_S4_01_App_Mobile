@@ -17,6 +17,7 @@ drawable adresse
 drawable alertes
 drawable alertes_icone
 drawable anciennes
+drawable background_edittext
 drawable cadenas
 drawable calendrier
 drawable cloche
@@ -84,6 +85,8 @@ id btnEnregistrer
 id btnModifier
 id btnSupprimerCompte
 id cadenas
+id card
+id cardViewinputcode
 id checkbox
 id checkboxLayout
 id citationText
@@ -92,6 +95,7 @@ id colombeDroiteImage
 id colombeGaucheImage
 id colombes1
 id colombes2
+id colombesblanc2
 id conseilText
 id dataTV
 id date
@@ -104,6 +108,7 @@ id explicationCIP
 id genre
 id guidelineEnd
 id guidelineStart
+id heuredebut
 id homeBtn
 id info1
 id info2
@@ -123,6 +128,7 @@ id mailLabelTV
 id mailTV
 id main
 id mdp
+id mdpConfirmation
 id medecinEdit
 id medecinLabelTV
 id medecinTV
@@ -157,6 +163,8 @@ id raison
 id raisonLabelTV
 id raisonTV
 id remerciement
+id reset
+id resetCodeInput
 id retour
 id saisieCIP
 id saisieText
@@ -190,6 +198,7 @@ id versionText
 id welcomeTextView
 layout activity_accueil
 layout activity_ancienne_alerte
+layout activity_change_password
 layout activity_cip_manuelle
 layout activity_createalert
 layout activity_login
@@ -199,6 +208,8 @@ layout activity_profil
 layout activity_profilmodif
 layout activity_register
 layout activity_register2
+layout activity_reset_code
+layout activity_reset_password
 layout activity_scanner
 layout activity_splash_screen
 layout item_alerte
@@ -219,3 +230,4 @@ style Base.Theme.SAE_S4_01_App_Mobile
 style Theme.SAE_S4_01_App_Mobile
 xml backup_rules
 xml data_extraction_rules
+xml network_security_config

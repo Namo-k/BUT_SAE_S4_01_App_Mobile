@@ -1,14 +1,16 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /Users/isra/Desktop/SEMESTRE 4/Mobile/PROJET/BUT_SAE_S4_01_App_Mobile_/app/src/main/AndroidManifest.xml:2:1-148:12
-INJECTED from /Users/isra/Desktop/SEMESTRE 4/Mobile/PROJET/BUT_SAE_S4_01_App_Mobile_/app/src/main/AndroidManifest.xml:2:1-148:12
-INJECTED from /Users/isra/Desktop/SEMESTRE 4/Mobile/PROJET/BUT_SAE_S4_01_App_Mobile_/app/src/main/AndroidManifest.xml:2:1-148:12
-INJECTED from /Users/isra/Desktop/SEMESTRE 4/Mobile/PROJET/BUT_SAE_S4_01_App_Mobile_/app/src/main/AndroidManifest.xml:2:1-148:12
+ADDED from /Users/isra/Desktop/SEMESTRE 4/Mobile/PROJET/BUT_SAE_S4_01_App_Mobile_/app/src/main/AndroidManifest.xml:2:1-169:12
+INJECTED from /Users/isra/Desktop/SEMESTRE 4/Mobile/PROJET/BUT_SAE_S4_01_App_Mobile_/app/src/main/AndroidManifest.xml:2:1-169:12
+INJECTED from /Users/isra/Desktop/SEMESTRE 4/Mobile/PROJET/BUT_SAE_S4_01_App_Mobile_/app/src/main/AndroidManifest.xml:2:1-169:12
+INJECTED from /Users/isra/Desktop/SEMESTRE 4/Mobile/PROJET/BUT_SAE_S4_01_App_Mobile_/app/src/main/AndroidManifest.xml:2:1-169:12
 MERGED from [com.google.android.material:material:1.11.0] /Users/isra/.gradle/caches/transforms-3/7bf998f9f4bdd84f156fbe08c4253964/transformed/material-1.11.0/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] /Users/isra/.gradle/caches/transforms-3/3c6b14974eada3b737e4646addd01d24/transformed/constraintlayout-2.1.4/AndroidManifest.xml:2:1-11:12
 MERGED from [androidx.appcompat:appcompat-resources:1.6.1] /Users/isra/.gradle/caches/transforms-3/8c60153bca6de4306b04ab8bc2348ea8/transformed/appcompat-resources-1.6.1/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.appcompat:appcompat:1.6.1] /Users/isra/.gradle/caches/transforms-3/b1741c2033ae6eec819ff5ea06ca1704/transformed/appcompat-1.6.1/AndroidManifest.xml:17:1-22:12
 MERGED from [com.journeyapps:zxing-android-embedded:4.2.0] /Users/isra/.gradle/caches/transforms-3/a60982259721268694c6a5f2a67385db/transformed/zxing-android-embedded-4.2.0/AndroidManifest.xml:17:1-56:12
+MERGED from [com.android.volley:volley:1.2.1] /Users/isra/.gradle/caches/transforms-3/e768328bbfffbdf343ced896e67753c4/transformed/volley-1.2.1/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.cardview:cardview:1.0.0] /Users/isra/.gradle/caches/transforms-3/019add5e771534bb68424657ad94cdee/transformed/cardview-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.viewpager2:viewpager2:1.0.0] /Users/isra/.gradle/caches/transforms-3/21f8526f0d48b1fdd53d78929a1fa6eb/transformed/viewpager2-1.0.0/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.legacy:legacy-support-v4:1.0.0] /Users/isra/.gradle/caches/transforms-3/f261daf69e694499d4a0d1570d8ca8d4/transformed/legacy-support-v4-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.fragment:fragment:1.3.6] /Users/isra/.gradle/caches/transforms-3/65612b5fae6c2aa4265237c94fd623b4/transformed/fragment-1.3.6/AndroidManifest.xml:17:1-24:12
@@ -41,7 +43,6 @@ MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] /Users/isra/.
 MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] /Users/isra/.gradle/caches/transforms-3/21235f267b5184480ed1c71b38622da3/transformed/asynclayoutinflater-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.core:core:1.9.0] /Users/isra/.gradle/caches/transforms-3/16088aea6844a21f0ae8707202a192eb/transformed/core-1.9.0/AndroidManifest.xml:17:1-30:12
 MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /Users/isra/.gradle/caches/transforms-3/618cbb17bba8c81668c4dc9604ffc868/transformed/cursoradapter-1.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.cardview:cardview:1.0.0] /Users/isra/.gradle/caches/transforms-3/019add5e771534bb68424657ad94cdee/transformed/cardview-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /Users/isra/.gradle/caches/transforms-3/5ed20899a643be0e8f8917ec92e14e8b/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:17:1-27:12
 MERGED from [androidx.profileinstaller:profileinstaller:1.3.0] /Users/isra/.gradle/caches/transforms-3/6aebe797d2fce5c8727f4e04e3cbbf9a/transformed/profileinstaller-1.3.0/AndroidManifest.xml:17:1-55:12
 MERGED from [androidx.startup:startup-runtime:1.1.1] /Users/isra/.gradle/caches/transforms-3/9b710c4adc9712c14d4578c905862b5b/transformed/startup-runtime-1.1.1/AndroidManifest.xml:17:1-33:12
@@ -62,9 +63,21 @@ MERGED from [androidx.annotation:annotation-experimental:1.3.0] /Users/isra/.gra
 		INJECTED from /Users/isra/Desktop/SEMESTRE 4/Mobile/PROJET/BUT_SAE_S4_01_App_Mobile_/app/src/main/AndroidManifest.xml
 	xmlns:android
 		ADDED from /Users/isra/Desktop/SEMESTRE 4/Mobile/PROJET/BUT_SAE_S4_01_App_Mobile_/app/src/main/AndroidManifest.xml:2:11-69
+uses-permission#android.permission.INTERNET
+ADDED from /Users/isra/Desktop/SEMESTRE 4/Mobile/PROJET/BUT_SAE_S4_01_App_Mobile_/app/src/main/AndroidManifest.xml:5:5-67
+	android:name
+		ADDED from /Users/isra/Desktop/SEMESTRE 4/Mobile/PROJET/BUT_SAE_S4_01_App_Mobile_/app/src/main/AndroidManifest.xml:5:22-64
+uses-permission#android.permission.ACCESS_WIFI_STATE
+ADDED from /Users/isra/Desktop/SEMESTRE 4/Mobile/PROJET/BUT_SAE_S4_01_App_Mobile_/app/src/main/AndroidManifest.xml:6:5-76
+	android:name
+		ADDED from /Users/isra/Desktop/SEMESTRE 4/Mobile/PROJET/BUT_SAE_S4_01_App_Mobile_/app/src/main/AndroidManifest.xml:6:22-73
+uses-permission#android.permission.READ_EXTERNAL_STORAGE
+ADDED from /Users/isra/Desktop/SEMESTRE 4/Mobile/PROJET/BUT_SAE_S4_01_App_Mobile_/app/src/main/AndroidManifest.xml:7:5-80
+	android:name
+		ADDED from /Users/isra/Desktop/SEMESTRE 4/Mobile/PROJET/BUT_SAE_S4_01_App_Mobile_/app/src/main/AndroidManifest.xml:7:22-77
 application
-ADDED from /Users/isra/Desktop/SEMESTRE 4/Mobile/PROJET/BUT_SAE_S4_01_App_Mobile_/app/src/main/AndroidManifest.xml:5:5-146:19
-INJECTED from /Users/isra/Desktop/SEMESTRE 4/Mobile/PROJET/BUT_SAE_S4_01_App_Mobile_/app/src/main/AndroidManifest.xml:5:5-146:19
+ADDED from /Users/isra/Desktop/SEMESTRE 4/Mobile/PROJET/BUT_SAE_S4_01_App_Mobile_/app/src/main/AndroidManifest.xml:9:5-167:19
+INJECTED from /Users/isra/Desktop/SEMESTRE 4/Mobile/PROJET/BUT_SAE_S4_01_App_Mobile_/app/src/main/AndroidManifest.xml:9:5-167:19
 MERGED from [com.google.android.material:material:1.11.0] /Users/isra/.gradle/caches/transforms-3/7bf998f9f4bdd84f156fbe08c4253964/transformed/material-1.11.0/AndroidManifest.xml:22:5-20
 MERGED from [com.google.android.material:material:1.11.0] /Users/isra/.gradle/caches/transforms-3/7bf998f9f4bdd84f156fbe08c4253964/transformed/material-1.11.0/AndroidManifest.xml:22:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] /Users/isra/.gradle/caches/transforms-3/3c6b14974eada3b737e4646addd01d24/transformed/constraintlayout-2.1.4/AndroidManifest.xml:9:5-20
@@ -85,110 +98,132 @@ MERGED from [androidx.startup:startup-runtime:1.1.1] /Users/isra/.gradle/caches/
 MERGED from [androidx.startup:startup-runtime:1.1.1] /Users/isra/.gradle/caches/transforms-3/9b710c4adc9712c14d4578c905862b5b/transformed/startup-runtime-1.1.1/AndroidManifest.xml:25:5-31:19
 	android:extractNativeLibs
 		INJECTED from /Users/isra/Desktop/SEMESTRE 4/Mobile/PROJET/BUT_SAE_S4_01_App_Mobile_/app/src/main/AndroidManifest.xml
+	android:roundIcon
+		ADDED from /Users/isra/Desktop/SEMESTRE 4/Mobile/PROJET/BUT_SAE_S4_01_App_Mobile_/app/src/main/AndroidManifest.xml:17:9-54
+	android:icon
+		ADDED from /Users/isra/Desktop/SEMESTRE 4/Mobile/PROJET/BUT_SAE_S4_01_App_Mobile_/app/src/main/AndroidManifest.xml:14:9-43
+	android:networkSecurityConfig
+		ADDED from /Users/isra/Desktop/SEMESTRE 4/Mobile/PROJET/BUT_SAE_S4_01_App_Mobile_/app/src/main/AndroidManifest.xml:16:9-69
 	android:appComponentFactory
 		ADDED from [androidx.core:core:1.9.0] /Users/isra/.gradle/caches/transforms-3/16088aea6844a21f0ae8707202a192eb/transformed/core-1.9.0/AndroidManifest.xml:28:18-86
 	android:supportsRtl
-		ADDED from /Users/isra/Desktop/SEMESTRE 4/Mobile/PROJET/BUT_SAE_S4_01_App_Mobile_/app/src/main/AndroidManifest.xml:13:9-35
+		ADDED from /Users/isra/Desktop/SEMESTRE 4/Mobile/PROJET/BUT_SAE_S4_01_App_Mobile_/app/src/main/AndroidManifest.xml:18:9-35
 	android:label
-		ADDED from /Users/isra/Desktop/SEMESTRE 4/Mobile/PROJET/BUT_SAE_S4_01_App_Mobile_/app/src/main/AndroidManifest.xml:11:9-41
+		ADDED from /Users/isra/Desktop/SEMESTRE 4/Mobile/PROJET/BUT_SAE_S4_01_App_Mobile_/app/src/main/AndroidManifest.xml:15:9-41
 	android:fullBackupContent
-		ADDED from /Users/isra/Desktop/SEMESTRE 4/Mobile/PROJET/BUT_SAE_S4_01_App_Mobile_/app/src/main/AndroidManifest.xml:9:9-54
-	android:roundIcon
-		ADDED from /Users/isra/Desktop/SEMESTRE 4/Mobile/PROJET/BUT_SAE_S4_01_App_Mobile_/app/src/main/AndroidManifest.xml:12:9-54
+		ADDED from /Users/isra/Desktop/SEMESTRE 4/Mobile/PROJET/BUT_SAE_S4_01_App_Mobile_/app/src/main/AndroidManifest.xml:13:9-54
 	tools:targetApi
-		ADDED from /Users/isra/Desktop/SEMESTRE 4/Mobile/PROJET/BUT_SAE_S4_01_App_Mobile_/app/src/main/AndroidManifest.xml:15:9-29
-	android:icon
-		ADDED from /Users/isra/Desktop/SEMESTRE 4/Mobile/PROJET/BUT_SAE_S4_01_App_Mobile_/app/src/main/AndroidManifest.xml:10:9-43
+		ADDED from /Users/isra/Desktop/SEMESTRE 4/Mobile/PROJET/BUT_SAE_S4_01_App_Mobile_/app/src/main/AndroidManifest.xml:21:9-29
 	android:allowBackup
-		ADDED from /Users/isra/Desktop/SEMESTRE 4/Mobile/PROJET/BUT_SAE_S4_01_App_Mobile_/app/src/main/AndroidManifest.xml:7:9-35
+		ADDED from /Users/isra/Desktop/SEMESTRE 4/Mobile/PROJET/BUT_SAE_S4_01_App_Mobile_/app/src/main/AndroidManifest.xml:11:9-35
 	android:theme
-		ADDED from /Users/isra/Desktop/SEMESTRE 4/Mobile/PROJET/BUT_SAE_S4_01_App_Mobile_/app/src/main/AndroidManifest.xml:14:9-58
+		ADDED from /Users/isra/Desktop/SEMESTRE 4/Mobile/PROJET/BUT_SAE_S4_01_App_Mobile_/app/src/main/AndroidManifest.xml:19:9-58
 	android:dataExtractionRules
-		ADDED from /Users/isra/Desktop/SEMESTRE 4/Mobile/PROJET/BUT_SAE_S4_01_App_Mobile_/app/src/main/AndroidManifest.xml:8:9-65
+		ADDED from /Users/isra/Desktop/SEMESTRE 4/Mobile/PROJET/BUT_SAE_S4_01_App_Mobile_/app/src/main/AndroidManifest.xml:12:9-65
+	android:usesCleartextTraffic
+		ADDED from /Users/isra/Desktop/SEMESTRE 4/Mobile/PROJET/BUT_SAE_S4_01_App_Mobile_/app/src/main/AndroidManifest.xml:20:9-44
 	android:name
-		ADDED from /Users/isra/Desktop/SEMESTRE 4/Mobile/PROJET/BUT_SAE_S4_01_App_Mobile_/app/src/main/AndroidManifest.xml:6:9-31
+		ADDED from /Users/isra/Desktop/SEMESTRE 4/Mobile/PROJET/BUT_SAE_S4_01_App_Mobile_/app/src/main/AndroidManifest.xml:10:9-31
+activity#fr.iut.sae_s4_01_app_mobile.ChangePasswordActivity
+ADDED from /Users/isra/Desktop/SEMESTRE 4/Mobile/PROJET/BUT_SAE_S4_01_App_Mobile_/app/src/main/AndroidManifest.xml:22:9-24:40
+	android:exported
+		ADDED from /Users/isra/Desktop/SEMESTRE 4/Mobile/PROJET/BUT_SAE_S4_01_App_Mobile_/app/src/main/AndroidManifest.xml:24:13-37
+	android:name
+		ADDED from /Users/isra/Desktop/SEMESTRE 4/Mobile/PROJET/BUT_SAE_S4_01_App_Mobile_/app/src/main/AndroidManifest.xml:23:13-51
+activity#fr.iut.sae_s4_01_app_mobile.ResetCodeActivity
+ADDED from /Users/isra/Desktop/SEMESTRE 4/Mobile/PROJET/BUT_SAE_S4_01_App_Mobile_/app/src/main/AndroidManifest.xml:25:9-27:40
+	android:exported
+		ADDED from /Users/isra/Desktop/SEMESTRE 4/Mobile/PROJET/BUT_SAE_S4_01_App_Mobile_/app/src/main/AndroidManifest.xml:27:13-37
+	android:name
+		ADDED from /Users/isra/Desktop/SEMESTRE 4/Mobile/PROJET/BUT_SAE_S4_01_App_Mobile_/app/src/main/AndroidManifest.xml:26:13-46
+activity#fr.iut.sae_s4_01_app_mobile.ResetPasswordActivity
+ADDED from /Users/isra/Desktop/SEMESTRE 4/Mobile/PROJET/BUT_SAE_S4_01_App_Mobile_/app/src/main/AndroidManifest.xml:28:9-30:40
+	android:exported
+		ADDED from /Users/isra/Desktop/SEMESTRE 4/Mobile/PROJET/BUT_SAE_S4_01_App_Mobile_/app/src/main/AndroidManifest.xml:30:13-37
+	android:name
+		ADDED from /Users/isra/Desktop/SEMESTRE 4/Mobile/PROJET/BUT_SAE_S4_01_App_Mobile_/app/src/main/AndroidManifest.xml:29:13-50
 activity#fr.iut.sae_s4_01_app_mobile.AccueilActivity
-ADDED from /Users/isra/Desktop/SEMESTRE 4/Mobile/PROJET/BUT_SAE_S4_01_App_Mobile_/app/src/main/AndroidManifest.xml:16:9-26:20
+ADDED from /Users/isra/Desktop/SEMESTRE 4/Mobile/PROJET/BUT_SAE_S4_01_App_Mobile_/app/src/main/AndroidManifest.xml:31:9-41:20
 	android:exported
-		ADDED from /Users/isra/Desktop/SEMESTRE 4/Mobile/PROJET/BUT_SAE_S4_01_App_Mobile_/app/src/main/AndroidManifest.xml:18:13-36
+		ADDED from /Users/isra/Desktop/SEMESTRE 4/Mobile/PROJET/BUT_SAE_S4_01_App_Mobile_/app/src/main/AndroidManifest.xml:33:13-36
 	android:name
-		ADDED from /Users/isra/Desktop/SEMESTRE 4/Mobile/PROJET/BUT_SAE_S4_01_App_Mobile_/app/src/main/AndroidManifest.xml:17:13-44
+		ADDED from /Users/isra/Desktop/SEMESTRE 4/Mobile/PROJET/BUT_SAE_S4_01_App_Mobile_/app/src/main/AndroidManifest.xml:32:13-44
 activity#fr.iut.sae_s4_01_app_mobile.SplashScreenActivity
-ADDED from /Users/isra/Desktop/SEMESTRE 4/Mobile/PROJET/BUT_SAE_S4_01_App_Mobile_/app/src/main/AndroidManifest.xml:27:9-35:20
+ADDED from /Users/isra/Desktop/SEMESTRE 4/Mobile/PROJET/BUT_SAE_S4_01_App_Mobile_/app/src/main/AndroidManifest.xml:42:9-50:20
 	android:exported
-		ADDED from /Users/isra/Desktop/SEMESTRE 4/Mobile/PROJET/BUT_SAE_S4_01_App_Mobile_/app/src/main/AndroidManifest.xml:29:13-36
+		ADDED from /Users/isra/Desktop/SEMESTRE 4/Mobile/PROJET/BUT_SAE_S4_01_App_Mobile_/app/src/main/AndroidManifest.xml:44:13-36
 	android:name
-		ADDED from /Users/isra/Desktop/SEMESTRE 4/Mobile/PROJET/BUT_SAE_S4_01_App_Mobile_/app/src/main/AndroidManifest.xml:28:13-49
+		ADDED from /Users/isra/Desktop/SEMESTRE 4/Mobile/PROJET/BUT_SAE_S4_01_App_Mobile_/app/src/main/AndroidManifest.xml:43:13-49
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from /Users/isra/Desktop/SEMESTRE 4/Mobile/PROJET/BUT_SAE_S4_01_App_Mobile_/app/src/main/AndroidManifest.xml:30:13-34:29
+ADDED from /Users/isra/Desktop/SEMESTRE 4/Mobile/PROJET/BUT_SAE_S4_01_App_Mobile_/app/src/main/AndroidManifest.xml:45:13-49:29
 action#android.intent.action.MAIN
-ADDED from /Users/isra/Desktop/SEMESTRE 4/Mobile/PROJET/BUT_SAE_S4_01_App_Mobile_/app/src/main/AndroidManifest.xml:31:17-69
+ADDED from /Users/isra/Desktop/SEMESTRE 4/Mobile/PROJET/BUT_SAE_S4_01_App_Mobile_/app/src/main/AndroidManifest.xml:46:17-69
 	android:name
-		ADDED from /Users/isra/Desktop/SEMESTRE 4/Mobile/PROJET/BUT_SAE_S4_01_App_Mobile_/app/src/main/AndroidManifest.xml:31:25-66
+		ADDED from /Users/isra/Desktop/SEMESTRE 4/Mobile/PROJET/BUT_SAE_S4_01_App_Mobile_/app/src/main/AndroidManifest.xml:46:25-66
 category#android.intent.category.LAUNCHER
-ADDED from /Users/isra/Desktop/SEMESTRE 4/Mobile/PROJET/BUT_SAE_S4_01_App_Mobile_/app/src/main/AndroidManifest.xml:33:17-77
+ADDED from /Users/isra/Desktop/SEMESTRE 4/Mobile/PROJET/BUT_SAE_S4_01_App_Mobile_/app/src/main/AndroidManifest.xml:48:17-77
 	android:name
-		ADDED from /Users/isra/Desktop/SEMESTRE 4/Mobile/PROJET/BUT_SAE_S4_01_App_Mobile_/app/src/main/AndroidManifest.xml:33:27-74
+		ADDED from /Users/isra/Desktop/SEMESTRE 4/Mobile/PROJET/BUT_SAE_S4_01_App_Mobile_/app/src/main/AndroidManifest.xml:48:27-74
 activity#fr.iut.sae_s4_01_app_mobile.LoginActivity
-ADDED from /Users/isra/Desktop/SEMESTRE 4/Mobile/PROJET/BUT_SAE_S4_01_App_Mobile_/app/src/main/AndroidManifest.xml:36:9-46:20
+ADDED from /Users/isra/Desktop/SEMESTRE 4/Mobile/PROJET/BUT_SAE_S4_01_App_Mobile_/app/src/main/AndroidManifest.xml:51:9-61:20
 	android:exported
-		ADDED from /Users/isra/Desktop/SEMESTRE 4/Mobile/PROJET/BUT_SAE_S4_01_App_Mobile_/app/src/main/AndroidManifest.xml:38:13-36
+		ADDED from /Users/isra/Desktop/SEMESTRE 4/Mobile/PROJET/BUT_SAE_S4_01_App_Mobile_/app/src/main/AndroidManifest.xml:53:13-36
 	android:name
-		ADDED from /Users/isra/Desktop/SEMESTRE 4/Mobile/PROJET/BUT_SAE_S4_01_App_Mobile_/app/src/main/AndroidManifest.xml:37:13-42
+		ADDED from /Users/isra/Desktop/SEMESTRE 4/Mobile/PROJET/BUT_SAE_S4_01_App_Mobile_/app/src/main/AndroidManifest.xml:52:13-42
 activity#fr.iut.sae_s4_01_app_mobile.RegisterActivity
-ADDED from /Users/isra/Desktop/SEMESTRE 4/Mobile/PROJET/BUT_SAE_S4_01_App_Mobile_/app/src/main/AndroidManifest.xml:47:9-57:20
+ADDED from /Users/isra/Desktop/SEMESTRE 4/Mobile/PROJET/BUT_SAE_S4_01_App_Mobile_/app/src/main/AndroidManifest.xml:62:9-72:20
 	android:exported
-		ADDED from /Users/isra/Desktop/SEMESTRE 4/Mobile/PROJET/BUT_SAE_S4_01_App_Mobile_/app/src/main/AndroidManifest.xml:49:13-36
+		ADDED from /Users/isra/Desktop/SEMESTRE 4/Mobile/PROJET/BUT_SAE_S4_01_App_Mobile_/app/src/main/AndroidManifest.xml:64:13-36
 	android:name
-		ADDED from /Users/isra/Desktop/SEMESTRE 4/Mobile/PROJET/BUT_SAE_S4_01_App_Mobile_/app/src/main/AndroidManifest.xml:48:13-45
+		ADDED from /Users/isra/Desktop/SEMESTRE 4/Mobile/PROJET/BUT_SAE_S4_01_App_Mobile_/app/src/main/AndroidManifest.xml:63:13-45
 activity#fr.iut.sae_s4_01_app_mobile.RegisterActivity2
-ADDED from /Users/isra/Desktop/SEMESTRE 4/Mobile/PROJET/BUT_SAE_S4_01_App_Mobile_/app/src/main/AndroidManifest.xml:58:9-66:20
+ADDED from /Users/isra/Desktop/SEMESTRE 4/Mobile/PROJET/BUT_SAE_S4_01_App_Mobile_/app/src/main/AndroidManifest.xml:73:9-84:20
 	android:exported
-		ADDED from /Users/isra/Desktop/SEMESTRE 4/Mobile/PROJET/BUT_SAE_S4_01_App_Mobile_/app/src/main/AndroidManifest.xml:60:13-36
+		ADDED from /Users/isra/Desktop/SEMESTRE 4/Mobile/PROJET/BUT_SAE_S4_01_App_Mobile_/app/src/main/AndroidManifest.xml:75:13-36
 	android:name
-		ADDED from /Users/isra/Desktop/SEMESTRE 4/Mobile/PROJET/BUT_SAE_S4_01_App_Mobile_/app/src/main/AndroidManifest.xml:59:13-46
+		ADDED from /Users/isra/Desktop/SEMESTRE 4/Mobile/PROJET/BUT_SAE_S4_01_App_Mobile_/app/src/main/AndroidManifest.xml:74:13-46
 activity#fr.iut.sae_s4_01_app_mobile.ScannerActivity
-ADDED from /Users/isra/Desktop/SEMESTRE 4/Mobile/PROJET/BUT_SAE_S4_01_App_Mobile_/app/src/main/AndroidManifest.xml:67:9-78:20
+ADDED from /Users/isra/Desktop/SEMESTRE 4/Mobile/PROJET/BUT_SAE_S4_01_App_Mobile_/app/src/main/AndroidManifest.xml:85:9-96:20
 	android:exported
-		ADDED from /Users/isra/Desktop/SEMESTRE 4/Mobile/PROJET/BUT_SAE_S4_01_App_Mobile_/app/src/main/AndroidManifest.xml:69:13-36
+		ADDED from /Users/isra/Desktop/SEMESTRE 4/Mobile/PROJET/BUT_SAE_S4_01_App_Mobile_/app/src/main/AndroidManifest.xml:87:13-36
 	android:name
-		ADDED from /Users/isra/Desktop/SEMESTRE 4/Mobile/PROJET/BUT_SAE_S4_01_App_Mobile_/app/src/main/AndroidManifest.xml:68:13-44
+		ADDED from /Users/isra/Desktop/SEMESTRE 4/Mobile/PROJET/BUT_SAE_S4_01_App_Mobile_/app/src/main/AndroidManifest.xml:86:13-44
 activity#fr.iut.sae_s4_01_app_mobile.ancienneAlerteActivity
-ADDED from /Users/isra/Desktop/SEMESTRE 4/Mobile/PROJET/BUT_SAE_S4_01_App_Mobile_/app/src/main/AndroidManifest.xml:79:9-90:20
+ADDED from /Users/isra/Desktop/SEMESTRE 4/Mobile/PROJET/BUT_SAE_S4_01_App_Mobile_/app/src/main/AndroidManifest.xml:97:9-108:20
 	android:exported
-		ADDED from /Users/isra/Desktop/SEMESTRE 4/Mobile/PROJET/BUT_SAE_S4_01_App_Mobile_/app/src/main/AndroidManifest.xml:81:13-36
+		ADDED from /Users/isra/Desktop/SEMESTRE 4/Mobile/PROJET/BUT_SAE_S4_01_App_Mobile_/app/src/main/AndroidManifest.xml:99:13-36
 	android:name
-		ADDED from /Users/isra/Desktop/SEMESTRE 4/Mobile/PROJET/BUT_SAE_S4_01_App_Mobile_/app/src/main/AndroidManifest.xml:80:13-51
+		ADDED from /Users/isra/Desktop/SEMESTRE 4/Mobile/PROJET/BUT_SAE_S4_01_App_Mobile_/app/src/main/AndroidManifest.xml:98:13-51
 activity#fr.iut.sae_s4_01_app_mobile.MedocCodeActivity
-ADDED from /Users/isra/Desktop/SEMESTRE 4/Mobile/PROJET/BUT_SAE_S4_01_App_Mobile_/app/src/main/AndroidManifest.xml:92:9-102:20
+ADDED from /Users/isra/Desktop/SEMESTRE 4/Mobile/PROJET/BUT_SAE_S4_01_App_Mobile_/app/src/main/AndroidManifest.xml:109:9-120:20
 	android:exported
-		ADDED from /Users/isra/Desktop/SEMESTRE 4/Mobile/PROJET/BUT_SAE_S4_01_App_Mobile_/app/src/main/AndroidManifest.xml:94:13-36
+		ADDED from /Users/isra/Desktop/SEMESTRE 4/Mobile/PROJET/BUT_SAE_S4_01_App_Mobile_/app/src/main/AndroidManifest.xml:111:13-36
 	android:name
-		ADDED from /Users/isra/Desktop/SEMESTRE 4/Mobile/PROJET/BUT_SAE_S4_01_App_Mobile_/app/src/main/AndroidManifest.xml:93:13-46
+		ADDED from /Users/isra/Desktop/SEMESTRE 4/Mobile/PROJET/BUT_SAE_S4_01_App_Mobile_/app/src/main/AndroidManifest.xml:110:13-46
 activity#fr.iut.sae_s4_01_app_mobile.ProfilActivity
-ADDED from /Users/isra/Desktop/SEMESTRE 4/Mobile/PROJET/BUT_SAE_S4_01_App_Mobile_/app/src/main/AndroidManifest.xml:104:9-115:20
+ADDED from /Users/isra/Desktop/SEMESTRE 4/Mobile/PROJET/BUT_SAE_S4_01_App_Mobile_/app/src/main/AndroidManifest.xml:121:9-132:20
 	android:exported
-		ADDED from /Users/isra/Desktop/SEMESTRE 4/Mobile/PROJET/BUT_SAE_S4_01_App_Mobile_/app/src/main/AndroidManifest.xml:106:13-36
+		ADDED from /Users/isra/Desktop/SEMESTRE 4/Mobile/PROJET/BUT_SAE_S4_01_App_Mobile_/app/src/main/AndroidManifest.xml:123:13-36
 	android:name
-		ADDED from /Users/isra/Desktop/SEMESTRE 4/Mobile/PROJET/BUT_SAE_S4_01_App_Mobile_/app/src/main/AndroidManifest.xml:105:13-43
+		ADDED from /Users/isra/Desktop/SEMESTRE 4/Mobile/PROJET/BUT_SAE_S4_01_App_Mobile_/app/src/main/AndroidManifest.xml:122:13-43
 activity#fr.iut.sae_s4_01_app_mobile.ProfilModifActivity
-ADDED from /Users/isra/Desktop/SEMESTRE 4/Mobile/PROJET/BUT_SAE_S4_01_App_Mobile_/app/src/main/AndroidManifest.xml:117:9-128:20
+ADDED from /Users/isra/Desktop/SEMESTRE 4/Mobile/PROJET/BUT_SAE_S4_01_App_Mobile_/app/src/main/AndroidManifest.xml:133:9-144:20
 	android:exported
-		ADDED from /Users/isra/Desktop/SEMESTRE 4/Mobile/PROJET/BUT_SAE_S4_01_App_Mobile_/app/src/main/AndroidManifest.xml:119:13-36
+		ADDED from /Users/isra/Desktop/SEMESTRE 4/Mobile/PROJET/BUT_SAE_S4_01_App_Mobile_/app/src/main/AndroidManifest.xml:135:13-36
 	android:name
-		ADDED from /Users/isra/Desktop/SEMESTRE 4/Mobile/PROJET/BUT_SAE_S4_01_App_Mobile_/app/src/main/AndroidManifest.xml:118:13-48
+		ADDED from /Users/isra/Desktop/SEMESTRE 4/Mobile/PROJET/BUT_SAE_S4_01_App_Mobile_/app/src/main/AndroidManifest.xml:134:13-48
 activity#fr.iut.sae_s4_01_app_mobile.CipManuelleActivity
-ADDED from /Users/isra/Desktop/SEMESTRE 4/Mobile/PROJET/BUT_SAE_S4_01_App_Mobile_/app/src/main/AndroidManifest.xml:130:9-136:20
+ADDED from /Users/isra/Desktop/SEMESTRE 4/Mobile/PROJET/BUT_SAE_S4_01_App_Mobile_/app/src/main/AndroidManifest.xml:145:9-155:20
 	android:exported
-		ADDED from /Users/isra/Desktop/SEMESTRE 4/Mobile/PROJET/BUT_SAE_S4_01_App_Mobile_/app/src/main/AndroidManifest.xml:131:13-36
+		ADDED from /Users/isra/Desktop/SEMESTRE 4/Mobile/PROJET/BUT_SAE_S4_01_App_Mobile_/app/src/main/AndroidManifest.xml:147:13-36
 	android:name
-		ADDED from /Users/isra/Desktop/SEMESTRE 4/Mobile/PROJET/BUT_SAE_S4_01_App_Mobile_/app/src/main/AndroidManifest.xml:130:19-54
+		ADDED from /Users/isra/Desktop/SEMESTRE 4/Mobile/PROJET/BUT_SAE_S4_01_App_Mobile_/app/src/main/AndroidManifest.xml:146:13-48
 activity#fr.iut.sae_s4_01_app_mobile.NewAlertActivity
-ADDED from /Users/isra/Desktop/SEMESTRE 4/Mobile/PROJET/BUT_SAE_S4_01_App_Mobile_/app/src/main/AndroidManifest.xml:138:9-144:20
+ADDED from /Users/isra/Desktop/SEMESTRE 4/Mobile/PROJET/BUT_SAE_S4_01_App_Mobile_/app/src/main/AndroidManifest.xml:156:9-166:20
 	android:exported
-		ADDED from /Users/isra/Desktop/SEMESTRE 4/Mobile/PROJET/BUT_SAE_S4_01_App_Mobile_/app/src/main/AndroidManifest.xml:139:13-36
+		ADDED from /Users/isra/Desktop/SEMESTRE 4/Mobile/PROJET/BUT_SAE_S4_01_App_Mobile_/app/src/main/AndroidManifest.xml:158:13-36
 	android:name
-		ADDED from /Users/isra/Desktop/SEMESTRE 4/Mobile/PROJET/BUT_SAE_S4_01_App_Mobile_/app/src/main/AndroidManifest.xml:138:19-51
+		ADDED from /Users/isra/Desktop/SEMESTRE 4/Mobile/PROJET/BUT_SAE_S4_01_App_Mobile_/app/src/main/AndroidManifest.xml:157:13-45
 uses-sdk
 INJECTED from /Users/isra/Desktop/SEMESTRE 4/Mobile/PROJET/BUT_SAE_S4_01_App_Mobile_/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from /Users/isra/Desktop/SEMESTRE 4/Mobile/PROJET/BUT_SAE_S4_01_App_Mobile_/app/src/main/AndroidManifest.xml
@@ -203,6 +238,10 @@ MERGED from [androidx.appcompat:appcompat:1.6.1] /Users/isra/.gradle/caches/tran
 MERGED from [androidx.appcompat:appcompat:1.6.1] /Users/isra/.gradle/caches/transforms-3/b1741c2033ae6eec819ff5ea06ca1704/transformed/appcompat-1.6.1/AndroidManifest.xml:20:5-44
 MERGED from [com.journeyapps:zxing-android-embedded:4.2.0] /Users/isra/.gradle/caches/transforms-3/a60982259721268694c6a5f2a67385db/transformed/zxing-android-embedded-4.2.0/AndroidManifest.xml:20:5-44
 MERGED from [com.journeyapps:zxing-android-embedded:4.2.0] /Users/isra/.gradle/caches/transforms-3/a60982259721268694c6a5f2a67385db/transformed/zxing-android-embedded-4.2.0/AndroidManifest.xml:20:5-44
+MERGED from [com.android.volley:volley:1.2.1] /Users/isra/.gradle/caches/transforms-3/e768328bbfffbdf343ced896e67753c4/transformed/volley-1.2.1/AndroidManifest.xml:5:5-43
+MERGED from [com.android.volley:volley:1.2.1] /Users/isra/.gradle/caches/transforms-3/e768328bbfffbdf343ced896e67753c4/transformed/volley-1.2.1/AndroidManifest.xml:5:5-43
+MERGED from [androidx.cardview:cardview:1.0.0] /Users/isra/.gradle/caches/transforms-3/019add5e771534bb68424657ad94cdee/transformed/cardview-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.cardview:cardview:1.0.0] /Users/isra/.gradle/caches/transforms-3/019add5e771534bb68424657ad94cdee/transformed/cardview-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.viewpager2:viewpager2:1.0.0] /Users/isra/.gradle/caches/transforms-3/21f8526f0d48b1fdd53d78929a1fa6eb/transformed/viewpager2-1.0.0/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.viewpager2:viewpager2:1.0.0] /Users/isra/.gradle/caches/transforms-3/21f8526f0d48b1fdd53d78929a1fa6eb/transformed/viewpager2-1.0.0/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.legacy:legacy-support-v4:1.0.0] /Users/isra/.gradle/caches/transforms-3/f261daf69e694499d4a0d1570d8ca8d4/transformed/legacy-support-v4-1.0.0/AndroidManifest.xml:20:5-44
@@ -267,8 +306,6 @@ MERGED from [androidx.core:core:1.9.0] /Users/isra/.gradle/caches/transforms-3/1
 MERGED from [androidx.core:core:1.9.0] /Users/isra/.gradle/caches/transforms-3/16088aea6844a21f0ae8707202a192eb/transformed/core-1.9.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /Users/isra/.gradle/caches/transforms-3/618cbb17bba8c81668c4dc9604ffc868/transformed/cursoradapter-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /Users/isra/.gradle/caches/transforms-3/618cbb17bba8c81668c4dc9604ffc868/transformed/cursoradapter-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.cardview:cardview:1.0.0] /Users/isra/.gradle/caches/transforms-3/019add5e771534bb68424657ad94cdee/transformed/cardview-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.cardview:cardview:1.0.0] /Users/isra/.gradle/caches/transforms-3/019add5e771534bb68424657ad94cdee/transformed/cardview-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /Users/isra/.gradle/caches/transforms-3/5ed20899a643be0e8f8917ec92e14e8b/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /Users/isra/.gradle/caches/transforms-3/5ed20899a643be0e8f8917ec92e14e8b/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.profileinstaller:profileinstaller:1.3.0] /Users/isra/.gradle/caches/transforms-3/6aebe797d2fce5c8727f4e04e3cbbf9a/transformed/profileinstaller-1.3.0/AndroidManifest.xml:21:5-44

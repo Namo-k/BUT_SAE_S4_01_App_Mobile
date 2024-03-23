@@ -1,7 +1,6 @@
 package fr.iut.sae_s4_01_app_mobile;
 
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.cardview.widget.CardView;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -9,7 +8,6 @@ import android.text.method.PasswordTransformationMethod;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
-import android.widget.CompoundButton;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextView;
@@ -22,6 +20,7 @@ public class LoginActivity extends AppCompatActivity {
     private Identifiants DatabaseIdentifiant;
 
 
+    TextView MdpOublie;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -30,6 +29,16 @@ public class LoginActivity extends AppCompatActivity {
         Button loginBtn = findViewById(R.id.loginBtn);
         EditText usernameLN = findViewById(R.id.usernameET);
         EditText passwordLN = findViewById(R.id.passwordET);
+
+        MdpOublie = findViewById(R.id.MdpOublie);
+
+        MdpOublie.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(LoginActivity.this, ResetPasswordActivity.class);
+                startActivity(intent);
+            }
+        });
 
         DatabaseIdentifiant = new Identifiants(this);
 

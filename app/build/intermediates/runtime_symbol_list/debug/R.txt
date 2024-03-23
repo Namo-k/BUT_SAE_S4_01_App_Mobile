@@ -3007,6 +3007,7 @@ int drawable alertes_icone 0x7f07007a
 int drawable anciennes 0x7f07007b
 int drawable avd_hide_password 0x7f07007c
 int drawable avd_show_password 0x7f07007d
+int drawable background_edittext 0x7f070101
 int drawable btn_checkbox_checked_mtrl 0x7f07007e
 int drawable btn_checkbox_checked_to_unchecked_mtrl_animation 0x7f07007f
 int drawable btn_checkbox_unchecked_mtrl 0x7f070080
@@ -3277,6 +3278,8 @@ int id cadenas 0x7f09007f
 int id callMeasure 0x7f090080
 int id cancel_action 0x7f090081
 int id cancel_button 0x7f090082
+int id card 0x7f090281
+int id cardViewinputcode 0x7f090282
 int id carryVelocity 0x7f090083
 int id center 0x7f090084
 int id centerCrop 0x7f090085
@@ -3303,6 +3306,7 @@ int id colombeDroiteImage 0x7f090098
 int id colombeGaucheImage 0x7f090099
 int id colombes1 0x7f09009a
 int id colombes2 0x7f09009b
+int id colombesblanc2 0x7f090283
 int id compress 0x7f09009c
 int id confirm_button 0x7f09009d
 int id conseilText 0x7f09009e
@@ -3402,6 +3406,7 @@ int id groups 0x7f0900f8
 int id guidelineEnd 0x7f0900f9
 int id guidelineStart 0x7f0900fa
 int id header_title 0x7f0900fb
+int id heuredebut 0x7f090284
 int id hideable 0x7f0900fc
 int id home 0x7f0900fd
 int id homeAsUp 0x7f0900fe
@@ -3478,6 +3483,7 @@ int id material_timepicker_view 0x7f090144
 int id material_value_index 0x7f090145
 int id matrix 0x7f090146
 int id mdp 0x7f090147
+int id mdpConfirmation 0x7f090287
 int id medecinEdit 0x7f090148
 int id medecinLabelTV 0x7f090149
 int id medecinTV 0x7f09014a
@@ -3605,6 +3611,8 @@ int id ratio 0x7f0901c3
 int id rectangles 0x7f0901c4
 int id remerciement 0x7f0901c5
 int id report_drawn 0x7f0901c6
+int id reset 0x7f090285
+int id resetCodeInput 0x7f090286
 int id retour 0x7f0901c7
 int id reverseSawtooth 0x7f0901c8
 int id right 0x7f0901c9
@@ -3903,6 +3911,7 @@ int layout abc_select_dialog_material 0x7f0c001a
 int layout abc_tooltip 0x7f0c001b
 int layout activity_accueil 0x7f0c001c
 int layout activity_ancienne_alerte 0x7f0c001d
+int layout activity_change_password 0x7f0c0084
 int layout activity_cip_manuelle 0x7f0c001e
 int layout activity_createalert 0x7f0c001f
 int layout activity_login 0x7f0c0020
@@ -3912,6 +3921,8 @@ int layout activity_profil 0x7f0c0023
 int layout activity_profilmodif 0x7f0c0024
 int layout activity_register 0x7f0c0025
 int layout activity_register2 0x7f0c0026
+int layout activity_reset_code 0x7f0c0083
+int layout activity_reset_password 0x7f0c0082
 int layout activity_scanner 0x7f0c0027
 int layout activity_splash_screen 0x7f0c0028
 int layout custom_dialog 0x7f0c0029
@@ -7407,3 +7418,4 @@ int[] styleable zxing_view { 0x7f0304de }
 int styleable zxing_view_zxing_scanner_layout 0
 int xml backup_rules 0x7f140000
 int xml data_extraction_rules 0x7f140001
+int xml network_security_config 0x7f140002

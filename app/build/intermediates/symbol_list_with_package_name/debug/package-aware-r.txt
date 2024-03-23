@@ -3008,6 +3008,7 @@ drawable alertes_icone
 drawable anciennes
 drawable avd_hide_password
 drawable avd_show_password
+drawable background_edittext
 drawable btn_checkbox_checked_mtrl
 drawable btn_checkbox_checked_to_unchecked_mtrl_animation
 drawable btn_checkbox_unchecked_mtrl
@@ -3278,6 +3279,8 @@ id cadenas
 id callMeasure
 id cancel_action
 id cancel_button
+id card
+id cardViewinputcode
 id carryVelocity
 id center
 id centerCrop
@@ -3304,6 +3307,7 @@ id colombeDroiteImage
 id colombeGaucheImage
 id colombes1
 id colombes2
+id colombesblanc2
 id compress
 id confirm_button
 id conseilText
@@ -3403,6 +3407,7 @@ id groups
 id guidelineEnd
 id guidelineStart
 id header_title
+id heuredebut
 id hideable
 id home
 id homeAsUp
@@ -3479,6 +3484,7 @@ id material_timepicker_view
 id material_value_index
 id matrix
 id mdp
+id mdpConfirmation
 id medecinEdit
 id medecinLabelTV
 id medecinTV
@@ -3606,6 +3612,8 @@ id ratio
 id rectangles
 id remerciement
 id report_drawn
+id reset
+id resetCodeInput
 id retour
 id reverseSawtooth
 id right
@@ -3904,6 +3912,7 @@ layout abc_select_dialog_material
 layout abc_tooltip
 layout activity_accueil
 layout activity_ancienne_alerte
+layout activity_change_password
 layout activity_cip_manuelle
 layout activity_createalert
 layout activity_login
@@ -3913,6 +3922,8 @@ layout activity_profil
 layout activity_profilmodif
 layout activity_register
 layout activity_register2
+layout activity_reset_code
+layout activity_reset_password
 layout activity_scanner
 layout activity_splash_screen
 layout custom_dialog
@@ -5475,3 +5486,4 @@ styleable zxing_finder zxing_possible_result_points zxing_result_view zxing_view
 styleable zxing_view zxing_scanner_layout
 xml backup_rules
 xml data_extraction_rules
+xml network_security_config
