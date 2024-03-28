@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string-array name="tri_options">
+            <item>La plus récente</item>
+            <item>La plus ancienne</item>
+        </string-array>
     <color name="black">#FF000000</color>
     <color name="darkBlue">#3A4388</color>
     <color name="darkBlueLight">#4A55A2</color>
@@ -14,6 +18,7 @@
     <color name="textGrey">#505050</color>
     <color name="white">#FFFFFFFF</color>
     <string name="app_name">SAE_S4_01_App_Mobile</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="text_condition"> En cochant cette case, vous acceptez nos <u>conditions générales d`utilisation</u> </string>
     <string name="text_dataMatrix"> Scanner le code <b>DataMatrix</b> </string>
     <string name="text_interro1"> Une <b>DataMatrix</b> situé sur votre boîte du médicament ressemble à un QRCode, c`est un <b>code barre 2D</b> </string>

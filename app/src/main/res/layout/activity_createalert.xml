@@ -135,11 +135,15 @@
 
         </LinearLayout>
 
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
         <androidx.cardview.widget.CardView
             android:id="@+id/blocInformations"
-            android:layout_width="338dp"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginStart="27dp"
+            android:layout_marginHorizontal="15dp"
             app:cardBackgroundColor="@color/lightBlueLight"
             app:cardCornerRadius="20dp"
             >
@@ -147,7 +151,7 @@
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_margin="22dp">
+                android:layout_marginHorizontal="15dp">
 
                 <TextView
                     android:id="@+id/titre"
@@ -155,8 +159,8 @@
                     android:layout_height="wrap_content"
                     android:fontFamily="@font/inter_semibold"
                     android:gravity="center"
-                    android:text="Remplissez les informations
-                     ci dessous"
+                    android:text="Remplissez les information :"
+                    android:layout_marginTop="10dp"
                     android:textColor="@color/darkBlue"
                     android:textSize="17dp"
                     android:textStyle="bold" />
@@ -236,7 +240,7 @@
                     android:layout_height="wrap_content"
                     android:layout_below="@+id/raison"
                     android:layout_marginLeft="3dp"
-                    android:layout_marginTop="15dp"
+                    android:layout_marginTop="18dp"
                     android:fontFamily="@font/inter_medium"
                     android:text="Message  :"
                     android:textColor="@color/textGrey"
@@ -261,12 +265,12 @@
                     android:layout_height="65dp"
                     android:layout_below="@+id/message"
                     android:layout_marginLeft="3dp"
-                    android:layout_marginTop="12dp"
+                    android:layout_marginTop="10dp"
                     android:background="@drawable/round_createalert"
                     android:fontFamily="@font/inter"
                     android:hint="Expliquez nous votre situation..."
                     android:inputType="text"
-                    android:padding="15dp"
+                    android:paddingLeft="15dp"
                     android:textColor="@color/textDarkBlue"
                     android:textSize="13dp" />
 
@@ -276,7 +280,7 @@
                     android:layout_width="270dp"
                     android:layout_height="25dp"
                     android:layout_below="@+id/inputMedoc"
-                    android:layout_marginLeft="15dp"
+                    android:layout_marginLeft="18dp"
                     android:layout_marginTop="13.5dp"
                     android:layout_toEndOf="@id/raison"
                     android:background="@drawable/spinner"
@@ -287,13 +291,18 @@
                     tools:ignore="TouchTargetSizeCheck" />
 
 
+                <LinearLayout
+                    android:id="@+id/btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:layout_below="@+id/inputMessage">
                 <androidx.cardview.widget.CardView
                     android:id="@+id/btnAnnuler"
                     android:layout_width="120dp"
                     android:layout_height="34dp"
                     android:layout_below="@id/inputMessage"
-                    android:layout_marginLeft="3dp"
-                    android:layout_marginTop="22dp"
                     app:cardBackgroundColor="@color/darkBlueLight"
                     app:cardCornerRadius="6dp">
 
@@ -314,7 +323,6 @@
                     android:layout_height="34dp"
                     android:layout_below="@id/inputMessage"
                     android:layout_marginLeft="14dp"
-                    android:layout_marginTop="22dp"
                     android:layout_toRightOf="@+id/btnAnnuler"
                     app:cardBackgroundColor="@color/darkBlueLight"
                     app:cardCornerRadius="6dp">
@@ -329,35 +337,45 @@
                         android:textSize="15dp" />
                 </androidx.cardview.widget.CardView>
 
+                </LinearLayout>
 
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_below="@+id/btn">
                 <TextView
                     android:id="@+id/info1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_below="@+id/btnAnnuler"
-                    android:layout_marginLeft="29dp"
-                    android:layout_marginTop="23dp"
+                    android:layout_marginTop="10dp"
                     android:fontFamily="@font/inter_medium"
                     android:text="* Ces informations sont "
                     android:textColor="@color/textGrey"
+                    android:layout_marginBottom="5dp"
                     android:textSize="13dp" />
 
                 <TextView
                     android:id="@+id/info2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_below="@+id/btnAnnuler"
-                    android:layout_marginTop="23dp"
-                    android:layout_toRightOf="@+id/info1"
+                    android:layout_marginTop="10dp"
                     android:fontFamily="@font/inter_bold"
                     android:text="obligatoires"
+                    android:layout_marginBottom="5dp"
                     android:textColor="@color/red"
                     android:textSize="13.1dp" />
+
+                </LinearLayout>
 
             </RelativeLayout>
 
 
         </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
 
         <!-- ========== FIN SECTION INFORMATIONS =========== -->
 

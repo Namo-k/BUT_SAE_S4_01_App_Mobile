@@ -11,9 +11,11 @@ import android.util.Log;
 import androidx.annotation.Nullable;
 
 import java.lang.reflect.Array;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date; // Ajout de l'import pour la classe Date
 import java.util.List;
+import java.util.Locale;
 
 import fr.iut.sae_s4_01_app_mobile.Alerte;
 
@@ -30,8 +32,9 @@ public class Alertes extends SQLiteOpenHelper {
 
     @Override
     public void onCreate(SQLiteDatabase db) {
-        db.execSQL("CREATE TABLE alertes (id integer PRIMARY KEY, codeCis INTEGER, idUser INTEGER, nomMedicament VARCHAR(100), raison VARCHAR(50), message VARCHAR(500), dateAlerte TEXT DEFAULT (date('now')), FOREIGN KEY (idUser) REFERENCES users(id), FOREIGN KEY (codeCis) REFERENCES medicament(codeCis), FOREIGN KEY (nomMedicament) REFERENCES medicament(nomMedicament))");
+        db.execSQL("CREATE TABLE alertes (id integer PRIMARY KEY, codeCis INTEGER, idUser INTEGER, nomMedicament VARCHAR(100), raison VARCHAR(50), message VARCHAR(500), dateAlerte DATETIME DEFAULT (datetime('now')), FOREIGN KEY (idUser) REFERENCES users(id), FOREIGN KEY (codeCis) REFERENCES medicament(codeCis), FOREIGN KEY (nomMedicament) REFERENCES medicament(nomMedicament))");
     }
+
 
     @Override
     public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
@@ -53,10 +56,17 @@ public class Alertes extends SQLiteOpenHelper {
         valeurs.put("nomMedicament", nomMedicament);
         valeurs.put("raison", raison);
         valeurs.put("message", message);
+        valeurs.put("dateAlerte", getCurrentDateTime()); // Ajout de la date et l'heure actuelles
 
         long resultat = maBaseDeDonnees.insert("alertes", null, valeurs);
 
         return resultat != -1;
+    }
+
+    private String getCurrentDateTime() {
+        SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss", Locale.getDefault());
+        Date date = new Date();
+        return dateFormat.format(date);
     }
 
     public int getNombreTotalAlertes(int idUser) {
@@ -74,10 +84,30 @@ public class Alertes extends SQLiteOpenHelper {
 
 
 
-    public List<Alerte> getAllAlertes(int idUser) {
+    public List<Alerte> getAllAlertesDESC(int idUser) {
         List<Alerte> listeAlertes = new ArrayList<>();
         SQLiteDatabase db = this.getReadableDatabase();
         Cursor cursor = db.rawQuery("SELECT * FROM alertes where idUser = ? ORDER BY id DESC", new String[] {String.valueOf(idUser)});
+        if (cursor.moveToFirst()) {
+            do {
+                @SuppressLint("Range") int codeCis = cursor.getInt(cursor.getColumnIndex("codeCis"));
+                @SuppressLint("Range") String nomMedicament = cursor.getString(cursor.getColumnIndex("nomMedicament"));
+                @SuppressLint("Range") String raison = cursor.getString(cursor.getColumnIndex("raison"));
+                @SuppressLint("Range") String message = cursor.getString(cursor.getColumnIndex("message"));
+                @SuppressLint("Range") String dateAlerte = cursor.getString(cursor.getColumnIndex("dateAlerte"));
+
+                Alerte alerte = new Alerte(idUser, codeCis, idUser, nomMedicament, raison, message, dateAlerte);
+                listeAlertes.add(alerte);
+            } while (cursor.moveToNext());
+        }
+        cursor.close();
+        return listeAlertes;
+    }
+
+    public List<Alerte> getAllAlertesASC(int idUser) {
+        List<Alerte> listeAlertes = new ArrayList<>();
+        SQLiteDatabase db = this.getReadableDatabase();
+        Cursor cursor = db.rawQuery("SELECT * FROM alertes where idUser = ? ORDER BY id ASC", new String[] {String.valueOf(idUser)});
         if (cursor.moveToFirst()) {
             do {
                 @SuppressLint("Range") int codeCis = cursor.getInt(cursor.getColumnIndex("codeCis"));

@@ -30,6 +30,8 @@ public class LoginActivity extends AppCompatActivity {
         EditText usernameLN = findViewById(R.id.usernameET);
         EditText passwordLN = findViewById(R.id.passwordET);
 
+
+
         MdpOublie = findViewById(R.id.MdpOublie);
 
         MdpOublie.setOnClickListener(new View.OnClickListener() {

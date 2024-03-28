@@ -77,6 +77,7 @@ animator mtrl_fab_hide_motion_spec
 animator mtrl_fab_show_motion_spec
 animator mtrl_fab_transformation_sheet_collapse_spec
 animator mtrl_fab_transformation_sheet_expand_spec
+array tri_options
 attr SharedValue
 attr SharedValueId
 attr actionBarDivider
@@ -3008,6 +3009,7 @@ drawable alertes_icone
 drawable anciennes
 drawable avd_hide_password
 drawable avd_show_password
+drawable backgroud_list_tri
 drawable background_edittext
 drawable btn_checkbox_checked_mtrl
 drawable btn_checkbox_checked_to_unchecked_mtrl_animation
@@ -3267,6 +3269,7 @@ id bounce
 id bounceBoth
 id bounceEnd
 id bounceStart
+id btn
 id btnAlertes
 id btnAnnuler
 id btnDesactiverCompte
@@ -3307,7 +3310,9 @@ id colombeDroiteImage
 id colombeGaucheImage
 id colombes1
 id colombes2
+id colombesblanc
 id colombesblanc2
+id colombeslogo
 id compress
 id confirm_button
 id conseilText
@@ -3451,6 +3456,7 @@ id line3
 id linear
 id listMode
 id list_item
+id list_tri
 id loginBtn
 id logoIV
 id m3_side_sheet
@@ -4067,6 +4073,7 @@ string error_icon_content_description
 string exposed_dropdown_menu_content_description
 string fab_transformation_scrim_behavior
 string fab_transformation_sheet_behavior
+string hello_blank_fragment
 string hide_bottom_view_on_scroll_behavior
 string icon_content_description
 string item_view_role_description

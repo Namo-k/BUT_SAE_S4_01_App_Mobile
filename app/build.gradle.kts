@@ -6,6 +6,7 @@ android {
     namespace = "fr.iut.sae_s4_01_app_mobile"
     compileSdk = 34
 
+
     defaultConfig {
         applicationId = "fr.iut.sae_s4_01_app_mobile"
         minSdk = 24
@@ -14,6 +15,10 @@ android {
         versionName = "1.0"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildFeatures {
+        viewBinding = true // Activer la fonctionnalité de liaison de vue
     }
 
     buildTypes {

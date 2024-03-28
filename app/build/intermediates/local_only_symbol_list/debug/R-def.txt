@@ -1,5 +1,6 @@
 R_DEF: Internal format may change without notice
 local
+array tri_options
 color black
 color darkBlue
 color darkBlueLight
@@ -17,6 +18,7 @@ drawable adresse
 drawable alertes
 drawable alertes_icone
 drawable anciennes
+drawable backgroud_list_tri
 drawable background_edittext
 drawable cadenas
 drawable calendrier
@@ -78,6 +80,7 @@ id bienvenueText
 id blocAlert
 id blocAncienneAlerte
 id blocInformations
+id btn
 id btnAlertes
 id btnAnnuler
 id btnDesactiverCompte
@@ -95,7 +98,9 @@ id colombeDroiteImage
 id colombeGaucheImage
 id colombes1
 id colombes2
+id colombesblanc
 id colombesblanc2
+id colombeslogo
 id conseilText
 id dataTV
 id date
@@ -121,6 +126,7 @@ id interrogation2
 id interrogation2text
 id ligne1
 id ligne2
+id list_tri
 id loginBtn
 id logoIV
 id mailEdit
@@ -217,6 +223,7 @@ mipmap ic_launcher
 mipmap ic_launcher_round
 raw medicament
 string app_name
+string hello_blank_fragment
 string text_condition
 string text_dataMatrix
 string text_interro1

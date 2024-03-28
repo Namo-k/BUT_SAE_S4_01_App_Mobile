@@ -6,59 +6,58 @@
     android:layout_height="match_parent"
     android:background="#A0BFE0">
 
-
-    <TextView
-        android:id="@+id/welcomeTextView"
+    <RelativeLayout
+        android:id="@+id/entete"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="45dp"
-        android:layout_marginTop="40dp"
-        android:text="Bienvenue !"
-        android:fontFamily="@font/patuaone_regular"
-        android:textColor="#4A55A2"
-        android:textSize="24sp"
-        android:textStyle="bold" />
+        tools:context=".EnteteFragment">
 
+        <TextView
+            android:id="@+id/welcomeTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="20dp"
+            android:text="Bienvenue !"
+            android:fontFamily="@font/patuaone_regular"
+            android:textColor="#4A55A2"
+            android:textSize="24sp"
+            android:textStyle="bold" />
 
-    <ImageView
-        android:layout_width="105dp"
-        android:layout_height="105dp"
-        android:layout_below="@id/welcomeTextView"
-        android:layout_marginStart="270dp"
-        android:layout_marginTop="-64dp"
-        android:layout_marginBottom="70dp"
+        <ImageView
+            android:id="@+id/colombesblanc2"
+            android:layout_width="105dp"
+            android:layout_height="105dp"
+            android:layout_marginTop="100dp"
+            android:layout_alignParentStart="true"
+            android:src="@drawable/colombesblanc2" />
 
-        android:src="@drawable/colombesblanc" />
+        <ImageView
+            android:id="@+id/colombeslogo"
+            android:layout_width="220dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="15dp"
+            android:layout_below="@id/welcomeTextView"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/colombeslogo" />
 
+        <ImageView
+            android:id="@+id/colombesblanc"
+            android:layout_width="105dp"
+            android:layout_height="105dp"
+            android:layout_alignParentEnd="true"
+            android:src="@drawable/colombesblanc" />
 
-    <ImageView
-        android:layout_width="220dp"
-        android:layout_height="100dp"
-        android:layout_below="@id/welcomeTextView"
-        android:layout_marginStart="97dp"
-        android:layout_marginTop="15dp"
-        android:layout_marginEnd="70dp"
-        android:layout_marginBottom="70dp"
-        android:src="@drawable/colombeslogo" />
-
-
-    <ImageView
-        android:layout_width="105dp"
-        android:layout_height="105dp"
-        android:layout_below="@id/welcomeTextView"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="75dp"
-        android:layout_marginBottom="68dp"
-        android:src="@drawable/colombesblanc2" />
+    </RelativeLayout>
 
 
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/welcomeTextView"
+        android:layout_below="@id/entete"
         android:layout_centerHorizontal="true"
         android:layout_marginLeft="50dp"
-        android:layout_marginTop="188dp"
+        android:layout_marginTop="10dp"
         android:orientation="vertical"
         tools:ignore="ExtraText">
 

@@ -137,6 +137,24 @@
 
         </LinearLayout>
 
+
+
+
+
+        <Spinner
+            android:id="@+id/list_tri"
+            android:layout_width="wrap_content"
+            android:dropDownVerticalOffset="28dp"
+            android:layout_gravity="end"
+            android:layout_marginEnd="10dp"
+            app:cardCornerRadius="8dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/backgroud_list_tri"
+            android:layout_height="25dp"/>
+
+
+
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -158,6 +176,7 @@
 
 
         </LinearLayout>
+
 
         <LinearLayout
             android:layout_width="match_parent"

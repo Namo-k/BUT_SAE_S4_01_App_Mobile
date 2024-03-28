@@ -154,7 +154,7 @@ public class AccueilActivity extends AppCompatActivity {
 
         Alertes alertesDb = new Alertes(this);
 
-        List<Alerte> alertes = alertesDb.getAllAlertes(userID);
+        List<Alerte> alertes = alertesDb.getAllAlertesDESC(userID);
         Alerte alerteLaPlusRecente = null;
         if (!alertes.isEmpty()) {
             blocAncienneAlerte.setVisibility(View.VISIBLE);
