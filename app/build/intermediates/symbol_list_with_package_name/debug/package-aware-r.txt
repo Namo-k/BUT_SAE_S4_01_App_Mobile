@@ -3136,6 +3136,7 @@ drawable scan_logo
 drawable signature
 drawable spinner
 drawable stats
+drawable stats_logo
 drawable test_level_drawable
 drawable tooltip_frame_dark
 drawable tooltip_frame_light
@@ -3263,6 +3264,7 @@ id bienvenueText
 id blocAlert
 id blocAncienneAlerte
 id blocInformations
+id blocStats
 id blocking
 id bottom
 id bounce
@@ -3275,6 +3277,7 @@ id btnAnnuler
 id btnDesactiverCompte
 id btnEnregistrer
 id btnModifier
+id btnStats
 id btnSupprimerCompte
 id buttonPanel
 id cache_measures
@@ -3415,6 +3418,7 @@ id header_title
 id heuredebut
 id hideable
 id home
+id homeAdminBtn
 id homeAsUp
 id homeBtn
 id honorRequest
@@ -3496,6 +3500,8 @@ id medecinLabelTV
 id medecinTV
 id media_actions
 id medicamentLabelTV
+id medicamentLePlusSignaleLabelTV
+id medicamentLePlusSignaleTV
 id medicamentTV
 id message
 id messageLabelTV
@@ -3545,6 +3551,13 @@ id navigation_bar_item_small_label_view
 id navigation_header_container
 id nbAlertes
 id nbNotifTV
+id nbTotalAlertes
+id nbrSaisiCIPLabelTV
+id nbrSaisiCIPTV
+id nbrSaisiDataMatrixLabelTV
+id nbrSaisiDataMatrixTV
+id nbrSignalementLabelTV
+id nbrSignalementTV
 id never
 id neverCompleteToEnd
 id neverCompleteToStart
@@ -3596,6 +3609,9 @@ id path
 id pathRelative
 id peekHeight
 id percent
+id personneLabelTV
+id personneLayout
+id personneTV
 id pharmacieEdit
 id pharmacieLabelTV
 id pharmacieTV
@@ -3626,6 +3642,7 @@ id right
 id rightToLeft
 id right_icon
 id right_side
+id roleTV
 id rounded
 id row_index_key
 id saisieCIP
@@ -3693,8 +3710,12 @@ id start
 id startHorizontal
 id startToEnd
 id startVertical
+id statBtn
 id staticLayout
 id staticPostLayout
+id stats
+id statsBtn
+id stats_logo
 id status_bar_latest_event_content
 id stop
 id stretch
@@ -3731,7 +3752,6 @@ id textView2
 id textView3
 id textView5
 id textView7
-id textViewBarcode
 id textViewGenre
 id textViewemail
 id textViewnom
@@ -3754,6 +3774,8 @@ id toggle
 id top
 id topPanel
 id touch_outside
+id toutAlerteBtn
+id toutAlertelistView
 id transitionToEnd
 id transitionToStart
 id transition_current_scene
@@ -3762,6 +3784,8 @@ id transition_position
 id transition_scene_layoutid_cache
 id transition_transform
 id triangle
+id typeMedicamentLePlusSignaleLabelTV
+id typeMedicamentLePlusSignaleTV
 id unchecked
 id uniform
 id unlabeled
@@ -3917,6 +3941,7 @@ layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
 layout activity_accueil
+layout activity_accueil_admin
 layout activity_ancienne_alerte
 layout activity_change_password
 layout activity_cip_manuelle
@@ -3932,6 +3957,7 @@ layout activity_reset_code
 layout activity_reset_password
 layout activity_scanner
 layout activity_splash_screen
+layout activity_tout_alerte
 layout custom_dialog
 layout design_bottom_navigation_item
 layout design_bottom_sheet_dialog
@@ -3949,6 +3975,7 @@ layout design_navigation_menu_item
 layout design_text_input_end_icon
 layout design_text_input_start_icon
 layout item_alerte
+layout item_tout_alerte
 layout m3_alert_dialog
 layout m3_alert_dialog_actions
 layout m3_alert_dialog_title

@@ -38,8 +38,6 @@ public class AlerteAdapter extends ArrayAdapter<Alerte> {
         TextView date = itemView.findViewById(R.id.dateAlerte);
         date.setText(currentAlerte.getDateAlerte());
 
-
-
         return itemView;
     }
 

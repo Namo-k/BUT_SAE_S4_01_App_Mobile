@@ -82,8 +82,6 @@ public class Alertes extends SQLiteOpenHelper {
         return count;
     }
 
-
-
     public List<Alerte> getAllAlertesDESC(int idUser) {
         List<Alerte> listeAlertes = new ArrayList<>();
         SQLiteDatabase db = this.getReadableDatabase();
@@ -123,5 +121,62 @@ public class Alertes extends SQLiteOpenHelper {
         cursor.close();
         return listeAlertes;
     }
+
+    //Partie Admin :
+
+    public List<Alerte> getAllAlertes() {
+        List<Alerte> listeAlertes = new ArrayList<>();
+        SQLiteDatabase db = this.getReadableDatabase();
+        Cursor cursor = db.rawQuery("SELECT * FROM alertes ORDER BY id DESC", null);
+        if (cursor.moveToFirst()) {
+            do {
+                @SuppressLint("Range") int id = cursor.getInt(cursor.getColumnIndex("id"));
+                @SuppressLint("Range") int codeCis = cursor.getInt(cursor.getColumnIndex("codeCis"));
+                @SuppressLint("Range") int idUser = cursor.getInt(cursor.getColumnIndex("idUser"));
+                @SuppressLint("Range") String nomMedicament = cursor.getString(cursor.getColumnIndex("nomMedicament"));
+                @SuppressLint("Range") String raison = cursor.getString(cursor.getColumnIndex("raison"));
+                @SuppressLint("Range") String message = cursor.getString(cursor.getColumnIndex("message"));
+                @SuppressLint("Range") String dateAlerte = cursor.getString(cursor.getColumnIndex("dateAlerte"));
+
+                Alerte alerte = new Alerte(id, codeCis, idUser, nomMedicament, raison, message, dateAlerte);
+                listeAlertes.add(alerte);
+            } while (cursor.moveToNext());
+        }
+        cursor.close();
+        return listeAlertes;
+    }
+
+
+    public int getNombreTotalAlertes() {
+        SQLiteDatabase db = this.getReadableDatabase();
+        String countQuery = "SELECT COUNT(*) FROM alertes";
+        Cursor cursor = db.rawQuery(countQuery, null);
+        int count = 0;
+        if (cursor != null) {
+            cursor.moveToFirst();
+            count = cursor.getInt(0);
+            cursor.close();
+        }
+        return count;
+    }
+
+    @SuppressLint("Range")
+    public String getMedicamentLePlusSignale() {
+        SQLiteDatabase db = this.getReadableDatabase();
+        String medicamentLePlusSignale = null;
+
+        String query = "SELECT nomMedicament, COUNT(*) AS nombreAlertes FROM alertes GROUP BY nomMedicament ORDER BY nombreAlertes DESC LIMIT 1";
+
+        Cursor cursor = db.rawQuery(query, null);
+
+        if (cursor != null && cursor.moveToFirst()) {
+            medicamentLePlusSignale = cursor.getString(cursor.getColumnIndex("nomMedicament"));
+            cursor.close();
+        }
+
+        return medicamentLePlusSignale;
+    }
+
+
 
 }

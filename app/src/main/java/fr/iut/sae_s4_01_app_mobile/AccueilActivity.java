@@ -51,14 +51,6 @@ public class AccueilActivity extends AppCompatActivity {
         TextView messageTV = findViewById(R.id.messageTV);
         TextView dataTV = findViewById(R.id.dataTV);
 
-
-
-
-
-
-
-
-
         btnSaisie.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v) {
@@ -167,8 +159,6 @@ public class AccueilActivity extends AppCompatActivity {
             ((TextView) findViewById(R.id.messageTV)).setText(alerteLaPlusRecente.getMessage());
             ((TextView) findViewById(R.id.dataTV)).setText(alerteLaPlusRecente.getDateAlerte());
         }
-
-
 
     }
 }

@@ -64,6 +64,15 @@
             android:name="fr.iut.sae_s4_01_app_mobile.ResetPasswordActivity"
             android:exported="false" />
         <activity
+            android:name="fr.iut.sae_s4_01_app_mobile.SplashScreenActivity"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
             android:name="fr.iut.sae_s4_01_app_mobile.AccueilActivity"
             android:exported="true" >
 
@@ -73,15 +82,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
             -->
-        </activity>
-        <activity
-            android:name="fr.iut.sae_s4_01_app_mobile.SplashScreenActivity"
-            android:exported="true" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
         <activity
             android:name="fr.iut.sae_s4_01_app_mobile.LoginActivity"
@@ -190,6 +190,28 @@
         </activity>
         <activity
             android:name="fr.iut.sae_s4_01_app_mobile.NewAlertActivity"
+            android:exported="true" >
+
+            <!--
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            -->
+        </activity>
+        <activity
+            android:name="fr.iut.sae_s4_01_app_mobile.AccueilAdminActivity"
+            android:exported="true" >
+
+            <!--
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            -->
+        </activity>
+        <activity
+            android:name="fr.iut.sae_s4_01_app_mobile.ToutAlerteActivity"
             android:exported="true" >
 
             <!--
