@@ -42,6 +42,8 @@ public class AccueilActivity extends AppCompatActivity {
         ImageView btnProfil = (ImageView) findViewById(R.id.userBtn);
         TextView btnAlertes = (TextView) findViewById(R.id.btnAlertes);
         TextView btnPrenom = (TextView) findViewById(R.id.prenom);
+        ImageView btnModeNuit = findViewById(R.id.modenuit);
+        boolean isNightModeON;
 
         String prenom = DatabaseUser.getPrenom(userID);
         btnPrenom.append(prenom);
@@ -51,6 +53,14 @@ public class AccueilActivity extends AppCompatActivity {
         TextView messageTV = findViewById(R.id.messageTV);
         TextView dataTV = findViewById(R.id.dataTV);
 
+
+
+        btnModeNuit.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+            }
+        });
         btnSaisie.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v) {

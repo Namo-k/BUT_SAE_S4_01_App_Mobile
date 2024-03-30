@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#A0BFE0">
+    android:background="@color/lightBlue">
 
     <RelativeLayout
         android:id="@+id/entete"
@@ -20,7 +20,7 @@
             android:layout_marginTop="20dp"
             android:text="Bienvenue !"
             android:fontFamily="@font/patuaone_regular"
-            android:textColor="#4A55A2"
+            android:textColor="@color/darkBlueLight"
             android:textSize="24sp"
             android:textStyle="bold" />
 
@@ -200,7 +200,7 @@
             android:gravity="right"
             android:inputType="text"
             android:text="MOT DE PASSE OUBLIÉ ?"
-            android:textColor="#4A55A2"
+            android:textColor="@color/darkBlueLight"
             android:textSize="15sp"
             android:textStyle="bold"
             tools:ignore="TouchTargetSizeCheck" />
@@ -214,7 +214,7 @@
             android:layout_gravity="center"
             android:layout_marginTop="17dp"
             android:layout_marginBottom="10dp"
-            android:backgroundTint="#4A55A2"
+            android:backgroundTint="@color/darkBlueLight"
             android:text="CONNECTEZ-VOUS !"
             android:fontFamily="@font/inter_medium"
             android:textSize="13.5dp"
@@ -252,7 +252,7 @@
             android:layout_marginLeft="113dp"
             android:layout_marginTop="37dp"
             android:text="CRÉER UN COMPTE"
-            android:textColor="#4A55A2"
+            android:textColor="@color/darkBlueLight"
             android:fontFamily="@font/inter_extrabold"
             android:textSize="16dp"
             android:textStyle="bold" />

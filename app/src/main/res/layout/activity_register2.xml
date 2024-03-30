@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#A0BFE0">
+    android:background="@color/lightBlue">
 
     <!-- Début de la section Bienvenue -->
 
@@ -29,7 +29,7 @@
             android:layout_marginTop="20dp"
             android:text="Vous êtes nouveau ?"
             android:fontFamily="@font/patuaone_regular"
-            android:textColor="#4A55A2"
+            android:textColor="@color/darkBlueLight"
             android:textSize="21sp"
             android:textStyle="bold" />
 
@@ -80,7 +80,7 @@
             android:layout_marginLeft="10dp"
             android:text="Complétez quelques informations !"
             android:fontFamily="@font/patuaone_regular"
-            android:textColor="#4A55A2"
+            android:textColor="@color/darkBlueLight"
             android:textSize="21.5dp"
             />
 
@@ -260,7 +260,7 @@
             android:layout_width="240dp"
             android:layout_height="55dp"
             android:layout_gravity="center"
-            android:backgroundTint="#4A55A2"
+            android:backgroundTint="@color/darkBlueLight"
             android:text="Finaliser Inscription "
             android:fontFamily="@font/inter_medium"
             android:textSize="14dp"

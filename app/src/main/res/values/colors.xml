@@ -2,6 +2,8 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="whiteFond">#E2E2E2</color>
+
 
     <color name="textDarkBlue">#03008C</color>
     <color name="darkBlue">#3A4388</color>
@@ -9,6 +11,7 @@
     <color name="darkBlueLightLight">#7895CB</color>
     <color name="lightBlue">#A0BFE0</color>
     <color name="lightBlueLight">#C5DFF8</color>
+    <color name="blue"> #5C89BE</color>
 
     <color name="textBlue">#C5DFF8</color>
     <color name="textGrey">#505050</color>

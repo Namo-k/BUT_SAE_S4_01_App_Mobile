@@ -433,7 +433,7 @@
                     android:fontFamily="@font/inter_medium"
                     android:gravity="center"
                     android:text="Supprimer mon compte"
-                    android:textColor="#FF0000"
+                    android:textColor="@color/red"
                     android:textSize="14dp" />
 
             </androidx.cardview.widget.CardView>
@@ -446,7 +446,7 @@
                 android:layout_below="@+id/checkboxLayout"
                 android:layout_marginLeft="18dp"
                 android:alpha="0.8"
-                app:cardBackgroundColor="#5C89BE"
+                app:cardBackgroundColor="@color/blue"
                 app:cardCornerRadius="20dp"
                 android:layout_toRightOf="@id/btnSupprimerCompte">
 
@@ -478,7 +478,7 @@
                     android:fontFamily="@font/inter_medium"
                     android:gravity="center"
                     android:text="Désactiver mon compte"
-                    android:textColor="#FF0000"
+                    android:textColor="@color/red"
                     android:textSize="14dp" />
 
             </androidx.cardview.widget.CardView>
@@ -491,7 +491,7 @@
                 android:layout_below="@+id/checkboxLayout"
                 android:layout_marginLeft="18dp"
                 android:alpha="0.8"
-                app:cardBackgroundColor="#5C89BE"
+                app:cardBackgroundColor="@color/blue"
                 app:cardCornerRadius="20dp"
                 android:layout_toRightOf="@id/btnDesactiverCompte">
 

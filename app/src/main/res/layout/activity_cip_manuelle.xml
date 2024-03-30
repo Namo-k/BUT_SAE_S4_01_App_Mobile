@@ -216,7 +216,7 @@
                     android:inputType="number"
                     android:maxLength="13"
                     android:hint="0000000000000"
-                    android:textColorHint="#E2E2E2"
+                    android:textColorHint="@color/whiteFond"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/textCodeCIP"

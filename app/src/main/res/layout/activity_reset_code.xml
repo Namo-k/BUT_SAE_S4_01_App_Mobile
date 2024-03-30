@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#A0BFE0">
+    android:background="@color/lightBlue">
 
     <TextView
         android:id="@+id/welcomeTextView"
@@ -13,7 +13,7 @@
         android:layout_marginTop="40dp"
         android:text="Bienvenue !"
         android:fontFamily="@font/patuaone_regular"
-        android:textColor="#4A55A2"
+        android:textColor="@color/darkBlueLight"
         android:textSize="24sp"
         android:textStyle="bold" />
 
@@ -86,7 +86,7 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:text="Code de vérification : "
-                    android:textColor="#FFFFFF"
+                    android:textColor="@color/white"
                     android:textSize="18dp" />
 
                 <androidx.cardview.widget.CardView
@@ -96,7 +96,7 @@
                     android:layout_marginStart="20dp"
                     android:layout_marginTop="16dp"
                     android:layout_marginEnd="20dp"
-                    android:background="#FFFFFF"
+                    android:background="@color/white"
                     android:layout_marginBottom="20dp"
                     app:cardCornerRadius="8dp">
 

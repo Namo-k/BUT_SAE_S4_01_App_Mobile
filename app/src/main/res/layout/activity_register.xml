@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#A0BFE0">
+    android:background="@color/lightBlue">
 
 
 
@@ -29,7 +29,7 @@
             android:layout_marginTop="20dp"
             android:text="Vous êtes nouveau ?"
             android:fontFamily="@font/patuaone_regular"
-            android:textColor="#4A55A2"
+            android:textColor="@color/darkBlueLight"
             android:textSize="21sp"
             android:textStyle="bold" />
 
@@ -79,7 +79,7 @@
             android:fontFamily="@font/patuaone_regular"
             android:text="Complétez quelques informations !"
             android:textAlignment="center"
-            android:textColor="#4A55A2"
+            android:textColor="@color/darkBlueLight"
             android:textSize="21.5dp" />
 
         <LinearLayout
@@ -311,7 +311,7 @@
             android:layout_height="50dp"
             android:layout_gravity="center"
             android:layout_marginTop="30dp"
-            android:backgroundTint="#4A55A2"
+            android:backgroundTint="@color/darkBlueLight"
             android:text="Passer à la suite..."
             android:textSize="13.5dp"
             tools:ignore="TextSizeCheck" />

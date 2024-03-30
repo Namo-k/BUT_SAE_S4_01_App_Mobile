@@ -38,6 +38,15 @@
                 android:src="@drawable/deconnexion" />
 
             <ImageView
+                android:id="@+id/modenuit"
+                android:layout_width="43dp"
+                android:layout_height="43dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="110dp"
+                android:layout_marginTop="80dp"
+                android:src="@drawable/lune" />
+
+            <ImageView
                 android:id="@+id/logoIV"
                 android:layout_width="170dp"
                 android:layout_height="90.92dp"
@@ -276,7 +285,7 @@
                         android:layout_marginTop="2dp"
                         android:layout_toRightOf="@+id/scan_logo"
                         android:alpha="0.8"
-                        app:cardBackgroundColor="#5C89BE"
+                        app:cardBackgroundColor="@color/blue"
                         app:cardCornerRadius="20dp">
 
                         <TextView
@@ -329,7 +338,7 @@
                         android:layout_toRightOf="@+id/saisie_logo"
                         android:alpha="0.8"
                         android:layout_marginTop="2dp"
-                        app:cardBackgroundColor="#5C89BE"
+                        app:cardBackgroundColor="@color/blue"
                         app:cardCornerRadius="20dp">
 
                         <TextView

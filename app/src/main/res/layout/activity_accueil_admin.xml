@@ -358,7 +358,7 @@
                         android:layout_height="wrap_content"
                         android:text="Administrateur"
                         android:textStyle="bold"
-                        android:textColor="#3A4388"
+                        android:textColor="@color/darkBlue"
                         android:fontFamily="@font/inter_medium"
                         android:padding="3dp"
                         android:gravity="center"
