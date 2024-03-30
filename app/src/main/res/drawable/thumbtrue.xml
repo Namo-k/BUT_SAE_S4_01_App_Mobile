@@ -1,0 +1,14 @@
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="oval">
+            <solid android:color="@color/white" />
+            <size android:height="8dp" android:width="8dp" />
+            <stroke android:width="10dp" android:color="@color/darkBlue" />
+        </shape>
+    </item>
+    <item android:drawable="@drawable/lunemn"
+        android:top="200dp"
+        android:bottom="200dp"
+        android:right="200dp"
+        android:left="200dp" />
+</layer-list>
