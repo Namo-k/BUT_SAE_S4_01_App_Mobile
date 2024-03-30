@@ -1,4 +1,4 @@
-#Fri Mar 29 18:34:19 CET 2024
+#Sat Mar 30 07:32:29 CET 2024
 base.0=/Users/oumi/AndroidStudioProjects/BUT_SAE_S4_01_App_MobileMDNNUIT/app/build/intermediates/dex/debug/mergeExtDexDebug/classes.dex
 base.1=/Users/oumi/AndroidStudioProjects/BUT_SAE_S4_01_App_MobileMDNNUIT/app/build/intermediates/dex/debug/mergeProjectDexDebug/0/classes.dex
 base.2=/Users/oumi/AndroidStudioProjects/BUT_SAE_S4_01_App_MobileMDNNUIT/app/build/intermediates/dex/debug/mergeProjectDexDebug/12/classes.dex

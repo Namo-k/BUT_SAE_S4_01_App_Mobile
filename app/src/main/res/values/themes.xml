@@ -1,9 +1,21 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
     <style name="Base.Theme.SAE_S4_01_App_Mobile" parent="Theme.Material3.DayNight.NoActionBar">
-        <!-- Customize your light theme here. -->
-        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+        <item name="android:windowBackground">@color/whiteFond</item>
+        <item name="android:textColor">@color/textGrey</item>
+        <item name="android:textColorPrimary">@color/textGrey</item>
+        <item name="android:textColorSecondary">@color/textBlue</item>
+        <item name="colorPrimary">@color/darkBlue</item>
+        <item name="colorPrimaryDark">@color/darkBlueLight</item>
+        <item name="colorAccent">@color/red</item>
+        <item name="colorSecondary">@color/darkBlueLight</item>
     </style>
 
     <style name="Theme.SAE_S4_01_App_Mobile" parent="Base.Theme.SAE_S4_01_App_Mobile" />
+    <style name="ScreenBackground"><item name="android:background">@color/whiteFond</item></style>
+    <style name="card"><item name="android:background">@color/darkBlue</item></style>
+    <style name="btn"><item name="android:background">@color/lightBlue</item></style>
+    <style name="text"><item name="android:textColor">@color/whiteFond</item></style>
+    <style name="textred"><item name="android:textColor">@color/red</item></style>
+
 </resources>

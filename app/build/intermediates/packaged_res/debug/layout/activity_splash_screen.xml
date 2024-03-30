@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".SplashScreenActivity"
-    android:background="#A0BFE0">
+    android:background="@color/lightBlue">
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guidelineStart"
@@ -47,7 +47,7 @@
     android:layout_height="wrap_content"
     tools:ignore="MissingConstraints"
     android:text="Bienvenue !"
-    android:textColor="#4A55A2"
+    android:textColor="@color/darkBlueLight"
     android:textStyle="bold"
     android:textSize="25dp"
     android:fontFamily="@font/patuaone_regular"
@@ -78,7 +78,7 @@
         tools:ignore="MissingConstraints"
         android:text="Conseil :"
         android:textStyle="bold"
-        android:textColor="#FFFFFF"
+        android:textColor="@color/white"
         android:textSize="20dp"
         android:fontFamily="@font/patuaone_regular"
         android:layout_marginTop="55dp"
@@ -93,7 +93,7 @@
         android:layout_height="wrap_content"
         tools:ignore="MissingConstraints"
         android:textStyle="italic"
-        android:textColor="#FFFFFF"
+        android:textColor="@color/white"
         android:textSize="14dp"
         android:textAlignment="center"
         android:lineSpacingExtra="8dp"
@@ -108,7 +108,7 @@
         android:layout_height="wrap_content"
         app:layout_constraintTop_toBottomOf="@+id/citationText"
         android:indeterminate="true"
-        android:indeterminateTint="#FFFFFF"
+        android:indeterminateTint="@color/white"
         android:layout_marginTop="80dp"
         app:layout_constraintStart_toStartOf="@+id/guidelineStart"
         app:layout_constraintEnd_toEndOf="@+id/guidelineEnd"
@@ -123,7 +123,7 @@
         android:text="Version 1.1"
         android:textSize="16dp"
         android:textStyle="bold"
-        android:textColor="#4A55A2"
+        android:textColor="@color/darkBlueLight"
         tools:ignore="MissingConstraints"
         android:layout_marginBottom="20dp"
         app:layout_constraintBottom_toBottomOf="parent"

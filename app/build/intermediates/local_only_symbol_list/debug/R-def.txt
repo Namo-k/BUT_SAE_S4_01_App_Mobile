@@ -2,6 +2,7 @@ R_DEF: Internal format may change without notice
 local
 array tri_options
 color black
+color blue
 color darkBlue
 color darkBlueLight
 color darkBlueLightLight
@@ -13,7 +14,9 @@ color red
 color textBlue
 color textDarkBlue
 color textGrey
+color textGreyli
 color white
+color whiteFond
 drawable adresse
 drawable alertes
 drawable alertes_icone
@@ -39,6 +42,9 @@ drawable home
 drawable ic_launcher_background
 drawable ic_launcher_foreground
 drawable interrogation
+drawable lunemn
+drawable modejour
+drawable moon
 drawable nouveaucompte
 drawable oeilferme
 drawable oeilouvert
@@ -47,9 +53,14 @@ drawable round_createalert
 drawable round_login
 drawable scan_logo
 drawable signature
+drawable soleil
 drawable spinner
 drawable stats
 drawable stats_logo
+drawable sun
+drawable thumb
+drawable thumbtrue
+drawable track
 drawable user
 drawable utilisateur
 font inter
@@ -108,6 +119,7 @@ id conseilText
 id dataTV
 id date
 id dateAlerte
+id drawer_layout
 id editCodeCIP
 id email
 id entete
@@ -119,6 +131,7 @@ id guidelineStart
 id heuredebut
 id homeAdminBtn
 id homeBtn
+id imageView
 id info1
 id info2
 id inputCip
@@ -166,6 +179,7 @@ id nomLabelTV
 id nomMedoc
 id nomTV
 id notifBtn
+id nuitbtn
 id oeilferme
 id oeilouvert
 id page
@@ -204,6 +218,7 @@ id statBtn
 id stats
 id statsBtn
 id stats_logo
+id switchCompat
 id textCodeCIP
 id textMain
 id textProspection
@@ -214,6 +229,7 @@ id textView3
 id textView5
 id textView7
 id textViewGenre
+id textViewTitle
 id textViewemail
 id textViewnom
 id textViewprenom
@@ -246,11 +262,13 @@ layout activity_splash_screen
 layout activity_tout_alerte
 layout item_alerte
 layout item_tout_alerte
+layout preferences
 mipmap ic_launcher
 mipmap ic_launcher_round
 raw medicament
 string app_name
 string hello_blank_fragment
+string text
 string text_condition
 string text_dataMatrix
 string text_interro1
@@ -261,7 +279,12 @@ string text_prospection
 string text_saisieCIP
 string text_scanDataMatrix
 style Base.Theme.SAE_S4_01_App_Mobile
+style ScreenBackground
 style Theme.SAE_S4_01_App_Mobile
+style btn
+style card
+style text
+style textred
 xml backup_rules
 xml data_extraction_rules
 xml network_security_config

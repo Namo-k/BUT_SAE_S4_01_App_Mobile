@@ -1366,6 +1366,7 @@ color background_floating_material_light
 color background_material_dark
 color background_material_light
 color black
+color blue
 color bright_foreground_disabled_material_dark
 color bright_foreground_disabled_material_light
 color bright_foreground_inverse_material_dark
@@ -2111,9 +2112,11 @@ color switch_thumb_normal_material_light
 color textBlue
 color textDarkBlue
 color textGrey
+color textGreyli
 color tooltip_background_dark
 color tooltip_background_light
 color white
+color whiteFond
 color zxing_custom_possible_result_points
 color zxing_custom_result_view
 color zxing_custom_viewfinder_laser
@@ -3055,6 +3058,7 @@ drawable ic_mtrl_chip_checked_circle
 drawable ic_mtrl_chip_close_circle
 drawable ic_search_black_24
 drawable interrogation
+drawable lunemn
 drawable m3_avd_hide_password
 drawable m3_avd_show_password
 drawable m3_bottom_sheet_drag_handle
@@ -3076,6 +3080,8 @@ drawable material_ic_keyboard_arrow_previous_black_24dp
 drawable material_ic_keyboard_arrow_right_black_24dp
 drawable material_ic_menu_arrow_down_black_24dp
 drawable material_ic_menu_arrow_up_black_24dp
+drawable modejour
+drawable moon
 drawable mtrl_bottomsheet_drag_handle
 drawable mtrl_checkbox_button
 drawable mtrl_checkbox_button_checked_unchecked
@@ -3134,12 +3140,17 @@ drawable round_createalert
 drawable round_login
 drawable scan_logo
 drawable signature
+drawable soleil
 drawable spinner
 drawable stats
 drawable stats_logo
+drawable sun
 drawable test_level_drawable
+drawable thumb
+drawable thumbtrue
 drawable tooltip_frame_dark
 drawable tooltip_frame_light
+drawable track
 drawable user
 drawable utilisateur
 font inter
@@ -3364,6 +3375,7 @@ id dragLeft
 id dragRight
 id dragStart
 id dragUp
+id drawer_layout
 id dropdown_menu
 id easeIn
 id easeInOut
@@ -3429,6 +3441,7 @@ id ifRoom
 id ignore
 id ignoreRequest
 id image
+id imageView
 id immediateStop
 id included
 id indeterminate
@@ -3574,6 +3587,7 @@ id notifBtn
 id notification_background
 id notification_main_column
 id notification_main_column_container
+id nuitbtn
 id oeilferme
 id oeilouvert
 id off
@@ -3722,6 +3736,7 @@ id stretch
 id submenuarrow
 id submit_area
 id supportScrollUp
+id switchCompat
 id tabMode
 id tag_accessibility_actions
 id tag_accessibility_clickable_spans
@@ -3753,6 +3768,7 @@ id textView3
 id textView5
 id textView7
 id textViewGenre
+id textViewTitle
 id textViewemail
 id textViewnom
 id textViewprenom
@@ -4042,6 +4058,7 @@ layout notification_template_media
 layout notification_template_media_custom
 layout notification_template_part_chronometer
 layout notification_template_part_time
+layout preferences
 layout select_dialog_item_material
 layout select_dialog_multichoice_material
 layout select_dialog_singlechoice_material
@@ -4225,6 +4242,7 @@ string searchview_navigation_content_description
 string side_sheet_accessibility_pane_title
 string side_sheet_behavior
 string status_bar_notification_info_overflow
+string text
 string text_condition
 string text_dataMatrix
 string text_interro1
@@ -4580,6 +4598,7 @@ style RtlOverlay_Widget_AppCompat_Search_DropDown_Text
 style RtlOverlay_Widget_AppCompat_SearchView_MagIcon
 style RtlUnderlay_Widget_AppCompat_ActionButton
 style RtlUnderlay_Widget_AppCompat_ActionButton_Overflow
+style ScreenBackground
 style ShapeAppearance_M3_Comp_Badge_Large_Shape
 style ShapeAppearance_M3_Comp_Badge_Shape
 style ShapeAppearance_M3_Comp_BottomAppBar_Container_Shape
@@ -5361,6 +5380,10 @@ style Widget_MaterialComponents_Toolbar_PrimarySurface
 style Widget_MaterialComponents_Toolbar_Surface
 style Widget_MaterialComponents_Tooltip
 style Widget_Support_CoordinatorLayout
+style btn
+style card
+style text
+style textred
 style zxing_CaptureTheme
 styleable ActionBar background backgroundSplit backgroundStacked contentInsetEnd contentInsetEndWithActions contentInsetLeft contentInsetRight contentInsetStart contentInsetStartWithNavigation customNavigationLayout displayOptions divider elevation height hideOnContentScroll homeAsUpIndicator homeLayout icon indeterminateProgressStyle itemPadding logo navigationMode popupTheme progressBarPadding progressBarStyle subtitle subtitleTextStyle title titleTextStyle
 styleable ActionBarLayout android_layout_gravity

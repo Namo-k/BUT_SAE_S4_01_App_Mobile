@@ -8,6 +8,7 @@
     <string name="text_interro3"> La suppression d`un compte engendre la <b>suppression totale de vos données</b>, en êtes-vous sûr? </string>
     <string name="text_interro4"> La désactivation d`un compte <b>supprime votre compte temporairement</b>, qui peut être réactivé sous x mois</string>
     <string name="text_prospection"> En cochant cette case, vous acceptez de recevoir <b>par mail</b> des <b>actualités de santé</b> </string>
+    <string name="text">Light Mode</string>
     <string name="text_scanDataMatrix"> Vous avez plûtot une <b>DataMatrix ? </b> </string>
     <string name="hello_blank_fragment">Hello blank fragment</string>
         <string-array name="tri_options">

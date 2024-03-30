@@ -23,10 +23,16 @@
             app:cardCornerRadius="200dp"
             app:cardElevation="0dp">
 
+
+
+
             <ImageView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:src="@drawable/ovale_shape" />
+
+
+
 
             <ImageView
                 android:id="@+id/sedeconnecterBtn"
@@ -37,14 +43,6 @@
                 android:layout_marginTop="38dp"
                 android:src="@drawable/deconnexion" />
 
-            <ImageView
-                android:id="@+id/modenuit"
-                android:layout_width="43dp"
-                android:layout_height="43dp"
-                android:layout_gravity="center_vertical"
-                android:layout_marginLeft="110dp"
-                android:layout_marginTop="80dp"
-                android:src="@drawable/lune" />
 
             <ImageView
                 android:id="@+id/logoIV"
@@ -139,225 +137,225 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/accueil_phrase" />
 
-            <ImageView
-                android:id="@+id/colombes2"
-                android:layout_width="70dp"
-                android:layout_height="70dp"
-                android:layout_gravity="center_vertical"
-                android:layout_marginLeft="276.5dp"
-                android:layout_marginTop="-3.5dp"
-                android:src="@drawable/colombesgauche"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
-
             <!-- ========== FIN ACCUEIL =========== -->
 
             <!-- ========== DEBUT SECTION ALERTE =========== -->
 
-            <TextView
-                android:id="@+id/alertes"
-                android:layout_width="wrap_content"
-                android:layout_height="22dp"
-                android:layout_marginStart="30dp"
-                android:layout_marginTop="22dp"
-                android:fontFamily="@font/patuaone_regular"
-                android:text=" Créer une alerte"
-                android:textColor="@color/darkBlue"
-                android:textSize="21dp"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/prenom" />
+            <!-- <ImageView
+               android:id="@+id/colombes2"
+               android:layout_width="70dp"
+               android:layout_height="70dp"
+               android:layout_gravity="center_vertical"
+               android:layout_marginStart="276dp"
+               android:layout_marginTop="-3.5dp"
+               android:src="@drawable/colombesgauche"
+               app:layout_constraintStart_toStartOf="parent"
+               app:layout_constraintTop_toTopOf="parent" /> -->
 
-            <TextView
-                android:id="@+id/ligne1"
-                android:layout_width="180dp"
-                android:layout_height="1.5dp"
-                android:layout_marginStart="27dp"
-                android:layout_marginTop="12dp"
-                android:background="@color/lightBlue"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/alertes" />
+           <TextView
+               android:id="@+id/alertes"
+               android:layout_width="wrap_content"
+               android:layout_height="22dp"
+               android:layout_marginStart="30dp"
+               android:layout_marginTop="22dp"
+               android:fontFamily="@font/patuaone_regular"
+               android:text=" Créer une alerte"
+               android:textColor="@color/darkBlue"
+               android:textSize="21dp"
+               app:layout_constraintStart_toStartOf="parent"
+               app:layout_constraintTop_toBottomOf="@id/prenom" />
 
-            <ImageView
-                android:id="@+id/alertes_logo"
-                android:layout_width="47dp"
-                android:layout_height="48dp"
-                android:layout_marginTop="13dp"
-                android:layout_marginRight="30dp"
-                android:src="@drawable/alertes_icone"
-                android:textAlignment="center"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/prenom" />
+           <TextView
+               android:id="@+id/ligne1"
+               android:layout_width="180dp"
+               android:layout_height="1.5dp"
+               android:layout_marginStart="27dp"
+               android:layout_marginTop="12dp"
+               android:background="@color/lightBlue"
+               app:layout_constraintStart_toStartOf="parent"
+               app:layout_constraintTop_toBottomOf="@id/alertes" />
 
-
-            <androidx.cardview.widget.CardView
-                android:id="@+id/blocAlert"
-                android:layout_width="match_parent"
-                android:layout_height="150dp"
-                android:layout_marginStart="27dp"
-                android:layout_marginEnd="27dp"
-                android:layout_marginTop="30dp"
-                app:cardBackgroundColor="@color/lightBlueLight"
-                app:cardCornerRadius="20dp"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/alertes">
-
-                <androidx.cardview.widget.CardView
-                    android:id="@+id/interrogation1text"
-                    android:layout_width="150dp"
-                    android:visibility="gone"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="78dp"
-                    app:cardBackgroundColor="@color/lightBlue"
-                    app:cardCornerRadius="13dp">
-
-                    <TextView
-                        android:padding="12dp"
-                        android:alpha="1"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:fontFamily="@font/inter_medium"
-                        android:gravity="center"
-                        android:text="@string/text_interro1"
-                        android:textColor="@color/darkGrey"
-                        android:textSize="11.2dp"
-                        android:lineHeight="16.5dp"
-                        />
-                </androidx.cardview.widget.CardView>
-
-                <androidx.cardview.widget.CardView
-                    android:id="@+id/interrogation2text"
-                    android:layout_width="190dp"
-                    android:visibility="gone"
-                    android:layout_height="wrap_content"
-                    android:alpha="0.9"
-                    android:layout_marginLeft="146dp"
-                    android:layout_marginTop="78dp"
-                    app:cardBackgroundColor="@color/lightBlue"
-                    app:cardCornerRadius="13dp">
-
-                    <TextView
-                        android:padding="12dp"
-                        android:alpha="1"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:fontFamily="@font/inter_medium"
-                        android:gravity="center"
-                        android:text="@string/text_interro2"
-                        android:textColor="@color/darkGrey"
-                        android:textSize="11dp"
-                        android:lineHeight="16.3dp"
-                        />
-                </androidx.cardview.widget.CardView>
-
-                <RelativeLayout
-                    android:layout_width="126dp"
-                    android:layout_height="120dp"
-                    android:layout_marginLeft="30dp"
-                    android:layout_marginBottom="10dp"
-                    android:layout_marginTop="18dp">
-
-                    <TextView
-                        android:id="@+id/scanText"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:fontFamily="@font/inter_medium"
-                        android:lineHeight="19dp"
-                        android:text="@string/text_dataMatrix"
-                        android:textAlignment="center"
-                        android:textColor="@color/darkBlue"
-                        android:textSize="13.5dp" />
-
-                    <ImageView
-                        android:id="@+id/scan_logo"
-                        android:layout_width="60dp"
-                        android:layout_height="60.85dp"
-                        android:layout_below="@+id/scanText"
-                        android:layout_centerInParent="true"
-                        android:layout_marginTop="12dp"
-                        android:src="@drawable/scan_logo" />
-
-                    <androidx.cardview.widget.CardView
-                        android:id="@+id/interrogation1"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_below="@+id/scanText"
-                        android:layout_marginLeft="8dp"
-                        android:layout_marginTop="2dp"
-                        android:layout_toRightOf="@+id/scan_logo"
-                        android:alpha="0.8"
-                        app:cardBackgroundColor="@color/blue"
-                        app:cardCornerRadius="20dp">
-
-                        <TextView
-                            android:layout_width="25dp"
-                            android:layout_height="25dp"
-                            android:fontFamily="@font/inter_bold"
-                            android:gravity="center"
-                            android:text=" ? "
-                            android:textColor="@color/textDarkBlue"
-                            android:textSize="16dp"
-                            android:textStyle="bold" />
-                    </androidx.cardview.widget.CardView>
+           <ImageView
+               android:id="@+id/alertes_logo"
+               android:layout_width="47dp"
+               android:layout_height="48dp"
+               android:layout_marginTop="13dp"
+               android:layout_marginRight="30dp"
+               android:src="@drawable/alertes_icone"
+               android:textAlignment="center"
+               app:layout_constraintEnd_toEndOf="parent"
+               app:layout_constraintTop_toBottomOf="@+id/prenom" />
 
 
-                </RelativeLayout>
+           <androidx.cardview.widget.CardView
+               android:id="@+id/blocAlert"
+               android:layout_width="match_parent"
+               android:layout_height="150dp"
+               android:layout_marginStart="27dp"
+               android:layout_marginEnd="27dp"
+               android:layout_marginTop="30dp"
+               app:cardBackgroundColor="@color/lightBlueLight"
+               app:cardCornerRadius="20dp"
+               app:layout_constraintStart_toStartOf="parent"
+               app:layout_constraintTop_toBottomOf="@id/alertes">
 
-                <RelativeLayout
-                    android:layout_width="125dp"
-                    android:layout_height="120dp"
-                    android:layout_gravity="right"
-                    android:layout_marginTop="18dp"
-                    android:layout_marginRight="30dp">
+               <androidx.cardview.widget.CardView
+                   android:id="@+id/interrogation1text"
+                   android:layout_width="150dp"
+                   android:visibility="gone"
+                   android:layout_height="wrap_content"
+                   android:layout_marginTop="78dp"
+                   app:cardBackgroundColor="@color/lightBlue"
+                   app:cardCornerRadius="13dp">
 
-                    <TextView
-                        android:id="@+id/saisieText"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:fontFamily="@font/inter_medium"
-                        android:lineHeight="19dp"
-                        android:text="@string/text_saisieCIP"
-                        android:textAlignment="center"
-                        android:textColor="@color/darkBlue"
-                        android:textSize="13.5dp" />
+                   <TextView
+                       android:padding="12dp"
+                       android:alpha="1"
+                       android:layout_width="match_parent"
+                       android:layout_height="match_parent"
+                       android:fontFamily="@font/inter_medium"
+                       android:gravity="center"
+                       android:text="@string/text_interro1"
+                       android:textColor="@color/darkGrey"
+                       android:textSize="11.2dp"
+                       android:lineHeight="16.5dp"
+                       />
+               </androidx.cardview.widget.CardView>
 
-                    <ImageView
-                        android:id="@+id/saisie_logo"
-                        android:layout_width="58dp"
-                        android:layout_height="58dp"
-                        android:layout_below="@+id/saisieText"
-                        android:layout_centerInParent="true"
-                        android:layout_marginTop="11dp"
-                        android:src="@drawable/ecrire1" />
+               <androidx.cardview.widget.CardView
+                   android:id="@+id/interrogation2text"
+                   android:layout_width="190dp"
+                   android:visibility="gone"
+                   android:layout_height="wrap_content"
+                   android:alpha="0.9"
+                   android:layout_marginLeft="146dp"
+                   android:layout_marginTop="78dp"
+                   app:cardBackgroundColor="@color/lightBlue"
+                   app:cardCornerRadius="13dp">
 
-                    <androidx.cardview.widget.CardView
-                        android:id="@+id/interrogation2"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_below="@+id/saisieText"
-                        android:layout_marginLeft="9dp"
-                        android:layout_toRightOf="@+id/saisie_logo"
-                        android:alpha="0.8"
-                        android:layout_marginTop="2dp"
-                        app:cardBackgroundColor="@color/blue"
-                        app:cardCornerRadius="20dp">
+                   <TextView
+                       android:padding="12dp"
+                       android:alpha="1"
+                       android:layout_width="match_parent"
+                       android:layout_height="match_parent"
+                       android:fontFamily="@font/inter_medium"
+                       android:gravity="center"
+                       android:text="@string/text_interro2"
+                       android:textColor="@color/darkGrey"
+                       android:textSize="11dp"
+                       android:lineHeight="16.3dp"
+                       />
+               </androidx.cardview.widget.CardView>
 
-                        <TextView
-                            android:layout_width="25dp"
-                            android:layout_height="25dp"
-                            android:fontFamily="@font/inter_bold"
-                            android:gravity="center"
-                            android:text=" ? "
-                            android:textColor="@color/textDarkBlue"
-                            android:textSize="16dp"
-                            android:textStyle="bold" />
-                    </androidx.cardview.widget.CardView>
+               <RelativeLayout
+                   android:layout_width="126dp"
+                   android:layout_height="120dp"
+                   android:layout_marginLeft="30dp"
+                   android:layout_marginBottom="10dp"
+                   android:layout_marginTop="18dp">
+
+                   <TextView
+                       android:id="@+id/scanText"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:fontFamily="@font/inter_medium"
+                       android:lineHeight="19dp"
+                       android:text="@string/text_dataMatrix"
+                       android:textAlignment="center"
+                       android:textColor="@color/darkBlue"
+                       android:textSize="13.5dp" />
+
+                   <ImageView
+                       android:id="@+id/scan_logo"
+                       android:layout_width="60dp"
+                       android:layout_height="60.85dp"
+                       android:layout_below="@+id/scanText"
+                       android:layout_centerInParent="true"
+                       android:layout_marginTop="12dp"
+                       android:src="@drawable/scan_logo" />
+
+                   <androidx.cardview.widget.CardView
+                       android:id="@+id/interrogation1"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:layout_below="@+id/scanText"
+                       android:layout_marginLeft="8dp"
+                       android:layout_marginTop="2dp"
+                       android:layout_toRightOf="@+id/scan_logo"
+                       android:alpha="0.8"
+                       app:cardBackgroundColor="@color/blue"
+                       app:cardCornerRadius="20dp">
+
+                       <TextView
+                           android:layout_width="25dp"
+                           android:layout_height="25dp"
+                           android:fontFamily="@font/inter_bold"
+                           android:gravity="center"
+                           android:text=" ? "
+                           android:textColor="@color/textDarkBlue"
+                           android:textSize="16dp"
+                           android:textStyle="bold" />
+                   </androidx.cardview.widget.CardView>
 
 
-                </RelativeLayout>
+               </RelativeLayout>
 
-            </androidx.cardview.widget.CardView>
+               <RelativeLayout
+                   android:layout_width="125dp"
+                   android:layout_height="120dp"
+                   android:layout_gravity="right"
+                   android:layout_marginTop="18dp"
+                   android:layout_marginRight="30dp">
 
-            <!-- ========== FIN SECTION ALERTE =========== -->
+                   <TextView
+                       android:id="@+id/saisieText"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:fontFamily="@font/inter_medium"
+                       android:lineHeight="19dp"
+                       android:text="@string/text_saisieCIP"
+                       android:textAlignment="center"
+                       android:textColor="@color/darkBlue"
+                       android:textSize="13.5dp" />
+
+                   <ImageView
+                       android:id="@+id/saisie_logo"
+                       android:layout_width="58dp"
+                       android:layout_height="58dp"
+                       android:layout_below="@+id/saisieText"
+                       android:layout_centerInParent="true"
+                       android:layout_marginTop="11dp"
+                       android:src="@drawable/ecrire1" />
+
+                   <androidx.cardview.widget.CardView
+                       android:id="@+id/interrogation2"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:layout_below="@+id/saisieText"
+                       android:layout_marginLeft="9dp"
+                       android:layout_toRightOf="@+id/saisie_logo"
+                       android:alpha="0.8"
+                       android:layout_marginTop="2dp"
+                       app:cardBackgroundColor="@color/blue"
+                       app:cardCornerRadius="20dp">
+
+                       <TextView
+                           android:layout_width="25dp"
+                           android:layout_height="25dp"
+                           android:fontFamily="@font/inter_bold"
+                           android:gravity="center"
+                           android:text=" ? "
+                           android:textColor="@color/textDarkBlue"
+                           android:textSize="16dp"
+                           android:textStyle="bold" />
+                   </androidx.cardview.widget.CardView>
+
+
+               </RelativeLayout>
+
+           </androidx.cardview.widget.CardView>
+
+           <!-- ========== FIN SECTION ALERTE =========== -->
 
             <!-- ========== DEBUT ANCIENNE ALERTE =========== -->
 
@@ -551,6 +549,17 @@
                     android:textStyle="italic" />
 
             </androidx.cardview.widget.CardView>
+
+            <ImageView
+                android:id="@+id/nuitbtn"
+                android:layout_width="43dp"
+                android:layout_height="43dp"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/soleil"
+                tools:layout_editor_absoluteX="334dp"
+                tools:layout_editor_absoluteY="-1dp" />
+
+
             <!-- ========== FIN SECTION ANCIENNE ALERTE =========== -->/>
 
         </androidx.constraintlayout.widget.ConstraintLayout>

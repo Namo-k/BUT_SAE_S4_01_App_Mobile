@@ -7,9 +7,11 @@ import android.os.Bundle;
 import android.view.View;
 import android.view.animation.LinearInterpolator;
 import android.widget.Button;
+import android.widget.CompoundButton;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.ToggleButton;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.cardview.widget.CardView;
@@ -40,10 +42,11 @@ public class AccueilActivity extends AppCompatActivity {
 
         ImageView btnAncienne = (ImageView) findViewById(R.id.ancienneBtn);
         ImageView btnProfil = (ImageView) findViewById(R.id.userBtn);
+        ImageView btnNuit = (ImageView) findViewById(R.id.nuitbtn);
         TextView btnAlertes = (TextView) findViewById(R.id.btnAlertes);
         TextView btnPrenom = (TextView) findViewById(R.id.prenom);
-        ImageView btnModeNuit = findViewById(R.id.modenuit);
-        boolean isNightModeON;
+
+
 
         String prenom = DatabaseUser.getPrenom(userID);
         btnPrenom.append(prenom);
@@ -55,12 +58,10 @@ public class AccueilActivity extends AppCompatActivity {
 
 
 
-        btnModeNuit.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
 
-            }
-        });
+
+      
+        
         btnSaisie.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v) {
@@ -79,6 +80,13 @@ public class AccueilActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(AccueilActivity.this, ProfilActivity.class);
+                startActivity(intent);
+            }
+        });
+        btnNuit.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(AccueilActivity.this, PreferencesActivity.class);
                 startActivity(intent);
             }
         });
@@ -169,6 +177,11 @@ public class AccueilActivity extends AppCompatActivity {
             ((TextView) findViewById(R.id.messageTV)).setText(alerteLaPlusRecente.getMessage());
             ((TextView) findViewById(R.id.dataTV)).setText(alerteLaPlusRecente.getDateAlerte());
         }
+
+    }
+
+    private void applyNightMode() {
+        setTheme(R.style.Base_Theme_SAE_S4_01_App_Mobile);
 
     }
 }

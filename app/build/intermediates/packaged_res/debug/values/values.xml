@@ -5,6 +5,7 @@
             <item>La plus ancienne</item>
         </string-array>
     <color name="black">#FF000000</color>
+    <color name="blue"> #5C89BE</color>
     <color name="darkBlue">#3A4388</color>
     <color name="darkBlueLight">#4A55A2</color>
     <color name="darkBlueLightLight">#7895CB</color>
@@ -16,9 +17,12 @@
     <color name="textBlue">#C5DFF8</color>
     <color name="textDarkBlue">#03008C</color>
     <color name="textGrey">#505050</color>
+    <color name="textGreyli">#605C5C</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="whiteFond">#E2E2E2</color>
     <string name="app_name">SAE_S4_01_App_Mobile</string>
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="text">Light Mode</string>
     <string name="text_condition"> En cochant cette case, vous acceptez nos <u>conditions générales d`utilisation</u> </string>
     <string name="text_dataMatrix"> Scanner le code <b>DataMatrix</b> </string>
     <string name="text_interro1"> Une <b>DataMatrix</b> situé sur votre boîte du médicament ressemble à un QRCode, c`est un <b>code barre 2D</b> </string>
@@ -29,8 +33,19 @@
     <string name="text_saisieCIP"> Saisir le <b>Code CIP</b> manuellement </string>
     <string name="text_scanDataMatrix"> Vous avez plûtot une <b>DataMatrix ? </b> </string>
     <style name="Base.Theme.SAE_S4_01_App_Mobile" parent="Theme.Material3.DayNight.NoActionBar">
-        
-        
+        <item name="android:windowBackground">@color/whiteFond</item>
+        <item name="android:textColor">@color/textGrey</item>
+        <item name="android:textColorPrimary">@color/textGrey</item>
+        <item name="android:textColorSecondary">@color/textBlue</item>
+        <item name="colorPrimary">@color/darkBlue</item>
+        <item name="colorPrimaryDark">@color/darkBlueLight</item>
+        <item name="colorAccent">@color/red</item>
+        <item name="colorSecondary">@color/darkBlueLight</item>
     </style>
+    <style name="ScreenBackground"><item name="android:background">@color/whiteFond</item></style>
     <style name="Theme.SAE_S4_01_App_Mobile" parent="Base.Theme.SAE_S4_01_App_Mobile"/>
+    <style name="btn"><item name="android:background">@color/lightBlue</item></style>
+    <style name="card"><item name="android:background">@color/darkBlue</item></style>
+    <style name="text"><item name="android:textColor">@color/whiteFond</item></style>
+    <style name="textred"><item name="android:textColor">@color/red</item></style>
 </resources>

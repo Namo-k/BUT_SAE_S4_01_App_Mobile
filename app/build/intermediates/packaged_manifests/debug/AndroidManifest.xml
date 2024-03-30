@@ -52,7 +52,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:testOnly="true"
-        android:theme="@style/Theme.SAE_S4_01_App_Mobile"
+        android:theme="@style/Base.Theme.SAE_S4_01_App_Mobile"
         android:usesCleartextTraffic="true" >
         <activity
             android:name="fr.iut.sae_s4_01_app_mobile.ChangePasswordActivity"
@@ -93,6 +93,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
             -->
+        </activity>
+        <activity
+            android:name="fr.iut.sae_s4_01_app_mobile.PreferencesActivity"
+            android:exported="true" >
         </activity>
         <activity
             android:name="fr.iut.sae_s4_01_app_mobile.RegisterActivity"
