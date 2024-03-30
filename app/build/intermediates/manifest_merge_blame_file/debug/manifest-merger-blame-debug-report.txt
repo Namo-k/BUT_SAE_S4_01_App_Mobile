@@ -9,405 +9,407 @@
 9        android:targetSdkVersion="34" />
 10
 11    <uses-permission android:name="android.permission.INTERNET" />
-11-->/Users/oumi/AndroidStudioProjects/BUT_SAE_S4_01_App_MobileMDNNUIT/app/src/main/AndroidManifest.xml:5:5-67
-11-->/Users/oumi/AndroidStudioProjects/BUT_SAE_S4_01_App_MobileMDNNUIT/app/src/main/AndroidManifest.xml:5:22-64
+11-->C:\Users\33760\OneDrive\Bureau\BUT_SAE_S4_01\app\src\main\AndroidManifest.xml:5:5-67
+11-->C:\Users\33760\OneDrive\Bureau\BUT_SAE_S4_01\app\src\main\AndroidManifest.xml:5:22-64
 12    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
-12-->/Users/oumi/AndroidStudioProjects/BUT_SAE_S4_01_App_MobileMDNNUIT/app/src/main/AndroidManifest.xml:6:5-76
-12-->/Users/oumi/AndroidStudioProjects/BUT_SAE_S4_01_App_MobileMDNNUIT/app/src/main/AndroidManifest.xml:6:22-73
+12-->C:\Users\33760\OneDrive\Bureau\BUT_SAE_S4_01\app\src\main\AndroidManifest.xml:6:5-76
+12-->C:\Users\33760\OneDrive\Bureau\BUT_SAE_S4_01\app\src\main\AndroidManifest.xml:6:22-73
 13    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
-13-->/Users/oumi/AndroidStudioProjects/BUT_SAE_S4_01_App_MobileMDNNUIT/app/src/main/AndroidManifest.xml:7:5-80
-13-->/Users/oumi/AndroidStudioProjects/BUT_SAE_S4_01_App_MobileMDNNUIT/app/src/main/AndroidManifest.xml:7:22-77
+13-->C:\Users\33760\OneDrive\Bureau\BUT_SAE_S4_01\app\src\main\AndroidManifest.xml:7:5-80
+13-->C:\Users\33760\OneDrive\Bureau\BUT_SAE_S4_01\app\src\main\AndroidManifest.xml:7:22-77
 14    <uses-permission android:name="android.permission.CAMERA" /> <!-- Don't require camera, as this requires a rear camera. This allows it to work on the Nexus 7 -->
-14-->[com.journeyapps:zxing-android-embedded:4.2.0] /Users/oumi/.gradle/caches/transforms-3/a60982259721268694c6a5f2a67385db/transformed/zxing-android-embedded-4.2.0/AndroidManifest.xml:22:5-65
-14-->[com.journeyapps:zxing-android-embedded:4.2.0] /Users/oumi/.gradle/caches/transforms-3/a60982259721268694c6a5f2a67385db/transformed/zxing-android-embedded-4.2.0/AndroidManifest.xml:22:22-62
+14-->[com.journeyapps:zxing-android-embedded:4.2.0] C:\Users\33760\.gradle\caches\transforms-3\a60982259721268694c6a5f2a67385db\transformed\zxing-android-embedded-4.2.0\AndroidManifest.xml:22:5-65
+14-->[com.journeyapps:zxing-android-embedded:4.2.0] C:\Users\33760\.gradle\caches\transforms-3\a60982259721268694c6a5f2a67385db\transformed\zxing-android-embedded-4.2.0\AndroidManifest.xml:22:22-62
 15    <uses-feature
-15-->[com.journeyapps:zxing-android-embedded:4.2.0] /Users/oumi/.gradle/caches/transforms-3/a60982259721268694c6a5f2a67385db/transformed/zxing-android-embedded-4.2.0/AndroidManifest.xml:25:5-27:36
+15-->[com.journeyapps:zxing-android-embedded:4.2.0] C:\Users\33760\.gradle\caches\transforms-3\a60982259721268694c6a5f2a67385db\transformed\zxing-android-embedded-4.2.0\AndroidManifest.xml:25:5-27:36
 16        android:name="android.hardware.camera"
-16-->[com.journeyapps:zxing-android-embedded:4.2.0] /Users/oumi/.gradle/caches/transforms-3/a60982259721268694c6a5f2a67385db/transformed/zxing-android-embedded-4.2.0/AndroidManifest.xml:26:9-47
+16-->[com.journeyapps:zxing-android-embedded:4.2.0] C:\Users\33760\.gradle\caches\transforms-3\a60982259721268694c6a5f2a67385db\transformed\zxing-android-embedded-4.2.0\AndroidManifest.xml:26:9-47
 17        android:required="false" />
-17-->[com.journeyapps:zxing-android-embedded:4.2.0] /Users/oumi/.gradle/caches/transforms-3/a60982259721268694c6a5f2a67385db/transformed/zxing-android-embedded-4.2.0/AndroidManifest.xml:27:9-33
+17-->[com.journeyapps:zxing-android-embedded:4.2.0] C:\Users\33760\.gradle\caches\transforms-3\a60982259721268694c6a5f2a67385db\transformed\zxing-android-embedded-4.2.0\AndroidManifest.xml:27:9-33
 18    <uses-feature
-18-->[com.journeyapps:zxing-android-embedded:4.2.0] /Users/oumi/.gradle/caches/transforms-3/a60982259721268694c6a5f2a67385db/transformed/zxing-android-embedded-4.2.0/AndroidManifest.xml:28:5-30:36
+18-->[com.journeyapps:zxing-android-embedded:4.2.0] C:\Users\33760\.gradle\caches\transforms-3\a60982259721268694c6a5f2a67385db\transformed\zxing-android-embedded-4.2.0\AndroidManifest.xml:28:5-30:36
 19        android:name="android.hardware.camera.front"
-19-->[com.journeyapps:zxing-android-embedded:4.2.0] /Users/oumi/.gradle/caches/transforms-3/a60982259721268694c6a5f2a67385db/transformed/zxing-android-embedded-4.2.0/AndroidManifest.xml:29:9-53
+19-->[com.journeyapps:zxing-android-embedded:4.2.0] C:\Users\33760\.gradle\caches\transforms-3\a60982259721268694c6a5f2a67385db\transformed\zxing-android-embedded-4.2.0\AndroidManifest.xml:29:9-53
 20        android:required="false" /> <!-- TODO replace above two with next line after Android 4.2 -->
-20-->[com.journeyapps:zxing-android-embedded:4.2.0] /Users/oumi/.gradle/caches/transforms-3/a60982259721268694c6a5f2a67385db/transformed/zxing-android-embedded-4.2.0/AndroidManifest.xml:30:9-33
+20-->[com.journeyapps:zxing-android-embedded:4.2.0] C:\Users\33760\.gradle\caches\transforms-3\a60982259721268694c6a5f2a67385db\transformed\zxing-android-embedded-4.2.0\AndroidManifest.xml:30:9-33
 21    <!-- <uses-feature android:name="android.hardware.camera.any"/> -->
 22    <uses-feature
-22-->[com.journeyapps:zxing-android-embedded:4.2.0] /Users/oumi/.gradle/caches/transforms-3/a60982259721268694c6a5f2a67385db/transformed/zxing-android-embedded-4.2.0/AndroidManifest.xml:33:5-35:36
+22-->[com.journeyapps:zxing-android-embedded:4.2.0] C:\Users\33760\.gradle\caches\transforms-3\a60982259721268694c6a5f2a67385db\transformed\zxing-android-embedded-4.2.0\AndroidManifest.xml:33:5-35:36
 23        android:name="android.hardware.camera.autofocus"
-23-->[com.journeyapps:zxing-android-embedded:4.2.0] /Users/oumi/.gradle/caches/transforms-3/a60982259721268694c6a5f2a67385db/transformed/zxing-android-embedded-4.2.0/AndroidManifest.xml:34:9-57
+23-->[com.journeyapps:zxing-android-embedded:4.2.0] C:\Users\33760\.gradle\caches\transforms-3\a60982259721268694c6a5f2a67385db\transformed\zxing-android-embedded-4.2.0\AndroidManifest.xml:34:9-57
 24        android:required="false" />
-24-->[com.journeyapps:zxing-android-embedded:4.2.0] /Users/oumi/.gradle/caches/transforms-3/a60982259721268694c6a5f2a67385db/transformed/zxing-android-embedded-4.2.0/AndroidManifest.xml:35:9-33
+24-->[com.journeyapps:zxing-android-embedded:4.2.0] C:\Users\33760\.gradle\caches\transforms-3\a60982259721268694c6a5f2a67385db\transformed\zxing-android-embedded-4.2.0\AndroidManifest.xml:35:9-33
 25    <uses-feature
-25-->[com.journeyapps:zxing-android-embedded:4.2.0] /Users/oumi/.gradle/caches/transforms-3/a60982259721268694c6a5f2a67385db/transformed/zxing-android-embedded-4.2.0/AndroidManifest.xml:36:5-38:36
+25-->[com.journeyapps:zxing-android-embedded:4.2.0] C:\Users\33760\.gradle\caches\transforms-3\a60982259721268694c6a5f2a67385db\transformed\zxing-android-embedded-4.2.0\AndroidManifest.xml:36:5-38:36
 26        android:name="android.hardware.camera.flash"
-26-->[com.journeyapps:zxing-android-embedded:4.2.0] /Users/oumi/.gradle/caches/transforms-3/a60982259721268694c6a5f2a67385db/transformed/zxing-android-embedded-4.2.0/AndroidManifest.xml:37:9-53
+26-->[com.journeyapps:zxing-android-embedded:4.2.0] C:\Users\33760\.gradle\caches\transforms-3\a60982259721268694c6a5f2a67385db\transformed\zxing-android-embedded-4.2.0\AndroidManifest.xml:37:9-53
 27        android:required="false" />
-27-->[com.journeyapps:zxing-android-embedded:4.2.0] /Users/oumi/.gradle/caches/transforms-3/a60982259721268694c6a5f2a67385db/transformed/zxing-android-embedded-4.2.0/AndroidManifest.xml:38:9-33
+27-->[com.journeyapps:zxing-android-embedded:4.2.0] C:\Users\33760\.gradle\caches\transforms-3\a60982259721268694c6a5f2a67385db\transformed\zxing-android-embedded-4.2.0\AndroidManifest.xml:38:9-33
 28    <uses-feature
-28-->[com.journeyapps:zxing-android-embedded:4.2.0] /Users/oumi/.gradle/caches/transforms-3/a60982259721268694c6a5f2a67385db/transformed/zxing-android-embedded-4.2.0/AndroidManifest.xml:39:5-41:36
+28-->[com.journeyapps:zxing-android-embedded:4.2.0] C:\Users\33760\.gradle\caches\transforms-3\a60982259721268694c6a5f2a67385db\transformed\zxing-android-embedded-4.2.0\AndroidManifest.xml:39:5-41:36
 29        android:name="android.hardware.screen.landscape"
-29-->[com.journeyapps:zxing-android-embedded:4.2.0] /Users/oumi/.gradle/caches/transforms-3/a60982259721268694c6a5f2a67385db/transformed/zxing-android-embedded-4.2.0/AndroidManifest.xml:40:9-57
+29-->[com.journeyapps:zxing-android-embedded:4.2.0] C:\Users\33760\.gradle\caches\transforms-3\a60982259721268694c6a5f2a67385db\transformed\zxing-android-embedded-4.2.0\AndroidManifest.xml:40:9-57
 30        android:required="false" />
-30-->[com.journeyapps:zxing-android-embedded:4.2.0] /Users/oumi/.gradle/caches/transforms-3/a60982259721268694c6a5f2a67385db/transformed/zxing-android-embedded-4.2.0/AndroidManifest.xml:41:9-33
+30-->[com.journeyapps:zxing-android-embedded:4.2.0] C:\Users\33760\.gradle\caches\transforms-3\a60982259721268694c6a5f2a67385db\transformed\zxing-android-embedded-4.2.0\AndroidManifest.xml:41:9-33
 31    <uses-feature
-31-->[com.journeyapps:zxing-android-embedded:4.2.0] /Users/oumi/.gradle/caches/transforms-3/a60982259721268694c6a5f2a67385db/transformed/zxing-android-embedded-4.2.0/AndroidManifest.xml:42:5-44:36
+31-->[com.journeyapps:zxing-android-embedded:4.2.0] C:\Users\33760\.gradle\caches\transforms-3\a60982259721268694c6a5f2a67385db\transformed\zxing-android-embedded-4.2.0\AndroidManifest.xml:42:5-44:36
 32        android:name="android.hardware.wifi"
-32-->[com.journeyapps:zxing-android-embedded:4.2.0] /Users/oumi/.gradle/caches/transforms-3/a60982259721268694c6a5f2a67385db/transformed/zxing-android-embedded-4.2.0/AndroidManifest.xml:43:9-45
+32-->[com.journeyapps:zxing-android-embedded:4.2.0] C:\Users\33760\.gradle\caches\transforms-3\a60982259721268694c6a5f2a67385db\transformed\zxing-android-embedded-4.2.0\AndroidManifest.xml:43:9-45
 33        android:required="false" />
-33-->[com.journeyapps:zxing-android-embedded:4.2.0] /Users/oumi/.gradle/caches/transforms-3/a60982259721268694c6a5f2a67385db/transformed/zxing-android-embedded-4.2.0/AndroidManifest.xml:44:9-33
+33-->[com.journeyapps:zxing-android-embedded:4.2.0] C:\Users\33760\.gradle\caches\transforms-3\a60982259721268694c6a5f2a67385db\transformed\zxing-android-embedded-4.2.0\AndroidManifest.xml:44:9-33
 34
 35    <permission
-35-->[androidx.core:core:1.9.0] /Users/oumi/.gradle/caches/transforms-3/16088aea6844a21f0ae8707202a192eb/transformed/core-1.9.0/AndroidManifest.xml:22:5-24:47
+35-->[androidx.core:core:1.9.0] C:\Users\33760\.gradle\caches\transforms-3\16088aea6844a21f0ae8707202a192eb\transformed\core-1.9.0\AndroidManifest.xml:22:5-24:47
 36        android:name="fr.iut.sae_s4_01_app_mobile.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
-36-->[androidx.core:core:1.9.0] /Users/oumi/.gradle/caches/transforms-3/16088aea6844a21f0ae8707202a192eb/transformed/core-1.9.0/AndroidManifest.xml:23:9-81
+36-->[androidx.core:core:1.9.0] C:\Users\33760\.gradle\caches\transforms-3\16088aea6844a21f0ae8707202a192eb\transformed\core-1.9.0\AndroidManifest.xml:23:9-81
 37        android:protectionLevel="signature" />
-37-->[androidx.core:core:1.9.0] /Users/oumi/.gradle/caches/transforms-3/16088aea6844a21f0ae8707202a192eb/transformed/core-1.9.0/AndroidManifest.xml:24:9-44
+37-->[androidx.core:core:1.9.0] C:\Users\33760\.gradle\caches\transforms-3\16088aea6844a21f0ae8707202a192eb\transformed\core-1.9.0\AndroidManifest.xml:24:9-44
 38
 39    <uses-permission android:name="fr.iut.sae_s4_01_app_mobile.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
-39-->[androidx.core:core:1.9.0] /Users/oumi/.gradle/caches/transforms-3/16088aea6844a21f0ae8707202a192eb/transformed/core-1.9.0/AndroidManifest.xml:26:5-97
-39-->[androidx.core:core:1.9.0] /Users/oumi/.gradle/caches/transforms-3/16088aea6844a21f0ae8707202a192eb/transformed/core-1.9.0/AndroidManifest.xml:26:22-94
+39-->[androidx.core:core:1.9.0] C:\Users\33760\.gradle\caches\transforms-3\16088aea6844a21f0ae8707202a192eb\transformed\core-1.9.0\AndroidManifest.xml:26:5-97
+39-->[androidx.core:core:1.9.0] C:\Users\33760\.gradle\caches\transforms-3\16088aea6844a21f0ae8707202a192eb\transformed\core-1.9.0\AndroidManifest.xml:26:22-94
 40
 41    <application
-41-->/Users/oumi/AndroidStudioProjects/BUT_SAE_S4_01_App_MobileMDNNUIT/app/src/main/AndroidManifest.xml:9:5-198:19
+41-->C:\Users\33760\OneDrive\Bureau\BUT_SAE_S4_01\app\src\main\AndroidManifest.xml:9:5-199:19
 42        android:name="fr.iut.sae_s4_01_app_mobile.UserId"
-42-->/Users/oumi/AndroidStudioProjects/BUT_SAE_S4_01_App_MobileMDNNUIT/app/src/main/AndroidManifest.xml:10:9-31
+42-->C:\Users\33760\OneDrive\Bureau\BUT_SAE_S4_01\app\src\main\AndroidManifest.xml:10:9-31
 43        android:allowBackup="true"
-43-->/Users/oumi/AndroidStudioProjects/BUT_SAE_S4_01_App_MobileMDNNUIT/app/src/main/AndroidManifest.xml:11:9-35
+43-->C:\Users\33760\OneDrive\Bureau\BUT_SAE_S4_01\app\src\main\AndroidManifest.xml:11:9-35
 44        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-44-->[androidx.core:core:1.9.0] /Users/oumi/.gradle/caches/transforms-3/16088aea6844a21f0ae8707202a192eb/transformed/core-1.9.0/AndroidManifest.xml:28:18-86
+44-->[androidx.core:core:1.9.0] C:\Users\33760\.gradle\caches\transforms-3\16088aea6844a21f0ae8707202a192eb\transformed\core-1.9.0\AndroidManifest.xml:28:18-86
 45        android:dataExtractionRules="@xml/data_extraction_rules"
-45-->/Users/oumi/AndroidStudioProjects/BUT_SAE_S4_01_App_MobileMDNNUIT/app/src/main/AndroidManifest.xml:12:9-65
+45-->C:\Users\33760\OneDrive\Bureau\BUT_SAE_S4_01\app\src\main\AndroidManifest.xml:12:9-65
 46        android:debuggable="true"
 47        android:extractNativeLibs="false"
 48        android:fullBackupContent="@xml/backup_rules"
-48-->/Users/oumi/AndroidStudioProjects/BUT_SAE_S4_01_App_MobileMDNNUIT/app/src/main/AndroidManifest.xml:13:9-54
+48-->C:\Users\33760\OneDrive\Bureau\BUT_SAE_S4_01\app\src\main\AndroidManifest.xml:13:9-54
 49        android:icon="@mipmap/ic_launcher"
-49-->/Users/oumi/AndroidStudioProjects/BUT_SAE_S4_01_App_MobileMDNNUIT/app/src/main/AndroidManifest.xml:14:9-43
+49-->C:\Users\33760\OneDrive\Bureau\BUT_SAE_S4_01\app\src\main\AndroidManifest.xml:14:9-43
 50        android:label="@string/app_name"
-50-->/Users/oumi/AndroidStudioProjects/BUT_SAE_S4_01_App_MobileMDNNUIT/app/src/main/AndroidManifest.xml:15:9-41
+50-->C:\Users\33760\OneDrive\Bureau\BUT_SAE_S4_01\app\src\main\AndroidManifest.xml:15:9-41
 51        android:networkSecurityConfig="@xml/network_security_config"
-51-->/Users/oumi/AndroidStudioProjects/BUT_SAE_S4_01_App_MobileMDNNUIT/app/src/main/AndroidManifest.xml:16:9-69
+51-->C:\Users\33760\OneDrive\Bureau\BUT_SAE_S4_01\app\src\main\AndroidManifest.xml:16:9-69
 52        android:roundIcon="@mipmap/ic_launcher_round"
-52-->/Users/oumi/AndroidStudioProjects/BUT_SAE_S4_01_App_MobileMDNNUIT/app/src/main/AndroidManifest.xml:17:9-54
+52-->C:\Users\33760\OneDrive\Bureau\BUT_SAE_S4_01\app\src\main\AndroidManifest.xml:17:9-54
 53        android:supportsRtl="true"
-53-->/Users/oumi/AndroidStudioProjects/BUT_SAE_S4_01_App_MobileMDNNUIT/app/src/main/AndroidManifest.xml:18:9-35
+53-->C:\Users\33760\OneDrive\Bureau\BUT_SAE_S4_01\app\src\main\AndroidManifest.xml:18:9-35
 54        android:testOnly="true"
 55        android:theme="@style/Base.Theme.SAE_S4_01_App_Mobile"
-55-->/Users/oumi/AndroidStudioProjects/BUT_SAE_S4_01_App_MobileMDNNUIT/app/src/main/AndroidManifest.xml:20:9-63
+55-->C:\Users\33760\OneDrive\Bureau\BUT_SAE_S4_01\app\src\main\AndroidManifest.xml:20:9-63
 56        android:usesCleartextTraffic="true" >
-56-->/Users/oumi/AndroidStudioProjects/BUT_SAE_S4_01_App_MobileMDNNUIT/app/src/main/AndroidManifest.xml:21:9-44
+56-->C:\Users\33760\OneDrive\Bureau\BUT_SAE_S4_01\app\src\main\AndroidManifest.xml:21:9-44
 57        <activity
-57-->/Users/oumi/AndroidStudioProjects/BUT_SAE_S4_01_App_MobileMDNNUIT/app/src/main/AndroidManifest.xml:23:9-25:40
+57-->C:\Users\33760\OneDrive\Bureau\BUT_SAE_S4_01\app\src\main\AndroidManifest.xml:23:9-25:40
 58            android:name="fr.iut.sae_s4_01_app_mobile.ChangePasswordActivity"
-58-->/Users/oumi/AndroidStudioProjects/BUT_SAE_S4_01_App_MobileMDNNUIT/app/src/main/AndroidManifest.xml:24:13-51
+58-->C:\Users\33760\OneDrive\Bureau\BUT_SAE_S4_01\app\src\main\AndroidManifest.xml:24:13-51
 59            android:exported="false" />
-59-->/Users/oumi/AndroidStudioProjects/BUT_SAE_S4_01_App_MobileMDNNUIT/app/src/main/AndroidManifest.xml:25:13-37
+59-->C:\Users\33760\OneDrive\Bureau\BUT_SAE_S4_01\app\src\main\AndroidManifest.xml:25:13-37
 60        <activity
-60-->/Users/oumi/AndroidStudioProjects/BUT_SAE_S4_01_App_MobileMDNNUIT/app/src/main/AndroidManifest.xml:26:9-28:40
+60-->C:\Users\33760\OneDrive\Bureau\BUT_SAE_S4_01\app\src\main\AndroidManifest.xml:26:9-28:40
 61            android:name="fr.iut.sae_s4_01_app_mobile.ResetCodeActivity"
-61-->/Users/oumi/AndroidStudioProjects/BUT_SAE_S4_01_App_MobileMDNNUIT/app/src/main/AndroidManifest.xml:27:13-46
+61-->C:\Users\33760\OneDrive\Bureau\BUT_SAE_S4_01\app\src\main\AndroidManifest.xml:27:13-46
 62            android:exported="false" />
-62-->/Users/oumi/AndroidStudioProjects/BUT_SAE_S4_01_App_MobileMDNNUIT/app/src/main/AndroidManifest.xml:28:13-37
+62-->C:\Users\33760\OneDrive\Bureau\BUT_SAE_S4_01\app\src\main\AndroidManifest.xml:28:13-37
 63        <activity
-63-->/Users/oumi/AndroidStudioProjects/BUT_SAE_S4_01_App_MobileMDNNUIT/app/src/main/AndroidManifest.xml:29:9-31:40
+63-->C:\Users\33760\OneDrive\Bureau\BUT_SAE_S4_01\app\src\main\AndroidManifest.xml:29:9-31:40
 64            android:name="fr.iut.sae_s4_01_app_mobile.ResetPasswordActivity"
-64-->/Users/oumi/AndroidStudioProjects/BUT_SAE_S4_01_App_MobileMDNNUIT/app/src/main/AndroidManifest.xml:30:13-50
+64-->C:\Users\33760\OneDrive\Bureau\BUT_SAE_S4_01\app\src\main\AndroidManifest.xml:30:13-50
 65            android:exported="false" />
-65-->/Users/oumi/AndroidStudioProjects/BUT_SAE_S4_01_App_MobileMDNNUIT/app/src/main/AndroidManifest.xml:31:13-37
+65-->C:\Users\33760\OneDrive\Bureau\BUT_SAE_S4_01\app\src\main\AndroidManifest.xml:31:13-37
 66        <activity
-66-->/Users/oumi/AndroidStudioProjects/BUT_SAE_S4_01_App_MobileMDNNUIT/app/src/main/AndroidManifest.xml:33:9-41:20
+66-->C:\Users\33760\OneDrive\Bureau\BUT_SAE_S4_01\app\src\main\AndroidManifest.xml:33:9-41:20
 67            android:name="fr.iut.sae_s4_01_app_mobile.SplashScreenActivity"
-67-->/Users/oumi/AndroidStudioProjects/BUT_SAE_S4_01_App_MobileMDNNUIT/app/src/main/AndroidManifest.xml:34:13-49
+67-->C:\Users\33760\OneDrive\Bureau\BUT_SAE_S4_01\app\src\main\AndroidManifest.xml:34:13-49
 68            android:exported="true" >
-68-->/Users/oumi/AndroidStudioProjects/BUT_SAE_S4_01_App_MobileMDNNUIT/app/src/main/AndroidManifest.xml:35:13-36
+68-->C:\Users\33760\OneDrive\Bureau\BUT_SAE_S4_01\app\src\main\AndroidManifest.xml:35:13-36
 69            <intent-filter>
-69-->/Users/oumi/AndroidStudioProjects/BUT_SAE_S4_01_App_MobileMDNNUIT/app/src/main/AndroidManifest.xml:36:13-40:29
+69-->C:\Users\33760\OneDrive\Bureau\BUT_SAE_S4_01\app\src\main\AndroidManifest.xml:36:13-40:29
 70                <action android:name="android.intent.action.MAIN" />
-70-->/Users/oumi/AndroidStudioProjects/BUT_SAE_S4_01_App_MobileMDNNUIT/app/src/main/AndroidManifest.xml:37:17-69
-70-->/Users/oumi/AndroidStudioProjects/BUT_SAE_S4_01_App_MobileMDNNUIT/app/src/main/AndroidManifest.xml:37:25-66
+70-->C:\Users\33760\OneDrive\Bureau\BUT_SAE_S4_01\app\src\main\AndroidManifest.xml:37:17-69
+70-->C:\Users\33760\OneDrive\Bureau\BUT_SAE_S4_01\app\src\main\AndroidManifest.xml:37:25-66
 71
 72                <category android:name="android.intent.category.LAUNCHER" />
-72-->/Users/oumi/AndroidStudioProjects/BUT_SAE_S4_01_App_MobileMDNNUIT/app/src/main/AndroidManifest.xml:39:17-77
-72-->/Users/oumi/AndroidStudioProjects/BUT_SAE_S4_01_App_MobileMDNNUIT/app/src/main/AndroidManifest.xml:39:27-74
+72-->C:\Users\33760\OneDrive\Bureau\BUT_SAE_S4_01\app\src\main\AndroidManifest.xml:39:17-77
+72-->C:\Users\33760\OneDrive\Bureau\BUT_SAE_S4_01\app\src\main\AndroidManifest.xml:39:27-74
 73            </intent-filter>
 74        </activity>
 75        <activity
-75-->/Users/oumi/AndroidStudioProjects/BUT_SAE_S4_01_App_MobileMDNNUIT/app/src/main/AndroidManifest.xml:42:9-52:20
+75-->C:\Users\33760\OneDrive\Bureau\BUT_SAE_S4_01\app\src\main\AndroidManifest.xml:42:9-53:20
 76            android:name="fr.iut.sae_s4_01_app_mobile.AccueilActivity"
-76-->/Users/oumi/AndroidStudioProjects/BUT_SAE_S4_01_App_MobileMDNNUIT/app/src/main/AndroidManifest.xml:43:13-44
-77            android:exported="true" >
-77-->/Users/oumi/AndroidStudioProjects/BUT_SAE_S4_01_App_MobileMDNNUIT/app/src/main/AndroidManifest.xml:44:13-36
-78
-79            <!--
-80            <intent-filter>
-81                <action android:name="android.intent.action.MAIN" />
-82                <category android:name="android.intent.category.LAUNCHER" />
-83            </intent-filter>
-84            -->
-85        </activity>
-86        <activity
-86-->/Users/oumi/AndroidStudioProjects/BUT_SAE_S4_01_App_MobileMDNNUIT/app/src/main/AndroidManifest.xml:53:9-63:20
-87            android:name="fr.iut.sae_s4_01_app_mobile.LoginActivity"
-87-->/Users/oumi/AndroidStudioProjects/BUT_SAE_S4_01_App_MobileMDNNUIT/app/src/main/AndroidManifest.xml:54:13-42
-88            android:exported="true" >
-88-->/Users/oumi/AndroidStudioProjects/BUT_SAE_S4_01_App_MobileMDNNUIT/app/src/main/AndroidManifest.xml:55:13-36
-89
-90            <!--
-91            <intent-filter>
-92                <action android:name="android.intent.action.MAIN" />
-93                <category android:name="android.intent.category.LAUNCHER" />
-94            </intent-filter>
-95            -->
-96        </activity>
-97        <activity
-97-->/Users/oumi/AndroidStudioProjects/BUT_SAE_S4_01_App_MobileMDNNUIT/app/src/main/AndroidManifest.xml:64:9-67:20
-98            android:name="fr.iut.sae_s4_01_app_mobile.PreferencesActivity"
-98-->/Users/oumi/AndroidStudioProjects/BUT_SAE_S4_01_App_MobileMDNNUIT/app/src/main/AndroidManifest.xml:65:13-48
-99            android:exported="true" >
-99-->/Users/oumi/AndroidStudioProjects/BUT_SAE_S4_01_App_MobileMDNNUIT/app/src/main/AndroidManifest.xml:66:13-36
-100        </activity>
-101        <activity
-101-->/Users/oumi/AndroidStudioProjects/BUT_SAE_S4_01_App_MobileMDNNUIT/app/src/main/AndroidManifest.xml:69:9-79:20
-102            android:name="fr.iut.sae_s4_01_app_mobile.RegisterActivity"
-102-->/Users/oumi/AndroidStudioProjects/BUT_SAE_S4_01_App_MobileMDNNUIT/app/src/main/AndroidManifest.xml:70:13-45
-103            android:exported="true" >
-103-->/Users/oumi/AndroidStudioProjects/BUT_SAE_S4_01_App_MobileMDNNUIT/app/src/main/AndroidManifest.xml:71:13-36
-104
-105            <!--
-106            <intent-filter>
-107                <action android:name="android.intent.action.MAIN" />
-108                <category android:name="android.intent.category.LAUNCHER" />
-109            </intent-filter>
-110            -->
-111        </activity>
-112        <activity
-112-->/Users/oumi/AndroidStudioProjects/BUT_SAE_S4_01_App_MobileMDNNUIT/app/src/main/AndroidManifest.xml:80:9-91:20
-113            android:name="fr.iut.sae_s4_01_app_mobile.RegisterActivity2"
-113-->/Users/oumi/AndroidStudioProjects/BUT_SAE_S4_01_App_MobileMDNNUIT/app/src/main/AndroidManifest.xml:81:13-46
-114            android:exported="true" >
-114-->/Users/oumi/AndroidStudioProjects/BUT_SAE_S4_01_App_MobileMDNNUIT/app/src/main/AndroidManifest.xml:82:13-36
-115
-116            <!--
-117            <intent-filter>
-118                <action android:name="android.intent.action.MAIN" />
-119
-120                <category android:name="android.intent.category.LAUNCHER" />
-121            </intent-filter>
-122            -->
-123        </activity>
-124        <activity
-124-->/Users/oumi/AndroidStudioProjects/BUT_SAE_S4_01_App_MobileMDNNUIT/app/src/main/AndroidManifest.xml:92:9-103:20
-125            android:name="fr.iut.sae_s4_01_app_mobile.ScannerActivity"
-125-->/Users/oumi/AndroidStudioProjects/BUT_SAE_S4_01_App_MobileMDNNUIT/app/src/main/AndroidManifest.xml:93:13-44
-126            android:exported="true" >
-126-->/Users/oumi/AndroidStudioProjects/BUT_SAE_S4_01_App_MobileMDNNUIT/app/src/main/AndroidManifest.xml:94:13-36
-127
-128            <!--
-129            <intent-filter>
-130                <action android:name="android.intent.action.MAIN" />
-131
-132                <category android:name="android.intent.category.LAUNCHER" />
-133            </intent-filter>
-134            -->
-135        </activity>
-136        <activity
-136-->/Users/oumi/AndroidStudioProjects/BUT_SAE_S4_01_App_MobileMDNNUIT/app/src/main/AndroidManifest.xml:104:9-115:20
-137            android:name="fr.iut.sae_s4_01_app_mobile.ancienneAlerteActivity"
-137-->/Users/oumi/AndroidStudioProjects/BUT_SAE_S4_01_App_MobileMDNNUIT/app/src/main/AndroidManifest.xml:105:13-51
-138            android:exported="true" >
-138-->/Users/oumi/AndroidStudioProjects/BUT_SAE_S4_01_App_MobileMDNNUIT/app/src/main/AndroidManifest.xml:106:13-36
-139
-140            <!--
-141            <intent-filter>
-142                <action android:name="android.intent.action.MAIN" />
-143
-144                <category android:name="android.intent.category.LAUNCHER" />
-145            </intent-filter>
-146            -->
-147        </activity>
-148        <activity
-148-->/Users/oumi/AndroidStudioProjects/BUT_SAE_S4_01_App_MobileMDNNUIT/app/src/main/AndroidManifest.xml:116:9-127:20
-149            android:name="fr.iut.sae_s4_01_app_mobile.MedocCodeActivity"
-149-->/Users/oumi/AndroidStudioProjects/BUT_SAE_S4_01_App_MobileMDNNUIT/app/src/main/AndroidManifest.xml:117:13-46
-150            android:exported="true" >
-150-->/Users/oumi/AndroidStudioProjects/BUT_SAE_S4_01_App_MobileMDNNUIT/app/src/main/AndroidManifest.xml:118:13-36
-151
-152            <!--
-153            <intent-filter>
-154                <action android:name="android.intent.action.MAIN" />
-155
-156                <category android:name="android.intent.category.LAUNCHER" />
-157            </intent-filter>
-158            -->
-159        </activity>
-160        <activity
-160-->/Users/oumi/AndroidStudioProjects/BUT_SAE_S4_01_App_MobileMDNNUIT/app/src/main/AndroidManifest.xml:128:9-139:20
-161            android:name="fr.iut.sae_s4_01_app_mobile.ProfilActivity"
-161-->/Users/oumi/AndroidStudioProjects/BUT_SAE_S4_01_App_MobileMDNNUIT/app/src/main/AndroidManifest.xml:129:13-43
-162            android:exported="true" >
-162-->/Users/oumi/AndroidStudioProjects/BUT_SAE_S4_01_App_MobileMDNNUIT/app/src/main/AndroidManifest.xml:130:13-36
-163
-164            <!--
-165            <intent-filter>
-166                <action android:name="android.intent.action.MAIN" />
-167
-168                <category android:name="android.intent.category.LAUNCHER" />
-169            </intent-filter>
-170            -->
-171        </activity>
-172        <activity
-172-->/Users/oumi/AndroidStudioProjects/BUT_SAE_S4_01_App_MobileMDNNUIT/app/src/main/AndroidManifest.xml:140:9-151:20
-173            android:name="fr.iut.sae_s4_01_app_mobile.ProfilModifActivity"
-173-->/Users/oumi/AndroidStudioProjects/BUT_SAE_S4_01_App_MobileMDNNUIT/app/src/main/AndroidManifest.xml:141:13-48
-174            android:exported="true" >
-174-->/Users/oumi/AndroidStudioProjects/BUT_SAE_S4_01_App_MobileMDNNUIT/app/src/main/AndroidManifest.xml:142:13-36
-175
-176            <!--
-177            <intent-filter>
-178                <action android:name="android.intent.action.MAIN" />
-179
-180                <category android:name="android.intent.category.LAUNCHER" />
-181            </intent-filter>
-182            -->
-183        </activity>
-184        <activity
-184-->/Users/oumi/AndroidStudioProjects/BUT_SAE_S4_01_App_MobileMDNNUIT/app/src/main/AndroidManifest.xml:152:9-162:20
-185            android:name="fr.iut.sae_s4_01_app_mobile.CipManuelleActivity"
-185-->/Users/oumi/AndroidStudioProjects/BUT_SAE_S4_01_App_MobileMDNNUIT/app/src/main/AndroidManifest.xml:153:13-48
-186            android:exported="true" >
-186-->/Users/oumi/AndroidStudioProjects/BUT_SAE_S4_01_App_MobileMDNNUIT/app/src/main/AndroidManifest.xml:154:13-36
-187
-188            <!--
-189            <intent-filter>
-190                <action android:name="android.intent.action.MAIN" />
-191                <category android:name="android.intent.category.LAUNCHER" />
-192            </intent-filter>
-193            -->
-194        </activity>
-195        <activity
-195-->/Users/oumi/AndroidStudioProjects/BUT_SAE_S4_01_App_MobileMDNNUIT/app/src/main/AndroidManifest.xml:163:9-173:20
-196            android:name="fr.iut.sae_s4_01_app_mobile.NewAlertActivity"
-196-->/Users/oumi/AndroidStudioProjects/BUT_SAE_S4_01_App_MobileMDNNUIT/app/src/main/AndroidManifest.xml:164:13-45
-197            android:exported="true" >
-197-->/Users/oumi/AndroidStudioProjects/BUT_SAE_S4_01_App_MobileMDNNUIT/app/src/main/AndroidManifest.xml:165:13-36
-198
-199            <!--
-200            <intent-filter>
-201                <action android:name="android.intent.action.MAIN" />
-202                <category android:name="android.intent.category.LAUNCHER" />
-203            </intent-filter>
-204            -->
-205        </activity>
-206        <activity
-206-->/Users/oumi/AndroidStudioProjects/BUT_SAE_S4_01_App_MobileMDNNUIT/app/src/main/AndroidManifest.xml:175:9-185:20
-207            android:name="fr.iut.sae_s4_01_app_mobile.AccueilAdminActivity"
-207-->/Users/oumi/AndroidStudioProjects/BUT_SAE_S4_01_App_MobileMDNNUIT/app/src/main/AndroidManifest.xml:176:13-49
-208            android:exported="true" >
-208-->/Users/oumi/AndroidStudioProjects/BUT_SAE_S4_01_App_MobileMDNNUIT/app/src/main/AndroidManifest.xml:177:13-36
-209
-210            <!--
-211            <intent-filter>
-212                <action android:name="android.intent.action.MAIN" />
-213                <category android:name="android.intent.category.LAUNCHER" />
-214            </intent-filter>
-215            -->
-216        </activity>
-217        <activity
-217-->/Users/oumi/AndroidStudioProjects/BUT_SAE_S4_01_App_MobileMDNNUIT/app/src/main/AndroidManifest.xml:187:9-197:20
-218            android:name="fr.iut.sae_s4_01_app_mobile.ToutAlerteActivity"
-218-->/Users/oumi/AndroidStudioProjects/BUT_SAE_S4_01_App_MobileMDNNUIT/app/src/main/AndroidManifest.xml:188:13-47
-219            android:exported="true" >
-219-->/Users/oumi/AndroidStudioProjects/BUT_SAE_S4_01_App_MobileMDNNUIT/app/src/main/AndroidManifest.xml:189:13-36
-220
-221            <!--
-222            <intent-filter>
-223                <action android:name="android.intent.action.MAIN" />
-224                <category android:name="android.intent.category.LAUNCHER" />
-225            </intent-filter>
-226            -->
-227        </activity>
-228        <activity
-228-->[com.journeyapps:zxing-android-embedded:4.2.0] /Users/oumi/.gradle/caches/transforms-3/a60982259721268694c6a5f2a67385db/transformed/zxing-android-embedded-4.2.0/AndroidManifest.xml:47:9-53:63
-229            android:name="com.journeyapps.barcodescanner.CaptureActivity"
-229-->[com.journeyapps:zxing-android-embedded:4.2.0] /Users/oumi/.gradle/caches/transforms-3/a60982259721268694c6a5f2a67385db/transformed/zxing-android-embedded-4.2.0/AndroidManifest.xml:48:13-74
-230            android:clearTaskOnLaunch="true"
-230-->[com.journeyapps:zxing-android-embedded:4.2.0] /Users/oumi/.gradle/caches/transforms-3/a60982259721268694c6a5f2a67385db/transformed/zxing-android-embedded-4.2.0/AndroidManifest.xml:49:13-45
-231            android:screenOrientation="sensorLandscape"
-231-->[com.journeyapps:zxing-android-embedded:4.2.0] /Users/oumi/.gradle/caches/transforms-3/a60982259721268694c6a5f2a67385db/transformed/zxing-android-embedded-4.2.0/AndroidManifest.xml:50:13-56
-232            android:stateNotNeeded="true"
-232-->[com.journeyapps:zxing-android-embedded:4.2.0] /Users/oumi/.gradle/caches/transforms-3/a60982259721268694c6a5f2a67385db/transformed/zxing-android-embedded-4.2.0/AndroidManifest.xml:51:13-42
-233            android:theme="@style/zxing_CaptureTheme"
-233-->[com.journeyapps:zxing-android-embedded:4.2.0] /Users/oumi/.gradle/caches/transforms-3/a60982259721268694c6a5f2a67385db/transformed/zxing-android-embedded-4.2.0/AndroidManifest.xml:52:13-54
-234            android:windowSoftInputMode="stateAlwaysHidden" />
-234-->[com.journeyapps:zxing-android-embedded:4.2.0] /Users/oumi/.gradle/caches/transforms-3/a60982259721268694c6a5f2a67385db/transformed/zxing-android-embedded-4.2.0/AndroidManifest.xml:53:13-60
-235
-236        <provider
-236-->[androidx.emoji2:emoji2:1.2.0] /Users/oumi/.gradle/caches/transforms-3/ea260942d8acadff20549e4d8b1553b4/transformed/emoji2-1.2.0/AndroidManifest.xml:24:9-32:20
-237            android:name="androidx.startup.InitializationProvider"
-237-->[androidx.emoji2:emoji2:1.2.0] /Users/oumi/.gradle/caches/transforms-3/ea260942d8acadff20549e4d8b1553b4/transformed/emoji2-1.2.0/AndroidManifest.xml:25:13-67
-238            android:authorities="fr.iut.sae_s4_01_app_mobile.androidx-startup"
-238-->[androidx.emoji2:emoji2:1.2.0] /Users/oumi/.gradle/caches/transforms-3/ea260942d8acadff20549e4d8b1553b4/transformed/emoji2-1.2.0/AndroidManifest.xml:26:13-68
-239            android:exported="false" >
-239-->[androidx.emoji2:emoji2:1.2.0] /Users/oumi/.gradle/caches/transforms-3/ea260942d8acadff20549e4d8b1553b4/transformed/emoji2-1.2.0/AndroidManifest.xml:27:13-37
-240            <meta-data
-240-->[androidx.emoji2:emoji2:1.2.0] /Users/oumi/.gradle/caches/transforms-3/ea260942d8acadff20549e4d8b1553b4/transformed/emoji2-1.2.0/AndroidManifest.xml:29:13-31:52
-241                android:name="androidx.emoji2.text.EmojiCompatInitializer"
-241-->[androidx.emoji2:emoji2:1.2.0] /Users/oumi/.gradle/caches/transforms-3/ea260942d8acadff20549e4d8b1553b4/transformed/emoji2-1.2.0/AndroidManifest.xml:30:17-75
-242                android:value="androidx.startup" />
-242-->[androidx.emoji2:emoji2:1.2.0] /Users/oumi/.gradle/caches/transforms-3/ea260942d8acadff20549e4d8b1553b4/transformed/emoji2-1.2.0/AndroidManifest.xml:31:17-49
-243            <meta-data
-243-->[androidx.lifecycle:lifecycle-process:2.6.1] /Users/oumi/.gradle/caches/transforms-3/7537b831cd7e02c36f17372471ebcd05/transformed/lifecycle-process-2.6.1/AndroidManifest.xml:29:13-31:52
-244                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
-244-->[androidx.lifecycle:lifecycle-process:2.6.1] /Users/oumi/.gradle/caches/transforms-3/7537b831cd7e02c36f17372471ebcd05/transformed/lifecycle-process-2.6.1/AndroidManifest.xml:30:17-78
-245                android:value="androidx.startup" />
-245-->[androidx.lifecycle:lifecycle-process:2.6.1] /Users/oumi/.gradle/caches/transforms-3/7537b831cd7e02c36f17372471ebcd05/transformed/lifecycle-process-2.6.1/AndroidManifest.xml:31:17-49
-246            <meta-data
-246-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/oumi/.gradle/caches/transforms-3/6aebe797d2fce5c8727f4e04e3cbbf9a/transformed/profileinstaller-1.3.0/AndroidManifest.xml:29:13-31:52
-247                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
-247-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/oumi/.gradle/caches/transforms-3/6aebe797d2fce5c8727f4e04e3cbbf9a/transformed/profileinstaller-1.3.0/AndroidManifest.xml:30:17-85
-248                android:value="androidx.startup" />
-248-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/oumi/.gradle/caches/transforms-3/6aebe797d2fce5c8727f4e04e3cbbf9a/transformed/profileinstaller-1.3.0/AndroidManifest.xml:31:17-49
-249        </provider>
-250
-251        <receiver
-251-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/oumi/.gradle/caches/transforms-3/6aebe797d2fce5c8727f4e04e3cbbf9a/transformed/profileinstaller-1.3.0/AndroidManifest.xml:34:9-52:20
-252            android:name="androidx.profileinstaller.ProfileInstallReceiver"
-252-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/oumi/.gradle/caches/transforms-3/6aebe797d2fce5c8727f4e04e3cbbf9a/transformed/profileinstaller-1.3.0/AndroidManifest.xml:35:13-76
-253            android:directBootAware="false"
-253-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/oumi/.gradle/caches/transforms-3/6aebe797d2fce5c8727f4e04e3cbbf9a/transformed/profileinstaller-1.3.0/AndroidManifest.xml:36:13-44
-254            android:enabled="true"
-254-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/oumi/.gradle/caches/transforms-3/6aebe797d2fce5c8727f4e04e3cbbf9a/transformed/profileinstaller-1.3.0/AndroidManifest.xml:37:13-35
-255            android:exported="true"
-255-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/oumi/.gradle/caches/transforms-3/6aebe797d2fce5c8727f4e04e3cbbf9a/transformed/profileinstaller-1.3.0/AndroidManifest.xml:38:13-36
-256            android:permission="android.permission.DUMP" >
-256-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/oumi/.gradle/caches/transforms-3/6aebe797d2fce5c8727f4e04e3cbbf9a/transformed/profileinstaller-1.3.0/AndroidManifest.xml:39:13-57
-257            <intent-filter>
-257-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/oumi/.gradle/caches/transforms-3/6aebe797d2fce5c8727f4e04e3cbbf9a/transformed/profileinstaller-1.3.0/AndroidManifest.xml:40:13-42:29
-258                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
-258-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/oumi/.gradle/caches/transforms-3/6aebe797d2fce5c8727f4e04e3cbbf9a/transformed/profileinstaller-1.3.0/AndroidManifest.xml:41:17-91
-258-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/oumi/.gradle/caches/transforms-3/6aebe797d2fce5c8727f4e04e3cbbf9a/transformed/profileinstaller-1.3.0/AndroidManifest.xml:41:25-88
-259            </intent-filter>
-260            <intent-filter>
-260-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/oumi/.gradle/caches/transforms-3/6aebe797d2fce5c8727f4e04e3cbbf9a/transformed/profileinstaller-1.3.0/AndroidManifest.xml:43:13-45:29
-261                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
-261-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/oumi/.gradle/caches/transforms-3/6aebe797d2fce5c8727f4e04e3cbbf9a/transformed/profileinstaller-1.3.0/AndroidManifest.xml:44:17-85
-261-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/oumi/.gradle/caches/transforms-3/6aebe797d2fce5c8727f4e04e3cbbf9a/transformed/profileinstaller-1.3.0/AndroidManifest.xml:44:25-82
-262            </intent-filter>
-263            <intent-filter>
-263-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/oumi/.gradle/caches/transforms-3/6aebe797d2fce5c8727f4e04e3cbbf9a/transformed/profileinstaller-1.3.0/AndroidManifest.xml:46:13-48:29
-264                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
-264-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/oumi/.gradle/caches/transforms-3/6aebe797d2fce5c8727f4e04e3cbbf9a/transformed/profileinstaller-1.3.0/AndroidManifest.xml:47:17-88
-264-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/oumi/.gradle/caches/transforms-3/6aebe797d2fce5c8727f4e04e3cbbf9a/transformed/profileinstaller-1.3.0/AndroidManifest.xml:47:25-85
-265            </intent-filter>
-266            <intent-filter>
-266-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/oumi/.gradle/caches/transforms-3/6aebe797d2fce5c8727f4e04e3cbbf9a/transformed/profileinstaller-1.3.0/AndroidManifest.xml:49:13-51:29
-267                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
-267-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/oumi/.gradle/caches/transforms-3/6aebe797d2fce5c8727f4e04e3cbbf9a/transformed/profileinstaller-1.3.0/AndroidManifest.xml:50:17-95
-267-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/oumi/.gradle/caches/transforms-3/6aebe797d2fce5c8727f4e04e3cbbf9a/transformed/profileinstaller-1.3.0/AndroidManifest.xml:50:25-92
-268            </intent-filter>
-269        </receiver>
-270    </application>
-271
-272</manifest>
+76-->C:\Users\33760\OneDrive\Bureau\BUT_SAE_S4_01\app\src\main\AndroidManifest.xml:43:13-44
+77            android:configChanges="locale|orientation|screenSize"
+77-->C:\Users\33760\OneDrive\Bureau\BUT_SAE_S4_01\app\src\main\AndroidManifest.xml:45:13-66
+78            android:exported="true" >
+78-->C:\Users\33760\OneDrive\Bureau\BUT_SAE_S4_01\app\src\main\AndroidManifest.xml:44:13-36
+79
+80            <!--
+81            <intent-filter>
+82                <action android:name="android.intent.action.MAIN" />
+83                <category android:name="android.intent.category.LAUNCHER" />
+84            </intent-filter>
+85            -->
+86        </activity>
+87        <activity
+87-->C:\Users\33760\OneDrive\Bureau\BUT_SAE_S4_01\app\src\main\AndroidManifest.xml:54:9-64:20
+88            android:name="fr.iut.sae_s4_01_app_mobile.LoginActivity"
+88-->C:\Users\33760\OneDrive\Bureau\BUT_SAE_S4_01\app\src\main\AndroidManifest.xml:55:13-42
+89            android:exported="true" >
+89-->C:\Users\33760\OneDrive\Bureau\BUT_SAE_S4_01\app\src\main\AndroidManifest.xml:56:13-36
+90
+91            <!--
+92            <intent-filter>
+93                <action android:name="android.intent.action.MAIN" />
+94                <category android:name="android.intent.category.LAUNCHER" />
+95            </intent-filter>
+96            -->
+97        </activity>
+98        <activity
+98-->C:\Users\33760\OneDrive\Bureau\BUT_SAE_S4_01\app\src\main\AndroidManifest.xml:65:9-68:20
+99            android:name="fr.iut.sae_s4_01_app_mobile.PreferencesActivity"
+99-->C:\Users\33760\OneDrive\Bureau\BUT_SAE_S4_01\app\src\main\AndroidManifest.xml:66:13-48
+100            android:exported="true" >
+100-->C:\Users\33760\OneDrive\Bureau\BUT_SAE_S4_01\app\src\main\AndroidManifest.xml:67:13-36
+101        </activity>
+102        <activity
+102-->C:\Users\33760\OneDrive\Bureau\BUT_SAE_S4_01\app\src\main\AndroidManifest.xml:70:9-80:20
+103            android:name="fr.iut.sae_s4_01_app_mobile.RegisterActivity"
+103-->C:\Users\33760\OneDrive\Bureau\BUT_SAE_S4_01\app\src\main\AndroidManifest.xml:71:13-45
+104            android:exported="true" >
+104-->C:\Users\33760\OneDrive\Bureau\BUT_SAE_S4_01\app\src\main\AndroidManifest.xml:72:13-36
+105
+106            <!--
+107            <intent-filter>
+108                <action android:name="android.intent.action.MAIN" />
+109                <category android:name="android.intent.category.LAUNCHER" />
+110            </intent-filter>
+111            -->
+112        </activity>
+113        <activity
+113-->C:\Users\33760\OneDrive\Bureau\BUT_SAE_S4_01\app\src\main\AndroidManifest.xml:81:9-92:20
+114            android:name="fr.iut.sae_s4_01_app_mobile.RegisterActivity2"
+114-->C:\Users\33760\OneDrive\Bureau\BUT_SAE_S4_01\app\src\main\AndroidManifest.xml:82:13-46
+115            android:exported="true" >
+115-->C:\Users\33760\OneDrive\Bureau\BUT_SAE_S4_01\app\src\main\AndroidManifest.xml:83:13-36
+116
+117            <!--
+118            <intent-filter>
+119                <action android:name="android.intent.action.MAIN" />
+120
+121                <category android:name="android.intent.category.LAUNCHER" />
+122            </intent-filter>
+123            -->
+124        </activity>
+125        <activity
+125-->C:\Users\33760\OneDrive\Bureau\BUT_SAE_S4_01\app\src\main\AndroidManifest.xml:93:9-104:20
+126            android:name="fr.iut.sae_s4_01_app_mobile.ScannerActivity"
+126-->C:\Users\33760\OneDrive\Bureau\BUT_SAE_S4_01\app\src\main\AndroidManifest.xml:94:13-44
+127            android:exported="true" >
+127-->C:\Users\33760\OneDrive\Bureau\BUT_SAE_S4_01\app\src\main\AndroidManifest.xml:95:13-36
+128
+129            <!--
+130            <intent-filter>
+131                <action android:name="android.intent.action.MAIN" />
+132
+133                <category android:name="android.intent.category.LAUNCHER" />
+134            </intent-filter>
+135            -->
+136        </activity>
+137        <activity
+137-->C:\Users\33760\OneDrive\Bureau\BUT_SAE_S4_01\app\src\main\AndroidManifest.xml:105:9-116:20
+138            android:name="fr.iut.sae_s4_01_app_mobile.ancienneAlerteActivity"
+138-->C:\Users\33760\OneDrive\Bureau\BUT_SAE_S4_01\app\src\main\AndroidManifest.xml:106:13-51
+139            android:exported="true" >
+139-->C:\Users\33760\OneDrive\Bureau\BUT_SAE_S4_01\app\src\main\AndroidManifest.xml:107:13-36
+140
+141            <!--
+142            <intent-filter>
+143                <action android:name="android.intent.action.MAIN" />
+144
+145                <category android:name="android.intent.category.LAUNCHER" />
+146            </intent-filter>
+147            -->
+148        </activity>
+149        <activity
+149-->C:\Users\33760\OneDrive\Bureau\BUT_SAE_S4_01\app\src\main\AndroidManifest.xml:117:9-128:20
+150            android:name="fr.iut.sae_s4_01_app_mobile.MedocCodeActivity"
+150-->C:\Users\33760\OneDrive\Bureau\BUT_SAE_S4_01\app\src\main\AndroidManifest.xml:118:13-46
+151            android:exported="true" >
+151-->C:\Users\33760\OneDrive\Bureau\BUT_SAE_S4_01\app\src\main\AndroidManifest.xml:119:13-36
+152
+153            <!--
+154            <intent-filter>
+155                <action android:name="android.intent.action.MAIN" />
+156
+157                <category android:name="android.intent.category.LAUNCHER" />
+158            </intent-filter>
+159            -->
+160        </activity>
+161        <activity
+161-->C:\Users\33760\OneDrive\Bureau\BUT_SAE_S4_01\app\src\main\AndroidManifest.xml:129:9-140:20
+162            android:name="fr.iut.sae_s4_01_app_mobile.ProfilActivity"
+162-->C:\Users\33760\OneDrive\Bureau\BUT_SAE_S4_01\app\src\main\AndroidManifest.xml:130:13-43
+163            android:exported="true" >
+163-->C:\Users\33760\OneDrive\Bureau\BUT_SAE_S4_01\app\src\main\AndroidManifest.xml:131:13-36
+164
+165            <!--
+166            <intent-filter>
+167                <action android:name="android.intent.action.MAIN" />
+168
+169                <category android:name="android.intent.category.LAUNCHER" />
+170            </intent-filter>
+171            -->
+172        </activity>
+173        <activity
+173-->C:\Users\33760\OneDrive\Bureau\BUT_SAE_S4_01\app\src\main\AndroidManifest.xml:141:9-152:20
+174            android:name="fr.iut.sae_s4_01_app_mobile.ProfilModifActivity"
+174-->C:\Users\33760\OneDrive\Bureau\BUT_SAE_S4_01\app\src\main\AndroidManifest.xml:142:13-48
+175            android:exported="true" >
+175-->C:\Users\33760\OneDrive\Bureau\BUT_SAE_S4_01\app\src\main\AndroidManifest.xml:143:13-36
+176
+177            <!--
+178            <intent-filter>
+179                <action android:name="android.intent.action.MAIN" />
+180
+181                <category android:name="android.intent.category.LAUNCHER" />
+182            </intent-filter>
+183            -->
+184        </activity>
+185        <activity
+185-->C:\Users\33760\OneDrive\Bureau\BUT_SAE_S4_01\app\src\main\AndroidManifest.xml:153:9-163:20
+186            android:name="fr.iut.sae_s4_01_app_mobile.CipManuelleActivity"
+186-->C:\Users\33760\OneDrive\Bureau\BUT_SAE_S4_01\app\src\main\AndroidManifest.xml:154:13-48
+187            android:exported="true" >
+187-->C:\Users\33760\OneDrive\Bureau\BUT_SAE_S4_01\app\src\main\AndroidManifest.xml:155:13-36
+188
+189            <!--
+190            <intent-filter>
+191                <action android:name="android.intent.action.MAIN" />
+192                <category android:name="android.intent.category.LAUNCHER" />
+193            </intent-filter>
+194            -->
+195        </activity>
+196        <activity
+196-->C:\Users\33760\OneDrive\Bureau\BUT_SAE_S4_01\app\src\main\AndroidManifest.xml:164:9-174:20
+197            android:name="fr.iut.sae_s4_01_app_mobile.NewAlertActivity"
+197-->C:\Users\33760\OneDrive\Bureau\BUT_SAE_S4_01\app\src\main\AndroidManifest.xml:165:13-45
+198            android:exported="true" >
+198-->C:\Users\33760\OneDrive\Bureau\BUT_SAE_S4_01\app\src\main\AndroidManifest.xml:166:13-36
+199
+200            <!--
+201            <intent-filter>
+202                <action android:name="android.intent.action.MAIN" />
+203                <category android:name="android.intent.category.LAUNCHER" />
+204            </intent-filter>
+205            -->
+206        </activity>
+207        <activity
+207-->C:\Users\33760\OneDrive\Bureau\BUT_SAE_S4_01\app\src\main\AndroidManifest.xml:176:9-186:20
+208            android:name="fr.iut.sae_s4_01_app_mobile.AccueilAdminActivity"
+208-->C:\Users\33760\OneDrive\Bureau\BUT_SAE_S4_01\app\src\main\AndroidManifest.xml:177:13-49
+209            android:exported="true" >
+209-->C:\Users\33760\OneDrive\Bureau\BUT_SAE_S4_01\app\src\main\AndroidManifest.xml:178:13-36
+210
+211            <!--
+212            <intent-filter>
+213                <action android:name="android.intent.action.MAIN" />
+214                <category android:name="android.intent.category.LAUNCHER" />
+215            </intent-filter>
+216            -->
+217        </activity>
+218        <activity
+218-->C:\Users\33760\OneDrive\Bureau\BUT_SAE_S4_01\app\src\main\AndroidManifest.xml:188:9-198:20
+219            android:name="fr.iut.sae_s4_01_app_mobile.ToutAlerteActivity"
+219-->C:\Users\33760\OneDrive\Bureau\BUT_SAE_S4_01\app\src\main\AndroidManifest.xml:189:13-47
+220            android:exported="true" >
+220-->C:\Users\33760\OneDrive\Bureau\BUT_SAE_S4_01\app\src\main\AndroidManifest.xml:190:13-36
+221
+222            <!--
+223            <intent-filter>
+224                <action android:name="android.intent.action.MAIN" />
+225                <category android:name="android.intent.category.LAUNCHER" />
+226            </intent-filter>
+227            -->
+228        </activity>
+229        <activity
+229-->[com.journeyapps:zxing-android-embedded:4.2.0] C:\Users\33760\.gradle\caches\transforms-3\a60982259721268694c6a5f2a67385db\transformed\zxing-android-embedded-4.2.0\AndroidManifest.xml:47:9-53:63
+230            android:name="com.journeyapps.barcodescanner.CaptureActivity"
+230-->[com.journeyapps:zxing-android-embedded:4.2.0] C:\Users\33760\.gradle\caches\transforms-3\a60982259721268694c6a5f2a67385db\transformed\zxing-android-embedded-4.2.0\AndroidManifest.xml:48:13-74
+231            android:clearTaskOnLaunch="true"
+231-->[com.journeyapps:zxing-android-embedded:4.2.0] C:\Users\33760\.gradle\caches\transforms-3\a60982259721268694c6a5f2a67385db\transformed\zxing-android-embedded-4.2.0\AndroidManifest.xml:49:13-45
+232            android:screenOrientation="sensorLandscape"
+232-->[com.journeyapps:zxing-android-embedded:4.2.0] C:\Users\33760\.gradle\caches\transforms-3\a60982259721268694c6a5f2a67385db\transformed\zxing-android-embedded-4.2.0\AndroidManifest.xml:50:13-56
+233            android:stateNotNeeded="true"
+233-->[com.journeyapps:zxing-android-embedded:4.2.0] C:\Users\33760\.gradle\caches\transforms-3\a60982259721268694c6a5f2a67385db\transformed\zxing-android-embedded-4.2.0\AndroidManifest.xml:51:13-42
+234            android:theme="@style/zxing_CaptureTheme"
+234-->[com.journeyapps:zxing-android-embedded:4.2.0] C:\Users\33760\.gradle\caches\transforms-3\a60982259721268694c6a5f2a67385db\transformed\zxing-android-embedded-4.2.0\AndroidManifest.xml:52:13-54
+235            android:windowSoftInputMode="stateAlwaysHidden" />
+235-->[com.journeyapps:zxing-android-embedded:4.2.0] C:\Users\33760\.gradle\caches\transforms-3\a60982259721268694c6a5f2a67385db\transformed\zxing-android-embedded-4.2.0\AndroidManifest.xml:53:13-60
+236
+237        <provider
+237-->[androidx.emoji2:emoji2:1.2.0] C:\Users\33760\.gradle\caches\transforms-3\ea260942d8acadff20549e4d8b1553b4\transformed\emoji2-1.2.0\AndroidManifest.xml:24:9-32:20
+238            android:name="androidx.startup.InitializationProvider"
+238-->[androidx.emoji2:emoji2:1.2.0] C:\Users\33760\.gradle\caches\transforms-3\ea260942d8acadff20549e4d8b1553b4\transformed\emoji2-1.2.0\AndroidManifest.xml:25:13-67
+239            android:authorities="fr.iut.sae_s4_01_app_mobile.androidx-startup"
+239-->[androidx.emoji2:emoji2:1.2.0] C:\Users\33760\.gradle\caches\transforms-3\ea260942d8acadff20549e4d8b1553b4\transformed\emoji2-1.2.0\AndroidManifest.xml:26:13-68
+240            android:exported="false" >
+240-->[androidx.emoji2:emoji2:1.2.0] C:\Users\33760\.gradle\caches\transforms-3\ea260942d8acadff20549e4d8b1553b4\transformed\emoji2-1.2.0\AndroidManifest.xml:27:13-37
+241            <meta-data
+241-->[androidx.emoji2:emoji2:1.2.0] C:\Users\33760\.gradle\caches\transforms-3\ea260942d8acadff20549e4d8b1553b4\transformed\emoji2-1.2.0\AndroidManifest.xml:29:13-31:52
+242                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+242-->[androidx.emoji2:emoji2:1.2.0] C:\Users\33760\.gradle\caches\transforms-3\ea260942d8acadff20549e4d8b1553b4\transformed\emoji2-1.2.0\AndroidManifest.xml:30:17-75
+243                android:value="androidx.startup" />
+243-->[androidx.emoji2:emoji2:1.2.0] C:\Users\33760\.gradle\caches\transforms-3\ea260942d8acadff20549e4d8b1553b4\transformed\emoji2-1.2.0\AndroidManifest.xml:31:17-49
+244            <meta-data
+244-->[androidx.lifecycle:lifecycle-process:2.6.1] C:\Users\33760\.gradle\caches\transforms-3\7537b831cd7e02c36f17372471ebcd05\transformed\lifecycle-process-2.6.1\AndroidManifest.xml:29:13-31:52
+245                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+245-->[androidx.lifecycle:lifecycle-process:2.6.1] C:\Users\33760\.gradle\caches\transforms-3\7537b831cd7e02c36f17372471ebcd05\transformed\lifecycle-process-2.6.1\AndroidManifest.xml:30:17-78
+246                android:value="androidx.startup" />
+246-->[androidx.lifecycle:lifecycle-process:2.6.1] C:\Users\33760\.gradle\caches\transforms-3\7537b831cd7e02c36f17372471ebcd05\transformed\lifecycle-process-2.6.1\AndroidManifest.xml:31:17-49
+247            <meta-data
+247-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\33760\.gradle\caches\transforms-3\6aebe797d2fce5c8727f4e04e3cbbf9a\transformed\profileinstaller-1.3.0\AndroidManifest.xml:29:13-31:52
+248                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+248-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\33760\.gradle\caches\transforms-3\6aebe797d2fce5c8727f4e04e3cbbf9a\transformed\profileinstaller-1.3.0\AndroidManifest.xml:30:17-85
+249                android:value="androidx.startup" />
+249-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\33760\.gradle\caches\transforms-3\6aebe797d2fce5c8727f4e04e3cbbf9a\transformed\profileinstaller-1.3.0\AndroidManifest.xml:31:17-49
+250        </provider>
+251
+252        <receiver
+252-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\33760\.gradle\caches\transforms-3\6aebe797d2fce5c8727f4e04e3cbbf9a\transformed\profileinstaller-1.3.0\AndroidManifest.xml:34:9-52:20
+253            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+253-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\33760\.gradle\caches\transforms-3\6aebe797d2fce5c8727f4e04e3cbbf9a\transformed\profileinstaller-1.3.0\AndroidManifest.xml:35:13-76
+254            android:directBootAware="false"
+254-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\33760\.gradle\caches\transforms-3\6aebe797d2fce5c8727f4e04e3cbbf9a\transformed\profileinstaller-1.3.0\AndroidManifest.xml:36:13-44
+255            android:enabled="true"
+255-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\33760\.gradle\caches\transforms-3\6aebe797d2fce5c8727f4e04e3cbbf9a\transformed\profileinstaller-1.3.0\AndroidManifest.xml:37:13-35
+256            android:exported="true"
+256-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\33760\.gradle\caches\transforms-3\6aebe797d2fce5c8727f4e04e3cbbf9a\transformed\profileinstaller-1.3.0\AndroidManifest.xml:38:13-36
+257            android:permission="android.permission.DUMP" >
+257-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\33760\.gradle\caches\transforms-3\6aebe797d2fce5c8727f4e04e3cbbf9a\transformed\profileinstaller-1.3.0\AndroidManifest.xml:39:13-57
+258            <intent-filter>
+258-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\33760\.gradle\caches\transforms-3\6aebe797d2fce5c8727f4e04e3cbbf9a\transformed\profileinstaller-1.3.0\AndroidManifest.xml:40:13-42:29
+259                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+259-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\33760\.gradle\caches\transforms-3\6aebe797d2fce5c8727f4e04e3cbbf9a\transformed\profileinstaller-1.3.0\AndroidManifest.xml:41:17-91
+259-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\33760\.gradle\caches\transforms-3\6aebe797d2fce5c8727f4e04e3cbbf9a\transformed\profileinstaller-1.3.0\AndroidManifest.xml:41:25-88
+260            </intent-filter>
+261            <intent-filter>
+261-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\33760\.gradle\caches\transforms-3\6aebe797d2fce5c8727f4e04e3cbbf9a\transformed\profileinstaller-1.3.0\AndroidManifest.xml:43:13-45:29
+262                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
+262-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\33760\.gradle\caches\transforms-3\6aebe797d2fce5c8727f4e04e3cbbf9a\transformed\profileinstaller-1.3.0\AndroidManifest.xml:44:17-85
+262-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\33760\.gradle\caches\transforms-3\6aebe797d2fce5c8727f4e04e3cbbf9a\transformed\profileinstaller-1.3.0\AndroidManifest.xml:44:25-82
+263            </intent-filter>
+264            <intent-filter>
+264-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\33760\.gradle\caches\transforms-3\6aebe797d2fce5c8727f4e04e3cbbf9a\transformed\profileinstaller-1.3.0\AndroidManifest.xml:46:13-48:29
+265                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
+265-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\33760\.gradle\caches\transforms-3\6aebe797d2fce5c8727f4e04e3cbbf9a\transformed\profileinstaller-1.3.0\AndroidManifest.xml:47:17-88
+265-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\33760\.gradle\caches\transforms-3\6aebe797d2fce5c8727f4e04e3cbbf9a\transformed\profileinstaller-1.3.0\AndroidManifest.xml:47:25-85
+266            </intent-filter>
+267            <intent-filter>
+267-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\33760\.gradle\caches\transforms-3\6aebe797d2fce5c8727f4e04e3cbbf9a\transformed\profileinstaller-1.3.0\AndroidManifest.xml:49:13-51:29
+268                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
+268-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\33760\.gradle\caches\transforms-3\6aebe797d2fce5c8727f4e04e3cbbf9a\transformed\profileinstaller-1.3.0\AndroidManifest.xml:50:17-95
+268-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\33760\.gradle\caches\transforms-3\6aebe797d2fce5c8727f4e04e3cbbf9a\transformed\profileinstaller-1.3.0\AndroidManifest.xml:50:25-92
+269            </intent-filter>
+270        </receiver>
+271    </application>
+272
+273</manifest>

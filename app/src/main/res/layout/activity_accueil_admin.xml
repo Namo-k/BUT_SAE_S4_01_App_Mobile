@@ -111,7 +111,7 @@
                 android:layout_marginTop="5dp"
                 android:backgroundTint="@color/darkGrey"
                 android:fontFamily="@font/inter"
-                android:text="Ravi de vous revoir "
+                android:text="@string/Ravi_revoir"
                 android:textSize="17dp"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
@@ -152,7 +152,7 @@
                 android:layout_marginStart="30dp"
                 android:layout_marginTop="22dp"
                 android:fontFamily="@font/patuaone_regular"
-                android:text=" Consulter les statistiques"
+                android:text="@string/consulter"
                 android:textColor="@color/darkBlue"
                 android:textSize="21dp"
                 app:layout_constraintStart_toStartOf="parent"
@@ -209,7 +209,7 @@
                         android:layout_marginEnd="3dp"
                         android:layout_marginBottom="3dp"
                         android:fontFamily="@font/inter_medium"
-                        android:text="Nombre de signalements :"
+                        android:text="@string/nb_signal"
                         android:textColor="@color/textGrey"
                         android:textSize="12.5dp" />
 
@@ -237,7 +237,7 @@
                         android:layout_marginEnd="3dp"
                         android:layout_marginBottom="3dp"
                         android:fontFamily="@font/inter_medium"
-                        android:text="Médicament le plus signalé :"
+                        android:text="@string/medoc_signal"
                         android:textColor="@color/textGrey"
                         android:textSize="12.5dp" />
 
@@ -265,7 +265,7 @@
                         android:layout_marginEnd="3dp"
                         android:layout_marginBottom="3dp"
                         android:fontFamily="@font/inter_medium"
-                        android:text="Type de maladie le plus signalé :"
+                        android:text="@string/type"
                         android:textColor="@color/textGrey"
                         android:textSize="12.5dp" />
 
@@ -296,7 +296,7 @@
                         android:layout_marginEnd="3dp"
                         android:layout_marginBottom="30dp"
                         android:fontFamily="@font/inter_medium"
-                        android:text="Nombre de saisie CIP :"
+                        android:text="@string/nd_CIP"
                         android:textColor="@color/textGrey"
                         android:textSize="12.5dp"
                     />
@@ -329,7 +329,7 @@
                         android:layout_marginEnd="3dp"
                         android:layout_marginBottom="35dp"
                         android:fontFamily="@font/inter_medium"
-                        android:text="Scan DataMatrix :"
+                        android:text="@string/nb_data"
                         android:textColor="@color/textGrey"
                         android:textSize="12.5dp"
                         />
@@ -356,7 +356,7 @@
                         android:layout_alignParentRight="true"
                         android:layout_width="110dp"
                         android:layout_height="wrap_content"
-                        android:text="Administrateur"
+                        android:text="@string/Administrateur"
                         android:textStyle="bold"
                         android:textColor="@color/darkBlue"
                         android:fontFamily="@font/inter_medium"
@@ -376,7 +376,7 @@
                     android:layout_gravity="right|bottom"
                     android:backgroundTint="#00000000"
                     android:fontFamily="@font/inter_semibold"
-                    android:text="Accéder aux statistiques..."
+                    android:text="@string/accee"
                     android:textColor="@color/darkBlue"
                     android:textSize="13.5dp"
                     android:textStyle="italic" />
@@ -394,7 +394,7 @@
                 android:layout_marginStart="30dp"
                 android:layout_marginTop="15dp"
                 android:fontFamily="@font/patuaone_regular"
-                android:text=" Ma dernière alerte"
+                android:text="@string/last_alerte"
                 android:textColor="@color/darkBlue"
                 android:textSize="21dp"
                 app:layout_constraintStart_toStartOf="parent"
@@ -449,7 +449,7 @@
                         android:layout_marginEnd="3dp"
                         android:layout_marginBottom="3dp"
                         android:fontFamily="@font/inter_medium"
-                        android:text="Personne :"
+                        android:text="@string/Personne"
                         android:textColor="@color/textGrey"
                         android:textSize="12dp" />
 
@@ -491,7 +491,7 @@
                             android:layout_marginEnd="3dp"
                             android:layout_marginBottom="3dp"
                             android:fontFamily="@font/inter_medium"
-                            android:text="Médicament concerné :"
+                            android:text="@string/Médicament_concerné"
                             android:textColor="@color/textGrey"
                             android:textSize="11.5dp" />
 
@@ -518,7 +518,7 @@
                             android:layout_marginEnd="3dp"
                             android:layout_marginBottom="3dp"
                             android:fontFamily="@font/inter_medium"
-                            android:text="Raison :"
+                            android:text="@string/raison"
                             android:textColor="@color/textGrey"
                             android:textSize="11.5dp" />
 
@@ -547,7 +547,7 @@
                             android:layout_marginEnd="3dp"
                             android:layout_marginBottom="3dp"
                             android:fontFamily="@font/inter_medium"
-                            android:text="Message :"
+                            android:text="@string/message"
                             android:textColor="@color/textGrey"
                             android:textSize="11.5dp" />
 
@@ -580,7 +580,7 @@
                                 android:layout_alignParentRight="true"
                                 android:layout_width="110dp"
                                 android:layout_height="wrap_content"
-                                android:text="18 février 2024"
+                                android:text="@string/date"
                                 android:textColor="@color/white"
                                 android:fontFamily="@font/inter_medium"
                                 android:background="@color/darkBlueLightLight"
@@ -601,7 +601,7 @@
                     android:layout_gravity="right|bottom"
                     android:backgroundTint="#00000000"
                     android:fontFamily="@font/inter_semibold"
-                    android:text="Voir toutes mes alertes..."
+                    android:text="@string/all_alerte"
                     android:textColor="@color/darkBlue"
                     android:textSize="11.5dp"
                     android:textStyle="italic" />

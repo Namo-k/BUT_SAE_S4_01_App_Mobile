@@ -25,8 +25,9 @@ public class RegisterActivity2 extends AppCompatActivity {
     private String name;
     private String prenom;
     private String date;
-    private String pharmacie = "Non renseigné";
-    private String medecin = "Non renseigné";
+    private String pharmacie;
+    private String medecin;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -41,8 +42,8 @@ public class RegisterActivity2 extends AppCompatActivity {
         });
 
         // Afficher cacher mdp oeil
-        ImageView oeilouvert = (ImageView) findViewById(R.id.oeilouvert);
-        ImageView oeilferme = (ImageView) findViewById(R.id.oeilferme);
+        ImageView oeilouvert = findViewById(R.id.oeilouvert);
+        ImageView oeilferme = findViewById(R.id.oeilferme);
         EditText passEdit = findViewById(R.id.mdp);
 
         oeilferme.setVisibility(View.VISIBLE);
@@ -74,6 +75,9 @@ public class RegisterActivity2 extends AppCompatActivity {
         DatabaseUser = new Users(this);
         DatabaseIdentifiant = new Identifiants(this);
 
+        pharmacie = getResources().getString(R.string.nr);
+        medecin = getResources().getString(R.string.nr);
+
         Button validateButton = findViewById(R.id.loginBtn);
         validateButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -85,39 +89,38 @@ public class RegisterActivity2 extends AppCompatActivity {
 
                 CheckBox checkbox = findViewById(R.id.checkbox);
 
-                if (!isValidEmail(email_)){
-                    Toast.makeText(RegisterActivity2.this, "Adresse email non valide", Toast.LENGTH_SHORT).show();
-                }else if (!isPasswordValid(password_)) {
-                    Toast.makeText(RegisterActivity2.this, "Le mot de passe doit avoir au moins 8 caractères, une majuscule et un chiffre.", Toast.LENGTH_SHORT).show();
-                }else if(!checkbox.isChecked()){
-                    Toast.makeText(RegisterActivity2.this, "Veuillez accepter les conditions générales d'utilisation", Toast.LENGTH_SHORT).show();
-                }else {
+                if (!isValidEmail(email_)) {
+                    Toast.makeText(RegisterActivity2.this, getString(R.string.invalid_email), Toast.LENGTH_SHORT).show();
+                } else if (!isPasswordValid(password_)) {
+                    Toast.makeText(RegisterActivity2.this, getString(R.string.invalid_password), Toast.LENGTH_SHORT).show();
+                } else if (!checkbox.isChecked()) {
+                    Toast.makeText(RegisterActivity2.this, getString(R.string.accept_terms), Toast.LENGTH_SHORT).show();
+                } else {
                     long userID = DatabaseUser.insertData(genre, name, prenom, date, pharmacie, medecin);
 
-                    if(userID != -1) {
+                    if (userID != -1) {
                         Boolean checkUserEmail = DatabaseIdentifiant.checkEmail(email_);
                         if (checkUserEmail == false) {
                             boolean successIdt = DatabaseIdentifiant.insertData(email_, password_, userID);
                             Intent intent = new Intent(RegisterActivity2.this, LoginActivity.class);
-                            Toast.makeText(RegisterActivity2.this, "Votre compte a bien été créé !", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(RegisterActivity2.this, getString(R.string.account_created), Toast.LENGTH_SHORT).show();
                             startActivity(intent);
                         } else {
-                            Toast.makeText(RegisterActivity2.this, "Un compte avec ce mail existe déjà ! Connectez-vous", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(RegisterActivity2.this, getString(R.string.existing_email), Toast.LENGTH_SHORT).show();
                         }
-                    }else {
-                        Toast.makeText(RegisterActivity2.this, "Une compte avec ce même nom et prénom existe déjà ! Connectez-vous ", Toast.LENGTH_SHORT).show();
-
+                    } else {
+                        Toast.makeText(RegisterActivity2.this, getString(R.string.existing_account), Toast.LENGTH_SHORT).show();
                     }
                 }
-            } });
+            }
 
-    }
+            private boolean isValidEmail(String email) {
+                return !TextUtils.isEmpty(email) && Patterns.EMAIL_ADDRESS.matcher(email).matches();
+            }
 
-    private boolean isValidEmail(String email) {
-        return !TextUtils.isEmpty(email) && Patterns.EMAIL_ADDRESS.matcher(email).matches();
-    }
-
-    private boolean isPasswordValid(String password) {
-        return password.length() >= 8 && password.matches(".*[A-Z].*") && password.matches(".*\\d.*");
+            private boolean isPasswordValid(String password) {
+                return password.length() >= 8 && password.matches(".*[A-Z].*") && password.matches(".*\\d.*");
+            }
+        });
     }
 }

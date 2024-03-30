@@ -118,7 +118,7 @@
                 android:layout_marginTop="5dp"
                 android:backgroundTint="@color/darkGrey"
                 android:fontFamily="@font/inter"
-                android:text="Ravi de vous revoir "
+                android:text="@string/Ravi_revoir"
                 android:textSize="17dp"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
@@ -159,7 +159,7 @@
                android:layout_marginStart="30dp"
                android:layout_marginTop="22dp"
                android:fontFamily="@font/patuaone_regular"
-               android:text=" Créer une alerte"
+               android:text="@string/cree_alerte"
                android:textColor="@color/darkBlue"
                android:textSize="21dp"
                app:layout_constraintStart_toStartOf="parent"
@@ -366,7 +366,7 @@
                 android:layout_marginStart="30dp"
                 android:layout_marginTop="22dp"
                 android:fontFamily="@font/patuaone_regular"
-                android:text=" Ma dernière alerte"
+                android:text="@string/last_alerte"
                 android:textColor="@color/darkBlue"
                 android:textSize="21dp"
                 app:layout_constraintStart_toStartOf="parent"
@@ -433,7 +433,7 @@
                             android:layout_marginEnd="3dp"
                             android:layout_marginBottom="3dp"
                             android:fontFamily="@font/inter_medium"
-                            android:text="Médicament concerné :"
+                            android:text="@string/Médicament_concerné"
                             android:textColor="@color/textGrey"
                             android:textSize="11.5dp" />
 
@@ -460,7 +460,7 @@
                             android:layout_marginEnd="3dp"
                             android:layout_marginBottom="3dp"
                             android:fontFamily="@font/inter_medium"
-                            android:text="Raison :"
+                            android:text="@string/raison"
                             android:textColor="@color/textGrey"
                             android:textSize="11.5dp" />
 
@@ -489,7 +489,7 @@
                             android:layout_marginEnd="3dp"
                             android:layout_marginBottom="3dp"
                             android:fontFamily="@font/inter_medium"
-                            android:text="Message :"
+                            android:text="@string/message"
                             android:textColor="@color/textGrey"
                             android:textSize="11.5dp" />
 
@@ -522,7 +522,7 @@
                                 android:layout_alignParentRight="true"
                                 android:layout_width="110dp"
                                 android:layout_height="wrap_content"
-                                android:text="18 février 2024"
+                                android:text="@string/date"
                                 android:textColor="@color/white"
                                 android:fontFamily="@font/inter_medium"
                                 android:background="@color/darkBlueLightLight"
@@ -543,7 +543,7 @@
                     android:layout_gravity="right|bottom"
                     android:backgroundTint="#00000000"
                     android:fontFamily="@font/inter_semibold"
-                    android:text="Voir toutes mes alertes..."
+                    android:text="@string/all_alerte"
                     android:textColor="@color/darkBlue"
                     android:textSize="11.5dp"
                     android:textStyle="italic" />
@@ -557,7 +557,8 @@
                 android:layout_gravity="center_vertical"
                 android:src="@drawable/soleil"
                 tools:layout_editor_absoluteX="334dp"
-                tools:layout_editor_absoluteY="-1dp" />
+                tools:layout_editor_absoluteY="-1dp"
+                tools:ignore="MissingConstraints" />
 
 
             <!-- ========== FIN SECTION ANCIENNE ALERTE =========== -->/>

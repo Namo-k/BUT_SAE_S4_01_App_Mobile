@@ -23,35 +23,41 @@ public class MedocCodeActivity extends AppCompatActivity {
         Bundle bundle = intent.getExtras();
         String codeCIP = bundle.getString("codeCIP");
 
-        String message = "Le code CIP : " + codeCIP;
-        String raison = "Raison de l'alerte";
-        String messageAlerte = "Message d'alerte";
+        // Construction du message à afficher
+        String message = getString(R.string.cip_code) + codeCIP;
+        String reason = getString(R.string.alert_reason);
+        String alertMessage = getString(R.string.alert_message);
 
-
+// Affichage du message
         msgTV.setText(message);
 
-
+// Récupération de l'ID de l'utilisateur
         UserId myApp = (UserId) getApplication();
         int userID = myApp.getUserID();
-        if (userID != -1) {
-            // Insère l'alerte dans la base de données
-            boolean insertionReussie = alertesDB.insertData(userID, Integer.parseInt(codeCIP), raison, messageAlerte);
 
+// Vérification de l'ID de l'utilisateur
+        if (userID != -1) {
+            // Insertion de l'alerte dans la base de données
+            boolean insertionReussie = alertesDB.insertData(userID, Integer.parseInt(codeCIP), reason, alertMessage);
+
+            // Affichage d'un message de succès ou d'erreur
             if (insertionReussie) {
-                Toast.makeText(MedocCodeActivity.this, "Alerte insérée avec succès!", Toast.LENGTH_SHORT).show();
+                Toast.makeText(MedocCodeActivity.this, R.string.alert_insert_success, Toast.LENGTH_SHORT).show();
             } else {
-                Toast.makeText(MedocCodeActivity.this, "Erreur lors de l'insertion de l'alerte.", Toast.LENGTH_SHORT).show();
+                Toast.makeText(MedocCodeActivity.this, R.string.alert_insert_error, Toast.LENGTH_SHORT).show();
             }
         } else {
-
-            Toast.makeText(MedocCodeActivity.this, "Erreur: ID de l'utilisateur non disponible.", Toast.LENGTH_SHORT).show();
+            // Affichage d'une erreur si l'ID de l'utilisateur n'est pas disponible
+            Toast.makeText(MedocCodeActivity.this, R.string.user_id_error, Toast.LENGTH_SHORT).show();
         }
 
+// Vérification de l'existence du médicament
         boolean medicamentExists = getIntent().getBooleanExtra("medicamentExists", false);
         codeCIP = getIntent().getStringExtra("codeCIP");
         if (!medicamentExists) {
-            Toast.makeText(this, "Aucun médicament trouvé pour ce numéro CIS.", Toast.LENGTH_SHORT).show();
-
+            Toast.makeText(this, R.string.no_medicament_found, Toast.LENGTH_SHORT).show();
         }
+
+
     }
-}
+    }

@@ -56,7 +56,7 @@ public class LoginActivity extends AppCompatActivity {
 
                 if (DatabaseIdentifiant.checkEmailPassword(usernameCo, passwordCo )) {
 
-                    Toast.makeText(LoginActivity.this, "Vous êtes connecté !", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(LoginActivity.this, getResources().getString(R.string.co), Toast.LENGTH_SHORT).show();
                     int userId = DatabaseIdentifiant.getId(usernameCo, passwordCo);
                     UserId myApp = (UserId) getApplication();
                     myApp.setUserID(userId);
@@ -67,7 +67,7 @@ public class LoginActivity extends AppCompatActivity {
                     intent.putExtras(bundle);
                     startActivity(intent);
                 } else {
-                    Toast.makeText(LoginActivity.this, "Votre email ou mot de passe est incorrect", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(LoginActivity.this, getResources().getString(R.string.imm), Toast.LENGTH_SHORT).show();
                 }
             }
         });

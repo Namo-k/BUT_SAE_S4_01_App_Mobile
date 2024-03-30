@@ -24,7 +24,7 @@
             android:layout_marginEnd="3dp"
             android:layout_marginBottom="3dp"
             android:fontFamily="@font/inter_medium"
-            android:text="Personne :"
+            android:text="@string/Personne"
             android:textColor="@color/textGrey"
             android:textSize="12dp" />
 
@@ -69,7 +69,7 @@
                 android:layout_marginEnd="3dp"
                 android:layout_marginBottom="3dp"
                 android:fontFamily="@font/inter_medium"
-                android:text="Médicament concerné :"
+                android:text="@string/Médicament_concerné"
                 android:textColor="@color/textGrey"
                 android:textSize="12dp" />
 
@@ -97,7 +97,7 @@
                 android:layout_marginEnd="3dp"
                 android:layout_marginBottom="3dp"
                 android:fontFamily="@font/inter_medium"
-                android:text="Raison :"
+                android:text="@string/raison"
                 android:textColor="@color/textGrey"
                 android:textSize="12dp" />
 
@@ -127,7 +127,7 @@
                 android:layout_marginEnd="3dp"
                 android:layout_marginBottom="3dp"
                 android:fontFamily="@font/inter_medium"
-                android:text="Message :"
+                android:text="@string/message"
                 android:textColor="@color/textGrey"
                 android:textSize="12dp" />
 
@@ -162,7 +162,7 @@
                     android:layout_alignParentRight="true"
                     android:layout_width="120dp"
                     android:layout_height="wrap_content"
-                    android:text="18 février 2024"
+                    android:text="@string/date"
                     android:textColor="@color/white"
                     android:fontFamily="@font/inter_medium"
                     android:background="@color/darkBlueLightLight"

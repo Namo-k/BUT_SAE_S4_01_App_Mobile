@@ -113,7 +113,7 @@
                     android:layout_marginTop="10dp"
                     android:fontFamily="@font/patuaone_regular"
                     android:gravity="center"
-                    android:text="Mes informations"
+                    android:text="@string/mesInfos"
                     android:textColor="@color/darkBlue"
                     android:textSize="21dp" />
 
@@ -170,7 +170,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:fontFamily="@font/inter_medium"
-                    android:text="Sexe* : "
+                    android:text="@string/sexe"
                     android:textColor="@color/textGrey"
                     android:textSize="13.5sp"
                     tools:ignore="TextSizeCheck"/>
@@ -183,7 +183,7 @@
                     android:paddingLeft="13dp"
                     android:layout_toRightOf="@+id/sexeTV"
                     android:background="@drawable/round_login"
-                    android:hint="Sexe"
+                    android:hint="@string/sexe_"
                     android:inputType="text"
                     android:textSize="12sp"
                     android:fontFamily="@font/inter"
@@ -197,7 +197,7 @@
                     android:layout_below="@+id/sexeTV"
                     android:layout_marginTop="17dp"
                     android:fontFamily="@font/inter_medium"
-                    android:text="Nom* : "
+                    android:text="@string/nom"
                     android:textColor="@color/textGrey"
                     android:textSize="13.5sp"
                     tools:ignore="TextSizeCheck"/>
@@ -226,7 +226,7 @@
                     android:layout_below="@+id/nomTV"
                     android:layout_marginTop="17dp"
                     android:fontFamily="@font/inter_medium"
-                    android:text="Prenom* :"
+                    android:text="@string/prenom"
                     android:textColor="@color/textGrey"
                     android:textSize="13.5sp"
                     tools:ignore="TextSizeCheck"/>
@@ -241,7 +241,7 @@
                     android:layout_toRightOf="@+id/prenomTV"
                     android:background="@drawable/round_login"
                     android:fontFamily="@font/inter"
-                    android:hint="Prénom"
+                    android:hint="@string/prenom"
                     android:inputType="text"
                     android:paddingLeft="13dp"
                     android:textColor="@color/textDarkBlue"
@@ -255,7 +255,7 @@
                     android:layout_below="@+id/prenomTV"
                     android:layout_marginTop="17dp"
                     android:fontFamily="@font/inter_medium"
-                    android:text="Naissance* :"
+                    android:text="@string/naissance"
                     android:textColor="@color/textGrey"
                     android:textSize="13.5dp"
                     tools:ignore="TextSizeCheck" />
@@ -270,7 +270,7 @@
                     android:layout_toRightOf="@+id/naissanceTV"
                     android:background="@drawable/round_login"
                     android:fontFamily="@font/inter"
-                    android:hint="JJ/MM/AAAA"
+                    android:hint="@string/naissance_"
                     android:inputType="text"
                     android:paddingLeft="13dp"
                     android:textColor="@color/textDarkBlue"
@@ -284,7 +284,7 @@
                     android:layout_below="@+id/naissanceTV"
                     android:layout_marginTop="17dp"
                     android:fontFamily="@font/inter_medium"
-                    android:text="Adresse mail* :"
+                    android:text="@string/adrMail"
                     android:textColor="@color/textGrey"
                     android:textSize="13.5dp"
                     tools:ignore="TextSizeCheck"/>
@@ -299,7 +299,7 @@
                     android:layout_toRightOf="@+id/mailTV"
                     android:background="@drawable/round_login"
                     android:fontFamily="@font/inter"
-                    android:hint="Adresse mail"
+                    android:hint="@string/adrMail_"
                     android:inputType="text"
                     android:paddingLeft="13dp"
                     android:textColor="@color/textDarkBlue"
@@ -313,7 +313,7 @@
                     android:layout_below="@+id/mailTV"
                     android:layout_marginTop="17dp"
                     android:fontFamily="@font/inter_medium"
-                    android:text="Pharmacie préférée :"
+                    android:text="@string/pharma"
                     android:textColor="@color/textGrey"
                     android:textSize="13dp"
                     tools:ignore="TextSizeCheck"/>
@@ -328,7 +328,7 @@
                     android:layout_toRightOf="@+id/pharmacieTV"
                     android:background="@drawable/round_login"
                     android:fontFamily="@font/inter"
-                    android:hint="Pharmacie préférée"
+                    android:hint="@string/pharma_"
                     android:inputType="text"
                     android:paddingLeft="13dp"
                     android:textColor="@color/textDarkBlue"
@@ -342,7 +342,7 @@
                     android:layout_below="@+id/pharmacieTV"
                     android:layout_marginTop="17dp"
                     android:fontFamily="@font/inter_medium"
-                    android:text="Médecin traitant :"
+                    android:text="@string/medecin"
                     android:textColor="@color/textGrey"
                     android:textSize="13dp"
                     tools:ignore="TextSizeCheck"/>
@@ -357,7 +357,7 @@
                     android:layout_toRightOf="@+id/medecinTV"
                     android:background="@drawable/round_login"
                     android:fontFamily="@font/inter"
-                    android:hint="Médecin traitant"
+                    android:hint="@string/medecin_"
                     android:inputType="text"
                     android:paddingLeft="13dp"
                     android:textColor="@color/textDarkBlue"
@@ -365,14 +365,36 @@
                     tools:ignore="TouchTargetSizeCheck,TextSizeCheck" />
 
                 <TextView
+                    android:id="@+id/langue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/medecinEdit"
+                    android:layout_marginTop="17dp"
+                    android:fontFamily="@font/inter_medium"
+                    android:text="Langue"
+                    android:textColor="@color/textGrey"
+                    android:textSize="13dp"
+                    tools:ignore="TextSizeCheck"/>
+
+                <Spinner
+                    android:id="@+id/spin"
+                    android:layout_width="250dp"
+                    android:layout_height="21dp"
+                    android:layout_below="@+id/medecinEdit"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="18dp"
+                    android:textSize="13dp"
+                    android:layout_toRightOf="@+id/langue"/>
+
+                <TextView
                     android:id="@+id/info1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_below="@+id/medecinTV"
+                    android:layout_below="@+id/langue"
                     android:layout_marginLeft="35dp"
                     android:layout_marginTop="23dp"
                     android:fontFamily="@font/inter_medium"
-                    android:text="* Ces informations sont "
+                    android:text="@string/information"
                     android:textColor="@color/textGrey"
                     android:textSize="12.5dp"
                     tools:ignore="TextSizeCheck" />
@@ -381,14 +403,13 @@
                     android:id="@+id/info2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_below="@+id/medecinTV"
+                    android:layout_below="@+id/langue"
                     android:layout_toRightOf="@+id/info1"
                     android:layout_marginTop="23dp"
                     android:fontFamily="@font/inter_bold"
-                    android:text="obligatoires"
+                    android:text="@string/obliger"
                     android:textColor="@color/red"
-                    android:textSize="12.6sp"
-                    />
+                    android:textSize="12.6sp" />
             </RelativeLayout>
 
         </androidx.cardview.widget.CardView>
@@ -415,7 +436,7 @@
                     android:layout_height="match_parent"
                     android:fontFamily="@font/inter_medium"
                     android:gravity="center"
-                    android:text="Annuler"
+                    android:text="@string/annuler"
                     android:textColor="@color/white"
                     android:textSize="15dp"
                     tools:ignore="TextSizeCheck" />
@@ -436,7 +457,7 @@
                     android:layout_height="match_parent"
                     android:fontFamily="@font/inter_medium"
                     android:gravity="center"
-                    android:text="Enregistrer"
+                    android:text="@string/enregistrer"
                     android:textColor="@color/white"
                     android:textSize="15dp"
                     tools:ignore="TextSizeCheck" />

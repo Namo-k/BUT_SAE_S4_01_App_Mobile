@@ -59,7 +59,7 @@ public class ToutAlerteActivity extends AppCompatActivity {
         // Récupérer les alertes depuis la base de données
         List<Alerte> alertes = alertesDb.getAllAlertes();
 
-        nbTotalAlertes.setText("Vous avez " + alertes.size() +  " alertes au total");
+        nbTotalAlertes.setText(getResources().getString(R.string.avoir) + alertes.size() + getResources().getString(R.string.ale) );
 
         AlerteAdapterTout adapter = new AlerteAdapterTout(this, alertes);
         listView.setAdapter(adapter);

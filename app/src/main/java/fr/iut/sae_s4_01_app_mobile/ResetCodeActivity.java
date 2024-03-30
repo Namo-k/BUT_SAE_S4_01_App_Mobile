@@ -49,10 +49,10 @@ public class ResetCodeActivity extends AppCompatActivity {
                 startActivity(intent);
                 break;
             case Identifiants.RESET_CODE_INVALID:
-                Toast.makeText(ResetCodeActivity.this, "Le code est erroné", Toast.LENGTH_SHORT).show();
+                Toast.makeText(ResetCodeActivity.this, getString(R.string.reset_code_invalid), Toast.LENGTH_SHORT).show();
                 break;
             case Identifiants.RESET_CODE_EXPIRED:
-                Toast.makeText(ResetCodeActivity.this, "Le code a expiré", Toast.LENGTH_SHORT).show();
+                Toast.makeText(ResetCodeActivity.this, getString(R.string.reset_code_expired), Toast.LENGTH_SHORT).show();
                 break;
             default:
                 break;

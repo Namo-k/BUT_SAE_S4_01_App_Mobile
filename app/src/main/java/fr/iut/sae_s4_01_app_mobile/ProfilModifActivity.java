@@ -1,13 +1,19 @@
 package fr.iut.sae_s4_01_app_mobile;
 
+import android.app.Activity;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.content.res.Configuration;
+import android.content.res.Resources;
 import android.os.Bundle;
 import android.text.TextUtils;
 import android.util.Patterns;
 import android.view.View;
+import android.widget.AdapterView;
+import android.widget.ArrayAdapter;
 import android.widget.EditText;
 import android.widget.ImageView;
+import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -15,33 +21,60 @@ import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.cardview.widget.CardView;
 
+import java.util.Locale;
+
 import fr.iut.sae_s4_01_app_mobile.bd.Identifiants;
 import fr.iut.sae_s4_01_app_mobile.bd.Users;
 
 public class ProfilModifActivity extends AppCompatActivity {
 
-
     private Users DatabaseUser;
     private Identifiants DatabaseId;
+    Spinner spinner;
+    public String[] languages;
+    String sexe_;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_profilmodif);
 
+        String select = getResources().getString(R.string.selection);
+        String fr = getResources().getString(R.string.fr);
+        String en = getResources().getString(R.string.en);
+
+        languages = new String[]{select, fr, en};
+
         UserId myApp = (UserId) getApplication();
         int userID = myApp.getUserID();
 
+        spinner = findViewById(R.id.spin);
+
+        ArrayAdapter<String> adapter = new ArrayAdapter<String>(this, android.R.layout.simple_spinner_dropdown_item, languages);
+        adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        spinner.setAdapter(adapter);
+        spinner.setSelection(0);
+        spinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+            @Override
+            public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+                String selectedLang = parent.getItemAtPosition(position).toString();
+                if(selectedLang.equals(fr)){
+                    setLocal(ProfilModifActivity.this,"fr");
+                } else if(selectedLang.equals(en)){
+                    setLocal(ProfilModifActivity.this,"en");
+                }
+            }
+
+            @Override
+            public void onNothingSelected(AdapterView<?> parent) {
+
+            }
+        });
+
+
+
         DatabaseUser = new Users(this);
         DatabaseId = new Identifiants(this);
-
-        String sexe_ = DatabaseUser.getSexe(userID);
-        String prenom_ = DatabaseUser.getPrenom(userID);
-        String nom_ = DatabaseUser.getNom(userID);
-        String dateNaissance_ =  DatabaseUser.getDataNais(userID);
-        String mail_ = DatabaseId.getMail(userID);
-        String pharmacie_ = DatabaseUser.getPharmacie(userID);
-        String medecin_ =  DatabaseUser.getMedecin(userID);
 
         EditText sexe = (EditText) findViewById(R.id.sexeEdit);
         EditText nom = (EditText) findViewById(R.id.nomEdit);
@@ -51,15 +84,24 @@ public class ProfilModifActivity extends AppCompatActivity {
         EditText pharmacie = (EditText) findViewById(R.id.pharmacieEdit);
         EditText medecin = (EditText) findViewById(R.id.medecinEdit);
 
+        updateSexeValue();
+
+        String prenom_ = DatabaseUser.getPrenom(userID);
+        String nom_ = DatabaseUser.getNom(userID);
+        String dateNaissance_ =  DatabaseUser.getDataNais(userID);
+        String mail_ = DatabaseId.getMail(userID);
+        String pharmacie_ = DatabaseUser.getPharmacie(userID);
+        String medecin_ =  DatabaseUser.getMedecin(userID);
+
         sexe.setText(sexe_);
         nom.setText(nom_);
         prenom.setText(prenom_);
         mail.setText(mail_);
         dateNaissance.setText(dateNaissance_);
-        if (!pharmacie_.equals("Non renseigné")) {
+        if (!pharmacie_.equals(getResources().getString(R.string.nr))) {
             pharmacie.setText(pharmacie_);
         }
-        if (!medecin_.equals("Non renseigné")) {
+        if (!medecin_.equals(getResources().getString(R.string.nr))) {
             medecin.setText(medecin_);
         }
 
@@ -77,17 +119,15 @@ public class ProfilModifActivity extends AppCompatActivity {
                 String medecinText = medecin.getText().toString().trim();
 
                 if (sexeText.isEmpty() || nomText.isEmpty() || prenomText.isEmpty() || dateNaissanceText.isEmpty() || mailText.isEmpty()) {
-                    Toast.makeText(ProfilModifActivity.this, "Veuillez remplir tous le champs obligatoire", Toast.LENGTH_SHORT).show();
-                }
-                else if (!isValidEmail(mailText)) {
-                    Toast.makeText(ProfilModifActivity.this, "L'adresse mail n'est pas sous le bon format", Toast.LENGTH_SHORT).show();
-                }
-                else {
-                    if (pharmacieText.isEmpty()) { pharmacieText = "Non renseigné"; }
-                    if (medecinText.isEmpty()) { medecinText = "Non renseigné"; }
+                    Toast.makeText(ProfilModifActivity.this, getResources().getString(R.string.cob), Toast.LENGTH_SHORT).show();
+                } else if (!isValidEmail(mailText)) {
+                    Toast.makeText(ProfilModifActivity.this, getResources().getString(R.string.format), Toast.LENGTH_SHORT).show();
+                } else {
+                    if (pharmacieText.isEmpty()) { pharmacieText = getResources().getString(R.string.nr); }
+                    if (medecinText.isEmpty()) { medecinText = getResources().getString(R.string.nr); }
                     DatabaseUser.updateData(userID, sexeText, nomText, prenomText, dateNaissanceText, pharmacieText, medecinText);
                     DatabaseId.updateData(userID, mailText);
-                    Toast.makeText(ProfilModifActivity.this, "Vos informations ont bien été enregistré", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(ProfilModifActivity.this, getResources().getString(R.string.ienr), Toast.LENGTH_SHORT).show();
                     Intent intent = new Intent(ProfilModifActivity.this, ProfilActivity.class);
                     startActivity(intent);
                 }
@@ -110,63 +150,15 @@ public class ProfilModifActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 AlertDialog.Builder builder = new AlertDialog.Builder(ProfilModifActivity.this);
-                builder.setMessage("Êtes-vous sûr de vouloir retourner en arriere ? Votre saisie sera annulée.");
-                builder.setPositiveButton("Oui", new DialogInterface.OnClickListener() {
+                builder.setMessage(getResources().getString(R.string.back));
+                builder.setPositiveButton(getResources().getString(R.string.Oui), new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
                         Intent intent = new Intent(ProfilModifActivity.this, ProfilActivity.class);
                         startActivity(intent);
                     }
                 });
-                builder.setNegativeButton("Non", new DialogInterface.OnClickListener() {
-                    @Override
-                    public void onClick(DialogInterface dialog, int which) {
-                        dialog.dismiss();
-                    }
-                });
-                AlertDialog dialog = builder.create();
-                dialog.show();
-            }
-        });
-
-        // navbar click
-        ImageView btnAncienne = (ImageView) findViewById(R.id.ancienneBtn);
-        ImageView btnHome = (ImageView) findViewById(R.id.homeBtn);
-        btnAncienne.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                AlertDialog.Builder builder = new AlertDialog.Builder(ProfilModifActivity.this);
-                builder.setMessage("Êtes-vous sûr de vouloir accéder à la page d'ancienne alerte ? Votre saisie sera annulée.");
-                builder.setPositiveButton("Oui", new DialogInterface.OnClickListener() {
-                    @Override
-                    public void onClick(DialogInterface dialog, int which) {
-                        Intent intent = new Intent(ProfilModifActivity.this, ancienneAlerteActivity.class);
-                        startActivity(intent);
-                    }
-                });
-                builder.setNegativeButton("Non", new DialogInterface.OnClickListener() {
-                    @Override
-                    public void onClick(DialogInterface dialog, int which) {
-                        dialog.dismiss();
-                    }
-                });
-                AlertDialog dialog = builder.create();
-                dialog.show();
-            }
-        });
-        btnHome.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                AlertDialog.Builder builder = new AlertDialog.Builder(ProfilModifActivity.this);
-                builder.setMessage("Êtes-vous sûr de vouloir accéder à la page d'accueil ? Votre saisie sera annulée.");
-                builder.setPositiveButton("Oui", new DialogInterface.OnClickListener() {
-                    @Override
-                    public void onClick(DialogInterface dialog, int which) {
-                        Intent intent = new Intent(ProfilModifActivity.this, AccueilActivity.class);
-                        startActivity(intent);
-                    }
-                });
-                builder.setNegativeButton("Non", new DialogInterface.OnClickListener() {
+                builder.setNegativeButton(getResources().getString(R.string.Non), new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
                         dialog.dismiss();
@@ -181,4 +173,46 @@ public class ProfilModifActivity extends AppCompatActivity {
     private boolean isValidEmail(String mail) {
         return !TextUtils.isEmpty(mail) && Patterns.EMAIL_ADDRESS.matcher(mail).matches();
     }
+
+    private void updateSexeValue() {
+        int userID = ((UserId) getApplication()).getUserID();
+        sexe_ = DatabaseUser.getSexe(userID); // Récupérer le sexe de l'utilisateur
+        switch (sexe_) {
+            case "Homme":
+                sexe_ = getString(R.string.homme);
+                break;
+            case "Male":
+                sexe_ = getString(R.string.homme);
+                break;
+            case "Femme":
+                sexe_ = getString(R.string.femme);
+                break;
+            case "Female":
+                sexe_ = getString(R.string.femme);
+                break;
+            case "Non renseigné":
+                sexe_ = getString(R.string.nr);
+                break;
+            case "Not specified":
+                sexe_ = getString(R.string.nr);
+                break;
+        }
+    }
+
+    // Méthode pour mettre à jour la langue et redémarrer l'activité
+    public void setLocal(Activity activity, String langCode){
+        Locale locale = new Locale(langCode);
+        locale.setDefault(locale);
+        Resources resources = activity.getResources();
+        Configuration config = resources.getConfiguration();
+        config.setLocale(locale);
+        resources.updateConfiguration(config, resources.getDisplayMetrics());
+
+    }
+
+    private void updateUI() {
+        EditText sexe = findViewById(R.id.sexeEdit);
+        sexe.setText(sexe_);
+    }
+
 }

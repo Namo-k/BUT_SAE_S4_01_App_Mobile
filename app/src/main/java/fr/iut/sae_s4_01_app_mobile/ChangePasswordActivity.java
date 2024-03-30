@@ -40,7 +40,7 @@ public class ChangePasswordActivity extends AppCompatActivity {
                 String mdpStr = mdp.getText().toString();
                 String mdpConfStr = mdpConfirmation.getText().toString();
                 if (!isPasswordValid(mdpStr) || !isPasswordValid(mdpConfStr) ) {
-                    Toast.makeText(ChangePasswordActivity.this, "Le mot de passe doit avoir au moins 8 caractères, une majuscule et un chiffre.", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(ChangePasswordActivity.this, getResources().getString(R.string.ccmdp), Toast.LENGTH_SHORT).show();
                 }else{
 
                     if (mdpStr.equals(mdpConfStr)) {
@@ -49,7 +49,7 @@ public class ChangePasswordActivity extends AppCompatActivity {
                         Intent intent = new Intent(ChangePasswordActivity.this, LoginActivity.class);
                         startActivity(intent);
                     }else{
-                        Toast.makeText(ChangePasswordActivity.this, "Les deux mots de passe ne sont pas identique", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(ChangePasswordActivity.this, getResources().getString(R.string.imdp), Toast.LENGTH_SHORT).show();
 
                     }
                 }

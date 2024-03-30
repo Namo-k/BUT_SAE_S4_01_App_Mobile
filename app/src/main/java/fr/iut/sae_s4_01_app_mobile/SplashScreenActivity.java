@@ -21,12 +21,7 @@ public class SplashScreenActivity extends AppCompatActivity {
 
 
     private final static int TEMPS = 4500;
-    private String Quote1 = "Savez-vous que 10 minutes de méditation peut réduire l’anxiété et booster votre confiance ?";
-    private String Quote2 = "Savez-vous que consommer des aliments riches en fibres peut favoriser une meilleure digestion ?";
-    private String Quote3 = "Savez-vous que consommer 5 fruits et légumes par jour renforce votre système immunitaire ?";
-    private String Quote4 = "Savez-vous que dormir 7 à 8 heures par nuit peut favoriser une meilleure récupération musculaire ?";
-    private String Quote5 = "Savez-vous que marcher 10 000 pas par jour peut  améliorer votre santé cardiovasculaire ?";
-    private String[] tabQuote = {Quote1, Quote2, Quote3, Quote4, Quote5};
+    private String[] tabQuote;
     private TextView citation;
     private ImageView colombeDroiteImage;
     private ImageView colombeGaucheImage;
@@ -34,6 +29,13 @@ public class SplashScreenActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splash_screen);
+
+        String Quote1 = getResources().getString(R.string.quote1);
+        String Quote2 = getResources().getString(R.string.quote2);
+        String Quote3 = getResources().getString(R.string.quote3);
+        String Quote4 = getResources().getString(R.string.quote4);
+        String Quote5 = getResources().getString(R.string.quote5);
+        tabQuote = new String[]{Quote1, Quote2, Quote3, Quote4, Quote5};
 
 
         citation = findViewById(R.id.citationText);

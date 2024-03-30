@@ -12,8 +12,11 @@ import java.util.List;
 public class AlerteAdapter extends ArrayAdapter<Alerte> {
 
     private final LayoutInflater inflater;
+    private final Context context;
+
     public AlerteAdapter(Context context, List<Alerte> alertes) {
         super(context, 0, alertes);
+        this.context = context;
         inflater = LayoutInflater.from(context);
     }
 
@@ -35,8 +38,9 @@ public class AlerteAdapter extends ArrayAdapter<Alerte> {
         TextView messageTV = itemView.findViewById(R.id.messageTV);
         messageTV.setText(currentAlerte.getMessage());
 
-        TextView date = itemView.findViewById(R.id.dateAlerte);
-        date.setText(currentAlerte.getDateAlerte());
+        TextView dateTV = itemView.findViewById(R.id.dateAlerte);
+        String formattedDate = currentAlerte.getDateAlerte(); // Obtenez la date formatée à partir de getDateAlerte()
+        dateTV.setText(formattedDate); // Définissez le texte du TextView avec la date formatée
 
         return itemView;
     }

@@ -11,7 +11,7 @@
         android:layout_height="wrap_content"
         android:layout_marginLeft="45dp"
         android:layout_marginTop="40dp"
-        android:text="Bienvenue !"
+        android:text="@string/bienvenue"
         android:fontFamily="@font/patuaone_regular"
         android:textColor="@color/darkBlueLight"
         android:textSize="24sp"
@@ -60,7 +60,7 @@
             android:layout_height="wrap_content"
             android:fontFamily="@font/patuaone_regular"
             android:gravity="center"
-            android:text="Réinitialiser votre mot de passe !"
+            android:text="@string/renit"
             android:textColor="@android:color/white"
             android:textSize="21.5dp" />
 
@@ -85,7 +85,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
-                    android:text="Code de vérification : "
+                    android:text="@string/code_verif"
                     android:textColor="@color/white"
                     android:textSize="18dp" />
 
@@ -124,7 +124,7 @@
             android:backgroundTint="@color/darkBlueLight"
             android:elevation="10dp"
             android:layout_marginTop="50dp"
-            android:text=" Valider"
+            android:text="@string/valide"
             android:textSize="15dp"
             tools:ignore="MissingConstraints,TextSizeCheck"
             tools:layout_editor_absoluteX="52dp"

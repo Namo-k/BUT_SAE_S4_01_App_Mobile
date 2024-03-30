@@ -18,7 +18,7 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="25dp"
             android:layout_marginTop="20dp"
-            android:text="Bienvenue !"
+            android:text="@string/bienvenue"
             android:fontFamily="@font/patuaone_regular"
             android:textColor="@color/darkBlueLight"
             android:textSize="24sp"
@@ -68,7 +68,7 @@
             android:layout_height="match_parent"
             android:fontFamily="@font/patuaone_regular"
             android:gravity="center"
-            android:text="Vous avez déjà un compte ?"
+            android:text="@string/compte"
             android:textColor="@color/white"
             android:textSize="21.5dp" />
 
@@ -90,7 +90,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="13dp"
-                android:text="Votre adresse mail : "
+                android:text="@string/mail"
                 android:fontFamily="@font/inter_medium"
                 android:textSize="17dp" />
 
@@ -109,7 +109,7 @@
             android:layout_width="0dp"
             android:layout_height="41dp"
             android:background="@drawable/round_login"
-            android:hint="Adresse mail..."
+            android:hint="@string/amail"
             android:textSize="17dp"
             android:inputType="textEmailAddress"
             android:paddingLeft="20dp"
@@ -140,7 +140,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="13dp"
-                android:text="Votre mot de passe  : "
+                android:text="@string/vmdp"
                 android:textSize="18dp" />
 
         </LinearLayout>
@@ -157,7 +157,7 @@
                 android:id="@+id/passwordET"
                 android:layout_width="0dp"
                 android:layout_height="41dp"
-                android:hint="Mot de passe..."
+                android:hint="@string/Motpasse"
                 android:inputType="textPassword"
                 android:textSize="17sp"
                 android:paddingLeft="20dp"
@@ -199,7 +199,7 @@
             android:layout_marginRight="0dp"
             android:gravity="right"
             android:inputType="text"
-            android:text="MOT DE PASSE OUBLIÉ ?"
+            android:text="@string/oublie"
             android:textColor="@color/darkBlueLight"
             android:textSize="15sp"
             android:textStyle="bold"
@@ -215,7 +215,7 @@
             android:layout_marginTop="17dp"
             android:layout_marginBottom="10dp"
             android:backgroundTint="@color/darkBlueLight"
-            android:text="CONNECTEZ-VOUS !"
+            android:text="@string/connect"
             android:fontFamily="@font/inter_medium"
             android:textSize="13.5dp"
             tools:ignore="TextSizeCheck" />
@@ -227,7 +227,7 @@
             android:layout_marginLeft="145dp"
             android:gravity="center"
             android:paddingTop="9dp"
-            android:text="OU"
+            android:text="@string/ou"
             android:fontFamily="@font/patuaone_regular"
             android:textColor="@color/white"
             android:textSize="20dp" />
@@ -251,7 +251,7 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="113dp"
             android:layout_marginTop="37dp"
-            android:text="CRÉER UN COMPTE"
+            android:text="@string/cree_compte"
             android:textColor="@color/darkBlueLight"
             android:fontFamily="@font/inter_extrabold"
             android:textSize="16dp"

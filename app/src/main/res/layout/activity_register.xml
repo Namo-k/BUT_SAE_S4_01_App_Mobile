@@ -27,7 +27,7 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="55dp"
             android:layout_marginTop="20dp"
-            android:text="Vous êtes nouveau ?"
+            android:text="@string/nouveau"
             android:fontFamily="@font/patuaone_regular"
             android:textColor="@color/darkBlueLight"
             android:textSize="21sp"
@@ -77,7 +77,7 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="10dp"
             android:fontFamily="@font/patuaone_regular"
-            android:text="Complétez quelques informations !"
+            android:text="@string/info"
             android:textAlignment="center"
             android:textColor="@color/darkBlueLight"
             android:textSize="21.5dp" />
@@ -100,7 +100,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="10dp"
                 android:fontFamily="@font/inter"
-                android:text=" Votre genre : "
+                android:text="@string/genre"
                 android:textSize="15.5dp" />
 
         </LinearLayout>
@@ -144,7 +144,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="10dp"
                 android:fontFamily="@font/inter"
-                android:text=" Votre nom : "
+                android:text="@string/noom"
                 android:textSize="15.5dp" />
 
         </LinearLayout>
@@ -162,7 +162,7 @@
                 android:layout_height="40dp"
                 android:background="@drawable/round_login"
                 android:fontFamily="@font/inter"
-                android:hint="Nom..."
+                android:hint="@string/noom_"
                 android:inputType="text"
                 android:paddingLeft="20dp"
                 android:textSize="16dp"
@@ -192,7 +192,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="10dp"
                 android:fontFamily="@font/inter"
-                android:text=" Votre prénom : "
+                android:text="@string/preenom"
                 android:textSize="15.5dp" />
 
         </LinearLayout>
@@ -213,7 +213,7 @@
                 android:layout_height="37dp"
                 android:background="@drawable/round_login"
                 android:fontFamily="@font/inter"
-                android:hint="Prénom..."
+                android:hint="@string/preenom_"
                 android:inputType="text"
                 android:paddingLeft="20dp"
                 android:textSize="16dp"
@@ -244,7 +244,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="10dp"
                 android:fontFamily="@font/inter"
-                android:text=" Date de naissance :"
+                android:text="@string/date_"
                 android:textSize="15.5dp" />
 
         </LinearLayout>
@@ -263,7 +263,7 @@
                 android:layout_width="0dp"
                 android:layout_height="35dp"
                 android:background="@drawable/round_login"
-                android:hint="JJ"
+                android:hint="@string/jour"
                 android:inputType="number"
                 android:maxLength="2"
                 android:textAlignment="center"
@@ -293,7 +293,7 @@
                 android:layout_height="35dp"
                 android:layout_marginStart="8dp"
                 android:background="@drawable/round_login"
-                android:hint="AAAA"
+                android:hint="@string/annee"
                 android:inputType="number"
                 android:maxLength="4"
                 android:textAlignment="center"
@@ -312,7 +312,7 @@
             android:layout_gravity="center"
             android:layout_marginTop="30dp"
             android:backgroundTint="@color/darkBlueLight"
-            android:text="Passer à la suite..."
+            android:text="@string/suite"
             android:textSize="13.5dp"
             tools:ignore="TextSizeCheck" />
 

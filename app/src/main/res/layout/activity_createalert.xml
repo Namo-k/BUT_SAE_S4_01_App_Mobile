@@ -113,7 +113,7 @@
                     android:layout_marginTop="10dp"
                     android:fontFamily="@font/patuaone_regular"
                     android:gravity="center"
-                    android:text="Créer une alerte"
+                    android:text="@string/cree_alerte"
                     android:textColor="@color/darkBlue"
                     android:textSize="21dp" />
 
@@ -159,7 +159,7 @@
                     android:layout_height="wrap_content"
                     android:fontFamily="@font/inter_semibold"
                     android:gravity="center"
-                    android:text="Remplissez les information :"
+                    android:text="@string/info"
                     android:layout_marginTop="10dp"
                     android:textColor="@color/darkBlue"
                     android:textSize="17dp"
@@ -174,7 +174,7 @@
                     android:layout_marginTop="10dp"
                     android:fontFamily="@font/inter_light"
                     android:gravity="center"
-                    android:text="Merci infiniment pour votre contribution !"
+                    android:text="@string/merci"
                     android:textColor="@color/textGrey"
                     android:textSize="14dp"
                     android:textStyle="bold" />
@@ -187,7 +187,7 @@
                     android:layout_marginLeft="3dp"
                     android:layout_marginTop="18dp"
                     android:fontFamily="@font/inter_medium"
-                    android:text="Code CIP* :"
+                    android:text="@string/cip"
                     android:textColor="@color/textGrey"
                     android:textSize="13.5dp"
                     tools:ignore="TextSizeCheck" />
@@ -215,7 +215,7 @@
                     android:layout_marginLeft="3dp"
                     android:layout_marginTop="15dp"
                     android:fontFamily="@font/inter_medium"
-                    android:text="Nom du médicament* :"
+                    android:text="@string/nom_medoc"
                     android:textColor="@color/textGrey"
                     android:textSize="13.5dp"
                     tools:ignore="TextSizeCheck" />
@@ -229,7 +229,7 @@
                     android:layout_marginLeft="3dp"
                     android:layout_marginTop="15dp"
                     android:fontFamily="@font/inter_medium"
-                    android:text="Raison* :"
+                    android:text="@string/raison_"
                     android:textColor="@color/textGrey"
                     android:textSize="13.5dp"
                     tools:ignore="TextSizeCheck" />
@@ -242,7 +242,7 @@
                     android:layout_marginLeft="3dp"
                     android:layout_marginTop="18dp"
                     android:fontFamily="@font/inter_medium"
-                    android:text="Message  :"
+                    android:text="@string/message"
                     android:textColor="@color/textGrey"
                     android:textSize="13.5dp"
                     tools:ignore="TextSizeCheck" />
@@ -268,7 +268,7 @@
                     android:layout_marginTop="10dp"
                     android:background="@drawable/round_createalert"
                     android:fontFamily="@font/inter"
-                    android:hint="Expliquez nous votre situation..."
+                    android:hint="@string/situation"
                     android:inputType="text"
                     android:paddingLeft="15dp"
                     android:textColor="@color/textDarkBlue"
@@ -311,7 +311,7 @@
                         android:layout_height="match_parent"
                         android:fontFamily="@font/inter_medium"
                         android:gravity="center"
-                        android:text="Annuler"
+                        android:text="@string/annuler"
                         android:textColor="@color/white"
                         android:textSize="15dp" />
 
@@ -332,7 +332,7 @@
                         android:layout_height="match_parent"
                         android:fontFamily="@font/inter_medium"
                         android:gravity="center"
-                        android:text="Enregistrer"
+                        android:text="@string/enregistrer"
                         android:textColor="@color/white"
                         android:textSize="15dp" />
                 </androidx.cardview.widget.CardView>
@@ -352,7 +352,7 @@
                     android:layout_below="@+id/btnAnnuler"
                     android:layout_marginTop="10dp"
                     android:fontFamily="@font/inter_medium"
-                    android:text="* Ces informations sont "
+                    android:text="@string/information"
                     android:textColor="@color/textGrey"
                     android:layout_marginBottom="5dp"
                     android:textSize="13dp" />
@@ -363,7 +363,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
                     android:fontFamily="@font/inter_bold"
-                    android:text="obligatoires"
+                    android:text="@string/obliger"
                     android:layout_marginBottom="5dp"
                     android:textColor="@color/red"
                     android:textSize="13.1dp" />

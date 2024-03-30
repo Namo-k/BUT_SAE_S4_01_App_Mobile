@@ -1,6 +1,5 @@
 package fr.iut.sae_s4_01_app_mobile;
 
-
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
@@ -22,9 +21,9 @@ import java.util.List;
 import fr.iut.sae_s4_01_app_mobile.bd.Alertes;
 import fr.iut.sae_s4_01_app_mobile.bd.Medicament;
 
-
 public class NewAlertActivity extends AppCompatActivity {
     private Medicament medicamentDatabase;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -45,16 +44,14 @@ public class NewAlertActivity extends AppCompatActivity {
         codeCIP = bundle.getString("codeCIP");
 
         List<String> spinnerList = new ArrayList<>();
-        spinnerList.add("Sélectionnez une raison");
-        spinnerList.add("Renouvellement impossible");
-        spinnerList.add("Stock indisponible");
-        spinnerList.add("Livraison tardive");
-        spinnerList.add("Autre");
+        spinnerList.add(getString(R.string.select_reason));
+        spinnerList.add(getString(R.string.renewal_impossible));
+        spinnerList.add(getString(R.string.stock_unavailable));
+        spinnerList.add(getString(R.string.late_delivery));
+        spinnerList.add(getString(R.string.other));
         spinnerRaison.setAdapter(new ArrayAdapter<String>(this, android.R.layout.simple_spinner_dropdown_item, spinnerList));
 
-
         ImageView sedeconnecterBtn = findViewById(R.id.sedeconnecterBtn);
-
 
         sedeconnecterBtn.setOnClickListener(new View.OnClickListener(){
             @Override
@@ -80,40 +77,35 @@ public class NewAlertActivity extends AppCompatActivity {
                 UserId myApp = (UserId) getApplication();
                 int userID = myApp.getUserID();
 
-
-
-                if (userID != -1 && codeCIP != null && !raison.equals("Sélectionnez une raison")) {
-
+                if (userID != -1 && codeCIP != null && !raison.equals(getString(R.string.select_reason))) {
                     boolean insertionReussie = alertesDB.insertData(userID, Integer.parseInt(codeCIP), raison, messageAlerte);
                     if (insertionReussie) {
-                        Toast.makeText(NewAlertActivity.this, "Alerte insérée avec succès!", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(NewAlertActivity.this, getString(R.string.insert_success), Toast.LENGTH_SHORT).show();
                         Intent intent = new Intent(NewAlertActivity.this, AccueilActivity.class);
                         startActivity(intent);
                     } else {
-                        Toast.makeText(NewAlertActivity.this, "Erreur lors de l'insertion de l'alerte.", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(NewAlertActivity.this, getString(R.string.insert_error), Toast.LENGTH_SHORT).show();
                     }
                 } else {
-                    Toast.makeText(NewAlertActivity.this, "Veuillez sélectionner une raison valide.", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(NewAlertActivity.this, getString(R.string.valid_reason), Toast.LENGTH_SHORT).show();
                 }
             }
         });
-        
-
 
         CardView annuler = findViewById(R.id.btnAnnuler);
         annuler.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 AlertDialog.Builder builder = new AlertDialog.Builder(NewAlertActivity.this);
-                builder.setMessage("Êtes-vous sûr de vouloir retourner en arrière ? Votre saisie sera annulée.");
-                builder.setPositiveButton("Oui", new DialogInterface.OnClickListener() {
+                builder.setMessage(getString(R.string.cancel_confirmation));
+                builder.setPositiveButton(getResources().getString(R.string.Oui), new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
                         Intent intent = new Intent(NewAlertActivity.this, AccueilActivity.class);
                         startActivity(intent);
                     }
                 });
-                builder.setNegativeButton("Non", new DialogInterface.OnClickListener() {
+                builder.setNegativeButton(getResources().getString(R.string.Non), new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
                         dialog.dismiss();
@@ -129,15 +121,15 @@ public class NewAlertActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 AlertDialog.Builder builder = new AlertDialog.Builder(NewAlertActivity.this);
-                builder.setMessage("Êtes-vous sûr de vouloir accéder à la page d'accueil ? Votre saisie sera annulée.");
-                builder.setPositiveButton("Oui", new DialogInterface.OnClickListener() {
+                builder.setMessage(getString(R.string.home_confirmation));
+                builder.setPositiveButton(getResources().getString(R.string.Oui), new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
                         Intent intent = new Intent(NewAlertActivity.this, AccueilActivity.class);
                         startActivity(intent);
                     }
                 });
-                builder.setNegativeButton("Non", new DialogInterface.OnClickListener() {
+                builder.setNegativeButton(getResources().getString(R.string.Non), new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
                         dialog.dismiss();
@@ -148,21 +140,20 @@ public class NewAlertActivity extends AppCompatActivity {
             }
         });
 
-
         ImageView ancienneAlerte = findViewById(R.id.ancienneBtn);
         ancienneAlerte.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 AlertDialog.Builder builder = new AlertDialog.Builder(NewAlertActivity.this);
-                builder.setMessage("Êtes-vous sûr de vouloir accéder à la page d'ancienne alerte ? Votre saisie sera annulée.");
-                builder.setPositiveButton("Oui", new DialogInterface.OnClickListener() {
+                builder.setMessage(getString(R.string.old_alert_confirmation));
+                builder.setPositiveButton(getResources().getString(R.string.Oui), new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
                         Intent intent = new Intent(NewAlertActivity.this, ancienneAlerteActivity.class);
                         startActivity(intent);
                     }
                 });
-                builder.setNegativeButton("Non", new DialogInterface.OnClickListener() {
+                builder.setNegativeButton(getResources().getString(R.string.Non), new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
                         dialog.dismiss();
@@ -178,15 +169,15 @@ public class NewAlertActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 AlertDialog.Builder builder = new AlertDialog.Builder(NewAlertActivity.this);
-                builder.setMessage("Êtes-vous sûr de vouloir accéder à votre profil ? Votre saisie sera annulée.");
-                builder.setPositiveButton("Oui", new DialogInterface.OnClickListener() {
+                builder.setMessage(getString(R.string.profile_confirmation));
+                builder.setPositiveButton(getResources().getString(R.string.Oui), new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
                         Intent intent = new Intent(NewAlertActivity.this, ProfilActivity.class);
                         startActivity(intent);
                     }
                 });
-                builder.setNegativeButton("Non", new DialogInterface.OnClickListener() {
+                builder.setNegativeButton(getResources().getString(R.string.Non), new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
                         dialog.dismiss();
@@ -205,8 +196,5 @@ public class NewAlertActivity extends AppCompatActivity {
             return bundle.getString("codeCIP");
         }
         return null;
-
     }
-
-
 }

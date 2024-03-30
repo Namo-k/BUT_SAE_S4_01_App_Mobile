@@ -29,7 +29,7 @@ public class CipManuelleActivity extends AppCompatActivity {
         editCodeCIP.setFilters(new InputFilter[] {new InputFilter.LengthFilter(8)});
 
         TextView textView = findViewById(R.id.textView);
-        String text = "Vous avez plutôt une DataMatrix ?";
+        String text = getResources().getString(R.string.vdata);
         SpannableString spannableString = new SpannableString(text);
 
         StyleSpan boldSpan = new StyleSpan(Typeface.BOLD);
@@ -51,7 +51,7 @@ public class CipManuelleActivity extends AppCompatActivity {
 
 
                 if (codeCIP.length() < 8) {
-                    Toast.makeText(CipManuelleActivity.this, "Le numéro du CIS doit comporter 8 caractères.", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(CipManuelleActivity.this, getResources().getString(R.string.ccip), Toast.LENGTH_SHORT).show();
                     return;
                 }
 
@@ -60,7 +60,7 @@ public class CipManuelleActivity extends AppCompatActivity {
                 String nomMedicament = medicamentDatabase.getNomMedicamentByCodeCIP(codeCIP);
                 if (nomMedicament == null || nomMedicament.isEmpty()) {
 
-                    Toast.makeText(CipManuelleActivity.this, "Aucun médicament trouvé pour ce numéro CIS.", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(CipManuelleActivity.this, getResources().getString(R.string.ocip), Toast.LENGTH_SHORT).show();
                 } else {
 
                     Intent intent = new Intent(CipManuelleActivity.this, NewAlertActivity.class);
@@ -77,15 +77,15 @@ public class CipManuelleActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 AlertDialog.Builder builder = new AlertDialog.Builder(CipManuelleActivity.this);
-                builder.setMessage("Êtes-vous sûr de vouloir retourner en arriere ? Votre saisie sera annulée.");
-                builder.setPositiveButton("Oui", new DialogInterface.OnClickListener() {
+                builder.setMessage(getResources().getString(R.string.back));
+                builder.setPositiveButton(getResources().getString(R.string.Oui), new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
                         Intent intent = new Intent(CipManuelleActivity.this, AccueilActivity.class);
                         startActivity(intent);
                     }
                 });
-                builder.setNegativeButton("Non", new DialogInterface.OnClickListener() {
+                builder.setNegativeButton(getResources().getString(R.string.Non), new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
                         dialog.dismiss();
@@ -101,15 +101,15 @@ public class CipManuelleActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 AlertDialog.Builder builder = new AlertDialog.Builder(CipManuelleActivity.this);
-                builder.setMessage("Êtes-vous sûr de vouloir accéder à la page d'accueil ? Votre saisie sera annulée.");
-                builder.setPositiveButton("Oui", new DialogInterface.OnClickListener() {
+                builder.setMessage(getResources().getString(R.string.retour));
+                builder.setPositiveButton(getResources().getString(R.string.Oui), new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
                         Intent intent = new Intent(CipManuelleActivity.this, AccueilActivity.class);
                         startActivity(intent);
                     }
                 });
-                builder.setNegativeButton("Non", new DialogInterface.OnClickListener() {
+                builder.setNegativeButton(getResources().getString(R.string.Non), new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
                         dialog.dismiss();
@@ -126,15 +126,15 @@ public class CipManuelleActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 AlertDialog.Builder builder = new AlertDialog.Builder(CipManuelleActivity.this);
-                builder.setMessage("Êtes-vous sûr de vouloir accéder à la page d'ancienne alerte ? Votre saisie sera annulée.");
-                builder.setPositiveButton("Oui", new DialogInterface.OnClickListener() {
+                builder.setMessage(getResources().getString(R.string.acc));
+                builder.setPositiveButton(getResources().getString(R.string.Oui), new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
                         Intent intent = new Intent(CipManuelleActivity.this, ancienneAlerteActivity.class);
                         startActivity(intent);
                     }
                 });
-                builder.setNegativeButton("Non", new DialogInterface.OnClickListener() {
+                builder.setNegativeButton(getResources().getString(R.string.Non), new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
                         dialog.dismiss();
@@ -151,15 +151,15 @@ public class CipManuelleActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 AlertDialog.Builder builder = new AlertDialog.Builder(CipManuelleActivity.this);
-                builder.setMessage("Êtes-vous sûr de vouloir accéder à votre profil ? Votre saisie sera annulée.");
-                builder.setPositiveButton("Oui", new DialogInterface.OnClickListener() {
+                builder.setMessage(getResources().getString(R.string.pcc));
+                builder.setPositiveButton(getResources().getString(R.string.Oui), new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
                         Intent intent = new Intent(CipManuelleActivity.this, ProfilActivity.class);
                         startActivity(intent);
                     }
                 });
-                builder.setNegativeButton("Non", new DialogInterface.OnClickListener() {
+                builder.setNegativeButton(getResources().getString(R.string.Non), new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
                         dialog.dismiss();

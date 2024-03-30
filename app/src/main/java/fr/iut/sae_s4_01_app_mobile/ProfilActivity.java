@@ -20,6 +20,7 @@ public class ProfilActivity extends AppCompatActivity {
 
     private Users DatabaseUser;
     private Identifiants DatabaseId;
+    String sexe_;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -40,7 +41,9 @@ public class ProfilActivity extends AppCompatActivity {
         TextView pharmacie = findViewById(R.id.pharmacieLabelTV);
         TextView medecin = findViewById(R.id.medecinLabelTV);
 
-        String sexe_ = DatabaseUser.getSexe(userID);
+        sexe_ = DatabaseUser.getSexe(userID);
+        updateSexeValue();
+
         String prenom_ = DatabaseUser.getPrenom(userID);
         String nom_ = DatabaseUser.getNom(userID);
         String dateNaissance_ =  DatabaseUser.getDataNais(userID);
@@ -134,6 +137,31 @@ public class ProfilActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+    }
+
+    private void updateSexeValue() {
+        int userID = ((UserId) getApplication()).getUserID();
+        sexe_ = DatabaseUser.getSexe(userID); // Récupérer le sexe de l'utilisateur
+        switch (sexe_) {
+            case "Homme":
+                sexe_ = getString(R.string.homme);
+                break;
+            case "Male":
+                sexe_ = getString(R.string.homme);
+                break;
+            case "Femme":
+                sexe_ = getString(R.string.femme);
+                break;
+            case "Female":
+                sexe_ = getString(R.string.femme);
+                break;
+            case "Non renseigné":
+                sexe_ = getString(R.string.nr);
+                break;
+            case "Not specified":
+                sexe_ = getString(R.string.nr);
+                break;
+        }
     }
 
 

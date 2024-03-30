@@ -31,10 +31,10 @@ public class RegisterActivity extends AppCompatActivity {
         Spinner genreSpinner = findViewById(R.id.genre);
 
         List<String> genresList = new ArrayList<>();
-        genresList.add("Selectionnez un genre");
-        genresList.add("Homme");
-        genresList.add("Femme");
-        genresList.add("Non renseigné");
+        genresList.add(getResources().getString(R.string.selectGenre));
+        genresList.add(getResources().getString(R.string.homme));
+        genresList.add(getResources().getString(R.string.femme));
+        genresList.add(getResources().getString(R.string.nr));
         genreSpinner.setAdapter(new ArrayAdapter<String>(this, android.R.layout.simple_spinner_dropdown_item, genresList));
 
 
@@ -56,16 +56,18 @@ public class RegisterActivity extends AppCompatActivity {
                 String genre = genreSpinner.getSelectedItem().toString();
 
                 if (nom_.isEmpty() || prenom_.isEmpty() || jour_.isEmpty() || mois_.isEmpty() || annee_.isEmpty()) {
-                    Toast.makeText(RegisterActivity.this, "Veuillez remplir tous les champs", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(RegisterActivity.this, getString(R.string.fill_all_fields), Toast.LENGTH_SHORT).show();
+
                 } else {
-                    if(genre.equals("Selectionnez un genre")){
-                        Toast.makeText(RegisterActivity.this, "Veuillez selectionner un genre", Toast.LENGTH_SHORT).show();
-                    }else if (!verifjour(jour_)) {
-                        Toast.makeText(RegisterActivity.this, "Le jour saisi n'est pas conforme", Toast.LENGTH_SHORT).show();
-                    }else if(!verifmois(mois_)){
-                        Toast.makeText(RegisterActivity.this, "Le mois saisi n'est pas conforme", Toast.LENGTH_SHORT).show();
-                    }else if(!verifanne(annee_)){
-                        Toast.makeText(RegisterActivity.this, "L'année saisie n'est pas conforme", Toast.LENGTH_SHORT).show();
+                    if(genre.equals(getResources().getString(R.string.selection))){
+                        Toast.makeText(RegisterActivity.this, getString(R.string.select_gender), Toast.LENGTH_SHORT).show();
+                    } else if (!verifjour(jour_)) {
+                        Toast.makeText(RegisterActivity.this, getString(R.string.invalid_day), Toast.LENGTH_SHORT).show();
+                    } else if (!verifmois(mois_)) {
+                        Toast.makeText(RegisterActivity.this, getString(R.string.invalid_month), Toast.LENGTH_SHORT).show();
+                    } else if (!verifanne(annee_)) {
+                        Toast.makeText(RegisterActivity.this, getString(R.string.invalid_year), Toast.LENGTH_SHORT).show();
+
                     }else {
                         Intent intent = new Intent(RegisterActivity.this, RegisterActivity2.class);
                         //startActivity(intent);

@@ -54,14 +54,14 @@ public class ancienneAlerteActivity extends AppCompatActivity {
         // Récupérer les alertes depuis la base de données
         //List<Alerte> alertes = alertesDb.getAllAlertes(userID);
 
-        nbAlerte.append("Vous avez " + totalAlertCount +  " alertes au total");
+        nbAlerte.append(getResources().getString(R.string.avoir) + totalAlertCount +  getResources().getString(R.string.ale));
 
 
 
 
         List<String> spinnerItems = new ArrayList<>();
-        spinnerItems.add("La plus récente");
-        spinnerItems.add("La plus ancienne");
+        spinnerItems.add(getResources().getString(R.string.recent));
+        spinnerItems.add(getResources().getString(R.string.ancien));
 
 
         ArrayAdapter<String> adapter1 = new ArrayAdapter<>(this, android.R.layout.simple_spinner_item, spinnerItems);
@@ -74,12 +74,12 @@ public class ancienneAlerteActivity extends AppCompatActivity {
             @Override
             public void onItemSelected(AdapterView<?> parentView, View selectedItemView, int position, long id) {
                 String selectedItem = parentView.getItemAtPosition(position).toString();
-                if (selectedItem.equals("La plus récente")) {
+                if (selectedItem.equals(getResources().getString(R.string.recent))) {
                     List<Alerte> alertes = alertesDb.getAllAlertesASC(userID);
 
                     AlerteAdapter adapter = new AlerteAdapter(getApplicationContext(), alertes);
                     listView.setAdapter(adapter);
-                } else if (selectedItem.equals("La plus ancienne")) {
+                } else if (selectedItem.equals(getResources().getString(R.string.ancien))) {
                     List<Alerte> alertes = alertesDb.getAllAlertesDESC(userID);
 
                     AlerteAdapter adapter = new AlerteAdapter(getApplicationContext(), alertes);

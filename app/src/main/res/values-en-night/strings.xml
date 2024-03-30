@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">SAE_S4_01_App_Mobile</string>
+    <string name="text_interro1">A <b>DataMatrix</b> located on your medicine box resembles a QRCode, it`s a <b>2D barcode</b></string>
+    <string name="text_interro2">The <b>CIP code</b> (7 or 13 digits) on your medicine box allows <b>identification</b> of it</string>
+    <string name="text_interro3">Deleting an account will result in the <b>total deletion of your data</b>, are you sure?</string>
+    <string name="text_interro4">Deactivating an account <b>temporarily removes your account</b>, which can be reactivated in x months</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string-array name="tri_options">
+        <item>The most recent</item>
+        <item>The oldest</item>
+    </string-array>
+    <string name="recent">The most recent</string>
+    <string name="ancien">The oldest</string>
+    <string name="avoir">You have  </string>
+    <string name="ale">  alerts in total</string>
+
+    <!--layout accueil-->
+    <string name="text_dataMatrix">Scan the <b>DataMatrix</b></string>
+    <string name="text_saisieCIP">Manually enter the <b>CIP code</b></string>
+    <string name ="Ravi_revoir">Glad to see you again</string>
+    <string name ="cree_alerte">Create an alert</string>
+    <string name ="last_alerte">My last alert</string>
+    <string name ="Médicament_concerné">Concerned medication:</string>
+    <string name ="raison">Reason:</string>
+    <string name="text_mode">Night Mode</string>
+    <string name ="message">Message:</string>
+    <string name ="all_alerte">View all my alerts...</string>
+    <string name ="date">February 18, 2024</string>
+
+    <!--layout accueil admin-->
+    <string name="consulter">Consult statistics</string>
+    <string name="nb_signal">Number of reports:</string>
+    <string name ="medoc_signal">Most reported medication:</string>
+    <string name ="Administrateur">Administrator</string>
+    <string name ="type">Most reported disease type:</string>
+    <string name ="nd_CIP">Number of CIP entries:</string>
+    <string name ="nb_data">DataMatrix scans:</string>
+    <string name ="accee">Access statistics...</string>
+
+    <!--layout ancienne alertes-->
+    <string name="last">My old alerts</string>
+    <string name="merci">Thank you immensely for your contribution!</string>
+
+    <!--layout change mot de passe-->
+    <string name="bienvenue">Welcome!</string>
+    <string name="reniti">Reset your password!</string>
+    <string name ="mdp">Password</string>
+    <string name ="confirme_mdp">Confirm your password</string>
+    <string name ="valide">Validate</string>
+
+    <!--layout CIP manuelle-->
+    <string name="saisie">Manual entry</string>
+    <string name="code">CIP code</string>
+    <string name ="annuler">Cancel</string>
+    <string name ="ou">OR</string>
+    <string name="text_scanDataMatrix">Do you have a <b>DataMatrix</b> instead?</string>
+    <string name ="scan">Scan it!</string>
+
+    <!--layout create alerte-->
+    <string name="info">Fill in the information:</string>
+    <string name="ty">Thank you immensely for your contribution!</string>
+    <string name ="cip">CIP code*:</string>
+    <string name ="nom_medoc">Medication name*:</string>
+    <string name="raison_">Reason*:</string>
+    <string name ="situation">Explain your situation to us...</string>
+    <string name="enregistrer">Save</string>
+    <string name ="information">* This information is </string>
+    <string name="obliger">mandatory</string>
+
+    <!--layout login-->
+    <string name="compte">Already have an account?</string>
+    <string name="mail">Your email address:</string>
+    <string name ="amail">Email address...</string>
+    <string name ="vmdp">Your password:</string>
+    <string name="Motpasse">Password...</string>
+    <string name ="oublie">FORGOT PASSWORD?</string>
+    <string name="connect">LOG IN!</string>
+    <string name ="cree_compte">CREATE AN ACCOUNT</string>
+
+    <!--layout profil-->
+    <string name="mesInfos">My information</string>
+    <string name="sexe">Gender*:</string>
+    <string name ="nom">Last Name*:</string>
+    <string name ="prenom">First Name*:</string>
+    <string name="naissance">Birth*:</string>
+    <string name ="adrMail">Email address*:</string>
+    <string name="pharma">Preferred pharmacy:</string>
+    <string name ="medecin">Attending physician:</string>
+    <string name ="modif">Modify</string>
+    <string name="text_prospection">By checking this box, you agree to receive <b>health updates</b> <b>via email</b></string>
+    <string name="supp">Delete my account</string>
+    <string name ="desac">Deactivate my account</string>
+
+    <!--layout profil modif-->
+    <string name="sexe_">Gender</string>
+    <string name ="nom_">Last Name</string>
+    <string name ="prenom_">First Name</string>
+    <string name="naissance_">DD/MM/YYYY</string>
+    <string name ="adrMail_">Email address</string>
+    <string name="pharma_">Preferred pharmacy</string>
+    <string name ="medecin_">Attending physician</string>
+    <string name ="selection">Select language</string>
+    <string name ="fr">French</string>
+    <string name ="en">English</string>
+
+    <!--layout profil register-->
+    <string name="nouveau">New here?</string>
+    <string name ="quelque_info">Fill in some information</string>
+    <string name ="genre">Your gender:</string>
+    <string name="noom">Your last name:</string>
+    <string name ="preenom">Your first name:</string>
+    <string name="noom_">Last Name...</string>
+    <string name ="preenom_">First Name...</string>
+    <string name="date_">Date of birth:</string>
+    <string name ="jour">DD</string>
+    <string name ="annee">YYYY</string>
+    <string name="suite">Continue...</string>
+    <string name="selectGenre">Select a gender</string>
+    <string name="homme">Male</string>
+    <string name="femme">Female</string>
+    <string name="nr">Not specified</string>
+    <!--layout profil register2-->
+    <string name ="vmail">Your email address:</string>
+    <string name="cmdp">Your password:</string>
+    <string name="text_condition">By checking this box, you agree to our <u>terms of service</u></string>
+    <string name ="finaliser">Complete Registration</string>
+
+    <!--layout profil reset code-->
+    <string name ="renit">Reset your password!</string>
+    <string name="code_verif">Verification code:</string>
+
+    <!--layout profil reset password-->
+    <string name ="text_renit">Please enter your email address \n to receive a code in your email inbox!</string>
+    <string name="CONFIR">CONFIRM!</string>
+
+    <!--layout scanner-->
+    <string name ="scanner">Scan the DataMatrix code</string>
+
+    <!--layout splash-->
+    <string name ="conseil">Advice:</string>
+    <string name="version">Version 1.1</string>
+
+    <!--layout all alertes-->
+    <string name ="lesAlertes">Alerts</string>
+    <string name="nbAlertes">Total of X alerts</string>
+
+    <string name="Personne">Person:</string>
+    <string name="ctheme">Change the theme!</string>
+
+    <string name="quote1">Did you know that 10 minutes of meditation can reduce anxiety and boost your confidence?</string>
+    <string name="quote2">Did you know that consuming fiber-rich foods can promote better digestion?</string>
+    <string name="quote3">Did you know that consuming 5 fruits and vegetables a day strengthens your immune system?</string>
+    <string name="quote4">Did you know that sleeping 7 to 8 hours per night can promote better muscle recovery?</string>
+    <string name="quote5">Did you know that walking 10,000 steps a day can improve your cardiovascular health?</string>
+
+
+    <string name="Oui">Yes</string>
+    <string name="Non">No</string>
+    <string name="back">Are you sure you want to go back? Your input will be discarded.</string>
+    <string name="retour">Are you sure you want to access the old alert page? Your input will be discarded.</string>
+    <string name="acc">Are you sure you want to access the home page? Your input will be discarded.</string>
+    <string name="pcc">"Are you sure you want to access your profile? Your input will be canceled."</string>
+
+
+    <string name="cob">Please fill in all the mandatory fields</string>
+    <string name="format">The email address is not in the correct format</string>
+    <string name="ienr">Your information has been successfully saved</string>
+
+
+    <string name="ccmdp">The password must be at least 8 characters long, contain one uppercase letter, and one digit.</string>
+    <string name="imdp">The two passwords do not match.</string>
+    <string name="vdata">Do you have a DataMatrix instead?</string>
+    <string name="ccip">The CIS number must be 8 characters long.</string>
+    <string name="ocip">No medication found for this CIS number.</string>
+
+    <string name="co">You are connected!</string>
+    <string name="imm">Your email or password is incorrect</string>
+
+    <string name="cip_code">The CIP code: </string>
+    <string name="alert_reason">Reason for the alert</string>
+    <string name="alert_message">Alert message</string>
+    <string name="alert_insert_success">Alert inserted successfully!</string>
+    <string name="alert_insert_error">Error inserting the alert.</string>
+    <string name="user_id_error">Error: User ID not available.</string>
+    <string name="no_medicament_found">No medication found for this CIS number.</string>
+
+    <string name="select_reason">Select a reason</string>
+    <string name="renewal_impossible">Renewal not possible</string>
+    <string name="stock_unavailable">Stock unavailable</string>
+    <string name="late_delivery">Late delivery</string>
+    <string name="other">Other</string>
+
+    <string name="select_gender">Please select a gender</string>
+    <string name="invalid_day">The entered day is not valid</string>
+    <string name="invalid_month">The entered month is not valid</string>
+    <string name="invalid_year">The entered year is not valid</string>
+
+    <string name="invalid_email">Invalid email address</string>
+    <string name="invalid_password">Password must be at least 8 characters long, with one uppercase letter and one digit.</string>
+    <string name="accept_terms">Please accept the terms and conditions</string>
+    <string name="account_created">Your account has been successfully created!</string>
+    <string name="existing_email">An account with this email already exists! Please log in</string>
+    <string name="existing_account">An account with the same name and surname already exists! Please log in</string>
+
+    <string name="reset_code_invalid">The code is invalid</string>
+    <string name="reset_code_expired">The code has expired</string>
+
+    <string name="email_format_incorrect">Email format is incorrect</string>
+    <string name="no_account_associated">The entered email is not associated with any account</string>
+    <string name="enter_email">Please enter an email address</string>
+    <string name="reset_email_sent">A password reset email has been sent</string>
+    <string name="fill_all_fields">Please fill in all fields</string>
+
+    <string name="insert_success">Alert inserted successfully!</string>
+    <string name="insert_error">Error inserting alert.</string>
+    <string name="valid_reason">Please select a valid reason.</string>
+    <string name="cancel_confirmation">Are you sure you want to go back? Your input will be discarded.</string>
+    <string name="home_confirmation">Are you sure you want to access the home page? Your input will be discarded.</string>
+    <string name="old_alert_confirmation">Are you sure you want to access the old alert page? Your input will be discarded.</string>
+    <string name="profile_confirmation">Are you sure you want to access your profile? Your input will be discarded.</string>
+
+
+
+
+</resources>

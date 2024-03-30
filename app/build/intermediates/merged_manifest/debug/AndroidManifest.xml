@@ -74,6 +74,7 @@
         </activity>
         <activity
             android:name="fr.iut.sae_s4_01_app_mobile.AccueilActivity"
+            android:configChanges="locale|orientation|screenSize"
             android:exported="true" >
 
             <!--

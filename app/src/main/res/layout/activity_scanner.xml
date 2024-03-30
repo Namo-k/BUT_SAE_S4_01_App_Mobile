@@ -88,7 +88,7 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Scannez le code DataMatrix"
+        android:text="@string/scanner"
         android:gravity="center"
         android:textColor="@color/white"
         android:textSize="15dp"
