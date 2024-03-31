@@ -178,7 +178,7 @@ public class ProfilFragment extends Fragment {
 
     private void updateMedValue() {
         int userID = ((UserId) requireActivity().getApplication()).getUserID();
-        medecin_ = DatabaseUser.getPharmacie(userID);
+        medecin_ = DatabaseUser.getMedecin(userID);
         if (medecin_.equals("Non renseigné") || medecin_.equals("Not specified")) medecin_ = getResources().getString(R.string.nr);
     }
 
