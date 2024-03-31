@@ -365,32 +365,10 @@
                     tools:ignore="TouchTargetSizeCheck,TextSizeCheck" />
 
                 <TextView
-                    android:id="@+id/langue"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_below="@+id/medecinEdit"
-                    android:layout_marginTop="17dp"
-                    android:fontFamily="@font/inter_medium"
-                    android:text="Langue"
-                    android:textColor="@color/textGrey"
-                    android:textSize="13dp"
-                    tools:ignore="TextSizeCheck"/>
-
-                <Spinner
-                    android:id="@+id/spin"
-                    android:layout_width="250dp"
-                    android:layout_height="21dp"
-                    android:layout_below="@+id/medecinEdit"
-                    android:layout_marginLeft="10dp"
-                    android:layout_marginTop="18dp"
-                    android:textSize="13dp"
-                    android:layout_toRightOf="@+id/langue"/>
-
-                <TextView
                     android:id="@+id/info1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_below="@+id/langue"
+                    android:layout_below="@+id/medecinEdit"
                     android:layout_marginLeft="35dp"
                     android:layout_marginTop="23dp"
                     android:fontFamily="@font/inter_medium"
@@ -403,7 +381,7 @@
                     android:id="@+id/info2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_below="@+id/langue"
+                    android:layout_below="@+id/medecinEdit"
                     android:layout_toRightOf="@+id/info1"
                     android:layout_marginLeft="4dp"
                     android:layout_marginTop="23dp"

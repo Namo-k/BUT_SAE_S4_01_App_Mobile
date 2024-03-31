@@ -32,49 +32,16 @@ public class ProfilModifActivity extends AppCompatActivity {
 
     private Users DatabaseUser;
     private Identifiants DatabaseId;
-    Spinner spinner;
-    public String[] languages;
     String sexe_;
-
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_profilmodif);
 
-        String select = getResources().getString(R.string.selection);
-        String fr = getResources().getString(R.string.fr);
-        String en = getResources().getString(R.string.en);
-
-        languages = new String[]{select, fr, en};
-
         UserId myApp = (UserId) getApplication();
         int userID = myApp.getUserID();
         Notifications notificationsDB = new Notifications(this);
-
-        spinner = findViewById(R.id.spin);
-
-        ArrayAdapter<String> adapter = new ArrayAdapter<String>(this, android.R.layout.simple_spinner_dropdown_item, languages);
-        adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-        spinner.setAdapter(adapter);
-        spinner.setSelection(0);
-        spinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
-            @Override
-            public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
-                String selectedLang = parent.getItemAtPosition(position).toString();
-                if(selectedLang.equals(fr)){
-                    setLocal(ProfilModifActivity.this,"fr");
-                } else if(selectedLang.equals(en)){
-                    setLocal(ProfilModifActivity.this,"en");
-                }
-            }
-
-            @Override
-            public void onNothingSelected(AdapterView<?> parent) {
-
-            }
-        });
 
         DatabaseUser = new Users(this);
         DatabaseId = new Identifiants(this);
@@ -133,7 +100,6 @@ public class ProfilModifActivity extends AppCompatActivity {
                     boolean insertionNotifReussie = notificationsDB.insertData((int) userID, "Action sur votre profil", "Votre avez actualisé les informations de votre profil. ", "profil");
 
                     Toast.makeText(ProfilModifActivity.this, getResources().getString(R.string.ienr), Toast.LENGTH_SHORT).show();
-
                     finish();
                 }
             }
@@ -181,7 +147,7 @@ public class ProfilModifActivity extends AppCompatActivity {
 
     private void updateSexeValue() {
         int userID = ((UserId) getApplication()).getUserID();
-        sexe_ = DatabaseUser.getSexe(userID); // Récupérer le sexe de l'utilisateur
+        sexe_ = DatabaseUser.getSexe(userID);
         switch (sexe_) {
             case "Homme":
                 sexe_ = getString(R.string.homme);
@@ -202,17 +168,6 @@ public class ProfilModifActivity extends AppCompatActivity {
                 sexe_ = getString(R.string.nr);
                 break;
         }
-    }
-
-    // Méthode pour mettre à jour la langue et redémarrer l'activité
-    public void setLocal(Activity activity, String langCode){
-        Locale locale = new Locale(langCode);
-        locale.setDefault(locale);
-        Resources resources = activity.getResources();
-        Configuration config = resources.getConfiguration();
-        config.setLocale(locale);
-        resources.updateConfiguration(config, resources.getDisplayMetrics());
-
     }
 
     private void replaceFragment(Fragment fragment){

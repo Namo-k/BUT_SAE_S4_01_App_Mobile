@@ -82,8 +82,8 @@ public class AccueilFragment extends Fragment {
         btnAlertes.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                AccueilFragment AccueilFragment = new AccueilFragment();
-                replaceFragment(AccueilFragment);
+                AncienneAlerteFragment AncienneAlerteFragment = new AncienneAlerteFragment();
+                replaceFragment(AncienneAlerteFragment);
             }
         });
         btnPrenom.setOnClickListener(new View.OnClickListener() {
@@ -157,7 +157,7 @@ public class AccueilFragment extends Fragment {
         btnFrancais.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                setLocale("fr");
+                setLocale("en");
                 AccueilFragment AccueilFragment = new AccueilFragment();
                 replaceFragment(AccueilFragment);
             }
@@ -166,8 +166,7 @@ public class AccueilFragment extends Fragment {
         btnAnglais.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                setLocale("en");
-
+                setLocale("fr");
                 AccueilFragment AccueilFragment = new AccueilFragment();
                 replaceFragment(AccueilFragment);
 
@@ -187,11 +186,11 @@ public class AccueilFragment extends Fragment {
 
     private void updateButtonVisibility(boolean isFrench) {
         if (isFrench) {
-            btnFrancais.setVisibility(View.GONE);
-            btnAnglais.setVisibility(View.VISIBLE);
-        } else {
             btnFrancais.setVisibility(View.VISIBLE);
             btnAnglais.setVisibility(View.GONE);
+        } else {
+            btnFrancais.setVisibility(View.GONE);
+            btnAnglais.setVisibility(View.VISIBLE);
         }
     }
 
