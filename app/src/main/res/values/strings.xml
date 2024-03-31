@@ -245,6 +245,7 @@
     <!-- WELCOME NOTIF-->
     <string name="insertion_notif_beinvenu">Nous sommes ravis de vous accueillir. Complétez votre profil !</string>
     <string name="insertion_notif_beinvenu2">Bienvenue !</string>
+
     <!-- MDP NOTIF-->
     <string name="insertion_notif_sec">Votre mot de passe a été changé recémment. Si ce n`est pas vous, notifiez-le !</string>
     <string name="insertion_notif_sec2">Sécurité de votre compte</string>

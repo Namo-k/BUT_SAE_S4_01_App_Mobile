@@ -416,7 +416,7 @@
                     android:fontFamily="@font/inter_medium"
                     android:gravity="center"
                     android:text="@string/annuler"
-                    android:textColor="@color/white"
+                    android:textColor="@color/whitenuit"
                     android:textSize="15dp"
                     tools:ignore="TextSizeCheck" />
 
@@ -437,7 +437,7 @@
                     android:fontFamily="@font/inter_medium"
                     android:gravity="center"
                     android:text="@string/enregistrer"
-                    android:textColor="@color/white"
+                    android:textColor="@color/whitenuit"
                     android:textSize="15dp"
                     tools:ignore="TextSizeCheck" />
 

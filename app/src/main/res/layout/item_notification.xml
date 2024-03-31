@@ -22,7 +22,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Le 30 mars 2024"
-            android:textColor="@color/white"
+            android:textColor="@color/whitenuit"
             android:fontFamily="@font/inter_medium"
             android:background="@color/lightBlue"
             android:paddingHorizontal="12dp"
@@ -113,7 +113,7 @@
                                 android:text="Nous sommes ravis de vous accueillir. Complétez votre profil !"
                                 android:fontFamily="@font/inter"
                                 android:lineHeight="19dp"
-                                android:textColor="@color/darkGrey"
+                                android:textColor="@color/darkGreynuit"
                                 android:layout_marginTop="3dp"
                                 android:layout_marginLeft="10dp"
                                 android:textSize="12sp" />

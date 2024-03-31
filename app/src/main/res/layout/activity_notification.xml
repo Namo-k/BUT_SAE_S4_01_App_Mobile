@@ -172,7 +172,7 @@
             android:paddingRight="20dp"
             android:paddingLeft="20dp"
             android:paddingBottom="15dp"
-            android:divider="#FFFFFF"
+            android:divider="@color/white"
             android:dividerHeight="20dp"
             />
     </LinearLayout>

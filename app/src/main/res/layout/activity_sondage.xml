@@ -363,7 +363,7 @@
                                 android:fontFamily="@font/inter_medium"
                                 android:gravity="center"
                                 android:text="Annuler"
-                                android:textColor="@color/white"
+                                android:textColor="@color/whitenuit"
                                 android:textSize="15dp" />
 
                         </androidx.cardview.widget.CardView>
@@ -384,7 +384,7 @@
                                 android:fontFamily="@font/inter_medium"
                                 android:gravity="center"
                                 android:text="Enregistrer"
-                                android:textColor="@color/white"
+                                android:textColor="@color/whitenuit"
                                 android:textSize="15dp" />
                         </androidx.cardview.widget.CardView>
 

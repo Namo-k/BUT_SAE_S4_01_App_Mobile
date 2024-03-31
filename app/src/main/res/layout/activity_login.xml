@@ -22,7 +22,7 @@
             android:layout_marginTop="20dp"
             android:text="@string/bienvenue"
             android:fontFamily="@font/patuaone_regular"
-            android:textColor="@color/darkBlueLight"
+            android:textColor="@color/darkBlueLightnuit"
             android:textSize="24sp"
             android:textStyle="bold" />
 
@@ -202,7 +202,7 @@
             android:gravity="right"
             android:inputType="text"
             android:text="@string/oublie"
-            android:textColor="@color/darkBlueLight"
+            android:textColor="@color/darkBlueLightnuit"
             android:fontFamily="@font/inter_semibold"
             android:textSize="15sp"
             tools:ignore="TouchTargetSizeCheck" />
@@ -216,7 +216,7 @@
             android:layout_gravity="center"
             android:layout_marginTop="17dp"
             android:layout_marginBottom="10dp"
-            android:backgroundTint="@color/darkBlueLight"
+            android:backgroundTint="@color/darkBlueLightnuit"
             android:text="@string/connect"
             android:fontFamily="@font/inter_semibold"
             android:textSize="13.5dp"
@@ -254,7 +254,7 @@
             android:layout_marginLeft="109dp"
             android:layout_marginTop="37dp"
             android:text="@string/cree_compte"
-            android:textColor="@color/darkBlueLight"
+            android:textColor="@color/darkBlueLightnuit"
             android:fontFamily="@font/inter_extrabold"
             android:textSize="16dp"
             android:textStyle="bold" />

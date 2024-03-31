@@ -1,8 +1,11 @@
 package fr.iut.sae_s4_01_app_mobile;
 
 import android.annotation.SuppressLint;
+import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
 import android.widget.CompoundButton;
 import android.widget.ImageView;
 
@@ -25,8 +28,13 @@ public class PreferencesActivity extends AppCompatActivity {
         switchCompat = findViewById(R.id.switchCompat);
         sharedPreferences = getSharedPreferences("night", 0);
 
+
+
+
         boolean isNightMode = sharedPreferences.getBoolean("night_mode", true);
         setNightMode(isNightMode);
+
+
 
         switchCompat.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             @Override

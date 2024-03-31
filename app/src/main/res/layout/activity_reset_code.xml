@@ -13,7 +13,7 @@
         android:layout_marginTop="40dp"
         android:text="@string/bienvenue"
         android:fontFamily="@font/patuaone_regular"
-        android:textColor="@color/darkBlueLight"
+        android:textColor="@color/darkBlueLightnuit"
         android:textSize="24sp"
         android:textStyle="bold" />
 
@@ -71,7 +71,7 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="20dp"
             android:layout_marginEnd="20dp"
-            android:backgroundTint="@color/darkBlueLight"
+            android:backgroundTint="@color/darkBlueLightnuit"
             app:cardCornerRadius="12dp">
 
             <LinearLayout
@@ -121,7 +121,7 @@
             android:layout_marginRight="70dp"
             android:layout_marginLeft="70dp"
             android:layout_gravity="center"
-            android:backgroundTint="@color/darkBlueLight"
+            android:backgroundTint="@color/darkBlueLightnuit"
             android:elevation="10dp"
             android:layout_marginTop="50dp"
             android:text="@string/valide"
