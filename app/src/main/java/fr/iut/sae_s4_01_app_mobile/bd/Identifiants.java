@@ -102,6 +102,8 @@ public class Identifiants extends SQLiteOpenHelper {
         }
         return id;
     }
+
+
     @SuppressLint("Range")
     public String getMail(Integer id){
         SQLiteDatabase MyDatabase = this.getReadableDatabase();

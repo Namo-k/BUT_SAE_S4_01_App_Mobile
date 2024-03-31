@@ -133,7 +133,7 @@ public class AccueilFragment extends Fragment {
 
         Alertes alertesDb = new Alertes(getContext());
 
-        List<Alerte> alertes = alertesDb.getAllAlertesDESC(userID,getContext());
+        List<Alerte> alertes = alertesDb.getAlertesDESC(userID,getContext());
         Alerte alerteLaPlusRecente = null;
         if (!alertes.isEmpty()) {
             blocAncienneAlerte.setVisibility(View.VISIBLE);
@@ -247,7 +247,7 @@ public class AccueilFragment extends Fragment {
         UserId myApp = (UserId) getActivity().getApplication();
         int userID = myApp.getUserID();
         Alertes alertesDb = new Alertes(getActivity());
-        List<Alerte> alertes = alertesDb.getAllAlertesDESC(userID,getContext());
+        List<Alerte> alertes = alertesDb.getAlertesDESC(userID,getContext());
         Alerte alerteLaPlusRecente = null;
         if (!alertes.isEmpty()) {
             alerteLaPlusRecente = alertes.get(0);
@@ -266,7 +266,7 @@ public class AccueilFragment extends Fragment {
         UserId myApp = (UserId) getContext();
         int userID = myApp.getUserID();
         Alertes alertesDb = new Alertes(getContext());
-        List<Alerte> alertes = alertesDb.getAllAlertesDESC(userID,getContext());
+        List<Alerte> alertes = alertesDb.getAlertesDESC(userID,getContext());
         Alerte alerteLaPlusRecente = null;
         if (!alertes.isEmpty()) {
             alerteLaPlusRecente = alertes.get(0);

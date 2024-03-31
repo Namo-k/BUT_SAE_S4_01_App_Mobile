@@ -9,7 +9,9 @@
     <color name="darkBlue">#3A4388</color>
     <color name="darkBlueLight">#4A55A2</color>
     <color name="darkBlueLightLight">#7895CB</color>
+    <color name="darkBlueLightnuit">#4A55A2</color>
     <color name="darkGrey">#2E2E2E</color>
+    <color name="darkGreynuit">#2E2E2E</color>
     <color name="hover">#9197C6</color>
     <color name="lightBlue">#A0BFE0</color>
     <color name="lightBlueLight">#C5DFF8</color>
@@ -20,6 +22,7 @@
     <color name="textGreyli">#605C5C</color>
     <color name="white">#FFFFFFFF</color>
     <color name="whiteFond">#E2E2E2</color>
+    <color name="whitenuit">#FFFFFFFF</color>
     <string name="Administrateur">Administrateur</string>
     <string name="CONFIR">CONFIRMER !</string>
     <string name="Motpasse">Mot de passe...</string>
@@ -214,6 +217,15 @@
         <item name="colorPrimaryDark">@color/darkBlueLight</item>
         <item name="colorAccent">@color/red</item>
         <item name="colorSecondary">@color/darkBlueLight</item>
+    </style>
+    <style name="BottomNavigationViewNoAnimation" parent="Widget.Design.BottomNavigationView">
+        <item name="android:theme">@style/BottomNavigationViewTheme</item>
+        <item name="android:background">?android:attr/windowBackground</item>
+        <item name="android:layoutAnimation">@null</item>
+    </style>
+    <style name="BottomNavigationViewTheme" parent="Theme.AppCompat">
+        <item name="colorPrimary">@android:color/transparent</item>
+        <item name="android:colorBackground">@android:color/transparent</item>
     </style>
     <style name="ScreenBackground"><item name="android:background">@color/whiteFond</item></style>
     <style name="Theme.SAE_S4_01_App_Mobile" parent="Base.Theme.SAE_S4_01_App_Mobile"/>

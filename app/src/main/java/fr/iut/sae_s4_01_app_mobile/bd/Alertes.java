@@ -88,7 +88,7 @@ public class Alertes extends SQLiteOpenHelper {
         return count;
     }
 
-    public List<Alerte> getAllAlertesDESC(int idUser, Context context) {
+    public List<Alerte> getAlertesDESC(int idUser, Context context) {
         List<Alerte> listeAlertes = new ArrayList<>();
         SQLiteDatabase db = this.getReadableDatabase();
         Cursor cursor = db.rawQuery("SELECT * FROM alertes where idUser = ? ORDER BY id DESC", new String[] {String.valueOf(idUser)});
@@ -159,7 +159,7 @@ public class Alertes extends SQLiteOpenHelper {
     }
 
 
-    public List<Alerte> getAllAlertesASC(int idUser, Context context) {
+    public List<Alerte> getAlertesASC(int idUser, Context context) {
         List<Alerte> listeAlertes = new ArrayList<>();
         SQLiteDatabase db = this.getReadableDatabase();
         Cursor cursor = db.rawQuery("SELECT * FROM alertes where idUser = ? ORDER BY id ASC", new String[] {String.valueOf(idUser)});
@@ -231,7 +231,7 @@ public class Alertes extends SQLiteOpenHelper {
 
     //Partie Admin :
 
-    public List<Alerte> getAllAlertes() {
+    public List<Alerte> getAllAlertesDESC() {
         List<Alerte> listeAlertes = new ArrayList<>();
         SQLiteDatabase db = this.getReadableDatabase();
         Cursor cursor = db.rawQuery("SELECT * FROM alertes ORDER BY id DESC", null);
@@ -253,7 +253,77 @@ public class Alertes extends SQLiteOpenHelper {
         return listeAlertes;
     }
 
+    public List<Alerte> getAllAlertesASC() {
+        List<Alerte> listeAlertes = new ArrayList<>();
+        SQLiteDatabase db = this.getReadableDatabase();
+        Cursor cursor = db.rawQuery("SELECT * FROM alertes ORDER BY id ASC", null);
+        if (cursor.moveToFirst()) {
+            do {
+                @SuppressLint("Range") int id = cursor.getInt(cursor.getColumnIndex("id"));
+                @SuppressLint("Range") int codeCip = cursor.getInt(cursor.getColumnIndex("codeCip"));
+                @SuppressLint("Range") int idUser = cursor.getInt(cursor.getColumnIndex("idUser"));
+                @SuppressLint("Range") String nomMedicament = cursor.getString(cursor.getColumnIndex("nomMedicament"));
+                @SuppressLint("Range") String raison = cursor.getString(cursor.getColumnIndex("raison"));
+                @SuppressLint("Range") String message = cursor.getString(cursor.getColumnIndex("message"));
+                @SuppressLint("Range") String dateAlerte = cursor.getString(cursor.getColumnIndex("dateAlerte"));
 
+                Alerte alerte = new Alerte(id, codeCip, idUser, nomMedicament, raison, message, dateAlerte);
+                listeAlertes.add(alerte);
+            } while (cursor.moveToNext());
+        }
+        cursor.close();
+        return listeAlertes;
+    }
+
+    public List<Alerte> getAllAlertesImportantes() {
+        List<Alerte> alertesImportantes = new ArrayList<>();
+        SQLiteDatabase db = this.getReadableDatabase();
+        Cursor cursor = db.rawQuery("SELECT * FROM alertes WHERE important = 1",null);
+
+        if (cursor != null && cursor.moveToFirst()) {
+            do {
+                @SuppressLint("Range") int id = cursor.getInt(cursor.getColumnIndex("id"));
+                @SuppressLint("Range") int codeCip = cursor.getInt(cursor.getColumnIndex("codeCip"));
+                @SuppressLint("Range") String nomMedicament = cursor.getString(cursor.getColumnIndex("nomMedicament"));
+                @SuppressLint("Range") String raison = cursor.getString(cursor.getColumnIndex("raison"));
+                @SuppressLint("Range") int idUser = cursor.getInt(cursor.getColumnIndex("idUser"));
+
+                @SuppressLint("Range") String message = cursor.getString(cursor.getColumnIndex("message"));
+                @SuppressLint("Range") String dateAlerte = cursor.getString(cursor.getColumnIndex("dateAlerte"));
+
+                Alerte alerte = new Alerte(id, codeCip, idUser, nomMedicament, raison, message, dateAlerte);
+                alertesImportantes.add(alerte);
+            } while (cursor.moveToNext());
+            cursor.close();
+        }
+
+        return alertesImportantes;
+    }
+
+    public List<Alerte> getAllAlertesNotImportantes() {
+        List<Alerte> alertesImportantes = new ArrayList<>();
+        SQLiteDatabase db = this.getReadableDatabase();
+        Cursor cursor = db.rawQuery("SELECT * FROM alertes WHERE important = 0",null);
+
+        if (cursor != null && cursor.moveToFirst()) {
+            do {
+                @SuppressLint("Range") int id = cursor.getInt(cursor.getColumnIndex("id"));
+                @SuppressLint("Range") int codeCip = cursor.getInt(cursor.getColumnIndex("codeCip"));
+                @SuppressLint("Range") String nomMedicament = cursor.getString(cursor.getColumnIndex("nomMedicament"));
+                @SuppressLint("Range") String raison = cursor.getString(cursor.getColumnIndex("raison"));
+                @SuppressLint("Range") int idUser = cursor.getInt(cursor.getColumnIndex("idUser"));
+
+                @SuppressLint("Range") String message = cursor.getString(cursor.getColumnIndex("message"));
+                @SuppressLint("Range") String dateAlerte = cursor.getString(cursor.getColumnIndex("dateAlerte"));
+
+                Alerte alerte = new Alerte(id, codeCip, idUser, nomMedicament, raison, message, dateAlerte);
+                alertesImportantes.add(alerte);
+            } while (cursor.moveToNext());
+            cursor.close();
+        }
+
+        return alertesImportantes;
+    }
     public int getNombreTotalAlertes() {
         SQLiteDatabase db = this.getReadableDatabase();
         String countQuery = "SELECT COUNT(*) FROM alertes";
@@ -440,6 +510,29 @@ public class Alertes extends SQLiteOpenHelper {
 
         return alertesImportantes;
     }
+
+    public List<Alerte> getAlertesNotImportantes(int idUser) {
+        List<Alerte> alertesImportantes = new ArrayList<>();
+        SQLiteDatabase db = this.getReadableDatabase();
+        Cursor cursor = db.rawQuery("SELECT * FROM alertes WHERE idUser = ? AND important = 0", new String[]{String.valueOf(idUser)});
+
+        if (cursor != null && cursor.moveToFirst()) {
+            do {
+                @SuppressLint("Range") int codeCip = cursor.getInt(cursor.getColumnIndex("codeCip"));
+                @SuppressLint("Range") String nomMedicament = cursor.getString(cursor.getColumnIndex("nomMedicament"));
+                @SuppressLint("Range") String raison = cursor.getString(cursor.getColumnIndex("raison"));
+                @SuppressLint("Range") String message = cursor.getString(cursor.getColumnIndex("message"));
+                @SuppressLint("Range") String dateAlerte = cursor.getString(cursor.getColumnIndex("dateAlerte"));
+
+                Alerte alerte = new Alerte(idUser, codeCip, idUser, nomMedicament, raison, message, dateAlerte);
+                alertesImportantes.add(alerte);
+            } while (cursor.moveToNext());
+            cursor.close();
+        }
+
+        return alertesImportantes;
+    }
+
 
     public Map<String, Integer> getNombreSignalementsParMois() {
         SQLiteDatabase db = this.getReadableDatabase();

@@ -129,7 +129,7 @@ public class AccueilAdminActivity extends AppCompatActivity {
         blocAncienneAlerte.setVisibility(View.INVISIBLE);
 
         // Récupération de la dernière alerte
-        List<Alerte> alertes = alertesDb.getAllAlertes();
+        List<Alerte> alertes = alertesDb.getAllAlertesDESC();
         Alerte alerteLaPlusRecente = null;
         if (!alertes.isEmpty()) {
             blocAncienneAlerte.setVisibility(View.VISIBLE);

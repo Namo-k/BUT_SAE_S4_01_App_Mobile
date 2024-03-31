@@ -6,7 +6,9 @@ color blue
 color darkBlue
 color darkBlueLight
 color darkBlueLightLight
+color darkBlueLightnuit
 color darkGrey
+color darkGreynuit
 color hover
 color lightBlue
 color lightBlueLight
@@ -17,6 +19,7 @@ color textGrey
 color textGreyli
 color white
 color whiteFond
+color whitenuit
 drawable adresse
 drawable alertes
 drawable alertes_icone
@@ -104,6 +107,7 @@ id auteurs2
 id auteurs3
 id auteurs4
 id auteurs5
+id bar_chart
 id barcode_scanner
 id bienvenueText
 id blocAlert
@@ -158,6 +162,8 @@ id explicationCIP
 id francais
 id genre
 id graphBloc1
+id graphBloc2
+id graphBloc3
 id guidelineEnd
 id guidelineStart
 id heuredebut
@@ -208,6 +214,8 @@ id nbAlertes
 id nbNotifTV
 id nbNotifications
 id nbTotalAlertes
+id nbrMedicamentImportantLabelTV
+id nbrMedicamentImportantTV
 id nbrSaisiCIPLabelTV
 id nbrSaisiCIPTV
 id nbrSaisiDataMatrixLabelTV
@@ -233,6 +241,8 @@ id personneTV
 id pharmacieEdit
 id pharmacieLabelTV
 id pharmacieTV
+id pie_chart
+id pie_chart2
 id prenom
 id prenom1
 id prenomEdit
@@ -508,6 +518,8 @@ string version
 string vmail
 string vmdp
 style Base.Theme.SAE_S4_01_App_Mobile
+style BottomNavigationViewNoAnimation
+style BottomNavigationViewTheme
 style ScreenBackground
 style Theme.SAE_S4_01_App_Mobile
 style btn

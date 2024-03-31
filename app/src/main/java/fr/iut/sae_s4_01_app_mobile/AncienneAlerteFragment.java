@@ -68,23 +68,23 @@ public class AncienneAlerteFragment extends Fragment {
             public void onItemSelected(AdapterView<?> parentView, View selectedItemView, int position, long id) {
                 String selectedItem = parentView.getItemAtPosition(position).toString();
                 if (selectedItem.equals(getResources().getString(R.string.recent))) {
-                    List<Alerte> alertes = alertesDb.getAllAlertesDESC(userID, getContext());
+                    List<Alerte> alertes = alertesDb.getAlertesDESC(userID, getContext());
                     AlerteAdapter adapter = new AlerteAdapter(getContext(), alertes);
                     listView.setAdapter(adapter);
                 } else if (selectedItem.equals(getResources().getString(R.string.ancien))) {
-                    List<Alerte> alertes = alertesDb.getAllAlertesASC(userID,getContext());
+                    List<Alerte> alertes = alertesDb.getAlertesASC(userID,getContext());
                     AlerteAdapter adapter = new AlerteAdapter(getContext(), alertes);
                     listView.setAdapter(adapter);
                 }else if (selectedItem.equals(getResources().getString(R.string.pertinance))) {
                     List<Alerte> alertesImportantes = alertesDb.getAlertesImportantes(userID);
+                    List<Alerte> alertesNONImportantes = alertesDb.getAlertesNotImportantes(userID);
+                    List<Alerte> alertesPertinentes = new ArrayList<>();
 
-                    List<Alerte> toutesLesAlertes = alertesDb.getAllAlertesASC(userID, getContext());
+                    alertesPertinentes.addAll(alertesImportantes);
+                    alertesPertinentes.addAll(alertesNONImportantes);
 
-                    toutesLesAlertes.removeAll(alertesImportantes);
 
-                    toutesLesAlertes.addAll(0, alertesImportantes);
-
-                    AlerteAdapter adapter = new AlerteAdapter(getContext(), toutesLesAlertes);
+                    AlerteAdapter adapter = new AlerteAdapter(getContext(), alertesPertinentes);
                     listView.setAdapter(adapter);
                 }
             }

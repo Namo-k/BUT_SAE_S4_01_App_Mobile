@@ -1382,7 +1382,9 @@ color cardview_shadow_start_color
 color darkBlue
 color darkBlueLight
 color darkBlueLightLight
+color darkBlueLightnuit
 color darkGrey
+color darkGreynuit
 color design_bottom_navigation_shadow_color
 color design_box_stroke_color
 color design_dark_default_color_background
@@ -2117,6 +2119,7 @@ color tooltip_background_dark
 color tooltip_background_light
 color white
 color whiteFond
+color whitenuit
 color zxing_custom_possible_result_points
 color zxing_custom_result_view
 color zxing_custom_viewfinder_laser
@@ -3282,6 +3285,7 @@ id auto
 id autoComplete
 id autoCompleteToEnd
 id autoCompleteToStart
+id bar_chart
 id barcode_scanner
 id barrier
 id baseline
@@ -3451,6 +3455,8 @@ id ghost_view_holder
 id gone
 id graph
 id graphBloc1
+id graphBloc2
+id graphBloc3
 id graph_wrap
 id group_divider
 id grouping
@@ -3604,6 +3610,8 @@ id nbAlertes
 id nbNotifTV
 id nbNotifications
 id nbTotalAlertes
+id nbrMedicamentImportantLabelTV
+id nbrMedicamentImportantTV
 id nbrSaisiCIPLabelTV
 id nbrSaisiCIPTV
 id nbrSaisiDataMatrixLabelTV
@@ -3671,6 +3679,8 @@ id personneTV
 id pharmacieEdit
 id pharmacieLabelTV
 id pharmacieTV
+id pie_chart
+id pie_chart2
 id pin
 id position
 id postLayout
@@ -4772,6 +4782,8 @@ style Base_Widget_MaterialComponents_Snackbar
 style Base_Widget_MaterialComponents_TextInputEditText
 style Base_Widget_MaterialComponents_TextInputLayout
 style Base_Widget_MaterialComponents_TextView
+style BottomNavigationViewNoAnimation
+style BottomNavigationViewTheme
 style CardView
 style CardView_Dark
 style CardView_Light
