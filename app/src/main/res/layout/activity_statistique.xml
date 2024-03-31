@@ -47,34 +47,6 @@
                 android:layout_marginTop="55dp"
                 android:src="@drawable/colombes_logo" />
 
-            <ImageView
-                android:id="@+id/notifBtn"
-                android:layout_width="42dp"
-                android:layout_height="42dp"
-                android:layout_gravity="center_vertical"
-                android:layout_marginLeft="355dp"
-                android:layout_marginTop="38dp"
-                android:src="@drawable/cloche" />
-
-            <androidx.cardview.widget.CardView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center_vertical"
-                android:layout_marginLeft="385dp"
-                android:layout_marginTop="23dp"
-                android:alpha="0.8"
-                app:cardBackgroundColor="@color/darkBlueLightLight"
-                app:cardCornerRadius="10dp">
-
-                <TextView
-                    android:id="@+id/nbNotifTV"
-                    android:layout_width="25dp"
-                    android:layout_height="25dp"
-                    android:gravity="center"
-                    android:text="1"
-                    android:textColor="@color/white"
-                    android:textStyle="bold" />
-            </androidx.cardview.widget.CardView>
 
         </androidx.cardview.widget.CardView>
 
@@ -99,9 +71,9 @@
             <TextView
                 android:id="@+id/stats"
                 android:layout_width="wrap_content"
-                android:layout_height="22dp"
-                android:layout_marginStart="30dp"
-                android:layout_marginTop="20dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="35dp"
+                android:layout_marginTop="5dp"
                 android:fontFamily="@font/patuaone_regular"
                 android:text=" Les statistiques"
                 android:textColor="@color/darkBlue"
@@ -113,7 +85,7 @@
                 android:id="@+id/ligne1"
                 android:layout_width="180dp"
                 android:layout_height="1.5dp"
-                android:layout_marginStart="27dp"
+                android:layout_marginStart="35dp"
                 android:layout_marginTop="12dp"
                 android:background="@color/lightBlue"
                 app:layout_constraintStart_toStartOf="parent"
@@ -123,21 +95,20 @@
                 android:id="@+id/stats_logo"
                 android:layout_width="47dp"
                 android:layout_height="48dp"
-                android:layout_marginTop="5dp"
                 android:layout_marginRight="30dp"
                 android:src="@drawable/stats_logo"
                 android:textAlignment="center"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-             />
+                />
 
             <androidx.cardview.widget.CardView
                 android:id="@+id/blocStats"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="27dp"
-                android:layout_marginEnd="27dp"
-                android:layout_marginTop="10dp"
+                android:layout_marginStart="35dp"
+                android:layout_marginEnd="35dp"
+                android:layout_marginTop="15dp"
                 app:cardBackgroundColor="@color/lightBlueLight"
                 app:cardCornerRadius="20dp"
                 app:layout_constraintStart_toStartOf="parent"
@@ -217,7 +188,7 @@
                         android:layout_marginEnd="3dp"
                         android:layout_marginBottom="3dp"
                         android:fontFamily="@font/inter_medium"
-                        android:text="Type de maladie le plus signalé :"
+                        android:text="Type de pathologie le plus signalé :"
                         android:textColor="@color/textGrey"
                         android:textSize="12.5dp" />
 
@@ -235,13 +206,44 @@
                         android:textColor="@color/textDarkBlue"
                         android:textSize="12.5dp" />
 
+                    <TextView
+                        android:id="@+id/nbrMedicamentImportantLabelTV"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/typeMedicamentLePlusSignaleTV"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginTop="2dp"
+                        android:layout_marginEnd="3dp"
+                        android:layout_marginBottom="4dp"
+                        android:fontFamily="@font/inter_medium"
+                        android:text="Nombre d'alertes dites important :"
+                        android:textColor="@color/textGrey"
+                        android:textSize="12.5dp"
+                        />
+
+                    <TextView
+                        android:id="@+id/nbrMedicamentImportantTV"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/typeMedicamentLePlusSignaleTV"
+                        android:layout_toRightOf="@+id/nbrMedicamentImportantLabelTV"
+                        android:layout_marginStart="3dp"
+                        android:layout_marginTop="2dp"
+                        android:layout_marginEnd="3dp"
+                        android:layout_marginBottom="5dp"
+                        android:fontFamily="@font/inter"
+                        android:textColor="@color/textDarkBlue"
+                        android:text=""
+                        android:textSize="12.5dp"
+                        android:lineHeight="17dp"
+                        />
 
 
                     <TextView
                         android:id="@+id/nbrSaisiCIPLabelTV"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_below="@+id/typeMedicamentLePlusSignaleTV"
+                        android:layout_below="@+id/nbrMedicamentImportantLabelTV"
                         android:layout_marginStart="5dp"
                         android:layout_marginTop="2dp"
                         android:layout_marginEnd="3dp"
@@ -256,7 +258,7 @@
                         android:id="@+id/nbrSaisiCIPTV"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_below="@+id/typeMedicamentLePlusSignaleTV"
+                        android:layout_below="@+id/nbrMedicamentImportantLabelTV"
                         android:layout_toRightOf="@+id/nbrSaisiCIPLabelTV"
                         android:layout_marginStart="3dp"
                         android:layout_marginTop="2dp"
@@ -274,7 +276,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_toRightOf="@+id/nbrSaisiCIPTV"
-                        android:layout_below="@+id/typeMedicamentLePlusSignaleTV"
+                        android:layout_below="@+id/nbrMedicamentImportantLabelTV"
                         android:layout_marginStart="25dp"
                         android:layout_marginTop="2dp"
                         android:layout_marginEnd="3dp"
@@ -289,7 +291,7 @@
                         android:id="@+id/nbrSaisiDataMatrixTV"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_below="@+id/typeMedicamentLePlusSignaleTV"
+                        android:layout_below="@+id/nbrMedicamentImportantLabelTV"
                         android:layout_toRightOf="@+id/nbrSaisiDataMatrixLabelTV"
                         android:layout_marginStart="3dp"
                         android:layout_marginTop="2dp"
@@ -300,20 +302,6 @@
                         android:text=""
                         android:textSize="12.5dp"
                         android:lineHeight="17dp"
-                        />
-
-                    <TextView
-                        android:id="@+id/roleTV"
-                        android:layout_alignParentRight="true"
-                        android:layout_width="110dp"
-                        android:layout_height="wrap_content"
-                        android:text="Administrateur"
-                        android:textStyle="bold"
-                        android:textColor="#3A4388"
-                        android:fontFamily="@font/inter_medium"
-                        android:padding="3dp"
-                        android:gravity="center"
-                        android:textSize="13dp"
                         />
 
                 </RelativeLayout>
@@ -339,9 +327,9 @@
                 android:id="@+id/spinBloc"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="27dp"
-                android:layout_marginEnd="27dp"
-                android:layout_marginTop="10dp"
+                android:layout_marginStart="35dp"
+                android:layout_marginEnd="35dp"
+                android:layout_marginTop="25dp"
                 app:cardBackgroundColor="@color/lightBlueLight"
                 app:cardCornerRadius="20dp"
                 app:layout_constraintStart_toStartOf="parent"
@@ -362,9 +350,9 @@
                 android:id="@+id/blocGraph"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="27dp"
-                android:layout_marginEnd="27dp"
-                android:layout_marginTop="10dp"
+                android:layout_marginStart="35dp"
+                android:layout_marginEnd="35dp"
+                android:layout_marginTop="20dp"
                 app:cardBackgroundColor="@color/lightBlueLight"
                 app:cardCornerRadius="20dp"
                 app:layout_constraintStart_toStartOf="parent"
@@ -372,16 +360,57 @@
 
                 <LinearLayout
                     android:id="@+id/graphBloc1"
-                    android:layout_width="500dp"
+                    android:layout_width="match_parent"
                     android:layout_height="250dp"
-                    android:orientation="vertical">
+                    android:layout_margin="15dp"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <com.github.mikephil.charting.charts.BarChart
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/bar_chart"
+                        android:layout_marginBottom="8dp"
+                        />
 
                 </LinearLayout>
-q
+
+                <LinearLayout
+                    android:id="@+id/graphBloc2"
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp"
+                    android:layout_margin="15dp"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <com.github.mikephil.charting.charts.PieChart
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:id="@+id/pie_chart"
+                        android:layout_marginBottom="8dp"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/graphBloc3"
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp"
+                    android:layout_margin="15dp"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <com.github.mikephil.charting.charts.PieChart
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:id="@+id/pie_chart2"
+                        android:layout_marginBottom="8dp"
+                        />
+
+                </LinearLayout>
             </androidx.cardview.widget.CardView>
-
-
-
 
 
         </androidx.constraintlayout.widget.ConstraintLayout>
@@ -389,6 +418,56 @@ q
     </LinearLayout>
 
     <!-- ========== FIN PAGE =========== -->
+
+    <!-- ========== NAVBAR =========== -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="68dp"
+        android:layout_gravity="bottom"
+        android:background="@color/darkBlueLight"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/toutAlerteBtn"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="113dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="45dp"
+            android:layout_marginBottom="16dp"
+            android:src="@drawable/anciennes" />
+
+        <ImageView
+            android:id="@+id/homeAdminBtn"
+            android:layout_width="46dp"
+            android:layout_height="46dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="55dp"
+            android:layout_marginBottom="4dp"
+            android:src="@drawable/home" />
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="79dp"
+            android:layout_height="55dp"
+            android:layout_marginEnd="92dp"
+            app:cardBackgroundColor="@color/hover"
+            app:cardCornerRadius="17dp">
+
+            <ImageView
+                android:id="@+id/statsBtn"
+                android:layout_width="47dp"
+                android:layout_height="47dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="16dp"
+                android:src="@drawable/stats" />
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+    <!-- ========== FIN NAVBAR =========== -->
 
 
 </LinearLayout>

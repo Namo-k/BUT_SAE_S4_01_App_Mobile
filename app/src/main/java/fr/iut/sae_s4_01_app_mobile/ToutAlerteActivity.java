@@ -19,6 +19,28 @@ public class ToutAlerteActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_tout_alerte);
 
+        ImageView homeAdminBtn = findViewById(R.id.homeAdminBtn);
+        ImageView statsBtn = findViewById(R.id.statsBtn);
+
+        homeAdminBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(ToutAlerteActivity.this, AccueilAdminActivity.class);
+                finish();
+                startActivity(intent);
+            }
+        });
+        statsBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(ToutAlerteActivity.this, StatistiqueActivity.class);
+                finish();
+                startActivity(intent);
+            }
+        });
+
+
+
         // Bouton de la navbar
 
         TextView nbTotalAlertes = (TextView) findViewById(R.id.nbTotalAlertes);

@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:background="@color/white"
-    tools:context=".ancienneAlerteActivity">
+    tools:context=".ToutAlerteActivity">
 
 
     <!-- ========== ENTETE =========== -->
@@ -48,34 +48,6 @@
                 android:layout_marginTop="55dp"
                 android:src="@drawable/colombes_logo" />
 
-            <ImageView
-                android:id="@+id/notifBtn"
-                android:layout_width="42dp"
-                android:layout_height="42dp"
-                android:layout_gravity="center_vertical"
-                android:layout_marginLeft="355dp"
-                android:layout_marginTop="38dp"
-                android:src="@drawable/cloche" />
-
-            <androidx.cardview.widget.CardView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center_vertical"
-                android:layout_marginLeft="385dp"
-                android:layout_marginTop="23dp"
-                android:alpha="0.8"
-                app:cardBackgroundColor="@color/darkBlueLightLight"
-                app:cardCornerRadius="10dp">
-
-                <TextView
-                    android:id="@+id/nbNotifTV"
-                    android:layout_width="25dp"
-                    android:layout_height="25dp"
-                    android:gravity="center"
-                    android:text="1"
-                    android:textColor="@color/white"
-                    android:textStyle="bold" />
-            </androidx.cardview.widget.CardView>
 
         </androidx.cardview.widget.CardView>
 
@@ -111,10 +83,11 @@
                     android:gravity="left"
                     android:text="@string/lesAlertes"
                     android:textSize="21dp"
+                    android:layout_marginTop="5dp"
                     android:fontFamily="@font/patuaone_regular"
                     android:textColor="@color/darkBlue"
                     android:layout_marginLeft="15dp"
-                />
+                    />
 
                 <View
                     android:layout_width="232dp"
@@ -122,7 +95,7 @@
                     android:layout_marginTop="9dp"
                     android:layout_marginLeft="10dp"
                     android:background="@color/lightBlue"
-                />
+                    />
 
             </LinearLayout>
 
@@ -133,7 +106,7 @@
                 android:layout_marginStart="56dp"
                 android:layout_marginTop="6dp"
                 android:layout_gravity="end"
-            />
+                />
 
         </LinearLayout>
 
@@ -177,12 +150,64 @@
             android:paddingBottom="15dp"
             android:divider="@color/white"
             android:dividerHeight="17dp"
-        />
+            />
 
     </LinearLayout>
 
     <!-- ========== FIN PAGE =========== -->
 
     <!-- ========== NAVBAR =========== -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="68dp"
+        android:layout_gravity="bottom"
+        android:background="@color/darkBlueLight"
+        android:gravity="center">
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="82dp"
+            android:layout_height="55dp"
+            app:cardBackgroundColor="@color/hover"
+            android:layout_marginEnd="30dp"
+            app:cardCornerRadius="17dp"
+            >
+
+            <ImageView
+                android:id="@+id/toutAlerteBtn"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:src="@drawable/anciennes"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="45dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="16dp" />
+
+        </androidx.cardview.widget.CardView>
+
+        <ImageView
+            android:id="@+id/homeAdminBtn"
+            android:layout_width="46dp"
+            android:layout_height="46dp"
+            android:src="@drawable/home"
+            android:layout_marginStart="19dp"
+            android:layout_marginEnd="60dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="3dp"
+            />
+
+        <ImageView
+            android:id="@+id/statsBtn"
+            android:layout_width="47dp"
+            android:layout_height="47dp"
+            android:src="@drawable/stats"
+            android:layout_marginStart="7dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            />
+
+    </LinearLayout>
 
 </LinearLayout>

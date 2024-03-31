@@ -26,6 +26,7 @@
             app:itemIconSize="42dp"
             android:background="@color/darkBlueLight"
             app:itemIconTint="@color/white"
+            style="@style/BottomNavigationViewNoAnimation"
             app:labelVisibilityMode="unlabeled" />
 
     </RelativeLayout>

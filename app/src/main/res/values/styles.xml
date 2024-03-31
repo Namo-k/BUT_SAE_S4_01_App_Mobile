@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Style for BottomNavigationView to disable selection indicator -->
+    <style name="BottomNavigationViewNoAnimation" parent="Widget.Design.BottomNavigationView">
+        <item name="android:theme">@style/BottomNavigationViewTheme</item>
+        <item name="android:background">?android:attr/windowBackground</item>
+        <item name="android:layoutAnimation">@null</item>
+    </style>
+
+    <!-- Theme for the BottomNavigationView to disable selection indicator -->
+    <style name="BottomNavigationViewTheme" parent="Theme.AppCompat">
+        <item name="colorPrimary">@android:color/transparent</item>
+        <item name="android:colorBackground">@android:color/transparent</item>
+    </style>
+
+</resources>

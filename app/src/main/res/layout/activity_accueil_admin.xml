@@ -46,34 +46,7 @@
                 android:layout_marginTop="55dp"
                 android:src="@drawable/colombes_logo" />
 
-            <ImageView
-                android:id="@+id/notifBtn"
-                android:layout_width="42dp"
-                android:layout_height="42dp"
-                android:layout_gravity="center_vertical"
-                android:layout_marginLeft="355dp"
-                android:layout_marginTop="38dp"
-                android:src="@drawable/cloche" />
 
-            <androidx.cardview.widget.CardView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center_vertical"
-                android:layout_marginLeft="385dp"
-                android:layout_marginTop="23dp"
-                android:alpha="0.8"
-                app:cardBackgroundColor="@color/darkBlueLightLight"
-                app:cardCornerRadius="10dp">
-
-                <TextView
-                    android:id="@+id/nbNotifTV"
-                    android:layout_width="25dp"
-                    android:layout_height="25dp"
-                    android:gravity="center"
-                    android:text="1"
-                    android:textColor="@color/white"
-                    android:textStyle="bold" />
-            </androidx.cardview.widget.CardView>
 
         </androidx.cardview.widget.CardView>
 
@@ -99,7 +72,7 @@
                 android:layout_gravity="center_vertical"
                 android:layout_marginLeft="52.5dp"
                 android:src="@drawable/colombesdroite"
-                android:layout_marginTop="-2dp"
+                android:layout_marginTop="-4dp"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
@@ -136,7 +109,7 @@
                 android:layout_height="70dp"
                 android:layout_gravity="center_vertical"
                 android:layout_marginLeft="276.5dp"
-                android:layout_marginTop="-3.5dp"
+                android:layout_marginTop="-4.5dp"
                 android:src="@drawable/colombesgauche"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
@@ -150,7 +123,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="22dp"
                 android:layout_marginStart="30dp"
-                android:layout_marginTop="22dp"
+                android:layout_marginTop="15dp"
                 android:fontFamily="@font/patuaone_regular"
                 android:text=" Consulter les statistiques"
                 android:textColor="@color/darkBlue"
@@ -298,7 +271,7 @@
                         android:text="Nombre de saisie CIP :"
                         android:textColor="@color/textGrey"
                         android:textSize="12.5dp"
-                    />
+                        />
 
                     <TextView
                         android:id="@+id/nbrSaisiCIPTV"
@@ -315,7 +288,7 @@
                         android:text=""
                         android:textSize="12.5dp"
                         android:lineHeight="17dp"
-                    />
+                        />
 
                     <TextView
                         android:id="@+id/nbrSaisiDataMatrixLabelTV"
@@ -427,7 +400,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="27dp"
                 android:layout_marginEnd="27dp"
-                android:layout_marginTop="15dp"
+                android:layout_marginTop="10dp"
                 app:cardBackgroundColor="@color/lightBlueLight"
                 app:cardCornerRadius="20dp"
                 app:layout_constraintStart_toStartOf="parent"
