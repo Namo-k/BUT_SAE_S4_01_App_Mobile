@@ -39,7 +39,8 @@ public class NotificationAdapter extends ArrayAdapter<Notification> {
         notificationImage.setVisibility(View.VISIBLE);
 
         TextView notificationDateTV = itemView.findViewById(R.id.dateNotif);
-        notificationDateTV.setText(String.valueOf(currentNotitification.getDateNotif()));
+        String formattedDate = currentNotitification.getDateNotif(getContext());
+        notificationDateTV.setText(formattedDate);
 
         int imageResourceId = Notification.getImageResourceIdByName(currentNotitification.getCategorie());
         if (imageResourceId != 0) {

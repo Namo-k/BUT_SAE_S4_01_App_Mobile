@@ -9,142 +9,142 @@
 9        android:targetSdkVersion="34" />
 10
 11    <uses-permission android:name="android.permission.INTERNET" />
-11-->/Users/isra/Desktop/SEMESTRE 4/Mobile/SAEE/B_App_Mobile/app/src/main/AndroidManifest.xml:5:5-67
-11-->/Users/isra/Desktop/SEMESTRE 4/Mobile/SAEE/B_App_Mobile/app/src/main/AndroidManifest.xml:5:22-64
+11-->C:\Users\33760\OneDrive\Bureau\fin\app\src\main\AndroidManifest.xml:5:5-67
+11-->C:\Users\33760\OneDrive\Bureau\fin\app\src\main\AndroidManifest.xml:5:22-64
 12    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
-12-->/Users/isra/Desktop/SEMESTRE 4/Mobile/SAEE/B_App_Mobile/app/src/main/AndroidManifest.xml:6:5-76
-12-->/Users/isra/Desktop/SEMESTRE 4/Mobile/SAEE/B_App_Mobile/app/src/main/AndroidManifest.xml:6:22-73
+12-->C:\Users\33760\OneDrive\Bureau\fin\app\src\main\AndroidManifest.xml:6:5-76
+12-->C:\Users\33760\OneDrive\Bureau\fin\app\src\main\AndroidManifest.xml:6:22-73
 13    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
-13-->/Users/isra/Desktop/SEMESTRE 4/Mobile/SAEE/B_App_Mobile/app/src/main/AndroidManifest.xml:7:5-80
-13-->/Users/isra/Desktop/SEMESTRE 4/Mobile/SAEE/B_App_Mobile/app/src/main/AndroidManifest.xml:7:22-77
+13-->C:\Users\33760\OneDrive\Bureau\fin\app\src\main\AndroidManifest.xml:7:5-80
+13-->C:\Users\33760\OneDrive\Bureau\fin\app\src\main\AndroidManifest.xml:7:22-77
 14    <uses-permission android:name="android.permission.CAMERA" /> <!-- Don't require camera, as this requires a rear camera. This allows it to work on the Nexus 7 -->
-14-->[com.journeyapps:zxing-android-embedded:4.2.0] /Users/isra/.gradle/caches/transforms-3/a60982259721268694c6a5f2a67385db/transformed/zxing-android-embedded-4.2.0/AndroidManifest.xml:22:5-65
-14-->[com.journeyapps:zxing-android-embedded:4.2.0] /Users/isra/.gradle/caches/transforms-3/a60982259721268694c6a5f2a67385db/transformed/zxing-android-embedded-4.2.0/AndroidManifest.xml:22:22-62
+14-->[com.journeyapps:zxing-android-embedded:4.2.0] C:\Users\33760\.gradle\caches\transforms-3\a60982259721268694c6a5f2a67385db\transformed\zxing-android-embedded-4.2.0\AndroidManifest.xml:22:5-65
+14-->[com.journeyapps:zxing-android-embedded:4.2.0] C:\Users\33760\.gradle\caches\transforms-3\a60982259721268694c6a5f2a67385db\transformed\zxing-android-embedded-4.2.0\AndroidManifest.xml:22:22-62
 15    <uses-feature
-15-->[com.journeyapps:zxing-android-embedded:4.2.0] /Users/isra/.gradle/caches/transforms-3/a60982259721268694c6a5f2a67385db/transformed/zxing-android-embedded-4.2.0/AndroidManifest.xml:25:5-27:36
+15-->[com.journeyapps:zxing-android-embedded:4.2.0] C:\Users\33760\.gradle\caches\transforms-3\a60982259721268694c6a5f2a67385db\transformed\zxing-android-embedded-4.2.0\AndroidManifest.xml:25:5-27:36
 16        android:name="android.hardware.camera"
-16-->[com.journeyapps:zxing-android-embedded:4.2.0] /Users/isra/.gradle/caches/transforms-3/a60982259721268694c6a5f2a67385db/transformed/zxing-android-embedded-4.2.0/AndroidManifest.xml:26:9-47
+16-->[com.journeyapps:zxing-android-embedded:4.2.0] C:\Users\33760\.gradle\caches\transforms-3\a60982259721268694c6a5f2a67385db\transformed\zxing-android-embedded-4.2.0\AndroidManifest.xml:26:9-47
 17        android:required="false" />
-17-->[com.journeyapps:zxing-android-embedded:4.2.0] /Users/isra/.gradle/caches/transforms-3/a60982259721268694c6a5f2a67385db/transformed/zxing-android-embedded-4.2.0/AndroidManifest.xml:27:9-33
+17-->[com.journeyapps:zxing-android-embedded:4.2.0] C:\Users\33760\.gradle\caches\transforms-3\a60982259721268694c6a5f2a67385db\transformed\zxing-android-embedded-4.2.0\AndroidManifest.xml:27:9-33
 18    <uses-feature
-18-->[com.journeyapps:zxing-android-embedded:4.2.0] /Users/isra/.gradle/caches/transforms-3/a60982259721268694c6a5f2a67385db/transformed/zxing-android-embedded-4.2.0/AndroidManifest.xml:28:5-30:36
+18-->[com.journeyapps:zxing-android-embedded:4.2.0] C:\Users\33760\.gradle\caches\transforms-3\a60982259721268694c6a5f2a67385db\transformed\zxing-android-embedded-4.2.0\AndroidManifest.xml:28:5-30:36
 19        android:name="android.hardware.camera.front"
-19-->[com.journeyapps:zxing-android-embedded:4.2.0] /Users/isra/.gradle/caches/transforms-3/a60982259721268694c6a5f2a67385db/transformed/zxing-android-embedded-4.2.0/AndroidManifest.xml:29:9-53
+19-->[com.journeyapps:zxing-android-embedded:4.2.0] C:\Users\33760\.gradle\caches\transforms-3\a60982259721268694c6a5f2a67385db\transformed\zxing-android-embedded-4.2.0\AndroidManifest.xml:29:9-53
 20        android:required="false" /> <!-- TODO replace above two with next line after Android 4.2 -->
-20-->[com.journeyapps:zxing-android-embedded:4.2.0] /Users/isra/.gradle/caches/transforms-3/a60982259721268694c6a5f2a67385db/transformed/zxing-android-embedded-4.2.0/AndroidManifest.xml:30:9-33
+20-->[com.journeyapps:zxing-android-embedded:4.2.0] C:\Users\33760\.gradle\caches\transforms-3\a60982259721268694c6a5f2a67385db\transformed\zxing-android-embedded-4.2.0\AndroidManifest.xml:30:9-33
 21    <!-- <uses-feature android:name="android.hardware.camera.any"/> -->
 22    <uses-feature
-22-->[com.journeyapps:zxing-android-embedded:4.2.0] /Users/isra/.gradle/caches/transforms-3/a60982259721268694c6a5f2a67385db/transformed/zxing-android-embedded-4.2.0/AndroidManifest.xml:33:5-35:36
+22-->[com.journeyapps:zxing-android-embedded:4.2.0] C:\Users\33760\.gradle\caches\transforms-3\a60982259721268694c6a5f2a67385db\transformed\zxing-android-embedded-4.2.0\AndroidManifest.xml:33:5-35:36
 23        android:name="android.hardware.camera.autofocus"
-23-->[com.journeyapps:zxing-android-embedded:4.2.0] /Users/isra/.gradle/caches/transforms-3/a60982259721268694c6a5f2a67385db/transformed/zxing-android-embedded-4.2.0/AndroidManifest.xml:34:9-57
+23-->[com.journeyapps:zxing-android-embedded:4.2.0] C:\Users\33760\.gradle\caches\transforms-3\a60982259721268694c6a5f2a67385db\transformed\zxing-android-embedded-4.2.0\AndroidManifest.xml:34:9-57
 24        android:required="false" />
-24-->[com.journeyapps:zxing-android-embedded:4.2.0] /Users/isra/.gradle/caches/transforms-3/a60982259721268694c6a5f2a67385db/transformed/zxing-android-embedded-4.2.0/AndroidManifest.xml:35:9-33
+24-->[com.journeyapps:zxing-android-embedded:4.2.0] C:\Users\33760\.gradle\caches\transforms-3\a60982259721268694c6a5f2a67385db\transformed\zxing-android-embedded-4.2.0\AndroidManifest.xml:35:9-33
 25    <uses-feature
-25-->[com.journeyapps:zxing-android-embedded:4.2.0] /Users/isra/.gradle/caches/transforms-3/a60982259721268694c6a5f2a67385db/transformed/zxing-android-embedded-4.2.0/AndroidManifest.xml:36:5-38:36
+25-->[com.journeyapps:zxing-android-embedded:4.2.0] C:\Users\33760\.gradle\caches\transforms-3\a60982259721268694c6a5f2a67385db\transformed\zxing-android-embedded-4.2.0\AndroidManifest.xml:36:5-38:36
 26        android:name="android.hardware.camera.flash"
-26-->[com.journeyapps:zxing-android-embedded:4.2.0] /Users/isra/.gradle/caches/transforms-3/a60982259721268694c6a5f2a67385db/transformed/zxing-android-embedded-4.2.0/AndroidManifest.xml:37:9-53
+26-->[com.journeyapps:zxing-android-embedded:4.2.0] C:\Users\33760\.gradle\caches\transforms-3\a60982259721268694c6a5f2a67385db\transformed\zxing-android-embedded-4.2.0\AndroidManifest.xml:37:9-53
 27        android:required="false" />
-27-->[com.journeyapps:zxing-android-embedded:4.2.0] /Users/isra/.gradle/caches/transforms-3/a60982259721268694c6a5f2a67385db/transformed/zxing-android-embedded-4.2.0/AndroidManifest.xml:38:9-33
+27-->[com.journeyapps:zxing-android-embedded:4.2.0] C:\Users\33760\.gradle\caches\transforms-3\a60982259721268694c6a5f2a67385db\transformed\zxing-android-embedded-4.2.0\AndroidManifest.xml:38:9-33
 28    <uses-feature
-28-->[com.journeyapps:zxing-android-embedded:4.2.0] /Users/isra/.gradle/caches/transforms-3/a60982259721268694c6a5f2a67385db/transformed/zxing-android-embedded-4.2.0/AndroidManifest.xml:39:5-41:36
+28-->[com.journeyapps:zxing-android-embedded:4.2.0] C:\Users\33760\.gradle\caches\transforms-3\a60982259721268694c6a5f2a67385db\transformed\zxing-android-embedded-4.2.0\AndroidManifest.xml:39:5-41:36
 29        android:name="android.hardware.screen.landscape"
-29-->[com.journeyapps:zxing-android-embedded:4.2.0] /Users/isra/.gradle/caches/transforms-3/a60982259721268694c6a5f2a67385db/transformed/zxing-android-embedded-4.2.0/AndroidManifest.xml:40:9-57
+29-->[com.journeyapps:zxing-android-embedded:4.2.0] C:\Users\33760\.gradle\caches\transforms-3\a60982259721268694c6a5f2a67385db\transformed\zxing-android-embedded-4.2.0\AndroidManifest.xml:40:9-57
 30        android:required="false" />
-30-->[com.journeyapps:zxing-android-embedded:4.2.0] /Users/isra/.gradle/caches/transforms-3/a60982259721268694c6a5f2a67385db/transformed/zxing-android-embedded-4.2.0/AndroidManifest.xml:41:9-33
+30-->[com.journeyapps:zxing-android-embedded:4.2.0] C:\Users\33760\.gradle\caches\transforms-3\a60982259721268694c6a5f2a67385db\transformed\zxing-android-embedded-4.2.0\AndroidManifest.xml:41:9-33
 31    <uses-feature
-31-->[com.journeyapps:zxing-android-embedded:4.2.0] /Users/isra/.gradle/caches/transforms-3/a60982259721268694c6a5f2a67385db/transformed/zxing-android-embedded-4.2.0/AndroidManifest.xml:42:5-44:36
+31-->[com.journeyapps:zxing-android-embedded:4.2.0] C:\Users\33760\.gradle\caches\transforms-3\a60982259721268694c6a5f2a67385db\transformed\zxing-android-embedded-4.2.0\AndroidManifest.xml:42:5-44:36
 32        android:name="android.hardware.wifi"
-32-->[com.journeyapps:zxing-android-embedded:4.2.0] /Users/isra/.gradle/caches/transforms-3/a60982259721268694c6a5f2a67385db/transformed/zxing-android-embedded-4.2.0/AndroidManifest.xml:43:9-45
+32-->[com.journeyapps:zxing-android-embedded:4.2.0] C:\Users\33760\.gradle\caches\transforms-3\a60982259721268694c6a5f2a67385db\transformed\zxing-android-embedded-4.2.0\AndroidManifest.xml:43:9-45
 33        android:required="false" />
-33-->[com.journeyapps:zxing-android-embedded:4.2.0] /Users/isra/.gradle/caches/transforms-3/a60982259721268694c6a5f2a67385db/transformed/zxing-android-embedded-4.2.0/AndroidManifest.xml:44:9-33
+33-->[com.journeyapps:zxing-android-embedded:4.2.0] C:\Users\33760\.gradle\caches\transforms-3\a60982259721268694c6a5f2a67385db\transformed\zxing-android-embedded-4.2.0\AndroidManifest.xml:44:9-33
 34
 35    <permission
-35-->[androidx.core:core:1.9.0] /Users/isra/.gradle/caches/transforms-3/16088aea6844a21f0ae8707202a192eb/transformed/core-1.9.0/AndroidManifest.xml:22:5-24:47
+35-->[androidx.core:core:1.9.0] C:\Users\33760\.gradle\caches\transforms-3\16088aea6844a21f0ae8707202a192eb\transformed\core-1.9.0\AndroidManifest.xml:22:5-24:47
 36        android:name="fr.iut.sae_s4_01_app_mobile.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
-36-->[androidx.core:core:1.9.0] /Users/isra/.gradle/caches/transforms-3/16088aea6844a21f0ae8707202a192eb/transformed/core-1.9.0/AndroidManifest.xml:23:9-81
+36-->[androidx.core:core:1.9.0] C:\Users\33760\.gradle\caches\transforms-3\16088aea6844a21f0ae8707202a192eb\transformed\core-1.9.0\AndroidManifest.xml:23:9-81
 37        android:protectionLevel="signature" />
-37-->[androidx.core:core:1.9.0] /Users/isra/.gradle/caches/transforms-3/16088aea6844a21f0ae8707202a192eb/transformed/core-1.9.0/AndroidManifest.xml:24:9-44
+37-->[androidx.core:core:1.9.0] C:\Users\33760\.gradle\caches\transforms-3\16088aea6844a21f0ae8707202a192eb\transformed\core-1.9.0\AndroidManifest.xml:24:9-44
 38
 39    <uses-permission android:name="fr.iut.sae_s4_01_app_mobile.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
-39-->[androidx.core:core:1.9.0] /Users/isra/.gradle/caches/transforms-3/16088aea6844a21f0ae8707202a192eb/transformed/core-1.9.0/AndroidManifest.xml:26:5-97
-39-->[androidx.core:core:1.9.0] /Users/isra/.gradle/caches/transforms-3/16088aea6844a21f0ae8707202a192eb/transformed/core-1.9.0/AndroidManifest.xml:26:22-94
+39-->[androidx.core:core:1.9.0] C:\Users\33760\.gradle\caches\transforms-3\16088aea6844a21f0ae8707202a192eb\transformed\core-1.9.0\AndroidManifest.xml:26:5-97
+39-->[androidx.core:core:1.9.0] C:\Users\33760\.gradle\caches\transforms-3\16088aea6844a21f0ae8707202a192eb\transformed\core-1.9.0\AndroidManifest.xml:26:22-94
 40
 41    <application
-41-->/Users/isra/Desktop/SEMESTRE 4/Mobile/SAEE/B_App_Mobile/app/src/main/AndroidManifest.xml:9:5-177:19
+41-->C:\Users\33760\OneDrive\Bureau\fin\app\src\main\AndroidManifest.xml:9:5-177:19
 42        android:name="fr.iut.sae_s4_01_app_mobile.UserId"
-42-->/Users/isra/Desktop/SEMESTRE 4/Mobile/SAEE/B_App_Mobile/app/src/main/AndroidManifest.xml:10:9-31
+42-->C:\Users\33760\OneDrive\Bureau\fin\app\src\main\AndroidManifest.xml:10:9-31
 43        android:allowBackup="true"
-43-->/Users/isra/Desktop/SEMESTRE 4/Mobile/SAEE/B_App_Mobile/app/src/main/AndroidManifest.xml:11:9-35
+43-->C:\Users\33760\OneDrive\Bureau\fin\app\src\main\AndroidManifest.xml:11:9-35
 44        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-44-->[androidx.core:core:1.9.0] /Users/isra/.gradle/caches/transforms-3/16088aea6844a21f0ae8707202a192eb/transformed/core-1.9.0/AndroidManifest.xml:28:18-86
+44-->[androidx.core:core:1.9.0] C:\Users\33760\.gradle\caches\transforms-3\16088aea6844a21f0ae8707202a192eb\transformed\core-1.9.0\AndroidManifest.xml:28:18-86
 45        android:dataExtractionRules="@xml/data_extraction_rules"
-45-->/Users/isra/Desktop/SEMESTRE 4/Mobile/SAEE/B_App_Mobile/app/src/main/AndroidManifest.xml:12:9-65
+45-->C:\Users\33760\OneDrive\Bureau\fin\app\src\main\AndroidManifest.xml:12:9-65
 46        android:debuggable="true"
 47        android:extractNativeLibs="false"
 48        android:fullBackupContent="@xml/backup_rules"
-48-->/Users/isra/Desktop/SEMESTRE 4/Mobile/SAEE/B_App_Mobile/app/src/main/AndroidManifest.xml:13:9-54
+48-->C:\Users\33760\OneDrive\Bureau\fin\app\src\main\AndroidManifest.xml:13:9-54
 49        android:icon="@mipmap/ic_launcher"
-49-->/Users/isra/Desktop/SEMESTRE 4/Mobile/SAEE/B_App_Mobile/app/src/main/AndroidManifest.xml:14:9-43
+49-->C:\Users\33760\OneDrive\Bureau\fin\app\src\main\AndroidManifest.xml:14:9-43
 50        android:label="@string/app_name"
-50-->/Users/isra/Desktop/SEMESTRE 4/Mobile/SAEE/B_App_Mobile/app/src/main/AndroidManifest.xml:15:9-41
+50-->C:\Users\33760\OneDrive\Bureau\fin\app\src\main\AndroidManifest.xml:15:9-41
 51        android:networkSecurityConfig="@xml/network_security_config"
-51-->/Users/isra/Desktop/SEMESTRE 4/Mobile/SAEE/B_App_Mobile/app/src/main/AndroidManifest.xml:16:9-69
+51-->C:\Users\33760\OneDrive\Bureau\fin\app\src\main\AndroidManifest.xml:16:9-69
 52        android:roundIcon="@mipmap/ic_launcher_round"
-52-->/Users/isra/Desktop/SEMESTRE 4/Mobile/SAEE/B_App_Mobile/app/src/main/AndroidManifest.xml:17:9-54
+52-->C:\Users\33760\OneDrive\Bureau\fin\app\src\main\AndroidManifest.xml:17:9-54
 53        android:supportsRtl="true"
-53-->/Users/isra/Desktop/SEMESTRE 4/Mobile/SAEE/B_App_Mobile/app/src/main/AndroidManifest.xml:18:9-35
+53-->C:\Users\33760\OneDrive\Bureau\fin\app\src\main\AndroidManifest.xml:18:9-35
 54        android:testOnly="true"
 55        android:theme="@style/Base.Theme.SAE_S4_01_App_Mobile"
-55-->/Users/isra/Desktop/SEMESTRE 4/Mobile/SAEE/B_App_Mobile/app/src/main/AndroidManifest.xml:20:9-63
+55-->C:\Users\33760\OneDrive\Bureau\fin\app\src\main\AndroidManifest.xml:20:9-63
 56        android:usesCleartextTraffic="true" >
-56-->/Users/isra/Desktop/SEMESTRE 4/Mobile/SAEE/B_App_Mobile/app/src/main/AndroidManifest.xml:21:9-44
+56-->C:\Users\33760\OneDrive\Bureau\fin\app\src\main\AndroidManifest.xml:21:9-44
 57        <activity
-57-->/Users/isra/Desktop/SEMESTRE 4/Mobile/SAEE/B_App_Mobile/app/src/main/AndroidManifest.xml:23:9-25:40
+57-->C:\Users\33760\OneDrive\Bureau\fin\app\src\main\AndroidManifest.xml:23:9-25:40
 58            android:name="fr.iut.sae_s4_01_app_mobile.ChangePasswordActivity"
-58-->/Users/isra/Desktop/SEMESTRE 4/Mobile/SAEE/B_App_Mobile/app/src/main/AndroidManifest.xml:24:13-51
+58-->C:\Users\33760\OneDrive\Bureau\fin\app\src\main\AndroidManifest.xml:24:13-51
 59            android:exported="false" />
-59-->/Users/isra/Desktop/SEMESTRE 4/Mobile/SAEE/B_App_Mobile/app/src/main/AndroidManifest.xml:25:13-37
+59-->C:\Users\33760\OneDrive\Bureau\fin\app\src\main\AndroidManifest.xml:25:13-37
 60        <activity
-60-->/Users/isra/Desktop/SEMESTRE 4/Mobile/SAEE/B_App_Mobile/app/src/main/AndroidManifest.xml:26:9-28:39
+60-->C:\Users\33760\OneDrive\Bureau\fin\app\src\main\AndroidManifest.xml:26:9-28:39
 61            android:name="fr.iut.sae_s4_01_app_mobile.MainActivity"
-61-->/Users/isra/Desktop/SEMESTRE 4/Mobile/SAEE/B_App_Mobile/app/src/main/AndroidManifest.xml:27:13-41
+61-->C:\Users\33760\OneDrive\Bureau\fin\app\src\main\AndroidManifest.xml:27:13-41
 62            android:exported="false" />
-62-->/Users/isra/Desktop/SEMESTRE 4/Mobile/SAEE/B_App_Mobile/app/src/main/AndroidManifest.xml:28:13-37
+62-->C:\Users\33760\OneDrive\Bureau\fin\app\src\main\AndroidManifest.xml:28:13-37
 63        <activity
-63-->/Users/isra/Desktop/SEMESTRE 4/Mobile/SAEE/B_App_Mobile/app/src/main/AndroidManifest.xml:29:9-31:40
+63-->C:\Users\33760\OneDrive\Bureau\fin\app\src\main\AndroidManifest.xml:29:9-31:40
 64            android:name="fr.iut.sae_s4_01_app_mobile.ResetCodeActivity"
-64-->/Users/isra/Desktop/SEMESTRE 4/Mobile/SAEE/B_App_Mobile/app/src/main/AndroidManifest.xml:30:13-46
+64-->C:\Users\33760\OneDrive\Bureau\fin\app\src\main\AndroidManifest.xml:30:13-46
 65            android:exported="false" />
-65-->/Users/isra/Desktop/SEMESTRE 4/Mobile/SAEE/B_App_Mobile/app/src/main/AndroidManifest.xml:31:13-37
+65-->C:\Users\33760\OneDrive\Bureau\fin\app\src\main\AndroidManifest.xml:31:13-37
 66        <activity
-66-->/Users/isra/Desktop/SEMESTRE 4/Mobile/SAEE/B_App_Mobile/app/src/main/AndroidManifest.xml:32:9-34:40
+66-->C:\Users\33760\OneDrive\Bureau\fin\app\src\main\AndroidManifest.xml:32:9-34:40
 67            android:name="fr.iut.sae_s4_01_app_mobile.ResetPasswordActivity"
-67-->/Users/isra/Desktop/SEMESTRE 4/Mobile/SAEE/B_App_Mobile/app/src/main/AndroidManifest.xml:33:13-50
+67-->C:\Users\33760\OneDrive\Bureau\fin\app\src\main\AndroidManifest.xml:33:13-50
 68            android:exported="false" />
-68-->/Users/isra/Desktop/SEMESTRE 4/Mobile/SAEE/B_App_Mobile/app/src/main/AndroidManifest.xml:34:13-37
+68-->C:\Users\33760\OneDrive\Bureau\fin\app\src\main\AndroidManifest.xml:34:13-37
 69        <activity
-69-->/Users/isra/Desktop/SEMESTRE 4/Mobile/SAEE/B_App_Mobile/app/src/main/AndroidManifest.xml:36:9-44:20
+69-->C:\Users\33760\OneDrive\Bureau\fin\app\src\main\AndroidManifest.xml:36:9-44:20
 70            android:name="fr.iut.sae_s4_01_app_mobile.SplashScreenActivity"
-70-->/Users/isra/Desktop/SEMESTRE 4/Mobile/SAEE/B_App_Mobile/app/src/main/AndroidManifest.xml:37:13-49
+70-->C:\Users\33760\OneDrive\Bureau\fin\app\src\main\AndroidManifest.xml:37:13-49
 71            android:exported="true" >
-71-->/Users/isra/Desktop/SEMESTRE 4/Mobile/SAEE/B_App_Mobile/app/src/main/AndroidManifest.xml:38:13-36
+71-->C:\Users\33760\OneDrive\Bureau\fin\app\src\main\AndroidManifest.xml:38:13-36
 72            <intent-filter>
-72-->/Users/isra/Desktop/SEMESTRE 4/Mobile/SAEE/B_App_Mobile/app/src/main/AndroidManifest.xml:39:13-43:29
+72-->C:\Users\33760\OneDrive\Bureau\fin\app\src\main\AndroidManifest.xml:39:13-43:29
 73                <action android:name="android.intent.action.MAIN" />
-73-->/Users/isra/Desktop/SEMESTRE 4/Mobile/SAEE/B_App_Mobile/app/src/main/AndroidManifest.xml:40:17-69
-73-->/Users/isra/Desktop/SEMESTRE 4/Mobile/SAEE/B_App_Mobile/app/src/main/AndroidManifest.xml:40:25-66
+73-->C:\Users\33760\OneDrive\Bureau\fin\app\src\main\AndroidManifest.xml:40:17-69
+73-->C:\Users\33760\OneDrive\Bureau\fin\app\src\main\AndroidManifest.xml:40:25-66
 74
 75                <category android:name="android.intent.category.LAUNCHER" />
-75-->/Users/isra/Desktop/SEMESTRE 4/Mobile/SAEE/B_App_Mobile/app/src/main/AndroidManifest.xml:42:17-77
-75-->/Users/isra/Desktop/SEMESTRE 4/Mobile/SAEE/B_App_Mobile/app/src/main/AndroidManifest.xml:42:27-74
+75-->C:\Users\33760\OneDrive\Bureau\fin\app\src\main\AndroidManifest.xml:42:17-77
+75-->C:\Users\33760\OneDrive\Bureau\fin\app\src\main\AndroidManifest.xml:42:27-74
 76            </intent-filter>
 77        </activity>
 78        <activity
-78-->/Users/isra/Desktop/SEMESTRE 4/Mobile/SAEE/B_App_Mobile/app/src/main/AndroidManifest.xml:46:9-56:20
+78-->C:\Users\33760\OneDrive\Bureau\fin\app\src\main\AndroidManifest.xml:46:9-56:20
 79            android:name="fr.iut.sae_s4_01_app_mobile.LoginActivity"
-79-->/Users/isra/Desktop/SEMESTRE 4/Mobile/SAEE/B_App_Mobile/app/src/main/AndroidManifest.xml:47:13-42
+79-->C:\Users\33760\OneDrive\Bureau\fin\app\src\main\AndroidManifest.xml:47:13-42
 80            android:exported="true" >
-80-->/Users/isra/Desktop/SEMESTRE 4/Mobile/SAEE/B_App_Mobile/app/src/main/AndroidManifest.xml:48:13-36
+80-->C:\Users\33760\OneDrive\Bureau\fin\app\src\main\AndroidManifest.xml:48:13-36
 81
 82            <!--
 83            <intent-filter>
@@ -154,18 +154,18 @@
 87            -->
 88        </activity>
 89        <activity
-89-->/Users/isra/Desktop/SEMESTRE 4/Mobile/SAEE/B_App_Mobile/app/src/main/AndroidManifest.xml:57:9-60:20
+89-->C:\Users\33760\OneDrive\Bureau\fin\app\src\main\AndroidManifest.xml:57:9-60:20
 90            android:name="fr.iut.sae_s4_01_app_mobile.PreferencesActivity"
-90-->/Users/isra/Desktop/SEMESTRE 4/Mobile/SAEE/B_App_Mobile/app/src/main/AndroidManifest.xml:58:13-48
+90-->C:\Users\33760\OneDrive\Bureau\fin\app\src\main\AndroidManifest.xml:58:13-48
 91            android:exported="true" >
-91-->/Users/isra/Desktop/SEMESTRE 4/Mobile/SAEE/B_App_Mobile/app/src/main/AndroidManifest.xml:59:13-36
+91-->C:\Users\33760\OneDrive\Bureau\fin\app\src\main\AndroidManifest.xml:59:13-36
 92        </activity>
 93        <activity
-93-->/Users/isra/Desktop/SEMESTRE 4/Mobile/SAEE/B_App_Mobile/app/src/main/AndroidManifest.xml:62:9-72:20
+93-->C:\Users\33760\OneDrive\Bureau\fin\app\src\main\AndroidManifest.xml:62:9-72:20
 94            android:name="fr.iut.sae_s4_01_app_mobile.RegisterActivity"
-94-->/Users/isra/Desktop/SEMESTRE 4/Mobile/SAEE/B_App_Mobile/app/src/main/AndroidManifest.xml:63:13-45
+94-->C:\Users\33760\OneDrive\Bureau\fin\app\src\main\AndroidManifest.xml:63:13-45
 95            android:exported="true" >
-95-->/Users/isra/Desktop/SEMESTRE 4/Mobile/SAEE/B_App_Mobile/app/src/main/AndroidManifest.xml:64:13-36
+95-->C:\Users\33760\OneDrive\Bureau\fin\app\src\main\AndroidManifest.xml:64:13-36
 96
 97            <!--
 98            <intent-filter>
@@ -175,11 +175,11 @@
 102            -->
 103        </activity>
 104        <activity
-104-->/Users/isra/Desktop/SEMESTRE 4/Mobile/SAEE/B_App_Mobile/app/src/main/AndroidManifest.xml:73:9-84:20
+104-->C:\Users\33760\OneDrive\Bureau\fin\app\src\main\AndroidManifest.xml:73:9-84:20
 105            android:name="fr.iut.sae_s4_01_app_mobile.RegisterActivity2"
-105-->/Users/isra/Desktop/SEMESTRE 4/Mobile/SAEE/B_App_Mobile/app/src/main/AndroidManifest.xml:74:13-46
+105-->C:\Users\33760\OneDrive\Bureau\fin\app\src\main\AndroidManifest.xml:74:13-46
 106            android:exported="true" >
-106-->/Users/isra/Desktop/SEMESTRE 4/Mobile/SAEE/B_App_Mobile/app/src/main/AndroidManifest.xml:75:13-36
+106-->C:\Users\33760\OneDrive\Bureau\fin\app\src\main\AndroidManifest.xml:75:13-36
 107
 108            <!--
 109            <intent-filter>
@@ -190,11 +190,11 @@
 114            -->
 115        </activity>
 116        <activity
-116-->/Users/isra/Desktop/SEMESTRE 4/Mobile/SAEE/B_App_Mobile/app/src/main/AndroidManifest.xml:85:9-96:20
+116-->C:\Users\33760\OneDrive\Bureau\fin\app\src\main\AndroidManifest.xml:85:9-96:20
 117            android:name="fr.iut.sae_s4_01_app_mobile.ScannerActivity"
-117-->/Users/isra/Desktop/SEMESTRE 4/Mobile/SAEE/B_App_Mobile/app/src/main/AndroidManifest.xml:86:13-44
+117-->C:\Users\33760\OneDrive\Bureau\fin\app\src\main\AndroidManifest.xml:86:13-44
 118            android:exported="true" >
-118-->/Users/isra/Desktop/SEMESTRE 4/Mobile/SAEE/B_App_Mobile/app/src/main/AndroidManifest.xml:87:13-36
+118-->C:\Users\33760\OneDrive\Bureau\fin\app\src\main\AndroidManifest.xml:87:13-36
 119
 120            <!--
 121            <intent-filter>
@@ -205,11 +205,11 @@
 126            -->
 127        </activity>
 128        <activity
-128-->/Users/isra/Desktop/SEMESTRE 4/Mobile/SAEE/B_App_Mobile/app/src/main/AndroidManifest.xml:97:9-108:20
+128-->C:\Users\33760\OneDrive\Bureau\fin\app\src\main\AndroidManifest.xml:97:9-108:20
 129            android:name="fr.iut.sae_s4_01_app_mobile.CipScanActivity"
-129-->/Users/isra/Desktop/SEMESTRE 4/Mobile/SAEE/B_App_Mobile/app/src/main/AndroidManifest.xml:98:13-44
+129-->C:\Users\33760\OneDrive\Bureau\fin\app\src\main\AndroidManifest.xml:98:13-44
 130            android:exported="true" >
-130-->/Users/isra/Desktop/SEMESTRE 4/Mobile/SAEE/B_App_Mobile/app/src/main/AndroidManifest.xml:99:13-36
+130-->C:\Users\33760\OneDrive\Bureau\fin\app\src\main\AndroidManifest.xml:99:13-36
 131
 132            <!--
 133            <intent-filter>
@@ -220,11 +220,11 @@
 138            -->
 139        </activity>
 140        <activity
-140-->/Users/isra/Desktop/SEMESTRE 4/Mobile/SAEE/B_App_Mobile/app/src/main/AndroidManifest.xml:109:9-120:20
+140-->C:\Users\33760\OneDrive\Bureau\fin\app\src\main\AndroidManifest.xml:109:9-120:20
 141            android:name="fr.iut.sae_s4_01_app_mobile.ProfilModifActivity"
-141-->/Users/isra/Desktop/SEMESTRE 4/Mobile/SAEE/B_App_Mobile/app/src/main/AndroidManifest.xml:110:13-48
+141-->C:\Users\33760\OneDrive\Bureau\fin\app\src\main\AndroidManifest.xml:110:13-48
 142            android:exported="true" >
-142-->/Users/isra/Desktop/SEMESTRE 4/Mobile/SAEE/B_App_Mobile/app/src/main/AndroidManifest.xml:111:13-36
+142-->C:\Users\33760\OneDrive\Bureau\fin\app\src\main\AndroidManifest.xml:111:13-36
 143
 144            <!--
 145            <intent-filter>
@@ -235,11 +235,11 @@
 150            -->
 151        </activity>
 152        <activity
-152-->/Users/isra/Desktop/SEMESTRE 4/Mobile/SAEE/B_App_Mobile/app/src/main/AndroidManifest.xml:121:9-131:20
+152-->C:\Users\33760\OneDrive\Bureau\fin\app\src\main\AndroidManifest.xml:121:9-131:20
 153            android:name="fr.iut.sae_s4_01_app_mobile.CipManuelleActivity"
-153-->/Users/isra/Desktop/SEMESTRE 4/Mobile/SAEE/B_App_Mobile/app/src/main/AndroidManifest.xml:122:13-48
+153-->C:\Users\33760\OneDrive\Bureau\fin\app\src\main\AndroidManifest.xml:122:13-48
 154            android:exported="true" >
-154-->/Users/isra/Desktop/SEMESTRE 4/Mobile/SAEE/B_App_Mobile/app/src/main/AndroidManifest.xml:123:13-36
+154-->C:\Users\33760\OneDrive\Bureau\fin\app\src\main\AndroidManifest.xml:123:13-36
 155
 156            <!--
 157            <intent-filter>
@@ -249,11 +249,11 @@
 161            -->
 162        </activity>
 163        <activity
-163-->/Users/isra/Desktop/SEMESTRE 4/Mobile/SAEE/B_App_Mobile/app/src/main/AndroidManifest.xml:132:9-142:20
+163-->C:\Users\33760\OneDrive\Bureau\fin\app\src\main\AndroidManifest.xml:132:9-142:20
 164            android:name="fr.iut.sae_s4_01_app_mobile.NewAlertActivity"
-164-->/Users/isra/Desktop/SEMESTRE 4/Mobile/SAEE/B_App_Mobile/app/src/main/AndroidManifest.xml:133:13-45
+164-->C:\Users\33760\OneDrive\Bureau\fin\app\src\main\AndroidManifest.xml:133:13-45
 165            android:exported="true" >
-165-->/Users/isra/Desktop/SEMESTRE 4/Mobile/SAEE/B_App_Mobile/app/src/main/AndroidManifest.xml:134:13-36
+165-->C:\Users\33760\OneDrive\Bureau\fin\app\src\main\AndroidManifest.xml:134:13-36
 166
 167            <!--
 168            <intent-filter>
@@ -263,11 +263,11 @@
 172            -->
 173        </activity>
 174        <activity
-174-->/Users/isra/Desktop/SEMESTRE 4/Mobile/SAEE/B_App_Mobile/app/src/main/AndroidManifest.xml:144:9-154:20
+174-->C:\Users\33760\OneDrive\Bureau\fin\app\src\main\AndroidManifest.xml:144:9-154:20
 175            android:name="fr.iut.sae_s4_01_app_mobile.AccueilAdminActivity"
-175-->/Users/isra/Desktop/SEMESTRE 4/Mobile/SAEE/B_App_Mobile/app/src/main/AndroidManifest.xml:145:13-49
+175-->C:\Users\33760\OneDrive\Bureau\fin\app\src\main\AndroidManifest.xml:145:13-49
 176            android:exported="true" >
-176-->/Users/isra/Desktop/SEMESTRE 4/Mobile/SAEE/B_App_Mobile/app/src/main/AndroidManifest.xml:146:13-36
+176-->C:\Users\33760\OneDrive\Bureau\fin\app\src\main\AndroidManifest.xml:146:13-36
 177
 178            <!--
 179            <intent-filter>
@@ -277,111 +277,111 @@
 183            -->
 184        </activity>
 185        <activity
-185-->/Users/isra/Desktop/SEMESTRE 4/Mobile/SAEE/B_App_Mobile/app/src/main/AndroidManifest.xml:156:9-160:20
+185-->C:\Users\33760\OneDrive\Bureau\fin\app\src\main\AndroidManifest.xml:156:9-160:20
 186            android:name="fr.iut.sae_s4_01_app_mobile.ToutAlerteActivity"
-186-->/Users/isra/Desktop/SEMESTRE 4/Mobile/SAEE/B_App_Mobile/app/src/main/AndroidManifest.xml:157:13-47
+186-->C:\Users\33760\OneDrive\Bureau\fin\app\src\main\AndroidManifest.xml:157:13-47
 187            android:exported="true" >
-187-->/Users/isra/Desktop/SEMESTRE 4/Mobile/SAEE/B_App_Mobile/app/src/main/AndroidManifest.xml:158:13-36
+187-->C:\Users\33760\OneDrive\Bureau\fin\app\src\main\AndroidManifest.xml:158:13-36
 188        </activity>
 189        <activity
-189-->/Users/isra/Desktop/SEMESTRE 4/Mobile/SAEE/B_App_Mobile/app/src/main/AndroidManifest.xml:161:9-165:20
+189-->C:\Users\33760\OneDrive\Bureau\fin\app\src\main\AndroidManifest.xml:161:9-165:20
 190            android:name="fr.iut.sae_s4_01_app_mobile.StatistiqueActivity"
-190-->/Users/isra/Desktop/SEMESTRE 4/Mobile/SAEE/B_App_Mobile/app/src/main/AndroidManifest.xml:162:13-48
+190-->C:\Users\33760\OneDrive\Bureau\fin\app\src\main\AndroidManifest.xml:162:13-48
 191            android:exported="true" >
-191-->/Users/isra/Desktop/SEMESTRE 4/Mobile/SAEE/B_App_Mobile/app/src/main/AndroidManifest.xml:163:13-36
+191-->C:\Users\33760\OneDrive\Bureau\fin\app\src\main\AndroidManifest.xml:163:13-36
 192        </activity>
 193        <activity
-193-->/Users/isra/Desktop/SEMESTRE 4/Mobile/SAEE/B_App_Mobile/app/src/main/AndroidManifest.xml:167:9-171:20
+193-->C:\Users\33760\OneDrive\Bureau\fin\app\src\main\AndroidManifest.xml:167:9-171:20
 194            android:name="fr.iut.sae_s4_01_app_mobile.NotificationActivity"
-194-->/Users/isra/Desktop/SEMESTRE 4/Mobile/SAEE/B_App_Mobile/app/src/main/AndroidManifest.xml:168:13-49
+194-->C:\Users\33760\OneDrive\Bureau\fin\app\src\main\AndroidManifest.xml:168:13-49
 195            android:exported="true" >
-195-->/Users/isra/Desktop/SEMESTRE 4/Mobile/SAEE/B_App_Mobile/app/src/main/AndroidManifest.xml:169:13-36
+195-->C:\Users\33760\OneDrive\Bureau\fin\app\src\main\AndroidManifest.xml:169:13-36
 196        </activity>
 197        <activity
-197-->/Users/isra/Desktop/SEMESTRE 4/Mobile/SAEE/B_App_Mobile/app/src/main/AndroidManifest.xml:172:9-175:20
+197-->C:\Users\33760\OneDrive\Bureau\fin\app\src\main\AndroidManifest.xml:172:9-175:20
 198            android:name="fr.iut.sae_s4_01_app_mobile.SondageActivity"
-198-->/Users/isra/Desktop/SEMESTRE 4/Mobile/SAEE/B_App_Mobile/app/src/main/AndroidManifest.xml:173:13-44
+198-->C:\Users\33760\OneDrive\Bureau\fin\app\src\main\AndroidManifest.xml:173:13-44
 199            android:exported="true" >
-199-->/Users/isra/Desktop/SEMESTRE 4/Mobile/SAEE/B_App_Mobile/app/src/main/AndroidManifest.xml:174:13-36
+199-->C:\Users\33760\OneDrive\Bureau\fin\app\src\main\AndroidManifest.xml:174:13-36
 200        </activity>
 201        <activity
-201-->[com.journeyapps:zxing-android-embedded:4.2.0] /Users/isra/.gradle/caches/transforms-3/a60982259721268694c6a5f2a67385db/transformed/zxing-android-embedded-4.2.0/AndroidManifest.xml:47:9-53:63
+201-->[com.journeyapps:zxing-android-embedded:4.2.0] C:\Users\33760\.gradle\caches\transforms-3\a60982259721268694c6a5f2a67385db\transformed\zxing-android-embedded-4.2.0\AndroidManifest.xml:47:9-53:63
 202            android:name="com.journeyapps.barcodescanner.CaptureActivity"
-202-->[com.journeyapps:zxing-android-embedded:4.2.0] /Users/isra/.gradle/caches/transforms-3/a60982259721268694c6a5f2a67385db/transformed/zxing-android-embedded-4.2.0/AndroidManifest.xml:48:13-74
+202-->[com.journeyapps:zxing-android-embedded:4.2.0] C:\Users\33760\.gradle\caches\transforms-3\a60982259721268694c6a5f2a67385db\transformed\zxing-android-embedded-4.2.0\AndroidManifest.xml:48:13-74
 203            android:clearTaskOnLaunch="true"
-203-->[com.journeyapps:zxing-android-embedded:4.2.0] /Users/isra/.gradle/caches/transforms-3/a60982259721268694c6a5f2a67385db/transformed/zxing-android-embedded-4.2.0/AndroidManifest.xml:49:13-45
+203-->[com.journeyapps:zxing-android-embedded:4.2.0] C:\Users\33760\.gradle\caches\transforms-3\a60982259721268694c6a5f2a67385db\transformed\zxing-android-embedded-4.2.0\AndroidManifest.xml:49:13-45
 204            android:screenOrientation="sensorLandscape"
-204-->[com.journeyapps:zxing-android-embedded:4.2.0] /Users/isra/.gradle/caches/transforms-3/a60982259721268694c6a5f2a67385db/transformed/zxing-android-embedded-4.2.0/AndroidManifest.xml:50:13-56
+204-->[com.journeyapps:zxing-android-embedded:4.2.0] C:\Users\33760\.gradle\caches\transforms-3\a60982259721268694c6a5f2a67385db\transformed\zxing-android-embedded-4.2.0\AndroidManifest.xml:50:13-56
 205            android:stateNotNeeded="true"
-205-->[com.journeyapps:zxing-android-embedded:4.2.0] /Users/isra/.gradle/caches/transforms-3/a60982259721268694c6a5f2a67385db/transformed/zxing-android-embedded-4.2.0/AndroidManifest.xml:51:13-42
+205-->[com.journeyapps:zxing-android-embedded:4.2.0] C:\Users\33760\.gradle\caches\transforms-3\a60982259721268694c6a5f2a67385db\transformed\zxing-android-embedded-4.2.0\AndroidManifest.xml:51:13-42
 206            android:theme="@style/zxing_CaptureTheme"
-206-->[com.journeyapps:zxing-android-embedded:4.2.0] /Users/isra/.gradle/caches/transforms-3/a60982259721268694c6a5f2a67385db/transformed/zxing-android-embedded-4.2.0/AndroidManifest.xml:52:13-54
+206-->[com.journeyapps:zxing-android-embedded:4.2.0] C:\Users\33760\.gradle\caches\transforms-3\a60982259721268694c6a5f2a67385db\transformed\zxing-android-embedded-4.2.0\AndroidManifest.xml:52:13-54
 207            android:windowSoftInputMode="stateAlwaysHidden" />
-207-->[com.journeyapps:zxing-android-embedded:4.2.0] /Users/isra/.gradle/caches/transforms-3/a60982259721268694c6a5f2a67385db/transformed/zxing-android-embedded-4.2.0/AndroidManifest.xml:53:13-60
+207-->[com.journeyapps:zxing-android-embedded:4.2.0] C:\Users\33760\.gradle\caches\transforms-3\a60982259721268694c6a5f2a67385db\transformed\zxing-android-embedded-4.2.0\AndroidManifest.xml:53:13-60
 208
 209        <provider
-209-->[androidx.emoji2:emoji2:1.2.0] /Users/isra/.gradle/caches/transforms-3/ea260942d8acadff20549e4d8b1553b4/transformed/emoji2-1.2.0/AndroidManifest.xml:24:9-32:20
+209-->[androidx.emoji2:emoji2:1.2.0] C:\Users\33760\.gradle\caches\transforms-3\ea260942d8acadff20549e4d8b1553b4\transformed\emoji2-1.2.0\AndroidManifest.xml:24:9-32:20
 210            android:name="androidx.startup.InitializationProvider"
-210-->[androidx.emoji2:emoji2:1.2.0] /Users/isra/.gradle/caches/transforms-3/ea260942d8acadff20549e4d8b1553b4/transformed/emoji2-1.2.0/AndroidManifest.xml:25:13-67
+210-->[androidx.emoji2:emoji2:1.2.0] C:\Users\33760\.gradle\caches\transforms-3\ea260942d8acadff20549e4d8b1553b4\transformed\emoji2-1.2.0\AndroidManifest.xml:25:13-67
 211            android:authorities="fr.iut.sae_s4_01_app_mobile.androidx-startup"
-211-->[androidx.emoji2:emoji2:1.2.0] /Users/isra/.gradle/caches/transforms-3/ea260942d8acadff20549e4d8b1553b4/transformed/emoji2-1.2.0/AndroidManifest.xml:26:13-68
+211-->[androidx.emoji2:emoji2:1.2.0] C:\Users\33760\.gradle\caches\transforms-3\ea260942d8acadff20549e4d8b1553b4\transformed\emoji2-1.2.0\AndroidManifest.xml:26:13-68
 212            android:exported="false" >
-212-->[androidx.emoji2:emoji2:1.2.0] /Users/isra/.gradle/caches/transforms-3/ea260942d8acadff20549e4d8b1553b4/transformed/emoji2-1.2.0/AndroidManifest.xml:27:13-37
+212-->[androidx.emoji2:emoji2:1.2.0] C:\Users\33760\.gradle\caches\transforms-3\ea260942d8acadff20549e4d8b1553b4\transformed\emoji2-1.2.0\AndroidManifest.xml:27:13-37
 213            <meta-data
-213-->[androidx.emoji2:emoji2:1.2.0] /Users/isra/.gradle/caches/transforms-3/ea260942d8acadff20549e4d8b1553b4/transformed/emoji2-1.2.0/AndroidManifest.xml:29:13-31:52
+213-->[androidx.emoji2:emoji2:1.2.0] C:\Users\33760\.gradle\caches\transforms-3\ea260942d8acadff20549e4d8b1553b4\transformed\emoji2-1.2.0\AndroidManifest.xml:29:13-31:52
 214                android:name="androidx.emoji2.text.EmojiCompatInitializer"
-214-->[androidx.emoji2:emoji2:1.2.0] /Users/isra/.gradle/caches/transforms-3/ea260942d8acadff20549e4d8b1553b4/transformed/emoji2-1.2.0/AndroidManifest.xml:30:17-75
+214-->[androidx.emoji2:emoji2:1.2.0] C:\Users\33760\.gradle\caches\transforms-3\ea260942d8acadff20549e4d8b1553b4\transformed\emoji2-1.2.0\AndroidManifest.xml:30:17-75
 215                android:value="androidx.startup" />
-215-->[androidx.emoji2:emoji2:1.2.0] /Users/isra/.gradle/caches/transforms-3/ea260942d8acadff20549e4d8b1553b4/transformed/emoji2-1.2.0/AndroidManifest.xml:31:17-49
+215-->[androidx.emoji2:emoji2:1.2.0] C:\Users\33760\.gradle\caches\transforms-3\ea260942d8acadff20549e4d8b1553b4\transformed\emoji2-1.2.0\AndroidManifest.xml:31:17-49
 216            <meta-data
-216-->[androidx.lifecycle:lifecycle-process:2.6.1] /Users/isra/.gradle/caches/transforms-3/7537b831cd7e02c36f17372471ebcd05/transformed/lifecycle-process-2.6.1/AndroidManifest.xml:29:13-31:52
+216-->[androidx.lifecycle:lifecycle-process:2.6.1] C:\Users\33760\.gradle\caches\transforms-3\7537b831cd7e02c36f17372471ebcd05\transformed\lifecycle-process-2.6.1\AndroidManifest.xml:29:13-31:52
 217                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
-217-->[androidx.lifecycle:lifecycle-process:2.6.1] /Users/isra/.gradle/caches/transforms-3/7537b831cd7e02c36f17372471ebcd05/transformed/lifecycle-process-2.6.1/AndroidManifest.xml:30:17-78
+217-->[androidx.lifecycle:lifecycle-process:2.6.1] C:\Users\33760\.gradle\caches\transforms-3\7537b831cd7e02c36f17372471ebcd05\transformed\lifecycle-process-2.6.1\AndroidManifest.xml:30:17-78
 218                android:value="androidx.startup" />
-218-->[androidx.lifecycle:lifecycle-process:2.6.1] /Users/isra/.gradle/caches/transforms-3/7537b831cd7e02c36f17372471ebcd05/transformed/lifecycle-process-2.6.1/AndroidManifest.xml:31:17-49
+218-->[androidx.lifecycle:lifecycle-process:2.6.1] C:\Users\33760\.gradle\caches\transforms-3\7537b831cd7e02c36f17372471ebcd05\transformed\lifecycle-process-2.6.1\AndroidManifest.xml:31:17-49
 219            <meta-data
-219-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/isra/.gradle/caches/transforms-3/6aebe797d2fce5c8727f4e04e3cbbf9a/transformed/profileinstaller-1.3.0/AndroidManifest.xml:29:13-31:52
+219-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\33760\.gradle\caches\transforms-3\6aebe797d2fce5c8727f4e04e3cbbf9a\transformed\profileinstaller-1.3.0\AndroidManifest.xml:29:13-31:52
 220                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
-220-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/isra/.gradle/caches/transforms-3/6aebe797d2fce5c8727f4e04e3cbbf9a/transformed/profileinstaller-1.3.0/AndroidManifest.xml:30:17-85
+220-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\33760\.gradle\caches\transforms-3\6aebe797d2fce5c8727f4e04e3cbbf9a\transformed\profileinstaller-1.3.0\AndroidManifest.xml:30:17-85
 221                android:value="androidx.startup" />
-221-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/isra/.gradle/caches/transforms-3/6aebe797d2fce5c8727f4e04e3cbbf9a/transformed/profileinstaller-1.3.0/AndroidManifest.xml:31:17-49
+221-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\33760\.gradle\caches\transforms-3\6aebe797d2fce5c8727f4e04e3cbbf9a\transformed\profileinstaller-1.3.0\AndroidManifest.xml:31:17-49
 222        </provider>
 223
 224        <receiver
-224-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/isra/.gradle/caches/transforms-3/6aebe797d2fce5c8727f4e04e3cbbf9a/transformed/profileinstaller-1.3.0/AndroidManifest.xml:34:9-52:20
+224-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\33760\.gradle\caches\transforms-3\6aebe797d2fce5c8727f4e04e3cbbf9a\transformed\profileinstaller-1.3.0\AndroidManifest.xml:34:9-52:20
 225            android:name="androidx.profileinstaller.ProfileInstallReceiver"
-225-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/isra/.gradle/caches/transforms-3/6aebe797d2fce5c8727f4e04e3cbbf9a/transformed/profileinstaller-1.3.0/AndroidManifest.xml:35:13-76
+225-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\33760\.gradle\caches\transforms-3\6aebe797d2fce5c8727f4e04e3cbbf9a\transformed\profileinstaller-1.3.0\AndroidManifest.xml:35:13-76
 226            android:directBootAware="false"
-226-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/isra/.gradle/caches/transforms-3/6aebe797d2fce5c8727f4e04e3cbbf9a/transformed/profileinstaller-1.3.0/AndroidManifest.xml:36:13-44
+226-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\33760\.gradle\caches\transforms-3\6aebe797d2fce5c8727f4e04e3cbbf9a\transformed\profileinstaller-1.3.0\AndroidManifest.xml:36:13-44
 227            android:enabled="true"
-227-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/isra/.gradle/caches/transforms-3/6aebe797d2fce5c8727f4e04e3cbbf9a/transformed/profileinstaller-1.3.0/AndroidManifest.xml:37:13-35
+227-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\33760\.gradle\caches\transforms-3\6aebe797d2fce5c8727f4e04e3cbbf9a\transformed\profileinstaller-1.3.0\AndroidManifest.xml:37:13-35
 228            android:exported="true"
-228-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/isra/.gradle/caches/transforms-3/6aebe797d2fce5c8727f4e04e3cbbf9a/transformed/profileinstaller-1.3.0/AndroidManifest.xml:38:13-36
+228-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\33760\.gradle\caches\transforms-3\6aebe797d2fce5c8727f4e04e3cbbf9a\transformed\profileinstaller-1.3.0\AndroidManifest.xml:38:13-36
 229            android:permission="android.permission.DUMP" >
-229-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/isra/.gradle/caches/transforms-3/6aebe797d2fce5c8727f4e04e3cbbf9a/transformed/profileinstaller-1.3.0/AndroidManifest.xml:39:13-57
+229-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\33760\.gradle\caches\transforms-3\6aebe797d2fce5c8727f4e04e3cbbf9a\transformed\profileinstaller-1.3.0\AndroidManifest.xml:39:13-57
 230            <intent-filter>
-230-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/isra/.gradle/caches/transforms-3/6aebe797d2fce5c8727f4e04e3cbbf9a/transformed/profileinstaller-1.3.0/AndroidManifest.xml:40:13-42:29
+230-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\33760\.gradle\caches\transforms-3\6aebe797d2fce5c8727f4e04e3cbbf9a\transformed\profileinstaller-1.3.0\AndroidManifest.xml:40:13-42:29
 231                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
-231-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/isra/.gradle/caches/transforms-3/6aebe797d2fce5c8727f4e04e3cbbf9a/transformed/profileinstaller-1.3.0/AndroidManifest.xml:41:17-91
-231-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/isra/.gradle/caches/transforms-3/6aebe797d2fce5c8727f4e04e3cbbf9a/transformed/profileinstaller-1.3.0/AndroidManifest.xml:41:25-88
+231-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\33760\.gradle\caches\transforms-3\6aebe797d2fce5c8727f4e04e3cbbf9a\transformed\profileinstaller-1.3.0\AndroidManifest.xml:41:17-91
+231-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\33760\.gradle\caches\transforms-3\6aebe797d2fce5c8727f4e04e3cbbf9a\transformed\profileinstaller-1.3.0\AndroidManifest.xml:41:25-88
 232            </intent-filter>
 233            <intent-filter>
-233-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/isra/.gradle/caches/transforms-3/6aebe797d2fce5c8727f4e04e3cbbf9a/transformed/profileinstaller-1.3.0/AndroidManifest.xml:43:13-45:29
+233-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\33760\.gradle\caches\transforms-3\6aebe797d2fce5c8727f4e04e3cbbf9a\transformed\profileinstaller-1.3.0\AndroidManifest.xml:43:13-45:29
 234                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
-234-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/isra/.gradle/caches/transforms-3/6aebe797d2fce5c8727f4e04e3cbbf9a/transformed/profileinstaller-1.3.0/AndroidManifest.xml:44:17-85
-234-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/isra/.gradle/caches/transforms-3/6aebe797d2fce5c8727f4e04e3cbbf9a/transformed/profileinstaller-1.3.0/AndroidManifest.xml:44:25-82
+234-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\33760\.gradle\caches\transforms-3\6aebe797d2fce5c8727f4e04e3cbbf9a\transformed\profileinstaller-1.3.0\AndroidManifest.xml:44:17-85
+234-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\33760\.gradle\caches\transforms-3\6aebe797d2fce5c8727f4e04e3cbbf9a\transformed\profileinstaller-1.3.0\AndroidManifest.xml:44:25-82
 235            </intent-filter>
 236            <intent-filter>
-236-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/isra/.gradle/caches/transforms-3/6aebe797d2fce5c8727f4e04e3cbbf9a/transformed/profileinstaller-1.3.0/AndroidManifest.xml:46:13-48:29
+236-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\33760\.gradle\caches\transforms-3\6aebe797d2fce5c8727f4e04e3cbbf9a\transformed\profileinstaller-1.3.0\AndroidManifest.xml:46:13-48:29
 237                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
-237-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/isra/.gradle/caches/transforms-3/6aebe797d2fce5c8727f4e04e3cbbf9a/transformed/profileinstaller-1.3.0/AndroidManifest.xml:47:17-88
-237-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/isra/.gradle/caches/transforms-3/6aebe797d2fce5c8727f4e04e3cbbf9a/transformed/profileinstaller-1.3.0/AndroidManifest.xml:47:25-85
+237-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\33760\.gradle\caches\transforms-3\6aebe797d2fce5c8727f4e04e3cbbf9a\transformed\profileinstaller-1.3.0\AndroidManifest.xml:47:17-88
+237-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\33760\.gradle\caches\transforms-3\6aebe797d2fce5c8727f4e04e3cbbf9a\transformed\profileinstaller-1.3.0\AndroidManifest.xml:47:25-85
 238            </intent-filter>
 239            <intent-filter>
-239-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/isra/.gradle/caches/transforms-3/6aebe797d2fce5c8727f4e04e3cbbf9a/transformed/profileinstaller-1.3.0/AndroidManifest.xml:49:13-51:29
+239-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\33760\.gradle\caches\transforms-3\6aebe797d2fce5c8727f4e04e3cbbf9a\transformed\profileinstaller-1.3.0\AndroidManifest.xml:49:13-51:29
 240                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
-240-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/isra/.gradle/caches/transforms-3/6aebe797d2fce5c8727f4e04e3cbbf9a/transformed/profileinstaller-1.3.0/AndroidManifest.xml:50:17-95
-240-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/isra/.gradle/caches/transforms-3/6aebe797d2fce5c8727f4e04e3cbbf9a/transformed/profileinstaller-1.3.0/AndroidManifest.xml:50:25-92
+240-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\33760\.gradle\caches\transforms-3\6aebe797d2fce5c8727f4e04e3cbbf9a\transformed\profileinstaller-1.3.0\AndroidManifest.xml:50:17-95
+240-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\33760\.gradle\caches\transforms-3\6aebe797d2fce5c8727f4e04e3cbbf9a\transformed\profileinstaller-1.3.0\AndroidManifest.xml:50:25-92
 241            </intent-filter>
 242        </receiver>
 243    </application>
