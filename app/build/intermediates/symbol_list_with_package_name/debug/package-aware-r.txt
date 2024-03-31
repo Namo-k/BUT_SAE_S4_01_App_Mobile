@@ -3260,6 +3260,7 @@ id allStates
 id always
 id ancienneAlerte
 id ancienneAlertelistView
+id ancienneBtn
 id anciennesAlertes_logo
 id anglais
 id animateToEnd
@@ -3290,6 +3291,7 @@ id bestChoice
 id bienvenueText
 id blocAlert
 id blocAncienneAlerte
+id blocGraph
 id blocInformations
 id blocStats
 id blocking
@@ -3335,7 +3337,6 @@ id clip_horizontal
 id clip_vertical
 id clockwise
 id closest
-id codecipTV
 id collapseActionView
 id colombeDroiteImage
 id colombeGaucheImage
@@ -3449,6 +3450,7 @@ id ghost_view
 id ghost_view_holder
 id gone
 id graph
+id graphBloc1
 id graph_wrap
 id group_divider
 id grouping
@@ -3461,6 +3463,7 @@ id hideable
 id home
 id homeAdminBtn
 id homeAsUp
+id homeBtn
 id honorRequest
 id horizontal_only
 id icon
@@ -3749,6 +3752,8 @@ id south
 id spacer
 id special_effects_controller_view_tag
 id spin
+id spinBloc
+id spinnerGraphique
 id spinnerMethode
 id spinnerNote
 id spinnerRaison
@@ -3851,6 +3856,7 @@ id uniform
 id unlabeled
 id up
 id useLogo
+id userBtn
 id usernameET
 id version
 id versionText
@@ -4003,10 +4009,10 @@ layout abc_tooltip
 layout activity_accueil_admin
 layout activity_change_password
 layout activity_cip_manuelle
+layout activity_cip_scan
 layout activity_createalert
 layout activity_login
 layout activity_main
-layout activity_medoc_code
 layout activity_notification
 layout activity_profilmodif
 layout activity_register
@@ -4016,6 +4022,7 @@ layout activity_reset_password
 layout activity_scanner
 layout activity_sondage
 layout activity_splash_screen
+layout activity_statistique
 layout activity_tout_alerte
 layout custom_dialog
 layout design_bottom_navigation_item

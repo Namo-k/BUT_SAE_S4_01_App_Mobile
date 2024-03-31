@@ -93,6 +93,7 @@ id alertes
 id alertes_logo
 id ancienneAlerte
 id ancienneAlertelistView
+id ancienneBtn
 id anciennesAlertes_logo
 id anglais
 id annee
@@ -107,6 +108,7 @@ id barcode_scanner
 id bienvenueText
 id blocAlert
 id blocAncienneAlerte
+id blocGraph
 id blocInformations
 id blocStats
 id bottom_navigation
@@ -124,7 +126,6 @@ id cardViewinputcode
 id checkbox
 id checkboxLayout
 id citationText
-id codecipTV
 id colombeDroiteImage
 id colombeGaucheImage
 id colombes1
@@ -156,10 +157,12 @@ id etoile5
 id explicationCIP
 id francais
 id genre
+id graphBloc1
 id guidelineEnd
 id guidelineStart
 id heuredebut
 id homeAdminBtn
+id homeBtn
 id imageNotification
 id imageView
 id imgGauche
@@ -254,6 +257,8 @@ id sexeLabelTV
 id sexeTV
 id sondage
 id spin
+id spinBloc
+id spinnerGraphique
 id spinnerMethode
 id spinnerNote
 id spinnerRaison
@@ -283,6 +288,7 @@ id toutAlertelistView
 id tri
 id typeMedicamentLePlusSignaleLabelTV
 id typeMedicamentLePlusSignaleTV
+id userBtn
 id usernameET
 id version
 id versionText
@@ -290,10 +296,10 @@ id welcomeTextView
 layout activity_accueil_admin
 layout activity_change_password
 layout activity_cip_manuelle
+layout activity_cip_scan
 layout activity_createalert
 layout activity_login
 layout activity_main
-layout activity_medoc_code
 layout activity_notification
 layout activity_profilmodif
 layout activity_register
@@ -303,6 +309,7 @@ layout activity_reset_password
 layout activity_scanner
 layout activity_sondage
 layout activity_splash_screen
+layout activity_statistique
 layout activity_tout_alerte
 layout dialogue_apropos
 layout fragment_accueil

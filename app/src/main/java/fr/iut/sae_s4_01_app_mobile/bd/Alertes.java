@@ -6,16 +6,17 @@ import android.content.Context;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
-import android.util.Log;
 
 import androidx.annotation.Nullable;
 
-import java.lang.reflect.Array;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.Date; // Ajout de l'import pour la classe Date
+import java.util.HashMap;
 import java.util.List;
 import java.util.Locale;
+import java.util.Map;
 
 import fr.iut.sae_s4_01_app_mobile.Alerte;
 
@@ -32,7 +33,7 @@ public class Alertes extends SQLiteOpenHelper {
 
     @Override
     public void onCreate(SQLiteDatabase db) {
-        db.execSQL("CREATE TABLE alertes (id integer PRIMARY KEY, codeCis INTEGER, idUser INTEGER, nomMedicament VARCHAR(100), raison VARCHAR(50), message VARCHAR(500), dateAlerte DATETIME DEFAULT (datetime('now')), FOREIGN KEY (idUser) REFERENCES users(id), FOREIGN KEY (codeCis) REFERENCES medicament(codeCis), FOREIGN KEY (nomMedicament) REFERENCES medicament(nomMedicament))");
+        db.execSQL("CREATE TABLE alertes (id integer PRIMARY KEY, codeCip INTEGER, idUser INTEGER, nomMedicament VARCHAR(255), raison VARCHAR(50), message VARCHAR(500),moyen VARCHAR(50), dateAlerte DATETIME DEFAULT (datetime('now')), FOREIGN KEY (idUser) REFERENCES users(id), FOREIGN KEY (codeCip) REFERENCES medicament(codeCip), FOREIGN KEY (nomMedicament) REFERENCES medicament(nomMedicament))");
     }
 
 
@@ -42,20 +43,21 @@ public class Alertes extends SQLiteOpenHelper {
         onCreate(db);
     }
 
-    public Boolean insertData(int idUser, int codeCis, String raison, String message) {
+    public Boolean insertData(int idUser, String codeCip, String raison, String message, String moyen) {
         SQLiteDatabase maBaseDeDonnees = this.getWritableDatabase();
 
         // Récupérer le nom du médicament en fonction du codeCIS
-        String nomMedicament = medicamentDatabase.getNomMedicamentByCodeCIP(String.valueOf(codeCis));
+        String nomMedicament = medicamentDatabase.getNomMedicamentByCodeCIP(String.valueOf(codeCip));
         if (nomMedicament == null || nomMedicament.isEmpty()) {
             return false;
         }
         ContentValues valeurs = new ContentValues();
         valeurs.put("idUser", idUser);
-        valeurs.put("codeCis", codeCis);
+        valeurs.put("codeCip", codeCip);
         valeurs.put("nomMedicament", nomMedicament);
         valeurs.put("raison", raison);
         valeurs.put("message", message);
+        valeurs.put("moyen", moyen);
         valeurs.put("dateAlerte", getCurrentDateTime()); // Ajout de la date et l'heure actuelles
 
         long resultat = maBaseDeDonnees.insert("alertes", null, valeurs);
@@ -88,13 +90,13 @@ public class Alertes extends SQLiteOpenHelper {
         Cursor cursor = db.rawQuery("SELECT * FROM alertes where idUser = ? ORDER BY id DESC", new String[] {String.valueOf(idUser)});
         if (cursor.moveToFirst()) {
             do {
-                @SuppressLint("Range") int codeCis = cursor.getInt(cursor.getColumnIndex("codeCis"));
+                @SuppressLint("Range") int codeCip = cursor.getInt(cursor.getColumnIndex("codeCip"));
                 @SuppressLint("Range") String nomMedicament = cursor.getString(cursor.getColumnIndex("nomMedicament"));
                 @SuppressLint("Range") String raison = cursor.getString(cursor.getColumnIndex("raison"));
                 @SuppressLint("Range") String message = cursor.getString(cursor.getColumnIndex("message"));
                 @SuppressLint("Range") String dateAlerte = cursor.getString(cursor.getColumnIndex("dateAlerte"));
 
-                Alerte alerte = new Alerte(idUser, codeCis, idUser, nomMedicament, raison, message, dateAlerte);
+                Alerte alerte = new Alerte(idUser, codeCip, idUser, nomMedicament, raison, message, dateAlerte);
                 listeAlertes.add(alerte);
             } while (cursor.moveToNext());
         }
@@ -108,13 +110,13 @@ public class Alertes extends SQLiteOpenHelper {
         Cursor cursor = db.rawQuery("SELECT * FROM alertes where idUser = ? ORDER BY id ASC", new String[] {String.valueOf(idUser)});
         if (cursor.moveToFirst()) {
             do {
-                @SuppressLint("Range") int codeCis = cursor.getInt(cursor.getColumnIndex("codeCis"));
+                @SuppressLint("Range") int codeCip = cursor.getInt(cursor.getColumnIndex("codeCip"));
                 @SuppressLint("Range") String nomMedicament = cursor.getString(cursor.getColumnIndex("nomMedicament"));
                 @SuppressLint("Range") String raison = cursor.getString(cursor.getColumnIndex("raison"));
                 @SuppressLint("Range") String message = cursor.getString(cursor.getColumnIndex("message"));
                 @SuppressLint("Range") String dateAlerte = cursor.getString(cursor.getColumnIndex("dateAlerte"));
 
-                Alerte alerte = new Alerte(idUser, codeCis, idUser, nomMedicament, raison, message, dateAlerte);
+                Alerte alerte = new Alerte(idUser, codeCip, idUser, nomMedicament, raison, message, dateAlerte);
                 listeAlertes.add(alerte);
             } while (cursor.moveToNext());
         }
@@ -131,14 +133,14 @@ public class Alertes extends SQLiteOpenHelper {
         if (cursor.moveToFirst()) {
             do {
                 @SuppressLint("Range") int id = cursor.getInt(cursor.getColumnIndex("id"));
-                @SuppressLint("Range") int codeCis = cursor.getInt(cursor.getColumnIndex("codeCis"));
+                @SuppressLint("Range") int codeCip = cursor.getInt(cursor.getColumnIndex("codeCip"));
                 @SuppressLint("Range") int idUser = cursor.getInt(cursor.getColumnIndex("idUser"));
                 @SuppressLint("Range") String nomMedicament = cursor.getString(cursor.getColumnIndex("nomMedicament"));
                 @SuppressLint("Range") String raison = cursor.getString(cursor.getColumnIndex("raison"));
                 @SuppressLint("Range") String message = cursor.getString(cursor.getColumnIndex("message"));
                 @SuppressLint("Range") String dateAlerte = cursor.getString(cursor.getColumnIndex("dateAlerte"));
 
-                Alerte alerte = new Alerte(id, codeCis, idUser, nomMedicament, raison, message, dateAlerte);
+                Alerte alerte = new Alerte(id, codeCip, idUser, nomMedicament, raison, message, dateAlerte);
                 listeAlertes.add(alerte);
             } while (cursor.moveToNext());
         }
@@ -177,6 +179,104 @@ public class Alertes extends SQLiteOpenHelper {
         return medicamentLePlusSignale;
     }
 
+    public String getCategorieMedicamentLePlusSignale() {
+        SQLiteDatabase db = this.getReadableDatabase();
+        String categorieMedicamentLePlusSignale = null;
 
+        String query = "SELECT codeCip FROM alertes";
+        Cursor cursor = db.rawQuery(query, null);
+
+        List<String> pathologiesList = new ArrayList<>();
+
+        if (cursor != null && cursor.moveToFirst()) {
+            do {
+                @SuppressLint("Range") String codeCip = cursor.getString(cursor.getColumnIndex("codeCip"));
+                List<String> pathologies = medicamentDatabase.getPathologiesByCodeCIP(codeCip);
+                pathologiesList.addAll(pathologies);
+            } while (cursor.moveToNext());
+            cursor.close();
+        }
+
+        // Trouver les pathologies les plus fréquentes
+        if (!pathologiesList.isEmpty()) {
+            Map<String, Integer> pathologieCounts = new HashMap<>();
+            for (String pathologie : pathologiesList) {
+                pathologieCounts.put(pathologie, pathologieCounts.getOrDefault(pathologie, 0) + 1);
+            }
+
+            // Trier les pathologies par fréquence décroissante
+            List<Map.Entry<String, Integer>> sortedPathologies = new ArrayList<>(pathologieCounts.entrySet());
+            Collections.sort(sortedPathologies, (a, b) -> b.getValue().compareTo(a.getValue()));
+
+            // Choisir la première pathologie non-"AUCUNE"
+            for (Map.Entry<String, Integer> entry : sortedPathologies) {
+                if (!entry.getKey().equals("AUCUNE")) {
+                    categorieMedicamentLePlusSignale = entry.getKey();
+                    break;
+                }
+            }
+        }
+
+        return categorieMedicamentLePlusSignale;
+    }
+
+
+    public Map<String, Integer> getOccurrencesPathologies() {
+        SQLiteDatabase db = this.getReadableDatabase();
+        Map<String, Integer> occurrencesPathologies = new HashMap<>();
+
+        String query = "SELECT codeCip FROM alertes";
+        Cursor cursor = db.rawQuery(query, null);
+
+        List<String> pathologiesList = new ArrayList<>();
+
+        if (cursor != null && cursor.moveToFirst()) {
+            do {
+                @SuppressLint("Range") String codeCip = cursor.getString(cursor.getColumnIndex("codeCip"));
+                List<String> pathologies = medicamentDatabase.getPathologiesByCodeCIP(codeCip);
+                pathologiesList.addAll(pathologies);
+            } while (cursor.moveToNext());
+            cursor.close();
+        }
+
+        // Compter les occurrences de chaque pathologie
+        for (String pathologie : pathologiesList) {
+            occurrencesPathologies.put(pathologie, occurrencesPathologies.getOrDefault(pathologie, 0) + 1);
+        }
+
+        return occurrencesPathologies;
+    }
+
+    public int getNombreAlertesParSaisie() {
+        SQLiteDatabase db = this.getReadableDatabase();
+        int nombreAlertesSaisie = 0;
+
+        String query = "SELECT COUNT(*) FROM alertes WHERE moyen = 'saisie'";
+        Cursor cursor = db.rawQuery(query, null);
+
+        if (cursor != null) {
+            cursor.moveToFirst();
+            nombreAlertesSaisie = cursor.getInt(0);
+            cursor.close();
+        }
+
+        return nombreAlertesSaisie;
+    }
+
+    public int getNombreAlertesParScan() {
+        SQLiteDatabase db = this.getReadableDatabase();
+        int nombreAlertesSaisie = 0;
+
+        String query = "SELECT COUNT(*) FROM alertes WHERE moyen = 'scan'";
+        Cursor cursor = db.rawQuery(query, null);
+
+        if (cursor != null) {
+            cursor.moveToFirst();
+            nombreAlertesSaisie = cursor.getInt(0);
+            cursor.close();
+        }
+
+        return nombreAlertesSaisie;
+    }
 
 }

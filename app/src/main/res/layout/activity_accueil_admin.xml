@@ -111,7 +111,7 @@
                 android:layout_marginTop="5dp"
                 android:backgroundTint="@color/darkGrey"
                 android:fontFamily="@font/inter"
-                android:text="@string/Ravi_revoir"
+                android:text="Ravi de vous revoir "
                 android:textSize="17dp"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
@@ -152,7 +152,7 @@
                 android:layout_marginStart="30dp"
                 android:layout_marginTop="22dp"
                 android:fontFamily="@font/patuaone_regular"
-                android:text="@string/consulter"
+                android:text=" Consulter les statistiques"
                 android:textColor="@color/darkBlue"
                 android:textSize="21dp"
                 app:layout_constraintStart_toStartOf="parent"
@@ -209,7 +209,7 @@
                         android:layout_marginEnd="3dp"
                         android:layout_marginBottom="3dp"
                         android:fontFamily="@font/inter_medium"
-                        android:text="@string/nb_signal"
+                        android:text="Nombre de signalements :"
                         android:textColor="@color/textGrey"
                         android:textSize="12.5dp" />
 
@@ -237,7 +237,7 @@
                         android:layout_marginEnd="3dp"
                         android:layout_marginBottom="3dp"
                         android:fontFamily="@font/inter_medium"
-                        android:text="@string/medoc_signal"
+                        android:text="Médicament le plus signalé :"
                         android:textColor="@color/textGrey"
                         android:textSize="12.5dp" />
 
@@ -265,7 +265,7 @@
                         android:layout_marginEnd="3dp"
                         android:layout_marginBottom="3dp"
                         android:fontFamily="@font/inter_medium"
-                        android:text="@string/type"
+                        android:text="Type de maladie le plus signalé :"
                         android:textColor="@color/textGrey"
                         android:textSize="12.5dp" />
 
@@ -273,8 +273,7 @@
                         android:id="@+id/typeMedicamentLePlusSignaleTV"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_below="@+id/medicamentLePlusSignaleTV"
-                        android:layout_toRightOf="@+id/typeMedicamentLePlusSignaleLabelTV"
+                        android:layout_below="@+id/typeMedicamentLePlusSignaleLabelTV"
                         android:layout_marginStart="3dp"
                         android:layout_marginTop="3dp"
                         android:layout_marginEnd="3dp"
@@ -290,13 +289,13 @@
                         android:id="@+id/nbrSaisiCIPLabelTV"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_below="@+id/typeMedicamentLePlusSignaleLabelTV"
+                        android:layout_below="@+id/typeMedicamentLePlusSignaleTV"
                         android:layout_marginStart="5dp"
                         android:layout_marginTop="2dp"
                         android:layout_marginEnd="3dp"
                         android:layout_marginBottom="30dp"
                         android:fontFamily="@font/inter_medium"
-                        android:text="@string/nd_CIP"
+                        android:text="Nombre de saisie CIP :"
                         android:textColor="@color/textGrey"
                         android:textSize="12.5dp"
                     />
@@ -305,7 +304,7 @@
                         android:id="@+id/nbrSaisiCIPTV"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_below="@+id/typeMedicamentLePlusSignaleLabelTV"
+                        android:layout_below="@+id/typeMedicamentLePlusSignaleTV"
                         android:layout_toRightOf="@+id/nbrSaisiCIPLabelTV"
                         android:layout_marginStart="3dp"
                         android:layout_marginTop="2dp"
@@ -323,13 +322,13 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_toRightOf="@+id/nbrSaisiCIPTV"
-                        android:layout_below="@+id/typeMedicamentLePlusSignaleLabelTV"
+                        android:layout_below="@+id/typeMedicamentLePlusSignaleTV"
                         android:layout_marginStart="25dp"
                         android:layout_marginTop="2dp"
                         android:layout_marginEnd="3dp"
                         android:layout_marginBottom="35dp"
                         android:fontFamily="@font/inter_medium"
-                        android:text="@string/nb_data"
+                        android:text="Scan DataMatrix :"
                         android:textColor="@color/textGrey"
                         android:textSize="12.5dp"
                         />
@@ -338,7 +337,7 @@
                         android:id="@+id/nbrSaisiDataMatrixTV"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_below="@+id/typeMedicamentLePlusSignaleLabelTV"
+                        android:layout_below="@+id/typeMedicamentLePlusSignaleTV"
                         android:layout_toRightOf="@+id/nbrSaisiDataMatrixLabelTV"
                         android:layout_marginStart="3dp"
                         android:layout_marginTop="2dp"
@@ -356,9 +355,9 @@
                         android:layout_alignParentRight="true"
                         android:layout_width="110dp"
                         android:layout_height="wrap_content"
-                        android:text="@string/Administrateur"
+                        android:text="Administrateur"
                         android:textStyle="bold"
-                        android:textColor="@color/darkBlue"
+                        android:textColor="#3A4388"
                         android:fontFamily="@font/inter_medium"
                         android:padding="3dp"
                         android:gravity="center"
@@ -376,7 +375,7 @@
                     android:layout_gravity="right|bottom"
                     android:backgroundTint="#00000000"
                     android:fontFamily="@font/inter_semibold"
-                    android:text="@string/accee"
+                    android:text="Accéder aux statistiques..."
                     android:textColor="@color/darkBlue"
                     android:textSize="13.5dp"
                     android:textStyle="italic" />
@@ -394,7 +393,7 @@
                 android:layout_marginStart="30dp"
                 android:layout_marginTop="15dp"
                 android:fontFamily="@font/patuaone_regular"
-                android:text="@string/last_alerte"
+                android:text=" La dernière alerte"
                 android:textColor="@color/darkBlue"
                 android:textSize="21dp"
                 app:layout_constraintStart_toStartOf="parent"
@@ -449,7 +448,7 @@
                         android:layout_marginEnd="3dp"
                         android:layout_marginBottom="3dp"
                         android:fontFamily="@font/inter_medium"
-                        android:text="@string/Personne"
+                        android:text="Personne :"
                         android:textColor="@color/textGrey"
                         android:textSize="12dp" />
 
@@ -491,7 +490,7 @@
                             android:layout_marginEnd="3dp"
                             android:layout_marginBottom="3dp"
                             android:fontFamily="@font/inter_medium"
-                            android:text="@string/Médicament_concerné"
+                            android:text="Médicament concerné :"
                             android:textColor="@color/textGrey"
                             android:textSize="11.5dp" />
 
@@ -518,7 +517,7 @@
                             android:layout_marginEnd="3dp"
                             android:layout_marginBottom="3dp"
                             android:fontFamily="@font/inter_medium"
-                            android:text="@string/raison"
+                            android:text="Raison :"
                             android:textColor="@color/textGrey"
                             android:textSize="11.5dp" />
 
@@ -547,7 +546,7 @@
                             android:layout_marginEnd="3dp"
                             android:layout_marginBottom="3dp"
                             android:fontFamily="@font/inter_medium"
-                            android:text="@string/message"
+                            android:text="Message :"
                             android:textColor="@color/textGrey"
                             android:textSize="11.5dp" />
 
@@ -580,7 +579,7 @@
                                 android:layout_alignParentRight="true"
                                 android:layout_width="110dp"
                                 android:layout_height="wrap_content"
-                                android:text="@string/date"
+                                android:text="18 février 2024"
                                 android:textColor="@color/white"
                                 android:fontFamily="@font/inter_medium"
                                 android:background="@color/darkBlueLightLight"
@@ -601,7 +600,7 @@
                     android:layout_gravity="right|bottom"
                     android:backgroundTint="#00000000"
                     android:fontFamily="@font/inter_semibold"
-                    android:text="@string/all_alerte"
+                    android:text="Voir toutes mes alertes..."
                     android:textColor="@color/darkBlue"
                     android:textSize="11.5dp"
                     android:textStyle="italic" />

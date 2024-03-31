@@ -76,18 +76,6 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="fr.iut.sae_s4_01_app_mobile.AccueilActivity"
-            android:configChanges="locale|orientation|screenSize"
-            android:exported="true" >
-
-            <!--
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-            -->
-        </activity>
-        <activity
             android:name="fr.iut.sae_s4_01_app_mobile.LoginActivity"
             android:exported="true" >
 
@@ -138,31 +126,7 @@
             -->
         </activity>
         <activity
-            android:name="fr.iut.sae_s4_01_app_mobile.ancienneAlerteActivity"
-            android:exported="true" >
-
-            <!--
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-            -->
-        </activity>
-        <activity
-            android:name="fr.iut.sae_s4_01_app_mobile.MedocCodeActivity"
-            android:exported="true" >
-
-            <!--
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-            -->
-        </activity>
-        <activity
-            android:name="fr.iut.sae_s4_01_app_mobile.ProfilActivity"
+            android:name="fr.iut.sae_s4_01_app_mobile.CipScanActivity"
             android:exported="true" >
 
             <!--
@@ -220,6 +184,10 @@
         </activity>
         <activity
             android:name="fr.iut.sae_s4_01_app_mobile.ToutAlerteActivity"
+            android:exported="true" >
+        </activity>
+        <activity
+            android:name="fr.iut.sae_s4_01_app_mobile.StatistiqueActivity"
             android:exported="true" >
         </activity>
         <activity

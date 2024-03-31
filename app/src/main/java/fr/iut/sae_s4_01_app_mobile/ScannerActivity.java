@@ -9,6 +9,8 @@ import com.journeyapps.barcodescanner.BarcodeResult;
 import com.journeyapps.barcodescanner.CaptureActivity;
 import com.journeyapps.barcodescanner.DecoratedBarcodeView;
 
+import fr.iut.sae_s4_01_app_mobile.bd.Medicament;
+
 public class ScannerActivity extends CaptureActivity {
     private DecoratedBarcodeView barcodeView;
 
@@ -24,9 +26,10 @@ public class ScannerActivity extends CaptureActivity {
             public void barcodeResult(BarcodeResult result) {
                 Toast.makeText(ScannerActivity.this, result.getText(), Toast.LENGTH_SHORT).show();
 
-                Intent intent = new Intent(ScannerActivity.this, MedocCodeActivity.class);
+                Intent intent = new Intent(ScannerActivity.this, CipScanActivity.class);
                 Bundle bundle = new Bundle();
-                bundle.putString("codeCIP", result.getText());
+                bundle.putString("datamatrix", result.getText());
+                bundle.putString("moyen", "scan");
                 intent.putExtras(bundle);
                 startActivity(intent);
 

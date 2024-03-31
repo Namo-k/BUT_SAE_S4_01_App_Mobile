@@ -35,8 +35,11 @@ public class NewAlertActivity extends AppCompatActivity {
         Notifications notificationsDB = new Notifications(this);
 
         medicamentDatabase = new Medicament(this);
+
         String codeCIP = getCodeCIP();
+        String moyen = getMoyen();
         String nomMedoc =  medicamentDatabase.getNomMedicamentByCodeCIP(codeCIP);
+
         TextView codeCipEditText = findViewById(R.id.inputCip);
         codeCipEditText.setText(codeCIP);
         TextView nomMedocTextView = findViewById(R.id.inputMedoc);
@@ -86,7 +89,7 @@ public class NewAlertActivity extends AppCompatActivity {
                 int userID = myApp.getUserID();
 
                 if (userID != -1 && codeCIP != null && !raison.equals(getString(R.string.select_reason))) {
-                    boolean insertionReussie = alertesDB.insertData(userID, Integer.parseInt(codeCIP), raison, messageAlerte);
+                    boolean insertionReussie = alertesDB.insertData(userID, codeCIP, raison, messageAlerte, moyen);
                     boolean insertionNotifReussie = notificationsDB.insertData((int) userID, "Enregistrement d'une alerte", "Votre alerte a bien été enregistrée. Merci pour votre contribution !", "alerte");
                     boolean insertionNotifReussie2 = notificationsDB.insertData((int) userID, "Votre avis compte", "Nous aimerions avoir votre avis. Complétez ce sondage de Colombes !", "avis");
 
@@ -138,6 +141,15 @@ public class NewAlertActivity extends AppCompatActivity {
             return bundle.getString("codeCIP");
         }
         return null;
+    }
+    private String getMoyen() {
+        Intent intent = getIntent();
+        Bundle bundle = intent.getExtras();
+        if (bundle != null) {
+            return bundle.getString("moyen");
+        }
+        return null;
+
     }
 
     private void replaceFragment(Fragment fragment){

@@ -42,18 +42,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity
-            android:name=".AccueilActivity"
-            android:exported="true"
-            android:configChanges="locale|orientation|screenSize">
 
-            <!--
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-            -->
-        </activity>
         <activity
             android:name=".LoginActivity"
             android:exported="true">
@@ -106,31 +95,7 @@
             -->
         </activity>
         <activity
-            android:name=".ancienneAlerteActivity"
-            android:exported="true">
-
-            <!--
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-            -->
-        </activity>
-        <activity
-            android:name=".MedocCodeActivity"
-            android:exported="true">
-
-            <!--
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-            -->
-        </activity>
-        <activity
-            android:name=".ProfilActivity"
+            android:name=".CipScanActivity"
             android:exported="true">
 
             <!--
@@ -190,6 +155,11 @@
 
         <activity
             android:name=".ToutAlerteActivity"
+            android:exported="true">
+
+        </activity>
+        <activity
+            android:name=".StatistiqueActivity"
             android:exported="true">
 
         </activity>

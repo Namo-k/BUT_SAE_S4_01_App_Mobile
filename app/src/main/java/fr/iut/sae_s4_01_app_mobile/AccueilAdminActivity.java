@@ -4,10 +4,12 @@ import android.animation.ObjectAnimator;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.view.animation.LinearInterpolator;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.cardview.widget.CardView;
@@ -45,11 +47,34 @@ public class AccueilAdminActivity extends AppCompatActivity {
         String prenom = DatabaseUser.getPrenom(userID);
         btnPrenom.append(prenom);
 
+        //Section Stats
+        TextView nbrSignalementTV = (TextView) findViewById(R.id.nbrSignalementTV);
+        TextView medicamentLePlusSignaleTV = (TextView) findViewById(R.id.medicamentLePlusSignaleTV);
+        TextView typeMedicamentLePlusSignaleTV = (TextView) findViewById(R.id.typeMedicamentLePlusSignaleTV);
+        TextView nbrSaisiCIPTV = (TextView) findViewById(R.id.nbrSaisiCIPTV);
+        TextView nbrSaisiDataMatrixTV = (TextView) findViewById(R.id.nbrSaisiDataMatrixTV);
+
+
+        Alertes alertesDb = new Alertes(this);
+
+        try {
+            nbrSignalementTV.setText(String.valueOf(alertesDb.getNombreTotalAlertes()));
+            medicamentLePlusSignaleTV.setText(alertesDb.getMedicamentLePlusSignale());
+            typeMedicamentLePlusSignaleTV.setText(alertesDb.getCategorieMedicamentLePlusSignale());
+            nbrSaisiCIPTV.setText(String.valueOf(alertesDb.getNombreAlertesParSaisie()));
+            nbrSaisiDataMatrixTV.setText(String.valueOf(alertesDb.getNombreAlertesParScan()));
+            Log.i("TypeAlerte", alertesDb.getOccurrencesPathologies().toString());
+
+        } catch (Exception e) {
+            Toast.makeText(AccueilAdminActivity.this, "Erreurs dans les stats !", Toast.LENGTH_SHORT).show();
+        }
+
         // Gestion des actions sur les boutons
         toutAlerteBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(AccueilAdminActivity.this, ToutAlerteActivity.class);
+                finish();
                 startActivity(intent);
             }
         });
@@ -57,16 +82,23 @@ public class AccueilAdminActivity extends AppCompatActivity {
         statsBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                ProfilFragment ProfilFragment = new ProfilFragment();
-                replaceFragment(ProfilFragment);
+                Intent intent = new Intent(AccueilAdminActivity.this, StatistiqueActivity.class);
+                finish();
+                startActivity(intent);
+
+                /*ProfilFragment ProfilFragment = new ProfilFragment();
+                replaceFragment(ProfilFragment);*/
             }
         });
 
         btnStats.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                ProfilFragment ProfilFragment = new ProfilFragment();
-                replaceFragment(ProfilFragment);
+                Intent intent = new Intent(AccueilAdminActivity.this, StatistiqueActivity.class);
+                startActivity(intent);
+
+                /*ProfilFragment ProfilFragment = new ProfilFragment();
+                replaceFragment(ProfilFragment);*/
             }
         });
 
@@ -97,7 +129,6 @@ public class AccueilAdminActivity extends AppCompatActivity {
         blocAncienneAlerte.setVisibility(View.INVISIBLE);
 
         // Récupération de la dernière alerte
-        Alertes alertesDb = new Alertes(this);
         List<Alerte> alertes = alertesDb.getAllAlertes();
         Alerte alerteLaPlusRecente = null;
         if (!alertes.isEmpty()) {

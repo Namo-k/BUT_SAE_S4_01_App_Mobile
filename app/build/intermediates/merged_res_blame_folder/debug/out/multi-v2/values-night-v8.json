@@ -4,7 +4,24 @@
             "outputFile": "fr.iut.sae_s4_01_app_mobile.app-mergeDebugResources-31:/values-night-v8/values-night-v8.xml",
             "map": [
                 {
-                    "source": "/Users/isra/Desktop/SEMESTRE 4/Mobile/SAEE/B_App_Mobile/app/src/main/res/values-night/strings.xml",
+                    "source": "D:\\Documents\\TPTD_IUT\\Dev_mobile\\_WorkSpace\\BUT_SAE_S4_01_App_Mobile_7\\app\\src\\main\\res\\values-night\\colors.xml",
+                    "from": {
+                        "startLines": "2,13,8,9,10,18,22,11,12,20,15,7,16,17,3,4",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "57,478,236,280,329,654,741,383,428,700,520,188,564,608,98,139",
+                        "endColumns": "39,38,42,47,52,42,39,43,48,37,42,46,42,44,39,43",
+                        "endOffsets": "92,512,274,323,377,692,776,422,472,733,558,230,602,648,133,178"
+                    },
+                    "to": {
+                        "startLines": "6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "188,228,267,310,358,411,454,494,538,587,625,668,715,758,803,843",
+                        "endColumns": "39,38,42,47,52,42,39,43,48,37,42,46,42,44,39,43",
+                        "endOffsets": "223,262,305,353,406,449,489,533,582,620,663,710,753,798,838,882"
+                    }
+                },
+                {
+                    "source": "D:\\Documents\\TPTD_IUT\\Dev_mobile\\_WorkSpace\\BUT_SAE_S4_01_App_Mobile_7\\app\\src\\main\\res\\values-night\\strings.xml",
                     "from": {
                         "startLines": "11,36,136,77,26,159,158,149,23,162,40,199,200,88,101,18,182,181,180,179,29,75,16,118,56,4,17,160,47,216,172,169,64,178,126,175,165,55,132,73,50,79,142,33,24,80,150,30,116,94,207,106,68,209,202,201,122,212,128,166,105,111,10,217,121,167,170,176,62,69,214,213,193,197,194,198,195,117,43,25,189,146,74,49,90,103,35,44,83,28,91,87,100,147,39,34,38,208,184,85,98,65,112,114,109,123,70,173,218,190,57,78,163,89,102,113,115,86,99,219,110,152,153,154,155,156,27,66,15,187,131,48,205,204,210,161,54,59,139,120,192,186,104,84,97,67,188,119,93,127,21,5,6,7,8,9,92,135,22,58,63,37,183,215,51,171,143,125,76",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -23,24 +40,7 @@
                     }
                 },
                 {
-                    "source": "/Users/isra/.gradle/caches/transforms-3/b1741c2033ae6eec819ff5ea06ca1704/transformed/appcompat-1.6.1/res/values-night-v8/values-night-v8.xml",
-                    "from": {
-                        "startLines": "2,3,4,5,6,7,8,9",
-                        "startColumns": "4,4,4,4,4,4,4,4",
-                        "startOffsets": "55,125,209,293,389,491,593,687",
-                        "endColumns": "69,83,83,95,101,101,93,88",
-                        "endOffsets": "120,204,288,384,486,588,682,771"
-                    },
-                    "to": {
-                        "startLines": "201,202,203,204,205,206,207,233",
-                        "startColumns": "4,4,4,4,4,4,4,4",
-                        "startOffsets": "13205,13275,13359,13443,13539,13641,13743,16598",
-                        "endColumns": "69,83,83,95,101,101,93,88",
-                        "endOffsets": "13270,13354,13438,13534,13636,13738,13832,16682"
-                    }
-                },
-                {
-                    "source": "/Users/isra/Desktop/SEMESTRE 4/Mobile/SAEE/B_App_Mobile/app/src/main/res/values-night/themes.xml",
+                    "source": "D:\\Documents\\TPTD_IUT\\Dev_mobile\\_WorkSpace\\BUT_SAE_S4_01_App_Mobile_7\\app\\src\\main\\res\\values-night\\themes.xml",
                     "from": {
                         "startLines": "2,13,15,14,16,17",
                         "startColumns": "4,4,4,4,4,4",
@@ -59,24 +59,24 @@
                     }
                 },
                 {
-                    "source": "/Users/isra/Desktop/SEMESTRE 4/Mobile/SAEE/B_App_Mobile/app/src/main/res/values-night/colors.xml",
+                    "source": "C:\\Users\\kalia\\.gradle\\caches\\transforms-3\\b1741c2033ae6eec819ff5ea06ca1704\\transformed\\appcompat-1.6.1\\res\\values-night-v8\\values-night-v8.xml",
                     "from": {
-                        "startLines": "2,13,8,9,10,18,22,11,12,20,15,7,16,17,3,4",
-                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "57,478,236,280,329,654,741,383,428,700,520,188,564,608,98,139",
-                        "endColumns": "39,38,42,47,52,42,39,43,48,37,42,46,42,44,39,43",
-                        "endOffsets": "92,512,274,323,377,692,776,422,472,733,558,230,602,648,133,178"
+                        "startLines": "2,3,4,5,6,7,8,9",
+                        "startColumns": "4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,125,209,293,389,491,593,687",
+                        "endColumns": "69,83,83,95,101,101,93,88",
+                        "endOffsets": "120,204,288,384,486,588,682,771"
                     },
                     "to": {
-                        "startLines": "6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21",
-                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "188,228,267,310,358,411,454,494,538,587,625,668,715,758,803,843",
-                        "endColumns": "39,38,42,47,52,42,39,43,48,37,42,46,42,44,39,43",
-                        "endOffsets": "223,262,305,353,406,449,489,533,582,620,663,710,753,798,838,882"
+                        "startLines": "201,202,203,204,205,206,207,233",
+                        "startColumns": "4,4,4,4,4,4,4,4",
+                        "startOffsets": "13205,13275,13359,13443,13539,13641,13743,16598",
+                        "endColumns": "69,83,83,95,101,101,93,88",
+                        "endOffsets": "13270,13354,13438,13534,13636,13738,13832,16682"
                     }
                 },
                 {
-                    "source": "/Users/isra/.gradle/caches/transforms-3/7bf998f9f4bdd84f156fbe08c4253964/transformed/material-1.11.0/res/values-night-v8/values-night-v8.xml",
+                    "source": "C:\\Users\\kalia\\.gradle\\caches\\transforms-3\\7bf998f9f4bdd84f156fbe08c4253964\\transformed\\material-1.11.0\\res\\values-night-v8\\values-night-v8.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",

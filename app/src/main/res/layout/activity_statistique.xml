@@ -1,0 +1,394 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".StatistiqueActivity">
+
+    <!-- ========== ENTETE =========== -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.23"
+        android:orientation="vertical">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="456dp"
+            android:layout_height="240dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="-118dp"
+            app:cardBackgroundColor="@color/white"
+            app:cardCornerRadius="200dp"
+            app:cardElevation="0dp">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/ovale_shape" />
+
+            <ImageView
+                android:id="@+id/sedeconnecterBtn"
+                android:layout_width="43dp"
+                android:layout_height="43dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="60dp"
+                android:layout_marginTop="38dp"
+                android:src="@drawable/deconnexion" />
+
+            <ImageView
+                android:id="@+id/logoIV"
+                android:layout_width="170dp"
+                android:layout_height="90.92dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="147dp"
+                android:layout_marginTop="55dp"
+                android:src="@drawable/colombes_logo" />
+
+            <ImageView
+                android:id="@+id/notifBtn"
+                android:layout_width="42dp"
+                android:layout_height="42dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="355dp"
+                android:layout_marginTop="38dp"
+                android:src="@drawable/cloche" />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="385dp"
+                android:layout_marginTop="23dp"
+                android:alpha="0.8"
+                app:cardBackgroundColor="@color/darkBlueLightLight"
+                app:cardCornerRadius="10dp">
+
+                <TextView
+                    android:id="@+id/nbNotifTV"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:gravity="center"
+                    android:text="1"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+            </androidx.cardview.widget.CardView>
+
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+    <!-- ========== FIN ENTETE =========== -->
+
+    <!-- ========== PAGE =========== -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <!-- ========== DEBUT SECTION STATISTIQUE =========== -->
+
+            <TextView
+                android:id="@+id/stats"
+                android:layout_width="wrap_content"
+                android:layout_height="22dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/patuaone_regular"
+                android:text=" Les statistiques"
+                android:textColor="@color/darkBlue"
+                android:textSize="21dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/ligne1"
+                android:layout_width="180dp"
+                android:layout_height="1.5dp"
+                android:layout_marginStart="27dp"
+                android:layout_marginTop="12dp"
+                android:background="@color/lightBlue"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/stats" />
+
+            <ImageView
+                android:id="@+id/stats_logo"
+                android:layout_width="47dp"
+                android:layout_height="48dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="30dp"
+                android:src="@drawable/stats_logo"
+                android:textAlignment="center"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+             />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/blocStats"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="27dp"
+                android:layout_marginEnd="27dp"
+                android:layout_marginTop="10dp"
+                app:cardBackgroundColor="@color/lightBlueLight"
+                app:cardCornerRadius="20dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/ligne1"
+                >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/lightBlueLight"
+                    android:paddingHorizontal="11dp"
+                    android:paddingTop="7dp"
+                    >
+
+                    <TextView
+                        android:id="@+id/nbrSignalementLabelTV"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginTop="6dp"
+                        android:layout_marginEnd="3dp"
+                        android:layout_marginBottom="3dp"
+                        android:fontFamily="@font/inter_medium"
+                        android:text="Nombre de signalements :"
+                        android:textColor="@color/textGrey"
+                        android:textSize="12.5dp" />
+
+                    <TextView
+                        android:id="@+id/nbrSignalementTV"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@+id/nbrSignalementLabelTV"
+                        android:layout_marginStart="3dp"
+                        android:layout_marginTop="6dp"
+                        android:layout_marginEnd="3dp"
+                        android:layout_marginBottom="3dp"
+                        android:fontFamily="@font/inter"
+                        android:text=""
+                        android:textColor="@color/textDarkBlue"
+                        android:textSize="12.5dp" />
+
+                    <TextView
+                        android:id="@+id/medicamentLePlusSignaleLabelTV"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/nbrSignalementLabelTV"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginTop="3dp"
+                        android:layout_marginEnd="3dp"
+                        android:layout_marginBottom="3dp"
+                        android:fontFamily="@font/inter_medium"
+                        android:text="Médicament le plus signalé :"
+                        android:textColor="@color/textGrey"
+                        android:textSize="12.5dp" />
+
+                    <TextView
+                        android:id="@+id/medicamentLePlusSignaleTV"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/medicamentLePlusSignaleLabelTV"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginTop="3dp"
+                        android:layout_marginEnd="3dp"
+                        android:layout_marginBottom="3dp"
+                        android:fontFamily="@font/inter"
+                        android:text=""
+                        android:textColor="@color/textDarkBlue"
+                        android:textSize="12.5dp" />
+
+                    <TextView
+                        android:id="@+id/typeMedicamentLePlusSignaleLabelTV"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/medicamentLePlusSignaleTV"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginTop="3dp"
+                        android:layout_marginEnd="3dp"
+                        android:layout_marginBottom="3dp"
+                        android:fontFamily="@font/inter_medium"
+                        android:text="Type de maladie le plus signalé :"
+                        android:textColor="@color/textGrey"
+                        android:textSize="12.5dp" />
+
+                    <TextView
+                        android:id="@+id/typeMedicamentLePlusSignaleTV"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/typeMedicamentLePlusSignaleLabelTV"
+                        android:layout_marginStart="3dp"
+                        android:layout_marginTop="3dp"
+                        android:layout_marginEnd="3dp"
+                        android:layout_marginBottom="3dp"
+                        android:fontFamily="@font/inter"
+                        android:text=""
+                        android:textColor="@color/textDarkBlue"
+                        android:textSize="12.5dp" />
+
+
+
+                    <TextView
+                        android:id="@+id/nbrSaisiCIPLabelTV"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/typeMedicamentLePlusSignaleTV"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginTop="2dp"
+                        android:layout_marginEnd="3dp"
+                        android:layout_marginBottom="30dp"
+                        android:fontFamily="@font/inter_medium"
+                        android:text="Nombre de saisie CIP :"
+                        android:textColor="@color/textGrey"
+                        android:textSize="12.5dp"
+                        />
+
+                    <TextView
+                        android:id="@+id/nbrSaisiCIPTV"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/typeMedicamentLePlusSignaleTV"
+                        android:layout_toRightOf="@+id/nbrSaisiCIPLabelTV"
+                        android:layout_marginStart="3dp"
+                        android:layout_marginTop="2dp"
+                        android:layout_marginEnd="3dp"
+                        android:layout_marginBottom="5dp"
+                        android:fontFamily="@font/inter"
+                        android:textColor="@color/textDarkBlue"
+                        android:text=""
+                        android:textSize="12.5dp"
+                        android:lineHeight="17dp"
+                        />
+
+                    <TextView
+                        android:id="@+id/nbrSaisiDataMatrixLabelTV"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@+id/nbrSaisiCIPTV"
+                        android:layout_below="@+id/typeMedicamentLePlusSignaleTV"
+                        android:layout_marginStart="25dp"
+                        android:layout_marginTop="2dp"
+                        android:layout_marginEnd="3dp"
+                        android:layout_marginBottom="35dp"
+                        android:fontFamily="@font/inter_medium"
+                        android:text="Scan DataMatrix :"
+                        android:textColor="@color/textGrey"
+                        android:textSize="12.5dp"
+                        />
+
+                    <TextView
+                        android:id="@+id/nbrSaisiDataMatrixTV"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/typeMedicamentLePlusSignaleTV"
+                        android:layout_toRightOf="@+id/nbrSaisiDataMatrixLabelTV"
+                        android:layout_marginStart="3dp"
+                        android:layout_marginTop="2dp"
+                        android:layout_marginEnd="3dp"
+                        android:layout_marginBottom="5dp"
+                        android:fontFamily="@font/inter"
+                        android:textColor="@color/textDarkBlue"
+                        android:text=""
+                        android:textSize="12.5dp"
+                        android:lineHeight="17dp"
+                        />
+
+                    <TextView
+                        android:id="@+id/roleTV"
+                        android:layout_alignParentRight="true"
+                        android:layout_width="110dp"
+                        android:layout_height="wrap_content"
+                        android:text="Administrateur"
+                        android:textStyle="bold"
+                        android:textColor="#3A4388"
+                        android:fontFamily="@font/inter_medium"
+                        android:padding="3dp"
+                        android:gravity="center"
+                        android:textSize="13dp"
+                        />
+
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/btnStats"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginRight="25dp"
+                    android:layout_gravity="right|bottom"
+                    android:backgroundTint="#00000000"
+                    android:fontFamily="@font/inter_semibold"
+                    android:text="Accéder aux statistiques..."
+                    android:textColor="@color/darkBlue"
+                    android:textSize="13.5dp"
+                    android:textStyle="italic" />
+            </androidx.cardview.widget.CardView>
+
+            <!-- ========== FIN SECTION STATISTIQUE TEXTE =========== -->
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/spinBloc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="27dp"
+                android:layout_marginEnd="27dp"
+                android:layout_marginTop="10dp"
+                app:cardBackgroundColor="@color/lightBlueLight"
+                app:cardCornerRadius="20dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/blocStats">
+
+                <Spinner
+                    android:id="@+id/spinnerGraphique"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"/>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/blocGraph"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="27dp"
+                android:layout_marginEnd="27dp"
+                android:layout_marginTop="10dp"
+                app:cardBackgroundColor="@color/lightBlueLight"
+                app:cardCornerRadius="20dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/spinBloc">
+
+                <LinearLayout
+                    android:id="@+id/graphBloc1"
+                    android:layout_width="500dp"
+                    android:layout_height="250dp"
+                    android:orientation="vertical">
+
+                </LinearLayout>
+q
+            </androidx.cardview.widget.CardView>
+
+
+
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </LinearLayout>
+
+    <!-- ========== FIN PAGE =========== -->
+
+
+</LinearLayout>

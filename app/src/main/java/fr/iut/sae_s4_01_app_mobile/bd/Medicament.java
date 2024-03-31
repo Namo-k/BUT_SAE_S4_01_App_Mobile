@@ -15,6 +15,9 @@ import com.opencsv.exceptions.CsvValidationException;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
+import java.nio.charset.StandardCharsets;
+import java.util.ArrayList;
+import java.util.List;
 
 public class Medicament extends SQLiteOpenHelper {
 
@@ -29,7 +32,7 @@ public class Medicament extends SQLiteOpenHelper {
 
     @Override
     public void onCreate(SQLiteDatabase db) {
-        db.execSQL("CREATE TABLE medicament (codeCis INTEGER PRIMARY KEY,nomMedicament VARCHAR(50), forma VARCHAR(50))");
+        db.execSQL("CREATE TABLE medicament (codeCip INTEGER, nomMedicament VARCHAR(100), Libelle VARCHAR(255), PRIMARY KEY(codeCip, Libelle))");
     }
 
     @Override
@@ -49,15 +52,15 @@ public class Medicament extends SQLiteOpenHelper {
 
             if (count == 0) {
                 try {
-                    CSVReader reader = new CSVReaderBuilder(new InputStreamReader(inputStream))
+                    CSVReader reader = new CSVReaderBuilder(new InputStreamReader(inputStream, StandardCharsets.UTF_8))
                             .withCSVParser(new com.opencsv.CSVParserBuilder().withSeparator(';').build())
                             .build();
                     String[] nextLine;
                     while ((nextLine = reader.readNext()) != null) {
                         ContentValues values = new ContentValues();
-                        values.put("codeCis", nextLine[0]);
+                        values.put("codeCip", nextLine[0]);
                         values.put("nomMedicament", nextLine[1]);
-                        values.put("forma", nextLine[2]);
+                        values.put("Libelle", nextLine[2]);
 
                         long ligneid = database.insert("medicament", null, values);
                         if (ligneid == -1) {
@@ -81,7 +84,7 @@ public class Medicament extends SQLiteOpenHelper {
 
         Cursor cursor = database.query("medicament",
                 new String[]{"nomMedicament"},
-                "codeCis = ?",
+                "codeCip = ?",
                 new String[]{codeCIP},
                 null, null, null);
 
@@ -92,4 +95,27 @@ public class Medicament extends SQLiteOpenHelper {
 
         return nomMedicament;
     }
+
+    public List<String> getPathologiesByCodeCIP(String codeCIS) {
+        SQLiteDatabase database = this.getReadableDatabase();
+        List<String> pathologies = new ArrayList<>();
+
+        Cursor cursor = database.query("medicament",
+                new String[]{"Libelle"},
+                "codeCip = ?",
+                new String[]{codeCIS},
+                null, null, null);
+
+        if (cursor != null && cursor.moveToFirst()) {
+            do {
+                @SuppressLint("Range") String pathologie = cursor.getString(cursor.getColumnIndex("Libelle"));
+                pathologies.add(pathologie);
+            } while (cursor.moveToNext());
+            cursor.close();
+        }
+
+        return pathologies;
+    }
+
+
 }

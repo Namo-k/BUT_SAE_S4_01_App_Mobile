@@ -28,7 +28,7 @@ public class CipManuelleActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_cip_manuelle);
         EditText editCodeCIP = findViewById(R.id.editCodeCIP);
-        editCodeCIP.setFilters(new InputFilter[] {new InputFilter.LengthFilter(8)});
+        editCodeCIP.setFilters(new InputFilter[] {new InputFilter.LengthFilter(13)});
 
         TextView textView = findViewById(R.id.textView);
         String text = getResources().getString(R.string.vdata);
@@ -76,6 +76,7 @@ public class CipManuelleActivity extends AppCompatActivity {
 
                     Intent intent = new Intent(CipManuelleActivity.this, NewAlertActivity.class);
                     intent.putExtra("codeCIP", codeCIP);
+                    intent.putExtra("moyen", "saisie");
                     finish();
                     startActivity(intent);
                 }
