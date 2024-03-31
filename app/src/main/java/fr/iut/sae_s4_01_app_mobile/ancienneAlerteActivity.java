@@ -54,7 +54,7 @@ public class ancienneAlerteActivity extends AppCompatActivity {
         // Récupérer les alertes depuis la base de données
         //List<Alerte> alertes = alertesDb.getAllAlertes(userID);
 
-        nbAlerte.append(getResources().getString(R.string.avoir) + totalAlertCount +  getResources().getString(R.string.ale));
+        nbAlerte.append(getResources().getString(R.string.avoir) + " " + totalAlertCount + " " + getResources().getString(R.string.ale));
 
 
 

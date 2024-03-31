@@ -1,0 +1,209 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="25dp"
+    android:background="@color/lightBlue"
+    android:layout_marginLeft="30dp"
+    android:layout_marginRight="20dp"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/titre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="A propos"
+            android:textAlignment="center"
+            android:fontFamily="@font/patuaone_regular"
+            android:textColor="@color/darkBlue"
+            android:lineHeight="22dp"
+            android:textSize="25dp"
+            android:paddingBottom="8dp"/>
+
+        <TextView
+            android:id="@+id/auteurs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Auteurs :"
+            android:textColor="@color/darkBlueLight"
+            android:fontFamily="@font/inter_semibold"
+            android:lineHeight="22dp"
+            android:layout_below="@id/titre"
+            android:textSize="16dp"
+            android:paddingBottom="8dp"
+            android:paddingTop="16dp"/>
+
+        <TextView
+            android:id="@+id/auteurs1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="- Isra DHIAB | 203"
+            android:textColor="@color/white"
+            android:layout_below="@id/titre"
+            android:layout_toRightOf="@id/auteurs"
+            android:textSize="16dp"
+            android:paddingLeft="12dp"
+            android:layout_marginTop="10dp"
+            android:paddingBottom="8dp"
+            android:paddingTop="6dp"/>
+
+        <TextView
+            android:id="@+id/auteurs2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="- Ines KADJI | 203"
+            android:textColor="@color/white"
+            android:layout_below="@id/auteurs1"
+            android:textSize="16dp"
+            android:paddingLeft="15dp"
+            android:layout_marginTop="3dp"
+            android:paddingBottom="8dp"
+            android:paddingTop="6dp"/>
+
+        <TextView
+            android:id="@+id/auteurs3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="- Oum Kaltoum LAMRABET | 203"
+            android:textColor="@color/white"
+            android:layout_below="@id/auteurs2"
+            android:textSize="16dp"
+            android:paddingLeft="15dp"
+            android:layout_marginTop="3dp"
+            android:paddingBottom="8dp"
+            android:paddingTop="6dp"/>
+
+        <TextView
+            android:id="@+id/auteurs4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="- Namodacane KALIAMOORTHY | 203"
+            android:textColor="@color/white"
+            android:layout_below="@id/auteurs3"
+            android:textSize="16dp"
+            android:paddingLeft="15dp"
+            android:layout_marginTop="3dp"
+            android:paddingBottom="8dp"
+            android:paddingTop="6dp"/>
+
+        <TextView
+            android:id="@+id/auteurs5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="- Alexandre CAROUNANITHI | 204"
+            android:textColor="@color/white"
+            android:layout_below="@id/auteurs4"
+            android:textSize="16dp"
+            android:paddingLeft="15dp"
+            android:layout_marginTop="3dp"
+            android:paddingBottom="8dp"
+            android:paddingTop="6dp"/>
+
+
+        <TextView
+            android:id="@+id/contexte"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Contexte : "
+            android:lineHeight="22dp"
+            android:textColor="@color/darkBlueLight"
+            android:fontFamily="@font/inter_semibold"
+            android:textSize="16dp"
+            android:layout_below="@id/auteurs5"
+            android:paddingBottom="8dp"
+            android:paddingTop="12dp"/>
+
+
+        <TextView
+            android:id="@+id/contexteText1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Projet universitaire en 2ème "
+            android:textColor="@color/white"
+            android:layout_below="@id/auteurs5"
+            android:layout_toRightOf="@id/contexte"
+            android:textSize="16dp"
+            android:paddingLeft="6dp"
+            android:layout_marginTop="3dp"
+            android:paddingBottom="8dp"
+            android:paddingTop="10dp"/>
+
+        <TextView
+            android:id="@+id/contexteText2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="année de BUT Informatique (SAE S4.01)"
+            android:textColor="@color/white"
+            android:layout_below="@id/contexte"
+            android:textSize="16dp"
+            android:paddingLeft="1dp"
+            android:layout_marginTop="4dp"
+            android:paddingBottom="8dp"
+            />
+
+        <TextView
+            android:id="@+id/annee"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Année :"
+            android:textColor="@color/darkBlueLight"
+            android:fontFamily="@font/inter_semibold"
+            android:textSize="16dp"
+            android:layout_below="@id/contexteText2"
+            android:paddingBottom="8dp"
+            android:paddingTop="12dp"/>
+
+        <TextView
+            android:id="@+id/anneeText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2023 - 2024"
+            android:textColor="@color/white"
+            android:layout_below="@id/contexteText2"
+            android:layout_toRightOf="@id/annee"
+            android:textSize="16dp"
+            android:paddingLeft="10dp"
+            android:layout_marginTop="3dp"
+            android:paddingBottom="8dp"
+            android:paddingTop="10dp"/>
+
+        <TextView
+            android:id="@+id/version"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Version :"
+            android:textColor="@color/darkBlueLight"
+            android:fontFamily="@font/inter_semibold"
+            android:textSize="16dp"
+            android:paddingBottom="8dp"
+            android:layout_below="@id/annee"
+            android:paddingTop="10dp"/>
+
+        <TextView
+            android:id="@+id/versionText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1.1"
+            android:textColor="@color/white"
+            android:layout_below="@id/annee"
+            android:layout_toRightOf="@id/version"
+            android:textSize="16dp"
+            android:paddingLeft="10dp"
+            android:layout_marginTop="3dp"
+            android:paddingBottom="8dp"
+            android:paddingTop="10dp"/>
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/iut"
+            android:layout_below="@id/annee"
+            android:layout_toRightOf="@id/versionText"
+            android:layout_marginLeft="150dp"
+            />
+    </RelativeLayout>
+
+</LinearLayout>

@@ -207,10 +207,10 @@
 
                 <EditText
                     android:id="@+id/editCodeCIP"
-                    android:layout_width="250dp"
+                    android:layout_width="280dp"
                     android:layout_height="30dp"
                     android:layout_marginTop="15dp"
-                    android:layout_marginRight="25dp"
+                    android:layout_marginRight="2dp"
                     android:background="@drawable/round_createalert"
                     android:gravity="center"
                     android:inputType="number"
@@ -222,17 +222,58 @@
                     app:layout_constraintTop_toBottomOf="@+id/textCodeCIP"
                     tools:ignore="MissingConstraints" />
 
-
-                <ImageView
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/interrogation1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="10dp"
-                    app:layout_constraintEnd_toEndOf="parent"
+                    android:alpha="0.8"
+                    android:layout_marginTop="19dp"
+                    android:layout_marginRight="12dp"
+                    app:layout_constraintEnd_toEndOf="@id/editCodeCIP"
                     app:layout_constraintTop_toBottomOf="@+id/textCodeCIP"
-                    app:layout_constraintBottom_toBottomOf="@+id/editCodeCIP"
-                    app:layout_constraintStart_toEndOf="@+id/editCodeCIP"
-                    android:src="@drawable/interrogation"
-                    />
+                    app:cardBackgroundColor="@color/blue"
+                    app:cardCornerRadius="20dp"
+                    tools:ignore="MissingConstraints">
+
+                    <TextView
+                        android:layout_width="21dp"
+                        android:layout_height="21dp"
+                        android:fontFamily="@font/inter_bold"
+                        android:gravity="center"
+                        android:text=" ? "
+                        android:textColor="@color/textDarkBlue"
+                        android:textSize="15dp"
+                        android:textStyle="bold" />
+                </androidx.cardview.widget.CardView>
+
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/interrogation1text"
+                    android:layout_width="190dp"
+                    android:visibility="gone"
+                    android:layout_height="wrap_content"
+                    android:alpha="0.9"
+                    app:layout_constraintEnd_toEndOf="@id/editCodeCIP"
+                    app:layout_constraintTop_toBottomOf="@+id/interrogation1"
+                    android:layout_marginTop="1dp"
+                    android:layout_marginStart="25dp"
+                    app:cardBackgroundColor="@color/lightBlue"
+                    app:cardCornerRadius="13dp"
+                    tools:ignore="MissingConstraints">
+
+                    <TextView
+                        android:padding="12dp"
+                        android:alpha="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:fontFamily="@font/inter_medium"
+                        android:gravity="center"
+                        android:text="@string/text_interro2"
+                        android:textColor="@color/darkGrey"
+                        android:textSize="11dp"
+                        android:lineHeight="16.3dp"
+                        />
+                </androidx.cardview.widget.CardView>
 
                 <androidx.constraintlayout.widget.ConstraintLayout
                     android:layout_width="wrap_content"

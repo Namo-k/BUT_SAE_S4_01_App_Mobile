@@ -24,6 +24,7 @@ import androidx.cardview.widget.CardView;
 import java.util.Locale;
 
 import fr.iut.sae_s4_01_app_mobile.bd.Identifiants;
+import fr.iut.sae_s4_01_app_mobile.bd.Notifications;
 import fr.iut.sae_s4_01_app_mobile.bd.Users;
 
 public class ProfilModifActivity extends AppCompatActivity {
@@ -47,6 +48,7 @@ public class ProfilModifActivity extends AppCompatActivity {
 
         UserId myApp = (UserId) getApplication();
         int userID = myApp.getUserID();
+        Notifications notificationsDB = new Notifications(this);
 
         spinner = findViewById(R.id.spin);
 
@@ -70,8 +72,6 @@ public class ProfilModifActivity extends AppCompatActivity {
 
             }
         });
-
-
 
         DatabaseUser = new Users(this);
         DatabaseId = new Identifiants(this);
@@ -127,6 +127,8 @@ public class ProfilModifActivity extends AppCompatActivity {
                     if (medecinText.isEmpty()) { medecinText = getResources().getString(R.string.nr); }
                     DatabaseUser.updateData(userID, sexeText, nomText, prenomText, dateNaissanceText, pharmacieText, medecinText);
                     DatabaseId.updateData(userID, mailText);
+                    boolean insertionNotifReussie = notificationsDB.insertData((int) userID, "Action sur votre profil", "Votre avez actualisé les informations de votre profil. ", "profil");
+
                     Toast.makeText(ProfilModifActivity.this, getResources().getString(R.string.ienr), Toast.LENGTH_SHORT).show();
                     Intent intent = new Intent(ProfilModifActivity.this, ProfilActivity.class);
                     startActivity(intent);

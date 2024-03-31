@@ -12,10 +12,12 @@
         android:id="@+id/entete"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:paddingHorizontal="15dp"
         tools:context=".EnteteFragment">
 
         <ImageView
-            android:layout_marginLeft="25dp"
+            android:layout_marginLeft="18dp"
             android:layout_marginTop="24dp"
             android:id="@+id/retour"
             android:layout_width="wrap_content"
@@ -68,6 +70,7 @@
         android:layout_below="@id/entete"
         android:layout_marginLeft="10dp"
         android:layout_marginRight="10dp"
+        android:paddingHorizontal="25dp"
         android:layout_marginTop="10dp"
         android:orientation="vertical">
 
@@ -342,7 +345,6 @@
         android:layout_alignParentBottom="true"
         android:gravity="bottom"
         >
-
     </LinearLayout>
 
 

@@ -15,6 +15,7 @@ import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
 
 import fr.iut.sae_s4_01_app_mobile.bd.Identifiants;
+import fr.iut.sae_s4_01_app_mobile.bd.Notifications;
 import fr.iut.sae_s4_01_app_mobile.bd.Users;
 
 public class RegisterActivity2 extends AppCompatActivity {
@@ -34,6 +35,7 @@ public class RegisterActivity2 extends AppCompatActivity {
         setContentView(R.layout.activity_register2);
 
         ImageView flecheRetour = findViewById(R.id.retour);
+        Notifications notificationsDB = new Notifications(this);
         flecheRetour.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -102,6 +104,8 @@ public class RegisterActivity2 extends AppCompatActivity {
                         Boolean checkUserEmail = DatabaseIdentifiant.checkEmail(email_);
                         if (checkUserEmail == false) {
                             boolean successIdt = DatabaseIdentifiant.insertData(email_, password_, userID);
+                            boolean insertionNotifReussie = notificationsDB.insertData((int) userID, "Bienvenue !", "Nous sommes ravis de vous accueillir. Complétez votre profil !", "bienvenue");
+
                             Intent intent = new Intent(RegisterActivity2.this, LoginActivity.class);
                             Toast.makeText(RegisterActivity2.this, getString(R.string.account_created), Toast.LENGTH_SHORT).show();
                             startActivity(intent);

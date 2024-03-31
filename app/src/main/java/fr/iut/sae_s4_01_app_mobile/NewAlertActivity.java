@@ -20,6 +20,7 @@ import java.util.List;
 
 import fr.iut.sae_s4_01_app_mobile.bd.Alertes;
 import fr.iut.sae_s4_01_app_mobile.bd.Medicament;
+import fr.iut.sae_s4_01_app_mobile.bd.Notifications;
 
 public class NewAlertActivity extends AppCompatActivity {
     private Medicament medicamentDatabase;
@@ -28,7 +29,10 @@ public class NewAlertActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_createalert);
+
         Alertes alertesDB = new Alertes(this);
+        Notifications notificationsDB = new Notifications(this);
+
         medicamentDatabase = new Medicament(this);
         String codeCIP = getCodeCIP();
         String nomMedoc =  medicamentDatabase.getNomMedicamentByCodeCIP(codeCIP);
@@ -74,12 +78,18 @@ public class NewAlertActivity extends AppCompatActivity {
                 EditText messageTextView = findViewById(R.id.inputMessage);
                 String messageAlerte = messageTextView.getText().toString();
 
+                if (messageAlerte.isEmpty()) {
+                    messageAlerte = "Aucun message rédigé...";
+                }
                 UserId myApp = (UserId) getApplication();
                 int userID = myApp.getUserID();
 
                 if (userID != -1 && codeCIP != null && !raison.equals(getString(R.string.select_reason))) {
                     boolean insertionReussie = alertesDB.insertData(userID, Integer.parseInt(codeCIP), raison, messageAlerte);
-                    if (insertionReussie) {
+                    boolean insertionNotifReussie = notificationsDB.insertData((int) userID, "Enregistrement d'une alerte", "Votre alerte a bien été enregistrée. Merci pour votre contribution !", "alerte");
+                    boolean insertionNotifReussie2 = notificationsDB.insertData((int) userID, "Votre avis compte", "Nous aimerions avoir votre avis. Complétez ce sondage de Colombes !", "avis");
+
+                    if (insertionReussie && insertionNotifReussie && insertionNotifReussie2) {
                         Toast.makeText(NewAlertActivity.this, getString(R.string.insert_success), Toast.LENGTH_SHORT).show();
                         Intent intent = new Intent(NewAlertActivity.this, AccueilActivity.class);
                         startActivity(intent);

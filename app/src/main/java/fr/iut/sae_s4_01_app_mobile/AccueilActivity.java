@@ -1,6 +1,7 @@
 package fr.iut.sae_s4_01_app_mobile;
 
 import android.animation.ObjectAnimator;
+import android.annotation.SuppressLint;
 import android.content.Context;
 import android.content.Intent;
 import android.content.res.Configuration;
@@ -8,7 +9,11 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.view.animation.LinearInterpolator;
+import android.widget.Button;
+import android.widget.FrameLayout;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
+import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -27,7 +32,10 @@ public class AccueilActivity extends AppCompatActivity {
 
     private Users DatabaseUser;
     private Context context;
+    private boolean isFrench;
+    private ImageView btnFrancais, btnAnglais;
 
+    @SuppressLint("WrongViewCast")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -42,12 +50,21 @@ public class AccueilActivity extends AppCompatActivity {
 
         ImageView btnAncienne = findViewById(R.id.ancienneBtn);
         ImageView btnProfil = findViewById(R.id.userBtn);
+        ImageView btnNotif = (ImageView) findViewById(R.id.notifBtn);
         ImageView btnNuit = findViewById(R.id.nuitbtn);
         TextView btnAlertes = findViewById(R.id.btnAlertes);
         TextView btnPrenom = findViewById(R.id.prenom);
 
         String prenom = DatabaseUser.getPrenom(userID);
         btnPrenom.append(prenom);
+
+        btnNotif.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(AccueilActivity.this, NotificationActivity.class);
+                startActivity(intent);
+            }
+        });
 
         btnSaisie.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -144,6 +161,49 @@ public class AccueilActivity extends AppCompatActivity {
             ((TextView) findViewById(R.id.messageTV)).setText(alerteLaPlusRecente.getMessage());
             ((TextView) findViewById(R.id.dataTV)).setText(alerteLaPlusRecente.getDateAlerte());
         }
+
+        btnFrancais = findViewById(R.id.francais);
+        btnAnglais = findViewById(R.id.anglais);
+
+        String currentLanguage = Locale.getDefault().getLanguage();
+        isFrench = currentLanguage.equals("fr");
+
+        updateButtonVisibility(isFrench);
+        btnFrancais.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                setLocale("fr");
+                Intent intent = new Intent(AccueilActivity.this, AccueilActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        btnAnglais.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                setLocale("en");
+                Intent intent = new Intent(AccueilActivity.this, AccueilActivity.class);
+                startActivity(intent);
+            }
+        });
+    }
+
+    private void setLocale(String languageCode) {
+        Locale locale = new Locale(languageCode);
+        Locale.setDefault(locale);
+        Configuration configuration = new Configuration();
+        configuration.locale = locale;
+        getResources().updateConfiguration(configuration, getResources().getDisplayMetrics());
+    }
+
+    private void updateButtonVisibility(boolean isFrench) {
+        if (isFrench) {
+            btnFrancais.setVisibility(View.GONE);
+            btnAnglais.setVisibility(View.VISIBLE);
+        } else {
+            btnFrancais.setVisibility(View.VISIBLE);
+            btnAnglais.setVisibility(View.GONE);
+        }
     }
 
     private void toggleVisibility(View view) {
@@ -191,9 +251,6 @@ public class AccueilActivity extends AppCompatActivity {
             e.printStackTrace();
         }
     }
-
-
-
 
     @Override
     protected void onResume() {

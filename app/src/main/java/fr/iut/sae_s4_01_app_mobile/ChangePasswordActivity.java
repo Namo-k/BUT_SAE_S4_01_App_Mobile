@@ -10,6 +10,7 @@ import android.widget.EditText;
 import android.widget.Toast;
 
 import fr.iut.sae_s4_01_app_mobile.bd.Identifiants;
+import fr.iut.sae_s4_01_app_mobile.bd.Notifications;
 
 public class ChangePasswordActivity extends AppCompatActivity {
     private Identifiants DatabaseIdentifiant;
@@ -21,6 +22,7 @@ public class ChangePasswordActivity extends AppCompatActivity {
         setContentView(R.layout.activity_change_password);
 
         DatabaseIdentifiant = new Identifiants(ChangePasswordActivity.this);
+        Notifications notificationsDB = new Notifications(this);
 
         Intent intent = getIntent();
 
@@ -45,7 +47,12 @@ public class ChangePasswordActivity extends AppCompatActivity {
 
                     if (mdpStr.equals(mdpConfStr)) {
 
+                        UserId myApp = (UserId) getApplication();
+                        int userID = myApp.getUserID();
+
                         DatabaseIdentifiant.updatePassword(email, mdpStr);
+                        boolean insertionNotifReussie = notificationsDB.insertData((int) userID, "Sécurité de votre compte", "Votre mot de passe a été changé recémment. Si ce n'est pas vous, notifiez-le !", "mdp");
+
                         Intent intent = new Intent(ChangePasswordActivity.this, LoginActivity.class);
                         startActivity(intent);
                     }else{

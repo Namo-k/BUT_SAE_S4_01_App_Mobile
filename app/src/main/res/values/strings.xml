@@ -60,7 +60,7 @@
         <string name ="scan">Scannez-le !</string>
 
         <!--layout create alerte-->
-        <string name="info">Remplissez les information :</string>
+        <string name="info">Remplissez ces informations : </string>
         <string name="ty">Merci infiniment pour votre contribution !</string>
         <string name ="cip">Code CIP* :</string>
         <string name ="nom_medoc">Nom du médicament* :</string>
@@ -170,7 +170,7 @@
 
     <string name="ccmdp">Le mot de passe doit avoir au moins 8 caractères, une majuscule et un chiffre.</string>
     <string name="imdp">Les deux mots de passe ne sont pas identique</string>
-    <string name="vdata">Vous avez plutôt une DataMatrix ?.</string>
+    <string name="vdata">Vous avez plutôt une DataMatrix ?</string>
     <string name="ccip">Le numéro du CIS doit comporter 8 caractères.</string>
     <string name="ocip">Aucun médicament trouvé pour ce numéro CIS.</string>
 

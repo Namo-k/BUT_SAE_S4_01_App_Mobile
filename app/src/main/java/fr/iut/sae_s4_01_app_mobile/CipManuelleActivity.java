@@ -2,6 +2,7 @@ package fr.iut.sae_s4_01_app_mobile;
 
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.cardview.widget.CardView;
 
 import android.content.DialogInterface;
 import android.content.Intent;
@@ -40,6 +41,15 @@ public class CipManuelleActivity extends AppCompatActivity {
         textView.setText(spannableString);
         editCodeCIP = findViewById(R.id.editCodeCIP);
 
+        // Affichage des informations lors du clic sur le point d'interrogation
+        CardView interrogation1 = findViewById(R.id.interrogation1);
+        CardView interrogation1text = findViewById(R.id.interrogation1text);
+        interrogation1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                toggleVisibility(interrogation1text);
+            }
+        });
 
         TextView valider = findViewById(R.id.btnEnregistrer);
         EditText finalEditCodeCIP = editCodeCIP;
@@ -170,10 +180,13 @@ public class CipManuelleActivity extends AppCompatActivity {
             }
         });
 
+    }
 
-
-
-
-
+    private void toggleVisibility(View view) {
+        if (view.getVisibility() == View.VISIBLE) {
+            view.setVisibility(View.INVISIBLE);
+        } else {
+            view.setVisibility(View.VISIBLE);
+        }
     }
 }

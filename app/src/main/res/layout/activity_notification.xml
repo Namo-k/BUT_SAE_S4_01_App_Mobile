@@ -95,7 +95,7 @@
             android:layout_height="wrap_content"
             android:orientation="horizontal"
             android:layout_gravity="center"
-            android:layout_marginTop="0dp"
+            android:layout_marginTop="8dp"
             android:layout_marginHorizontal="15dp"
             android:layout_marginBottom="10dp">
 
@@ -106,78 +106,98 @@
                 android:orientation="vertical">
 
                 <TextView
-                    android:layout_width="230dp"
+                    android:layout_width="wrap_content"
                     android:layout_height="match_parent"
-                    android:gravity="left"
-                    android:text="@string/lesAlertes"
+                    android:gravity="center"
+                    android:text="Mes notifications"
                     android:textSize="21dp"
                     android:fontFamily="@font/patuaone_regular"
                     android:textColor="@color/darkBlue"
-                    android:layout_marginLeft="15dp"
-                />
+                    android:layout_marginLeft="20dp"
+                    />
 
                 <View
-                    android:layout_width="232dp"
+                    android:layout_width="195dp"
                     android:layout_height="1.5dp"
                     android:layout_marginTop="9dp"
                     android:layout_marginLeft="10dp"
                     android:background="@color/lightBlue"
-                />
+                    />
 
             </LinearLayout>
 
             <ImageView
                 android:layout_width="49dp"
                 android:layout_height="50dp"
-                android:src="@drawable/alertes"
-                android:layout_marginStart="56dp"
+                android:src="@drawable/notification_icone"
+                android:layout_marginStart="93dp"
                 android:layout_marginTop="6dp"
                 android:layout_gravity="end"
-            />
+                />
 
         </LinearLayout>
+
+
+
+
+
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
             android:layout_gravity="center"
-            android:layout_marginHorizontal="70dp"
-            android:layout_marginBottom="10dp">
+            android:layout_marginHorizontal="55dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="3dp">
 
             <TextView
-                android:id="@+id/nbTotalAlertes"
+                android:id="@+id/nbNotifications"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:gravity="center"
-                android:text="@string/nbAlertes"
+                android:text=""
                 android:textSize="16dp"
                 android:fontFamily="@font/inter_semibold"
                 android:textColor="@color/darkBlue"
-                android:layout_marginBottom="10dp"
                 />
-
 
         </LinearLayout>
 
-        <!--<TextView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:gravity="center"
-            android:text="Container page"
-            android:background="@color/lightBlue"
-        />-->
-
         <ListView
-            android:id="@+id/toutAlertelistView"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:id="@+id/notificationListView"
+            android:layout_width="wrap_content"
+            android:layout_height="425dp"
+            android:layout_marginTop="15dp"
             android:paddingRight="20dp"
             android:paddingLeft="20dp"
             android:paddingBottom="15dp"
-            android:divider="@color/white"
-            android:dividerHeight="17dp"
-        />
+            android:divider="#FFFFFF"
+            android:dividerHeight="20dp"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:layout_marginHorizontal="70dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"
+        >
+
+        <TextView
+            android:id="@+id/sondage"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="Accéder au sondage"
+            android:textSize="16dp"
+            android:visibility="gone"
+            android:fontFamily="@font/inter_semibold"
+            android:textColor="@color/darkBlue"
+            />
 
     </LinearLayout>
 
@@ -191,50 +211,47 @@
         android:background="@color/darkBlueLight"
         android:gravity="center">
 
-
-        <androidx.cardview.widget.CardView
-            android:layout_width="82dp"
-            android:layout_height="55dp"
-            app:cardBackgroundColor="@color/hover"
-            android:layout_marginEnd="30dp"
-            app:cardCornerRadius="17dp"
-            >
-
         <ImageView
             android:id="@+id/ancienneBtn"
             android:layout_width="48dp"
             android:layout_height="48dp"
-            android:src="@drawable/anciennes"
             android:layout_gravity="center_vertical"
             android:layout_marginStart="20dp"
-            android:layout_marginEnd="45dp"
             android:layout_marginTop="20dp"
-            android:layout_marginBottom="16dp" />
+            android:layout_marginEnd="45dp"
+            android:layout_marginBottom="16dp"
+            android:src="@drawable/anciennes" />
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="84dp"
+            android:layout_height="55dp"
+            android:layout_marginEnd="40dp"
+            app:cardBackgroundColor="@color/hover"
+            app:cardCornerRadius="17dp">
+
+            <ImageView
+                android:id="@+id/homeBtn"
+                android:layout_width="46dp"
+                android:layout_height="46dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="60dp"
+                android:layout_marginBottom="16dp"
+                android:src="@drawable/home" />
 
         </androidx.cardview.widget.CardView>
 
         <ImageView
-                android:id="@+id/homeBtn"
-                android:layout_width="46dp"
-                android:layout_height="46dp"
-                android:src="@drawable/home"
-                android:layout_marginStart="19dp"
-                android:layout_marginEnd="60dp"
-                android:layout_marginTop="5dp"
-                android:layout_marginBottom="3dp"
-                />
-
-        <ImageView
-            android:id="@+id/statBtn"
+            android:id="@+id/userBtn"
             android:layout_width="47dp"
             android:layout_height="47dp"
-            android:src="@drawable/stats"
-            android:layout_marginStart="7dp"
-            android:layout_marginEnd="16dp"
+            android:layout_marginStart="10dp"
             android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
             android:layout_marginBottom="16dp"
-            />
+            android:src="@drawable/user" />
 
     </LinearLayout>
+    <!-- ========== FIN NAVBAR =========== -->
 
 </LinearLayout>

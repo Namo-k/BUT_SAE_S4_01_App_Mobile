@@ -9,6 +9,7 @@
 
     <!-- ========== ENTETE =========== -->
     <LinearLayout
+        android:id="@+id/entete"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="0.23"
@@ -23,16 +24,10 @@
             app:cardCornerRadius="200dp"
             app:cardElevation="0dp">
 
-
-
-
             <ImageView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:src="@drawable/ovale_shape" />
-
-
-
 
             <ImageView
                 android:id="@+id/sedeconnecterBtn"
@@ -137,20 +132,42 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/accueil_phrase" />
 
+            <ImageView
+                android:id="@+id/colombes2"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="276.5dp"
+                android:layout_marginTop="-3.5dp"
+                android:src="@drawable/colombesgauche"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/anglais"
+                android:visibility="gone"
+                android:layout_width="27dp"
+                android:layout_height="27dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="354dp"
+                android:src="@drawable/anglais"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/francais"
+                android:visibility="gone"
+                android:layout_width="27dp"
+                android:layout_height="27dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="354dp"
+                android:src="@drawable/france"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
             <!-- ========== FIN ACCUEIL =========== -->
 
             <!-- ========== DEBUT SECTION ALERTE =========== -->
-
-            <!-- <ImageView
-               android:id="@+id/colombes2"
-               android:layout_width="70dp"
-               android:layout_height="70dp"
-               android:layout_gravity="center_vertical"
-               android:layout_marginStart="276dp"
-               android:layout_marginTop="-3.5dp"
-               android:src="@drawable/colombesgauche"
-               app:layout_constraintStart_toStartOf="parent"
-               app:layout_constraintTop_toTopOf="parent" /> -->
 
            <TextView
                android:id="@+id/alertes"
@@ -167,8 +184,8 @@
 
            <TextView
                android:id="@+id/ligne1"
-               android:layout_width="180dp"
-               android:layout_height="1.5dp"
+               android:layout_width="165dp"
+               android:layout_height="2dp"
                android:layout_marginStart="27dp"
                android:layout_marginTop="12dp"
                android:background="@color/lightBlue"
@@ -374,7 +391,7 @@
 
             <TextView
                 android:id="@+id/ligne2"
-                android:layout_width="210dp"
+                android:layout_width="185dp"
                 android:layout_height="2dp"
                 android:layout_marginStart="27dp"
                 android:layout_marginTop="12dp"
@@ -400,7 +417,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="27dp"
                 android:layout_marginEnd="27dp"
-                android:layout_marginTop="18dp"
+                android:layout_marginTop="15dp"
                 app:cardBackgroundColor="@color/lightBlueLight"
                 app:cardCornerRadius="20dp"
                 app:layout_constraintStart_toStartOf="parent"
@@ -456,7 +473,7 @@
                             android:layout_height="wrap_content"
                             android:layout_below="@+id/medicamentTV"
                             android:layout_marginStart="3dp"
-                            android:layout_marginTop="2dp"
+                            android:layout_marginTop="3.5dp"
                             android:layout_marginEnd="3dp"
                             android:layout_marginBottom="3dp"
                             android:fontFamily="@font/inter_medium"
@@ -469,7 +486,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginStart="3dp"
-                            android:layout_marginTop="2dp"
+                            android:layout_marginTop="3.5dp"
                             android:layout_marginEnd="3dp"
                             android:layout_marginBottom="3dp"
                             android:layout_below="@+id/medicamentTV"
@@ -485,7 +502,7 @@
                             android:layout_height="wrap_content"
                             android:layout_below="@+id/raisonLabelTV"
                             android:layout_marginStart="3dp"
-                            android:layout_marginTop="2dp"
+                            android:layout_marginTop="3.5dp"
                             android:layout_marginEnd="3dp"
                             android:layout_marginBottom="3dp"
                             android:fontFamily="@font/inter_medium"
@@ -499,7 +516,7 @@
                             android:layout_height="wrap_content"
                             android:layout_below="@+id/messageLabelTV"
                             android:layout_marginStart="3dp"
-                            android:layout_marginTop="0dp"
+                            android:layout_marginTop="1dp"
                             android:layout_marginEnd="3dp"
                             android:layout_marginBottom="5dp"
                             android:fontFamily="@font/inter"
@@ -552,14 +569,11 @@
 
             <ImageView
                 android:id="@+id/nuitbtn"
-                android:layout_width="43dp"
-                android:layout_height="43dp"
-                android:layout_gravity="center_vertical"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
                 android:src="@drawable/soleil"
-                tools:layout_editor_absoluteX="334dp"
-                tools:layout_editor_absoluteY="-1dp"
-                tools:ignore="MissingConstraints" />
-
+                tools:ignore="MissingConstraints"
+                />
 
             <!-- ========== FIN SECTION ANCIENNE ALERTE =========== -->/>
 
@@ -618,6 +632,7 @@
             android:src="@drawable/user" />
 
     </LinearLayout>
+
     <!-- ========== FIN NAVBAR =========== -->
 
 </LinearLayout>

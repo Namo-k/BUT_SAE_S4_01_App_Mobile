@@ -396,7 +396,7 @@
                     android:fontFamily="@font/inter_medium"
                     android:text="@string/information"
                     android:textColor="@color/textGrey"
-                    android:textSize="12.5dp"
+                    android:textSize="13dp"
                     tools:ignore="TextSizeCheck" />
 
                 <TextView
@@ -405,11 +405,12 @@
                     android:layout_height="wrap_content"
                     android:layout_below="@+id/langue"
                     android:layout_toRightOf="@+id/info1"
+                    android:layout_marginLeft="4dp"
                     android:layout_marginTop="23dp"
                     android:fontFamily="@font/inter_bold"
                     android:text="@string/obliger"
                     android:textColor="@color/red"
-                    android:textSize="12.6sp" />
+                    android:textSize="13sp" />
             </RelativeLayout>
 
         </androidx.cardview.widget.CardView>

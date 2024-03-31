@@ -3,6 +3,7 @@ package fr.iut.sae_s4_01_app_mobile;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
@@ -92,12 +93,26 @@ public class ProfilActivity extends AppCompatActivity {
             }
         });
 
-
-
-
-
-
-
+        TextView credits = findViewById(R.id.credits);
+        credits.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                AlertDialog.Builder builder = new AlertDialog.Builder(ProfilActivity.this);
+                LayoutInflater inflater = getLayoutInflater();
+                View dialogView = inflater.inflate(R.layout.dialogue_apropos, null);
+                builder.setView(dialogView);
+                builder.setPositiveButton("OK", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+                        Intent intent = new Intent(ProfilActivity.this, ProfilActivity.class);
+                        startActivity(intent);
+                        finish();
+                    }
+                });
+                AlertDialog dialog = builder.create();
+                dialog.show();
+            }
+        });
 
         // Affichage des informations lors du click sur point interrogation
         CardView interrogation1 = (CardView) findViewById(R.id.interrogation1);
@@ -163,8 +178,6 @@ public class ProfilActivity extends AppCompatActivity {
                 break;
         }
     }
-
-
 
     private void showConfirmationDialog(int userID) {
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
