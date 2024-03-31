@@ -166,6 +166,7 @@ id homeBtn
 id imageNotification
 id imageView
 id imgGauche
+id impotance
 id info1
 id info2
 id inputCip
@@ -388,10 +389,21 @@ string homme
 string ienr
 string imdp
 string imm
+string importance
 string info
 string information
 string insert_error
 string insert_success
+string insertion_notif_avis
+string insertion_notif_avis2
+string insertion_notif_beinvenu
+string insertion_notif_beinvenu2
+string insertion_notif_edit
+string insertion_notif_edit2
+string insertion_notif_reussie
+string insertion_notif_reussie2
+string insertion_notif_sec
+string insertion_notif_sec2
 string invalid_day
 string invalid_email
 string invalid_month
@@ -414,6 +426,7 @@ string modif
 string naissance
 string naissance_
 string nbAlertes
+string nbNotif
 string nb_data
 string nb_signal
 string nd_CIP
@@ -422,8 +435,10 @@ string no_medicament_found
 string nom
 string nom_
 string nom_medoc
+string nomsg
 string noom
 string noom_
+string notif
 string nouveau
 string nr
 string obliger
@@ -433,6 +448,7 @@ string other
 string ou
 string oublie
 string pcc
+string pertinance
 string pharma
 string pharma_
 string preenom
@@ -466,6 +482,7 @@ string selection
 string sexe
 string sexe_
 string situation
+string sonsage
 string stock_unavailable
 string suite
 string supp

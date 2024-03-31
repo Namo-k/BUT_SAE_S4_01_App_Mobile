@@ -28,12 +28,12 @@
         "source": "/Users/isra/.gradle/daemon/8.2/fr.iut.sae_s4_01_app_mobile.app-main-35:/font/patuaone_regular.ttf"
     },
     {
-        "merged": "/Users/isra/.gradle/daemon/8.2/fr.iut.sae_s4_01_app_mobile.app-merged_res-33:/drawable_utilisateur.png.flat",
-        "source": "/Users/isra/.gradle/daemon/8.2/fr.iut.sae_s4_01_app_mobile.app-main-35:/drawable/utilisateur.png"
-    },
-    {
         "merged": "/Users/isra/.gradle/daemon/8.2/fr.iut.sae_s4_01_app_mobile.app-merged_res-33:/layout_activity_reset_password.xml.flat",
         "source": "/Users/isra/.gradle/daemon/8.2/fr.iut.sae_s4_01_app_mobile.app-main-35:/layout/activity_reset_password.xml"
+    },
+    {
+        "merged": "/Users/isra/.gradle/daemon/8.2/fr.iut.sae_s4_01_app_mobile.app-merged_res-33:/drawable_utilisateur.png.flat",
+        "source": "/Users/isra/.gradle/daemon/8.2/fr.iut.sae_s4_01_app_mobile.app-main-35:/drawable/utilisateur.png"
     },
     {
         "merged": "/Users/isra/.gradle/daemon/8.2/fr.iut.sae_s4_01_app_mobile.app-merged_res-33:/mipmap-xxxhdpi_ic_launcher.webp.flat",
@@ -42,10 +42,6 @@
     {
         "merged": "/Users/isra/.gradle/daemon/8.2/fr.iut.sae_s4_01_app_mobile.app-merged_res-33:/layout_activity_login.xml.flat",
         "source": "/Users/isra/.gradle/daemon/8.2/fr.iut.sae_s4_01_app_mobile.app-main-35:/layout/activity_login.xml"
-    },
-    {
-        "merged": "fr.iut.sae_s4_01_app_mobile.app-merged_res-33:/layout_activity_register2.xml.flat",
-        "source": "fr.iut.sae_s4_01_app_mobile.app-main-35:/layout/activity_register2.xml"
     },
     {
         "merged": "/Users/isra/.gradle/daemon/8.2/fr.iut.sae_s4_01_app_mobile.app-merged_res-33:/mipmap-xxhdpi_ic_launcher.webp.flat",
@@ -66,6 +62,10 @@
     {
         "merged": "/Users/isra/.gradle/daemon/8.2/fr.iut.sae_s4_01_app_mobile.app-merged_res-33:/drawable_connexion.png.flat",
         "source": "/Users/isra/.gradle/daemon/8.2/fr.iut.sae_s4_01_app_mobile.app-main-35:/drawable/connexion.png"
+    },
+    {
+        "merged": "fr.iut.sae_s4_01_app_mobile.app-merged_res-33:/layout_activity_notification.xml.flat",
+        "source": "fr.iut.sae_s4_01_app_mobile.app-main-35:/layout/activity_notification.xml"
     },
     {
         "merged": "/Users/isra/.gradle/daemon/8.2/fr.iut.sae_s4_01_app_mobile.app-merged_res-33:/xml_backup_rules.xml.flat",
@@ -100,20 +100,20 @@
         "source": "/Users/isra/.gradle/daemon/8.2/fr.iut.sae_s4_01_app_mobile.app-main-35:/layout/item_tout_alerte.xml"
     },
     {
-        "merged": "/Users/isra/.gradle/daemon/8.2/fr.iut.sae_s4_01_app_mobile.app-merged_res-33:/drawable_cadenas.png.flat",
-        "source": "/Users/isra/.gradle/daemon/8.2/fr.iut.sae_s4_01_app_mobile.app-main-35:/drawable/cadenas.png"
-    },
-    {
         "merged": "/Users/isra/.gradle/daemon/8.2/fr.iut.sae_s4_01_app_mobile.app-merged_res-33:/drawable_oeilferme.png.flat",
         "source": "/Users/isra/.gradle/daemon/8.2/fr.iut.sae_s4_01_app_mobile.app-main-35:/drawable/oeilferme.png"
     },
     {
-        "merged": "/Users/isra/.gradle/daemon/8.2/fr.iut.sae_s4_01_app_mobile.app-merged_res-33:/layout_activity_profilmodif.xml.flat",
-        "source": "/Users/isra/.gradle/daemon/8.2/fr.iut.sae_s4_01_app_mobile.app-main-35:/layout/activity_profilmodif.xml"
+        "merged": "/Users/isra/.gradle/daemon/8.2/fr.iut.sae_s4_01_app_mobile.app-merged_res-33:/drawable_cadenas.png.flat",
+        "source": "/Users/isra/.gradle/daemon/8.2/fr.iut.sae_s4_01_app_mobile.app-main-35:/drawable/cadenas.png"
     },
     {
         "merged": "/Users/isra/.gradle/daemon/8.2/fr.iut.sae_s4_01_app_mobile.app-merged_res-33:/font_inter_semibold.ttf.flat",
         "source": "/Users/isra/.gradle/daemon/8.2/fr.iut.sae_s4_01_app_mobile.app-main-35:/font/inter_semibold.ttf"
+    },
+    {
+        "merged": "/Users/isra/.gradle/daemon/8.2/fr.iut.sae_s4_01_app_mobile.app-merged_res-33:/layout_activity_profilmodif.xml.flat",
+        "source": "/Users/isra/.gradle/daemon/8.2/fr.iut.sae_s4_01_app_mobile.app-main-35:/layout/activity_profilmodif.xml"
     },
     {
         "merged": "/Users/isra/.gradle/daemon/8.2/fr.iut.sae_s4_01_app_mobile.app-merged_res-33:/drawable_adresse.png.flat",

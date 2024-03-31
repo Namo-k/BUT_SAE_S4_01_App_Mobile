@@ -34,7 +34,7 @@ public class Alertes extends SQLiteOpenHelper {
 
     @Override
     public void onCreate(SQLiteDatabase db) {
-        db.execSQL("CREATE TABLE alertes (id integer PRIMARY KEY, codeCip INTEGER, idUser INTEGER, nomMedicament VARCHAR(255), raison VARCHAR(50), message VARCHAR(500),moyen VARCHAR(50), dateAlerte DATETIME DEFAULT (datetime('now')), FOREIGN KEY (idUser) REFERENCES users(id), FOREIGN KEY (codeCip) REFERENCES medicament(codeCip), FOREIGN KEY (nomMedicament) REFERENCES medicament(nomMedicament))");
+        db.execSQL("CREATE TABLE alertes (id integer PRIMARY KEY, codeCip INTEGER, idUser INTEGER, nomMedicament VARCHAR(255), raison VARCHAR(50), message VARCHAR(500), moyen VARCHAR(50), dateAlerte DATETIME DEFAULT (datetime('now')), important BOOLEAN , FOREIGN KEY (idUser) REFERENCES users(id), FOREIGN KEY (codeCip) REFERENCES medicament(codeCip), FOREIGN KEY (nomMedicament) REFERENCES medicament(nomMedicament))");
     }
 
 
@@ -59,6 +59,7 @@ public class Alertes extends SQLiteOpenHelper {
         valeurs.put("raison", raison);
         valeurs.put("message", message);
         valeurs.put("moyen", moyen);
+        valeurs.put("important", false); // Valeur par défaut pour "important"
         valeurs.put("dateAlerte", getCurrentDateTime()); // Ajout de la date et l'heure actuelles
 
         long resultat = maBaseDeDonnees.insert("alertes", null, valeurs);
@@ -380,5 +381,48 @@ public class Alertes extends SQLiteOpenHelper {
 
         return nombreAlertesSaisie;
     }
+
+
+    public boolean marquerImportanceTrue(long idAlerte) {
+        SQLiteDatabase db = this.getWritableDatabase();
+        ContentValues valeurs = new ContentValues();
+        valeurs.put("important", true);
+        int rowsAffected = db.update("alertes", valeurs, "id=?", new String[] { String.valueOf(idAlerte) });
+        return rowsAffected > 0;
+    }
+
+    public long getLastInsertedAlertId() {
+        SQLiteDatabase db = this.getReadableDatabase();
+        long idAlerte = -1;
+        Cursor cursor = db.rawQuery("SELECT last_insert_rowid() FROM alertes", null);
+        if (cursor != null && cursor.moveToFirst()) {
+            idAlerte = cursor.getLong(0);
+            cursor.close();
+        }
+        return idAlerte;
+    }
+
+    public List<Alerte> getAlertesImportantes(int idUser) {
+        List<Alerte> alertesImportantes = new ArrayList<>();
+        SQLiteDatabase db = this.getReadableDatabase();
+        Cursor cursor = db.rawQuery("SELECT * FROM alertes WHERE idUser = ? AND important = 1", new String[]{String.valueOf(idUser)});
+
+        if (cursor != null && cursor.moveToFirst()) {
+            do {
+                @SuppressLint("Range") int codeCip = cursor.getInt(cursor.getColumnIndex("codeCip"));
+                @SuppressLint("Range") String nomMedicament = cursor.getString(cursor.getColumnIndex("nomMedicament"));
+                @SuppressLint("Range") String raison = cursor.getString(cursor.getColumnIndex("raison"));
+                @SuppressLint("Range") String message = cursor.getString(cursor.getColumnIndex("message"));
+                @SuppressLint("Range") String dateAlerte = cursor.getString(cursor.getColumnIndex("dateAlerte"));
+
+                Alerte alerte = new Alerte(idUser, codeCip, idUser, nomMedicament, raison, message, dateAlerte);
+                alertesImportantes.add(alerte);
+            } while (cursor.moveToNext());
+            cursor.close();
+        }
+
+        return alertesImportantes;
+    }
+
 
 }

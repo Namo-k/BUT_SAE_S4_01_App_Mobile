@@ -17,6 +17,9 @@
     <string name="ancien">La plus ancienne</string>
     <string name="avoir">Vous avez  </string>
     <string name="ale">  alertes au total</string>
+    <string name="pertinance">Plus pertinent</string>
+
+
 
     <!--layout accueil-->
     <string name="text_dataMatrix"> Scanner le code <b>DataMatrix</b> </string>
@@ -69,6 +72,8 @@
     <string name="enregistrer">Enregistrer</string>
     <string name="information">* Ces informations sont </string>
     <string name="obliger">obligatoires</string>
+    <string name="importance"> Ce médicament est indispensable pour ma santé</string>
+
 
     <!--layout login-->
     <string name="compte">Vous avez déjà un compte ?</string>

@@ -56,6 +56,8 @@ public class AncienneAlerteFragment extends Fragment {
         List<String> spinnerItems = new ArrayList<>();
         spinnerItems.add(getResources().getString(R.string.recent));
         spinnerItems.add(getResources().getString(R.string.ancien));
+        spinnerItems.add(getResources().getString(R.string.pertinance));
+
 
         ArrayAdapter<String> adapter1 = new ArrayAdapter<>(getContext(), android.R.layout.simple_spinner_item, spinnerItems);
         adapter1.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
@@ -66,12 +68,28 @@ public class AncienneAlerteFragment extends Fragment {
             public void onItemSelected(AdapterView<?> parentView, View selectedItemView, int position, long id) {
                 String selectedItem = parentView.getItemAtPosition(position).toString();
                 if (selectedItem.equals(getResources().getString(R.string.recent))) {
-                    List<Alerte> alertes = alertesDb.getAllAlertesASC(userID, getContext());
+                    List<Alerte> alertes = alertesDb.getAllAlertesDESC(userID, getContext());
                     AlerteAdapter adapter = new AlerteAdapter(getContext(), alertes);
                     listView.setAdapter(adapter);
                 } else if (selectedItem.equals(getResources().getString(R.string.ancien))) {
-                    List<Alerte> alertes = alertesDb.getAllAlertesDESC(userID,getContext());
+                    List<Alerte> alertes = alertesDb.getAllAlertesASC(userID,getContext());
                     AlerteAdapter adapter = new AlerteAdapter(getContext(), alertes);
+                    listView.setAdapter(adapter);
+                }else if (selectedItem.equals(getResources().getString(R.string.pertinance))) {
+                    // Récupérer les alertes marquées comme importantes
+                    List<Alerte> alertesImportantes = alertesDb.getAlertesImportantes(userID);
+
+                    // Récupérer toutes les alertes
+                    List<Alerte> toutesLesAlertes = alertesDb.getAllAlertesASC(userID, getContext());
+
+                    // Supprimer les alertes importantes de la liste totale
+                    toutesLesAlertes.removeAll(alertesImportantes);
+
+                    // Ajouter les alertes importantes au début de la liste
+                    toutesLesAlertes.addAll(0, alertesImportantes);
+
+                    // Afficher la liste combinée dans la ListView
+                    AlerteAdapter adapter = new AlerteAdapter(getContext(), toutesLesAlertes);
                     listView.setAdapter(adapter);
                 }
             }

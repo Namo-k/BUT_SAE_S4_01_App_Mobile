@@ -5,6 +5,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ArrayAdapter;
+import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.Spinner;
@@ -95,6 +96,14 @@ public class NewAlertActivity extends AppCompatActivity {
 
                     if (insertionReussie && insertionNotifReussie && insertionNotifReussie2) {
                         Toast.makeText(NewAlertActivity.this, getString(R.string.insert_success), Toast.LENGTH_SHORT).show();
+                        long idAlerte = alertesDB.getLastInsertedAlertId();
+
+                        Toast.makeText(NewAlertActivity.this, "ID de l'alerte créée : " + String.valueOf(idAlerte), Toast.LENGTH_SHORT).show();
+
+                        CheckBox checkbox = findViewById(R.id.checkbox);
+                        if (checkbox.isChecked()) {
+                            alertesDB.marquerImportanceTrue(idAlerte);
+                        }
                         finish();
                     } else {
                         Toast.makeText(NewAlertActivity.this, getString(R.string.insert_error), Toast.LENGTH_SHORT).show();
@@ -152,10 +161,5 @@ public class NewAlertActivity extends AppCompatActivity {
 
     }
 
-    private void replaceFragment(Fragment fragment){
-        getSupportFragmentManager()
-                .beginTransaction()
-                .replace(R.id.container, fragment)
-                .commit();
-    }
+
 }

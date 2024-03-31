@@ -15,6 +15,8 @@
     <string name="ancien">The oldest</string>
     <string name="avoir">You have  </string>
     <string name="ale">  alerts in total</string>
+    <string name="pertinance">Most pertinent</string>
+
 
     <!--layout accueil-->
     <string name="text_dataMatrix">Scan the <b>DataMatrix</b></string>
@@ -68,6 +70,8 @@
     <string name="enregistrer">Save</string>
     <string name ="information">* This information is </string>
     <string name="obliger">mandatory</string>
+    <string name="importance"> This medicine is essential for my health</string>
+
 
     <!--layout login-->
     <string name="compte">Already have an account?</string>

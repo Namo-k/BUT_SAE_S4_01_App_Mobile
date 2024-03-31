@@ -69,9 +69,7 @@
         android:layout_height="match_parent"
         android:layout_below="@id/entete"
         android:layout_centerHorizontal="true"
-        android:layout_marginLeft="20dp"
-        android:paddingHorizontal="15dp"
-        android:layout_marginRight="20dp"
+        android:layout_marginHorizontal="25dp"
         android:layout_marginTop="10dp"
         android:orientation="vertical">
 
@@ -114,8 +112,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
-            android:paddingLeft="15dp"
-            android:paddingRight="15dp">
+            >
 
             <EditText
                 android:id="@+id/email"
@@ -169,8 +166,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
-            android:paddingLeft="15dp"
-            android:paddingRight="15dp">
+            >
 
             <EditText
                 android:id="@+id/mdp"

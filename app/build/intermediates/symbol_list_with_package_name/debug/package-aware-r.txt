@@ -3476,6 +3476,7 @@ id imageNotification
 id imageView
 id imgGauche
 id immediateStop
+id impotance
 id included
 id indeterminate
 id info
@@ -4239,10 +4240,21 @@ string icon_content_description
 string ienr
 string imdp
 string imm
+string importance
 string info
 string information
 string insert_error
 string insert_success
+string insertion_notif_avis
+string insertion_notif_avis2
+string insertion_notif_beinvenu
+string insertion_notif_beinvenu2
+string insertion_notif_edit
+string insertion_notif_edit2
+string insertion_notif_reussie
+string insertion_notif_reussie2
+string insertion_notif_sec
+string insertion_notif_sec2
 string invalid_day
 string invalid_email
 string invalid_month
@@ -4375,6 +4387,7 @@ string mtrl_timepicker_confirm
 string naissance
 string naissance_
 string nbAlertes
+string nbNotif
 string nb_data
 string nb_signal
 string nd_CIP
@@ -4383,8 +4396,10 @@ string no_medicament_found
 string nom
 string nom_
 string nom_medoc
+string nomsg
 string noom
 string noom_
+string notif
 string nouveau
 string nr
 string obliger
@@ -4399,6 +4414,7 @@ string path_password_eye_mask_strike_through
 string path_password_eye_mask_visible
 string path_password_strike_through
 string pcc
+string pertinance
 string pharma
 string pharma_
 string preenom
@@ -4438,6 +4454,7 @@ string sexe_
 string side_sheet_accessibility_pane_title
 string side_sheet_behavior
 string situation
+string sonsage
 string status_bar_notification_info_overflow
 string stock_unavailable
 string suite

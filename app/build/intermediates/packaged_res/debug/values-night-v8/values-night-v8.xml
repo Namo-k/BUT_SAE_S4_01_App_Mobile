@@ -49,7 +49,7 @@
     <string name="back">Êtes-vous sûr de vouloir retourner en arriere ? Votre saisie sera annulée.</string>
     <string name="bienvenue">Bienvenue !</string>
     <string name="cancel_confirmation">Êtes-vous sûr de vouloir retourner en arrière ? Votre saisie sera annulée.</string>
-    <string name="ccip">Le numéro du CIS doit comporter 8 caractères.</string>
+    <string name="ccip">Le numéro du CIS doit comporter 13 caractères.</string>
     <string name="ccmdp">Le mot de passe doit avoir au moins 8 caractères, une majuscule et un chiffre.</string>
     <string name="cip">Code CIP* :</string>
     <string name="cip_code">Le code CIP : </string>
@@ -87,10 +87,21 @@
     <string name="ienr">Vos informations ont bien été enregistré</string>
     <string name="imdp">Les deux mots de passe ne sont pas identique</string>
     <string name="imm">Votre email ou mot de passe est incorrect</string>
+    <string name="importance"> Ce médicament est indispensable pour ma santé</string>
     <string name="info">Remplissez ces informations : </string>
     <string name="information">* Ces informations sont </string>
     <string name="insert_error">Erreur lors de l`insertion de l`alerte.</string>
     <string name="insert_success">Alerte insérée avec succès!</string>
+    <string name="insertion_notif_avis">Nous aimerions avoir votre avis. Complétez ce sondage de Colombes !</string>
+    <string name="insertion_notif_avis2">Votre avis compte</string>
+    <string name="insertion_notif_beinvenu">Nous sommes ravis de vous accueillir. Complétez votre profil !</string>
+    <string name="insertion_notif_beinvenu2">Bienvenue !</string>
+    <string name="insertion_notif_edit">Votre avez actualisé les informations de votre profil.</string>
+    <string name="insertion_notif_edit2">Action sur votre profil</string>
+    <string name="insertion_notif_reussie">Votre alerte a bien été enregistrée. Merci pour votre contribution !</string>
+    <string name="insertion_notif_reussie2">Enregistrement d`une alerte</string>
+    <string name="insertion_notif_sec">Votre mot de passe a été changé recémment. Si ce n`est pas vous, notifiez-le !</string>
+    <string name="insertion_notif_sec2">Sécurité de votre compte</string>
     <string name="invalid_day">Le jour saisi n`est pas conforme</string>
     <string name="invalid_email">Adresse email non valide</string>
     <string name="invalid_month">Le mois saisi n`est pas conforme</string>
@@ -113,6 +124,7 @@
     <string name="naissance">Naissance* :</string>
     <string name="naissance_">JJ/MM/AAAA</string>
     <string name="nbAlertes">Total de X alertes</string>
+    <string name="nbNotif"> notifications au total</string>
     <string name="nb_data">Scan DataMatrix :</string>
     <string name="nb_signal">Nombre de signalements :</string>
     <string name="nd_CIP">Nombre de saisie CIP :</string>
@@ -121,8 +133,10 @@
     <string name="nom">Nom* : </string>
     <string name="nom_">Nom de famille</string>
     <string name="nom_medoc">Nom du médicament* :</string>
+    <string name="nomsg">Aucun message rédigé...</string>
     <string name="noom"> Votre nom : </string>
     <string name="noom_">Nom...</string>
+    <string name="notif">Mes notifications</string>
     <string name="nouveau">Vous êtes nouveau ?</string>
     <string name="nr">Non renseigné</string>
     <string name="obliger">obligatoires</string>
@@ -132,6 +146,7 @@
     <string name="ou">OU</string>
     <string name="oublie">MOT DE PASSE OUBLIÉ ?</string>
     <string name="pcc">"Êtes-vous sûr de vouloir accéder à votre profil ? Votre saisie sera annulée."</string>
+    <string name="pertinance">Plus pertinent</string>
     <string name="pharma">Pharmacie préférée :</string>
     <string name="pharma_">Pharmacie préférée</string>
     <string name="preenom"> Votre prénom : </string>
@@ -165,6 +180,7 @@
     <string name="sexe">Sexe* : </string>
     <string name="sexe_">Sexe </string>
     <string name="situation">Expliquez nous votre situation...</string>
+    <string name="sonsage">Accéder au sondages</string>
     <string name="stock_unavailable">Stock indisponible</string>
     <string name="suite">Passer à la suite...</string>
     <string name="supp">Supprimer mon compte</string>
