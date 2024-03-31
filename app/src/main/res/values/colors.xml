@@ -7,7 +7,10 @@
 
 
     <color name="textDarkBlue">#03008C</color>
+    <color name="textDarkBluenuit">#03008C</color>
     <color name="darkBlue">#3A4388</color>
+
+    @color/textDarkBlue"
     <color name="darkBlueLight">#4A55A2</color>
 
     <color name="darkBlueLightnuit">#4A55A2</color>

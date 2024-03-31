@@ -1,6 +1,6 @@
 <!-- spinner_background.xml -->
 <shape xmlns:android="http://schemas.android.com/apk/res/android"
     android:shape="rectangle">
-    <solid android:color="#FFFFFF" />
+    <solid android:color="@color/whitenuit" />
     <corners android:radius="11dp" /> <!-- Ajustez la valeur de radius selon vos préférences -->
 </shape>
