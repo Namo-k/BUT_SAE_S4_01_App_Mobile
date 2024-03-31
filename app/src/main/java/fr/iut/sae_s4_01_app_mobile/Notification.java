@@ -61,7 +61,15 @@ public class Notification {
         try {
             SimpleDateFormat sourceFormat = new SimpleDateFormat("yyyy-MM-dd", Locale.FRENCH);
             Date date = sourceFormat.parse(dateNotif);
-            SimpleDateFormat targetFormat = new SimpleDateFormat("d MMMM yyyy", Locale.FRENCH);
+
+            Locale targetLocale = Locale.getDefault();
+            SimpleDateFormat targetFormat;
+
+            if (Locale.getDefault().getLanguage().equals("fr")) {
+                targetFormat = new SimpleDateFormat("d MMMM yyyy", Locale.FRENCH);
+            } else {
+                targetFormat = new SimpleDateFormat("MMMM d, yyyy", Locale.ENGLISH);
+            }
             return targetFormat.format(date);
         } catch (Exception e) {
             e.printStackTrace();

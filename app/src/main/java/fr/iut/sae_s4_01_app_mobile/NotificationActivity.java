@@ -1,5 +1,7 @@
 package fr.iut.sae_s4_01_app_mobile;
 
+import static java.security.AccessController.getContext;
+
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -33,9 +35,9 @@ public class NotificationActivity extends AppCompatActivity {
         Notifications notificationsdB = new Notifications(this);
         int totalNotifCount = notificationsdB.getNombreTotalAlertes(userID);
 
-        List<Notification> notifications = notificationsdB.getAllNotifications(userID);
+        List<Notification> notifications = notificationsdB.getAllNotifications(userID,this);
 
-        nbNotification_.append("Vous avez " + totalNotifCount +  " notifications au total");
+        nbNotification_.append(getResources().getString(R.string.avoir) + totalNotifCount +  getResources().getString(R.string.nbNotif));
 
         NotificationAdapter adapter = new NotificationAdapter(this, notifications, R.layout.item_notification);
         listView.setAdapter(adapter);

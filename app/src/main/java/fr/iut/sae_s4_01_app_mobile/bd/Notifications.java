@@ -16,6 +16,7 @@ import java.util.List;
 import java.util.Locale;
 
 import fr.iut.sae_s4_01_app_mobile.Notification;
+import fr.iut.sae_s4_01_app_mobile.R;
 
 public class Notifications extends SQLiteOpenHelper {
     private static final String databaseName = "db_notifications";
@@ -63,7 +64,7 @@ public class Notifications extends SQLiteOpenHelper {
         return count;
     }
 
-    public List<Notification> getAllNotifications(int idUser) {
+    public List<Notification> getAllNotifications(int idUser, Context context) {
         List<Notification> listeNotifications = new ArrayList<>();
         SQLiteDatabase db = this.getReadableDatabase();
         Cursor cursor = db.rawQuery("SELECT * FROM notifications where idUser = ? ORDER BY id DESC", new String[] {String.valueOf(idUser)});
@@ -75,7 +76,84 @@ public class Notifications extends SQLiteOpenHelper {
                 @SuppressLint("Range") String categorie = cursor.getString(cursor.getColumnIndex("categorie"));
                 @SuppressLint("Range") String dateNotif = cursor.getString(cursor.getColumnIndex("dateNotif"));
 
-                Notification notifications = new Notification(id, idUser, title, notification, categorie, dateNotif);
+                String newTitle;
+                switch (title) {
+                    case "Enregistrement d`une alerte":
+                        newTitle = context.getResources().getString(R.string.insertion_notif_reussie2);
+                        break;
+                    case "Enregistrement d'une alerte":
+                        newTitle = context.getResources().getString(R.string.insertion_notif_reussie2);
+                        break;
+                    case "Recording an alert":
+                        newTitle = context.getResources().getString(R.string.insertion_notif_reussie2);
+                        break;
+                    case "Votre avis compte":
+                        newTitle = context.getResources().getString(R.string.insertion_notif_avis2);
+                        break;
+                    case "Your opinion matters":
+                        newTitle = context.getResources().getString(R.string.insertion_notif_avis2);
+                        break;
+                    case "Action sur votre profil":
+                        newTitle = context.getResources().getString(R.string.insertion_notif_edit2);
+                        break;
+                    case "Action on your profile":
+                        newTitle = context.getResources().getString(R.string.insertion_notif_edit2);
+                        break;
+                    case "Bienvenue !":
+                        newTitle = context.getResources().getString(R.string.insertion_notif_beinvenu2);
+                        break;
+                    case "Welcome!":
+                        newTitle = context.getResources().getString(R.string.insertion_notif_beinvenu2);
+                        break;
+                    case "Sécurité de votre compte":
+                        newTitle = context.getResources().getString(R.string.insertion_notif_sec2);
+                        break;
+                    case "Account security":
+                        newTitle = context.getResources().getString(R.string.insertion_notif_sec2);
+                        break;
+                    default:
+                        newTitle = title;
+                        break;
+                }
+
+                String newNotif;
+                switch (notification) {
+                    case "Votre alerte a bien été enregistrée. Merci pour votre contribution !":
+                        newNotif = context.getResources().getString(R.string.insertion_notif_reussie);
+                        break;
+                    case "Your alert has been successfully recorded. Thank you for your contribution!":
+                        newNotif = context.getResources().getString(R.string.insertion_notif_reussie);
+                        break;
+                    case "Nous aimerions avoir votre avis. Complétez ce sondage de Colombes !":
+                        newNotif = context.getResources().getString(R.string.insertion_notif_avis);
+                        break;
+                    case "We would like to hear your opinion. Complete this Colombes survey!":
+                        newNotif = context.getResources().getString(R.string.insertion_notif_avis);
+                        break;
+                    case "Votre avez actualisé les informations de votre profil.":
+                        newNotif = context.getResources().getString(R.string.insertion_notif_edit);
+                        break;
+                    case "You have updated your profile information.":
+                        newNotif = context.getResources().getString(R.string.insertion_notif_edit);
+                        break;
+                    case "Nous sommes ravis de vous accueillir. Complétez votre profil !":
+                        newNotif = context.getResources().getString(R.string.insertion_notif_beinvenu);
+                        break;
+                    case "We are delighted to welcome you. Complete your profile!":
+                        newNotif = context.getResources().getString(R.string.insertion_notif_beinvenu);
+                        break;
+                    case "Votre mot de passe a été changé recémment. Si ce n`est pas vous, notifiez-le !":
+                        newNotif = context.getResources().getString(R.string.insertion_notif_sec);
+                        break;
+                    case "Your password has been changed recently. If this wasn`t you, please notify us!":
+                        newNotif = context.getResources().getString(R.string.insertion_notif_sec);
+                        break;
+                    default:
+                        newNotif = notification;
+                        break;
+                }
+
+                Notification notifications = new Notification(id, idUser, newTitle, newNotif, categorie, dateNotif);
                 listeNotifications.add(notifications);
             } while (cursor.moveToNext());
         }

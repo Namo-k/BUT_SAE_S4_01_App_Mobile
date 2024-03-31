@@ -134,7 +134,20 @@ public class Alertes extends SQLiteOpenHelper {
                         break;
                 }
 
-                Alerte alerte = new Alerte(idUser, codeCip, idUser, nomMedicament, newRaison, message, dateAlerte);
+                String msg;
+                switch (message) {
+                    case "Aucun message rédigé...":
+                        msg = context.getResources().getString(R.string.nomsg);
+                        break;
+                    case "No message written...":
+                        msg = context.getResources().getString(R.string.nomsg);
+                        break;
+                    default:
+                        msg = message;
+                        break;
+                }
+
+                Alerte alerte = new Alerte(idUser, codeCip, idUser, nomMedicament, newRaison, msg, dateAlerte);
                 listeAlertes.add(alerte);
             } while (cursor.moveToNext());
         }
@@ -192,7 +205,20 @@ public class Alertes extends SQLiteOpenHelper {
                         break;
                 }
 
-                Alerte alerte = new Alerte(idUser, codeCip, idUser, nomMedicament, newRaison, message, dateAlerte);
+                String msg;
+                switch (raison) {
+                    case "Aucun message rédigé...":
+                        msg = context.getResources().getString(R.string.nomsg);
+                        break;
+                    case "No message written...":
+                        msg = context.getResources().getString(R.string.nomsg);
+                        break;
+                    default:
+                        msg = message;
+                        break;
+                }
+
+                Alerte alerte = new Alerte(idUser, codeCip, idUser, nomMedicament, newRaison, msg, dateAlerte);
                 listeAlertes.add(alerte);
             } while (cursor.moveToNext());
         }

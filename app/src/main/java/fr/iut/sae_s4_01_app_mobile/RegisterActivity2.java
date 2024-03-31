@@ -104,7 +104,7 @@ public class RegisterActivity2 extends AppCompatActivity {
                         Boolean checkUserEmail = DatabaseIdentifiant.checkEmail(email_);
                         if (checkUserEmail == false) {
                             boolean successIdt = DatabaseIdentifiant.insertData(email_, password_, userID);
-                            boolean insertionNotifReussie = notificationsDB.insertData((int) userID, "Bienvenue !", "Nous sommes ravis de vous accueillir. Complétez votre profil !", "bienvenue");
+                            boolean insertionNotifReussie = notificationsDB.insertData((int) userID, getResources().getString(R.string.insertion_notif_beinvenu2), getResources().getString(R.string.insertion_notif_beinvenu), "bienvenue");
 
                             Intent intent = new Intent(RegisterActivity2.this, LoginActivity.class);
                             Toast.makeText(RegisterActivity2.this, getString(R.string.account_created), Toast.LENGTH_SHORT).show();

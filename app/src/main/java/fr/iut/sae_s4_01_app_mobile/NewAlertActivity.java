@@ -83,15 +83,15 @@ public class NewAlertActivity extends AppCompatActivity {
                 String messageAlerte = messageTextView.getText().toString();
 
                 if (messageAlerte.isEmpty()) {
-                    messageAlerte = "Aucun message rédigé...";
+                    messageAlerte = getResources().getString(R.string.nomsg);
                 }
                 UserId myApp = (UserId) getApplication();
                 int userID = myApp.getUserID();
 
                 if (userID != -1 && codeCIP != null && !raison.equals(getString(R.string.select_reason))) {
                     boolean insertionReussie = alertesDB.insertData(userID, codeCIP, raison, messageAlerte, moyen);
-                    boolean insertionNotifReussie = notificationsDB.insertData((int) userID, "Enregistrement d'une alerte", "Votre alerte a bien été enregistrée. Merci pour votre contribution !", "alerte");
-                    boolean insertionNotifReussie2 = notificationsDB.insertData((int) userID, "Votre avis compte", "Nous aimerions avoir votre avis. Complétez ce sondage de Colombes !", "avis");
+                    boolean insertionNotifReussie = notificationsDB.insertData((int) userID, getResources().getString(R.string.insertion_notif_reussie2), getResources().getString(R.string.insertion_notif_reussie), "alerte");
+                    boolean insertionNotifReussie2 = notificationsDB.insertData((int) userID, getResources().getString(R.string.insertion_notif_avis2), getResources().getString(R.string.insertion_notif_avis), "avis");
 
                     if (insertionReussie && insertionNotifReussie && insertionNotifReussie2) {
                         Toast.makeText(NewAlertActivity.this, getString(R.string.insert_success), Toast.LENGTH_SHORT).show();

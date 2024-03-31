@@ -218,6 +218,26 @@
     <string name="old_alert_confirmation">Are you sure you want to access the old alert page? Your input will be discarded.</string>
     <string name="profile_confirmation">Are you sure you want to access your profile? Your input will be discarded.</string>
 
+    <string name="nomsg">No message written...</string>
+    <string name="insertion_notif_reussie">Your alert has been successfully recorded. Thank you for your contribution!</string>
+    <string name="insertion_notif_reussie2">Recording an alert</string>
+    <string name="insertion_notif_avis">We would like to hear your opinion. Complete this Colombes survey!</string>
+    <string name="insertion_notif_avis2">Your opinion matters</string>
+
+    <string name="nbNotif">notifications in total</string>
+
+    <string name="notif">My notifications</string>
+
+    <string name="sonsage">Access surveys</string>
+    <string name="insertion_notif_edit">You have updated your profile information.</string>
+    <string name="insertion_notif_edit2">Action on your profile</string>
+    <!-- WELCOME NOTIF-->
+    <string name="insertion_notif_beinvenu">We are delighted to welcome you. Complete your profile!</string>
+    <string name="insertion_notif_beinvenu2">Welcome!</string>
+    <!-- PASSWORD NOTIF-->
+    <string name="insertion_notif_sec">Your password has been changed recently. If this wasn`t you, please notify us!</string>
+    <string name="insertion_notif_sec2">Account security</string>
+
 
 
 

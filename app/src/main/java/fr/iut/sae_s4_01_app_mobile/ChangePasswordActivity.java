@@ -51,7 +51,7 @@ public class ChangePasswordActivity extends AppCompatActivity {
                         int userID = myApp.getUserID();
 
                         DatabaseIdentifiant.updatePassword(email, mdpStr);
-                        boolean insertionNotifReussie = notificationsDB.insertData((int) userID, "Sécurité de votre compte", "Votre mot de passe a été changé recémment. Si ce n'est pas vous, notifiez-le !", "mdp");
+                        boolean insertionNotifReussie = notificationsDB.insertData((int) userID, getResources().getString(R.string.insertion_notif_sec2), getResources().getString(R.string.insertion_notif_sec), "mdp");
 
                         Intent intent = new Intent(ChangePasswordActivity.this, LoginActivity.class);
                         startActivity(intent);

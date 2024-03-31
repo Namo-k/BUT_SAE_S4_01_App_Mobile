@@ -220,5 +220,28 @@
     <string name="old_alert_confirmation">Êtes-vous sûr de vouloir accéder à la page d`ancienne alerte ? Votre saisie sera annulée.</string>
     <string name="profile_confirmation">Êtes-vous sûr de vouloir accéder à votre profil ? Votre saisie sera annulée.</string>
 
+    <string name="nomsg">Aucun message rédigé...</string>
+
+    <string name="nbNotif"> notifications au total</string>
+
+    <string name="notif">Mes notifications</string>
+    <string name="sonsage">Accéder au sondages</string>
+
+    <!-- ALERTE NOTIF-->
+    <string name="insertion_notif_reussie">Votre alerte a bien été enregistrée. Merci pour votre contribution !</string>
+    <string name="insertion_notif_reussie2">Enregistrement d`une alerte</string>
+    <!-- AVIS NOTIF-->
+    <string name="insertion_notif_avis">Nous aimerions avoir votre avis. Complétez ce sondage de Colombes !</string>
+    <string name="insertion_notif_avis2">Votre avis compte</string>
+    <!-- EDIT NOTIF-->
+    <string name="insertion_notif_edit">Votre avez actualisé les informations de votre profil.</string>
+    <string name="insertion_notif_edit2">Action sur votre profil</string>
+    <!-- WELCOME NOTIF-->
+    <string name="insertion_notif_beinvenu">Nous sommes ravis de vous accueillir. Complétez votre profil !</string>
+    <string name="insertion_notif_beinvenu2">Bienvenue !</string>
+    <!-- MDP NOTIF-->
+    <string name="insertion_notif_sec">Votre mot de passe a été changé recémment. Si ce n`est pas vous, notifiez-le !</string>
+    <string name="insertion_notif_sec2">Sécurité de votre compte</string>
+
 
 </resources>

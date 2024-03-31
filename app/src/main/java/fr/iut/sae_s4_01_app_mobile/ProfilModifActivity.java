@@ -97,7 +97,7 @@ public class ProfilModifActivity extends AppCompatActivity {
                     if (medecinText.isEmpty()) { medecinText = getResources().getString(R.string.nr); }
                     DatabaseUser.updateData(userID, sexeText, nomText, prenomText, dateNaissanceText, pharmacieText, medecinText);
                     DatabaseId.updateData(userID, mailText);
-                    boolean insertionNotifReussie = notificationsDB.insertData((int) userID, "Action sur votre profil", "Votre avez actualisé les informations de votre profil. ", "profil");
+                    boolean insertionNotifReussie = notificationsDB.insertData((int) userID, getResources().getString(R.string.insertion_notif_edit2), getResources().getString(R.string.insertion_notif_edit), "profil");
 
                     Toast.makeText(ProfilModifActivity.this, getResources().getString(R.string.ienr), Toast.LENGTH_SHORT).show();
                     setResult(Activity.RESULT_OK);
