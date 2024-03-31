@@ -24,6 +24,9 @@
             android:name=".ChangePasswordActivity"
             android:exported="false" />
         <activity
+            android:name=".MainActivity"
+            android:exported="false"/>
+        <activity
             android:name=".ResetCodeActivity"
             android:exported="false" />
         <activity

@@ -20,28 +20,13 @@ public class ToutAlerteActivity extends AppCompatActivity {
         setContentView(R.layout.activity_tout_alerte);
 
         // Bouton de la navbar
-        ImageView btnHome = (ImageView) findViewById(R.id.homeBtn);
-        ImageView btnStat = (ImageView) findViewById(R.id.statBtn);
+
         TextView nbTotalAlertes = (TextView) findViewById(R.id.nbTotalAlertes);
 
         UserId myApp = (UserId) getApplication();
         int userID = myApp.getUserID();
         Alertes alertesDb = new Alertes(this);
-        btnHome.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(ToutAlerteActivity.this, AccueilAdminActivity.class);
-                startActivity(intent);
-            }
-        });
 
-        btnStat.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(ToutAlerteActivity.this, ProfilActivity.class);
-                startActivity(intent);
-            }
-        });
 
         // se deconnecter
         ImageView sedeconnecterBtn = findViewById(R.id.sedeconnecterBtn);

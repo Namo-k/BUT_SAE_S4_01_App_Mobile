@@ -20,6 +20,7 @@ import android.widget.Toast;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.cardview.widget.CardView;
+import androidx.fragment.app.Fragment;
 
 import java.util.Locale;
 
@@ -34,6 +35,8 @@ public class ProfilModifActivity extends AppCompatActivity {
     Spinner spinner;
     public String[] languages;
     String sexe_;
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -130,8 +133,8 @@ public class ProfilModifActivity extends AppCompatActivity {
                     boolean insertionNotifReussie = notificationsDB.insertData((int) userID, "Action sur votre profil", "Votre avez actualisé les informations de votre profil. ", "profil");
 
                     Toast.makeText(ProfilModifActivity.this, getResources().getString(R.string.ienr), Toast.LENGTH_SHORT).show();
-                    Intent intent = new Intent(ProfilModifActivity.this, ProfilActivity.class);
-                    startActivity(intent);
+
+                    finish();
                 }
             }
         });
@@ -156,8 +159,8 @@ public class ProfilModifActivity extends AppCompatActivity {
                 builder.setPositiveButton(getResources().getString(R.string.Oui), new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
-                        Intent intent = new Intent(ProfilModifActivity.this, ProfilActivity.class);
-                        startActivity(intent);
+                        finish();
+
                     }
                 });
                 builder.setNegativeButton(getResources().getString(R.string.Non), new DialogInterface.OnClickListener() {
@@ -212,9 +215,10 @@ public class ProfilModifActivity extends AppCompatActivity {
 
     }
 
-    private void updateUI() {
-        EditText sexe = findViewById(R.id.sexeEdit);
-        sexe.setText(sexe_);
+    private void replaceFragment(Fragment fragment){
+        getSupportFragmentManager()
+                .beginTransaction()
+                .replace(R.id.container, fragment)
+                .commit();
     }
-
 }

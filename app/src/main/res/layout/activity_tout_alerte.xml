@@ -184,57 +184,5 @@
     <!-- ========== FIN PAGE =========== -->
 
     <!-- ========== NAVBAR =========== -->
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="68dp"
-        android:layout_gravity="bottom"
-        android:background="@color/darkBlueLight"
-        android:gravity="center">
-
-
-        <androidx.cardview.widget.CardView
-            android:layout_width="82dp"
-            android:layout_height="55dp"
-            app:cardBackgroundColor="@color/hover"
-            android:layout_marginEnd="30dp"
-            app:cardCornerRadius="17dp"
-            >
-
-        <ImageView
-            android:id="@+id/ancienneBtn"
-            android:layout_width="48dp"
-            android:layout_height="48dp"
-            android:src="@drawable/anciennes"
-            android:layout_gravity="center_vertical"
-            android:layout_marginStart="20dp"
-            android:layout_marginEnd="45dp"
-            android:layout_marginTop="20dp"
-            android:layout_marginBottom="16dp" />
-
-        </androidx.cardview.widget.CardView>
-
-        <ImageView
-                android:id="@+id/homeBtn"
-                android:layout_width="46dp"
-                android:layout_height="46dp"
-                android:src="@drawable/home"
-                android:layout_marginStart="19dp"
-                android:layout_marginEnd="60dp"
-                android:layout_marginTop="5dp"
-                android:layout_marginBottom="3dp"
-                />
-
-        <ImageView
-            android:id="@+id/statBtn"
-            android:layout_width="47dp"
-            android:layout_height="47dp"
-            android:src="@drawable/stats"
-            android:layout_marginStart="7dp"
-            android:layout_marginEnd="16dp"
-            android:layout_marginTop="16dp"
-            android:layout_marginBottom="16dp"
-            />
-
-    </LinearLayout>
 
 </LinearLayout>

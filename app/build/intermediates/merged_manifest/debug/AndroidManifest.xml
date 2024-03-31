@@ -58,6 +58,9 @@
             android:name="fr.iut.sae_s4_01_app_mobile.ChangePasswordActivity"
             android:exported="false" />
         <activity
+            android:name="fr.iut.sae_s4_01_app_mobile.MainActivity"
+            android:exported="false" />
+        <activity
             android:name="fr.iut.sae_s4_01_app_mobile.ResetCodeActivity"
             android:exported="false" />
         <activity
@@ -218,13 +221,14 @@
         <activity
             android:name="fr.iut.sae_s4_01_app_mobile.ToutAlerteActivity"
             android:exported="true" >
-
-            <!--
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-            -->
+        </activity>
+        <activity
+            android:name="fr.iut.sae_s4_01_app_mobile.NotificationActivity"
+            android:exported="true" >
+        </activity>
+        <activity
+            android:name="fr.iut.sae_s4_01_app_mobile.SondageActivity"
+            android:exported="true" >
         </activity>
         <activity
             android:name="com.journeyapps.barcodescanner.CaptureActivity"

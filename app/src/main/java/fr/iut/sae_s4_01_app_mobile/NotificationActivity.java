@@ -8,6 +8,7 @@ import android.widget.ListView;
 import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.fragment.app.Fragment;
 
 import java.util.List;
 
@@ -55,10 +56,9 @@ public class NotificationActivity extends AppCompatActivity {
             }
         });
 
-        ImageView btnAncienne = (ImageView) findViewById(R.id.ancienneBtn);
-        ImageView btnProfil = (ImageView) findViewById(R.id.userBtn);
+
         ImageView btnNotif = (ImageView) findViewById(R.id.notifBtn);
-        ImageView btnHome = (ImageView) findViewById(R.id.homeBtn);
+
 
         ImageView sedeconnecterBtn = (ImageView) findViewById(R.id.sedeconnecterBtn);
         sedeconnecterBtn.setOnClickListener(new View.OnClickListener() {
@@ -77,28 +77,8 @@ public class NotificationActivity extends AppCompatActivity {
             }
         });
 
-        btnAncienne.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(NotificationActivity.this, ancienneAlerteActivity.class);
-                startActivity(intent);
-            }
-        });
-        btnProfil.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(NotificationActivity.this, ProfilActivity.class);
-                startActivity(intent);
-            }
-        });
 
-        btnHome.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(NotificationActivity.this, AccueilActivity.class);
-                startActivity(intent);
-            }
-        });
     }
+
 
 }

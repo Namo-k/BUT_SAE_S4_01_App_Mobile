@@ -14,6 +14,7 @@ import android.widget.Toast;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.cardview.widget.CardView;
+import androidx.fragment.app.Fragment;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -58,8 +59,7 @@ public class SondageActivity extends AppCompatActivity {
                 }
                 else {
                     Toast.makeText(SondageActivity.this, "Réponse envoyée, merci pour votre contribution !", Toast.LENGTH_SHORT).show();
-                    Intent intent = new Intent(SondageActivity.this, AccueilActivity.class);
-                    startActivity(intent);
+                    finish();
                 }
             }
         });
@@ -84,8 +84,7 @@ public class SondageActivity extends AppCompatActivity {
                 builder.setPositiveButton("Oui", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
-                        Intent intent = new Intent(SondageActivity.this, ProfilActivity.class);
-                        startActivity(intent);
+                        finish();
                     }
                 });
                 builder.setNegativeButton("Non", new DialogInterface.OnClickListener() {
@@ -100,52 +99,6 @@ public class SondageActivity extends AppCompatActivity {
         });
 
         // navbar click
-        ImageView btnAncienne = (ImageView) findViewById(R.id.ancienneBtn);
-        ImageView btnHome = (ImageView) findViewById(R.id.homeBtn);
-        btnAncienne.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                AlertDialog.Builder builder = new AlertDialog.Builder(SondageActivity.this);
-                builder.setMessage("Êtes-vous sûr de vouloir accéder à la page d'ancienne alerte ? Votre saisie sera annulée.");
-                builder.setPositiveButton("Oui", new DialogInterface.OnClickListener() {
-                    @Override
-                    public void onClick(DialogInterface dialog, int which) {
-                        Intent intent = new Intent(SondageActivity.this, ancienneAlerteActivity.class);
-                        startActivity(intent);
-                    }
-                });
-                builder.setNegativeButton("Non", new DialogInterface.OnClickListener() {
-                    @Override
-                    public void onClick(DialogInterface dialog, int which) {
-                        dialog.dismiss();
-                    }
-                });
-                AlertDialog dialog = builder.create();
-                dialog.show();
-            }
-        });
-        btnHome.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                AlertDialog.Builder builder = new AlertDialog.Builder(SondageActivity.this);
-                builder.setMessage("Êtes-vous sûr de vouloir accéder à la page d'accueil ? Votre saisie sera annulée.");
-                builder.setPositiveButton("Oui", new DialogInterface.OnClickListener() {
-                    @Override
-                    public void onClick(DialogInterface dialog, int which) {
-                        Intent intent = new Intent(SondageActivity.this, AccueilActivity.class);
-                        startActivity(intent);
-                    }
-                });
-                builder.setNegativeButton("Non", new DialogInterface.OnClickListener() {
-                    @Override
-                    public void onClick(DialogInterface dialog, int which) {
-                        dialog.dismiss();
-                    }
-                });
-                AlertDialog dialog = builder.create();
-                dialog.show();
-            }
-        });
 
         ImageView etoile1 = (ImageView) findViewById(R.id.etoile1);
         ImageView etoile2 = (ImageView) findViewById(R.id.etoile2);
@@ -198,4 +151,6 @@ public class SondageActivity extends AppCompatActivity {
             }
         });
     }
+
+
 }

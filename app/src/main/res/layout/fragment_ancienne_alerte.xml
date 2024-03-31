@@ -95,7 +95,7 @@
             android:layout_height="wrap_content"
             android:orientation="horizontal"
             android:layout_gravity="center"
-            android:layout_marginTop="0dp"
+            android:layout_marginTop="10dp"
             android:layout_marginHorizontal="15dp"
             android:layout_marginBottom="10dp">
 
@@ -114,7 +114,7 @@
                     android:fontFamily="@font/patuaone_regular"
                     android:textColor="@color/darkBlue"
                     android:layout_marginLeft="8dp"
-                />
+                    />
 
                 <View
                     android:layout_width="232dp"
@@ -122,7 +122,7 @@
                     android:layout_marginTop="9dp"
                     android:layout_marginLeft="10dp"
                     android:background="@color/lightBlue"
-                />
+                    />
 
             </LinearLayout>
 
@@ -133,27 +133,9 @@
                 android:layout_marginStart="56dp"
                 android:layout_marginTop="6dp"
                 android:layout_gravity="end"
-            />
+                />
 
         </LinearLayout>
-
-
-
-
-
-        <Spinner
-            android:id="@+id/list_tri"
-            android:layout_width="wrap_content"
-            android:dropDownVerticalOffset="28dp"
-            android:layout_gravity="end"
-            android:layout_marginEnd="10dp"
-            app:cardCornerRadius="8dp"
-            android:layout_marginBottom="10dp"
-            android:background="@drawable/backgroud_list_tri"
-            android:layout_height="25dp"/>
-
-
-
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -215,64 +197,44 @@
             android:paddingBottom="15dp"
             android:divider="@color/white"
             android:dividerHeight="17dp"
-        />
+            />
 
     </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_gravity="center">
+
+        <TextView
+            android:id="@+id/tri"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1.5dp"
+            android:text="Trier mes alertes par :  "
+            android:textSize="14.5dp"
+            android:fontFamily="@font/inter_medium"
+            android:textColor="@color/darkBlueLight"
+            />
+
+        <Spinner
+            android:id="@+id/list_tri"
+            android:layout_width="wrap_content"
+            android:dropDownVerticalOffset="28dp"
+            android:layout_gravity="end"
+            android:layout_marginEnd="10dp"
+            android:layout_toRightOf="@id/tri"
+            app:cardCornerRadius="8dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/backgroud_list_tri"
+            android:layout_height="25dp"/>
+
+    </RelativeLayout>
 
     <!-- ========== FIN PAGE =========== -->
 
     <!-- ========== NAVBAR =========== -->
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="68dp"
-        android:layout_gravity="bottom"
-        android:background="@color/darkBlueLight"
-        android:gravity="center">
 
-
-        <androidx.cardview.widget.CardView
-            android:layout_width="82dp"
-            android:layout_height="55dp"
-            app:cardBackgroundColor="@color/hover"
-            android:layout_marginEnd="30dp"
-            app:cardCornerRadius="17dp"
-            >
-
-        <ImageView
-            android:id="@+id/ancienneBtn"
-            android:layout_width="48dp"
-            android:layout_height="48dp"
-            android:src="@drawable/anciennes"
-            android:layout_gravity="center_vertical"
-            android:layout_marginStart="20dp"
-            android:layout_marginEnd="45dp"
-            android:layout_marginTop="20dp"
-            android:layout_marginBottom="16dp" />
-
-        </androidx.cardview.widget.CardView>
-
-        <ImageView
-                android:id="@+id/homeBtn"
-                android:layout_width="46dp"
-                android:layout_height="46dp"
-                android:src="@drawable/home"
-                android:layout_marginStart="19dp"
-                android:layout_marginEnd="60dp"
-                android:layout_marginTop="5dp"
-                android:layout_marginBottom="3dp"
-                />
-
-        <ImageView
-            android:id="@+id/userBtn"
-            android:layout_width="47dp"
-            android:layout_height="47dp"
-            android:src="@drawable/user"
-            android:layout_marginStart="7dp"
-            android:layout_marginEnd="16dp"
-            android:layout_marginTop="16dp"
-            android:layout_marginBottom="16dp"
-            />
-
-    </LinearLayout>
 
 </LinearLayout>

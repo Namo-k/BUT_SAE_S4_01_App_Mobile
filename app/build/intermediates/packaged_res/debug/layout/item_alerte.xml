@@ -3,7 +3,7 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="190dp"
+    android:layout_height="wrap_content"
     app:cardCornerRadius="25dp"
     app:cardElevation="0dp"
     app:cardBackgroundColor="@color/lightBlueLight"
@@ -11,7 +11,7 @@
 
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:layout_margin="20dp"
         app:cardCornerRadius="15dp"
         android:background="@color/lightBlue"
@@ -23,7 +23,7 @@
             android:background="@color/lightBlue"
             android:paddingHorizontal="10dp"
             android:paddingTop="8dp"
-            android:paddingBottom="6dp">
+            android:paddingBottom="8dp">
 
             <TextView
                 android:id="@+id/medicamentLabelTV"
@@ -106,7 +106,7 @@
                 android:layout_marginEnd="3dp"
                 android:layout_marginBottom="3dp"
                 android:fontFamily="@font/inter"
-                android:text="Ma pharmacie m’a prévenu qu’il n’y a plus aucun stock de ce médicament dans toute la ville !"
+                android:text="Ma pharmacie m’a prévenu qu’il n’y a plus aucun stock  "
                 android:textColor="@color/textDarkBlue"
                 android:textSize="12.5dp"
                 android:lineHeight="17dp"

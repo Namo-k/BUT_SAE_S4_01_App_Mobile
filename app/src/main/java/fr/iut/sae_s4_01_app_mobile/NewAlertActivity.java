@@ -14,6 +14,7 @@ import android.widget.Toast;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.cardview.widget.CardView;
+import androidx.fragment.app.Fragment;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -91,8 +92,7 @@ public class NewAlertActivity extends AppCompatActivity {
 
                     if (insertionReussie && insertionNotifReussie && insertionNotifReussie2) {
                         Toast.makeText(NewAlertActivity.this, getString(R.string.insert_success), Toast.LENGTH_SHORT).show();
-                        Intent intent = new Intent(NewAlertActivity.this, AccueilActivity.class);
-                        startActivity(intent);
+                        finish();
                     } else {
                         Toast.makeText(NewAlertActivity.this, getString(R.string.insert_error), Toast.LENGTH_SHORT).show();
                     }
@@ -111,8 +111,8 @@ public class NewAlertActivity extends AppCompatActivity {
                 builder.setPositiveButton(getResources().getString(R.string.Oui), new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
-                        Intent intent = new Intent(NewAlertActivity.this, AccueilActivity.class);
-                        startActivity(intent);
+                        finish();
+
                     }
                 });
                 builder.setNegativeButton(getResources().getString(R.string.Non), new DialogInterface.OnClickListener() {
@@ -126,77 +126,9 @@ public class NewAlertActivity extends AppCompatActivity {
             }
         });
 
-        ImageView accueil = findViewById(R.id.homeBtn);
-        accueil.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                AlertDialog.Builder builder = new AlertDialog.Builder(NewAlertActivity.this);
-                builder.setMessage(getString(R.string.home_confirmation));
-                builder.setPositiveButton(getResources().getString(R.string.Oui), new DialogInterface.OnClickListener() {
-                    @Override
-                    public void onClick(DialogInterface dialog, int which) {
-                        Intent intent = new Intent(NewAlertActivity.this, AccueilActivity.class);
-                        startActivity(intent);
-                    }
-                });
-                builder.setNegativeButton(getResources().getString(R.string.Non), new DialogInterface.OnClickListener() {
-                    @Override
-                    public void onClick(DialogInterface dialog, int which) {
-                        dialog.dismiss();
-                    }
-                });
-                AlertDialog dialog = builder.create();
-                dialog.show();
-            }
-        });
 
-        ImageView ancienneAlerte = findViewById(R.id.ancienneBtn);
-        ancienneAlerte.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                AlertDialog.Builder builder = new AlertDialog.Builder(NewAlertActivity.this);
-                builder.setMessage(getString(R.string.old_alert_confirmation));
-                builder.setPositiveButton(getResources().getString(R.string.Oui), new DialogInterface.OnClickListener() {
-                    @Override
-                    public void onClick(DialogInterface dialog, int which) {
-                        Intent intent = new Intent(NewAlertActivity.this, ancienneAlerteActivity.class);
-                        startActivity(intent);
-                    }
-                });
-                builder.setNegativeButton(getResources().getString(R.string.Non), new DialogInterface.OnClickListener() {
-                    @Override
-                    public void onClick(DialogInterface dialog, int which) {
-                        dialog.dismiss();
-                    }
-                });
-                AlertDialog dialog = builder.create();
-                dialog.show();
-            }
-        });
 
-        ImageView profil = findViewById(R.id.userBtn);
-        profil.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                AlertDialog.Builder builder = new AlertDialog.Builder(NewAlertActivity.this);
-                builder.setMessage(getString(R.string.profile_confirmation));
-                builder.setPositiveButton(getResources().getString(R.string.Oui), new DialogInterface.OnClickListener() {
-                    @Override
-                    public void onClick(DialogInterface dialog, int which) {
-                        Intent intent = new Intent(NewAlertActivity.this, ProfilActivity.class);
-                        startActivity(intent);
-                    }
-                });
-                builder.setNegativeButton(getResources().getString(R.string.Non), new DialogInterface.OnClickListener() {
-                    @Override
-                    public void onClick(DialogInterface dialog, int which) {
-                        dialog.dismiss();
-                    }
-                });
-                AlertDialog dialog = builder.create();
-                dialog.show();
-            }
-        });
+
     }
 
     private String getCodeCIP() {
@@ -206,5 +138,12 @@ public class NewAlertActivity extends AppCompatActivity {
             return bundle.getString("codeCIP");
         }
         return null;
+    }
+
+    private void replaceFragment(Fragment fragment){
+        getSupportFragmentManager()
+                .beginTransaction()
+                .replace(R.id.container, fragment)
+                .commit();
     }
 }

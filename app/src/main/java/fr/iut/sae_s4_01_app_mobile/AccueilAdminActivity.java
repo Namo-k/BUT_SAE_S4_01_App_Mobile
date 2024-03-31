@@ -11,6 +11,7 @@ import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.cardview.widget.CardView;
+import androidx.fragment.app.Fragment;
 
 import java.util.List;
 
@@ -56,16 +57,16 @@ public class AccueilAdminActivity extends AppCompatActivity {
         statsBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(AccueilAdminActivity.this, ProfilActivity.class);
-                startActivity(intent);
+                ProfilFragment ProfilFragment = new ProfilFragment();
+                replaceFragment(ProfilFragment);
             }
         });
 
         btnStats.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(AccueilAdminActivity.this, ProfilActivity.class);
-                startActivity(intent);
+                ProfilFragment ProfilFragment = new ProfilFragment();
+                replaceFragment(ProfilFragment);
             }
         });
 
@@ -128,5 +129,12 @@ public class AccueilAdminActivity extends AppCompatActivity {
         translationY.setDuration(1000);
         translationY.setInterpolator(new LinearInterpolator());
         translationY.start();
+    }
+
+    private void replaceFragment(Fragment fragment){
+        getSupportFragmentManager()
+                .beginTransaction()
+                .replace(R.id.container, fragment)
+                .commit();
     }
 }

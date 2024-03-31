@@ -87,7 +87,7 @@
     <string name="ienr">Vos informations ont bien été enregistré</string>
     <string name="imdp">Les deux mots de passe ne sont pas identique</string>
     <string name="imm">Votre email ou mot de passe est incorrect</string>
-    <string name="info">Remplissez les information :</string>
+    <string name="info">Remplissez ces informations : </string>
     <string name="information">* Ces informations sont </string>
     <string name="insert_error">Erreur lors de l`insertion de l`alerte.</string>
     <string name="insert_success">Alerte insérée avec succès!</string>
@@ -184,7 +184,7 @@
     <string name="user_id_error">Erreur: ID de l`utilisateur non disponible.</string>
     <string name="valid_reason">Veuillez sélectionner une raison valide.</string>
     <string name="valide">Valider</string>
-    <string name="vdata">Vous avez plutôt une DataMatrix ?.</string>
+    <string name="vdata">Vous avez plutôt une DataMatrix ?</string>
     <string name="version">Version 1.1</string>
     <string name="vmail"> Votre adresse mail  : </string>
     <string name="vmdp">Votre mot de passe  : "</string>

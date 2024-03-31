@@ -3,6 +3,7 @@ package fr.iut.sae_s4_01_app_mobile;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.cardview.widget.CardView;
+import androidx.fragment.app.Fragment;
 
 import android.content.DialogInterface;
 import android.content.Intent;
@@ -75,6 +76,7 @@ public class CipManuelleActivity extends AppCompatActivity {
 
                     Intent intent = new Intent(CipManuelleActivity.this, NewAlertActivity.class);
                     intent.putExtra("codeCIP", codeCIP);
+                    finish();
                     startActivity(intent);
                 }
             }
@@ -91,32 +93,7 @@ public class CipManuelleActivity extends AppCompatActivity {
                 builder.setPositiveButton(getResources().getString(R.string.Oui), new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
-                        Intent intent = new Intent(CipManuelleActivity.this, AccueilActivity.class);
-                        startActivity(intent);
-                    }
-                });
-                builder.setNegativeButton(getResources().getString(R.string.Non), new DialogInterface.OnClickListener() {
-                    @Override
-                    public void onClick(DialogInterface dialog, int which) {
-                        dialog.dismiss();
-                    }
-                });
-                AlertDialog dialog = builder.create();
-                dialog.show();
-            }
-        });
-
-        ImageView accueil = findViewById(R.id.homeBtn);
-        accueil.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                AlertDialog.Builder builder = new AlertDialog.Builder(CipManuelleActivity.this);
-                builder.setMessage(getResources().getString(R.string.retour));
-                builder.setPositiveButton(getResources().getString(R.string.Oui), new DialogInterface.OnClickListener() {
-                    @Override
-                    public void onClick(DialogInterface dialog, int which) {
-                        Intent intent = new Intent(CipManuelleActivity.this, AccueilActivity.class);
-                        startActivity(intent);
+                        finish();
                     }
                 });
                 builder.setNegativeButton(getResources().getString(R.string.Non), new DialogInterface.OnClickListener() {
@@ -131,54 +108,6 @@ public class CipManuelleActivity extends AppCompatActivity {
         });
 
 
-        ImageView ancienneAlerte = findViewById(R.id.ancienneBtn);
-        ancienneAlerte.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                AlertDialog.Builder builder = new AlertDialog.Builder(CipManuelleActivity.this);
-                builder.setMessage(getResources().getString(R.string.acc));
-                builder.setPositiveButton(getResources().getString(R.string.Oui), new DialogInterface.OnClickListener() {
-                    @Override
-                    public void onClick(DialogInterface dialog, int which) {
-                        Intent intent = new Intent(CipManuelleActivity.this, ancienneAlerteActivity.class);
-                        startActivity(intent);
-                    }
-                });
-                builder.setNegativeButton(getResources().getString(R.string.Non), new DialogInterface.OnClickListener() {
-                    @Override
-                    public void onClick(DialogInterface dialog, int which) {
-                        dialog.dismiss();
-                    }
-                });
-                AlertDialog dialog = builder.create();
-                dialog.show();
-            }
-        });
-
-        ImageView profil = findViewById(R.id.userBtn);
-
-        profil.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                AlertDialog.Builder builder = new AlertDialog.Builder(CipManuelleActivity.this);
-                builder.setMessage(getResources().getString(R.string.pcc));
-                builder.setPositiveButton(getResources().getString(R.string.Oui), new DialogInterface.OnClickListener() {
-                    @Override
-                    public void onClick(DialogInterface dialog, int which) {
-                        Intent intent = new Intent(CipManuelleActivity.this, ProfilActivity.class);
-                        startActivity(intent);
-                    }
-                });
-                builder.setNegativeButton(getResources().getString(R.string.Non), new DialogInterface.OnClickListener() {
-                    @Override
-                    public void onClick(DialogInterface dialog, int which) {
-                        dialog.dismiss();
-                    }
-                });
-                AlertDialog dialog = builder.create();
-                dialog.show();
-            }
-        });
 
     }
 
@@ -189,4 +118,6 @@ public class CipManuelleActivity extends AppCompatActivity {
             view.setVisibility(View.VISIBLE);
         }
     }
+
+
 }

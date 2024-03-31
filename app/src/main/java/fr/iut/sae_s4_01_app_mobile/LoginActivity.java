@@ -60,7 +60,7 @@ public class LoginActivity extends AppCompatActivity {
                     int userId = DatabaseIdentifiant.getId(usernameCo, passwordCo);
                     UserId myApp = (UserId) getApplication();
                     myApp.setUserID(userId);
-                    Intent intent = new Intent(LoginActivity.this, AccueilActivity.class); // page apres co
+                    Intent intent = new Intent(LoginActivity.this, MainActivity.class); // page apres co
                     Bundle bundle = new Bundle();
                     bundle.putString("username", usernameCo);
                     bundle.putString("password", passwordCo);
