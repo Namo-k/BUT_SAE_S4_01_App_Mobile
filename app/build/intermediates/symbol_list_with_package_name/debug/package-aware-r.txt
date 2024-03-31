@@ -3495,7 +3495,6 @@ id item_touch_helper_previous_elevation
 id jumpToEnd
 id jumpToStart
 id labeled
-id langue
 id layout
 id left
 id leftToRight
@@ -3751,7 +3750,6 @@ id sondage
 id south
 id spacer
 id special_effects_controller_view_tag
-id spin
 id spinBloc
 id spinnerGraphique
 id spinnerMethode

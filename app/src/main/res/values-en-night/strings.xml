@@ -171,7 +171,7 @@
     <string name="ccmdp">The password must be at least 8 characters long, contain one uppercase letter, and one digit.</string>
     <string name="imdp">The two passwords do not match.</string>
     <string name="vdata">Do you have a DataMatrix instead?</string>
-    <string name="ccip">The CIS number must be 8 characters long.</string>
+    <string name="ccip">The CIS number must be 13 characters long.</string>
     <string name="ocip">No medication found for this CIS number.</string>
 
     <string name="co">You are connected!</string>

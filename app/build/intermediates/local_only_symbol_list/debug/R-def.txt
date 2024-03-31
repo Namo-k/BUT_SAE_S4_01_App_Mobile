@@ -175,7 +175,6 @@ id interrogation1
 id interrogation1text
 id interrogation2
 id interrogation2text
-id langue
 id ligne1
 id ligne2
 id list_tri
@@ -256,7 +255,6 @@ id sexeEdit
 id sexeLabelTV
 id sexeTV
 id sondage
-id spin
 id spinBloc
 id spinnerGraphique
 id spinnerMethode

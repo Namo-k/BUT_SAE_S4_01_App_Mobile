@@ -171,7 +171,7 @@
     <string name="ccmdp">Le mot de passe doit avoir au moins 8 caractères, une majuscule et un chiffre.</string>
     <string name="imdp">Les deux mots de passe ne sont pas identique</string>
     <string name="vdata">Vous avez plutôt une DataMatrix ?</string>
-    <string name="ccip">Le numéro du CIS doit comporter 8 caractères.</string>
+    <string name="ccip">Le numéro du CIS doit comporter 13 caractères.</string>
     <string name="ocip">Aucun médicament trouvé pour ce numéro CIS.</string>
 
     <string name="co">Vous êtes connecté !</string>

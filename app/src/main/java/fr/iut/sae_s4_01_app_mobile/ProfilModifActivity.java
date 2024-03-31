@@ -100,6 +100,7 @@ public class ProfilModifActivity extends AppCompatActivity {
                     boolean insertionNotifReussie = notificationsDB.insertData((int) userID, "Action sur votre profil", "Votre avez actualisé les informations de votre profil. ", "profil");
 
                     Toast.makeText(ProfilModifActivity.this, getResources().getString(R.string.ienr), Toast.LENGTH_SHORT).show();
+                    setResult(Activity.RESULT_OK);
                     finish();
                 }
             }

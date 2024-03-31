@@ -23,6 +23,7 @@ import fr.iut.sae_s4_01_app_mobile.bd.Medicament;
 
 public class CipManuelleActivity extends AppCompatActivity {
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -61,7 +62,7 @@ public class CipManuelleActivity extends AppCompatActivity {
                 String codeCIP = finalEditCodeCIP1.getText().toString().trim();
 
 
-                if (codeCIP.length() < 8) {
+                if (codeCIP.length() < 13) {
                     Toast.makeText(CipManuelleActivity.this, getResources().getString(R.string.ccip), Toast.LENGTH_SHORT).show();
                     return;
                 }

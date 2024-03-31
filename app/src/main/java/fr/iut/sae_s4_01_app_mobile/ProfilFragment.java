@@ -1,5 +1,6 @@
 package fr.iut.sae_s4_01_app_mobile;
 
+import android.app.Activity;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
@@ -23,22 +24,33 @@ public class ProfilFragment extends Fragment {
     private Identifiants DatabaseId;
     private String sexe_;
 
+
+    TextView sexe;
+    TextView nom;
+    TextView prenom;
+    TextView mail;
+    TextView dateNaissance;
+    TextView pharmacie;
+    TextView medecin;
+
+    private static final int REQUEST_CODE_PROFIL_MODIFICATION = 1;
+
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
+        // Inflate the layout for this fragment`
         View view = inflater.inflate(R.layout.fragment_profil, container, false);
 
         DatabaseUser = new Users(requireContext());
         DatabaseId = new Identifiants(requireContext());
 
-        TextView sexe = view.findViewById(R.id.sexeLabelTV);
-        TextView nom = view.findViewById(R.id.nomLabelTV);
-        TextView prenom = view.findViewById(R.id.prenomLabelTV);
-        TextView mail = view.findViewById(R.id.mailLabelTV);
-        TextView dateNaissance = view.findViewById(R.id.naissanceLabelTV);
-        TextView pharmacie = view.findViewById(R.id.pharmacieLabelTV);
-        TextView medecin = view.findViewById(R.id.medecinLabelTV);
+         sexe = view.findViewById(R.id.sexeLabelTV);
+         nom = view.findViewById(R.id.nomLabelTV);
+         prenom = view.findViewById(R.id.prenomLabelTV);
+         mail = view.findViewById(R.id.mailLabelTV);
+         dateNaissance = view.findViewById(R.id.naissanceLabelTV);
+         pharmacie = view.findViewById(R.id.pharmacieLabelTV);
+         medecin = view.findViewById(R.id.medecinLabelTV);
 
         UserId myApp = (UserId) requireActivity().getApplication();
         int userID = myApp.getUserID();
@@ -78,7 +90,7 @@ public class ProfilFragment extends Fragment {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(requireActivity(), ProfilModifActivity.class);
-                startActivity(intent);
+                startActivityForResult(intent, REQUEST_CODE_PROFIL_MODIFICATION);
             }
         });
 
@@ -176,4 +188,45 @@ public class ProfilFragment extends Fragment {
         AlertDialog dialog = builder.create();
         dialog.show();
     }
+
+    // Dans MainActivity
+    @Override
+    public void onActivityResult(int requestCode, int resultCode, Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+        if (requestCode == REQUEST_CODE_PROFIL_MODIFICATION && resultCode == Activity.RESULT_OK) {
+            // Rafraîchir les données du fragment ProfilFragment
+            Fragment fragment = requireActivity().getSupportFragmentManager().findFragmentById(R.id.container);
+            if (fragment instanceof ProfilFragment) {
+                ((ProfilFragment) fragment).refreshData(); // Appeler la méthode de rafraîchissement dans ProfilFragment
+            }
+        }
+    }
+    public void refreshData() {
+        // Mettez à jour les données affichées dans le fragment ici
+        UserId myApp = (UserId) requireActivity().getApplication();
+        int userID = myApp.getUserID();
+
+        // Mettez à jour les TextViews avec les nouvelles données
+        String prenom_ = DatabaseUser.getPrenom(userID);
+        String nom_ = DatabaseUser.getNom(userID);
+        String dateNaissance_ = DatabaseUser.getDataNais(userID);
+        String mail_ = DatabaseId.getMail(userID);
+        String pharmacie_ = DatabaseUser.getPharmacie(userID);
+        String medecin_ = DatabaseUser.getMedecin(userID);
+
+        sexe_ = DatabaseUser.getSexe(userID);
+        updateSexeValue();
+
+        sexe.setText(sexe_);
+        nom.setText(nom_);
+        prenom.setText(prenom_);
+        mail.setText(mail_);
+        dateNaissance.setText(dateNaissance_);
+        pharmacie.setText(pharmacie_);
+        medecin.setText(medecin_);
+
+        // Assurez-vous d'appeler updateSexeValue() si nécessaire
+        // Si d'autres vues doivent être mises à jour, assurez-vous de le faire ici
+    }
+
 }

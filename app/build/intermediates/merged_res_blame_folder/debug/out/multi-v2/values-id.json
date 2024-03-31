@@ -4,7 +4,7 @@
             "outputFile": "fr.iut.sae_s4_01_app_mobile.app-mergeDebugResources-31:/values-id/values-id.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\kalia\\.gradle\\caches\\transforms-3\\a60982259721268694c6a5f2a67385db\\transformed\\zxing-android-embedded-4.2.0\\res\\values-id\\values-id.xml",
+                    "source": "/Users/isra/.gradle/caches/transforms-3/a60982259721268694c6a5f2a67385db/transformed/zxing-android-embedded-4.2.0/res/values-id/values-id.xml",
                     "from": {
                         "startLines": "2,3,4,5",
                         "startColumns": "4,4,4,4",
