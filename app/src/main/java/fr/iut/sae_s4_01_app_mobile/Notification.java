@@ -1,5 +1,8 @@
 package fr.iut.sae_s4_01_app_mobile;
 
+import android.content.Context;
+
+import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.HashMap;
@@ -57,23 +60,25 @@ public class Notification {
         return resourceId != null ? resourceId : 0;
     }
 
-    public String getDateNotif() {
+    public String getDateNotif(Context context) {
         try {
-            SimpleDateFormat sourceFormat = new SimpleDateFormat("yyyy-MM-dd", Locale.FRENCH);
+            SimpleDateFormat sourceFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss", Locale.getDefault());
             Date date = sourceFormat.parse(dateNotif);
 
-            Locale targetLocale = Locale.getDefault();
             SimpleDateFormat targetFormat;
 
-            if (Locale.getDefault().getLanguage().equals("fr")) {
+            if (context.getResources().getConfiguration().locale.getLanguage().equals("fr")) {
                 targetFormat = new SimpleDateFormat("d MMMM yyyy", Locale.FRENCH);
             } else {
                 targetFormat = new SimpleDateFormat("MMMM d, yyyy", Locale.ENGLISH);
             }
+
             return targetFormat.format(date);
-        } catch (Exception e) {
+        } catch (ParseException e) {
             e.printStackTrace();
-            return null;
+            return dateNotif; // Si la conversion échoue, retourner la date brute
         }
     }
+
+
 }

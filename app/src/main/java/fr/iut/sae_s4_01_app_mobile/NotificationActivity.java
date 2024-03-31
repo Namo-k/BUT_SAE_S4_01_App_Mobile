@@ -37,7 +37,7 @@ public class NotificationActivity extends AppCompatActivity {
 
         List<Notification> notifications = notificationsdB.getAllNotifications(userID,this);
 
-        nbNotification_.append(getResources().getString(R.string.avoir) + totalNotifCount +  getResources().getString(R.string.nbNotif));
+        nbNotification_.append(getResources().getString(R.string.avoir) + " " + totalNotifCount + " " + getResources().getString(R.string.nbNotif));
 
         NotificationAdapter adapter = new NotificationAdapter(this, notifications, R.layout.item_notification);
         listView.setAdapter(adapter);
@@ -45,7 +45,7 @@ public class NotificationActivity extends AppCompatActivity {
         TextView sondageBtn = findViewById(R.id.sondage);
 
         for (Notification notification : notifications) {
-            if (notification.getTitle().equalsIgnoreCase("Votre avis compte")) {
+            if (notification.getTitle().equalsIgnoreCase("Votre avis compte") || notification.getTitle().equalsIgnoreCase("Your opinion matters")) {
                 sondageBtn.setVisibility(View.VISIBLE);
             }
         }

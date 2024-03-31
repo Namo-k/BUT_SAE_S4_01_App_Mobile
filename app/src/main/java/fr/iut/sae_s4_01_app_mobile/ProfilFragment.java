@@ -32,6 +32,8 @@ public class ProfilFragment extends Fragment {
     TextView dateNaissance;
     TextView pharmacie;
     TextView medecin;
+    String pharmacie_;
+    String medecin_;
 
     private static final int REQUEST_CODE_PROFIL_MODIFICATION = 1;
 
@@ -62,8 +64,10 @@ public class ProfilFragment extends Fragment {
         String nom_ = DatabaseUser.getNom(userID);
         String dateNaissance_ = DatabaseUser.getDataNais(userID);
         String mail_ = DatabaseId.getMail(userID);
-        String pharmacie_ = DatabaseUser.getPharmacie(userID);
-        String medecin_ = DatabaseUser.getMedecin(userID);
+        pharmacie_ = DatabaseUser.getPharmacie(userID);
+        updatePharmaValue();
+        medecin_ = DatabaseUser.getMedecin(userID);
+        updateMedValue();
 
         sexe.setText(sexe_);
         nom.setText(nom_);
@@ -164,6 +168,18 @@ public class ProfilFragment extends Fragment {
                 sexe_ = getString(R.string.nr);
                 break;
         }
+    }
+
+    private void updatePharmaValue() {
+        int userID = ((UserId) requireActivity().getApplication()).getUserID();
+        pharmacie_ = DatabaseUser.getPharmacie(userID);
+        if (pharmacie_.equals("Non renseigné") || pharmacie_.equals("Not specified")) pharmacie_ = getResources().getString(R.string.nr);
+    }
+
+    private void updateMedValue() {
+        int userID = ((UserId) requireActivity().getApplication()).getUserID();
+        medecin_ = DatabaseUser.getPharmacie(userID);
+        if (medecin_.equals("Non renseigné") || medecin_.equals("Not specified")) medecin_ = getResources().getString(R.string.nr);
     }
 
     private void showConfirmationDialog(int userID) {
