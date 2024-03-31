@@ -4455,6 +4455,7 @@ int string side_sheet_behavior 0x7f130139
 int string situation 0x7f13013a
 int string sonsage 0x7f130165
 int string status_bar_notification_info_overflow 0x7f13013b
+int string stock_insuffisant 0x7f130166
 int string stock_unavailable 0x7f13013c
 int string suite 0x7f13013d
 int string supp 0x7f13013e

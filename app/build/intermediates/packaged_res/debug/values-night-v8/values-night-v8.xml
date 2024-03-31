@@ -181,6 +181,7 @@
     <string name="sexe_">Sexe </string>
     <string name="situation">Expliquez nous votre situation...</string>
     <string name="sonsage">Accéder au sondages</string>
+    <string name="stock_insuffisant">Stock insufissant</string>
     <string name="stock_unavailable">Stock indisponible</string>
     <string name="suite">Passer à la suite...</string>
     <string name="supp">Supprimer mon compte</string>

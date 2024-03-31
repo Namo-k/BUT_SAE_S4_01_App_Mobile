@@ -56,6 +56,7 @@ public class NewAlertActivity extends AppCompatActivity {
         spinnerList.add(getString(R.string.select_reason));
         spinnerList.add(getString(R.string.renewal_impossible));
         spinnerList.add(getString(R.string.stock_unavailable));
+        spinnerList.add(getString(R.string.stock_insuffisant));
         spinnerList.add(getString(R.string.late_delivery));
         spinnerList.add(getString(R.string.other));
         spinnerRaison.setAdapter(new ArrayAdapter<String>(this, android.R.layout.simple_spinner_dropdown_item, spinnerList));

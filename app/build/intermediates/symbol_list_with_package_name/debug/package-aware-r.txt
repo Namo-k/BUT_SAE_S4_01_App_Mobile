@@ -4456,6 +4456,7 @@ string side_sheet_behavior
 string situation
 string sonsage
 string status_bar_notification_info_overflow
+string stock_insuffisant
 string stock_unavailable
 string suite
 string supp

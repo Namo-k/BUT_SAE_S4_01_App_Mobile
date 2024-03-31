@@ -483,6 +483,7 @@ string sexe
 string sexe_
 string situation
 string sonsage
+string stock_insuffisant
 string stock_unavailable
 string suite
 string supp

@@ -193,6 +193,7 @@
     <string name="select_reason">Sélectionnez une raison</string>
     <string name="renewal_impossible">Renouvellement impossible</string>
     <string name="stock_unavailable">Stock indisponible</string>
+    <string name="stock_insuffisant">Stock insufissant</string>
     <string name="late_delivery">Livraison tardive</string>
     <string name="other">Autre</string>
 

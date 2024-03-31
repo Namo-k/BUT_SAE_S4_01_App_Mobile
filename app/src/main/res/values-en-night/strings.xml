@@ -192,6 +192,8 @@
     <string name="select_reason">Select a reason</string>
     <string name="renewal_impossible">Renewal not possible</string>
     <string name="stock_unavailable">Stock unavailable</string>
+    <string name="stock_insuffisant">Insufficient stock</string>
+
     <string name="late_delivery">Late delivery</string>
     <string name="other">Other</string>
 
