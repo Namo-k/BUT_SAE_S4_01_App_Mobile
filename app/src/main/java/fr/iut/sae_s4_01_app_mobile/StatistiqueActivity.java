@@ -108,9 +108,9 @@ public class StatistiqueActivity extends AppCompatActivity {
         Spinner spinner = findViewById(R.id.spinnerGraphique);
 
         List<String> spinnerItems = new ArrayList<>();
-        spinnerItems.add("Nombre de signalement par mois");
-        spinnerItems.add("Occurence par pathologie");
-        spinnerItems.add("Nombre de saisie et scan");
+        spinnerItems.add("Number of reports per month");
+        spinnerItems.add("Number of occurrences per pathology");
+        spinnerItems.add("Number of entries and scans");
 
         ArrayAdapter<String> adapter1 = new ArrayAdapter<>(this, android.R.layout.simple_spinner_item, spinnerItems);
         adapter1.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
@@ -214,7 +214,7 @@ public class StatistiqueActivity extends AppCompatActivity {
 
 
         barChart.animateY(1500);
-        barChart.getDescription().setText("Employees Chart");
+        barChart.getDescription().setText("");
         barChart.getDescription().setTextColor(Color.BLUE);
         barChart.getDescription().setEnabled(false);
         barChart.getLegend().setEnabled(false);
@@ -305,7 +305,7 @@ public class StatistiqueActivity extends AppCompatActivity {
 
 
         //Graphique 3
-        pieEntries2.add(new PieEntry(Float.parseFloat(String.valueOf(nbrSaisiCIPTV.getText())), "Saisie"));
+        pieEntries2.add(new PieEntry(Float.parseFloat(String.valueOf(nbrSaisiCIPTV.getText())), "Entry"));
         pieEntries2.add(new PieEntry(Float.parseFloat(String.valueOf(nbrSaisiDataMatrixTV.getText())), "Scan"));
 
 

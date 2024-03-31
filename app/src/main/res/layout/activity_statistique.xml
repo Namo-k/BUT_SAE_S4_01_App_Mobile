@@ -75,7 +75,7 @@
                 android:layout_marginStart="35dp"
                 android:layout_marginTop="5dp"
                 android:fontFamily="@font/patuaone_regular"
-                android:text=" Les statistiques"
+                android:text=" The statistics"
                 android:textColor="@color/darkBlue"
                 android:textSize="21dp"
                 app:layout_constraintStart_toStartOf="parent"
@@ -132,7 +132,7 @@
                         android:layout_marginEnd="3dp"
                         android:layout_marginBottom="3dp"
                         android:fontFamily="@font/inter_medium"
-                        android:text="Nombre de signalements :"
+                        android:text="Number of reports :"
                         android:textColor="@color/textGrey"
                         android:textSize="12.5dp" />
 
@@ -160,7 +160,7 @@
                         android:layout_marginEnd="3dp"
                         android:layout_marginBottom="3dp"
                         android:fontFamily="@font/inter_medium"
-                        android:text="Médicament le plus signalé :"
+                        android:text="Most reported medicine :"
                         android:textColor="@color/textGrey"
                         android:textSize="12.5dp" />
 
@@ -188,7 +188,7 @@
                         android:layout_marginEnd="3dp"
                         android:layout_marginBottom="3dp"
                         android:fontFamily="@font/inter_medium"
-                        android:text="Type de pathologie le plus signalé :"
+                        android:text="Most reported type of pathology :"
                         android:textColor="@color/textGrey"
                         android:textSize="12.5dp" />
 
@@ -216,7 +216,7 @@
                         android:layout_marginEnd="3dp"
                         android:layout_marginBottom="4dp"
                         android:fontFamily="@font/inter_medium"
-                        android:text="Nombre d'alertes dites important :"
+                        android:text="Number of significant alerts :"
                         android:textColor="@color/textGrey"
                         android:textSize="12.5dp"
                         />
@@ -247,9 +247,9 @@
                         android:layout_marginStart="5dp"
                         android:layout_marginTop="2dp"
                         android:layout_marginEnd="3dp"
-                        android:layout_marginBottom="30dp"
+                        android:layout_marginBottom="10dp"
                         android:fontFamily="@font/inter_medium"
-                        android:text="Nombre de saisie CIP :"
+                        android:text="Number of CIP entries :"
                         android:textColor="@color/textGrey"
                         android:textSize="12.5dp"
                         />
@@ -280,7 +280,7 @@
                         android:layout_marginStart="25dp"
                         android:layout_marginTop="2dp"
                         android:layout_marginEnd="3dp"
-                        android:layout_marginBottom="35dp"
+                        android:layout_marginBottom="5dp"
                         android:fontFamily="@font/inter_medium"
                         android:text="Scan DataMatrix :"
                         android:textColor="@color/textGrey"
@@ -306,19 +306,6 @@
 
                 </RelativeLayout>
 
-                <TextView
-                    android:id="@+id/btnStats"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginBottom="10dp"
-                    android:layout_marginRight="25dp"
-                    android:layout_gravity="right|bottom"
-                    android:backgroundTint="#00000000"
-                    android:fontFamily="@font/inter_semibold"
-                    android:text="Accéder aux statistiques..."
-                    android:textColor="@color/darkBlue"
-                    android:textSize="13.5dp"
-                    android:textStyle="italic" />
             </androidx.cardview.widget.CardView>
 
             <!-- ========== FIN SECTION STATISTIQUE TEXTE =========== -->
