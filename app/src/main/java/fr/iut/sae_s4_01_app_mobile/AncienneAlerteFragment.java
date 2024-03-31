@@ -76,19 +76,14 @@ public class AncienneAlerteFragment extends Fragment {
                     AlerteAdapter adapter = new AlerteAdapter(getContext(), alertes);
                     listView.setAdapter(adapter);
                 }else if (selectedItem.equals(getResources().getString(R.string.pertinance))) {
-                    // Récupérer les alertes marquées comme importantes
                     List<Alerte> alertesImportantes = alertesDb.getAlertesImportantes(userID);
 
-                    // Récupérer toutes les alertes
                     List<Alerte> toutesLesAlertes = alertesDb.getAllAlertesASC(userID, getContext());
 
-                    // Supprimer les alertes importantes de la liste totale
                     toutesLesAlertes.removeAll(alertesImportantes);
 
-                    // Ajouter les alertes importantes au début de la liste
                     toutesLesAlertes.addAll(0, alertesImportantes);
 
-                    // Afficher la liste combinée dans la ListView
                     AlerteAdapter adapter = new AlerteAdapter(getContext(), toutesLesAlertes);
                     listView.setAdapter(adapter);
                 }
