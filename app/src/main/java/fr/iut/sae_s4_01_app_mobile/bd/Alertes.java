@@ -19,6 +19,7 @@ import java.util.Locale;
 import java.util.Map;
 
 import fr.iut.sae_s4_01_app_mobile.Alerte;
+import fr.iut.sae_s4_01_app_mobile.R;
 
 public class Alertes extends SQLiteOpenHelper {
 
@@ -84,7 +85,7 @@ public class Alertes extends SQLiteOpenHelper {
         return count;
     }
 
-    public List<Alerte> getAllAlertesDESC(int idUser) {
+    public List<Alerte> getAllAlertesDESC(int idUser, Context context) {
         List<Alerte> listeAlertes = new ArrayList<>();
         SQLiteDatabase db = this.getReadableDatabase();
         Cursor cursor = db.rawQuery("SELECT * FROM alertes where idUser = ? ORDER BY id DESC", new String[] {String.valueOf(idUser)});
@@ -96,7 +97,44 @@ public class Alertes extends SQLiteOpenHelper {
                 @SuppressLint("Range") String message = cursor.getString(cursor.getColumnIndex("message"));
                 @SuppressLint("Range") String dateAlerte = cursor.getString(cursor.getColumnIndex("dateAlerte"));
 
-                Alerte alerte = new Alerte(idUser, codeCip, idUser, nomMedicament, raison, message, dateAlerte);
+                String newRaison;
+                switch (raison) {
+                    case "Renewal not possible":
+                        newRaison = context.getResources().getString(R.string.renewal_impossible);
+                        break;
+                    case "Renouvellement impossible":
+                        newRaison = context.getResources().getString(R.string.renewal_impossible);
+                        break;
+                    case "Stock unavailable":
+                        newRaison = context.getResources().getString(R.string.stock_unavailable);
+                        break;
+                    case "Stock indisponible":
+                        newRaison = context.getResources().getString(R.string.stock_unavailable);
+                        break;
+                    case "Late delivery":
+                        newRaison = context.getResources().getString(R.string.late_delivery);
+                        break;
+                    case "Livraison tardive":
+                        newRaison = context.getResources().getString(R.string.late_delivery);
+                        break;
+                    case "Other":
+                        newRaison = context.getResources().getString(R.string.other);
+                        break;
+                    case "Autre":
+                        newRaison = context.getResources().getString(R.string.other);
+                        break;
+                    case "Select a reason":
+                        newRaison = context.getResources().getString(R.string.select_reason);
+                        break;
+                    case "Sélectionnez une raison":
+                        newRaison = context.getResources().getString(R.string.select_reason);
+                        break;
+                    default:
+                        newRaison = raison;
+                        break;
+                }
+
+                Alerte alerte = new Alerte(idUser, codeCip, idUser, nomMedicament, newRaison, message, dateAlerte);
                 listeAlertes.add(alerte);
             } while (cursor.moveToNext());
         }
@@ -104,7 +142,8 @@ public class Alertes extends SQLiteOpenHelper {
         return listeAlertes;
     }
 
-    public List<Alerte> getAllAlertesASC(int idUser) {
+
+    public List<Alerte> getAllAlertesASC(int idUser, Context context) {
         List<Alerte> listeAlertes = new ArrayList<>();
         SQLiteDatabase db = this.getReadableDatabase();
         Cursor cursor = db.rawQuery("SELECT * FROM alertes where idUser = ? ORDER BY id ASC", new String[] {String.valueOf(idUser)});
@@ -116,7 +155,44 @@ public class Alertes extends SQLiteOpenHelper {
                 @SuppressLint("Range") String message = cursor.getString(cursor.getColumnIndex("message"));
                 @SuppressLint("Range") String dateAlerte = cursor.getString(cursor.getColumnIndex("dateAlerte"));
 
-                Alerte alerte = new Alerte(idUser, codeCip, idUser, nomMedicament, raison, message, dateAlerte);
+                String newRaison;
+                switch (raison) {
+                    case "Renewal not possible":
+                        newRaison = context.getResources().getString(R.string.renewal_impossible);
+                        break;
+                    case "Renouvellement impossible":
+                        newRaison = context.getResources().getString(R.string.renewal_impossible);
+                        break;
+                    case "Stock unavailable":
+                        newRaison = context.getResources().getString(R.string.stock_unavailable);
+                        break;
+                    case "Stock indisponible":
+                        newRaison = context.getResources().getString(R.string.stock_unavailable);
+                        break;
+                    case "Late delivery":
+                        newRaison = context.getResources().getString(R.string.late_delivery);
+                        break;
+                    case "Livraison tardive":
+                        newRaison = context.getResources().getString(R.string.late_delivery);
+                        break;
+                    case "Other":
+                        newRaison = context.getResources().getString(R.string.other);
+                        break;
+                    case "Autre":
+                        newRaison = context.getResources().getString(R.string.other);
+                        break;
+                    case "Select a reason":
+                        newRaison = context.getResources().getString(R.string.select_reason);
+                        break;
+                    case "Sélectionnez une raison":
+                        newRaison = context.getResources().getString(R.string.select_reason);
+                        break;
+                    default:
+                        newRaison = raison;
+                        break;
+                }
+
+                Alerte alerte = new Alerte(idUser, codeCip, idUser, nomMedicament, newRaison, message, dateAlerte);
                 listeAlertes.add(alerte);
             } while (cursor.moveToNext());
         }

@@ -66,11 +66,11 @@ public class AncienneAlerteFragment extends Fragment {
             public void onItemSelected(AdapterView<?> parentView, View selectedItemView, int position, long id) {
                 String selectedItem = parentView.getItemAtPosition(position).toString();
                 if (selectedItem.equals(getResources().getString(R.string.recent))) {
-                    List<Alerte> alertes = alertesDb.getAllAlertesASC(userID);
+                    List<Alerte> alertes = alertesDb.getAllAlertesASC(userID, getContext());
                     AlerteAdapter adapter = new AlerteAdapter(getContext(), alertes);
                     listView.setAdapter(adapter);
                 } else if (selectedItem.equals(getResources().getString(R.string.ancien))) {
-                    List<Alerte> alertes = alertesDb.getAllAlertesDESC(userID);
+                    List<Alerte> alertes = alertesDb.getAllAlertesDESC(userID,getContext());
                     AlerteAdapter adapter = new AlerteAdapter(getContext(), alertes);
                     listView.setAdapter(adapter);
                 }
