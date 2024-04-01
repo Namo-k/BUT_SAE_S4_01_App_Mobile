@@ -15,6 +15,7 @@ color lightBlueLight
 color red
 color textBlue
 color textDarkBlue
+color textDarkBluenuit
 color textGrey
 color textGreyli
 color white
@@ -91,7 +92,9 @@ id Codecip
 id Djour
 id Dmois
 id MdpOublie
+id accueil
 id accueil_phrase
+id alerte
 id alertes
 id alertes_logo
 id ancienneAlerte
@@ -248,6 +251,7 @@ id prenom1
 id prenomEdit
 id prenomLabelTV
 id prenomTV
+id profil
 id raison
 id raisonLabelTV
 id raisonTV
@@ -482,6 +486,9 @@ string reset_code_expired
 string reset_code_invalid
 string reset_email_sent
 string retour
+string retour1
+string retour2
+string retour3
 string saisie
 string scan
 string scanner
@@ -508,6 +515,7 @@ string text_prospection
 string text_renit
 string text_saisieCIP
 string text_scanDataMatrix
+string tri
 string ty
 string type
 string user_id_error

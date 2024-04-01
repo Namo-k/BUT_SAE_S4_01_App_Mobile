@@ -2113,6 +2113,7 @@ color switch_thumb_normal_material_dark
 color switch_thumb_normal_material_light
 color textBlue
 color textDarkBlue
+color textDarkBluenuit
 color textGrey
 color textGreyli
 color tooltip_background_dark
@@ -3229,6 +3230,7 @@ id accessibility_custom_action_6
 id accessibility_custom_action_7
 id accessibility_custom_action_8
 id accessibility_custom_action_9
+id accueil
 id accueil_phrase
 id action0
 id actionDown
@@ -3255,6 +3257,7 @@ id actions
 id activity_chooser_view_content
 id add
 id alertTitle
+id alerte
 id alertes
 id alertes_logo
 id aligned
@@ -3690,6 +3693,7 @@ id prenomEdit
 id prenomLabelTV
 id prenomTV
 id pressed
+id profil
 id progress_circular
 id progress_horizontal
 id radio
@@ -4448,6 +4452,9 @@ string reset_code_expired
 string reset_code_invalid
 string reset_email_sent
 string retour
+string retour1
+string retour2
+string retour3
 string saisie
 string scan
 string scanner
@@ -4481,6 +4488,7 @@ string text_prospection
 string text_renit
 string text_saisieCIP
 string text_scanDataMatrix
+string tri
 string ty
 string type
 string user_id_error

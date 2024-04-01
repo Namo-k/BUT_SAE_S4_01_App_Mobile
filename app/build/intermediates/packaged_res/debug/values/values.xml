@@ -18,6 +18,7 @@
     <color name="red">#9F1B1B</color>
     <color name="textBlue">#C5DFF8</color>
     <color name="textDarkBlue">#03008C</color>
+    <color name="textDarkBluenuit">#03008C</color>
     <color name="textGrey">#505050</color>
     <color name="textGreyli">#605C5C</color>
     <color name="white">#FFFFFFFF</color>
@@ -90,7 +91,7 @@
     <string name="ienr">Vos informations ont bien été enregistré</string>
     <string name="imdp">Les deux mots de passe ne sont pas identique</string>
     <string name="imm">Votre email ou mot de passe est incorrect</string>
-    <string name="importance"> Ce médicament est indispensable pour ma santé</string>
+    <string name="importance"> Ce médicament est <b>indispensable</b> pour ma santé</string>
     <string name="info">Remplissez ces informations : </string>
     <string name="information">* Ces informations sont </string>
     <string name="insert_error">Erreur lors de l`insertion de l`alerte.</string>
@@ -173,6 +174,9 @@
     <string name="reset_code_invalid">Le code est erroné</string>
     <string name="reset_email_sent">Un e-mail de réinitialisation a été envoyé</string>
     <string name="retour">Êtes-vous sûr de vouloir accéder à la page d`ancienne alerte ? Votre saisie sera annulée.</string>
+    <string name="retour1">Accueil</string>
+    <string name="retour2">Profil</string>
+    <string name="retour3">Alerte </string>
     <string name="saisie">Saisie manuelle</string>
     <string name="scan">Scannez-le !</string>
     <string name="scanner">Scannez le code DataMatrix</string>
@@ -183,7 +187,7 @@
     <string name="sexe">Sexe* : </string>
     <string name="sexe_">Sexe </string>
     <string name="situation">Expliquez nous votre situation...</string>
-    <string name="sonsage">Accéder au sondages</string>
+    <string name="sonsage">Accéder au sondage</string>
     <string name="stock_insuffisant">Stock insufissant</string>
     <string name="stock_unavailable">Stock indisponible</string>
     <string name="suite">Passer à la suite...</string>
@@ -199,6 +203,7 @@
     <string name="text_renit">Veuillez saisir votre adresse mail \n afin de reçevoir un code sur votre boite mail ! </string>
     <string name="text_saisieCIP"> Saisir le <b>Code CIP</b> manuellement </string>
     <string name="text_scanDataMatrix"> Vous avez plûtot une <b>DataMatrix ? </b> </string>
+    <string name="tri"> Trier mes alertes par : </string>
     <string name="ty">Merci infiniment pour votre contribution !</string>
     <string name="type">Type de maladie le plus signalé :</string>
     <string name="user_id_error">Erreur: ID de l`utilisateur non disponible.</string>

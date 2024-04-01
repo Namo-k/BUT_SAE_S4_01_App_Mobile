@@ -34,6 +34,9 @@ public class ProfilModifActivity extends AppCompatActivity {
     private Identifiants DatabaseId;
     String sexe_;
 
+    String pharmacie_;
+    String medecin_;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -55,25 +58,21 @@ public class ProfilModifActivity extends AppCompatActivity {
         EditText medecin = (EditText) findViewById(R.id.medecinEdit);
 
         updateSexeValue();
+        updateMedValue();
+        updatePharmaValue();
 
         String prenom_ = DatabaseUser.getPrenom(userID);
         String nom_ = DatabaseUser.getNom(userID);
         String dateNaissance_ =  DatabaseUser.getDataNais(userID);
         String mail_ = DatabaseId.getMail(userID);
-        String pharmacie_ = DatabaseUser.getPharmacie(userID);
-        String medecin_ =  DatabaseUser.getMedecin(userID);
 
         sexe.setText(sexe_);
         nom.setText(nom_);
         prenom.setText(prenom_);
         mail.setText(mail_);
         dateNaissance.setText(dateNaissance_);
-        if (!pharmacie_.equals(getResources().getString(R.string.nr))) {
             pharmacie.setText(pharmacie_);
-        }
-        if (!medecin_.equals(getResources().getString(R.string.nr))) {
             medecin.setText(medecin_);
-        }
 
         // bonton enregistrer
         CardView enregistrer = findViewById(R.id.btnEnregistrer);
@@ -167,6 +166,32 @@ public class ProfilModifActivity extends AppCompatActivity {
                 break;
             case "Not specified":
                 sexe_ = getString(R.string.nr);
+                break;
+        }
+    }
+
+    private void updatePharmaValue() {
+        int userID = ((UserId) getApplication()).getUserID();
+        pharmacie_ = DatabaseUser.getPharmacie(userID);
+        switch (pharmacie_) {
+            case "Non renseigné":
+                pharmacie_ = getString(R.string.nr);
+                break;
+            case "Not specified":
+                pharmacie_ = getString(R.string.nr);
+                break;
+        }
+    }
+
+    private void updateMedValue() {
+        int userID = ((UserId) getApplication()).getUserID();
+        medecin_ = DatabaseUser.getMedecin(userID);
+        switch (medecin_) {
+            case "Non renseigné":
+                medecin_ = getString(R.string.nr);
+                break;
+            case "Not specified":
+                medecin_ = getString(R.string.nr);
                 break;
         }
     }

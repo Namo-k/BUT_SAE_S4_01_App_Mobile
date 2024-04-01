@@ -18,6 +18,7 @@
     <color name="red">#E15B5B</color>
     <color name="textBlue">#C5DFF8</color>
     <color name="textDarkBlue">#D0CFFF</color>
+    <color name="textDarkBluenuit">#2C2B35</color>
     <color name="textGrey">#FBF8F8</color>
     <color name="textGreyli">#221F1F</color>
     <color name="white">#151515</color>
@@ -173,6 +174,9 @@
     <string name="reset_code_invalid">Le code est erroné</string>
     <string name="reset_email_sent">Un e-mail de réinitialisation a été envoyé</string>
     <string name="retour">Êtes-vous sûr de vouloir accéder à la page d`ancienne alerte ? Votre saisie sera annulée.</string>
+    <string name="retour1">Accueil</string>
+    <string name="retour2">Profil</string>
+    <string name="retour3">Alerte </string>
     <string name="saisie">Saisie manuelle</string>
     <string name="scan">Scannez-le !</string>
     <string name="scanner">Scannez le code DataMatrix</string>
@@ -199,6 +203,7 @@
     <string name="text_renit">Veuillez saisir votre adresse mail \n afin de reçevoir un code sur votre boite mail ! </string>
     <string name="text_saisieCIP"> Saisir le <b>Code CIP</b> manuellement </string>
     <string name="text_scanDataMatrix"> Vous avez plûtot une <b>DataMatrix ? </b> </string>
+    <string name="tri"> Trier mes alertes par : </string>
     <string name="ty">Merci infiniment pour votre contribution !</string>
     <string name="type">Type de maladie le plus signalé :</string>
     <string name="user_id_error">Erreur: ID de l`utilisateur non disponible.</string>

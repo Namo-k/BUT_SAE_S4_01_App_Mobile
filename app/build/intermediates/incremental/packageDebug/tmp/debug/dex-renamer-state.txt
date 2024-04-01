@@ -1,10 +1,10 @@
-#Mon Apr 01 00:09:23 CEST 2024
-base.0=/Users/isra/Desktop/SEMESTRE 4/Mobile/SAEE/B_App_Mobile/app/build/intermediates/dex/debug/mergeExtDexDebug/classes.dex
-base.1=/Users/isra/Desktop/SEMESTRE 4/Mobile/SAEE/B_App_Mobile/app/build/intermediates/dex/debug/mergeProjectDexDebug/0/classes.dex
-base.2=/Users/isra/Desktop/SEMESTRE 4/Mobile/SAEE/B_App_Mobile/app/build/intermediates/dex/debug/mergeProjectDexDebug/12/classes.dex
-base.3=/Users/isra/Desktop/SEMESTRE 4/Mobile/SAEE/B_App_Mobile/app/build/intermediates/dex/debug/mergeProjectDexDebug/3/classes.dex
-base.4=/Users/isra/Desktop/SEMESTRE 4/Mobile/SAEE/B_App_Mobile/app/build/intermediates/dex/debug/mergeProjectDexDebug/7/classes.dex
-base.5=/Users/isra/Desktop/SEMESTRE 4/Mobile/SAEE/B_App_Mobile/app/build/intermediates/dex/debug/mergeExtDexDebug/classes2.dex
+#Mon Apr 01 22:21:09 CEST 2024
+base.0=C\:\\Users\\33760\\OneDrive\\Bureau\\BU\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes.dex
+base.1=C\:\\Users\\33760\\OneDrive\\Bureau\\BU\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\0\\classes.dex
+base.2=C\:\\Users\\33760\\OneDrive\\Bureau\\BU\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\12\\classes.dex
+base.3=C\:\\Users\\33760\\OneDrive\\Bureau\\BU\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\3\\classes.dex
+base.4=C\:\\Users\\33760\\OneDrive\\Bureau\\BU\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\7\\classes.dex
+base.5=C\:\\Users\\33760\\OneDrive\\Bureau\\BU\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes2.dex
 path.0=classes.dex
 path.1=0/classes.dex
 path.2=12/classes.dex
