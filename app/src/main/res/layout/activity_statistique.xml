@@ -68,39 +68,56 @@
 
             <!-- ========== DEBUT SECTION STATISTIQUE =========== -->
 
-            <TextView
-                android:id="@+id/stats"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="35dp"
-                android:layout_marginTop="5dp"
-                android:fontFamily="@font/patuaone_regular"
-                android:text=" The statistics"
-                android:textColor="@color/darkBlue"
-                android:textSize="21dp"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
 
-            <TextView
-                android:id="@+id/ligne1"
-                android:layout_width="180dp"
-                android:layout_height="1.5dp"
-                android:layout_marginStart="35dp"
-                android:layout_marginTop="12dp"
-                android:background="@color/lightBlue"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/stats" />
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                >
 
-            <ImageView
-                android:id="@+id/stats_logo"
-                android:layout_width="47dp"
-                android:layout_height="48dp"
-                android:layout_marginRight="30dp"
-                android:src="@drawable/stats_logo"
-                android:textAlignment="center"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="20dp"
+                >
+
+                <TextView
+                    android:id="@+id/stats"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="35dp"
+                    android:layout_marginTop="5dp"
+                    android:fontFamily="@font/patuaone_regular"
+                    android:text=" The statistics"
+                    android:textColor="@color/darkBlue"
+                    android:textSize="21dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/ligne1"
+                    android:layout_width="180dp"
+                    android:layout_height="1.5dp"
+                    android:layout_marginStart="35dp"
+                    android:layout_marginTop="12dp"
+                    android:background="@color/lightBlue"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/stats" />
+
+                <ImageView
+                    android:id="@+id/stats_logo"
+                    android:layout_width="47dp"
+                    android:layout_height="48dp"
+                    android:layout_marginRight="30dp"
+                    android:src="@drawable/stats_logo"
+                    android:textAlignment="center"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    />
 
             <androidx.cardview.widget.CardView
                 android:id="@+id/blocStats"
@@ -108,12 +125,13 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="35dp"
                 android:layout_marginEnd="35dp"
-                android:layout_marginTop="15dp"
+                android:layout_marginTop="30dp"
                 app:cardBackgroundColor="@color/lightBlueLight"
                 app:cardCornerRadius="20dp"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/ligne1"
-                >
+                app:layout_constraintTop_toBottomOf="@+id/stats"
+                tools:ignore="MissingConstraints">
+
 
                 <RelativeLayout
                     android:layout_width="match_parent"
@@ -399,10 +417,13 @@
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
 
+            </androidx.constraintlayout.widget.ConstraintLayout>
 
-        </androidx.constraintlayout.widget.ConstraintLayout>
+                </LinearLayout>
+            </ScrollView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
-    </LinearLayout>
+</LinearLayout>
 
     <!-- ========== FIN PAGE =========== -->
 

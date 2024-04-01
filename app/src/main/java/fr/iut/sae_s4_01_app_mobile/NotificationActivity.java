@@ -60,9 +60,10 @@ public class NotificationActivity extends AppCompatActivity {
 
 
         ImageView btnNotif = (ImageView) findViewById(R.id.notifBtn);
-
-
         ImageView sedeconnecterBtn = (ImageView) findViewById(R.id.sedeconnecterBtn);
+
+        TextView btnAccueil = (TextView) findViewById(R.id.accueil);
+        TextView btnProfil = (TextView) findViewById(R.id.profil);
         sedeconnecterBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -79,8 +80,21 @@ public class NotificationActivity extends AppCompatActivity {
             }
         });
 
+        btnAccueil.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(NotificationActivity.this, MainActivity.class);
+                startActivity(intent);
+            }
+        });
+        btnProfil.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(NotificationActivity.this, NotificationActivity.class);
+                startActivity(intent);
+            }
+        });
 
     }
-
 
 }

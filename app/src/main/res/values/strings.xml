@@ -72,7 +72,7 @@
     <string name="enregistrer">Enregistrer</string>
     <string name="information">* Ces informations sont </string>
     <string name="obliger">obligatoires</string>
-    <string name="importance"> Ce médicament est indispensable pour ma santé</string>
+    <string name="importance"> Ce médicament est <b>indispensable</b> pour ma santé</string>
 
 
     <!--layout login-->
@@ -231,7 +231,9 @@
     <string name="nbNotif"> notifications au total</string>
 
     <string name="notif">Mes notifications</string>
-    <string name="sonsage">Accéder au sondages</string>
+    <string name="sonsage">Accéder au sondage</string>
+    <string name="retour1">Retour à l`accueil</string>
+    <string name="retour2">Aller page profil</string>
 
     <!-- ALERTE NOTIF-->
     <string name="insertion_notif_reussie">Votre alerte a bien été enregistrée. Merci pour votre contribution !</string>

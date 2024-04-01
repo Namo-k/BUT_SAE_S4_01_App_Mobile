@@ -129,7 +129,7 @@
                 android:layout_width="49dp"
                 android:layout_height="50dp"
                 android:src="@drawable/alertes"
-                android:layout_marginStart="70dp"
+                android:layout_marginStart="65dp"
                 android:layout_marginTop="6dp"
                 android:layout_gravity="end"
                 />

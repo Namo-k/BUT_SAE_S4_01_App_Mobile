@@ -121,11 +121,11 @@
             <TextView
                 android:id="@+id/stats"
                 android:layout_width="wrap_content"
-                android:layout_height="22dp"
-                android:layout_marginStart="30dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="35dp"
                 android:layout_marginTop="15dp"
                 android:fontFamily="@font/patuaone_regular"
-                android:text=" Consulter les statistiques"
+                android:text="Les statistiques"
                 android:textColor="@color/darkBlue"
                 android:textSize="21dp"
                 app:layout_constraintStart_toStartOf="parent"
@@ -133,10 +133,10 @@
 
             <TextView
                 android:id="@+id/ligne1"
-                android:layout_width="180dp"
+                android:layout_width="165dp"
                 android:layout_height="1.5dp"
                 android:layout_marginStart="27dp"
-                android:layout_marginTop="12dp"
+                android:layout_marginTop="8dp"
                 android:background="@color/lightBlue"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/stats" />
@@ -145,7 +145,7 @@
                 android:id="@+id/stats_logo"
                 android:layout_width="47dp"
                 android:layout_height="48dp"
-                android:layout_marginTop="13dp"
+                android:layout_marginTop="1dp"
                 android:layout_marginRight="30dp"
                 android:src="@drawable/stats_logo"
                 android:textAlignment="center"
@@ -158,7 +158,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="27dp"
                 android:layout_marginEnd="27dp"
-                android:layout_marginTop="10dp"
+                android:layout_marginTop="15dp"
                 app:cardBackgroundColor="@color/lightBlueLight"
                 app:cardCornerRadius="20dp"
                 app:layout_constraintStart_toStartOf="parent"
@@ -374,7 +374,7 @@
 
             <TextView
                 android:id="@+id/ligne2"
-                android:layout_width="210dp"
+                android:layout_width="190dp"
                 android:layout_height="2dp"
                 android:layout_marginStart="27dp"
                 android:layout_marginTop="12dp"
@@ -386,7 +386,7 @@
                 android:id="@+id/anciennesAlertes_logo"
                 android:layout_width="47dp"
                 android:layout_height="48dp"
-                android:layout_marginTop="13dp"
+                android:layout_marginTop="9dp"
                 android:layout_marginRight="30dp"
                 android:src="@drawable/alertes"
                 android:textAlignment="center"
@@ -394,13 +394,12 @@
                 app:layout_constraintTop_toBottomOf="@+id/blocStats" />
 
             <androidx.cardview.widget.CardView
-
                 android:id="@+id/blocAncienneAlerte"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="27dp"
                 android:layout_marginEnd="27dp"
-                android:layout_marginTop="10dp"
+                android:layout_marginTop="15dp"
                 app:cardBackgroundColor="@color/lightBlueLight"
                 app:cardCornerRadius="20dp"
                 app:layout_constraintStart_toStartOf="parent"

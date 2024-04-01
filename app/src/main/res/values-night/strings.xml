@@ -234,6 +234,8 @@
 
     <string name="nbNotif"> notifications au total</string>
     <string name="notif">Mes notifications</string>
+    <string name="retour1">Retour à l`accueil</string>
+    <string name="retour2">Aller page profil</string>
 
     <string name="sonsage">Accéder au sondages</string>
 

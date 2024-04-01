@@ -77,6 +77,17 @@ public class ProfilFragment extends Fragment {
         pharmacie.setText(pharmacie_);
         medecin.setText(medecin_);
 
+
+        ImageView btnNotif = view.findViewById(R.id.notifBtn);
+
+        btnNotif.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getActivity(), NotificationActivity.class);
+                startActivity(intent);
+            }
+        });
+
         ImageView sedeconnecterBtn = view.findViewById(R.id.sedeconnecterBtn);
 
         sedeconnecterBtn.setOnClickListener(new View.OnClickListener() {

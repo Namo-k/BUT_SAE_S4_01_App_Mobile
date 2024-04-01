@@ -20,7 +20,7 @@ public class SplashScreenActivity extends AppCompatActivity {
 
 
 
-    private final static int TEMPS = 4500;
+    private final static int TEMPS = 1000;
     private String[] tabQuote;
     private TextView citation;
     private ImageView colombeDroiteImage;

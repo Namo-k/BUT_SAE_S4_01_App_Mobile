@@ -64,6 +64,19 @@ public class Notifications extends SQLiteOpenHelper {
         return count;
     }
 
+    public int getNombreTotalAlertesNotif(int idUser) {
+        SQLiteDatabase db = this.getReadableDatabase();
+        String countQuery = "SELECT COUNT(*) FROM notifications where idUser = ? AND categorie = 'alerte'";
+        Cursor cursor = db.rawQuery(countQuery, new String[] {String.valueOf(idUser)});
+        int count = 0;
+        if (cursor != null) {
+            cursor.moveToFirst();
+            count = cursor.getInt(0);
+            cursor.close();
+        }
+        return count;
+    }
+
     public List<Notification> getAllNotifications(int idUser, Context context) {
         List<Notification> listeNotifications = new ArrayList<>();
         SQLiteDatabase db = this.getReadableDatabase();

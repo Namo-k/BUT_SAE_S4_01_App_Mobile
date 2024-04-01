@@ -93,13 +93,16 @@ public class NewAlertActivity extends AppCompatActivity {
                 if (userID != -1 && codeCIP != null && !raison.equals(getString(R.string.select_reason))) {
                     boolean insertionReussie = alertesDB.insertData(userID, codeCIP, raison, messageAlerte, moyen);
                     boolean insertionNotifReussie = notificationsDB.insertData((int) userID, getResources().getString(R.string.insertion_notif_reussie2), getResources().getString(R.string.insertion_notif_reussie), "alerte");
-                    boolean insertionNotifReussie2 = notificationsDB.insertData((int) userID, getResources().getString(R.string.insertion_notif_avis2), getResources().getString(R.string.insertion_notif_avis), "avis");
 
-                    if (insertionReussie && insertionNotifReussie && insertionNotifReussie2) {
+                    if (notificationsDB.getNombreTotalAlertesNotif(userID) == 3) {
+                        boolean insertionNotifReussie2 = notificationsDB.insertData((int) userID, getResources().getString(R.string.insertion_notif_avis2), getResources().getString(R.string.insertion_notif_avis), "avis");
+                    }
+
+                    if (insertionReussie && insertionNotifReussie) {
                         Toast.makeText(NewAlertActivity.this, getString(R.string.insert_success), Toast.LENGTH_SHORT).show();
                         long idAlerte = alertesDB.getLastInsertedAlertId();
 
-                        Toast.makeText(NewAlertActivity.this, "ID de l'alerte créée : " + String.valueOf(idAlerte), Toast.LENGTH_SHORT).show();
+                        //Toast.makeText(NewAlertActivity.this, "ID de l'alerte créée : " + String.valueOf(idAlerte), Toast.LENGTH_SHORT).show();
 
                         CheckBox checkbox = findViewById(R.id.checkbox);
                         if (checkbox.isChecked()) {

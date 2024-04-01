@@ -52,6 +52,15 @@ public class AncienneAlerteFragment extends Fragment {
             }
         });
 
+        ImageView btnNotif = rootView.findViewById(R.id.notifBtn);
+
+        btnNotif.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getActivity(), NotificationActivity.class);
+                startActivity(intent);
+            }
+        });
 
         // Récupérer les alertes depuis la base de données
         //List<Alerte> alertes = alertesDb.getAllAlertes(userID);
