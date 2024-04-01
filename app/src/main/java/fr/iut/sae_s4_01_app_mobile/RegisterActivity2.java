@@ -1,6 +1,8 @@
 package fr.iut.sae_s4_01_app_mobile;
 
 import android.content.Intent;
+import android.database.sqlite.SQLiteDatabase;
+import android.database.sqlite.SQLiteOpenHelper;
 import android.os.Bundle;
 import android.text.TextUtils;
 import android.text.method.PasswordTransformationMethod;
@@ -14,6 +16,7 @@ import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import fr.iut.sae_s4_01_app_mobile.bd.Alertes;
 import fr.iut.sae_s4_01_app_mobile.bd.Identifiants;
 import fr.iut.sae_s4_01_app_mobile.bd.Notifications;
 import fr.iut.sae_s4_01_app_mobile.bd.Users;
@@ -80,6 +83,9 @@ public class RegisterActivity2 extends AppCompatActivity {
         pharmacie = getResources().getString(R.string.nr);
         medecin = getResources().getString(R.string.nr);
 
+        Alertes DatabaseAlertes = new Alertes(this);
+
+
         Button validateButton = findViewById(R.id.loginBtn);
         validateButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -107,8 +113,12 @@ public class RegisterActivity2 extends AppCompatActivity {
                             boolean insertionNotifReussie = notificationsDB.insertData((int) userID, getResources().getString(R.string.insertion_notif_beinvenu2), getResources().getString(R.string.insertion_notif_beinvenu), "bienvenue");
 
                             Intent intent = new Intent(RegisterActivity2.this, LoginActivity.class);
+
+
                             Toast.makeText(RegisterActivity2.this, getString(R.string.account_created), Toast.LENGTH_SHORT).show();
                             startActivity(intent);
+
+
                         } else {
                             Toast.makeText(RegisterActivity2.this, getString(R.string.existing_email), Toast.LENGTH_SHORT).show();
                         }

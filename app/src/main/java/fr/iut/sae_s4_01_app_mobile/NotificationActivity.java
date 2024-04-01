@@ -29,6 +29,8 @@ public class NotificationActivity extends AppCompatActivity {
 
         nbNotification_ = findViewById(R.id.nbNotifications);
 
+
+
         UserId myApp = (UserId) getApplication();
         int userID = myApp.getUserID();
 
@@ -64,6 +66,21 @@ public class NotificationActivity extends AppCompatActivity {
 
         TextView btnAccueil = (TextView) findViewById(R.id.accueil);
         TextView btnProfil = (TextView) findViewById(R.id.profil);
+
+        TextView btnAlerte = (TextView) findViewById(R.id.alerte);
+
+
+        btnAlerte.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(NotificationActivity.this, MainActivity.class);
+                intent.putExtra("AncienneAlerte", "anciennealerte");
+                startActivity(intent);
+            }
+        });
+
+
+
         sedeconnecterBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -90,10 +107,12 @@ public class NotificationActivity extends AppCompatActivity {
         btnProfil.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(NotificationActivity.this, NotificationActivity.class);
+                Intent intent = new Intent(NotificationActivity.this, MainActivity.class);
+                intent.putExtra("fragment", "profil");
                 startActivity(intent);
             }
         });
+
 
     }
 

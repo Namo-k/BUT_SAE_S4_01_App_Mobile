@@ -43,7 +43,6 @@ public class CipManuelleActivity extends AppCompatActivity {
         textView.setText(spannableString);
         editCodeCIP = findViewById(R.id.editCodeCIP);
 
-        // Affichage des informations lors du clic sur le point d'interrogation
         CardView interrogation1 = findViewById(R.id.interrogation1);
         CardView interrogation1text = findViewById(R.id.interrogation1text);
         interrogation1.setOnClickListener(new View.OnClickListener() {

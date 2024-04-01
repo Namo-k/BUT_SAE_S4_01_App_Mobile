@@ -82,7 +82,7 @@
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_marginTop="20dp"
+                android:layout_marginTop="10dp"
                 >
 
                 <TextView
@@ -123,8 +123,8 @@
                 android:id="@+id/blocStats"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="35dp"
-                android:layout_marginEnd="35dp"
+                android:layout_marginStart="25dp"
+                android:layout_marginEnd="25dp"
                 android:layout_marginTop="30dp"
                 app:cardBackgroundColor="@color/lightBlueLight"
                 app:cardCornerRadius="20dp"
@@ -332,9 +332,9 @@
                 android:id="@+id/spinBloc"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="35dp"
-                android:layout_marginEnd="35dp"
-                android:layout_marginTop="25dp"
+                android:layout_marginStart="25dp"
+                android:layout_marginEnd="25dp"
+                android:layout_marginTop="15dp"
                 app:cardBackgroundColor="@color/lightBlueLight"
                 app:cardCornerRadius="20dp"
                 app:layout_constraintStart_toStartOf="parent"
@@ -355,8 +355,8 @@
                 android:id="@+id/blocGraph"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="35dp"
-                android:layout_marginEnd="35dp"
+                android:layout_marginStart="25dp"
+                android:layout_marginEnd="25dp"
                 android:layout_marginTop="20dp"
                 app:cardBackgroundColor="@color/lightBlueLight"
                 app:cardCornerRadius="20dp"

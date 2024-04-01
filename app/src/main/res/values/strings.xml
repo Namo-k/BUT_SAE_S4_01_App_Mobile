@@ -46,6 +46,8 @@
     <!--layout ancienne alertes-->
     <string name="last">Mes anciennes alertes</string>
     <string name="merci">Merci infiniment pour votre contribution !</string>
+    <string name="tri"> Trier mes alertes par : </string>
+
 
     <!--layout change mot de passe-->
     <string name="bienvenue">Bienvenue !</string>
@@ -232,8 +234,10 @@
 
     <string name="notif">Mes notifications</string>
     <string name="sonsage">Accéder au sondage</string>
-    <string name="retour1">Retour à l`accueil</string>
-    <string name="retour2">Aller page profil</string>
+    <string name="retour1">Accueil</string>
+    <string name="retour2">Profil</string>
+    <string name="retour3">Alerte </string>
+
 
     <!-- ALERTE NOTIF-->
     <string name="insertion_notif_reussie">Votre alerte a bien été enregistrée. Merci pour votre contribution !</string>

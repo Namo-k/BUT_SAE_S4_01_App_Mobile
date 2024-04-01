@@ -203,20 +203,33 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:layout_marginHorizontal="50dp"
         android:layout_marginTop="15dp"
         android:layout_marginBottom="15dp"
-        android:orientation="horizontal">
+        android:layout_centerHorizontal="true"
+        >
+
+        <TextView
+            android:id="@+id/alerte"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/inter_semibold"
+            android:text="@string/retour3"
+            android:textColor="@color/darkBlue"
+            android:textSize="16dp"
+            android:layout_marginHorizontal="50dp"
+            />
 
         <TextView
             android:id="@+id/accueil"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:fontFamily="@font/inter_semibold"
-            android:gravity="center"
             android:text="@string/retour1"
             android:textColor="@color/darkBlue"
             android:textSize="16dp"
+            android:layout_toRightOf="@id/alerte"
+            android:layout_marginHorizontal="30dp"
+
             />
 
         <TextView
@@ -224,12 +237,12 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:fontFamily="@font/inter_semibold"
-            android:gravity="center"
             android:text="@string/retour2"
             android:textColor="@color/darkBlue"
             android:textSize="16dp"
-            android:layout_marginLeft="30dp"
             android:layout_toRightOf="@id/accueil"
+            android:layout_marginHorizontal="35dp"
+
             />
 
     </RelativeLayout>

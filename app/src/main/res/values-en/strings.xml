@@ -44,6 +44,8 @@
     <!--layout ancienne alertes-->
     <string name="last">My old alerts</string>
     <string name="merci">Thank you immensely for your contribution!</string>
+    <string name="tri">Sort my alerts by :   </string>
+
 
     <!--layout change mot de passe-->
     <string name="bienvenue">Welcome!</string>
@@ -233,8 +235,10 @@
     <string name="nbNotif">notifications in total</string>
 
     <string name="notif">My notifications</string>
-    <string name="retour1">Back to à home</string>
-    <string name="retour2">Profile page</string>
+    <string name="retour1">Home</string>
+    <string name="retour2">Profil</string>
+    <string name="retour3">Alerte </string>
+
 
     <string name="sonsage">Access surveys</string>
     <string name="insertion_notif_edit">You have updated your profile information.</string>

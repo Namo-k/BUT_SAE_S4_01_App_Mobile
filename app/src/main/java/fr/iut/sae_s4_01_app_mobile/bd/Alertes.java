@@ -602,27 +602,23 @@ public class Alertes extends SQLiteOpenHelper {
     }
 
 
-    private void insertDonneesFictives(SQLiteDatabase db) {
-        // Insérer des données fictives dans la table alertes
-        // Vous pouvez modifier les valeurs comme vous le souhaitez
-        db.execSQL("INSERT INTO alertes (codeCip, idUser, nomMedicament, raison, message, moyen, dateAlerte) VALUES (123456, 1, 'Medicament1', 'Raison1', 'Message1', 'saisie', '2024-01-15 08:30:00')");
-        db.execSQL("INSERT INTO alertes (codeCip, idUser, nomMedicament, raison, message, moyen, dateAlerte) VALUES (789012, 1, 'Medicament2', 'Raison2', 'Message2', 'scan', '2024-03-20 10:45:00')");
-        db.execSQL("INSERT INTO alertes (codeCip, idUser, nomMedicament, raison, message, moyen, dateAlerte) VALUES (456789, 1, 'Medicament3', 'Raison3', 'Message3', 'saisie', '2024-02-05 14:15:00')");
-        db.execSQL("INSERT INTO alertes (codeCip, idUser, nomMedicament, raison, message, moyen, dateAlerte) VALUES (987654, 1, 'Medicament4', 'Raison4', 'Message4', 'scan', '2024-04-10 16:20:00')");
-        db.execSQL("INSERT INTO alertes (codeCip, idUser, nomMedicament, raison, message, moyen, dateAlerte) VALUES (654321, 1, 'Medicament5', 'Raison5', 'Message5', 'saisie', '2024-06-25 18:30:00')");
-        db.execSQL("INSERT INTO alertes (codeCip, idUser, nomMedicament, raison, message, moyen, dateAlerte) VALUES (135792, 1, 'Medicament6', 'Raison6', 'Message6', 'scan', '2024-05-05 09:45:00')");
-        db.execSQL("INSERT INTO alertes (codeCip, idUser, nomMedicament, raison, message, moyen, dateAlerte) VALUES (246813, 1, 'Medicament7', 'Raison7', 'Message7', 'saisie', '2024-07-15 12:00:00')");
-        db.execSQL("INSERT INTO alertes (codeCip, idUser, nomMedicament, raison, message, moyen, dateAlerte) VALUES (369852, 1, 'Medicament8', 'Raison8', 'Message8', 'scan', '2024-08-20 14:20:00')");
-        db.execSQL("INSERT INTO alertes (codeCip, idUser, nomMedicament, raison, message, moyen, dateAlerte) VALUES (987123, 1, 'Medicament9', 'Raison9', 'Message9', 'saisie', '2024-09-10 16:45:00')");
-        db.execSQL("INSERT INTO alertes (codeCip, idUser, nomMedicament, raison, message, moyen, dateAlerte) VALUES (654987, 1, 'Medicament10', 'Raison10', 'Message10', 'scan', '2024-10-30 18:30:00')");
-        db.execSQL("INSERT INTO alertes (codeCip, idUser, nomMedicament, raison, message, moyen, dateAlerte) VALUES (159263, 1, 'Medicament11', 'Raison11', 'Message11', 'saisie', '2024-11-08 10:15:00')");
-        db.execSQL("INSERT INTO alertes (codeCip, idUser, nomMedicament, raison, message, moyen, dateAlerte) VALUES (357951, 1, 'Medicament12', 'Raison12', 'Message12', 'scan', '2024-12-18 13:40:00')");
-        db.execSQL("INSERT INTO alertes (codeCip, idUser, nomMedicament, raison, message, moyen, dateAlerte) VALUES (468135, 1, 'Medicament13', 'Raison13', 'Message13', 'saisie', '2025-01-28 15:55:00')");
-        db.execSQL("INSERT INTO alertes (codeCip, idUser, nomMedicament, raison, message, moyen, dateAlerte) VALUES (579246, 1, 'Medicament14', 'Raison14', 'Message14', 'scan', '2025-02-10 08:30:00')");
-        db.execSQL("INSERT INTO alertes (codeCip, idUser, nomMedicament, raison, message, moyen, dateAlerte) VALUES (681357, 1, 'Medicament15', 'Raison15', 'Message15', 'saisie', '2025-03-20 09:45:00')");
+    private void insertDonneesFictives(SQLiteDatabase db, int idUser) {
 
-        // Ajoutez autant d'entrées fictives que nécessaire
-        // Assurez-vous d'avoir au moins 40 entrées fictives
+        db.execSQL("INSERT INTO alertes (codeCip, idUser, nomMedicament, raison, message, moyen, dateAlerte) VALUES (3400921617535, " + idUser + ", 'Medicament1', 'Raison1', 'Message1', 'saisie', '2024-01-15 08:30:00')");
+        db.execSQL("INSERT INTO alertes (codeCip, idUser, nomMedicament, raison, message, moyen, dateAlerte) VALUES (3400921617535, " + idUser + ", 'Medicament2', 'Raison2', 'Message2', 'scan', '2024-03-20 10:45:00')");
+        db.execSQL("INSERT INTO alertes (codeCip, idUser, nomMedicament, raison, message, moyen, dateAlerte) VALUES (3400921662078, "+ idUser + ", 'Medicament3', 'Raison3', 'Message3', 'saisie', '2024-02-05 14:15:00')");
+        db.execSQL("INSERT INTO alertes (codeCip, idUser, nomMedicament, raison, message, moyen, dateAlerte) VALUES (3400921661477, "+ idUser + ", 'Medicament4', 'Raison4', 'Message4', 'scan', '2024-04-10 16:20:00')");
+        db.execSQL("INSERT INTO alertes (codeCip, idUser, nomMedicament, raison, message, moyen, dateAlerte) VALUES (3400921617535, "+ idUser + ", 'Medicament5', 'Raison5', 'Message5', 'saisie', '2024-06-25 18:30:00')");
+        db.execSQL("INSERT INTO alertes (codeCip, idUser, nomMedicament, raison, message, moyen, dateAlerte) VALUES (3400921643497, "+ idUser + ", 'Medicament6', 'Raison6', 'Message6', 'scan', '2024-05-05 09:45:00')");
+        db.execSQL("INSERT INTO alertes (codeCip, idUser, nomMedicament, raison, message, moyen, dateAlerte) VALUES (3400921672763, "+ idUser + ", 'Medicament7', 'Raison7', 'Message7', 'saisie', '2024-07-15 12:00:00')");
+        db.execSQL("INSERT INTO alertes (codeCip, idUser, nomMedicament, raison, message, moyen, dateAlerte) VALUES (3400921662078, "+ idUser + ", 'Medicament8', 'Raison8', 'Message8', 'scan', '2024-08-20 14:20:00')");
+        db.execSQL("INSERT INTO alertes (codeCip, idUser, nomMedicament, raison, message, moyen, dateAlerte) VALUES (3400921625929, "+ idUser + ", 'Medicament9', 'Raison9', 'Message9', 'saisie', '2024-09-10 16:45:00')");
+        db.execSQL("INSERT INTO alertes (codeCip, idUser, nomMedicament, raison, message, moyen, dateAlerte) VALUES (3400921672763, "+ idUser +", 'Medicament10', 'Raison10', 'Message10', 'scan', '2024-10-30 18:30:00')");
+        db.execSQL("INSERT INTO alertes (codeCip, idUser, nomMedicament, raison, message, moyen, dateAlerte) VALUES (3400921643497, "+ idUser + ", 'Medicament11', 'Raison11', 'Message11', 'saisie', '2024-11-08 10:15:00')");
+        db.execSQL("INSERT INTO alertes (codeCip, idUser, nomMedicament, raison, message, moyen, dateAlerte) VALUES (3400921790030, "+ idUser + ", 'Medicament12', 'Raison12', 'Message12', 'scan', '2024-12-18 13:40:00')");
+        db.execSQL("INSERT INTO alertes (codeCip, idUser, nomMedicament, raison, message, moyen, dateAlerte) VALUES (3400921653663, "+ idUser + ", 'Medicament13', 'Raison13', 'Message13', 'saisie', '2025-01-28 15:55:00')");
+        db.execSQL("INSERT INTO alertes (codeCip, idUser, nomMedicament, raison, message, moyen, dateAlerte) VALUES (3400921661477, "+ idUser + ", 'Medicament14', 'Raison14', 'Message14', 'scan', '2025-02-10 08:30:00')");
+        db.execSQL("INSERT INTO alertes (codeCip, idUser, nomMedicament, raison, message, moyen, dateAlerte) VALUES (3400921790030, "+ idUser + ", 'Medicament15', 'Raison15', 'Message15', 'saisie', '2025-03-20 09:45:00')");
     }
 
 

@@ -104,6 +104,12 @@ public class NewAlertActivity extends AppCompatActivity {
 
                         //Toast.makeText(NewAlertActivity.this, "ID de l'alerte créée : " + String.valueOf(idAlerte), Toast.LENGTH_SHORT).show();
 
+                        Intent intent = new Intent(NewAlertActivity.this, MainActivity.class);
+                        intent.putExtra("NewAlerte", "alerte");
+                        startActivity(intent);
+
+
+
                         CheckBox checkbox = findViewById(R.id.checkbox);
                         if (checkbox.isChecked()) {
                             alertesDB.marquerImportanceTrue(idAlerte);

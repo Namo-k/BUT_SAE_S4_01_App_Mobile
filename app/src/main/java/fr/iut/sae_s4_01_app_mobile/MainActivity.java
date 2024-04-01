@@ -1,9 +1,7 @@
 package fr.iut.sae_s4_01_app_mobile;
 
-
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.view.GravityCompat;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
@@ -12,16 +10,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
 
-import com.google.android.material.badge.BadgeDrawable;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
-import com.google.android.material.navigation.NavigationBarView;
-import com.google.android.material.navigation.NavigationView;
-
-import fr.iut.sae_s4_01_app_mobile.AccueilFragment;
-import fr.iut.sae_s4_01_app_mobile.LoginActivity;
-import fr.iut.sae_s4_01_app_mobile.R;
-
-
 
 public class MainActivity extends AppCompatActivity {
 
@@ -43,15 +32,38 @@ public class MainActivity extends AppCompatActivity {
                 } else if (item.getItemId() == R.id.nav_user) {
                     replaceFragment(new ProfilFragment());
 
-                }else if (item.getItemId() == R.id.nav_alerte) {
+                } else if (item.getItemId() == R.id.nav_alerte) {
                     replaceFragment(new AncienneAlerteFragment());
                 }
 
                 return true;
             }
         });
+        Intent intent = getIntent();
+        if (intent != null) {
+            String fragmentToOpen = intent.getStringExtra("fragment");
+            String fragmentNew = intent.getStringExtra("NewAlerte");
+            String fragmentAncienne= intent.getStringExtra("AncienneAlerte");
 
-        bottomNavigationView.setSelectedItemId(R.id.nav_home);
+
+            if (fragmentToOpen != null && fragmentToOpen.equals("profil")) {
+                replaceFragment(new ProfilFragment());
+                bottomNavigationView.setSelectedItemId(R.id.nav_user);
+            } else if (fragmentNew != null && fragmentNew.equals("alerte")) {
+                replaceFragment(new AccueilFragment());
+            }else if (fragmentAncienne != null && fragmentAncienne.equals("anciennealerte")) {
+                replaceFragment(new AncienneAlerteFragment());
+            }
+
+
+
+
+            else{
+                replaceFragment(new AccueilFragment());
+            }
+        } else {
+            replaceFragment(new AccueilFragment());
+        }
     }
 
     private void replaceFragment(Fragment fragment){
