@@ -43,8 +43,14 @@ public class AncienneAlerteFragment extends Fragment {
         userID = myApp.getUserID();
         alertesDb = new Alertes(getContext());
 
-
-
+        ImageView sedeconnecterBtn = rootView.findViewById(R.id.sedeconnecterBtn);
+        sedeconnecterBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getActivity(), LoginActivity.class);
+                startActivity(intent);
+            }
+        });
 
 
         // Récupérer les alertes depuis la base de données
