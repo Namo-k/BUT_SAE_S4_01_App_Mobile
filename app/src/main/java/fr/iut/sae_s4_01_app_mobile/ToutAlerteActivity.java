@@ -93,11 +93,11 @@ public class ToutAlerteActivity extends AppCompatActivity {
                 String selectedItem = parentView.getItemAtPosition(position).toString();
                 if (selectedItem.equals(getResources().getString(R.string.recent))) {
                     List<Alerte> alertes = alertesDb.getAllAlertesDESC();
-                    AlerteAdapter adapter = new AlerteAdapter(getApplication(), alertes);
+                    AlerteAdapterTout adapter = new AlerteAdapterTout(getApplication(), alertes);
                     listView.setAdapter(adapter);
                 } else if (selectedItem.equals(getResources().getString(R.string.ancien))) {
                     List<Alerte> alertes = alertesDb.getAllAlertesASC();
-                    AlerteAdapter adapter = new AlerteAdapter(getApplication(), alertes);
+                    AlerteAdapterTout adapter = new AlerteAdapterTout(getApplication(), alertes);
                     listView.setAdapter(adapter);
                 }else if (selectedItem.equals(getResources().getString(R.string.pertinance))) {
                     List<Alerte> alertesImportantes = alertesDb.getAllAlertesImportantes();
@@ -107,8 +107,7 @@ public class ToutAlerteActivity extends AppCompatActivity {
                     alertesPertinentes.addAll(alertesImportantes);
                     alertesPertinentes.addAll(alertesNONImportantes);
 
-
-                    AlerteAdapter adapter = new AlerteAdapter(getApplication(), alertesPertinentes);
+                    AlerteAdapterTout adapter = new AlerteAdapterTout(getApplication(), alertesPertinentes);
                     listView.setAdapter(adapter);
                 }
             }
