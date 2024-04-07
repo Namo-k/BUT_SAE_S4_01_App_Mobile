@@ -47,6 +47,7 @@ public class AccueilFragment extends Fragment {
         UserId myApp = (UserId) getActivity().getApplication();
         int userID = myApp.getUserID();
         ImageView btnSaisie = rootView.findViewById(R.id.saisie_logo);
+        ImageView btnScan = rootView.findViewById(R.id.scan_logo);
 
         ImageView btnNotif = rootView.findViewById(R.id.notifBtn);
         ImageView btnNuit = rootView.findViewById(R.id.nuitbtn);
@@ -72,6 +73,14 @@ public class AccueilFragment extends Fragment {
             }
         });
 
+        btnScan.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getActivity(), ScannerActivity.class);
+                startActivity(intent);
+            }
+        });
+        
         btnNuit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
